@@ -1,0 +1,37 @@
+[
+  {
+    "path": "AGENTS.md",
+    "bytes": 2469,
+    "sha256": "699ddb9b18f6a0795822fb4a780ace9029febcda4c61bcf5fff95cfc74def238"
+  },
+  {
+    "path": "README.md",
+    "bytes": 1966,
+    "sha256": "896514ef7660b1fd243453abed139e3a44a8e58674d5c25c4704987bafe064f4"
+  },
+  {
+    "path": "TASK.md",
+    "bytes": 7943,
+    "sha256": "f12c4149c1f09c1547e2fbd37655facb2cdb7927ef5d8b9b5b48d547d8ea36ac"
+  },
+  {
+    "path": "STATE.md",
+    "bytes": 5187,
+    "sha256": "76fe68258aff0e1df6a08fe49bf22c355fe86ce85b83b37395ed524a5f8614bf"
+  },
+  {
+    "path": "REPRODUCTION_PLAN.md",
+    "bytes": 12597,
+    "sha256": "260e8d55903aaa28a5bd901ee7385437318ecb37e17108274c1caafd9e3e0f6b"
+  },
+  {
+    "path": "notes\\paper-card.md",
+    "bytes": 28528,
+    "sha256": "1d7efea108392faa07f18d61fe4fec841c3753f8dd01a457f1c7d721aa6b2c11"
+  },
+  {
+    "path": "notes\\materials-and-gaps.md",
+    "bytes": 12774,
+    "sha256": "36ebadd201b9545f5a1f9cfc0b9dd33419195b3557e0047badb09d47a9d6361e"
+  }
+]

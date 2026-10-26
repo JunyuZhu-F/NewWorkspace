@@ -1,0 +1,186 @@
+{
+  "started_at_utc": "2026-10-26T11:32:22.724114+00:00",
+  "argv": [
+    "D:\\NewWorkspace\\projects\\P001-目录感知\\notes\\check_arxiv_scope_truth.py",
+    "--project",
+    "D:\\NewWorkspace\\projects\\P001-目录感知",
+    "--output-dir",
+    "D:\\NewWorkspace\\projects\\P001-目录感知\\notes\\arxiv-scope-audit-20261026-01"
+  ],
+  "script_sha256": "80e4d3e9a6d365707b2d985c25133183e5eee62461297d477eb368059f57cc96",
+  "parser_sha256": "1efecd4ae136077d0256859c6a074e0565eba1fdafdecaa94e63347eb86f85da",
+  "selection_rule": "Round-robin over sorted (constraint key, path depth) strata, rows ascending within each; ten per set; no GT-dependent selection",
+  "query_row_gt_line_alignment": "GT line number equals query_id; supported by related loader, not the author generation code",
+  "selected_queries": {
+    "arxiv": [
+      {
+        "query_row": 0,
+        "query_id": 0,
+        "constraints": {
+          "time": "2014/"
+        }
+      },
+      {
+        "query_row": 1,
+        "query_id": 1,
+        "constraints": {
+          "time": "2022/2/"
+        }
+      },
+      {
+        "query_row": 2,
+        "query_id": 2,
+        "constraints": {
+          "time": "2024/11/"
+        }
+      },
+      {
+        "query_row": 4,
+        "query_id": 4,
+        "constraints": {
+          "category": "Physics/gr-qc/"
+        }
+      },
+      {
+        "query_row": 7,
+        "query_id": 7,
+        "constraints": {
+          "category": "Physics/quant-ph/"
+        }
+      },
+      {
+        "query_row": 8,
+        "query_id": 8,
+        "constraints": {
+          "category": "Physics/cond-mat/cond-mat.other/"
+        }
+      },
+      {
+        "query_row": 9,
+        "query_id": 9,
+        "constraints": {
+          "time": "2017/"
+        }
+      },
+      {
+        "query_row": 11,
+        "query_id": 11,
+        "constraints": {
+          "category": "Physics/physics/physics.comp-ph/"
+        }
+      },
+      {
+        "query_row": 12,
+        "query_id": 12,
+        "constraints": {
+          "category": "Physics/"
+        }
+      },
+      {
+        "query_row": 13,
+        "query_id": 13,
+        "constraints": {
+          "category": "Physics/"
+        }
+      }
+    ],
+    "arxiv_category": [
+      {
+        "query_row": 0,
+        "query_id": 0,
+        "constraints": {
+          "category": "Mathematics/math.LO/"
+        }
+      },
+      {
+        "query_row": 1,
+        "query_id": 1,
+        "constraints": {
+          "category": "Physics/"
+        }
+      },
+      {
+        "query_row": 2,
+        "query_id": 2,
+        "constraints": {
+          "category": "Physics/cond-mat/cond-mat.mes-hall/"
+        }
+      },
+      {
+        "query_row": 3,
+        "query_id": 3,
+        "constraints": {
+          "category": "Mathematics/math.CT/"
+        }
+      },
+      {
+        "query_row": 4,
+        "query_id": 4,
+        "constraints": {
+          "category": "Physics/hep-lat/"
+        }
+      },
+      {
+        "query_row": 5,
+        "query_id": 5,
+        "constraints": {
+          "category": "Physics/cond-mat/cond-mat.mes-hall/"
+        }
+      },
+      {
+        "query_row": 8,
+        "query_id": 8,
+        "constraints": {
+          "category": "Physics/cond-mat/cond-mat.stat-mech/"
+        }
+      },
+      {
+        "query_row": 10,
+        "query_id": 10,
+        "constraints": {
+          "category": "Physics/"
+        }
+      },
+      {
+        "query_row": 11,
+        "query_id": 11,
+        "constraints": {
+          "category": "Physics/"
+        }
+      },
+      {
+        "query_row": 12,
+        "query_id": 12,
+        "constraints": {
+          "category": "Physics/"
+        }
+      }
+    ]
+  },
+  "target_unique_ids": 1998,
+  "target_id_min": 1375,
+  "target_id_max": 2757790,
+  "small_inputs": [
+    {
+      "path": "dataset\\raw\\ARXIV-Dir\\arxiv_query_constraint.json",
+      "bytes": 109055,
+      "sha256": "dd3a628106ad80ddc64235507cb943b85308852e8347286564214b0d6a316eaf"
+    },
+    {
+      "path": "dataset\\raw\\ARXIV-Dir\\arxiv_ground_truth.txt",
+      "bytes": 761948,
+      "sha256": "d5d1c54a42fa18c1f95c306bd41eb2b4f6b207f9bdc57f40d067e10a0b914895"
+    },
+    {
+      "path": "dataset\\raw\\ARXIV-Dir\\arxiv_category_query_constraint.json",
+      "bytes": 116301,
+      "sha256": "56e9da16f2fbe4f9dbfc1e82991ac1b42958eb174252dda5616670f01d8f7f7e"
+    },
+    {
+      "path": "dataset\\raw\\ARXIV-Dir\\arxiv_category_ground_truth.txt",
+      "bytes": 763233,
+      "sha256": "bf3ceafdd2cb2efaa56619d1d51638968c4c81aae49f49eb86508d854867e643"
+    }
+  ],
+  "synthetic_segment_boundary_checks_passed": 6
+}

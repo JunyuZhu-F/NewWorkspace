@@ -1,0 +1,28 @@
+{
+  "date_utc": "2026-10-26T11:51:46.989557+00:00",
+  "purpose": "Project diagnostic input only; not author workload",
+  "selection": "First 10000 metadata rows, IDs 0..9999; independent of all query/GT results",
+  "namespace": "time only; categories preserved in source snapshot but not assigned in this view",
+  "counts": {
+    "selected_entries": 10000,
+    "unique_ids": 10000,
+    "year_directories": 3,
+    "month_directories": 30,
+    "directories_including_root": 34
+  },
+  "mapping": "Add leading/trailing slash only; preserve month spelling and original raw_time",
+  "input_metadata": "dataset\\raw\\ARXIV-Dir\\arxiv_corpus_metadata.json",
+  "input_size": 482867712,
+  "input_size_and_mtime_unchanged": true,
+  "corpus_vectors_read": false,
+  "queries_or_gt_read": false,
+  "index_or_benchmark_run": false,
+  "script_sha256": "56fca968f204a72f457aae1d54ff55fd304ebba1070313d36d8f84fff950524a",
+  "parser_sha256": "1efecd4ae136077d0256859c6a074e0565eba1fdafdecaa94e63347eb86f85da",
+  "outputs": {
+    "source-metadata.jsonl": "4d8c8757a548578f48b2990c7899739b70c11e7be9af4781d7308a91f655210b",
+    "bindings.jsonl": "9aa84f093dfd4e9c4e1633c22ae7a9df424809fee9f45fc22fb96f85c04f36b6",
+    "directory-counts.json": "b54c12e19a261885750444ca7489b01184a5b44d173f511dd64f248d652e8076"
+  },
+  "full_corpus_integrity_checked": false
+}

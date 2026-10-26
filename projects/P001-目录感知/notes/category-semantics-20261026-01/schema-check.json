@@ -1,0 +1,10 @@
+{
+  "retained_records": 1998,
+  "fields": [
+    "categories",
+    "id",
+    "time"
+  ],
+  "records_with_explicit_primary_category": 0,
+  "records_with_original_arxiv_id": 0
+}

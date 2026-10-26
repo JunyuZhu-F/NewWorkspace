@@ -1,0 +1,17 @@
+{
+  "date": "2026-10-26",
+  "script_hash_matches_selection": true,
+  "snapshot_hash_matches_selection": true,
+  "parser_hash_matches_selection": true,
+  "small_input_hash_changes": [],
+  "metadata_size_mtime_unchanged": true,
+  "independent_verification_status": "pass",
+  "query_count": 20,
+  "reference_count": 2000,
+  "missing_metadata": 0,
+  "broken_document_links": [],
+  "code_entries": 0,
+  "experiment_entries": 0,
+  "previous_version_mismatch_resolved": true,
+  "scope": "Selected GT membership only; no vector retrieval; DATA-01 and SPEC-01 remain in progress"
+}

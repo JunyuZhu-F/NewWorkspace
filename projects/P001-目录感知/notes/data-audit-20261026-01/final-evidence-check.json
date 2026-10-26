@@ -1,0 +1,7 @@
+{
+  "audit_script_hash_matches": true,
+  "distance_script_hash_matches": true,
+  "reference_source_hash_matches": true,
+  "named_python_processes": [],
+  "scope": "Named-process snapshot only, not all-computer task inventory"
+}

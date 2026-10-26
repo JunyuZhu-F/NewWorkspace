@@ -1,0 +1,42 @@
+{
+  "date": "2026-10-26",
+  "wiki_queries": 456,
+  "wiki_query_fields": [
+    "_id",
+    "metadata",
+    "text"
+  ],
+  "wiki_nonempty_metadata": 0,
+  "arxiv_constraints": {
+    "arxiv_category_query_constraint.json": {
+      "constraint_keys": [
+        {
+          "Name": "category",
+          "Count": 1000
+        }
+      ],
+      "top_level_keys": [
+        "constraints",
+        "query_id"
+      ],
+      "count": 1000
+    },
+    "arxiv_query_constraint.json": {
+      "constraint_keys": [
+        {
+          "Name": "category",
+          "Count": 499
+        },
+        {
+          "Name": "time",
+          "Count": 501
+        }
+      ],
+      "top_level_keys": [
+        "constraints",
+        "query_id"
+      ],
+      "count": 1000
+    }
+  }
+}

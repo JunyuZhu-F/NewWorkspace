@@ -1,0 +1,18 @@
+{
+  "date": "2026-10-26",
+  "paper_hash_matches_initial": true,
+  "old_new_page_text_equal": true,
+  "data_inventory_length_changes": [],
+  "code_entries": 0,
+  "experiment_entries": 0,
+  "card_audit": {
+    "status": "pass",
+    "passes": 14,
+    "warnings": 0,
+    "errors": 0
+  },
+  "missing_manual_figure_rows": [],
+  "missing_manual_table_rows": [],
+  "broken_markdown_links": [],
+  "note": "Document and material checks only; no algorithm correctness or performance experiment executed; data equality limited to names and lengths"
+}

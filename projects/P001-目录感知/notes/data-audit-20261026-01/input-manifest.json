@@ -1,0 +1,100 @@
+[
+  {
+    "path": "dataset\\raw\\WIKI-Dir\\dbpedia_dir_2m_corpus_paths.json",
+    "bytes": 604190439,
+    "last_write_time_utc": "2026-02-28T10:52:22.0000000Z",
+    "sha256": null,
+    "hash_scope": "not hashed; only bounded reads"
+  },
+  {
+    "path": "dataset\\raw\\WIKI-Dir\\dbpedia_dir_2m_corpus_vectors-001.fvecs",
+    "bytes": 7960883900,
+    "last_write_time_utc": "2026-10-23T10:56:46.9715916Z",
+    "sha256": null,
+    "hash_scope": "not hashed; only bounded reads"
+  },
+  {
+    "path": "dataset\\raw\\WIKI-Dir\\dbpedia_dir_2m_corpus.jsonl",
+    "bytes": 880191293,
+    "last_write_time_utc": "2026-02-28T10:55:30.0000000Z",
+    "sha256": null,
+    "hash_scope": "not hashed; only bounded reads"
+  },
+  {
+    "path": "dataset\\raw\\WIKI-Dir\\dbpedia_dir_2m_groundtruth.tsv",
+    "bytes": 140077,
+    "last_write_time_utc": "2026-02-28T10:50:30.0000000Z",
+    "sha256": "726835fc60f4c48b8fb218a7e934821dd5c05aa6c245622115cf497fa8f49945",
+    "hash_scope": "full small file"
+  },
+  {
+    "path": "dataset\\raw\\WIKI-Dir\\dbpedia_dir_2m_query_vectors.fvecs",
+    "bytes": 1869600,
+    "last_write_time_utc": "2026-02-28T10:51:10.0000000Z",
+    "sha256": "4f443cd6583189a9adb24775e4edeb55fee4c21171a189fd923e6dcdf01ec9d9",
+    "hash_scope": "full small file"
+  },
+  {
+    "path": "dataset\\raw\\WIKI-Dir\\dbpedia_dir_2m_query.jsonl",
+    "bytes": 33835,
+    "last_write_time_utc": "2026-02-28T10:50:32.0000000Z",
+    "sha256": "23d24dfd4e57130a87c71da6da87768d6ae81d75f81bb46e26acf9f68ba9a731",
+    "hash_scope": "full small file"
+  },
+  {
+    "path": "dataset\\raw\\ARXIV-Dir\\arxiv_category_ground_truth.txt",
+    "bytes": 763233,
+    "last_write_time_utc": "2026-02-28T10:49:12.0000000Z",
+    "sha256": "bf3ceafdd2cb2efaa56619d1d51638968c4c81aae49f49eb86508d854867e643",
+    "hash_scope": "full small file"
+  },
+  {
+    "path": "dataset\\raw\\ARXIV-Dir\\arxiv_category_query_constraint.json",
+    "bytes": 116301,
+    "last_write_time_utc": "2026-02-28T10:49:06.0000000Z",
+    "sha256": "56e9da16f2fbe4f9dbfc1e82991ac1b42958eb174252dda5616670f01d8f7f7e",
+    "hash_scope": "full small file"
+  },
+  {
+    "path": "dataset\\raw\\ARXIV-Dir\\arxiv_category_query_vectors.fvecs",
+    "bytes": 4100000,
+    "last_write_time_utc": "2026-02-28T10:49:16.0000000Z",
+    "sha256": "a7813f255b28b0259aad18463b0cb7ee9d0f26fb3a2395498b25208b00f2e083",
+    "hash_scope": "full small file"
+  },
+  {
+    "path": "dataset\\raw\\ARXIV-Dir\\arxiv_corpus_metadata.json",
+    "bytes": 482867712,
+    "last_write_time_utc": "2026-02-28T10:50:02.0000000Z",
+    "sha256": null,
+    "hash_scope": "not hashed; only bounded reads"
+  },
+  {
+    "path": "dataset\\raw\\ARXIV-Dir\\arxiv_corpus_vectors.fvecs",
+    "bytes": 11330526300,
+    "last_write_time_utc": "2026-10-23T10:58:22.9199138Z",
+    "sha256": null,
+    "hash_scope": "not hashed; only bounded reads"
+  },
+  {
+    "path": "dataset\\raw\\ARXIV-Dir\\arxiv_ground_truth.txt",
+    "bytes": 761948,
+    "last_write_time_utc": "2026-02-28T10:49:08.0000000Z",
+    "sha256": "d5d1c54a42fa18c1f95c306bd41eb2b4f6b207f9bdc57f40d067e10a0b914895",
+    "hash_scope": "full small file"
+  },
+  {
+    "path": "dataset\\raw\\ARXIV-Dir\\arxiv_query_constraint.json",
+    "bytes": 109055,
+    "last_write_time_utc": "2026-02-28T10:49:04.0000000Z",
+    "sha256": "dd3a628106ad80ddc64235507cb943b85308852e8347286564214b0d6a316eaf",
+    "hash_scope": "full small file"
+  },
+  {
+    "path": "dataset\\raw\\ARXIV-Dir\\arxiv_query_vectors.fvecs",
+    "bytes": 4100000,
+    "last_write_time_utc": "2026-02-28T10:49:14.0000000Z",
+    "sha256": "58f0d344c796e1d04e5969a560c0583abe5ed4484e98c15642da9d235cc01f48",
+    "hash_scope": "full small file"
+  }
+]

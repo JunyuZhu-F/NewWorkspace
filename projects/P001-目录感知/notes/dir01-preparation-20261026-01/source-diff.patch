@@ -1,0 +1,365 @@
+--- SNAP-dd12b2f5ac546566/code/CMakeLists.txt
++++ DIR-01-preparation/code/CMakeLists.txt
+@@ -10,14 +10,32 @@
+ add_library(directory_core src/path.cpp src/index.cpp)
+ target_include_directories(directory_core PUBLIC include)
+ target_link_libraries(directory_core PUBLIC croaring)
++# Same source, separate diagnostic target. The default core has no counter member/path.
++add_library(directory_core_instrumented src/path.cpp src/index.cpp)
++target_include_directories(directory_core_instrumented PUBLIC include)
++target_link_libraries(directory_core_instrumented PUBLIC croaring)
++target_compile_definitions(directory_core_instrumented PUBLIC DIRECTORY_ENABLE_WORK_COUNTERS)
+ if(MSVC)
+   target_compile_options(directory_core PRIVATE /W4 /permissive- /utf-8)
+   target_compile_options(croaring PRIVATE /utf-8)
++  target_compile_options(directory_core_instrumented PRIVATE /W4 /permissive- /utf-8)
+ endif()
+ add_executable(directory_core_tests tests/oracle.cpp tests/core_tests.cpp)
+ target_link_libraries(directory_core_tests PRIVATE directory_core)
+ if(MSVC)
+   target_compile_options(directory_core_tests PRIVATE /W4 /permissive- /utf-8)
++endif()
++add_executable(directory_benchmark tests/oracle.cpp tests/benchmark.cpp)
++target_link_libraries(directory_benchmark PRIVATE directory_core)
++add_executable(directory_benchmark_instrumented tests/oracle.cpp tests/benchmark.cpp)
++target_link_libraries(directory_benchmark_instrumented PRIVATE directory_core_instrumented)
++if(MSVC)
++  target_compile_options(directory_benchmark PRIVATE /W4 /permissive- /utf-8)
++  target_compile_options(directory_benchmark_instrumented PRIVATE /W4 /permissive- /utf-8)
++endif()
++if(WIN32)
++  target_link_libraries(directory_benchmark PRIVATE Psapi)
++  target_link_libraries(directory_benchmark_instrumented PRIVATE Psapi)
+ endif()
+ enable_testing()
+ add_test(NAME bitmap_contract COMMAND directory_core_tests bitmap)
+@@ -30,15 +48,19 @@
+ option(DIRECTORY_ENABLE_ASAN "Instrument core correctness tests with AddressSanitizer" OFF)
+ if(DIRECTORY_ENABLE_ASAN)
+   if(MSVC)
+-    foreach(target IN ITEMS croaring directory_core directory_core_tests)
++    foreach(target IN ITEMS croaring directory_core directory_core_instrumented directory_core_tests directory_benchmark directory_benchmark_instrumented)
+       target_compile_options(${target} PRIVATE /fsanitize=address)
+     endforeach()
+     target_link_options(directory_core_tests PRIVATE /INCREMENTAL:NO)
++    target_link_options(directory_benchmark PRIVATE /INCREMENTAL:NO)
++    target_link_options(directory_benchmark_instrumented PRIVATE /INCREMENTAL:NO)
+   else()
+-    foreach(target IN ITEMS croaring directory_core directory_core_tests)
++    foreach(target IN ITEMS croaring directory_core directory_core_instrumented directory_core_tests directory_benchmark directory_benchmark_instrumented)
+       target_compile_options(${target} PRIVATE -fsanitize=address -fno-omit-frame-pointer)
+     endforeach()
+     target_link_options(directory_core_tests PRIVATE -fsanitize=address)
++    target_link_options(directory_benchmark PRIVATE -fsanitize=address)
++    target_link_options(directory_benchmark_instrumented PRIVATE -fsanitize=address)
+   endif()
+ endif()
+ set(DIRECTORY_PILOT_TSV "" CACHE FILEPATH "Optional frozen time-pilot correctness fixture")
+--- SNAP-dd12b2f5ac546566/code/include/directory/index.hpp
++++ DIR-01-preparation/code/include/directory/index.hpp
+@@ -17,6 +17,23 @@
+     Error(ErrorCode c, const std::string& message) : std::runtime_error(message), code(c) {}
+ };
+ struct QueryResult { bool exists; Bitmap ids; };
++// Work counts are populated only by the separately compiled instrumented core.
++struct QueryWork {
++    std::size_t path_segments = 0;
++    std::size_t directories_visited = 0;
++    std::size_t direct_children = 0;
++    std::size_t bitmaps_read = 0;
++    std::size_t bitmap_copies = 0;
++    std::size_t bitmap_unions = 0;
++    std::size_t bitmap_differences = 0;
++};
++// Observable logical counts and portable sizes, not allocator/process memory.
++struct IndexStatistics {
++    std::size_t directory_count = 0;
++    std::size_t catalog_entry_count = 0;
++    std::size_t bitmap_count = 0;
++    std::size_t roaring_portable_bytes = 0;
++};
+ struct MaintenanceWork {
+     std::size_t remapped_path_keys = 0;
+     std::size_t relinked_subtrees = 0;
+@@ -38,6 +55,8 @@
+     virtual std::vector<std::string> validate() const = 0;
+     virtual std::uint64_t identity(const std::string& path) const = 0;
+     virtual MaintenanceWork last_maintenance_work() const = 0;
++    virtual QueryWork last_query_work() const = 0;
++    virtual IndexStatistics statistics() const = 0;
+ };
+ enum class Strategy { pe_online, pe_offline, trie_hi };
+ std::unique_ptr<Index> make_index(Strategy strategy);
+--- SNAP-dd12b2f5ac546566/code/include/directory/bitmap.hpp
++++ DIR-01-preparation/code/include/directory/bitmap.hpp
+@@ -22,6 +22,7 @@
+     void add(std::uint32_t id) { ensure(); roaring::api::roaring_bitmap_add(value_, id); }
+     void remove(std::uint32_t id) { if (value_) roaring::api::roaring_bitmap_remove(value_, id); }
+     bool contains(std::uint32_t id) const { return value_ && roaring::api::roaring_bitmap_contains(value_, id); }
++    std::size_t portable_size() const { return value_ ? roaring::api::roaring_bitmap_portable_size_in_bytes(value_) : 0; }
+     std::uint64_t cardinality() const { return value_ ? roaring::api::roaring_bitmap_get_cardinality(value_) : 0; }
+     std::vector<std::uint32_t> values() const {
+         std::vector<std::uint32_t> result(static_cast<std::size_t>(cardinality()));
+--- SNAP-dd12b2f5ac546566/code/src/index.cpp
++++ DIR-01-preparation/code/src/index.cpp
+@@ -24,6 +24,7 @@
+         }
+     }
+     const auto& entries() const { return entries_; }
++    std::size_t size() const { return entries_.size(); }
+ };
+ struct FlatNode : Token {
+     std::string path;
+@@ -38,6 +39,9 @@
+     std::map<std::string,std::set<std::string>> children_;
+     Catalog catalog_;
+     MaintenanceWork work_;
++#ifdef DIRECTORY_ENABLE_WORK_COUNTERS
++    mutable QueryWork query_work_;
++#endif
+     FlatNode& required(const std::string& path) const {
+         parse_path(path);
+         auto it=nodes_.find(path);
+@@ -94,24 +98,60 @@
+         else nodes_.at(path)->posting.add(id);
+     }
+     QueryResult query(const std::string& path,bool recursive) const override {
++#ifdef DIRECTORY_ENABLE_WORK_COUNTERS
++        query_work_={};
++        query_work_.path_segments=parse_path(path).size();
++#else
+         parse_path(path);
++#endif
+         auto it=nodes_.find(path);
+         if (it==nodes_.end()) return {false,Bitmap{}};
+         if (offline_) {
+             Bitmap result=it->second->posting;
++#ifdef DIRECTORY_ENABLE_WORK_COUNTERS
++            query_work_.directories_visited=1;
++            query_work_.direct_children=children_.at(path).size();
++            query_work_.bitmaps_read=1;
++            query_work_.bitmap_copies=1;
++#endif
+             if (!recursive) {
+                 Bitmap descendants;
+                 for (const auto& child:children_.at(path)) descendants|=nodes_.at(child)->posting;
+                 result-=descendants;
++#ifdef DIRECTORY_ENABLE_WORK_COUNTERS
++                query_work_.directories_visited+=query_work_.direct_children;
++                query_work_.bitmaps_read+=query_work_.direct_children;
++                query_work_.bitmap_unions=query_work_.direct_children;
++                query_work_.bitmap_differences=1;
++#endif
+             }
+             return {true,std::move(result)};
+         }
+-        if (!recursive) return {true,it->second->posting};
++        if (!recursive) {
++#ifdef DIRECTORY_ENABLE_WORK_COUNTERS
++            query_work_.directories_visited=1;
++            query_work_.direct_children=children_.at(path).size();
++            query_work_.bitmaps_read=1;
++            query_work_.bitmap_copies=1;
++#endif
++            return {true,it->second->posting};
++        }
++#ifdef DIRECTORY_ENABLE_WORK_COUNTERS
++        const auto paths=subtree(path);
++        query_work_.directories_visited=paths.size();
++        query_work_.direct_children=children_.at(path).size();
++        query_work_.bitmaps_read=paths.size();
++        query_work_.bitmap_unions=paths.size();
++        Bitmap result;
++        for (const auto& p:paths) result|=nodes_.at(p)->posting;
++#else
+         Bitmap result;
+         for (const auto& p:subtree(path)) result|=nodes_.at(p)->posting;
++#endif
+         return {true,std::move(result)};
+     }
+     void move(const std::string& source,const std::string& destination) override {
++        work_={};
+         auto& source_node=required(source); required(destination);
+         if (source=="/" || at_or_below(destination,source))
+             throw Error(ErrorCode::invalid_move,"Move would relocate root or form a cycle");
+@@ -135,6 +175,7 @@
+         if (offline_) update_ancestors(source,new_root,ids);
+     }
+     void merge(const std::string& source,const std::string& target) override {
++        work_={};
+         auto& source_node=required(source); required(target);
+         if (at_or_below(source,target) || at_or_below(target,source))
+             throw Error(ErrorCode::invalid_merge,"Merge roots must be disjoint");
+@@ -172,6 +213,21 @@
+     }
+     std::uint64_t identity(const std::string& p) const override { return required(p).uid; }
+     MaintenanceWork last_maintenance_work() const override { return work_; }
++    QueryWork last_query_work() const override {
++#ifdef DIRECTORY_ENABLE_WORK_COUNTERS
++        return query_work_;
++#else
++        return {};
++#endif
++    }
++    IndexStatistics statistics() const override {
++        IndexStatistics result;
++        result.directory_count=nodes_.size();
++        result.catalog_entry_count=catalog_.size();
++        result.bitmap_count=nodes_.size();
++        for (const auto& item:nodes_) result.roaring_portable_bytes+=item.second->posting.portable_size();
++        return result;
++    }
+     std::vector<std::string> validate() const override {
+         std::vector<std::string> errors;
+         if (!nodes_.count("/") || nodes_.size()!=children_.size()) errors.push_back("directory/auxiliary size or root mismatch");
+@@ -208,6 +264,9 @@
+     std::unique_ptr<TrieNode> root_=std::make_unique<TrieNode>(next_uid_++,"",nullptr);
+     Catalog catalog_;
+     MaintenanceWork work_;
++#ifdef DIRECTORY_ENABLE_WORK_COUNTERS
++    mutable QueryWork query_work_;
++#endif
+     TrieNode* locate(const std::string& path) const {
+         auto segments=parse_path(path);
+         auto* current=root_.get();
+@@ -275,17 +334,34 @@
+         for (auto* p=node;p;p=p->parent) p->inclusive.add(id);
+     }
+     QueryResult query(const std::string& path,bool recursive) const override {
++#ifdef DIRECTORY_ENABLE_WORK_COUNTERS
++        query_work_={};
++        query_work_.path_segments=parse_path(path).size();
++#endif
+         auto* node=locate(path);
+         if (!node) return {false,Bitmap{}};
+         Bitmap result=node->inclusive;
++#ifdef DIRECTORY_ENABLE_WORK_COUNTERS
++        query_work_.directories_visited=1;
++        query_work_.direct_children=node->children.size();
++        query_work_.bitmaps_read=1;
++        query_work_.bitmap_copies=1;
++#endif
+         if (!recursive) {
+             Bitmap descendants;
+             for (const auto& child:node->children) descendants|=child.second->inclusive;
+             result-=descendants;
++#ifdef DIRECTORY_ENABLE_WORK_COUNTERS
++            query_work_.directories_visited+=query_work_.direct_children;
++            query_work_.bitmaps_read+=query_work_.direct_children;
++            query_work_.bitmap_unions=query_work_.direct_children;
++            query_work_.bitmap_differences=1;
++#endif
+         }
+         return {true,std::move(result)};
+     }
+     void move(const std::string& source,const std::string& destination) override {
++        work_={};
+         auto& s=required(source); auto& d=required(destination);
+         if (&s==root_.get() || at_or_below(destination,source))
+             throw Error(ErrorCode::invalid_move,"Move would relocate root or form a cycle");
+@@ -304,6 +380,7 @@
+         update_ancestors(old_anc,new_anc,ids);
+     }
+     void merge(const std::string& source,const std::string& target) override {
++        work_={};
+         auto& s=required(source); auto& d=required(target);
+         if (at_or_below(source,target) || at_or_below(target,source))
+             throw Error(ErrorCode::invalid_merge,"Merge roots must be disjoint");
+@@ -329,6 +406,25 @@
+     }
+     std::uint64_t identity(const std::string& path) const override { return required(path).uid; }
+     MaintenanceWork last_maintenance_work() const override { return work_; }
++    QueryWork last_query_work() const override {
++#ifdef DIRECTORY_ENABLE_WORK_COUNTERS
++        return query_work_;
++#else
++        return {};
++#endif
++    }
++    IndexStatistics statistics() const override {
++        IndexStatistics result;
++        result.catalog_entry_count=catalog_.size();
++        std::function<void(const TrieNode*)> visit=[&](const TrieNode* node) {
++            ++result.directory_count;
++            ++result.bitmap_count;
++            result.roaring_portable_bytes+=node->inclusive.portable_size();
++            for (const auto& child:node->children) visit(child.second.get());
++        };
++        visit(root_.get());
++        return result;
++    }
+     std::vector<std::string> validate() const override {
+         std::vector<std::string> errors;
+         std::set<Token*> active;
+--- SNAP-dd12b2f5ac546566/code/scripts/build-test.cmd
++++ DIR-01-preparation/code/scripts/build-test.cmd
+@@ -13,10 +13,16 @@
+ set "OUT=%~dp0..\build-%TAG%"
+ python "%~dp0prepare-time-fixture.py" --project "%~dp0..\.." --output "%OUT%\time-pilot.tsv"
+ if errorlevel 1 exit /b 2
++python "%~dp0prepare-benchmark-fixtures.py" --project "%~dp0..\.." --output "%~dp0..\..\notes\benchmark-fixtures-20261026-01"
++if errorlevel 1 exit /b 2
+ "%CMAKE%" -S "%~dp0.." -B "%OUT%" -G Ninja -DCMAKE_MAKE_PROGRAM=D:/anaconda3/Scripts/ninja.exe -DCMAKE_BUILD_TYPE=%CONFIG% -DDIRECTORY_ENABLE_ASAN=%ASAN% "-DDIRECTORY_PILOT_TSV=%OUT%\time-pilot.tsv"
+ if errorlevel 1 exit /b 3
+ "%CMAKE%" --build "%OUT%" --parallel 2
+ if errorlevel 1 exit /b 4
+ "%CTEST%" --test-dir "%OUT%" --output-on-failure
+ if errorlevel 1 exit /b 5
++"%OUT%\directory_benchmark.exe" self-test "%~dp0..\..\notes\benchmark-fixtures-20261026-01"
++if errorlevel 1 exit /b 6
++"%OUT%\directory_benchmark_instrumented.exe" self-test "%~dp0..\..\notes\benchmark-fixtures-20261026-01"
++if errorlevel 1 exit /b 7
+ exit /b 0
+--- SNAP-dd12b2f5ac546566/code/README.md
++++ DIR-01-preparation/code/README.md
+@@ -15,19 +15,48 @@
+ 
+ 第一条构建普通 Release，第二条在独立目录为核心、测试与 CRoaring 启用 AddressSanitizer。均限制编译并行为 2，并通过 CTest 执行所有正确性测试。ASan 运行须保留 MSVC 运行库 PATH，因此使用此脚本加载现有开发环境。
+ 
+-脚本会校验已冻结的 `../notes/time-pilot-20261026-01/bindings.jsonl` 并生成构建目录内 TSV；样本缺失或哈希不符会停止，不自动重新选择数据。默认 CTest 包括位图所有权、固定语义、四种子各 1,000 步和时间样本正确性。所有检查使用显式 require，不依赖 Release 中会消失的 assert。
++脚本会校验已冻结的 `../notes/time-pilot-20261026-01/bindings.jsonl` 并生成构建目录内 TSV；样本缺失或哈希不符会停止，不自动重新选择数据。默认 CTest 包括位图所有权、固定语义、四种子各 1,000 步和时间样本正确性。脚本随后分别运行普通与插桩基准驱动的 `self-test`，覆盖三策略全目录/逐 ID oracle、固定查询摘要、DSM 锚点、拒绝不变性、计数和空间接口。所有检查使用显式 require，不依赖 Release 中会消失的 assert。
+ 
+ 可直接运行已构建测试程序的模式为 `bitmap`、`fixed`、`random <seed> <steps>`、`pilot <bindings.tsv>`。编译/CTest 耗时仅用于开发日志，不是论文性能结果。
+ 
+ ## 文件职责
+ 
+-- `include/directory/index.hpp`：统一目录接口、错误码和维护工作计数。
++- `include/directory/index.hpp`：统一目录接口、错误码、维护/查询诊断计数和只读空间统计。
++- `tests/benchmark.cpp`：DIR-01 驱动；公开 API 计时、逐查询/操作 JSONL、独立 oracle 校验和进程资源采集。
++- `scripts/prepare-benchmark-fixtures.py`：从冻结输入独立生成绑定、操作、查询基数/FNV-1a 摘要；哈希不符或已有文件不同即拒绝覆盖。
++- `scripts/run-dir01.py`：正式矩阵/资源停止/证据目录；`--plan-only` 只展开计划，不测量。
++- `scripts/summarize-dir01.py`：过滤预热，按进程和 pooled 样本汇总，nearest-rank 分位数；不完整记录直接失败。
+ - `include/directory/bitmap.hpp`：CRoaring C API 的小型内存所有权适配，不实现新位图算法。
+ - `src/path.cpp`：项目已明确的路径合法域与边界规则。
+ - `src/index.cpp`：两个路径展开方案和 TrieHI；两种 PE 共用辅助结构但保留不同 posting/查询/维护策略。
+ - `tests/oracle.*`：独立的路径/ID 枚举判定器，不调用生产路径助手、posting 或 Trie。
+ - `tests/core_tests.cpp`：论文图 2 手工预期、拒绝操作、稳定节点身份、随机状态核验和时间目录样本。
+ - `third_party/croaring/LOCK.json`：官方 v5.3.2 文件/许可证来源与 SHA-256；C/h 与官方 release digest 对齐。作者使用的版本未知。
++
++
++## DIR-01 准备状态与正式入口
++
++冻结输入和独立预期位于 `../notes/benchmark-fixtures-20261026-01/`。摘要定义为：对升序 uint32 ID 的小端四字节序列执行 FNV-1a 64；空集合为 offset basis。摘要用于发现意外变化，逐 ID 正确性仍由独立 oracle 判定，不以摘要碰撞概率代替集合核验。
++
++`directory_benchmark` 链接默认核心，不在范围查询路径维护查询计数；`directory_benchmark_instrumented` 从同一源码单独编译并定义 `DIRECTORY_ENABLE_WORK_COUNTERS`。后者只用于诊断，其计数是位图 API 调用/访问次数，不与默认时延混池。默认核心的 `last_query_work()` 返回零值，驱动依据 `instrumented` 明确标记 `not_collected_in_default_core`，不能把零解释为真实工作量。
++
++`statistics()` 只报告真实可取得的目录数、catalog 条目数、位图数和 CRoaring portable 大小。它不是堆容量、live bytes 或完整序列化索引大小。Windows working set/private bytes/peak working set 由进程 API 另行记录；不向量化，`vector_bytes=0`。
++
++准备自检命令：
++
++```powershell
++& 'D:\NewWorkspace\projects\P001-目录感知\code\build-Release\directory_benchmark.exe' self-test 'D:\NewWorkspace\projects\P001-目录感知\notes\benchmark-fixtures-20261026-01'
++& 'D:\NewWorkspace\projects\P001-目录感知\code\build-Release\directory_benchmark_instrumented.exe' self-test 'D:\NewWorkspace\projects\P001-目录感知\notes\benchmark-fixtures-20261026-01'
++python 'D:\NewWorkspace\projects\P001-目录感知\code\scripts\run-dir01.py' --project 'D:\NewWorkspace\projects\P001-目录感知' --plan-only
++```
++
++正式 DIR-01 为 5 run × 3 策略 × 7 子负载 = 105 个默认进程，另有 105 个插桩进程；每个进程 3 预热 + 20 测量。正式运行前必须先在 `EXPERIMENTS.md` 登记唯一真实实验编号，然后执行：
++
++```powershell
++python 'D:\NewWorkspace\projects\P001-目录感知\code\scripts\run-dir01.py' --project 'D:\NewWorkspace\projects\P001-目录感知' --experiment-id '<已登记实验编号>'
++```
++
++运行器会新建证据目录并复制协议、源码、输入和哈希，不会在已有目录混合重跑。完成条件仍以 `../notes/benchmark-protocol.md` §11 为准。准备自检和 `--plan-only` 不产生性能结果；本轮未执行上述正式矩阵。
+ 
+ ## 接口与语义
+ 

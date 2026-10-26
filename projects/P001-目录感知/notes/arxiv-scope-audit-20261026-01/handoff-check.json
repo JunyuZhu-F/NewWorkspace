@@ -1,0 +1,45 @@
+{
+  "date": "2026-10-26",
+  "script_hash_matches_selection": false,
+  "parser_hash_matches_selection": true,
+  "small_input_hash_changes": [],
+  "metadata_size_mtime_unchanged": true,
+  "independent_verification_status": "pass",
+  "queries": 20,
+  "references": 2000,
+  "missing_target_metadata": 0,
+  "broken_document_links": [],
+  "code_entries": 0,
+  "experiment_entries": 0,
+  "document_and_script_hashes": [
+    {
+      "path": "REPRODUCTION_PLAN.md",
+      "sha256": "5d325d5033f292f8c2d56ddb6e679701201957fc2a611f5a28631a3ae4deec6c"
+    },
+    {
+      "path": "STATE.md",
+      "sha256": "96b5e33202909811da66764049ee39415b5c0d56d2f17042b22eccff09557179"
+    },
+    {
+      "path": "notes\\data-audit.md",
+      "sha256": "a8dfd50dbdf157c1742bb26dfcff3e23e815fe1505135b87a1e4434fc318caac"
+    },
+    {
+      "path": "notes\\materials-and-gaps.md",
+      "sha256": "ad74649ee1ffc5c02031c2d874da4cd157c259a4be0944029b57563e988e98b6"
+    },
+    {
+      "path": "notes\\operation-spec.md",
+      "sha256": "3eae8444dfb06741509a6fe2c24d9fd0761284d86c98643d09115287b1fba521"
+    },
+    {
+      "path": "notes\\check_arxiv_scope_truth.py",
+      "sha256": "fab2e1438851da7cbc1f7cf43ab365aa426b2dda22409aa4ca2e7f9f9a697ae9"
+    },
+    {
+      "path": "notes\\verify_arxiv_scope_audit.py",
+      "sha256": "ea2f21f3b24f389cdd5ac5132b8108898c86d9ada65cc832f8182bf788731348"
+    }
+  ],
+  "scope": "Selected GT membership and metadata only. No vector retrieval, no performance experiment, not full DATA-01 completion."
+}

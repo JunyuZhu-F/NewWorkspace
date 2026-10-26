@@ -1,0 +1,115 @@
+Start testing: Oct 26 20:25 中国标准时间
+----------------------------------------------------------
+1/7 Testing: bitmap_contract
+1/7 Test: bitmap_contract
+Command: "D:/NewWorkspace/projects/P001-鐩綍鎰熺煡/code/build-RelWithDebInfo-ASan/directory_core_tests.exe" "bitmap"
+Directory: D:/NewWorkspace/projects/P001-鐩綍鎰熺煡/code/build-RelWithDebInfo-ASan
+"bitmap_contract" start time: Oct 26 20:25 中国标准时间
+Output:
+----------------------------------------------------------
+{"status":"pass","mode":"bitmap","logical_mutations":0,"scope_comparisons":0,"checks":9}
+<end of output>
+Test time =   0.24 sec
+----------------------------------------------------------
+Test Passed.
+"bitmap_contract" end time: Oct 26 20:25 中国标准时间
+"bitmap_contract" time elapsed: 00:00:00
+----------------------------------------------------------
+
+2/7 Testing: fixed_semantics
+2/7 Test: fixed_semantics
+Command: "D:/NewWorkspace/projects/P001-鐩綍鎰熺煡/code/build-RelWithDebInfo-ASan/directory_core_tests.exe" "fixed"
+Directory: D:/NewWorkspace/projects/P001-鐩綍鎰熺煡/code/build-RelWithDebInfo-ASan
+"fixed_semantics" start time: Oct 26 20:25 中国标准时间
+Output:
+----------------------------------------------------------
+{"status":"pass","mode":"fixed","logical_mutations":75,"scope_comparisons":3090,"checks":4611}
+<end of output>
+Test time =   0.30 sec
+----------------------------------------------------------
+Test Passed.
+"fixed_semantics" end time: Oct 26 20:25 中国标准时间
+"fixed_semantics" time elapsed: 00:00:00
+----------------------------------------------------------
+
+3/7 Testing: random_7
+3/7 Test: random_7
+Command: "D:/NewWorkspace/projects/P001-鐩綍鎰熺煡/code/build-RelWithDebInfo-ASan/directory_core_tests.exe" "random" "7" "1000"
+Directory: D:/NewWorkspace/projects/P001-鐩綍鎰熺煡/code/build-RelWithDebInfo-ASan
+"random_7" start time: Oct 26 20:25 中国标准时间
+Output:
+----------------------------------------------------------
+{"status":"pass","mode":"random","logical_mutations":816,"scope_comparisons":252588,"checks":267680}
+<end of output>
+Test time =  48.42 sec
+----------------------------------------------------------
+Test Passed.
+"random_7" end time: Oct 26 20:25 中国标准时间
+"random_7" time elapsed: 00:00:48
+----------------------------------------------------------
+
+4/7 Testing: random_42
+4/7 Test: random_42
+Command: "D:/NewWorkspace/projects/P001-鐩綍鎰熺煡/code/build-RelWithDebInfo-ASan/directory_core_tests.exe" "random" "42" "1000"
+Directory: D:/NewWorkspace/projects/P001-鐩綍鎰熺煡/code/build-RelWithDebInfo-ASan
+"random_42" start time: Oct 26 20:25 中国标准时间
+Output:
+----------------------------------------------------------
+{"status":"pass","mode":"random","logical_mutations":808,"scope_comparisons":243840,"checks":258932}
+<end of output>
+Test time =  43.21 sec
+----------------------------------------------------------
+Test Passed.
+"random_42" end time: Oct 26 20:26 中国标准时间
+"random_42" time elapsed: 00:00:43
+----------------------------------------------------------
+
+5/7 Testing: random_2026
+5/7 Test: random_2026
+Command: "D:/NewWorkspace/projects/P001-鐩綍鎰熺煡/code/build-RelWithDebInfo-ASan/directory_core_tests.exe" "random" "2026" "1000"
+Directory: D:/NewWorkspace/projects/P001-鐩綍鎰熺煡/code/build-RelWithDebInfo-ASan
+"random_2026" start time: Oct 26 20:26 中国标准时间
+Output:
+----------------------------------------------------------
+{"status":"pass","mode":"random","logical_mutations":785,"scope_comparisons":299292,"checks":314311}
+<end of output>
+Test time =  54.95 sec
+----------------------------------------------------------
+Test Passed.
+"random_2026" end time: Oct 26 20:27 中国标准时间
+"random_2026" time elapsed: 00:00:54
+----------------------------------------------------------
+
+6/7 Testing: random_65536
+6/7 Test: random_65536
+Command: "D:/NewWorkspace/projects/P001-鐩綍鎰熺煡/code/build-RelWithDebInfo-ASan/directory_core_tests.exe" "random" "65536" "1000"
+Directory: D:/NewWorkspace/projects/P001-鐩綍鎰熺煡/code/build-RelWithDebInfo-ASan
+"random_65536" start time: Oct 26 20:27 中国标准时间
+Output:
+----------------------------------------------------------
+{"status":"pass","mode":"random","logical_mutations":785,"scope_comparisons":257112,"checks":272099}
+<end of output>
+Test time =  44.70 sec
+----------------------------------------------------------
+Test Passed.
+"random_65536" end time: Oct 26 20:28 中国标准时间
+"random_65536" time elapsed: 00:00:44
+----------------------------------------------------------
+
+7/7 Testing: time_pilot_correctness
+7/7 Test: time_pilot_correctness
+Command: "D:/NewWorkspace/projects/P001-鐩綍鎰熺煡/code/build-RelWithDebInfo-ASan/directory_core_tests.exe" "pilot" "D:/NewWorkspace/projects/P001-鐩綍鎰熺煡/code/build-RelWithDebInfo-ASan/time-pilot.tsv"
+Directory: D:/NewWorkspace/projects/P001-鐩綍鎰熺煡/code/build-RelWithDebInfo-ASan
+"time_pilot_correctness" start time: Oct 26 20:28 中国标准时间
+Output:
+----------------------------------------------------------
+{"status":"pass","mode":"pilot","logical_mutations":3,"scope_comparisons":804,"checks":20867}
+<end of output>
+Test time =   5.10 sec
+----------------------------------------------------------
+Test Passed.
+"time_pilot_correctness" end time: Oct 26 20:28 中国标准时间
+"time_pilot_correctness" time elapsed: 00:00:05
+----------------------------------------------------------
+
+End testing: Oct 26 20:28 中国标准时间

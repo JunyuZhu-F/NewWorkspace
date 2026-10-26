@@ -1,0 +1,15 @@
+{
+  "sha": "de79569b07ed32b37e3725225dbcf86e1300b2f0",
+  "url": "https://api.github.com/repos/KurtPatrickHere/dir-vector-dataset/git/trees/de79569b07ed32b37e3725225dbcf86e1300b2f0",
+  "tree": [
+    {
+      "path": "README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4ef0fdef9dc74c916873e0d7bd6b192145a870ac",
+      "size": 6363,
+      "url": "https://api.github.com/repos/KurtPatrickHere/dir-vector-dataset/git/blobs/4ef0fdef9dc74c916873e0d7bd6b192145a870ac"
+    }
+  ],
+  "truncated": false
+}

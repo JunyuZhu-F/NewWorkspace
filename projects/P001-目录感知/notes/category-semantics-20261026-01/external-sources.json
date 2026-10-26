@@ -1,0 +1,14 @@
+[
+  {
+    "url": "https://info.arxiv.org/help/api/user-manual.html",
+    "status": "snapshot request failed; browser text was reviewed",
+    "error": "The SSL connection could not be established, see inner exception.",
+    "access_date": "2026-10-26"
+  },
+  {
+    "url": "https://arxiv.org/category_taxonomy",
+    "status": "snapshot request failed; browser text was reviewed",
+    "error": "The SSL connection could not be established, see inner exception.",
+    "access_date": "2026-10-26"
+  }
+]

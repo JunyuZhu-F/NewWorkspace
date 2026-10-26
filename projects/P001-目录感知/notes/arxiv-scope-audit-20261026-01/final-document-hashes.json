@@ -1,0 +1,22 @@
+[
+  {
+    "path": "REPRODUCTION_PLAN.md",
+    "sha256": "5d325d5033f292f8c2d56ddb6e679701201957fc2a611f5a28631a3ae4deec6c"
+  },
+  {
+    "path": "STATE.md",
+    "sha256": "e3f4bc5c30c9b5167f74c2711358e8f99ba6b47052b2aa1cc46dce6f509bd641"
+  },
+  {
+    "path": "notes\\data-audit.md",
+    "sha256": "cab3d264083059883b537c35f6e85d7b9266fd642a8c475749326e0a06d407c1"
+  },
+  {
+    "path": "notes\\operation-spec.md",
+    "sha256": "3eae8444dfb06741509a6fe2c24d9fd0761284d86c98643d09115287b1fba521"
+  },
+  {
+    "path": "notes\\materials-and-gaps.md",
+    "sha256": "ad74649ee1ffc5c02031c2d874da4cd157c259a4be0944029b57563e988e98b6"
+  }
+]

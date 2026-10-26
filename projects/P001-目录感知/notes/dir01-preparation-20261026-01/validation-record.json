@@ -1,0 +1,51 @@
+{
+  "timestamp": "2026-10-26T21:57:31+08:00",
+  "scope": "DIR-01 preparation only; no formal performance matrix or measurements",
+  "snapshot": "SNAP-0b110bb7dee8280f",
+  "source_snapshot_hash": "0b110bb7dee8280f2803bf91f558c99afe40db2954cd76f602fcb7b0601d7163",
+  "protocol_sha256": "81ec16d0f07ea1c74715de2a4b6c049c9292766ddc0e36240a1668f3a21eed24",
+  "fixture_manifest_sha256": "6a300c9d995084a5ae3782ae2d5b763e08056f900c0e23967749c5d3272fe1d8",
+  "git_status": "not a git repository at project or workspace root",
+  "commands": [
+    {
+      "command": "cmd /c code/scripts/build-test.cmd Release",
+      "exit_code": 0,
+      "ctest": "7/7 passed",
+      "default_self_test": "passed",
+      "instrumented_self_test": "passed",
+      "log": "release-build-test.log"
+    },
+    {
+      "command": "cmd /c code/scripts/build-test.cmd RelWithDebInfo asan",
+      "exit_code": 0,
+      "ctest": "7/7 passed",
+      "default_self_test": "passed",
+      "instrumented_self_test": "passed",
+      "asan_address_error_reported": false,
+      "log": "asan-build-test.log"
+    },
+    {
+      "command": "python code/scripts/run-dir01.py --project . --plan-only",
+      "exit_code": 0,
+      "processes_planned": 210,
+      "measurements_run": 0,
+      "output": "plan-only.json"
+    },
+    {
+      "command": "python -m py_compile code/scripts/prepare-benchmark-fixtures.py code/scripts/run-dir01.py code/scripts/summarize-dir01.py",
+      "exit_code": 0
+    }
+  ],
+  "expected_raw_counts_full_matrix": {
+    "process": 210,
+    "build": 1380,
+    "dsq": 62100,
+    "dsm": 3450,
+    "space": 1380
+  },
+  "performance_results": "not run",
+  "experiment_registration": "not created; preparation is not an experiment",
+  "snapshot_zip_sha256": "b99cb307ad56dda2b6c7faa2a47c3e6ea9e5075eee7959dc0de6602a26b2605b",
+  "snapshot_zip_entries": 32,
+  "snapshot_zip_content_matches_manifest": true
+}

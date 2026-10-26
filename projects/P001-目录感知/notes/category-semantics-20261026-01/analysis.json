@@ -1,0 +1,132 @@
+{
+  "started_and_completed_date_utc": "2026-10-26T11:46:46.802532+00:00",
+  "scope": "Saved selected GT metadata only; alternative interpretations analysed in memory, not applied to raw data",
+  "input_path": "notes\\arxiv-scope-audit-20261026-01\\references.jsonl",
+  "input_sha256": "6daeb01720c87aca5efc19b3d8b2c2f33c31f8a62e79eb02cfb9994e28b5acbd",
+  "script_sha256": "21c4a52d8bb2a2c818e6d821f119bffc5c592e4263761367555cb83231f6ae71",
+  "unique_records": 1998,
+  "raw_distinct_paths_per_record_histogram": {
+    "2": 722,
+    "1": 516,
+    "3": 360,
+    "4": 227,
+    "7": 19,
+    "6": 47,
+    "8": 7,
+    "5": 97,
+    "10": 1,
+    "9": 2
+  },
+  "maximal_paths_per_record_histogram": {
+    "2": 560,
+    "1": 984,
+    "3": 273,
+    "4": 127,
+    "5": 48,
+    "6": 5,
+    "8": 1
+  },
+  "records_with_raw_ancestor_labels": 1035,
+  "raw_ancestor_labels_removed_in_hypothetical_view": 1223,
+  "records_still_multibranch_in_maximal_path_view": 1014,
+  "records_with_equal_recursive_anchor_closures": 1998,
+  "finite_synthetic_prefix_checks": 567,
+  "direct_membership_difference_examples": [
+    {
+      "entry_id": 40238,
+      "raw_paths": [
+        "/Physics/nlin/",
+        "/Physics/nlin/nlin.CD/"
+      ],
+      "maximal_path_view": [
+        "/Physics/nlin/nlin.CD/"
+      ],
+      "anchors_with_different_direct_membership": [
+        "/Physics/nlin/"
+      ]
+    },
+    {
+      "entry_id": 40388,
+      "raw_paths": [
+        "/Physics/nlin/",
+        "/Physics/nlin/nlin.CD/"
+      ],
+      "maximal_path_view": [
+        "/Physics/nlin/nlin.CD/"
+      ],
+      "anchors_with_different_direct_membership": [
+        "/Physics/nlin/"
+      ]
+    },
+    {
+      "entry_id": 61051,
+      "raw_paths": [
+        "/Physics/nlin/",
+        "/Physics/nlin/nlin.CD/"
+      ],
+      "maximal_path_view": [
+        "/Physics/nlin/nlin.CD/"
+      ],
+      "anchors_with_different_direct_membership": [
+        "/Physics/nlin/"
+      ]
+    },
+    {
+      "entry_id": 65537,
+      "raw_paths": [
+        "/Physics/cond-mat/",
+        "/Physics/cond-mat/cond-mat.stat-mech/"
+      ],
+      "maximal_path_view": [
+        "/Physics/cond-mat/cond-mat.stat-mech/"
+      ],
+      "anchors_with_different_direct_membership": [
+        "/Physics/cond-mat/"
+      ]
+    },
+    {
+      "entry_id": 80252,
+      "raw_paths": [
+        "/Physics/astro-ph/",
+        "/Physics/physics/",
+        "/Physics/physics/physics.comp-ph/"
+      ],
+      "maximal_path_view": [
+        "/Physics/astro-ph/",
+        "/Physics/physics/physics.comp-ph/"
+      ],
+      "anchors_with_different_direct_membership": [
+        "/Physics/physics/"
+      ]
+    }
+  ],
+  "logical_move_example": {
+    "entry_id": 249848,
+    "original_metadata": {
+      "id": 249848,
+      "categories": [
+        "Physics/astro-ph/",
+        "Physics/gr-qc/",
+        "Physics/hep-ph/",
+        "Physics/hep-th/"
+      ],
+      "time": "2004/5/"
+    },
+    "assumption": "Every listed path represents an independent direct membership of the same payload ID",
+    "move_binding_from": "/Physics/gr-qc/",
+    "move_binding_to": "/Mathematics/gr-qc/",
+    "old_ancestor": "/Physics/",
+    "expected_payload_still_in_old_ancestor": true,
+    "naive_remove_entire_payload_would_retain_it": false,
+    "status": "Conditional logical counterexample, not a measured failure of paper code"
+  },
+  "bounded_source_check": {
+    "dataset_repo_fixed_tree_paths": [
+      "README.md"
+    ],
+    "issues_returned": 0,
+    "posted_messages": 0
+  },
+  "interpretation_status": "Recursive observations cannot identify direct memberships; author construction/catalog/DSM protocol remains unresolved",
+  "raw_data_modified": false
+}

@@ -1,0 +1,20 @@
+# Large local datasets are kept on disk but not published to GitHub.
+**/dataset/raw/
+
+# Native build outputs
+**/build*/
+
+# Language/tool caches and generated binaries
+**/__pycache__/
+*.py[cod]
+*.obj
+*.pdb
+*.exe
+*.ilk
+
+# Local editor and OS metadata
+.vs/
+.vscode/
+.idea/
+Thumbs.db
+Desktop.ini

@@ -1,0 +1,172 @@
+[
+  {
+    "directory": "/",
+    "direct_entries": 0,
+    "recursive_entries": 10000
+  },
+  {
+    "directory": "/1991/",
+    "direct_entries": 0,
+    "recursive_entries": 306
+  },
+  {
+    "directory": "/1991/10/",
+    "direct_entries": 76,
+    "recursive_entries": 76
+  },
+  {
+    "directory": "/1991/11/",
+    "direct_entries": 64,
+    "recursive_entries": 64
+  },
+  {
+    "directory": "/1991/12/",
+    "direct_entries": 78,
+    "recursive_entries": 78
+  },
+  {
+    "directory": "/1991/7/",
+    "direct_entries": 2,
+    "recursive_entries": 2
+  },
+  {
+    "directory": "/1991/8/",
+    "direct_entries": 28,
+    "recursive_entries": 28
+  },
+  {
+    "directory": "/1991/9/",
+    "direct_entries": 58,
+    "recursive_entries": 58
+  },
+  {
+    "directory": "/1992/",
+    "direct_entries": 0,
+    "recursive_entries": 3261
+  },
+  {
+    "directory": "/1992/1/",
+    "direct_entries": 193,
+    "recursive_entries": 193
+  },
+  {
+    "directory": "/1992/10/",
+    "direct_entries": 400,
+    "recursive_entries": 400
+  },
+  {
+    "directory": "/1992/11/",
+    "direct_entries": 453,
+    "recursive_entries": 453
+  },
+  {
+    "directory": "/1992/12/",
+    "direct_entries": 404,
+    "recursive_entries": 404
+  },
+  {
+    "directory": "/1992/2/",
+    "direct_entries": 134,
+    "recursive_entries": 134
+  },
+  {
+    "directory": "/1992/3/",
+    "direct_entries": 120,
+    "recursive_entries": 120
+  },
+  {
+    "directory": "/1992/4/",
+    "direct_entries": 225,
+    "recursive_entries": 225
+  },
+  {
+    "directory": "/1992/5/",
+    "direct_entries": 237,
+    "recursive_entries": 237
+  },
+  {
+    "directory": "/1992/6/",
+    "direct_entries": 237,
+    "recursive_entries": 237
+  },
+  {
+    "directory": "/1992/7/",
+    "direct_entries": 296,
+    "recursive_entries": 296
+  },
+  {
+    "directory": "/1992/8/",
+    "direct_entries": 226,
+    "recursive_entries": 226
+  },
+  {
+    "directory": "/1992/9/",
+    "direct_entries": 336,
+    "recursive_entries": 336
+  },
+  {
+    "directory": "/1993/",
+    "direct_entries": 0,
+    "recursive_entries": 6433
+  },
+  {
+    "directory": "/1993/1/",
+    "direct_entries": 400,
+    "recursive_entries": 400
+  },
+  {
+    "directory": "/1993/10/",
+    "direct_entries": 636,
+    "recursive_entries": 636
+  },
+  {
+    "directory": "/1993/11/",
+    "direct_entries": 669,
+    "recursive_entries": 669
+  },
+  {
+    "directory": "/1993/12/",
+    "direct_entries": 715,
+    "recursive_entries": 715
+  },
+  {
+    "directory": "/1993/2/",
+    "direct_entries": 426,
+    "recursive_entries": 426
+  },
+  {
+    "directory": "/1993/3/",
+    "direct_entries": 485,
+    "recursive_entries": 485
+  },
+  {
+    "directory": "/1993/4/",
+    "direct_entries": 473,
+    "recursive_entries": 473
+  },
+  {
+    "directory": "/1993/5/",
+    "direct_entries": 506,
+    "recursive_entries": 506
+  },
+  {
+    "directory": "/1993/6/",
+    "direct_entries": 504,
+    "recursive_entries": 504
+  },
+  {
+    "directory": "/1993/7/",
+    "direct_entries": 612,
+    "recursive_entries": 612
+  },
+  {
+    "directory": "/1993/8/",
+    "direct_entries": 519,
+    "recursive_entries": 519
+  },
+  {
+    "directory": "/1993/9/",
+    "direct_entries": 488,
+    "recursive_entries": 488
+  }
+]

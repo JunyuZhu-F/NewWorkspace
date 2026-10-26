@@ -1,0 +1,171 @@
+{
+  "status": "pass",
+  "verified_cases": 20,
+  "verified_gt_references": 2000,
+  "independent_regex_check_mismatches": [],
+  "counts_and_order_match_summary": true,
+  "script_hash_matches_record": true,
+  "per_set": {
+    "arxiv": {
+      "queries": 10,
+      "gt_references": 1000,
+      "recursive_matches": 1000,
+      "direct_matches": 600,
+      "descendant_only_matches": 400,
+      "lost_if_first_category_only": 314
+    },
+    "arxiv_category": {
+      "queries": 10,
+      "gt_references": 1000,
+      "recursive_matches": 1000,
+      "direct_matches": 600,
+      "descendant_only_matches": 400,
+      "lost_if_first_category_only": 478
+    }
+  },
+  "unique_metadata_records": 1998,
+  "unique_records_with_ancestor_and_descendant_category_paths": 1035,
+  "ancestor_descendant_examples": [
+    {
+      "entry_id": 40238,
+      "ancestor_descendant_path_pairs": [
+        [
+          "Physics/nlin/",
+          "Physics/nlin/nlin.CD/"
+        ]
+      ],
+      "metadata": {
+        "id": 40238,
+        "categories": [
+          "Physics/nlin/",
+          "Physics/nlin/nlin.CD/"
+        ],
+        "time": "1997/1/"
+      }
+    },
+    {
+      "entry_id": 40388,
+      "ancestor_descendant_path_pairs": [
+        [
+          "Physics/nlin/",
+          "Physics/nlin/nlin.CD/"
+        ]
+      ],
+      "metadata": {
+        "id": 40388,
+        "categories": [
+          "Physics/nlin/",
+          "Physics/nlin/nlin.CD/"
+        ],
+        "time": "1997/8/"
+      }
+    },
+    {
+      "entry_id": 61051,
+      "ancestor_descendant_path_pairs": [
+        [
+          "Physics/nlin/",
+          "Physics/nlin/nlin.CD/"
+        ]
+      ],
+      "metadata": {
+        "id": 61051,
+        "categories": [
+          "Physics/nlin/",
+          "Physics/nlin/nlin.CD/"
+        ],
+        "time": "1998/12/"
+      }
+    },
+    {
+      "entry_id": 65537,
+      "ancestor_descendant_path_pairs": [
+        [
+          "Physics/cond-mat/",
+          "Physics/cond-mat/cond-mat.stat-mech/"
+        ]
+      ],
+      "metadata": {
+        "id": 65537,
+        "categories": [
+          "Physics/cond-mat/",
+          "Physics/cond-mat/cond-mat.stat-mech/"
+        ],
+        "time": "1998/12/"
+      }
+    },
+    {
+      "entry_id": 80252,
+      "ancestor_descendant_path_pairs": [
+        [
+          "Physics/physics/",
+          "Physics/physics/physics.comp-ph/"
+        ]
+      ],
+      "metadata": {
+        "id": 80252,
+        "categories": [
+          "Physics/astro-ph/",
+          "Physics/physics/",
+          "Physics/physics/physics.comp-ph/"
+        ],
+        "time": "1999/1/"
+      }
+    }
+  ],
+  "repeated_ids_across_selected_cases": [
+    {
+      "entry_id": 340079,
+      "cases": [
+        {
+          "dataset": "arxiv",
+          "query_row": 4,
+          "type": "category",
+          "anchor": "Physics/gr-qc/"
+        },
+        {
+          "dataset": "arxiv",
+          "query_row": 13,
+          "type": "category",
+          "anchor": "Physics/"
+        }
+      ],
+      "metadata": {
+        "id": 340079,
+        "categories": [
+          "Physics/astro-ph/",
+          "Physics/gr-qc/",
+          "Physics/hep-ph/"
+        ],
+        "time": "2006/4/"
+      }
+    },
+    {
+      "entry_id": 1539060,
+      "cases": [
+        {
+          "dataset": "arxiv_category",
+          "query_row": 8,
+          "type": "category",
+          "anchor": "Physics/cond-mat/cond-mat.stat-mech/"
+        },
+        {
+          "dataset": "arxiv_category",
+          "query_row": 11,
+          "type": "category",
+          "anchor": "Physics/"
+        }
+      ],
+      "metadata": {
+        "id": 1539060,
+        "categories": [
+          "Mathematics/math.PR/",
+          "Physics/cond-mat/",
+          "Physics/cond-mat/cond-mat.stat-mech/"
+        ],
+        "time": "2019/6/"
+      }
+    }
+  ],
+  "limits": "Verification of membership and evidence only; no closest-neighbor, completeness, or DSM validation"
+}

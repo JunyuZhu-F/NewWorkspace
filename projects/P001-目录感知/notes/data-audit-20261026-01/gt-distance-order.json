@@ -1,0 +1,397 @@
+{
+  "query_rows": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    127,
+    255,
+    511,
+    767,
+    999
+  ],
+  "scope": "Order consistency within provided 100 GT IDs only; not a corpus search",
+  "tolerance": "adjacent inversion if later score > former + 1e-7 * max(1, abs(former), abs(later))",
+  "script_sha256": "34a12ab8002aa69929c85d99379f2e658b181f7ac8db221f1c73cc1ff73c8f55",
+  "sets": {
+    "arxiv": {
+      "rows": [
+        {
+          "query_row": 0,
+          "listed_first_id": 983282,
+          "metrics": {
+            "inner_product": {
+              "adjacent_order_inversions": 46,
+              "listed_first_rank_among_listed_ids": 1
+            },
+            "cosine": {
+              "adjacent_order_inversions": 43,
+              "listed_first_rank_among_listed_ids": 1
+            },
+            "negative_squared_l2": {
+              "adjacent_order_inversions": 0,
+              "listed_first_rank_among_listed_ids": 1
+            }
+          }
+        },
+        {
+          "query_row": 1,
+          "listed_first_id": 2013713,
+          "metrics": {
+            "inner_product": {
+              "adjacent_order_inversions": 46,
+              "listed_first_rank_among_listed_ids": 1
+            },
+            "cosine": {
+              "adjacent_order_inversions": 43,
+              "listed_first_rank_among_listed_ids": 1
+            },
+            "negative_squared_l2": {
+              "adjacent_order_inversions": 0,
+              "listed_first_rank_among_listed_ids": 1
+            }
+          }
+        },
+        {
+          "query_row": 2,
+          "listed_first_id": 2585697,
+          "metrics": {
+            "inner_product": {
+              "adjacent_order_inversions": 50,
+              "listed_first_rank_among_listed_ids": 1
+            },
+            "cosine": {
+              "adjacent_order_inversions": 47,
+              "listed_first_rank_among_listed_ids": 1
+            },
+            "negative_squared_l2": {
+              "adjacent_order_inversions": 0,
+              "listed_first_rank_among_listed_ids": 1
+            }
+          }
+        },
+        {
+          "query_row": 3,
+          "listed_first_id": 2699854,
+          "metrics": {
+            "inner_product": {
+              "adjacent_order_inversions": 49,
+              "listed_first_rank_among_listed_ids": 1
+            },
+            "cosine": {
+              "adjacent_order_inversions": 46,
+              "listed_first_rank_among_listed_ids": 1
+            },
+            "negative_squared_l2": {
+              "adjacent_order_inversions": 0,
+              "listed_first_rank_among_listed_ids": 1
+            }
+          }
+        },
+        {
+          "query_row": 4,
+          "listed_first_id": 995121,
+          "metrics": {
+            "inner_product": {
+              "adjacent_order_inversions": 51,
+              "listed_first_rank_among_listed_ids": 1
+            },
+            "cosine": {
+              "adjacent_order_inversions": 49,
+              "listed_first_rank_among_listed_ids": 1
+            },
+            "negative_squared_l2": {
+              "adjacent_order_inversions": 0,
+              "listed_first_rank_among_listed_ids": 1
+            }
+          }
+        },
+        {
+          "query_row": 127,
+          "listed_first_id": 1598616,
+          "metrics": {
+            "inner_product": {
+              "adjacent_order_inversions": 45,
+              "listed_first_rank_among_listed_ids": 1
+            },
+            "cosine": {
+              "adjacent_order_inversions": 44,
+              "listed_first_rank_among_listed_ids": 1
+            },
+            "negative_squared_l2": {
+              "adjacent_order_inversions": 0,
+              "listed_first_rank_among_listed_ids": 1
+            }
+          }
+        },
+        {
+          "query_row": 255,
+          "listed_first_id": 1823788,
+          "metrics": {
+            "inner_product": {
+              "adjacent_order_inversions": 49,
+              "listed_first_rank_among_listed_ids": 1
+            },
+            "cosine": {
+              "adjacent_order_inversions": 47,
+              "listed_first_rank_among_listed_ids": 1
+            },
+            "negative_squared_l2": {
+              "adjacent_order_inversions": 0,
+              "listed_first_rank_among_listed_ids": 1
+            }
+          }
+        },
+        {
+          "query_row": 511,
+          "listed_first_id": 2666958,
+          "metrics": {
+            "inner_product": {
+              "adjacent_order_inversions": 51,
+              "listed_first_rank_among_listed_ids": 1
+            },
+            "cosine": {
+              "adjacent_order_inversions": 49,
+              "listed_first_rank_among_listed_ids": 1
+            },
+            "negative_squared_l2": {
+              "adjacent_order_inversions": 0,
+              "listed_first_rank_among_listed_ids": 1
+            }
+          }
+        },
+        {
+          "query_row": 767,
+          "listed_first_id": 1861244,
+          "metrics": {
+            "inner_product": {
+              "adjacent_order_inversions": 50,
+              "listed_first_rank_among_listed_ids": 1
+            },
+            "cosine": {
+              "adjacent_order_inversions": 47,
+              "listed_first_rank_among_listed_ids": 1
+            },
+            "negative_squared_l2": {
+              "adjacent_order_inversions": 0,
+              "listed_first_rank_among_listed_ids": 1
+            }
+          }
+        },
+        {
+          "query_row": 999,
+          "listed_first_id": 272559,
+          "metrics": {
+            "inner_product": {
+              "adjacent_order_inversions": 48,
+              "listed_first_rank_among_listed_ids": 1
+            },
+            "cosine": {
+              "adjacent_order_inversions": 42,
+              "listed_first_rank_among_listed_ids": 1
+            },
+            "negative_squared_l2": {
+              "adjacent_order_inversions": 0,
+              "listed_first_rank_among_listed_ids": 1
+            }
+          }
+        }
+      ],
+      "total_adjacent_inversions": {
+        "inner_product": 485,
+        "cosine": 457,
+        "negative_squared_l2": 0
+      }
+    },
+    "arxiv_category": {
+      "rows": [
+        {
+          "query_row": 0,
+          "listed_first_id": 835939,
+          "metrics": {
+            "inner_product": {
+              "adjacent_order_inversions": 45,
+              "listed_first_rank_among_listed_ids": 1
+            },
+            "cosine": {
+              "adjacent_order_inversions": 43,
+              "listed_first_rank_among_listed_ids": 1
+            },
+            "negative_squared_l2": {
+              "adjacent_order_inversions": 0,
+              "listed_first_rank_among_listed_ids": 1
+            }
+          }
+        },
+        {
+          "query_row": 1,
+          "listed_first_id": 752040,
+          "metrics": {
+            "inner_product": {
+              "adjacent_order_inversions": 49,
+              "listed_first_rank_among_listed_ids": 1
+            },
+            "cosine": {
+              "adjacent_order_inversions": 43,
+              "listed_first_rank_among_listed_ids": 1
+            },
+            "negative_squared_l2": {
+              "adjacent_order_inversions": 0,
+              "listed_first_rank_among_listed_ids": 1
+            }
+          }
+        },
+        {
+          "query_row": 2,
+          "listed_first_id": 2006621,
+          "metrics": {
+            "inner_product": {
+              "adjacent_order_inversions": 44,
+              "listed_first_rank_among_listed_ids": 1
+            },
+            "cosine": {
+              "adjacent_order_inversions": 43,
+              "listed_first_rank_among_listed_ids": 1
+            },
+            "negative_squared_l2": {
+              "adjacent_order_inversions": 0,
+              "listed_first_rank_among_listed_ids": 1
+            }
+          }
+        },
+        {
+          "query_row": 3,
+          "listed_first_id": 1103905,
+          "metrics": {
+            "inner_product": {
+              "adjacent_order_inversions": 53,
+              "listed_first_rank_among_listed_ids": 1
+            },
+            "cosine": {
+              "adjacent_order_inversions": 48,
+              "listed_first_rank_among_listed_ids": 1
+            },
+            "negative_squared_l2": {
+              "adjacent_order_inversions": 0,
+              "listed_first_rank_among_listed_ids": 1
+            }
+          }
+        },
+        {
+          "query_row": 4,
+          "listed_first_id": 226898,
+          "metrics": {
+            "inner_product": {
+              "adjacent_order_inversions": 49,
+              "listed_first_rank_among_listed_ids": 1
+            },
+            "cosine": {
+              "adjacent_order_inversions": 47,
+              "listed_first_rank_among_listed_ids": 1
+            },
+            "negative_squared_l2": {
+              "adjacent_order_inversions": 0,
+              "listed_first_rank_among_listed_ids": 1
+            }
+          }
+        },
+        {
+          "query_row": 127,
+          "listed_first_id": 2481852,
+          "metrics": {
+            "inner_product": {
+              "adjacent_order_inversions": 50,
+              "listed_first_rank_among_listed_ids": 1
+            },
+            "cosine": {
+              "adjacent_order_inversions": 47,
+              "listed_first_rank_among_listed_ids": 1
+            },
+            "negative_squared_l2": {
+              "adjacent_order_inversions": 0,
+              "listed_first_rank_among_listed_ids": 1
+            }
+          }
+        },
+        {
+          "query_row": 255,
+          "listed_first_id": 1511802,
+          "metrics": {
+            "inner_product": {
+              "adjacent_order_inversions": 52,
+              "listed_first_rank_among_listed_ids": 1
+            },
+            "cosine": {
+              "adjacent_order_inversions": 50,
+              "listed_first_rank_among_listed_ids": 1
+            },
+            "negative_squared_l2": {
+              "adjacent_order_inversions": 0,
+              "listed_first_rank_among_listed_ids": 1
+            }
+          }
+        },
+        {
+          "query_row": 511,
+          "listed_first_id": 410526,
+          "metrics": {
+            "inner_product": {
+              "adjacent_order_inversions": 46,
+              "listed_first_rank_among_listed_ids": 1
+            },
+            "cosine": {
+              "adjacent_order_inversions": 43,
+              "listed_first_rank_among_listed_ids": 1
+            },
+            "negative_squared_l2": {
+              "adjacent_order_inversions": 0,
+              "listed_first_rank_among_listed_ids": 1
+            }
+          }
+        },
+        {
+          "query_row": 767,
+          "listed_first_id": 1410056,
+          "metrics": {
+            "inner_product": {
+              "adjacent_order_inversions": 43,
+              "listed_first_rank_among_listed_ids": 1
+            },
+            "cosine": {
+              "adjacent_order_inversions": 41,
+              "listed_first_rank_among_listed_ids": 1
+            },
+            "negative_squared_l2": {
+              "adjacent_order_inversions": 0,
+              "listed_first_rank_among_listed_ids": 1
+            }
+          }
+        },
+        {
+          "query_row": 999,
+          "listed_first_id": 662372,
+          "metrics": {
+            "inner_product": {
+              "adjacent_order_inversions": 51,
+              "listed_first_rank_among_listed_ids": 1
+            },
+            "cosine": {
+              "adjacent_order_inversions": 44,
+              "listed_first_rank_among_listed_ids": 1
+            },
+            "negative_squared_l2": {
+              "adjacent_order_inversions": 0,
+              "listed_first_rank_among_listed_ids": 1
+            }
+          }
+        }
+      ],
+      "total_adjacent_inversions": {
+        "inner_product": 482,
+        "cosine": 449,
+        "negative_squared_l2": 0
+      }
+    }
+  }
+}

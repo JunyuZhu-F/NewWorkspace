@@ -1,0 +1,195 @@
+{
+  "date": "2026-10-26",
+  "source_snapshot_id": "SNAP-dd12b2f5ac546566",
+  "status": "pass",
+  "checks": {
+    "source_manifest_matches": true,
+    "snapshot_zip_hash": true,
+    "snapshot_content_matches": true,
+    "vendor_files_match": true,
+    "official_c_h_digests_match": true,
+    "Release_seven_tests": true,
+    "Release_binary_hash": true,
+    "Release_fixture_hash": true,
+    "RelWithDebInfo-ASan_seven_tests": true,
+    "RelWithDebInfo-ASan_binary_hash": true,
+    "RelWithDebInfo-ASan_fixture_hash": true,
+    "asan_no_address_error_report": true,
+    "frozen_pilot_outputs_unchanged": true,
+    "paper_hash_unchanged": true,
+    "original_raw_sizes_mtimes_unchanged": true,
+    "initial_pilot_anchors": true,
+    "move_pilot_anchors": true,
+    "merge_pilot_anchors": true,
+    "TASK.md_no_replacement_character": true,
+    "REPRODUCTION_PLAN.md_no_replacement_character": true,
+    "STATE.md_no_replacement_character": true,
+    "README.md_no_replacement_character": true,
+    "EXPERIMENTS.md_no_replacement_character": true,
+    "AGENTS.md_no_replacement_character": true,
+    "notes/core-review.md_no_replacement_character": true,
+    "notes/operation-spec.md_no_replacement_character": true,
+    "notes/environment.md_no_replacement_character": true,
+    "notes/materials-and-gaps.md_no_replacement_character": true,
+    "code/README.md_no_replacement_character": true,
+    "code/AGENTS.md_no_replacement_character": true,
+    "markdown_file_links_resolve": true,
+    "completed_core_statuses": true,
+    "unresolved_parent_statuses": true,
+    "performance_not_started": true
+  },
+  "errors": [],
+  "raw_inventory_comparison": [
+    {
+      "path": "dataset/raw/WIKI-Dir/dbpedia_dir_2m_corpus_paths.json",
+      "size_same": true,
+      "mtime_same_to_2us": true
+    },
+    {
+      "path": "dataset/raw/WIKI-Dir/dbpedia_dir_2m_corpus_vectors-001.fvecs",
+      "size_same": true,
+      "mtime_same_to_2us": true
+    },
+    {
+      "path": "dataset/raw/WIKI-Dir/dbpedia_dir_2m_corpus.jsonl",
+      "size_same": true,
+      "mtime_same_to_2us": true
+    },
+    {
+      "path": "dataset/raw/WIKI-Dir/dbpedia_dir_2m_groundtruth.tsv",
+      "size_same": true,
+      "mtime_same_to_2us": true
+    },
+    {
+      "path": "dataset/raw/WIKI-Dir/dbpedia_dir_2m_query_vectors.fvecs",
+      "size_same": true,
+      "mtime_same_to_2us": true
+    },
+    {
+      "path": "dataset/raw/WIKI-Dir/dbpedia_dir_2m_query.jsonl",
+      "size_same": true,
+      "mtime_same_to_2us": true
+    },
+    {
+      "path": "dataset/raw/ARXIV-Dir/arxiv_category_ground_truth.txt",
+      "size_same": true,
+      "mtime_same_to_2us": true
+    },
+    {
+      "path": "dataset/raw/ARXIV-Dir/arxiv_category_query_constraint.json",
+      "size_same": true,
+      "mtime_same_to_2us": true
+    },
+    {
+      "path": "dataset/raw/ARXIV-Dir/arxiv_category_query_vectors.fvecs",
+      "size_same": true,
+      "mtime_same_to_2us": true
+    },
+    {
+      "path": "dataset/raw/ARXIV-Dir/arxiv_corpus_metadata.json",
+      "size_same": true,
+      "mtime_same_to_2us": true
+    },
+    {
+      "path": "dataset/raw/ARXIV-Dir/arxiv_corpus_vectors.fvecs",
+      "size_same": true,
+      "mtime_same_to_2us": true
+    },
+    {
+      "path": "dataset/raw/ARXIV-Dir/arxiv_ground_truth.txt",
+      "size_same": true,
+      "mtime_same_to_2us": true
+    },
+    {
+      "path": "dataset/raw/ARXIV-Dir/arxiv_query_constraint.json",
+      "size_same": true,
+      "mtime_same_to_2us": true
+    },
+    {
+      "path": "dataset/raw/ARXIV-Dir/arxiv_query_vectors.fvecs",
+      "size_same": true,
+      "mtime_same_to_2us": true
+    }
+  ],
+  "raw_check_boundary": "sizes and mtimes only; not a full raw-data checksum",
+  "pilot_anchor_crosscheck": {
+    "initial": {
+      "/": 10000,
+      "/1991/": 306,
+      "/1992/": 3261,
+      "/1993/": 6433,
+      "/1992/1/": 193,
+      "/1991/7/": 2,
+      "/1992/7/": 296,
+      "/1991/8/": 28,
+      "/1992/8/": 226
+    },
+    "after_move": {
+      "/1991/1/": 193,
+      "/1991/": 499,
+      "/1992/": 3068,
+      "/": 10000
+    },
+    "after_merge": {
+      "/1991/7/": 298,
+      "/1991/": 795,
+      "/1992/": 2772,
+      "/": 10000
+    }
+  },
+  "documentation_hashes": [
+    {
+      "path": "TASK.md",
+      "sha256": "86b3b857935f06042b63711b531417802bbc3c735510ff9ffbcdec899f7f2178"
+    },
+    {
+      "path": "REPRODUCTION_PLAN.md",
+      "sha256": "fb021d7cb9e4d0077e7463cc6c53e3abf7753f5ab9bdc53bbd9cadbe38b7f51f"
+    },
+    {
+      "path": "STATE.md",
+      "sha256": "586c26cbc78e95302e70c431db73d02f4d102a193cd34a51c87bef44d22d1859"
+    },
+    {
+      "path": "README.md",
+      "sha256": "95c0bbb2848db632ce2a23db0dcd67edbcd4b1fe01417a2707ce1ced9af70173"
+    },
+    {
+      "path": "EXPERIMENTS.md",
+      "sha256": "948629d70ebaa0475f36b0543a8de9be190a78a96d5653c0efd1050f5cf09640"
+    },
+    {
+      "path": "AGENTS.md",
+      "sha256": "dedaae49a8cf061722c920f134622226f0188b7231c1521c6c28cba1ff697aca"
+    },
+    {
+      "path": "notes/core-review.md",
+      "sha256": "dbe41a6997c7ea64cbcb671a2edc19d3d0281d0821317b94b7aa17913cd0c620"
+    },
+    {
+      "path": "notes/operation-spec.md",
+      "sha256": "9c0f6c1467b1b9b1737e2901130ebc70f1a6c9e1181e21472c9124f914715d84"
+    },
+    {
+      "path": "notes/environment.md",
+      "sha256": "2b1b30e3c6ba8cb5a528c7fe68dfd4ace0a469136786cadff4adc1bc74f7cf10"
+    },
+    {
+      "path": "notes/materials-and-gaps.md",
+      "sha256": "dfd23cd978e8b216dc407c083ece4708b3aa1e0e7a34b8d5544cd32b0aecea17"
+    },
+    {
+      "path": "code/README.md",
+      "sha256": "8e3121338fd248c0eb9f8c6e86fcda92bf15aa51f6353c2210c394fbcafca711"
+    },
+    {
+      "path": "code/AGENTS.md",
+      "sha256": "0ac4d38cbfcce2a588007551579ffb49d1403849219beda4c0378e37e72c9361"
+    }
+  ],
+  "broken_links": [],
+  "tool_attempts": [
+    "One oversized combined document-write command was rejected by tool policy before execution; smaller apply_patch writes and bounded Python updates completed the same authorized task. No permission escalation."
+  ],
+  "scope": "handoff consistency only; no new algorithm or performance run"
+}

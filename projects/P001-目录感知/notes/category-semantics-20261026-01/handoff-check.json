@@ -1,0 +1,42 @@
+{
+  "date": "2026-10-26",
+  "category_analysis_script_hash_matches": true,
+  "time_preparation_script_hash_matches": true,
+  "verification_status": "pass",
+  "time_input_metadata_size_mtime_unchanged": true,
+  "broken_document_links": [],
+  "documents_with_replacement_characters": [],
+  "code_entries": 0,
+  "experiment_entries": 0,
+  "document_hashes": [
+    {
+      "path": "TASK.md",
+      "sha256": "ee363681d514df875cde56da6471ebba51d024ced0fb3a212e90539599a11836"
+    },
+    {
+      "path": "REPRODUCTION_PLAN.md",
+      "sha256": "5066d51890d7ff4b518b66a65f3fad9d05fa33e09a0dd1c0b28dbb57d95b3ee1"
+    },
+    {
+      "path": "STATE.md",
+      "sha256": "5e28546e80b1815cd88ed31ec4f278ff997e20b715f4526bd471c9b5b68ee6e3"
+    },
+    {
+      "path": "notes\\category-semantics.md",
+      "sha256": "cfd5cdfe329dee397b8c447f42d6cae8f422d7da5a299bca742533dcd40889da"
+    },
+    {
+      "path": "notes\\data-audit.md",
+      "sha256": "9316b2e69c06b29a5c26feada9b55e30adb2f890beb3e58041ad9c809d404c16"
+    },
+    {
+      "path": "notes\\operation-spec.md",
+      "sha256": "2ec8bb94ccdcd67efff090af8a80d94ee1a1077ad35082fc4259dbadf31aeae8"
+    },
+    {
+      "path": "notes\\materials-and-gaps.md",
+      "sha256": "c8e8dbde9ad09f51a4e02a117467f4c262461ddf3912740ef38818cced13dedd"
+    }
+  ],
+  "scope": "Category interpretation audit and metadata-only time pilot; not a paper strategy implementation or experiment"
+}

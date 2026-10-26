@@ -1,0 +1,15 @@
+{
+  "date": "2026-10-26",
+  "broken_document_links": [],
+  "audit_raw_size_mtime_unchanged": true,
+  "code_entries": 0,
+  "experiment_entries": 0,
+  "cpp_probe": {
+    "cplusplus": 201703,
+    "msvc": 1951,
+    "pointer_bits": 64,
+    "ok": true
+  },
+  "no_full_corpus_integrity_claim": true,
+  "note": "Material and environment checks only; no DSQ/DSM benchmark, no ANN search"
+}

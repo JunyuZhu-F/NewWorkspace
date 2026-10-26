@@ -1,0 +1,35 @@
+{
+  "date": "2026-10-26",
+  "independent_vector_checks": [
+    {
+      "file": "dataset\\raw\\ARXIV-Dir\\arxiv_query_vectors.fvecs",
+      "row": 442,
+      "dimension": 1024,
+      "l2_norm": 19.82951523987965,
+      "method": "PowerShell BinaryReader float32 loop, independent of numpy"
+    },
+    {
+      "file": "dataset\\raw\\ARXIV-Dir\\arxiv_category_query_vectors.fvecs",
+      "row": 352,
+      "dimension": 1024,
+      "l2_norm": 20.45365906005558,
+      "method": "PowerShell BinaryReader float32 loop, independent of numpy"
+    },
+    {
+      "file": "dataset\\raw\\WIKI-Dir\\dbpedia_dir_2m_query_vectors.fvecs",
+      "row": 370,
+      "dimension": 1024,
+      "l2_norm": 1.0003110326611435,
+      "method": "PowerShell BinaryReader float32 loop, independent of numpy"
+    }
+  ],
+  "independent_entry_145": {
+    "id": 145,
+    "categories": [
+      "Mathematics/math.DG/",
+      "Mathematics/math.QA/",
+      "Physics/hep-th/"
+    ],
+    "time": "1991/10/"
+  }
+}

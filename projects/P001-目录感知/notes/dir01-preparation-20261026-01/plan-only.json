@@ -1,0 +1,40 @@
+{
+  "status": "plan_only_no_measurements",
+  "processes": 210,
+  "runs": 5,
+  "warmups": 3,
+  "measurements": 20,
+  "workloads": [
+    [
+      "figure2",
+      "build"
+    ],
+    [
+      "figure2",
+      "dsq"
+    ],
+    [
+      "figure2",
+      "move"
+    ],
+    [
+      "figure2",
+      "merge"
+    ],
+    [
+      "time",
+      "build"
+    ],
+    [
+      "time",
+      "dsq"
+    ],
+    [
+      "time",
+      "dsm"
+    ]
+  ],
+  "strategy_rotation": "cyclic",
+  "instrumented_processes": 105,
+  "protocol_sha256": "81ec16d0f07ea1c74715de2a4b6c049c9292766ddc0e36240a1668f3a21eed24"
+}

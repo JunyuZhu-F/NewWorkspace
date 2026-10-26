@@ -1,0 +1,45 @@
+{
+  "reference_commit": "22a28101089515ddef85b96617449924baef9f35",
+  "reference_url": "https://github.com/volcengine/OpenViking/blob/22a28101089515ddef85b96617449924baef9f35/benchmark/vectordb_perf/run.py",
+  "reference_sha256": "e3a32a90529a7b228b8f4a524cbaf3767325a4ec69df60aff2f566b9e5237dab",
+  "execution_scope": "Only six reviewed pure helper definitions and GENERIC_PATH_FIELDS; no module import, no benchmark execution",
+  "entry_145": {
+    "input": {
+      "id": 145,
+      "categories": [
+        "Mathematics/math.DG/",
+        "Mathematics/math.QA/",
+        "Physics/hep-th/"
+      ],
+      "time": "1991/10/"
+    },
+    "legacy_path": "/Mathematics/math.DG;/Mathematics/math.QA;/Physics/hep-th",
+    "resource_uri": "viking://resources/bench/arxiv/Mathematics/math.DG/145"
+  },
+  "queries": {
+    "arxiv_query_constraint.json": {
+      "records": 1000,
+      "root_scopes_returned": 1000,
+      "first_input": {
+        "query_id": 0,
+        "constraints": {
+          "time": "2014/"
+        }
+      },
+      "first_extracted_path": "/",
+      "first_resource_uri": "viking://resources/bench/arxiv"
+    },
+    "arxiv_category_query_constraint.json": {
+      "records": 1000,
+      "root_scopes_returned": 1000,
+      "first_input": {
+        "query_id": 0,
+        "constraints": {
+          "category": "Mathematics/math.LO/"
+        }
+      },
+      "first_extracted_path": "/",
+      "first_resource_uri": "viking://resources/bench/arxiv"
+    }
+  }
+}

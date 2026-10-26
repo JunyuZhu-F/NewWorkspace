@@ -1,0 +1,184 @@
+[
+  {
+    "repo": "KurtPatrickHere/dir-vector-dataset",
+    "sha": "de79569b07ed32b37e3725225dbcf86e1300b2f0",
+    "commit_date": "2026-06-10T01:29:30Z",
+    "url": "https://github.com/KurtPatrickHere/dir-vector-dataset/tree/de79569b07ed32b37e3725225dbcf86e1300b2f0",
+    "root_entries": [
+      {
+        "name": "README.md",
+        "type": "file"
+      }
+    ],
+    "status": "metadata verified; source implementation not audited"
+  },
+  {
+    "repo": "volcengine/OpenViking",
+    "sha": "22a28101089515ddef85b96617449924baef9f35",
+    "commit_date": "2026-10-26T07:52:29Z",
+    "url": "https://github.com/volcengine/OpenViking/tree/22a28101089515ddef85b96617449924baef9f35",
+    "root_entries": [
+      {
+        "name": ".agents",
+        "type": "dir"
+      },
+      {
+        "name": ".clang-format",
+        "type": "file"
+      },
+      {
+        "name": ".claude-plugin",
+        "type": "dir"
+      },
+      {
+        "name": ".dockerignore",
+        "type": "file"
+      },
+      {
+        "name": ".gitattributes",
+        "type": "file"
+      },
+      {
+        "name": ".github",
+        "type": "dir"
+      },
+      {
+        "name": ".gitignore",
+        "type": "file"
+      },
+      {
+        "name": ".pr_agent.toml",
+        "type": "file"
+      },
+      {
+        "name": "CONTRIBUTING.md",
+        "type": "file"
+      },
+      {
+        "name": "Caddyfile",
+        "type": "file"
+      },
+      {
+        "name": "Cargo.lock",
+        "type": "file"
+      },
+      {
+        "name": "Cargo.toml",
+        "type": "file"
+      },
+      {
+        "name": "Dockerfile",
+        "type": "file"
+      },
+      {
+        "name": "LICENSE",
+        "type": "file"
+      },
+      {
+        "name": "MANIFEST.in",
+        "type": "file"
+      },
+      {
+        "name": "Makefile",
+        "type": "file"
+      },
+      {
+        "name": "README.md",
+        "type": "file"
+      },
+      {
+        "name": "SECURITY.md",
+        "type": "file"
+      },
+      {
+        "name": "agent-plugins",
+        "type": "dir"
+      },
+      {
+        "name": "benchmark",
+        "type": "dir"
+      },
+      {
+        "name": "bot",
+        "type": "dir"
+      },
+      {
+        "name": "crates",
+        "type": "dir"
+      },
+      {
+        "name": "deploy",
+        "type": "dir"
+      },
+      {
+        "name": "docker-compose.yml",
+        "type": "file"
+      },
+      {
+        "name": "docs",
+        "type": "dir"
+      },
+      {
+        "name": "examples",
+        "type": "dir"
+      },
+      {
+        "name": "integrations",
+        "type": "dir"
+      },
+      {
+        "name": "npm",
+        "type": "dir"
+      },
+      {
+        "name": "openviking",
+        "type": "dir"
+      },
+      {
+        "name": "openviking_cli",
+        "type": "dir"
+      },
+      {
+        "name": "openviking_gateway",
+        "type": "dir"
+      },
+      {
+        "name": "pyproject.toml",
+        "type": "file"
+      },
+      {
+        "name": "scripts",
+        "type": "dir"
+      },
+      {
+        "name": "sdk",
+        "type": "dir"
+      },
+      {
+        "name": "setup.py",
+        "type": "file"
+      },
+      {
+        "name": "src",
+        "type": "dir"
+      },
+      {
+        "name": "tests",
+        "type": "dir"
+      },
+      {
+        "name": "third_party",
+        "type": "dir"
+      },
+      {
+        "name": "uv.lock",
+        "type": "file"
+      },
+      {
+        "name": "web-studio",
+        "type": "dir"
+      }
+    ],
+    "status": "metadata verified; source implementation not audited"
+  }
+]

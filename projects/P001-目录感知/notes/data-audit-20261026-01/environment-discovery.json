@@ -1,0 +1,95 @@
+{
+  "date": "2026-10-26",
+  "path_commands": [
+    {
+      "name": "cl",
+      "available": false,
+      "source": null
+    },
+    {
+      "name": "clang++",
+      "available": false,
+      "source": null
+    },
+    {
+      "name": "g++",
+      "available": false,
+      "source": null
+    },
+    {
+      "name": "cmake",
+      "available": false,
+      "source": null
+    },
+    {
+      "name": "ninja",
+      "available": true,
+      "source": "D:\\anaconda3\\Scripts\\ninja.exe"
+    },
+    {
+      "name": "ctest",
+      "available": false,
+      "source": null
+    },
+    {
+      "name": "wsl",
+      "available": true,
+      "source": "C:\\Windows\\system32\\wsl.exe"
+    }
+  ],
+  "vs_cpp_installations": {
+    "instanceId": "7268fcf0",
+    "installDate": "2026-10-23T11:28:47Z",
+    "installationName": "VisualStudio/18.11.1+12315.225",
+    "installationPath": "D:\\Microsoft Visual Studio",
+    "installationVersion": "18.11.12315.225",
+    "productId": "Microsoft.VisualStudio.Product.BuildTools",
+    "productPath": "D:\\Microsoft Visual Studio\\Common7\\Tools\\LaunchDevCmd.bat",
+    "state": 4294967295,
+    "isComplete": true,
+    "isLaunchable": true,
+    "isPrerelease": false,
+    "isRebootRequired": false,
+    "displayName": "Visual Studio ���ɹ��� 2026",
+    "description": "���� MSBuild �ͱ��������� �C ���� IDE��",
+    "channelId": "VisualStudio.18.Release",
+    "channelUri": "https://aka.ms/vs/18/stable/channel",
+    "enginePath": "C:\\Program Files (x86)\\Microsoft Visual Studio\\Installer\\resources\\app\\ServiceHub\\Services\\Microsoft.VisualStudio.Setup.Service",
+    "installedChannelId": "VisualStudio.18.Release",
+    "installedChannelUri": "https://aka.ms/vs/18/stable/channel",
+    "releaseNotes": "https://docs.microsoft.com/en-us/visualstudio/releases/18/release-notes-v18.11#18.11.1",
+    "resolvedInstallationPath": "D:\\Microsoft Visual Studio",
+    "thirdPartyNotices": "https://go.microsoft.com/fwlink/?LinkId=661480",
+    "updateDate": "2026-10-23T11:28:47.3980255Z",
+    "catalog": {
+      "buildBranch": "stable",
+      "buildVersion": "18.11.12315.225",
+      "featureReleaseMonth": "10",
+      "featureReleaseYear": "2026",
+      "id": "VisualStudio/18.11.1+12315.225",
+      "includeBuildVersionInDisplayVersion": "False",
+      "localBuild": "build-lab",
+      "manifestName": "VisualStudio",
+      "manifestType": "installer",
+      "productDisplayVersion": "18.11.1",
+      "productLine": "Dev18",
+      "productLineVersion": "18",
+      "productMilestone": "RTW",
+      "productMilestoneIsPreRelease": "False",
+      "productName": "Visual Studio",
+      "productPatchVersion": "1",
+      "productPreReleaseMilestoneSuffix": "1.0",
+      "productRelease": "RTW",
+      "productSemanticVersion": "18.11.1+12315.225",
+      "requiredEngineVersion": "4.11.24.2075"
+    },
+    "properties": {
+      "campaignId": "",
+      "channelManifestId": "VisualStudio.18.Release/18.11.1+12315.225",
+      "includeRecommended": "0",
+      "nickname": "",
+      "setupEngineFilePath": "C:\\Program Files (x86)\\Microsoft Visual Studio\\Installer\\setup.exe"
+    }
+  },
+  "scope": "Read-only executable discovery; no install, no compiler test, no WSL launch"
+}

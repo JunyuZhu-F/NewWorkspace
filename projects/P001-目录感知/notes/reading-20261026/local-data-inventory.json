@@ -1,0 +1,92 @@
+[
+  {
+    "relative_path": "dataset/raw/WIKI-Dir/dbpedia_dir_2m_corpus_paths.json",
+    "bytes": 604190439,
+    "last_write_time": "2026-02-28T18:52:22.0000000+08:00"
+  },
+  {
+    "relative_path": "dataset/raw/WIKI-Dir/dbpedia_dir_2m_corpus_vectors-001.fvecs",
+    "bytes": 7960883900,
+    "last_write_time": "2026-10-23T18:56:46.9715916+08:00",
+    "first_record_dimension": 1024,
+    "inferred_fixed_1024d_records": 1941679,
+    "remainder": 0,
+    "validation": "header-and-length-only; not a full integrity check"
+  },
+  {
+    "relative_path": "dataset/raw/WIKI-Dir/dbpedia_dir_2m_corpus.jsonl",
+    "bytes": 880191293,
+    "last_write_time": "2026-02-28T18:55:30.0000000+08:00"
+  },
+  {
+    "relative_path": "dataset/raw/WIKI-Dir/dbpedia_dir_2m_groundtruth.tsv",
+    "bytes": 140077,
+    "last_write_time": "2026-02-28T18:50:30.0000000+08:00"
+  },
+  {
+    "relative_path": "dataset/raw/WIKI-Dir/dbpedia_dir_2m_query_vectors.fvecs",
+    "bytes": 1869600,
+    "last_write_time": "2026-02-28T18:51:10.0000000+08:00",
+    "first_record_dimension": 1024,
+    "inferred_fixed_1024d_records": 456,
+    "remainder": 0,
+    "validation": "header-and-length-only; not a full integrity check"
+  },
+  {
+    "relative_path": "dataset/raw/WIKI-Dir/dbpedia_dir_2m_query.jsonl",
+    "bytes": 33835,
+    "last_write_time": "2026-02-28T18:50:32.0000000+08:00"
+  },
+  {
+    "relative_path": "dataset/raw/ARXIV-Dir/arxiv_category_ground_truth.txt",
+    "bytes": 763233,
+    "last_write_time": "2026-02-28T18:49:12.0000000+08:00"
+  },
+  {
+    "relative_path": "dataset/raw/ARXIV-Dir/arxiv_category_query_constraint.json",
+    "bytes": 116301,
+    "last_write_time": "2026-02-28T18:49:06.0000000+08:00"
+  },
+  {
+    "relative_path": "dataset/raw/ARXIV-Dir/arxiv_category_query_vectors.fvecs",
+    "bytes": 4100000,
+    "last_write_time": "2026-02-28T18:49:16.0000000+08:00",
+    "first_record_dimension": 1024,
+    "inferred_fixed_1024d_records": 1000,
+    "remainder": 0,
+    "validation": "header-and-length-only; not a full integrity check"
+  },
+  {
+    "relative_path": "dataset/raw/ARXIV-Dir/arxiv_corpus_metadata.json",
+    "bytes": 482867712,
+    "last_write_time": "2026-02-28T18:50:02.0000000+08:00"
+  },
+  {
+    "relative_path": "dataset/raw/ARXIV-Dir/arxiv_corpus_vectors.fvecs",
+    "bytes": 11330526300,
+    "last_write_time": "2026-10-23T18:58:22.9199138+08:00",
+    "first_record_dimension": 1024,
+    "inferred_fixed_1024d_records": 2763543,
+    "remainder": 0,
+    "validation": "header-and-length-only; not a full integrity check"
+  },
+  {
+    "relative_path": "dataset/raw/ARXIV-Dir/arxiv_ground_truth.txt",
+    "bytes": 761948,
+    "last_write_time": "2026-02-28T18:49:08.0000000+08:00"
+  },
+  {
+    "relative_path": "dataset/raw/ARXIV-Dir/arxiv_query_constraint.json",
+    "bytes": 109055,
+    "last_write_time": "2026-02-28T18:49:04.0000000+08:00"
+  },
+  {
+    "relative_path": "dataset/raw/ARXIV-Dir/arxiv_query_vectors.fvecs",
+    "bytes": 4100000,
+    "last_write_time": "2026-02-28T18:49:14.0000000+08:00",
+    "first_record_dimension": 1024,
+    "inferred_fixed_1024d_records": 1000,
+    "remainder": 0,
+    "validation": "header-and-length-only; not a full integrity check"
+  }
+]

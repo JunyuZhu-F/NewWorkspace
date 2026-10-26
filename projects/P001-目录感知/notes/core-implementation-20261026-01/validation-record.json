@@ -1,0 +1,272 @@
+{
+  "date": "2026-10-26",
+  "source_snapshot_id": "SNAP-dd12b2f5ac546566",
+  "source_manifest_sha256": "dd12b2f5ac546566516840f329151e6a0fa290676bca64b73a6d6dfba3b2fc55",
+  "snapshot_zip_sha256": "520a33b6508e667dd9ed0e40446a5dff9b054610589b330fd634c7aac7735e53",
+  "source_files": [
+    {
+      "path": "CMakeLists.txt",
+      "bytes": 2266,
+      "sha256": "798a3ba5be86de5adff91dfcb796cdaa3496159973dbb5ef45b9fa8526117ab7"
+    },
+    {
+      "path": ".gitignore",
+      "bytes": 34,
+      "sha256": "e467188fc6b6424e6d81eaf3c36db1f2f5fd3ec517eebb98a0caba6518eaa9bb"
+    },
+    {
+      "path": "AGENTS.md",
+      "bytes": 629,
+      "sha256": "0ac4d38cbfcce2a588007551579ffb49d1403849219beda4c0378e37e72c9361"
+    },
+    {
+      "path": "README.md",
+      "bytes": 4228,
+      "sha256": "8e3121338fd248c0eb9f8c6e86fcda92bf15aa51f6353c2210c394fbcafca711"
+    },
+    {
+      "path": "include/directory/index.hpp",
+      "bytes": 2072,
+      "sha256": "5304f6058ad02c9d1f5f8ca91f9198b7991153bb2a2b794e0243545a0dd95b0e"
+    },
+    {
+      "path": "include/directory/bitmap.hpp",
+      "bytes": 2381,
+      "sha256": "25eff987d573531e3102e356e13ae24dbfb066756036b4a16258a4a9a996fa3e"
+    },
+    {
+      "path": "src/path.cpp",
+      "bytes": 1670,
+      "sha256": "5b78349daa0da2249be1d83530857897696397a7b4b25c4ba6a277bbfbaa033d"
+    },
+    {
+      "path": "src/index.cpp",
+      "bytes": 17218,
+      "sha256": "7fec6c3f19387619da33115f20bb476be6266e063763bd3e45f4ed315b9e0d98"
+    },
+    {
+      "path": "tests/oracle.hpp",
+      "bytes": 1050,
+      "sha256": "e353d0d5f9475f8b3e87ee9d4905b80f86c35b6fd3583b55526eb2adaeb0cd94"
+    },
+    {
+      "path": "tests/oracle.cpp",
+      "bytes": 3326,
+      "sha256": "03ddd111cb41c1e9a1c3875d7888d37f93ecf75cfdc813ce6ed96b8c029f7f97"
+    },
+    {
+      "path": "tests/core_tests.cpp",
+      "bytes": 14663,
+      "sha256": "026e464931e4db761be8b1acf284a6b4e02bbccc25bd1d5a97d3d7a0b7d35da8"
+    },
+    {
+      "path": "scripts/build-test.cmd",
+      "bytes": 1006,
+      "sha256": "6e445fe2c9cc76d0ac5260ac9a5d61737bc46443b28e17c0be96aa7093c0164e"
+    },
+    {
+      "path": "scripts/prepare-time-fixture.py",
+      "bytes": 1497,
+      "sha256": "b9f623ecee3699b73d4d2256daef3951a3218f2115271760cca209efb08e4254"
+    },
+    {
+      "path": "third_party/croaring/roaring.c",
+      "bytes": 916188,
+      "sha256": "81ae778a927108500a7d577ae3ff44fa1dfa5c46dfe0f0d0bedd8e4ae624efe2"
+    },
+    {
+      "path": "third_party/croaring/roaring.h",
+      "bytes": 424298,
+      "sha256": "5a09d9e2996b8c0c545b8147996a3b008bcad1a991c559c9b4ecac3120a2b468"
+    },
+    {
+      "path": "third_party/croaring/LICENSE",
+      "bytes": 12609,
+      "sha256": "f8e1f16a3f22e001b44ae9b12625420b9a0c4dbb7ec0e9f83b6a3d38a9525411"
+    },
+    {
+      "path": "third_party/croaring/LOCK.json",
+      "bytes": 935,
+      "sha256": "338b831bd3aae5cb1455f9e2e379b4a68034f756f8bf30d8e983befdac57af73"
+    },
+    {
+      "path": "third_party/croaring/README.md",
+      "bytes": 681,
+      "sha256": "c662d67862f7f0c68231ba31b42910a6471b85d0021501ced6e68f938326b234"
+    }
+  ],
+  "configurations": {
+    "Release": {
+      "status": "pass",
+      "cases": [
+        {
+          "status": "pass",
+          "mode": "bitmap",
+          "logical_mutations": 0,
+          "scope_comparisons": 0,
+          "checks": 9,
+          "name": "bitmap_contract"
+        },
+        {
+          "status": "pass",
+          "mode": "fixed",
+          "logical_mutations": 75,
+          "scope_comparisons": 3090,
+          "checks": 4611,
+          "name": "fixed_semantics"
+        },
+        {
+          "status": "pass",
+          "mode": "random",
+          "logical_mutations": 816,
+          "scope_comparisons": 252588,
+          "checks": 267680,
+          "name": "random_7"
+        },
+        {
+          "status": "pass",
+          "mode": "random",
+          "logical_mutations": 808,
+          "scope_comparisons": 243840,
+          "checks": 258932,
+          "name": "random_42"
+        },
+        {
+          "status": "pass",
+          "mode": "random",
+          "logical_mutations": 785,
+          "scope_comparisons": 299292,
+          "checks": 314311,
+          "name": "random_2026"
+        },
+        {
+          "status": "pass",
+          "mode": "random",
+          "logical_mutations": 785,
+          "scope_comparisons": 257112,
+          "checks": 272099,
+          "name": "random_65536"
+        },
+        {
+          "status": "pass",
+          "mode": "pilot",
+          "logical_mutations": 3,
+          "scope_comparisons": 804,
+          "checks": 20867,
+          "name": "time_pilot_correctness"
+        }
+      ],
+      "tests_passed": 7,
+      "scope_comparisons": 1056726,
+      "checks": 1138509,
+      "binary_sha256": "1cc6323b7e7fbab57bdd9671242a3b785c8f9e90dd6c54961f472b8a1bf1c5bb",
+      "binary_path": "code\\build-Release\\directory_core_tests.exe",
+      "build_log": "release-final.log",
+      "last_test_log": "Release-LastTest.log",
+      "fixture": {
+        "source": "D:\\NewWorkspace\\projects\\P001-目录感知\\notes\\time-pilot-20261026-01\\bindings.jsonl",
+        "source_sha256": "9aa84f093dfd4e9c4e1633c22ae7a9df424809fee9f45fc22fb96f85c04f36b6",
+        "output_sha256": "4086cbb4767f5eb3899cf46e36dc84b8a8e594612bb6a8e20366f0171cbfa57c",
+        "rows": 10000,
+        "scope": "correctness fixture only; no original workload or quality claim"
+      }
+    },
+    "RelWithDebInfo-ASan": {
+      "status": "pass",
+      "cases": [
+        {
+          "status": "pass",
+          "mode": "bitmap",
+          "logical_mutations": 0,
+          "scope_comparisons": 0,
+          "checks": 9,
+          "name": "bitmap_contract"
+        },
+        {
+          "status": "pass",
+          "mode": "fixed",
+          "logical_mutations": 75,
+          "scope_comparisons": 3090,
+          "checks": 4611,
+          "name": "fixed_semantics"
+        },
+        {
+          "status": "pass",
+          "mode": "random",
+          "logical_mutations": 816,
+          "scope_comparisons": 252588,
+          "checks": 267680,
+          "name": "random_7"
+        },
+        {
+          "status": "pass",
+          "mode": "random",
+          "logical_mutations": 808,
+          "scope_comparisons": 243840,
+          "checks": 258932,
+          "name": "random_42"
+        },
+        {
+          "status": "pass",
+          "mode": "random",
+          "logical_mutations": 785,
+          "scope_comparisons": 299292,
+          "checks": 314311,
+          "name": "random_2026"
+        },
+        {
+          "status": "pass",
+          "mode": "random",
+          "logical_mutations": 785,
+          "scope_comparisons": 257112,
+          "checks": 272099,
+          "name": "random_65536"
+        },
+        {
+          "status": "pass",
+          "mode": "pilot",
+          "logical_mutations": 3,
+          "scope_comparisons": 804,
+          "checks": 20867,
+          "name": "time_pilot_correctness"
+        }
+      ],
+      "tests_passed": 7,
+      "scope_comparisons": 1056726,
+      "checks": 1138509,
+      "binary_sha256": "cdb8e92fbf59d7ab52d08cbd9bee8ca13e128e5c6bd9c2f217ca75b8b4653930",
+      "binary_path": "code\\build-RelWithDebInfo-ASan\\directory_core_tests.exe",
+      "build_log": "asan-build-test.log",
+      "last_test_log": "RelWithDebInfo-ASan-LastTest.log",
+      "fixture": {
+        "source": "D:\\NewWorkspace\\projects\\P001-目录感知\\notes\\time-pilot-20261026-01\\bindings.jsonl",
+        "source_sha256": "9aa84f093dfd4e9c4e1633c22ae7a9df424809fee9f45fc22fb96f85c04f36b6",
+        "output_sha256": "4086cbb4767f5eb3899cf46e36dc84b8a8e594612bb6a8e20366f0171cbfa57c",
+        "rows": 10000,
+        "scope": "correctness fixture only; no original workload or quality claim"
+      }
+    }
+  },
+  "scope": "single-parent sequential directory correctness only; no ANN, training or timing benchmark",
+  "random_steps_per_seed": 1000,
+  "random_seeds": [
+    7,
+    42,
+    2026,
+    65536
+  ],
+  "time_pilot_entries": 10000,
+  "review": "self-review plus independent set/path oracle, active Release checks, node identity tests and AddressSanitizer",
+  "limitations": [
+    "No real multi-category DSM protocol recovered",
+    "No performance reproduction claimed",
+    "Catalog rebind scans counted separately",
+    "No allocation-failure rollback or concurrent consistency proof"
+  ],
+  "development_attempts": [
+    "Initial Unicode documentation helper failed source decoding; explicit UTF-8 decode/compile succeeded before source implementation",
+    "Optional upstream roaring.hh download timed out/transport failed; use verified official C API with a tested ownership adapter",
+    "Initial 6-test Release run passed; final reviewed source rerun with 7 tests including time pilot"
+  ],
+  "dependency_pin": "CRoaring v5.3.2; author version unspecified"
+}

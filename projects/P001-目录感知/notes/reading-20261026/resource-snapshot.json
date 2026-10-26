@@ -1,0 +1,15 @@
+{
+  "date": "2026-10-26",
+  "os": {
+    "Caption": "Microsoft Windows 11 家庭版 中文版",
+    "TotalVisibleMemorySize": 16580472,
+    "FreePhysicalMemory": 3807620
+  },
+  "cpu": {
+    "Name": "13th Gen Intel(R) Core(TM) i7-13650HX",
+    "NumberOfCores": 14,
+    "NumberOfLogicalProcessors": 20
+  },
+  "python_wsl_processes": [],
+  "process_scope": "Only python.exe, pythonw.exe and wsl.exe; no full process attribution"
+}

@@ -1,0 +1,67 @@
+[
+  {
+    "name": ".gitignore",
+    "type": "file",
+    "html_url": "https://github.com/volcengine/OpenViking/blob/22a28101089515ddef85b96617449924baef9f35/benchmark/.gitignore"
+  },
+  {
+    "name": "RAG",
+    "type": "dir",
+    "html_url": "https://github.com/volcengine/OpenViking/tree/22a28101089515ddef85b96617449924baef9f35/benchmark/RAG"
+  },
+  {
+    "name": "__init__.py",
+    "type": "file",
+    "html_url": "https://github.com/volcengine/OpenViking/blob/22a28101089515ddef85b96617449924baef9f35/benchmark/__init__.py"
+  },
+  {
+    "name": "aml",
+    "type": "dir",
+    "html_url": "https://github.com/volcengine/OpenViking/tree/22a28101089515ddef85b96617449924baef9f35/benchmark/aml"
+  },
+  {
+    "name": "custom",
+    "type": "dir",
+    "html_url": "https://github.com/volcengine/OpenViking/tree/22a28101089515ddef85b96617449924baef9f35/benchmark/custom"
+  },
+  {
+    "name": "cuvs",
+    "type": "dir",
+    "html_url": "https://github.com/volcengine/OpenViking/tree/22a28101089515ddef85b96617449924baef9f35/benchmark/cuvs"
+  },
+  {
+    "name": "locomo",
+    "type": "dir",
+    "html_url": "https://github.com/volcengine/OpenViking/tree/22a28101089515ddef85b96617449924baef9f35/benchmark/locomo"
+  },
+  {
+    "name": "longmemeval",
+    "type": "dir",
+    "html_url": "https://github.com/volcengine/OpenViking/tree/22a28101089515ddef85b96617449924baef9f35/benchmark/longmemeval"
+  },
+  {
+    "name": "memory_organization",
+    "type": "dir",
+    "html_url": "https://github.com/volcengine/OpenViking/tree/22a28101089515ddef85b96617449924baef9f35/benchmark/memory_organization"
+  },
+  {
+    "name": "retrieval",
+    "type": "dir",
+    "html_url": "https://github.com/volcengine/OpenViking/tree/22a28101089515ddef85b96617449924baef9f35/benchmark/retrieval"
+  },
+  {
+    "name": "skillsbench",
+    "type": "dir",
+    "html_url": "https://github.com/volcengine/OpenViking/tree/22a28101089515ddef85b96617449924baef9f35/benchmark/skillsbench"
+  },
+  {
+    "name": "tau2",
+    "type": "dir",
+    "html_url": "https://github.com/volcengine/OpenViking/tree/22a28101089515ddef85b96617449924baef9f35/benchmark/tau2"
+  },
+  {
+    "name": "vectordb_perf",
+    "type": "dir",
+    "html_url": "https://github.com/volcengine/OpenViking/tree/22a28101089515ddef85b96617449924baef9f35/benchmark/vectordb_perf"
+  }
+]

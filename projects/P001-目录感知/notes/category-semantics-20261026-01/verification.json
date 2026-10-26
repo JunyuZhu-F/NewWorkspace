@@ -1,0 +1,14 @@
+{
+  "status": "pass",
+  "category_records_verified": 1998,
+  "category_recomputed_affected": 1035,
+  "category_recomputed_removed_labels": 1223,
+  "category_recomputed_still_multibranch": 1014,
+  "time_entries_verified": 10000,
+  "time_directory_counts_independently_verified": 34,
+  "source_category_fields_preserved": true,
+  "manifest_output_hashes_match": true,
+  "script_hashes_match": true,
+  "vector_search_run": false,
+  "paper_strategy_implementation_tested": false
+}

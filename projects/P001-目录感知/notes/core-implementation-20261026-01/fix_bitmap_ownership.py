@@ -1,0 +1,13 @@
+from pathlib import Path
+p=Path('include/directory/bitmap.hpp')
+s=p.read_text(encoding='utf-8-sig')
+s=s.replace('roaring::api::roaring_bitmap_t* value_;','roaring::api::roaring_bitmap_t* value_;\n    void ensure() { if (!value_) value_=checked(roaring::api::roaring_bitmap_create()); }')
+s=s.replace('checked(roaring::api::roaring_bitmap_copy(other.value_))','checked(other.value_ ? roaring::api::roaring_bitmap_copy(other.value_) : roaring::api::roaring_bitmap_create())')
+s=s.replace('roaring::api::roaring_bitmap_add(value_, id);','ensure(); roaring::api::roaring_bitmap_add(value_, id);')
+s=s.replace('roaring::api::roaring_bitmap_remove(value_, id);','if (value_) roaring::api::roaring_bitmap_remove(value_, id);')
+s=s.replace('return roaring::api::roaring_bitmap_contains(value_, id);','return value_ && roaring::api::roaring_bitmap_contains(value_, id);')
+s=s.replace('return roaring::api::roaring_bitmap_get_cardinality(value_);','return value_ ? roaring::api::roaring_bitmap_get_cardinality(value_) : 0;')
+s=s.replace('roaring::api::roaring_bitmap_or_inplace(value_,other.value_); return *this;','if (this!=&other && other.value_) { ensure(); roaring::api::roaring_bitmap_or_inplace(value_,other.value_); } return *this;')
+s=s.replace('roaring::api::roaring_bitmap_andnot_inplace(value_,other.value_); return *this;','if (this==&other) { *this=Bitmap{}; } else if (value_ && other.value_) roaring::api::roaring_bitmap_andnot_inplace(value_,other.value_); return *this;')
+s=s.replace('return roaring::api::roaring_bitmap_equals(value_,other.value_);','return (!value_ || !other.value_) ? cardinality()==other.cardinality() : roaring::api::roaring_bitmap_equals(value_,other.value_);')
+p.write_text(s,encoding='utf-8')
