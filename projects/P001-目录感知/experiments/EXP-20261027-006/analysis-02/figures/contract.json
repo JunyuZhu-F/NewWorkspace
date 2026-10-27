@@ -1,0 +1,18 @@
+{
+  "question": "How do scope resolvers trade total latency at the same search quality under a shared fixed backend?",
+  "claim": "Quality equality and observed latency differences are descriptive for this independent 10k time sample; no original Viking or universal speedup claim.",
+  "archetype": "quantitative grid, two separate single-axis figures",
+  "backend": "Python/matplotlib",
+  "export": "127 x 105 mm; SVG/PDF editable text and 600dpi PNG/TIFF; glyphs >= 5pt; no submission journal specified",
+  "n": "5 independent processes, same deterministic ANN seed/data; 20 timed sweeps after 3 warmups; repeated calls are technical repeats",
+  "uncertainty": "horizontal SD (ddof=1) of five per-process nonempty mean latencies, not a confidence interval",
+  "test": "none, descriptive; no multiple-comparison p-values",
+  "exclusions": "266 empty nonrecursive year scopes omitted only from Recall and primary curves; all-request and empty latencies retained in results table",
+  "integrity": "No observations trimmed. No image manipulation, interpolation, smoothing, or log transform.",
+  "alignment": "single axis per exported figure; run helper to record not applicable",
+  "sources": [
+    "verification.json",
+    "figures/curves.csv",
+    "figures/paired-differences.csv"
+  ]
+}

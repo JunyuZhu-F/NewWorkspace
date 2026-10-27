@@ -1,0 +1,8 @@
+{
+  "status": "failed",
+  "stage": "prepare",
+  "started_utc": "2026-10-27T03:01:33.235136+00:00",
+  "measurements_completed": 0,
+  "failure": "AssertionError()",
+  "finished_utc": "2026-10-27T03:01:51.469559+00:00"
+}

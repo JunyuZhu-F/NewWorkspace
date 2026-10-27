@@ -1,0 +1,25 @@
+{
+  "experiment": "EXP-20261027-006",
+  "preparation": "notes\\search02-preparation-20261027-02",
+  "protocol_sha256": "7e7c8e3ac382159d21b3045d14cb6ebd688968ce78504372e312cc3e7439ab6e",
+  "fixture_manifest_sha256": "1aa57e1e30459ba5152c8364ee441de27cab7878db2e9cf7039cc16c78682ade",
+  "binary_sha256": "dc325c7fbf3e7f6835fa4fb5c1d01e5c3a37b91f6fe8b15e1396c1ed153bb860",
+  "runs": 5,
+  "warmups": 3,
+  "measurements": 20,
+  "cases": 1002,
+  "probes": [
+    0,
+    1,
+    4,
+    16
+  ],
+  "expected_timing_rows": 1202400,
+  "limits": {
+    "worker_seconds": 600,
+    "matrix_seconds": 1800,
+    "private_bytes": 2147483648,
+    "minimum_available_bytes": 2147483648,
+    "output_bytes": 1073741824
+  }
+}

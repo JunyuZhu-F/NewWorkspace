@@ -1,0 +1,28 @@
+{
+  "status": "passed",
+  "scope": "SEARCH-01 current time/exact-IVF admission only",
+  "cases": 104,
+  "nonempty_cases": 64,
+  "empty_cases": 40,
+  "original_constraint_cases_all_empty": 32,
+  "diagnostic_nonempty_query_ids": [
+    0
+  ],
+  "release_results": 1248,
+  "asan_results": 1248,
+  "scope_rows_each_build": 312,
+  "old_core_files_unchanged": 30,
+  "old_004_005_git_content_unchanged": true,
+  "failed_initial_launch_preserved": "run-status.json",
+  "recovery_status": "recovery-01/status.json",
+  "independent_verification": "verification.json",
+  "protocol_sha256": "0c55425189553c2b3bc9a2d4843a4cb538287984f6548a7deb6a60dbf6b315ee",
+  "sources": "source-final-hashes.json",
+  "binary_hashes": {
+    "Release-Search": "5806d19eebb2b1ee7f9f0e542a5592f81b94f3bc83f47ea5ada8f1a6b46fceaa",
+    "RelWithDebInfo-ASan-Search": "89911544f47316837cb1c634ae9ab3ccffd1e8137010dc87843368b9b7477b96"
+  },
+  "no_query_latency_claim": true,
+  "search02_started": false,
+  "finished_utc": "2026-10-27T02:50:01.620662+00:00"
+}

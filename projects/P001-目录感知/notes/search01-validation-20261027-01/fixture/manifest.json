@@ -1,0 +1,59 @@
+{
+  "status": "prepared",
+  "created_utc": "2026-10-27T02:39:45.486497+00:00",
+  "python": "3.9.13 (main, Aug 25 2022, 23:51:50) [MSC v.1916 64 bit (AMD64)]",
+  "numpy": "2.0.2",
+  "source_bindings_sha256": "9aa84f093dfd4e9c4e1633c22ae7a9df424809fee9f45fc22fb96f85c04f36b6",
+  "constraints_sha256": "dd3a628106ad80ddc64235507cb943b85308852e8347286564214b0d6a316eaf",
+  "query_ids": [
+    0,
+    1,
+    2,
+    3,
+    5,
+    6,
+    9,
+    10,
+    17,
+    19,
+    22,
+    30,
+    31,
+    35,
+    36,
+    37
+  ],
+  "records": 10000,
+  "dimension": 1024,
+  "cases": 104,
+  "inputs": {
+    "arxiv_corpus_vectors.fvecs": {
+      "records_read": 10000,
+      "bytes_read": 41000000,
+      "read_region_sha256": "f7e8e7fcfbcf6729ec07a5330682b6540cd14686cc15a5c46c4c3b122f675d7e",
+      "size": 11330526300,
+      "mtime_ns": 1792753102919913800,
+      "norm_min": 14.90764935953344,
+      "norm_max": 19.97320859885495,
+      "stat_unchanged": true
+    },
+    "arxiv_query_vectors.fvecs": {
+      "records_read": 1000,
+      "bytes_read": 4100000,
+      "read_region_sha256": "58f0d344c796e1d04e5969a560c0583abe5ed4484e98c15642da9d235cc01f48",
+      "size": 4100000,
+      "mtime_ns": 1772275754000000000,
+      "norm_min": 0.9995601013090448,
+      "norm_max": 19.829515239879644,
+      "stat_unchanged": true
+    }
+  },
+  "protocol_sha256": "0c55425189553c2b3bc9a2d4843a4cb538287984f6548a7deb6a60dbf6b315ee",
+  "files": {
+    "bindings.tsv": "90328910372d9b1ad2ca532bdf29425b31adcece6f180d624efb59a8bef47821",
+    "cases.json": "6f1602421dc758c7c8fe53553d8a9a9322f12221fdef67726f718d08b61cf422",
+    "cases.tsv": "b15ec1e4208d83afa90a6a338b8cfc7ea4e76d0f49ee448a184607753838b61f",
+    "corpus.fvecs": "f7e8e7fcfbcf6729ec07a5330682b6540cd14686cc15a5c46c4c3b122f675d7e",
+    "queries.fvecs": "0c3c4ef9886cb2476fd21cd7ff99b32c1e64297f98c3d63944c5b36491dd9cc0"
+  }
+}

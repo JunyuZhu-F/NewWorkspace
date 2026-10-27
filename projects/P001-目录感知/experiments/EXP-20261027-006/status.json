@@ -1,0 +1,8 @@
+{
+  "status": "passed",
+  "stage": "run",
+  "started_utc": "2026-10-27T03:08:01.176620+00:00",
+  "measurements_completed": 5,
+  "fixture": "notes\\search02-preparation-20261027-01\\fixture",
+  "finished_utc": "2026-10-27T03:11:01.259798+00:00"
+}

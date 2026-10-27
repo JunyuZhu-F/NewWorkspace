@@ -1,0 +1,12 @@
+{
+  "status": "passed",
+  "stage": "prepare",
+  "started_utc": "2026-10-27T03:03:25.613408+00:00",
+  "measurements_completed": 0,
+  "fixture": "notes\\search02-preparation-20261027-01\\fixture",
+  "binary_hashes": {
+    "Release-Search02": "dc325c7fbf3e7f6835fa4fb5c1d01e5c3a37b91f6fe8b15e1396c1ed153bb860",
+    "RelWithDebInfo-ASan-Search02": "b8d454552c982315c15435708977edab7b4dd95c799fab81a24903a530082d66"
+  },
+  "finished_utc": "2026-10-27T03:07:05.678140+00:00"
+}

@@ -1,0 +1,36 @@
+{
+  "captured_utc": "2026-10-27T02:50:01.394587+00:00",
+  "platform": "Windows-10-10.0.26300-SP0",
+  "python": "3.9.13 (main, Aug 25 2022, 23:51:50) [MSC v.1916 64 bit (AMD64)]",
+  "numpy_version": "2.0.2",
+  "processor_identifier": "Intel64 Family 6 Model 183 Stepping 1, GenuineIntel",
+  "logical_cpus": 20,
+  "compiler_and_flags": {
+    "Release-Search": {
+      "compiler": "D:/Microsoft Visual Studio/VC/Tools/MSVC/14.51.36231/bin/Hostx64/x64/cl.exe",
+      "flags": [
+        "FLAGS = /DWIN32 /D_WINDOWS /EHsc /O2 /Ob2 /DNDEBUG -MD",
+        "FLAGS = /DWIN32 /D_WINDOWS /EHsc /O2 /Ob2 /DNDEBUG -std:c++17 -MD /W4 /permissive- /utf-8",
+        "FLAGS = /DWIN32 /D_WINDOWS /EHsc /O2 /Ob2 /DNDEBUG -std:c++17 -MD /W4 /permissive- /utf-8 /fp:strict",
+        "FLAGS = /DWIN32 /D_WINDOWS /O2 /Ob2 /DNDEBUG -std:c11 -MD /utf-8"
+      ]
+    },
+    "RelWithDebInfo-ASan-Search": {
+      "compiler": "D:/Microsoft Visual Studio/VC/Tools/MSVC/14.51.36231/bin/Hostx64/x64/cl.exe",
+      "flags": [
+        "FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /O2 /Ob1 /DNDEBUG -MD",
+        "FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /O2 /Ob1 /DNDEBUG -std:c++17 -MD /W4 /permissive- /utf-8 /fp:strict /fsanitize=address",
+        "FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /O2 /Ob1 /DNDEBUG -std:c++17 -MD /W4 /permissive- /utf-8 /fsanitize=address",
+        "FLAGS = /DWIN32 /D_WINDOWS /Zi /O2 /Ob1 /DNDEBUG -std:c11 -MD /utf-8 /fsanitize=address"
+      ]
+    }
+  },
+  "source_working_tree_start": "clean",
+  "core_algorithm_changed": false,
+  "full_vectors_loaded": false,
+  "asan_runtime": {
+    "path": "D:\\Microsoft Visual Studio\\VC\\Tools\\MSVC\\14.51.36231\\bin\\Hostx64\\x64\\clang_rt.asan_dynamic-x86_64.dll",
+    "sha256": "7f901a239979c49b36a3b18ecd1843f551f94b5879585bded41a650c5b71f35f",
+    "applied_to_child_path_only": true
+  }
+}

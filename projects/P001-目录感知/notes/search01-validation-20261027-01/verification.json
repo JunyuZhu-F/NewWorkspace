@@ -1,0 +1,169 @@
+{
+  "status": "passed",
+  "scope_case_counts": {
+    "empty": 40,
+    "nonempty": 64
+  },
+  "cases": 104,
+  "raw_read_regions_reverified": true,
+  "published_gt_used": false,
+  "independent_final_assignments_checked": 20000,
+  "builds": [
+    {
+      "output": "notes\\search01-validation-20261027-01\\release",
+      "status": "passed",
+      "scope_rows": 312,
+      "result_rows": 1248,
+      "metrics": [
+        {
+          "origin": "original-time-constraint-project-mode",
+          "probes": 0,
+          "cases": 32,
+          "nonempty": 0,
+          "empty": 32,
+          "mean_recall_nonempty": null
+        },
+        {
+          "origin": "original-time-constraint-project-mode",
+          "probes": 1,
+          "cases": 32,
+          "nonempty": 0,
+          "empty": 32,
+          "mean_recall_nonempty": null
+        },
+        {
+          "origin": "original-time-constraint-project-mode",
+          "probes": 4,
+          "cases": 32,
+          "nonempty": 0,
+          "empty": 32,
+          "mean_recall_nonempty": null
+        },
+        {
+          "origin": "original-time-constraint-project-mode",
+          "probes": 16,
+          "cases": 32,
+          "nonempty": 0,
+          "empty": 32,
+          "mean_recall_nonempty": null
+        },
+        {
+          "origin": "project-diagnostic-scope",
+          "probes": 0,
+          "cases": 72,
+          "nonempty": 64,
+          "empty": 8,
+          "mean_recall_nonempty": 1.0
+        },
+        {
+          "origin": "project-diagnostic-scope",
+          "probes": 1,
+          "cases": 72,
+          "nonempty": 64,
+          "empty": 8,
+          "mean_recall_nonempty": 0.12639673477564103
+        },
+        {
+          "origin": "project-diagnostic-scope",
+          "probes": 4,
+          "cases": 72,
+          "nonempty": 64,
+          "empty": 8,
+          "mean_recall_nonempty": 0.4556292257136957
+        },
+        {
+          "origin": "project-diagnostic-scope",
+          "probes": 16,
+          "cases": 72,
+          "nonempty": 64,
+          "empty": 8,
+          "mean_recall_nonempty": 1.0
+        }
+      ],
+      "hashes": {
+        "model.json": "a0439b4cfef6658c5dc717b4052d42b20e9e212d2199592aa1f91028ee1c6561",
+        "results.jsonl": "aa3fee52a78e5eab57f9e2ca2e5dca802a0834773f34c802b8d07442309017ec",
+        "scopes.tsv": "f8b7ef98c9ff98652f00e56b8b2a460fc31e63ba968b7983d0424119dd3d78d1"
+      }
+    },
+    {
+      "output": "notes\\search01-validation-20261027-01\\asan",
+      "status": "passed",
+      "scope_rows": 312,
+      "result_rows": 1248,
+      "metrics": [
+        {
+          "origin": "original-time-constraint-project-mode",
+          "probes": 0,
+          "cases": 32,
+          "nonempty": 0,
+          "empty": 32,
+          "mean_recall_nonempty": null
+        },
+        {
+          "origin": "original-time-constraint-project-mode",
+          "probes": 1,
+          "cases": 32,
+          "nonempty": 0,
+          "empty": 32,
+          "mean_recall_nonempty": null
+        },
+        {
+          "origin": "original-time-constraint-project-mode",
+          "probes": 4,
+          "cases": 32,
+          "nonempty": 0,
+          "empty": 32,
+          "mean_recall_nonempty": null
+        },
+        {
+          "origin": "original-time-constraint-project-mode",
+          "probes": 16,
+          "cases": 32,
+          "nonempty": 0,
+          "empty": 32,
+          "mean_recall_nonempty": null
+        },
+        {
+          "origin": "project-diagnostic-scope",
+          "probes": 0,
+          "cases": 72,
+          "nonempty": 64,
+          "empty": 8,
+          "mean_recall_nonempty": 1.0
+        },
+        {
+          "origin": "project-diagnostic-scope",
+          "probes": 1,
+          "cases": 72,
+          "nonempty": 64,
+          "empty": 8,
+          "mean_recall_nonempty": 0.12639673477564103
+        },
+        {
+          "origin": "project-diagnostic-scope",
+          "probes": 4,
+          "cases": 72,
+          "nonempty": 64,
+          "empty": 8,
+          "mean_recall_nonempty": 0.4556292257136957
+        },
+        {
+          "origin": "project-diagnostic-scope",
+          "probes": 16,
+          "cases": 72,
+          "nonempty": 64,
+          "empty": 8,
+          "mean_recall_nonempty": 1.0
+        }
+      ],
+      "hashes": {
+        "model.json": "a0439b4cfef6658c5dc717b4052d42b20e9e212d2199592aa1f91028ee1c6561",
+        "results.jsonl": "aa3fee52a78e5eab57f9e2ca2e5dca802a0834773f34c802b8d07442309017ec",
+        "scopes.tsv": "f8b7ef98c9ff98652f00e56b8b2a460fc31e63ba968b7983d0424119dd3d78d1"
+      }
+    }
+  ],
+  "cross_build_equal": true,
+  "timing_claim": false
+}

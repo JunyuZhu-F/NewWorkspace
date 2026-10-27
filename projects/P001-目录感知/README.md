@@ -1,10 +1,12 @@
 # Directory-Aware Query and Maintenance in Vector Databases
 
-> P001-目录感知，采用 arXiv:2606.16903v1。三方案当前小规模DIR-01已验收；004的210进程、005的135进程及全量2,763,543条时间metadata审计均完成并核验。全量索引/性能、完整真实协议与ANN未完成。
+> P001-目录感知，采用 arXiv:2606.16903v1。当前小规模DIR-01、全量时间metadata审计及SEARCH-01/02时间/独立IVF分支完成；006五进程质量—总延迟对照通过独立核验。全量索引/性能、完整真实协议及PG/原版Viking未完成。
 
 初次阅读建议先看 [精读笔记](notes/paper-card.md) 和 [材料/疑点清单](notes/materials-and-gaps.md)，再审核下面的目标与计划。
 
 最新交付：[核心实现与审查](notes/core-review.md)、[构建和使用入口](code/README.md)。数据边界见 [DATA-01 小规模核查](notes/data-audit.md)。用户确认先用现有电脑，暂不做应用实验，大规模运行另行决定。
+
+最新检索：[SEARCH-02正式记录](experiments/EXP-20261027-006/record.md)、[质量—总延迟结果](experiments/EXP-20261027-006/results.md)、[构建/重跑入口](code/search02/README.md)。10000跨时间样本、501个真实time查询两模式，5进程1202400行计时通过独立核验；[递归曲线](experiments/EXP-20261027-006/analysis-02/figures/recursive.pdf)/[非递归曲线](experiments/EXP-20261027-006/analysis-02/figures/nonrecursive.pdf)。下一项SCALE-01资源评估，扩规模不自动运行。[SEARCH-01旧诊断](notes/search01-validation-20261027-01/record.md)保留，不混合成绩。
 
 继续推进的依据：[单父目录操作约定](notes/operation-spec.md)、[关联加载器核对](notes/reference-loader-review.md)、[本机 C++ 环境](notes/environment.md)。
 

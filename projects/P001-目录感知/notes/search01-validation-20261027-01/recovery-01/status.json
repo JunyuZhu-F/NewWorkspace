@@ -1,0 +1,53 @@
+{
+  "status": "passed",
+  "original_failed_attempt": "run-status.json",
+  "release_reused_hashes": {
+    "model.json": "a0439b4cfef6658c5dc717b4052d42b20e9e212d2199592aa1f91028ee1c6561",
+    "results.jsonl": "aa3fee52a78e5eab57f9e2ca2e5dca802a0834773f34c802b8d07442309017ec",
+    "scopes.tsv": "f8b7ef98c9ff98652f00e56b8b2a460fc31e63ba968b7983d0424119dd3d78d1"
+  },
+  "repair": "Add verified MSVC compiler directory to child PATH for ASan DLL loading; no algorithm/protocol change",
+  "runner_sha256": "1eab4610071d17a60e2ebfd86643941559ee4d63cee9f938173637325fd45578",
+  "started_utc": "2026-10-27T02:43:07.221258+00:00",
+  "commands": [
+    {
+      "label": "asan-run",
+      "command": [
+        "code/build-RelWithDebInfo-ASan-Search/directory_search.exe",
+        "notes\\search01-validation-20261027-01\\fixture",
+        "notes\\search01-validation-20261027-01\\asan"
+      ],
+      "cwd": "D:\\NewWorkspace\\projects\\P001-\u76ee\u5f55\u611f\u77e5",
+      "added_runtime_path": "D:\\Microsoft Visual Studio\\VC\\Tools\\MSVC\\14.51.36231\\bin\\Hostx64\\x64",
+      "started_utc": "2026-10-27T02:43:07.222243+00:00",
+      "exit_code": 0,
+      "finished_utc": "2026-10-27T02:45:50.789694+00:00"
+    },
+    {
+      "label": "verify",
+      "command": [
+        "D:\\anaconda3\\python.exe",
+        "code/search/verify.py",
+        "--project",
+        ".",
+        "--fixture",
+        "notes\\search01-validation-20261027-01\\fixture",
+        "--outputs",
+        "notes\\search01-validation-20261027-01\\release",
+        "notes\\search01-validation-20261027-01\\asan",
+        "--report",
+        "notes\\search01-validation-20261027-01\\verification.json"
+      ],
+      "cwd": "D:\\NewWorkspace\\projects\\P001-\u76ee\u5f55\u611f\u77e5",
+      "added_runtime_path": null,
+      "started_utc": "2026-10-27T02:45:50.790694+00:00",
+      "exit_code": 0,
+      "finished_utc": "2026-10-27T02:45:55.215273+00:00"
+    }
+  ],
+  "binary_hashes": {
+    "Release-Search": "5806d19eebb2b1ee7f9f0e542a5592f81b94f3bc83f47ea5ada8f1a6b46fceaa",
+    "RelWithDebInfo-ASan-Search": "89911544f47316837cb1c634ae9ab3ccffd1e8137010dc87843368b9b7477b96"
+  },
+  "finished_utc": "2026-10-27T02:45:55.228984+00:00"
+}

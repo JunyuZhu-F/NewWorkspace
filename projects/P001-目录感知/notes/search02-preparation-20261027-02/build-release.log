@@ -1,0 +1,16 @@
+**********************************************************************
+** Visual Studio 2026 Developer Command Prompt v18.11.1
+** Copyright (c) 2026 Microsoft Corporation
+**********************************************************************
+[vcvarsall.bat] Environment initialized for: 'x64'
+-- Configuring done (0.1s)
+-- Generating done (0.1s)
+-- Build files have been written to: D:/NewWorkspace/projects/P001-目录感知/code/build-Release-Search02
+ninja: no work to do.
+Test project D:/NewWorkspace/projects/P001-目录感知/code/build-Release-Search02
+    Start 1: search02_contract
+1/1 Test #1: search02_contract ................   Passed    0.02 sec
+
+100% tests passed, 0 tests failed out of 1
+
+Total Test time (real) =   0.04 sec

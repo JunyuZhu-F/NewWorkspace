@@ -1,0 +1,938 @@
+[
+  {
+    "case": "original-0-0",
+    "query_id": 0,
+    "path": "/2014/",
+    "recursive": false,
+    "k": 100,
+    "origin": "original-time-constraint-project-mode",
+    "query_row": 0
+  },
+  {
+    "case": "original-0-1",
+    "query_id": 0,
+    "path": "/2014/",
+    "recursive": true,
+    "k": 100,
+    "origin": "original-time-constraint-project-mode",
+    "query_row": 0
+  },
+  {
+    "case": "original-9-0",
+    "query_id": 9,
+    "path": "/2017/",
+    "recursive": false,
+    "k": 100,
+    "origin": "original-time-constraint-project-mode",
+    "query_row": 6
+  },
+  {
+    "case": "original-9-1",
+    "query_id": 9,
+    "path": "/2017/",
+    "recursive": true,
+    "k": 100,
+    "origin": "original-time-constraint-project-mode",
+    "query_row": 6
+  },
+  {
+    "case": "original-22-0",
+    "query_id": 22,
+    "path": "/2023/",
+    "recursive": false,
+    "k": 100,
+    "origin": "original-time-constraint-project-mode",
+    "query_row": 10
+  },
+  {
+    "case": "original-22-1",
+    "query_id": 22,
+    "path": "/2023/",
+    "recursive": true,
+    "k": 100,
+    "origin": "original-time-constraint-project-mode",
+    "query_row": 10
+  },
+  {
+    "case": "original-30-0",
+    "query_id": 30,
+    "path": "/2022/",
+    "recursive": false,
+    "k": 100,
+    "origin": "original-time-constraint-project-mode",
+    "query_row": 11
+  },
+  {
+    "case": "original-30-1",
+    "query_id": 30,
+    "path": "/2022/",
+    "recursive": true,
+    "k": 100,
+    "origin": "original-time-constraint-project-mode",
+    "query_row": 11
+  },
+  {
+    "case": "original-31-0",
+    "query_id": 31,
+    "path": "/2008/",
+    "recursive": false,
+    "k": 100,
+    "origin": "original-time-constraint-project-mode",
+    "query_row": 12
+  },
+  {
+    "case": "original-31-1",
+    "query_id": 31,
+    "path": "/2008/",
+    "recursive": true,
+    "k": 100,
+    "origin": "original-time-constraint-project-mode",
+    "query_row": 12
+  },
+  {
+    "case": "original-35-0",
+    "query_id": 35,
+    "path": "/2011/",
+    "recursive": false,
+    "k": 100,
+    "origin": "original-time-constraint-project-mode",
+    "query_row": 13
+  },
+  {
+    "case": "original-35-1",
+    "query_id": 35,
+    "path": "/2011/",
+    "recursive": true,
+    "k": 100,
+    "origin": "original-time-constraint-project-mode",
+    "query_row": 13
+  },
+  {
+    "case": "original-36-0",
+    "query_id": 36,
+    "path": "/2023/",
+    "recursive": false,
+    "k": 100,
+    "origin": "original-time-constraint-project-mode",
+    "query_row": 14
+  },
+  {
+    "case": "original-36-1",
+    "query_id": 36,
+    "path": "/2023/",
+    "recursive": true,
+    "k": 100,
+    "origin": "original-time-constraint-project-mode",
+    "query_row": 14
+  },
+  {
+    "case": "original-37-0",
+    "query_id": 37,
+    "path": "/2025/",
+    "recursive": false,
+    "k": 100,
+    "origin": "original-time-constraint-project-mode",
+    "query_row": 15
+  },
+  {
+    "case": "original-37-1",
+    "query_id": 37,
+    "path": "/2025/",
+    "recursive": true,
+    "k": 100,
+    "origin": "original-time-constraint-project-mode",
+    "query_row": 15
+  },
+  {
+    "case": "original-1-0",
+    "query_id": 1,
+    "path": "/2022/2/",
+    "recursive": false,
+    "k": 100,
+    "origin": "original-time-constraint-project-mode",
+    "query_row": 1
+  },
+  {
+    "case": "original-1-1",
+    "query_id": 1,
+    "path": "/2022/2/",
+    "recursive": true,
+    "k": 100,
+    "origin": "original-time-constraint-project-mode",
+    "query_row": 1
+  },
+  {
+    "case": "original-2-0",
+    "query_id": 2,
+    "path": "/2024/11/",
+    "recursive": false,
+    "k": 100,
+    "origin": "original-time-constraint-project-mode",
+    "query_row": 2
+  },
+  {
+    "case": "original-2-1",
+    "query_id": 2,
+    "path": "/2024/11/",
+    "recursive": true,
+    "k": 100,
+    "origin": "original-time-constraint-project-mode",
+    "query_row": 2
+  },
+  {
+    "case": "original-3-0",
+    "query_id": 3,
+    "path": "/2025/4/",
+    "recursive": false,
+    "k": 100,
+    "origin": "original-time-constraint-project-mode",
+    "query_row": 3
+  },
+  {
+    "case": "original-3-1",
+    "query_id": 3,
+    "path": "/2025/4/",
+    "recursive": true,
+    "k": 100,
+    "origin": "original-time-constraint-project-mode",
+    "query_row": 3
+  },
+  {
+    "case": "original-5-0",
+    "query_id": 5,
+    "path": "/2014/1/",
+    "recursive": false,
+    "k": 100,
+    "origin": "original-time-constraint-project-mode",
+    "query_row": 4
+  },
+  {
+    "case": "original-5-1",
+    "query_id": 5,
+    "path": "/2014/1/",
+    "recursive": true,
+    "k": 100,
+    "origin": "original-time-constraint-project-mode",
+    "query_row": 4
+  },
+  {
+    "case": "original-6-0",
+    "query_id": 6,
+    "path": "/2021/1/",
+    "recursive": false,
+    "k": 100,
+    "origin": "original-time-constraint-project-mode",
+    "query_row": 5
+  },
+  {
+    "case": "original-6-1",
+    "query_id": 6,
+    "path": "/2021/1/",
+    "recursive": true,
+    "k": 100,
+    "origin": "original-time-constraint-project-mode",
+    "query_row": 5
+  },
+  {
+    "case": "original-10-0",
+    "query_id": 10,
+    "path": "/2016/5/",
+    "recursive": false,
+    "k": 100,
+    "origin": "original-time-constraint-project-mode",
+    "query_row": 7
+  },
+  {
+    "case": "original-10-1",
+    "query_id": 10,
+    "path": "/2016/5/",
+    "recursive": true,
+    "k": 100,
+    "origin": "original-time-constraint-project-mode",
+    "query_row": 7
+  },
+  {
+    "case": "original-17-0",
+    "query_id": 17,
+    "path": "/2025/5/",
+    "recursive": false,
+    "k": 100,
+    "origin": "original-time-constraint-project-mode",
+    "query_row": 8
+  },
+  {
+    "case": "original-17-1",
+    "query_id": 17,
+    "path": "/2025/5/",
+    "recursive": true,
+    "k": 100,
+    "origin": "original-time-constraint-project-mode",
+    "query_row": 8
+  },
+  {
+    "case": "original-19-0",
+    "query_id": 19,
+    "path": "/2013/12/",
+    "recursive": false,
+    "k": 100,
+    "origin": "original-time-constraint-project-mode",
+    "query_row": 9
+  },
+  {
+    "case": "original-19-1",
+    "query_id": 19,
+    "path": "/2013/12/",
+    "recursive": true,
+    "k": 100,
+    "origin": "original-time-constraint-project-mode",
+    "query_row": 9
+  },
+  {
+    "case": "diagnostic-0-0",
+    "query_id": 0,
+    "path": "/",
+    "recursive": false,
+    "k": 100,
+    "origin": "project-diagnostic-scope",
+    "query_row": 0
+  },
+  {
+    "case": "diagnostic-0-1",
+    "query_id": 0,
+    "path": "/",
+    "recursive": true,
+    "k": 100,
+    "origin": "project-diagnostic-scope",
+    "query_row": 0
+  },
+  {
+    "case": "diagnostic-1-0",
+    "query_id": 0,
+    "path": "/1991/",
+    "recursive": false,
+    "k": 100,
+    "origin": "project-diagnostic-scope",
+    "query_row": 0
+  },
+  {
+    "case": "diagnostic-1-1",
+    "query_id": 0,
+    "path": "/1991/",
+    "recursive": true,
+    "k": 100,
+    "origin": "project-diagnostic-scope",
+    "query_row": 0
+  },
+  {
+    "case": "diagnostic-2-0",
+    "query_id": 0,
+    "path": "/1991/10/",
+    "recursive": false,
+    "k": 100,
+    "origin": "project-diagnostic-scope",
+    "query_row": 0
+  },
+  {
+    "case": "diagnostic-2-1",
+    "query_id": 0,
+    "path": "/1991/10/",
+    "recursive": true,
+    "k": 100,
+    "origin": "project-diagnostic-scope",
+    "query_row": 0
+  },
+  {
+    "case": "diagnostic-3-0",
+    "query_id": 0,
+    "path": "/1991/11/",
+    "recursive": false,
+    "k": 100,
+    "origin": "project-diagnostic-scope",
+    "query_row": 0
+  },
+  {
+    "case": "diagnostic-3-1",
+    "query_id": 0,
+    "path": "/1991/11/",
+    "recursive": true,
+    "k": 100,
+    "origin": "project-diagnostic-scope",
+    "query_row": 0
+  },
+  {
+    "case": "diagnostic-4-0",
+    "query_id": 0,
+    "path": "/1991/12/",
+    "recursive": false,
+    "k": 100,
+    "origin": "project-diagnostic-scope",
+    "query_row": 0
+  },
+  {
+    "case": "diagnostic-4-1",
+    "query_id": 0,
+    "path": "/1991/12/",
+    "recursive": true,
+    "k": 100,
+    "origin": "project-diagnostic-scope",
+    "query_row": 0
+  },
+  {
+    "case": "diagnostic-5-0",
+    "query_id": 0,
+    "path": "/1991/7/",
+    "recursive": false,
+    "k": 100,
+    "origin": "project-diagnostic-scope",
+    "query_row": 0
+  },
+  {
+    "case": "diagnostic-5-1",
+    "query_id": 0,
+    "path": "/1991/7/",
+    "recursive": true,
+    "k": 100,
+    "origin": "project-diagnostic-scope",
+    "query_row": 0
+  },
+  {
+    "case": "diagnostic-6-0",
+    "query_id": 0,
+    "path": "/1991/8/",
+    "recursive": false,
+    "k": 100,
+    "origin": "project-diagnostic-scope",
+    "query_row": 0
+  },
+  {
+    "case": "diagnostic-6-1",
+    "query_id": 0,
+    "path": "/1991/8/",
+    "recursive": true,
+    "k": 100,
+    "origin": "project-diagnostic-scope",
+    "query_row": 0
+  },
+  {
+    "case": "diagnostic-7-0",
+    "query_id": 0,
+    "path": "/1991/9/",
+    "recursive": false,
+    "k": 100,
+    "origin": "project-diagnostic-scope",
+    "query_row": 0
+  },
+  {
+    "case": "diagnostic-7-1",
+    "query_id": 0,
+    "path": "/1991/9/",
+    "recursive": true,
+    "k": 100,
+    "origin": "project-diagnostic-scope",
+    "query_row": 0
+  },
+  {
+    "case": "diagnostic-8-0",
+    "query_id": 0,
+    "path": "/1992/",
+    "recursive": false,
+    "k": 100,
+    "origin": "project-diagnostic-scope",
+    "query_row": 0
+  },
+  {
+    "case": "diagnostic-8-1",
+    "query_id": 0,
+    "path": "/1992/",
+    "recursive": true,
+    "k": 100,
+    "origin": "project-diagnostic-scope",
+    "query_row": 0
+  },
+  {
+    "case": "diagnostic-9-0",
+    "query_id": 0,
+    "path": "/1992/1/",
+    "recursive": false,
+    "k": 100,
+    "origin": "project-diagnostic-scope",
+    "query_row": 0
+  },
+  {
+    "case": "diagnostic-9-1",
+    "query_id": 0,
+    "path": "/1992/1/",
+    "recursive": true,
+    "k": 100,
+    "origin": "project-diagnostic-scope",
+    "query_row": 0
+  },
+  {
+    "case": "diagnostic-10-0",
+    "query_id": 0,
+    "path": "/1992/10/",
+    "recursive": false,
+    "k": 100,
+    "origin": "project-diagnostic-scope",
+    "query_row": 0
+  },
+  {
+    "case": "diagnostic-10-1",
+    "query_id": 0,
+    "path": "/1992/10/",
+    "recursive": true,
+    "k": 100,
+    "origin": "project-diagnostic-scope",
+    "query_row": 0
+  },
+  {
+    "case": "diagnostic-11-0",
+    "query_id": 0,
+    "path": "/1992/11/",
+    "recursive": false,
+    "k": 100,
+    "origin": "project-diagnostic-scope",
+    "query_row": 0
+  },
+  {
+    "case": "diagnostic-11-1",
+    "query_id": 0,
+    "path": "/1992/11/",
+    "recursive": true,
+    "k": 100,
+    "origin": "project-diagnostic-scope",
+    "query_row": 0
+  },
+  {
+    "case": "diagnostic-12-0",
+    "query_id": 0,
+    "path": "/1992/12/",
+    "recursive": false,
+    "k": 100,
+    "origin": "project-diagnostic-scope",
+    "query_row": 0
+  },
+  {
+    "case": "diagnostic-12-1",
+    "query_id": 0,
+    "path": "/1992/12/",
+    "recursive": true,
+    "k": 100,
+    "origin": "project-diagnostic-scope",
+    "query_row": 0
+  },
+  {
+    "case": "diagnostic-13-0",
+    "query_id": 0,
+    "path": "/1992/2/",
+    "recursive": false,
+    "k": 100,
+    "origin": "project-diagnostic-scope",
+    "query_row": 0
+  },
+  {
+    "case": "diagnostic-13-1",
+    "query_id": 0,
+    "path": "/1992/2/",
+    "recursive": true,
+    "k": 100,
+    "origin": "project-diagnostic-scope",
+    "query_row": 0
+  },
+  {
+    "case": "diagnostic-14-0",
+    "query_id": 0,
+    "path": "/1992/3/",
+    "recursive": false,
+    "k": 100,
+    "origin": "project-diagnostic-scope",
+    "query_row": 0
+  },
+  {
+    "case": "diagnostic-14-1",
+    "query_id": 0,
+    "path": "/1992/3/",
+    "recursive": true,
+    "k": 100,
+    "origin": "project-diagnostic-scope",
+    "query_row": 0
+  },
+  {
+    "case": "diagnostic-15-0",
+    "query_id": 0,
+    "path": "/1992/4/",
+    "recursive": false,
+    "k": 100,
+    "origin": "project-diagnostic-scope",
+    "query_row": 0
+  },
+  {
+    "case": "diagnostic-15-1",
+    "query_id": 0,
+    "path": "/1992/4/",
+    "recursive": true,
+    "k": 100,
+    "origin": "project-diagnostic-scope",
+    "query_row": 0
+  },
+  {
+    "case": "diagnostic-16-0",
+    "query_id": 0,
+    "path": "/1992/5/",
+    "recursive": false,
+    "k": 100,
+    "origin": "project-diagnostic-scope",
+    "query_row": 0
+  },
+  {
+    "case": "diagnostic-16-1",
+    "query_id": 0,
+    "path": "/1992/5/",
+    "recursive": true,
+    "k": 100,
+    "origin": "project-diagnostic-scope",
+    "query_row": 0
+  },
+  {
+    "case": "diagnostic-17-0",
+    "query_id": 0,
+    "path": "/1992/6/",
+    "recursive": false,
+    "k": 100,
+    "origin": "project-diagnostic-scope",
+    "query_row": 0
+  },
+  {
+    "case": "diagnostic-17-1",
+    "query_id": 0,
+    "path": "/1992/6/",
+    "recursive": true,
+    "k": 100,
+    "origin": "project-diagnostic-scope",
+    "query_row": 0
+  },
+  {
+    "case": "diagnostic-18-0",
+    "query_id": 0,
+    "path": "/1992/7/",
+    "recursive": false,
+    "k": 100,
+    "origin": "project-diagnostic-scope",
+    "query_row": 0
+  },
+  {
+    "case": "diagnostic-18-1",
+    "query_id": 0,
+    "path": "/1992/7/",
+    "recursive": true,
+    "k": 100,
+    "origin": "project-diagnostic-scope",
+    "query_row": 0
+  },
+  {
+    "case": "diagnostic-19-0",
+    "query_id": 0,
+    "path": "/1992/8/",
+    "recursive": false,
+    "k": 100,
+    "origin": "project-diagnostic-scope",
+    "query_row": 0
+  },
+  {
+    "case": "diagnostic-19-1",
+    "query_id": 0,
+    "path": "/1992/8/",
+    "recursive": true,
+    "k": 100,
+    "origin": "project-diagnostic-scope",
+    "query_row": 0
+  },
+  {
+    "case": "diagnostic-20-0",
+    "query_id": 0,
+    "path": "/1992/9/",
+    "recursive": false,
+    "k": 100,
+    "origin": "project-diagnostic-scope",
+    "query_row": 0
+  },
+  {
+    "case": "diagnostic-20-1",
+    "query_id": 0,
+    "path": "/1992/9/",
+    "recursive": true,
+    "k": 100,
+    "origin": "project-diagnostic-scope",
+    "query_row": 0
+  },
+  {
+    "case": "diagnostic-21-0",
+    "query_id": 0,
+    "path": "/1993/",
+    "recursive": false,
+    "k": 100,
+    "origin": "project-diagnostic-scope",
+    "query_row": 0
+  },
+  {
+    "case": "diagnostic-21-1",
+    "query_id": 0,
+    "path": "/1993/",
+    "recursive": true,
+    "k": 100,
+    "origin": "project-diagnostic-scope",
+    "query_row": 0
+  },
+  {
+    "case": "diagnostic-22-0",
+    "query_id": 0,
+    "path": "/1993/1/",
+    "recursive": false,
+    "k": 100,
+    "origin": "project-diagnostic-scope",
+    "query_row": 0
+  },
+  {
+    "case": "diagnostic-22-1",
+    "query_id": 0,
+    "path": "/1993/1/",
+    "recursive": true,
+    "k": 100,
+    "origin": "project-diagnostic-scope",
+    "query_row": 0
+  },
+  {
+    "case": "diagnostic-23-0",
+    "query_id": 0,
+    "path": "/1993/10/",
+    "recursive": false,
+    "k": 100,
+    "origin": "project-diagnostic-scope",
+    "query_row": 0
+  },
+  {
+    "case": "diagnostic-23-1",
+    "query_id": 0,
+    "path": "/1993/10/",
+    "recursive": true,
+    "k": 100,
+    "origin": "project-diagnostic-scope",
+    "query_row": 0
+  },
+  {
+    "case": "diagnostic-24-0",
+    "query_id": 0,
+    "path": "/1993/11/",
+    "recursive": false,
+    "k": 100,
+    "origin": "project-diagnostic-scope",
+    "query_row": 0
+  },
+  {
+    "case": "diagnostic-24-1",
+    "query_id": 0,
+    "path": "/1993/11/",
+    "recursive": true,
+    "k": 100,
+    "origin": "project-diagnostic-scope",
+    "query_row": 0
+  },
+  {
+    "case": "diagnostic-25-0",
+    "query_id": 0,
+    "path": "/1993/12/",
+    "recursive": false,
+    "k": 100,
+    "origin": "project-diagnostic-scope",
+    "query_row": 0
+  },
+  {
+    "case": "diagnostic-25-1",
+    "query_id": 0,
+    "path": "/1993/12/",
+    "recursive": true,
+    "k": 100,
+    "origin": "project-diagnostic-scope",
+    "query_row": 0
+  },
+  {
+    "case": "diagnostic-26-0",
+    "query_id": 0,
+    "path": "/1993/2/",
+    "recursive": false,
+    "k": 100,
+    "origin": "project-diagnostic-scope",
+    "query_row": 0
+  },
+  {
+    "case": "diagnostic-26-1",
+    "query_id": 0,
+    "path": "/1993/2/",
+    "recursive": true,
+    "k": 100,
+    "origin": "project-diagnostic-scope",
+    "query_row": 0
+  },
+  {
+    "case": "diagnostic-27-0",
+    "query_id": 0,
+    "path": "/1993/3/",
+    "recursive": false,
+    "k": 100,
+    "origin": "project-diagnostic-scope",
+    "query_row": 0
+  },
+  {
+    "case": "diagnostic-27-1",
+    "query_id": 0,
+    "path": "/1993/3/",
+    "recursive": true,
+    "k": 100,
+    "origin": "project-diagnostic-scope",
+    "query_row": 0
+  },
+  {
+    "case": "diagnostic-28-0",
+    "query_id": 0,
+    "path": "/1993/4/",
+    "recursive": false,
+    "k": 100,
+    "origin": "project-diagnostic-scope",
+    "query_row": 0
+  },
+  {
+    "case": "diagnostic-28-1",
+    "query_id": 0,
+    "path": "/1993/4/",
+    "recursive": true,
+    "k": 100,
+    "origin": "project-diagnostic-scope",
+    "query_row": 0
+  },
+  {
+    "case": "diagnostic-29-0",
+    "query_id": 0,
+    "path": "/1993/5/",
+    "recursive": false,
+    "k": 100,
+    "origin": "project-diagnostic-scope",
+    "query_row": 0
+  },
+  {
+    "case": "diagnostic-29-1",
+    "query_id": 0,
+    "path": "/1993/5/",
+    "recursive": true,
+    "k": 100,
+    "origin": "project-diagnostic-scope",
+    "query_row": 0
+  },
+  {
+    "case": "diagnostic-30-0",
+    "query_id": 0,
+    "path": "/1993/6/",
+    "recursive": false,
+    "k": 100,
+    "origin": "project-diagnostic-scope",
+    "query_row": 0
+  },
+  {
+    "case": "diagnostic-30-1",
+    "query_id": 0,
+    "path": "/1993/6/",
+    "recursive": true,
+    "k": 100,
+    "origin": "project-diagnostic-scope",
+    "query_row": 0
+  },
+  {
+    "case": "diagnostic-31-0",
+    "query_id": 0,
+    "path": "/1993/7/",
+    "recursive": false,
+    "k": 100,
+    "origin": "project-diagnostic-scope",
+    "query_row": 0
+  },
+  {
+    "case": "diagnostic-31-1",
+    "query_id": 0,
+    "path": "/1993/7/",
+    "recursive": true,
+    "k": 100,
+    "origin": "project-diagnostic-scope",
+    "query_row": 0
+  },
+  {
+    "case": "diagnostic-32-0",
+    "query_id": 0,
+    "path": "/1993/8/",
+    "recursive": false,
+    "k": 100,
+    "origin": "project-diagnostic-scope",
+    "query_row": 0
+  },
+  {
+    "case": "diagnostic-32-1",
+    "query_id": 0,
+    "path": "/1993/8/",
+    "recursive": true,
+    "k": 100,
+    "origin": "project-diagnostic-scope",
+    "query_row": 0
+  },
+  {
+    "case": "diagnostic-33-0",
+    "query_id": 0,
+    "path": "/1993/9/",
+    "recursive": false,
+    "k": 100,
+    "origin": "project-diagnostic-scope",
+    "query_row": 0
+  },
+  {
+    "case": "diagnostic-33-1",
+    "query_id": 0,
+    "path": "/1993/9/",
+    "recursive": true,
+    "k": 100,
+    "origin": "project-diagnostic-scope",
+    "query_row": 0
+  },
+  {
+    "case": "diagnostic-34-0",
+    "query_id": 0,
+    "path": "/__empty__/",
+    "recursive": false,
+    "k": 100,
+    "origin": "project-diagnostic-scope",
+    "query_row": 0
+  },
+  {
+    "case": "diagnostic-34-1",
+    "query_id": 0,
+    "path": "/__empty__/",
+    "recursive": true,
+    "k": 100,
+    "origin": "project-diagnostic-scope",
+    "query_row": 0
+  },
+  {
+    "case": "diagnostic-35-0",
+    "query_id": 0,
+    "path": "/__missing__/",
+    "recursive": false,
+    "k": 100,
+    "origin": "project-diagnostic-scope",
+    "query_row": 0
+  },
+  {
+    "case": "diagnostic-35-1",
+    "query_id": 0,
+    "path": "/__missing__/",
+    "recursive": true,
+    "k": 100,
+    "origin": "project-diagnostic-scope",
+    "query_row": 0
+  }
+]

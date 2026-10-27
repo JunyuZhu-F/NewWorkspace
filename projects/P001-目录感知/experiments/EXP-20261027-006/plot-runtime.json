@@ -1,0 +1,17 @@
+{
+  "command": [
+    "D:\\anaconda3\\envs\\zhu_3_10\\python.exe",
+    "code/search02/analyze.py",
+    "--experiment",
+    "experiments/EXP-20261027-006/analysis-02",
+    "--skill-scripts",
+    "C:/Users/PC/.codex/skills/nature-figure/scripts"
+  ],
+  "exit_code": 0,
+  "python": "D:\\anaconda3\\envs\\zhu_3_10\\python.exe",
+  "numpy": "1.26.4",
+  "matplotlib": "3.10.9",
+  "runtime_change": "Existing conda environment; child PATH isolates base conda DLLs. No packages installed or changed.",
+  "original_verification_copy": "D:\\NewWorkspace\\projects\\P001-\u76ee\u5f55\u611f\u77e5\\experiments\\EXP-20261027-006\\analysis-02\\verification.json",
+  "original_render_attempts_preserved": true
+}

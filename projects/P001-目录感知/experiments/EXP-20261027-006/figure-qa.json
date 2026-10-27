@@ -1,0 +1,30 @@
+{
+  "source_static": "20 PASS, 1 WARN (127mm custom report size), 0 FAIL",
+  "backend": "Python only; existing environment, no installation",
+  "visual_review": "Both final figures inspected; readable labels/units/error bars/legends, no clipping. Near-overlap of OFFLINE/TrieHI is genuine; no coordinate jitter or observations removed.",
+  "exclusion": "Only 266 empty year-local cases omitted from primary Recall curves, latency retained separately.",
+  "figures": {
+    "recursive": {
+      "collision": "PASS, 0 fail / 0 warn",
+      "minimum_pdf_font_pt": 7.0,
+      "alignment": "NOT APPLICABLE: single axis",
+      "exports": {
+        "pdf": "83e42e45a30a039b223e90d5cd77ccaf646bdae594bef31d595b8c22980c7779",
+        "svg": "e8d98079c09724aa4f66cf2af6ac13710fba21ac356acc3ed6b747b9e8c2fec8",
+        "png": "1ab02d46650b56e276143d0d3799e4c5105c51d6ccff688ee48dc25166d0247a",
+        "tiff": "880ba6fcbace2cec2086553bad89a0d12f5c3e602043632aca03db537bc6f1fb"
+      }
+    },
+    "nonrecursive": {
+      "collision": "PASS, 0 fail / 0 warn",
+      "minimum_pdf_font_pt": 7.0,
+      "alignment": "NOT APPLICABLE: single axis",
+      "exports": {
+        "pdf": "1782ccc3695c53054cfb3c1b226308303bcd17e693410636c0fbb5aa8c8f0ece",
+        "svg": "914bb51987afcc74971c3f4632b0521cb7f71dac18596220983c3d5eb279bf84",
+        "png": "719ac27ca01e90ab07af60c4cbedd8572a396fadee8433262ddf80fee0273975",
+        "tiff": "47657e775ca54f081de9fb609d224d7120fe08e05949e6ca84296767a4b1442e"
+      }
+    }
+  }
+}

@@ -1,0 +1,5 @@
+{
+  "path": "notes\\search02-preparation-20261027-01\\fixture",
+  "manifest_sha256": "1aa57e1e30459ba5152c8364ee441de27cab7878db2e9cf7039cc16c78682ade",
+  "reason": "Reuse valid input after generated-include newline guard failure; no data or scientific protocol changes"
+}

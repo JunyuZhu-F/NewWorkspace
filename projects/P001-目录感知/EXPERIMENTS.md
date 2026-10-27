@@ -12,6 +12,10 @@
 
 ## 2. 实验索引
 
+最新：EXP-20261027-006已完成SEARCH-02当前时间/独立IVF小规模分支，5/5正式进程、1202400行计时及全部排名/候选独立核验通过；完整record/results/verification和最终曲线在006。下面的SEARCH-01与DIR/COST描述是各自完成时点，不代表SEARCH-02仍未执行。
+
+2026-10-27 SEARCH-01正确性准入完成（非SEARCH-02性能实验，不分配新EXP）：notes/search01-validation-20261027-01/record.md、verification.json及final-status.json。10000条、104case；Release/ASan各1248条结果及独立候选/真值/分区检查通过。32原约束case全空，不报告其召回为1；64非空诊断共用query_id0。首次ASan缺DLL启动失败及PATH修复均保留，旧Release复用。下一项SEARCH-02，不宣称原版Viking复现。
+
 最新收尾：005已完成135/135且独立重核验通过，record.md已补齐；与004共同验收当前小规模DIR-01分支。全量时间metadata审计也已完成。以下“尚未运行”段落为当时准备历史，不是当前状态；不为数据审计登记虚构性能实验。
 
 全量metadata审计已完成（非性能实验，不分配新EXP）：notes/arxiv-time-full-audit-20261027-01/，2,763,543条全量绑定、432目录，两个独立解析逐条复核通过；未建全量索引或运行性能，保留1995覆盖缺口。
@@ -26,6 +30,7 @@
 
 | 实验编号 | 目的 / 变量 | 状态 | 代码版本 | 主要结论 | 完整记录 / 输出入口 |
 | --- | --- | --- | --- | --- | --- |
+| EXP-20261027-006 | SEARCH-02时间/独立IVF小规模质量—总延迟矩阵 | 完成：5/5，1202400行，独立核验通过 | 6a66c9e+保留的未提交成果；46文件source-hashes.json | 10000跨时间样本、501time查询两模式；同后端质量相同，递归总均值OFFLINE/TrieHI较低；非递归目录阶段保留ONLINE更低反例，空范围另报；非原版Viking数值 | experiments/EXP-20261027-006/record.md；results.md；analysis-02/figures/ |
 | EXP-20261027-005 | DIR-01-COST-RUN-01：独立阶段计时/请求分配正式补测 | 完成：135/135，独立核验通过 | COST02-440a2e0f81208f81；基线37981aa+保留的未提交诊断增量 | 诊断MERGE中catalog约90%–95%；请求字节518288/542136/544840，非物理堆；不与004混池 | experiments/EXP-20261027-005/record.md；results.md |
 | EXP-20261027-001 | DIR-01 首次启动 | 失败，测量进程 0 | 37981aa；SNAP-0b110bb7dee8280f | 快照目录创建缺陷，未产生性能值 | experiments/EXP-20261027-001/record.md |
 | EXP-20261027-002 | DIR-01 冻结矩阵重试 | 失败，测量进程 0 | 37981aa + 快照目录修复；实际快照见 source/hashes.json | powercfg 本地化输出解码失败 | experiments/EXP-20261027-002/record.md |

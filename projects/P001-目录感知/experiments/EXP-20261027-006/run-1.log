@@ -1,0 +1,4 @@
+{"strategy":"PE-OFFLINE","status":"completed"}
+{"strategy":"TrieHI","status":"completed"}
+{"strategy":"PE-ONLINE","status":"completed"}
+{"status":"completed","timing_rows":240480,"label":"formal"}
