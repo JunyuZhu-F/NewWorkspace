@@ -1,0 +1,14 @@
+{
+  "source_reports": {
+    "verification-directory-default.json": "ed8870be1b44bdc3b370d46918f24f9a71c4a4ba3f060264ca653c8c02294db0",
+    "verification-directory-phase.json": "7a1f2c6f0e3a1fbc337f314ce16876bb38726e60904c14ae95e6f8bb831dedea"
+  },
+  "export_script_sha256": "fe82ed6c9897e5e0849e660b552cdfbe654c03094cb93c4e7db31d38eeb8ea47",
+  "exports": {
+    "operations.csv": "1dc9c7c4856ff4d7897cb069346c77a5e19ba5f65100dda5edb51dc66df34b6e",
+    "portable.csv": "c5a80f644f8f9cd5e726a7bba85b367ed9aabb48b95c3201e0993ceb0e73084d",
+    "query-by-case.csv": "1d9c8cca4e304bdeeb3b680e2e21144b589fd03a0062e5ab6b1b869ef8fbab12",
+    "query-by-depth.csv": "de6bc13efabdea5d365347b1a43133ea306f4603dab06bfb2623e7918c641f74",
+    "statistics.csv": "d5034eafeb9743102e01e93ef3f0da83cfb39cf1a7052ef3f4b2c61ce1d29139"
+  }
+}

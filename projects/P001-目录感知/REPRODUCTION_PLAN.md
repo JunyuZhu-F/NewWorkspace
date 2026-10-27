@@ -1,6 +1,6 @@
 # REPRODUCTION_PLAN.md — 从目录语义到可核验结果
 
-> 当前主线：SEARCH-01/02当前时间/独立IVF小规模分支已完成；006五进程1202400行计时和全部检索结果独立核验通过，两张质量—总延迟图已留证。下一项SCALE-01资源/具体规模预算评估，不自动执行SCALE-02。PG/WIKI/作者原设置仍缺，不追查1995年。
+> 当前主线（2026-10-27）：WIKI独立小规模分支已完成并审查。007目录默认/phase共10进程、008检索五进程均独立核验及收尾hash通过；WIKI-PROTO-01只关闭已授权独立协议，作者GAP保留，nDCG不报告。下一项REPORT-01对两数据集已完成小规模范围汇总，整体/全量/PG/Viking未完成；SCALE-01后移，不自动执行SCALE-02，不追查1995年。
 
 > 最新验收：DIR-01-COST-RUN-01已完成，DIR-01当前人工树/10,000条时间视图小规模分支按冻结条件验收，见 notes/dir01-small-scope-acceptance-20261027.md。整体OBJ-03和全文复现未关闭；下列早期准备/审查增量为历史状态。
 
@@ -50,6 +50,11 @@
 | SEARCH-01 | 向量后端与质量协议，OBJ-04 条件项 | 对应DATA时间分支，CHECK-01；用户指定开始小数据检索 | 已完成（当前时间/IVF分支） | 10000条、104case；Release/ASan各契约1/1、1248条结果，候选/独立精确GT/过滤/分区/跨构建一致通过。协议notes/search01-protocol-20261027.md，证据notes/search01-validation-20261027-01/。32原约束全空，64非空诊断共用query_id0，不作代表性质量证据。PG/WIKI/作者Viking及整体OBJ-04未关闭。 |
 | SEARCH-02 | 小规模质量-总延迟曲线，OBJ-04 条件项 | SEARCH-01，DIR-01；新输入先准入 | 已完成（当前时间/IVF分支） | EXP-20261027-006，5/5进程、1202400行计时及60120条基线排名独立核验；10000跨时间样本，501递归/235月份非递归非空，266年份非递归空另报。三策略同后端/模型/质量，均值/分位数/阶段/逐run/曲线/QA齐全。协议notes/search02-protocol-20261027.md，完整证据experiments/EXP-20261027-006/；非Viking/PG/WIKI或整体OBJ-04完成。 |
 | SCALE-01 | 资源复核与规模审批 | DIR-01；含检索时 SEARCH-02 | 未开始 | 估计峰值内存/磁盘/耗时，用户批准具体矩阵和预算；本轮审核不隐含全量运行授权。 |
+| WIKI-DATA-01 | WIKI 数据与协议前置核查，OBJ-01/02/04 | DATA-01 初查；用户要求优先推进 WIKI | 已完成 | 全量1941679条path/corpus ID一致，末端363467/均深11.9512、补齐祖先含根468031；独立路径复核、全部query/qrels/查询向量及固定10000样本向量通过。非全量向量检查，作者查询缺口保留；见notes/wiki-preparation-20261027-01/record.md、run-01/report.json与verification.json。 |
+| WIKI-CHECK-01 | WIKI 小规模目录语义准入，OBJ-02 | WIKI-DATA-01；冻结protocol.md | 已完成 | 10000真实路径样本，Release/ASan各5292次范围集合核验零差异，MOVE/MERGE/拒绝及全量不变量通过；跨构建答案相同，独立Python状态判定核验通过；006原46源码hash不变。最终check-02，失败check-01保留；非原文DSM或性能成绩。 |
+| WIKI-DIR-01 | WIKI 小规模目录性能，OBJ-03 | WIKI-CHECK-01；冻结具体协议/矩阵 | 已完成（独立小规模分支） | 007默认/phase各5/5、43470原始行通过，正式37800/预热5670；CSV、逐深度/逐case、阶段/catalog、portable及最终hash齐全。递归/large维护优势和非递归/deep MERGE反例保留；非作者DSM、全量或整体OBJ-03验收。 |
+| WIKI-PROTO-01 | WIKI 独立检索协议与准入，OBJ-04 | WIKI-DATA-01；用户授权独立协议 | 已完成 | notes/wiki-independent-preparation-20261027-01/status.json及三份verification通过；Release/ASan目录默认/phase及检索全部一致、生成源码仅三处预定替换。912case中递归456非空，非递归127非空/329空；qrels不参与，L2/子集精确GT/Recall@10，nDCG不报告。作者GAP保留，正式结果不从准入计时推断。 |
+| WIKI-SEARCH-01 | WIKI独立检索质量/总延迟 | WIKI-PROTO-01准入；WIKI-DIR-01矩阵核验 | 已完成（独立小规模分支） | 008五进程、1094400正式行、54720基线排名和13680候选记录独立核验通过；模型/排名跨策略/进程一致，exact/全探测非空Recall=1，空范围质量null。阶段/分位数/逐进程SD/配对差CSV与最终hash齐全；非Viking、作者工作负载或整体OBJ-04通过，nDCG不报告。 |
 | SCALE-02 | 获批规模的正式测量 | SCALE-01 | 未开始 | 只跑获批矩阵，完整记录成功/失败/中断及协议变更；资源只允许中等规模时明确全量未执行。 |
 | REPORT-01 | 逐目标验收，OBJ-05 | 已完成的范围任务 | 未开始 | 每个 OBJ 有结论、证据和限制；区分语义通过、趋势是否复现、原版数值不可比、未执行；更新 STATE。 |
 
@@ -62,7 +67,7 @@ WIKI 原文 DSQ/深度对照与 DSM 数值对照当前受 GAP-01/02 阻碍。DAT
 - DATA-01、SPEC-01 继续进行中：全库审计、真实类别直接归属、两套真值协议、WIKI 查询目录与作者 DSM 工作负载没有因核心测试通过而解决。
 - SPEC-ARXIV-CATEGORY-01 继续材料阻塞；不得将类别列表直接解释为 Local，或修改基线凑结果。
 - PROTO-01 已完成：时间视图/人工树的小规模性能测量方法已冻结。DIR-01 准备已按该协议完成；本协议不构成作者原始工作负载。
-- DIR-01当前小规模分支及正式成本补测已完成；数据/协议父任务未完成。当前只读推进DATA-TIME-FULL-01，不重跑有效矩阵，真实类别/WIKI/SEARCH和扩规模约束保持。
+- DIR-01、成本补测、DATA-TIME-FULL-01及独立ARXIV SEARCH均已完成；最新WIKI独立小规模目录/检索也完成，见007/008。数据/协议父任务和原作者WIKI/类别/PG缺口保留，不重跑有效矩阵，扩规模另行决定。
 
 ## 3. 数据与操作：先知道什么才算答对
 

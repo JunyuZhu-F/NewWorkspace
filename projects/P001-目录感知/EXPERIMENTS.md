@@ -12,6 +12,10 @@
 
 ## 2. 实验索引
 
+2026-10-27最新：WIKI独立协议执行与审查已完成。007目录10/10进程、008检索5/5进程，独立核验、CSV/表格和最终hash通过；见各record/results/final-check。协议notes/wiki-independent-protocol-20261027.md，准入/审查见notes/wiki-independent-preparation-20261027-01/record.md、review.md。qrels不参与选目录，nDCG不报告，不关闭原作者GAP或全文目标。
+
+2026-10-27最新增量：优先推进WIKI，WIKI-DATA-01/WIKI-CHECK-01完成当前小规模前置与正确性准入（不分配正式性能EXP）。全量1941679条path/corpus ID一致；10000真实路径样本Release/ASan各5292次范围核验通过，跨构建相同及独立Python核验通过。完整入口 notes/wiki-preparation-20261027-01/record.md；最终check-02，失败check-01保留。未测WIKI性能或检索质量，下一项WIKI-DIR-01。
+
 最新：EXP-20261027-006已完成SEARCH-02当前时间/独立IVF小规模分支，5/5正式进程、1202400行计时及全部排名/候选独立核验通过；完整record/results/verification和最终曲线在006。下面的SEARCH-01与DIR/COST描述是各自完成时点，不代表SEARCH-02仍未执行。
 
 2026-10-27 SEARCH-01正确性准入完成（非SEARCH-02性能实验，不分配新EXP）：notes/search01-validation-20261027-01/record.md、verification.json及final-status.json。10000条、104case；Release/ASan各1248条结果及独立候选/真值/分区检查通过。32原约束case全空，不报告其召回为1；64非空诊断共用query_id0。首次ASan缺DLL启动失败及PATH修复均保留，旧Release复用。下一项SEARCH-02，不宣称原版Viking复现。
@@ -30,6 +34,8 @@
 
 | 实验编号 | 目的 / 变量 | 状态 | 代码版本 | 主要结论 | 完整记录 / 输出入口 |
 | --- | --- | --- | --- | --- | --- |
+| EXP-20261027-007 | WIKI独立10000样本目录性能，默认/phase分池 | 完成：10/10、43470原始行，核验/导出/hash通过 | be59bbcc+保留增量；53项source-hashes.json | 递归/大子树优势，非递归/deep MERGE反例保留；正式37800/预热5670；非原版或全量 | experiments/EXP-20261027-007/record.md；results.md；final-check.json |
+| EXP-20261027-008 | WIKI独立L2/IVF质量及总延迟 | 完成：5/5、1094400正式行，核验/导出/hash通过 | be59bbcc+保留增量；54项source-hashes.json | exact/全探测非空Recall=1；nprobe4递归0.299882/非递归0.110236，质量三策略相同；空范围另报，nDCG不报告 | experiments/EXP-20261027-008/record.md；results.md；final-check.json |
 | EXP-20261027-006 | SEARCH-02时间/独立IVF小规模质量—总延迟矩阵 | 完成：5/5，1202400行，独立核验通过 | 6a66c9e+保留的未提交成果；46文件source-hashes.json | 10000跨时间样本、501time查询两模式；同后端质量相同，递归总均值OFFLINE/TrieHI较低；非递归目录阶段保留ONLINE更低反例，空范围另报；非原版Viking数值 | experiments/EXP-20261027-006/record.md；results.md；analysis-02/figures/ |
 | EXP-20261027-005 | DIR-01-COST-RUN-01：独立阶段计时/请求分配正式补测 | 完成：135/135，独立核验通过 | COST02-440a2e0f81208f81；基线37981aa+保留的未提交诊断增量 | 诊断MERGE中catalog约90%–95%；请求字节518288/542136/544840，非物理堆；不与004混池 | experiments/EXP-20261027-005/record.md；results.md |
 | EXP-20261027-001 | DIR-01 首次启动 | 失败，测量进程 0 | 37981aa；SNAP-0b110bb7dee8280f | 快照目录创建缺陷，未产生性能值 | experiments/EXP-20261027-001/record.md |

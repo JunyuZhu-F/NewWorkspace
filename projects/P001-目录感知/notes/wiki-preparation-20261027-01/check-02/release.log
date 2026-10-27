@@ -1,0 +1,5 @@
+initial directories=23027 queries=220 scopes_total=1320
+move directories=23027 queries=220 scopes_total=2640
+merge directories=23026 queries=221 scopes_total=3966
+reject directories=23026 queries=221 scopes_total=5292
+PASS records=10000 scope_checks=5292 source=/Academic_disciplines/Academic_discipline_interactions/Interdisciplinary_subfields/Interdisciplinary_subfields_of_economics/Economic_geology/Industrial_minerals/Phosphates/Metaphosphates/ target=/Universe/Matter/Physical_objects/Particles/Particle_physics/

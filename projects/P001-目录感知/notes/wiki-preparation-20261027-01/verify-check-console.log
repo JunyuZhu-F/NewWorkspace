@@ -1,0 +1,6 @@
+Traceback (most recent call last):
+  File "D:\NewWorkspace\projects\P001-Ŀ¼��֪\notes\wiki-preparation-20261027-01\verify_check.py", line 70, in <module>
+    if __name__=='__main__':main()
+  File "D:\NewWorkspace\projects\P001-Ŀ¼��֪\notes\wiki-preparation-20261027-01\verify_check.py", line 18, in main
+    assert status['status']=='passed'
+AssertionError

@@ -1,0 +1,23 @@
+{
+  "status": "passed",
+  "finished_utc": "2026-10-27T05:00:12.713505+00:00",
+  "formal_workers": 10,
+  "raw_rows": 43470,
+  "measurement_rows": 37800,
+  "warmup_rows_recorded": 5670,
+  "worker_output_files_rehashed": 40,
+  "run_labels_and_all_raw_run_ids_rechecked": true,
+  "export_provenance_rehashed": true,
+  "source_entries_rehashed": 53,
+  "protocol_sha256": "4de1bc22f11e65fa4228b754dbc1cbdabbd2e194294b9dc440c0fd7771a2417c",
+  "original_006_sources_unchanged": true,
+  "raw_vector_size_mtime_unchanged": true,
+  "old_wiki_sample_vector_records_match": true,
+  "peak_private_bytes_sampled": 157949952,
+  "minimum_available_bytes_sampled": 4963151872,
+  "output_bytes_at_check": 5399805,
+  "published_query_constraints_recovered": false,
+  "ndcg_reported": false,
+  "full_scale_executed": false,
+  "complete_reproduction_claimed": false
+}

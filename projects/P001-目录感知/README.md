@@ -2,11 +2,13 @@
 
 > P001-目录感知，采用 arXiv:2606.16903v1。当前小规模DIR-01、全量时间metadata审计及SEARCH-01/02时间/独立IVF分支完成；006五进程质量—总延迟对照通过独立核验。全量索引/性能、完整真实协议及PG/原版Viking未完成。
 
+WIKI独立小规模分支已完成：[007目录性能](experiments/EXP-20261027-007/results.md)默认/phase共10进程，[008检索结果](experiments/EXP-20261027-008/results.md)五进程/1094400正式计时均通过独立核验与最终hash。依据用户授权的[独立协议](notes/wiki-independent-protocol-20261027.md)，[准入与审查](notes/wiki-independent-preparation-20261027-01/review.md)齐全；qrels不参与选目录，nDCG因覆盖不足不报告。原作者约束/DSM/PG/Viking和全量缺口保留，不再等待作者联系，不将本分支当全文验收。
+
 初次阅读建议先看 [精读笔记](notes/paper-card.md) 和 [材料/疑点清单](notes/materials-and-gaps.md)，再审核下面的目标与计划。
 
 最新交付：[核心实现与审查](notes/core-review.md)、[构建和使用入口](code/README.md)。数据边界见 [DATA-01 小规模核查](notes/data-audit.md)。用户确认先用现有电脑，暂不做应用实验，大规模运行另行决定。
 
-最新检索：[SEARCH-02正式记录](experiments/EXP-20261027-006/record.md)、[质量—总延迟结果](experiments/EXP-20261027-006/results.md)、[构建/重跑入口](code/search02/README.md)。10000跨时间样本、501个真实time查询两模式，5进程1202400行计时通过独立核验；[递归曲线](experiments/EXP-20261027-006/analysis-02/figures/recursive.pdf)/[非递归曲线](experiments/EXP-20261027-006/analysis-02/figures/nonrecursive.pdf)。下一项SCALE-01资源评估，扩规模不自动运行。[SEARCH-01旧诊断](notes/search01-validation-20261027-01/record.md)保留，不混合成绩。
+已有ARXIV检索：[SEARCH-02正式记录](experiments/EXP-20261027-006/record.md)、[质量—总延迟结果](experiments/EXP-20261027-006/results.md)、[构建/重跑入口](code/search02/README.md)。10000跨时间样本、501个真实time查询两模式，5进程1202400行计时通过独立核验；[递归曲线](experiments/EXP-20261027-006/analysis-02/figures/recursive.pdf)/[非递归曲线](experiments/EXP-20261027-006/analysis-02/figures/nonrecursive.pdf)。[SEARCH-01旧诊断](notes/search01-validation-20261027-01/record.md)保留，不混合成绩。
 
 继续推进的依据：[单父目录操作约定](notes/operation-spec.md)、[关联加载器核对](notes/reference-loader-review.md)、[本机 C++ 环境](notes/environment.md)。
 
@@ -39,7 +41,7 @@ P001-目录感知/
 
 ## 环境与运行
 
-现有 Windows x64、MSVC/CMake/Ninja，CRoaring v5.3.2 已固定。代码和命令见 [code/README.md](code/README.md)，真实验证、源码快照与原始日志见 [core-review.md](notes/core-review.md)。本轮仅处理目录和 ID，未接入向量搜索。
+现有 Windows x64、MSVC/CMake/Ninja，CRoaring v5.3.2 已固定。目录代码和命令见 [code/README.md](code/README.md)，核心初次验证见 [core-review.md](notes/core-review.md)。独立exact/IVF小规模检索已接入，ARXIV结果见006，WIKI推进见当前STATE；不是作者Viking后端。
 
 原始数据在 dataset/raw/，保持只读；前 10,000 条时间视图用于正确性。DATA-01/SPEC-01 的真实类别、WIKI/作者工作负载缺口仍保留，关联 OpenViking 不能直接视为完整原文实验包。
 

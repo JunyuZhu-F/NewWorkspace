@@ -1,0 +1,20 @@
+{
+  "status": "passed",
+  "stage": "prepare",
+  "started_utc": "2026-10-27T04:19:46.442859+00:00",
+  "measurements_completed": 0,
+  "fixture": "notes\\wiki-independent-preparation-20261027-01\\fixture",
+  "binary_hashes": {
+    "Release": {
+      "wiki_directory": "517d65d93b0a3ac90f1393bbf625303e5e79d79d4adc0dacbe0d06cb31474c89",
+      "wiki_directory_phase": "3398ef2a98f5cf43b3f10d8a85eff9c1d654fe5fe9b54d215cbf4c23e3135235",
+      "wiki_search": "33256d7cb1f7a8ae64c0f0ceed18d8f9fdba81c8f03b9abf589ee003f662a3ae"
+    },
+    "RelWithDebInfo-ASan": {
+      "wiki_directory": "3c0e9f1905c171b46abdd450def9b292241341888d49f0c660f47024bcdff038",
+      "wiki_directory_phase": "ea11305c1755bf0100041ac0c748a9d7fb75a328cc84c164dae738d9eba6a3e9",
+      "wiki_search": "8c0be207bf517e66a145b26be8681e77ba52e816c9501aedc29adc5377a9dd53"
+    }
+  },
+  "finished_utc": "2026-10-27T04:29:13.461413+00:00"
+}

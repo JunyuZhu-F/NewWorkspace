@@ -1,0 +1,3316 @@
+{
+  "status": "passed",
+  "formal": true,
+  "kind": "directory",
+  "directory_cases": 58,
+  "operations": [
+    {
+      "case": "move-large",
+      "kind": "move",
+      "source": "/Nature/Natural_sciences/",
+      "target": "/__wiki_bench__/",
+      "source_directories": 8785,
+      "source_entries": 4734,
+      "source_depth": 2,
+      "target_depth": 1,
+      "conflict_directories": 0
+    },
+    {
+      "case": "merge-large",
+      "kind": "merge",
+      "source": "/__wiki_bench__/Natural_sciences/",
+      "target": "/Universe/",
+      "source_directories": 8785,
+      "source_entries": 4734,
+      "source_depth": 2,
+      "target_depth": 1,
+      "conflict_directories": 1
+    },
+    {
+      "case": "move-deep",
+      "kind": "move",
+      "source": "/Life/Organisms/Eukaryotes/Animals/Animal_taxa/Animal_taxa_by_rank/Animal_unranked_clades/ParaHoxozoa/Bilaterians/Protostomes/Ecdysozoa/Panarthropoda/Arthropods/Arthropod_taxa/Arthropod_taxonomy/Insect_taxonomy/Lepidoptera_taxonomy/Glossata/Coelolepida/Myoglossata/Neolepidoptera/Heteroneura/Eulepidoptera/Ditrysia/Macrolepidoptera/Butterflies/Butterfly_taxonomy/Nymphalidae/Satyrinae/Elymniini/Mycalesis/",
+      "target": "/__wiki_bench__/",
+      "source_directories": 1,
+      "source_entries": 1,
+      "source_depth": 31,
+      "target_depth": 1,
+      "conflict_directories": 0
+    },
+    {
+      "case": "merge-deep",
+      "kind": "merge",
+      "source": "/__wiki_bench__/Mycalesis/",
+      "target": "/Universe/",
+      "source_directories": 1,
+      "source_entries": 1,
+      "source_depth": 2,
+      "target_depth": 1,
+      "conflict_directories": 1
+    }
+  ],
+  "workers": [
+    {
+      "output": "experiments\\EXP-20261027-007\\run-default-0",
+      "rows": 4347,
+      "files": {
+        "answers.tsv": "9da4f9ab6baaea953741b3a0dd6e46c384afbbcfc9ffeaaa410ff9e9d7001ee7",
+        "clock.tsv": "336371f520dfaced892e4924b455c61a8a04c8d042ba6dbd9d75ac9d575dd043",
+        "space.tsv": "a20ef3afd0ba2a8f34ab9ce047eb58e8b75c56642ae4f5becefef7e322cd5467",
+        "timings.tsv": "ecc66686f35ae098e11aa07b0cbdd1dbede0b43bccac1d92a9a7212a2e8bc85f"
+      },
+      "groups": [
+        {
+          "strategy": "PE-OFFLINE",
+          "kind": "build",
+          "case": "build",
+          "total": {
+            "count": 20,
+            "mean_ns": 199122185.0,
+            "p90_ns": 213776600,
+            "p95_ns": 213881900,
+            "p99_ns": 219541800,
+            "p99.9_ns": 219541800
+          }
+        },
+        {
+          "strategy": "PE-OFFLINE",
+          "kind": "merge",
+          "case": "merge-deep",
+          "total": {
+            "count": 20,
+            "mean_ns": 255870.0,
+            "p90_ns": 324100,
+            "p95_ns": 334900,
+            "p99_ns": 390900,
+            "p99.9_ns": 390900
+          }
+        },
+        {
+          "strategy": "PE-OFFLINE",
+          "kind": "merge",
+          "case": "merge-large",
+          "total": {
+            "count": 20,
+            "mean_ns": 31618035.0,
+            "p90_ns": 34573900,
+            "p95_ns": 35477000,
+            "p99_ns": 39846500,
+            "p99.9_ns": 39846500
+          }
+        },
+        {
+          "strategy": "PE-OFFLINE",
+          "kind": "move",
+          "case": "move-deep",
+          "total": {
+            "count": 20,
+            "mean_ns": 50710.0,
+            "p90_ns": 55500,
+            "p95_ns": 55900,
+            "p99_ns": 70000,
+            "p99.9_ns": 70000
+          }
+        },
+        {
+          "strategy": "PE-OFFLINE",
+          "kind": "move",
+          "case": "move-large",
+          "total": {
+            "count": 20,
+            "mean_ns": 34252440.0,
+            "p90_ns": 35457200,
+            "p95_ns": 39767800,
+            "p99_ns": 39944000,
+            "p99.9_ns": 39944000
+          }
+        },
+        {
+          "strategy": "PE-OFFLINE",
+          "kind": "query",
+          "case": "False",
+          "total": {
+            "count": 580,
+            "mean_ns": 26909.137931034482,
+            "p90_ns": 52900,
+            "p95_ns": 128800,
+            "p99_ns": 233500,
+            "p99.9_ns": 1324800
+          }
+        },
+        {
+          "strategy": "PE-OFFLINE",
+          "kind": "query",
+          "case": "True",
+          "total": {
+            "count": 580,
+            "mean_ns": 2046.3793103448277,
+            "p90_ns": 3700,
+            "p95_ns": 5000,
+            "p99_ns": 8400,
+            "p99.9_ns": 23600
+          }
+        },
+        {
+          "strategy": "PE-ONLINE",
+          "kind": "build",
+          "case": "build",
+          "total": {
+            "count": 20,
+            "mean_ns": 141203945.0,
+            "p90_ns": 153805700,
+            "p95_ns": 155355700,
+            "p99_ns": 169271000,
+            "p99.9_ns": 169271000
+          }
+        },
+        {
+          "strategy": "PE-ONLINE",
+          "kind": "merge",
+          "case": "merge-deep",
+          "total": {
+            "count": 20,
+            "mean_ns": 353040.0,
+            "p90_ns": 376500,
+            "p95_ns": 417900,
+            "p99_ns": 507600,
+            "p99.9_ns": 507600
+          }
+        },
+        {
+          "strategy": "PE-ONLINE",
+          "kind": "merge",
+          "case": "merge-large",
+          "total": {
+            "count": 20,
+            "mean_ns": 31744415.0,
+            "p90_ns": 35693700,
+            "p95_ns": 37189100,
+            "p99_ns": 38610400,
+            "p99.9_ns": 38610400
+          }
+        },
+        {
+          "strategy": "PE-ONLINE",
+          "kind": "move",
+          "case": "move-deep",
+          "total": {
+            "count": 20,
+            "mean_ns": 21620.0,
+            "p90_ns": 23000,
+            "p95_ns": 24200,
+            "p99_ns": 34500,
+            "p99.9_ns": 34500
+          }
+        },
+        {
+          "strategy": "PE-ONLINE",
+          "kind": "move",
+          "case": "move-large",
+          "total": {
+            "count": 20,
+            "mean_ns": 35032850.0,
+            "p90_ns": 36205600,
+            "p95_ns": 39623500,
+            "p99_ns": 50509100,
+            "p99.9_ns": 50509100
+          }
+        },
+        {
+          "strategy": "PE-ONLINE",
+          "kind": "query",
+          "case": "False",
+          "total": {
+            "count": 580,
+            "mean_ns": 3291.0344827586205,
+            "p90_ns": 5500,
+            "p95_ns": 6800,
+            "p99_ns": 11200,
+            "p99.9_ns": 25100
+          }
+        },
+        {
+          "strategy": "PE-ONLINE",
+          "kind": "query",
+          "case": "True",
+          "total": {
+            "count": 580,
+            "mean_ns": 1440417.9310344828,
+            "p90_ns": 6584100,
+            "p95_ns": 7617600,
+            "p99_ns": 16812800,
+            "p99.9_ns": 22180800
+          }
+        },
+        {
+          "strategy": "TrieHI",
+          "kind": "build",
+          "case": "build",
+          "total": {
+            "count": 20,
+            "mean_ns": 54619225.0,
+            "p90_ns": 58266600,
+            "p95_ns": 59392500,
+            "p99_ns": 59396500,
+            "p99.9_ns": 59396500
+          }
+        },
+        {
+          "strategy": "TrieHI",
+          "kind": "merge",
+          "case": "merge-deep",
+          "total": {
+            "count": 20,
+            "mean_ns": 405410.0,
+            "p90_ns": 432900,
+            "p95_ns": 504000,
+            "p99_ns": 1489200,
+            "p99.9_ns": 1489200
+          }
+        },
+        {
+          "strategy": "TrieHI",
+          "kind": "merge",
+          "case": "merge-large",
+          "total": {
+            "count": 20,
+            "mean_ns": 436210.0,
+            "p90_ns": 538800,
+            "p95_ns": 598900,
+            "p99_ns": 639000,
+            "p99.9_ns": 639000
+          }
+        },
+        {
+          "strategy": "TrieHI",
+          "kind": "move",
+          "case": "move-deep",
+          "total": {
+            "count": 20,
+            "mean_ns": 11235.0,
+            "p90_ns": 12400,
+            "p95_ns": 13200,
+            "p99_ns": 16800,
+            "p99.9_ns": 16800
+          }
+        },
+        {
+          "strategy": "TrieHI",
+          "kind": "move",
+          "case": "move-large",
+          "total": {
+            "count": 20,
+            "mean_ns": 14860.0,
+            "p90_ns": 16800,
+            "p95_ns": 17000,
+            "p99_ns": 18100,
+            "p99.9_ns": 18100
+          }
+        },
+        {
+          "strategy": "TrieHI",
+          "kind": "query",
+          "case": "False",
+          "total": {
+            "count": 580,
+            "mean_ns": 18682.241379310344,
+            "p90_ns": 35500,
+            "p95_ns": 99300,
+            "p99_ns": 207100,
+            "p99.9_ns": 226200
+          }
+        },
+        {
+          "strategy": "TrieHI",
+          "kind": "query",
+          "case": "True",
+          "total": {
+            "count": 580,
+            "mean_ns": 1955.5172413793102,
+            "p90_ns": 3000,
+            "p95_ns": 3400,
+            "p99_ns": 5000,
+            "p99.9_ns": 120900
+          }
+        }
+      ],
+      "portable": [
+        {
+          "strategy": "PE-OFFLINE",
+          "stage": 0,
+          "bytes": 843074
+        },
+        {
+          "strategy": "PE-OFFLINE",
+          "stage": 1,
+          "bytes": 843226
+        },
+        {
+          "strategy": "PE-OFFLINE",
+          "stage": 2,
+          "bytes": 833374
+        },
+        {
+          "strategy": "PE-OFFLINE",
+          "stage": 3,
+          "bytes": 833300
+        },
+        {
+          "strategy": "PE-OFFLINE",
+          "stage": 4,
+          "bytes": 833274
+        },
+        {
+          "strategy": "PE-ONLINE",
+          "stage": 0,
+          "bytes": 280792
+        },
+        {
+          "strategy": "PE-ONLINE",
+          "stage": 1,
+          "bytes": 280792
+        },
+        {
+          "strategy": "PE-ONLINE",
+          "stage": 2,
+          "bytes": 280784
+        },
+        {
+          "strategy": "PE-ONLINE",
+          "stage": 3,
+          "bytes": 280784
+        },
+        {
+          "strategy": "PE-ONLINE",
+          "stage": 4,
+          "bytes": 280776
+        },
+        {
+          "strategy": "TrieHI",
+          "stage": 0,
+          "bytes": 843074
+        },
+        {
+          "strategy": "TrieHI",
+          "stage": 1,
+          "bytes": 843226
+        },
+        {
+          "strategy": "TrieHI",
+          "stage": 2,
+          "bytes": 833374
+        },
+        {
+          "strategy": "TrieHI",
+          "stage": 3,
+          "bytes": 833300
+        },
+        {
+          "strategy": "TrieHI",
+          "stage": 4,
+          "bytes": 833274
+        }
+      ]
+    },
+    {
+      "output": "experiments\\EXP-20261027-007\\run-default-1",
+      "rows": 4347,
+      "files": {
+        "answers.tsv": "90388c781c97827a156d677032339a954d5b95fa042c23b64c0b20681d497675",
+        "clock.tsv": "77cfb30f32076412f9ba23a3d42a79593d80279dc103f4cd73a2acf03c8edebd",
+        "space.tsv": "01573b152041887eca162e6a6fbac1cf02a5e879f5f29659cc6da7aad96e7660",
+        "timings.tsv": "305fe9219ae62e7a9ca3bddc20e02f662c4393852c9ef0caf58486061547c9ba"
+      },
+      "groups": [
+        {
+          "strategy": "PE-OFFLINE",
+          "kind": "build",
+          "case": "build",
+          "total": {
+            "count": 20,
+            "mean_ns": 197610140.0,
+            "p90_ns": 205330900,
+            "p95_ns": 206625000,
+            "p99_ns": 219334700,
+            "p99.9_ns": 219334700
+          }
+        },
+        {
+          "strategy": "PE-OFFLINE",
+          "kind": "merge",
+          "case": "merge-deep",
+          "total": {
+            "count": 20,
+            "mean_ns": 252045.0,
+            "p90_ns": 304000,
+            "p95_ns": 307200,
+            "p99_ns": 321200,
+            "p99.9_ns": 321200
+          }
+        },
+        {
+          "strategy": "PE-OFFLINE",
+          "kind": "merge",
+          "case": "merge-large",
+          "total": {
+            "count": 20,
+            "mean_ns": 30838785.0,
+            "p90_ns": 31770800,
+            "p95_ns": 32310100,
+            "p99_ns": 32943800,
+            "p99.9_ns": 32943800
+          }
+        },
+        {
+          "strategy": "PE-OFFLINE",
+          "kind": "move",
+          "case": "move-deep",
+          "total": {
+            "count": 20,
+            "mean_ns": 50410.0,
+            "p90_ns": 57800,
+            "p95_ns": 64500,
+            "p99_ns": 84300,
+            "p99.9_ns": 84300
+          }
+        },
+        {
+          "strategy": "PE-OFFLINE",
+          "kind": "move",
+          "case": "move-large",
+          "total": {
+            "count": 20,
+            "mean_ns": 34599305.0,
+            "p90_ns": 36494100,
+            "p95_ns": 37024200,
+            "p99_ns": 38679900,
+            "p99.9_ns": 38679900
+          }
+        },
+        {
+          "strategy": "PE-OFFLINE",
+          "kind": "query",
+          "case": "False",
+          "total": {
+            "count": 580,
+            "mean_ns": 25463.44827586207,
+            "p90_ns": 53700,
+            "p95_ns": 129600,
+            "p99_ns": 242500,
+            "p99.9_ns": 286900
+          }
+        },
+        {
+          "strategy": "PE-OFFLINE",
+          "kind": "query",
+          "case": "True",
+          "total": {
+            "count": 580,
+            "mean_ns": 2090.689655172414,
+            "p90_ns": 3800,
+            "p95_ns": 5000,
+            "p99_ns": 8700,
+            "p99.9_ns": 29300
+          }
+        },
+        {
+          "strategy": "PE-ONLINE",
+          "kind": "build",
+          "case": "build",
+          "total": {
+            "count": 20,
+            "mean_ns": 138946870.0,
+            "p90_ns": 146274000,
+            "p95_ns": 149170200,
+            "p99_ns": 152257000,
+            "p99.9_ns": 152257000
+          }
+        },
+        {
+          "strategy": "PE-ONLINE",
+          "kind": "merge",
+          "case": "merge-deep",
+          "total": {
+            "count": 20,
+            "mean_ns": 360160.0,
+            "p90_ns": 399200,
+            "p95_ns": 409700,
+            "p99_ns": 519200,
+            "p99.9_ns": 519200
+          }
+        },
+        {
+          "strategy": "PE-ONLINE",
+          "kind": "merge",
+          "case": "merge-large",
+          "total": {
+            "count": 20,
+            "mean_ns": 32204530.0,
+            "p90_ns": 35130300,
+            "p95_ns": 35837600,
+            "p99_ns": 39943800,
+            "p99.9_ns": 39943800
+          }
+        },
+        {
+          "strategy": "PE-ONLINE",
+          "kind": "move",
+          "case": "move-deep",
+          "total": {
+            "count": 20,
+            "mean_ns": 20370.0,
+            "p90_ns": 21200,
+            "p95_ns": 21300,
+            "p99_ns": 21500,
+            "p99.9_ns": 21500
+          }
+        },
+        {
+          "strategy": "PE-ONLINE",
+          "kind": "move",
+          "case": "move-large",
+          "total": {
+            "count": 20,
+            "mean_ns": 34230100.0,
+            "p90_ns": 36593400,
+            "p95_ns": 36897200,
+            "p99_ns": 37663500,
+            "p99.9_ns": 37663500
+          }
+        },
+        {
+          "strategy": "PE-ONLINE",
+          "kind": "query",
+          "case": "False",
+          "total": {
+            "count": 580,
+            "mean_ns": 3363.2758620689656,
+            "p90_ns": 5600,
+            "p95_ns": 6900,
+            "p99_ns": 13200,
+            "p99.9_ns": 32900
+          }
+        },
+        {
+          "strategy": "PE-ONLINE",
+          "kind": "query",
+          "case": "True",
+          "total": {
+            "count": 580,
+            "mean_ns": 1386896.3793103448,
+            "p90_ns": 6508800,
+            "p95_ns": 7330400,
+            "p99_ns": 16632600,
+            "p99.9_ns": 19141300
+          }
+        },
+        {
+          "strategy": "TrieHI",
+          "kind": "build",
+          "case": "build",
+          "total": {
+            "count": 20,
+            "mean_ns": 54943725.0,
+            "p90_ns": 60368800,
+            "p95_ns": 62116500,
+            "p99_ns": 62931200,
+            "p99.9_ns": 62931200
+          }
+        },
+        {
+          "strategy": "TrieHI",
+          "kind": "merge",
+          "case": "merge-deep",
+          "total": {
+            "count": 20,
+            "mean_ns": 358200.0,
+            "p90_ns": 427100,
+            "p95_ns": 500800,
+            "p99_ns": 558500,
+            "p99.9_ns": 558500
+          }
+        },
+        {
+          "strategy": "TrieHI",
+          "kind": "merge",
+          "case": "merge-large",
+          "total": {
+            "count": 20,
+            "mean_ns": 381065.0,
+            "p90_ns": 464600,
+            "p95_ns": 492800,
+            "p99_ns": 502800,
+            "p99.9_ns": 502800
+          }
+        },
+        {
+          "strategy": "TrieHI",
+          "kind": "move",
+          "case": "move-deep",
+          "total": {
+            "count": 20,
+            "mean_ns": 10730.0,
+            "p90_ns": 11400,
+            "p95_ns": 12000,
+            "p99_ns": 13700,
+            "p99.9_ns": 13700
+          }
+        },
+        {
+          "strategy": "TrieHI",
+          "kind": "move",
+          "case": "move-large",
+          "total": {
+            "count": 20,
+            "mean_ns": 15595.0,
+            "p90_ns": 18900,
+            "p95_ns": 19400,
+            "p99_ns": 21100,
+            "p99.9_ns": 21100
+          }
+        },
+        {
+          "strategy": "TrieHI",
+          "kind": "query",
+          "case": "False",
+          "total": {
+            "count": 580,
+            "mean_ns": 19130.51724137931,
+            "p90_ns": 36100,
+            "p95_ns": 97200,
+            "p99_ns": 222000,
+            "p99.9_ns": 427600
+          }
+        },
+        {
+          "strategy": "TrieHI",
+          "kind": "query",
+          "case": "True",
+          "total": {
+            "count": 580,
+            "mean_ns": 1928.9655172413793,
+            "p90_ns": 3100,
+            "p95_ns": 3700,
+            "p99_ns": 8600,
+            "p99.9_ns": 35300
+          }
+        }
+      ],
+      "portable": [
+        {
+          "strategy": "PE-OFFLINE",
+          "stage": 0,
+          "bytes": 843074
+        },
+        {
+          "strategy": "PE-OFFLINE",
+          "stage": 1,
+          "bytes": 843226
+        },
+        {
+          "strategy": "PE-OFFLINE",
+          "stage": 2,
+          "bytes": 833374
+        },
+        {
+          "strategy": "PE-OFFLINE",
+          "stage": 3,
+          "bytes": 833300
+        },
+        {
+          "strategy": "PE-OFFLINE",
+          "stage": 4,
+          "bytes": 833274
+        },
+        {
+          "strategy": "PE-ONLINE",
+          "stage": 0,
+          "bytes": 280792
+        },
+        {
+          "strategy": "PE-ONLINE",
+          "stage": 1,
+          "bytes": 280792
+        },
+        {
+          "strategy": "PE-ONLINE",
+          "stage": 2,
+          "bytes": 280784
+        },
+        {
+          "strategy": "PE-ONLINE",
+          "stage": 3,
+          "bytes": 280784
+        },
+        {
+          "strategy": "PE-ONLINE",
+          "stage": 4,
+          "bytes": 280776
+        },
+        {
+          "strategy": "TrieHI",
+          "stage": 0,
+          "bytes": 843074
+        },
+        {
+          "strategy": "TrieHI",
+          "stage": 1,
+          "bytes": 843226
+        },
+        {
+          "strategy": "TrieHI",
+          "stage": 2,
+          "bytes": 833374
+        },
+        {
+          "strategy": "TrieHI",
+          "stage": 3,
+          "bytes": 833300
+        },
+        {
+          "strategy": "TrieHI",
+          "stage": 4,
+          "bytes": 833274
+        }
+      ]
+    },
+    {
+      "output": "experiments\\EXP-20261027-007\\run-default-2",
+      "rows": 4347,
+      "files": {
+        "answers.tsv": "349bf942693afe974c62bd84f6a70f275182e421fa181588ea03bdc813bf1c91",
+        "clock.tsv": "c773de21c71e42daccda951414aba29c9d834c010ddf0ff748283f345d843686",
+        "space.tsv": "fb414ad46fbfa98b89ffcb3429b02d3d61132153751c6838cce1ac8abcac6e5a",
+        "timings.tsv": "4e186d4f89374cb0ae024cf4106f8d6d0d930568346cd9b078e9ea8fc2cbdc19"
+      },
+      "groups": [
+        {
+          "strategy": "PE-OFFLINE",
+          "kind": "build",
+          "case": "build",
+          "total": {
+            "count": 20,
+            "mean_ns": 199230300.0,
+            "p90_ns": 207476300,
+            "p95_ns": 207885100,
+            "p99_ns": 208807900,
+            "p99.9_ns": 208807900
+          }
+        },
+        {
+          "strategy": "PE-OFFLINE",
+          "kind": "merge",
+          "case": "merge-deep",
+          "total": {
+            "count": 20,
+            "mean_ns": 230120.0,
+            "p90_ns": 278600,
+            "p95_ns": 287400,
+            "p99_ns": 336100,
+            "p99.9_ns": 336100
+          }
+        },
+        {
+          "strategy": "PE-OFFLINE",
+          "kind": "merge",
+          "case": "merge-large",
+          "total": {
+            "count": 20,
+            "mean_ns": 31717780.0,
+            "p90_ns": 34947200,
+            "p95_ns": 37754900,
+            "p99_ns": 38092600,
+            "p99.9_ns": 38092600
+          }
+        },
+        {
+          "strategy": "PE-OFFLINE",
+          "kind": "move",
+          "case": "move-deep",
+          "total": {
+            "count": 20,
+            "mean_ns": 49185.0,
+            "p90_ns": 54100,
+            "p95_ns": 58600,
+            "p99_ns": 60300,
+            "p99.9_ns": 60300
+          }
+        },
+        {
+          "strategy": "PE-OFFLINE",
+          "kind": "move",
+          "case": "move-large",
+          "total": {
+            "count": 20,
+            "mean_ns": 35191055.0,
+            "p90_ns": 38931200,
+            "p95_ns": 40290400,
+            "p99_ns": 43350700,
+            "p99.9_ns": 43350700
+          }
+        },
+        {
+          "strategy": "PE-OFFLINE",
+          "kind": "query",
+          "case": "False",
+          "total": {
+            "count": 580,
+            "mean_ns": 26138.96551724138,
+            "p90_ns": 56100,
+            "p95_ns": 133300,
+            "p99_ns": 258800,
+            "p99.9_ns": 550500
+          }
+        },
+        {
+          "strategy": "PE-OFFLINE",
+          "kind": "query",
+          "case": "True",
+          "total": {
+            "count": 580,
+            "mean_ns": 1899.3103448275863,
+            "p90_ns": 3500,
+            "p95_ns": 4500,
+            "p99_ns": 6100,
+            "p99.9_ns": 8400
+          }
+        },
+        {
+          "strategy": "PE-ONLINE",
+          "kind": "build",
+          "case": "build",
+          "total": {
+            "count": 20,
+            "mean_ns": 138509150.0,
+            "p90_ns": 147039400,
+            "p95_ns": 150248200,
+            "p99_ns": 151259300,
+            "p99.9_ns": 151259300
+          }
+        },
+        {
+          "strategy": "PE-ONLINE",
+          "kind": "merge",
+          "case": "merge-deep",
+          "total": {
+            "count": 20,
+            "mean_ns": 336865.0,
+            "p90_ns": 383000,
+            "p95_ns": 408200,
+            "p99_ns": 414000,
+            "p99.9_ns": 414000
+          }
+        },
+        {
+          "strategy": "PE-ONLINE",
+          "kind": "merge",
+          "case": "merge-large",
+          "total": {
+            "count": 20,
+            "mean_ns": 30989130.0,
+            "p90_ns": 32255800,
+            "p95_ns": 33042900,
+            "p99_ns": 37358300,
+            "p99.9_ns": 37358300
+          }
+        },
+        {
+          "strategy": "PE-ONLINE",
+          "kind": "move",
+          "case": "move-deep",
+          "total": {
+            "count": 20,
+            "mean_ns": 20535.0,
+            "p90_ns": 21400,
+            "p95_ns": 24300,
+            "p99_ns": 25700,
+            "p99.9_ns": 25700
+          }
+        },
+        {
+          "strategy": "PE-ONLINE",
+          "kind": "move",
+          "case": "move-large",
+          "total": {
+            "count": 20,
+            "mean_ns": 33838125.0,
+            "p90_ns": 35672500,
+            "p95_ns": 35994100,
+            "p99_ns": 37920100,
+            "p99.9_ns": 37920100
+          }
+        },
+        {
+          "strategy": "PE-ONLINE",
+          "kind": "query",
+          "case": "False",
+          "total": {
+            "count": 580,
+            "mean_ns": 3416.896551724138,
+            "p90_ns": 5800,
+            "p95_ns": 7100,
+            "p99_ns": 12000,
+            "p99.9_ns": 19800
+          }
+        },
+        {
+          "strategy": "PE-ONLINE",
+          "kind": "query",
+          "case": "True",
+          "total": {
+            "count": 580,
+            "mean_ns": 1445436.551724138,
+            "p90_ns": 6600500,
+            "p95_ns": 7449300,
+            "p99_ns": 17295700,
+            "p99.9_ns": 26463700
+          }
+        },
+        {
+          "strategy": "TrieHI",
+          "kind": "build",
+          "case": "build",
+          "total": {
+            "count": 20,
+            "mean_ns": 57695405.0,
+            "p90_ns": 63211700,
+            "p95_ns": 63334900,
+            "p99_ns": 67249500,
+            "p99.9_ns": 67249500
+          }
+        },
+        {
+          "strategy": "TrieHI",
+          "kind": "merge",
+          "case": "merge-deep",
+          "total": {
+            "count": 20,
+            "mean_ns": 376780.0,
+            "p90_ns": 459100,
+            "p95_ns": 481300,
+            "p99_ns": 591300,
+            "p99.9_ns": 591300
+          }
+        },
+        {
+          "strategy": "TrieHI",
+          "kind": "merge",
+          "case": "merge-large",
+          "total": {
+            "count": 20,
+            "mean_ns": 392570.0,
+            "p90_ns": 494800,
+            "p95_ns": 575600,
+            "p99_ns": 619500,
+            "p99.9_ns": 619500
+          }
+        },
+        {
+          "strategy": "TrieHI",
+          "kind": "move",
+          "case": "move-deep",
+          "total": {
+            "count": 20,
+            "mean_ns": 11775.0,
+            "p90_ns": 13300,
+            "p95_ns": 14600,
+            "p99_ns": 19900,
+            "p99.9_ns": 19900
+          }
+        },
+        {
+          "strategy": "TrieHI",
+          "kind": "move",
+          "case": "move-large",
+          "total": {
+            "count": 20,
+            "mean_ns": 16180.0,
+            "p90_ns": 18400,
+            "p95_ns": 19200,
+            "p99_ns": 30200,
+            "p99.9_ns": 30200
+          }
+        },
+        {
+          "strategy": "TrieHI",
+          "kind": "query",
+          "case": "False",
+          "total": {
+            "count": 580,
+            "mean_ns": 17703.275862068964,
+            "p90_ns": 31500,
+            "p95_ns": 93000,
+            "p99_ns": 209000,
+            "p99.9_ns": 255200
+          }
+        },
+        {
+          "strategy": "TrieHI",
+          "kind": "query",
+          "case": "True",
+          "total": {
+            "count": 580,
+            "mean_ns": 1676.0344827586207,
+            "p90_ns": 2800,
+            "p95_ns": 3200,
+            "p99_ns": 6000,
+            "p99.9_ns": 15600
+          }
+        }
+      ],
+      "portable": [
+        {
+          "strategy": "PE-OFFLINE",
+          "stage": 0,
+          "bytes": 843074
+        },
+        {
+          "strategy": "PE-OFFLINE",
+          "stage": 1,
+          "bytes": 843226
+        },
+        {
+          "strategy": "PE-OFFLINE",
+          "stage": 2,
+          "bytes": 833374
+        },
+        {
+          "strategy": "PE-OFFLINE",
+          "stage": 3,
+          "bytes": 833300
+        },
+        {
+          "strategy": "PE-OFFLINE",
+          "stage": 4,
+          "bytes": 833274
+        },
+        {
+          "strategy": "PE-ONLINE",
+          "stage": 0,
+          "bytes": 280792
+        },
+        {
+          "strategy": "PE-ONLINE",
+          "stage": 1,
+          "bytes": 280792
+        },
+        {
+          "strategy": "PE-ONLINE",
+          "stage": 2,
+          "bytes": 280784
+        },
+        {
+          "strategy": "PE-ONLINE",
+          "stage": 3,
+          "bytes": 280784
+        },
+        {
+          "strategy": "PE-ONLINE",
+          "stage": 4,
+          "bytes": 280776
+        },
+        {
+          "strategy": "TrieHI",
+          "stage": 0,
+          "bytes": 843074
+        },
+        {
+          "strategy": "TrieHI",
+          "stage": 1,
+          "bytes": 843226
+        },
+        {
+          "strategy": "TrieHI",
+          "stage": 2,
+          "bytes": 833374
+        },
+        {
+          "strategy": "TrieHI",
+          "stage": 3,
+          "bytes": 833300
+        },
+        {
+          "strategy": "TrieHI",
+          "stage": 4,
+          "bytes": 833274
+        }
+      ]
+    },
+    {
+      "output": "experiments\\EXP-20261027-007\\run-default-3",
+      "rows": 4347,
+      "files": {
+        "answers.tsv": "9da4f9ab6baaea953741b3a0dd6e46c384afbbcfc9ffeaaa410ff9e9d7001ee7",
+        "clock.tsv": "5531ba015c9b5edcb3a0cdb0286e3f3941a4f90789e26a921f0bab75ae239084",
+        "space.tsv": "f08e996a9ad2d85f1396aff6f5150c84b3a3d723005b1ec378f0e56e3eccaf0a",
+        "timings.tsv": "20cecbdb809e06e3f9dfa31fe9665ac08fac473bbe27947412151dd0a0b6aadb"
+      },
+      "groups": [
+        {
+          "strategy": "PE-OFFLINE",
+          "kind": "build",
+          "case": "build",
+          "total": {
+            "count": 20,
+            "mean_ns": 197128815.0,
+            "p90_ns": 203978900,
+            "p95_ns": 205105900,
+            "p99_ns": 219827000,
+            "p99.9_ns": 219827000
+          }
+        },
+        {
+          "strategy": "PE-OFFLINE",
+          "kind": "merge",
+          "case": "merge-deep",
+          "total": {
+            "count": 20,
+            "mean_ns": 258320.0,
+            "p90_ns": 313000,
+            "p95_ns": 365700,
+            "p99_ns": 432800,
+            "p99.9_ns": 432800
+          }
+        },
+        {
+          "strategy": "PE-OFFLINE",
+          "kind": "merge",
+          "case": "merge-large",
+          "total": {
+            "count": 20,
+            "mean_ns": 31335725.0,
+            "p90_ns": 33442200,
+            "p95_ns": 33898700,
+            "p99_ns": 39058800,
+            "p99.9_ns": 39058800
+          }
+        },
+        {
+          "strategy": "PE-OFFLINE",
+          "kind": "move",
+          "case": "move-deep",
+          "total": {
+            "count": 20,
+            "mean_ns": 56205.0,
+            "p90_ns": 61800,
+            "p95_ns": 62400,
+            "p99_ns": 184300,
+            "p99.9_ns": 184300
+          }
+        },
+        {
+          "strategy": "PE-OFFLINE",
+          "kind": "move",
+          "case": "move-large",
+          "total": {
+            "count": 20,
+            "mean_ns": 34057105.0,
+            "p90_ns": 35733900,
+            "p95_ns": 35824400,
+            "p99_ns": 36194000,
+            "p99.9_ns": 36194000
+          }
+        },
+        {
+          "strategy": "PE-OFFLINE",
+          "kind": "query",
+          "case": "False",
+          "total": {
+            "count": 580,
+            "mean_ns": 24405.344827586207,
+            "p90_ns": 53400,
+            "p95_ns": 126200,
+            "p99_ns": 234100,
+            "p99.9_ns": 283500
+          }
+        },
+        {
+          "strategy": "PE-OFFLINE",
+          "kind": "query",
+          "case": "True",
+          "total": {
+            "count": 580,
+            "mean_ns": 1984.4827586206898,
+            "p90_ns": 3500,
+            "p95_ns": 4500,
+            "p99_ns": 6600,
+            "p99.9_ns": 31200
+          }
+        },
+        {
+          "strategy": "PE-ONLINE",
+          "kind": "build",
+          "case": "build",
+          "total": {
+            "count": 20,
+            "mean_ns": 137660715.0,
+            "p90_ns": 143324000,
+            "p95_ns": 145211500,
+            "p99_ns": 146367300,
+            "p99.9_ns": 146367300
+          }
+        },
+        {
+          "strategy": "PE-ONLINE",
+          "kind": "merge",
+          "case": "merge-deep",
+          "total": {
+            "count": 20,
+            "mean_ns": 357850.0,
+            "p90_ns": 396200,
+            "p95_ns": 408700,
+            "p99_ns": 468800,
+            "p99.9_ns": 468800
+          }
+        },
+        {
+          "strategy": "PE-ONLINE",
+          "kind": "merge",
+          "case": "merge-large",
+          "total": {
+            "count": 20,
+            "mean_ns": 30912410.0,
+            "p90_ns": 32352000,
+            "p95_ns": 32787500,
+            "p99_ns": 33531400,
+            "p99.9_ns": 33531400
+          }
+        },
+        {
+          "strategy": "PE-ONLINE",
+          "kind": "move",
+          "case": "move-deep",
+          "total": {
+            "count": 20,
+            "mean_ns": 20700.0,
+            "p90_ns": 22600,
+            "p95_ns": 24200,
+            "p99_ns": 27500,
+            "p99.9_ns": 27500
+          }
+        },
+        {
+          "strategy": "PE-ONLINE",
+          "kind": "move",
+          "case": "move-large",
+          "total": {
+            "count": 20,
+            "mean_ns": 35338300.0,
+            "p90_ns": 37020000,
+            "p95_ns": 42914900,
+            "p99_ns": 56392400,
+            "p99.9_ns": 56392400
+          }
+        },
+        {
+          "strategy": "PE-ONLINE",
+          "kind": "query",
+          "case": "False",
+          "total": {
+            "count": 580,
+            "mean_ns": 3409.137931034483,
+            "p90_ns": 5600,
+            "p95_ns": 7000,
+            "p99_ns": 12600,
+            "p99.9_ns": 22700
+          }
+        },
+        {
+          "strategy": "PE-ONLINE",
+          "kind": "query",
+          "case": "True",
+          "total": {
+            "count": 580,
+            "mean_ns": 1464019.4827586208,
+            "p90_ns": 6758200,
+            "p95_ns": 7796100,
+            "p99_ns": 17339600,
+            "p99.9_ns": 27409200
+          }
+        },
+        {
+          "strategy": "TrieHI",
+          "kind": "build",
+          "case": "build",
+          "total": {
+            "count": 20,
+            "mean_ns": 54610300.0,
+            "p90_ns": 57832100,
+            "p95_ns": 58933800,
+            "p99_ns": 70530200,
+            "p99.9_ns": 70530200
+          }
+        },
+        {
+          "strategy": "TrieHI",
+          "kind": "merge",
+          "case": "merge-deep",
+          "total": {
+            "count": 20,
+            "mean_ns": 372420.0,
+            "p90_ns": 479000,
+            "p95_ns": 489400,
+            "p99_ns": 495500,
+            "p99.9_ns": 495500
+          }
+        },
+        {
+          "strategy": "TrieHI",
+          "kind": "merge",
+          "case": "merge-large",
+          "total": {
+            "count": 20,
+            "mean_ns": 437165.0,
+            "p90_ns": 597200,
+            "p95_ns": 656300,
+            "p99_ns": 881100,
+            "p99.9_ns": 881100
+          }
+        },
+        {
+          "strategy": "TrieHI",
+          "kind": "move",
+          "case": "move-deep",
+          "total": {
+            "count": 20,
+            "mean_ns": 11115.0,
+            "p90_ns": 12900,
+            "p95_ns": 13100,
+            "p99_ns": 13300,
+            "p99.9_ns": 13300
+          }
+        },
+        {
+          "strategy": "TrieHI",
+          "kind": "move",
+          "case": "move-large",
+          "total": {
+            "count": 20,
+            "mean_ns": 14570.0,
+            "p90_ns": 17400,
+            "p95_ns": 18000,
+            "p99_ns": 21000,
+            "p99.9_ns": 21000
+          }
+        },
+        {
+          "strategy": "TrieHI",
+          "kind": "query",
+          "case": "False",
+          "total": {
+            "count": 580,
+            "mean_ns": 18116.379310344826,
+            "p90_ns": 34100,
+            "p95_ns": 94400,
+            "p99_ns": 214500,
+            "p99.9_ns": 316900
+          }
+        },
+        {
+          "strategy": "TrieHI",
+          "kind": "query",
+          "case": "True",
+          "total": {
+            "count": 580,
+            "mean_ns": 1832.5862068965516,
+            "p90_ns": 3100,
+            "p95_ns": 3600,
+            "p99_ns": 6200,
+            "p99.9_ns": 17900
+          }
+        }
+      ],
+      "portable": [
+        {
+          "strategy": "PE-OFFLINE",
+          "stage": 0,
+          "bytes": 843074
+        },
+        {
+          "strategy": "PE-OFFLINE",
+          "stage": 1,
+          "bytes": 843226
+        },
+        {
+          "strategy": "PE-OFFLINE",
+          "stage": 2,
+          "bytes": 833374
+        },
+        {
+          "strategy": "PE-OFFLINE",
+          "stage": 3,
+          "bytes": 833300
+        },
+        {
+          "strategy": "PE-OFFLINE",
+          "stage": 4,
+          "bytes": 833274
+        },
+        {
+          "strategy": "PE-ONLINE",
+          "stage": 0,
+          "bytes": 280792
+        },
+        {
+          "strategy": "PE-ONLINE",
+          "stage": 1,
+          "bytes": 280792
+        },
+        {
+          "strategy": "PE-ONLINE",
+          "stage": 2,
+          "bytes": 280784
+        },
+        {
+          "strategy": "PE-ONLINE",
+          "stage": 3,
+          "bytes": 280784
+        },
+        {
+          "strategy": "PE-ONLINE",
+          "stage": 4,
+          "bytes": 280776
+        },
+        {
+          "strategy": "TrieHI",
+          "stage": 0,
+          "bytes": 843074
+        },
+        {
+          "strategy": "TrieHI",
+          "stage": 1,
+          "bytes": 843226
+        },
+        {
+          "strategy": "TrieHI",
+          "stage": 2,
+          "bytes": 833374
+        },
+        {
+          "strategy": "TrieHI",
+          "stage": 3,
+          "bytes": 833300
+        },
+        {
+          "strategy": "TrieHI",
+          "stage": 4,
+          "bytes": 833274
+        }
+      ]
+    },
+    {
+      "output": "experiments\\EXP-20261027-007\\run-default-4",
+      "rows": 4347,
+      "files": {
+        "answers.tsv": "90388c781c97827a156d677032339a954d5b95fa042c23b64c0b20681d497675",
+        "clock.tsv": "4a2836966d283044c962108a078c731f4ac636cd97805af34152f7c9fef0fd6c",
+        "space.tsv": "fbd6c84eb6aae62b261e83c77972576d8561ef922400661aa740599625c767dd",
+        "timings.tsv": "4b52bad03db06f56c981e39c64d23e4dfb8cf9111e2cc471507254aee7166535"
+      },
+      "groups": [
+        {
+          "strategy": "PE-OFFLINE",
+          "kind": "build",
+          "case": "build",
+          "total": {
+            "count": 20,
+            "mean_ns": 202359795.0,
+            "p90_ns": 210828100,
+            "p95_ns": 214438900,
+            "p99_ns": 234400200,
+            "p99.9_ns": 234400200
+          }
+        },
+        {
+          "strategy": "PE-OFFLINE",
+          "kind": "merge",
+          "case": "merge-deep",
+          "total": {
+            "count": 20,
+            "mean_ns": 245125.0,
+            "p90_ns": 294600,
+            "p95_ns": 312200,
+            "p99_ns": 382300,
+            "p99.9_ns": 382300
+          }
+        },
+        {
+          "strategy": "PE-OFFLINE",
+          "kind": "merge",
+          "case": "merge-large",
+          "total": {
+            "count": 20,
+            "mean_ns": 32963135.0,
+            "p90_ns": 37213000,
+            "p95_ns": 37393800,
+            "p99_ns": 67235700,
+            "p99.9_ns": 67235700
+          }
+        },
+        {
+          "strategy": "PE-OFFLINE",
+          "kind": "move",
+          "case": "move-deep",
+          "total": {
+            "count": 20,
+            "mean_ns": 52700.0,
+            "p90_ns": 65400,
+            "p95_ns": 76900,
+            "p99_ns": 82200,
+            "p99.9_ns": 82200
+          }
+        },
+        {
+          "strategy": "PE-OFFLINE",
+          "kind": "move",
+          "case": "move-large",
+          "total": {
+            "count": 20,
+            "mean_ns": 34869425.0,
+            "p90_ns": 38062500,
+            "p95_ns": 38666400,
+            "p99_ns": 39614500,
+            "p99.9_ns": 39614500
+          }
+        },
+        {
+          "strategy": "PE-OFFLINE",
+          "kind": "query",
+          "case": "False",
+          "total": {
+            "count": 580,
+            "mean_ns": 25416.206896551725,
+            "p90_ns": 54300,
+            "p95_ns": 127700,
+            "p99_ns": 239700,
+            "p99.9_ns": 326200
+          }
+        },
+        {
+          "strategy": "PE-OFFLINE",
+          "kind": "query",
+          "case": "True",
+          "total": {
+            "count": 580,
+            "mean_ns": 2062.0689655172414,
+            "p90_ns": 3900,
+            "p95_ns": 4900,
+            "p99_ns": 8200,
+            "p99.9_ns": 11700
+          }
+        },
+        {
+          "strategy": "PE-ONLINE",
+          "kind": "build",
+          "case": "build",
+          "total": {
+            "count": 20,
+            "mean_ns": 140206850.0,
+            "p90_ns": 147015000,
+            "p95_ns": 149843700,
+            "p99_ns": 157284500,
+            "p99.9_ns": 157284500
+          }
+        },
+        {
+          "strategy": "PE-ONLINE",
+          "kind": "merge",
+          "case": "merge-deep",
+          "total": {
+            "count": 20,
+            "mean_ns": 369365.0,
+            "p90_ns": 399000,
+            "p95_ns": 414300,
+            "p99_ns": 861900,
+            "p99.9_ns": 861900
+          }
+        },
+        {
+          "strategy": "PE-ONLINE",
+          "kind": "merge",
+          "case": "merge-large",
+          "total": {
+            "count": 20,
+            "mean_ns": 30931375.0,
+            "p90_ns": 32299200,
+            "p95_ns": 32353100,
+            "p99_ns": 36530000,
+            "p99.9_ns": 36530000
+          }
+        },
+        {
+          "strategy": "PE-ONLINE",
+          "kind": "move",
+          "case": "move-deep",
+          "total": {
+            "count": 20,
+            "mean_ns": 20670.0,
+            "p90_ns": 23900,
+            "p95_ns": 25100,
+            "p99_ns": 26200,
+            "p99.9_ns": 26200
+          }
+        },
+        {
+          "strategy": "PE-ONLINE",
+          "kind": "move",
+          "case": "move-large",
+          "total": {
+            "count": 20,
+            "mean_ns": 32929780.0,
+            "p90_ns": 34003600,
+            "p95_ns": 34150500,
+            "p99_ns": 34994700,
+            "p99.9_ns": 34994700
+          }
+        },
+        {
+          "strategy": "PE-ONLINE",
+          "kind": "query",
+          "case": "False",
+          "total": {
+            "count": 580,
+            "mean_ns": 3418.103448275862,
+            "p90_ns": 5600,
+            "p95_ns": 6500,
+            "p99_ns": 9300,
+            "p99.9_ns": 93900
+          }
+        },
+        {
+          "strategy": "PE-ONLINE",
+          "kind": "query",
+          "case": "True",
+          "total": {
+            "count": 580,
+            "mean_ns": 1395767.4137931035,
+            "p90_ns": 6408300,
+            "p95_ns": 7452600,
+            "p99_ns": 16759600,
+            "p99.9_ns": 23219100
+          }
+        },
+        {
+          "strategy": "TrieHI",
+          "kind": "build",
+          "case": "build",
+          "total": {
+            "count": 20,
+            "mean_ns": 55180690.0,
+            "p90_ns": 59119000,
+            "p95_ns": 60049400,
+            "p99_ns": 67191400,
+            "p99.9_ns": 67191400
+          }
+        },
+        {
+          "strategy": "TrieHI",
+          "kind": "merge",
+          "case": "merge-deep",
+          "total": {
+            "count": 20,
+            "mean_ns": 343640.0,
+            "p90_ns": 473300,
+            "p95_ns": 478900,
+            "p99_ns": 487700,
+            "p99.9_ns": 487700
+          }
+        },
+        {
+          "strategy": "TrieHI",
+          "kind": "merge",
+          "case": "merge-large",
+          "total": {
+            "count": 20,
+            "mean_ns": 385825.0,
+            "p90_ns": 452200,
+            "p95_ns": 475100,
+            "p99_ns": 485400,
+            "p99.9_ns": 485400
+          }
+        },
+        {
+          "strategy": "TrieHI",
+          "kind": "move",
+          "case": "move-deep",
+          "total": {
+            "count": 20,
+            "mean_ns": 10975.0,
+            "p90_ns": 11900,
+            "p95_ns": 12400,
+            "p99_ns": 19100,
+            "p99.9_ns": 19100
+          }
+        },
+        {
+          "strategy": "TrieHI",
+          "kind": "move",
+          "case": "move-large",
+          "total": {
+            "count": 20,
+            "mean_ns": 18155.0,
+            "p90_ns": 19800,
+            "p95_ns": 28700,
+            "p99_ns": 51300,
+            "p99.9_ns": 51300
+          }
+        },
+        {
+          "strategy": "TrieHI",
+          "kind": "query",
+          "case": "False",
+          "total": {
+            "count": 580,
+            "mean_ns": 18521.55172413793,
+            "p90_ns": 38300,
+            "p95_ns": 98500,
+            "p99_ns": 211900,
+            "p99.9_ns": 231900
+          }
+        },
+        {
+          "strategy": "TrieHI",
+          "kind": "query",
+          "case": "True",
+          "total": {
+            "count": 580,
+            "mean_ns": 1735.8620689655172,
+            "p90_ns": 3000,
+            "p95_ns": 3300,
+            "p99_ns": 4400,
+            "p99.9_ns": 7600
+          }
+        }
+      ],
+      "portable": [
+        {
+          "strategy": "PE-OFFLINE",
+          "stage": 0,
+          "bytes": 843074
+        },
+        {
+          "strategy": "PE-OFFLINE",
+          "stage": 1,
+          "bytes": 843226
+        },
+        {
+          "strategy": "PE-OFFLINE",
+          "stage": 2,
+          "bytes": 833374
+        },
+        {
+          "strategy": "PE-OFFLINE",
+          "stage": 3,
+          "bytes": 833300
+        },
+        {
+          "strategy": "PE-OFFLINE",
+          "stage": 4,
+          "bytes": 833274
+        },
+        {
+          "strategy": "PE-ONLINE",
+          "stage": 0,
+          "bytes": 280792
+        },
+        {
+          "strategy": "PE-ONLINE",
+          "stage": 1,
+          "bytes": 280792
+        },
+        {
+          "strategy": "PE-ONLINE",
+          "stage": 2,
+          "bytes": 280784
+        },
+        {
+          "strategy": "PE-ONLINE",
+          "stage": 3,
+          "bytes": 280784
+        },
+        {
+          "strategy": "PE-ONLINE",
+          "stage": 4,
+          "bytes": 280776
+        },
+        {
+          "strategy": "TrieHI",
+          "stage": 0,
+          "bytes": 843074
+        },
+        {
+          "strategy": "TrieHI",
+          "stage": 1,
+          "bytes": 843226
+        },
+        {
+          "strategy": "TrieHI",
+          "stage": 2,
+          "bytes": 833374
+        },
+        {
+          "strategy": "TrieHI",
+          "stage": 3,
+          "bytes": 833300
+        },
+        {
+          "strategy": "TrieHI",
+          "stage": 4,
+          "bytes": 833274
+        }
+      ]
+    }
+  ],
+  "raw_rows": 21735,
+  "groups": [
+    {
+      "strategy": "PE-OFFLINE",
+      "kind": "build",
+      "case": "build",
+      "total": {
+        "count": 100,
+        "mean_ns": 199090247.0,
+        "p90_ns": 208807900,
+        "p95_ns": 213881900,
+        "p99_ns": 219827000,
+        "p99.9_ns": 234400200
+      },
+      "directory_misc": {
+        "count": 100,
+        "mean_ns": 0.0,
+        "p90_ns": 0,
+        "p95_ns": 0,
+        "p99_ns": 0,
+        "p99.9_ns": 0
+      },
+      "locate": {
+        "count": 100,
+        "mean_ns": 0.0,
+        "p90_ns": 0,
+        "p95_ns": 0,
+        "p99_ns": 0,
+        "p99.9_ns": 0
+      },
+      "bitmap_copy": {
+        "count": 100,
+        "mean_ns": 0.0,
+        "p90_ns": 0,
+        "p95_ns": 0,
+        "p99_ns": 0,
+        "p99.9_ns": 0
+      },
+      "bitmap_sets": {
+        "count": 100,
+        "mean_ns": 0.0,
+        "p90_ns": 0,
+        "p95_ns": 0,
+        "p99_ns": 0,
+        "p99.9_ns": 0
+      },
+      "ancestors": {
+        "count": 100,
+        "mean_ns": 0.0,
+        "p90_ns": 0,
+        "p95_ns": 0,
+        "p99_ns": 0,
+        "p99.9_ns": 0
+      },
+      "catalog": {
+        "count": 100,
+        "mean_ns": 0.0,
+        "p90_ns": 0,
+        "p95_ns": 0,
+        "p99_ns": 0,
+        "p99.9_ns": 0
+      },
+      "cleanup": {
+        "count": 100,
+        "mean_ns": 0.0,
+        "p90_ns": 0,
+        "p95_ns": 0,
+        "p99_ns": 0,
+        "p99.9_ns": 0
+      }
+    },
+    {
+      "strategy": "PE-OFFLINE",
+      "kind": "merge",
+      "case": "merge-deep",
+      "total": {
+        "count": 100,
+        "mean_ns": 248296.0,
+        "p90_ns": 312200,
+        "p95_ns": 334900,
+        "p99_ns": 390900,
+        "p99.9_ns": 432800
+      },
+      "directory_misc": {
+        "count": 100,
+        "mean_ns": 0.0,
+        "p90_ns": 0,
+        "p95_ns": 0,
+        "p99_ns": 0,
+        "p99.9_ns": 0
+      },
+      "locate": {
+        "count": 100,
+        "mean_ns": 0.0,
+        "p90_ns": 0,
+        "p95_ns": 0,
+        "p99_ns": 0,
+        "p99.9_ns": 0
+      },
+      "bitmap_copy": {
+        "count": 100,
+        "mean_ns": 0.0,
+        "p90_ns": 0,
+        "p95_ns": 0,
+        "p99_ns": 0,
+        "p99.9_ns": 0
+      },
+      "bitmap_sets": {
+        "count": 100,
+        "mean_ns": 0.0,
+        "p90_ns": 0,
+        "p95_ns": 0,
+        "p99_ns": 0,
+        "p99.9_ns": 0
+      },
+      "ancestors": {
+        "count": 100,
+        "mean_ns": 0.0,
+        "p90_ns": 0,
+        "p95_ns": 0,
+        "p99_ns": 0,
+        "p99.9_ns": 0
+      },
+      "catalog": {
+        "count": 100,
+        "mean_ns": 0.0,
+        "p90_ns": 0,
+        "p95_ns": 0,
+        "p99_ns": 0,
+        "p99.9_ns": 0
+      },
+      "cleanup": {
+        "count": 100,
+        "mean_ns": 0.0,
+        "p90_ns": 0,
+        "p95_ns": 0,
+        "p99_ns": 0,
+        "p99.9_ns": 0
+      }
+    },
+    {
+      "strategy": "PE-OFFLINE",
+      "kind": "merge",
+      "case": "merge-large",
+      "total": {
+        "count": 100,
+        "mean_ns": 31694692.0,
+        "p90_ns": 34373100,
+        "p95_ns": 37393800,
+        "p99_ns": 39846500,
+        "p99.9_ns": 67235700
+      },
+      "directory_misc": {
+        "count": 100,
+        "mean_ns": 0.0,
+        "p90_ns": 0,
+        "p95_ns": 0,
+        "p99_ns": 0,
+        "p99.9_ns": 0
+      },
+      "locate": {
+        "count": 100,
+        "mean_ns": 0.0,
+        "p90_ns": 0,
+        "p95_ns": 0,
+        "p99_ns": 0,
+        "p99.9_ns": 0
+      },
+      "bitmap_copy": {
+        "count": 100,
+        "mean_ns": 0.0,
+        "p90_ns": 0,
+        "p95_ns": 0,
+        "p99_ns": 0,
+        "p99.9_ns": 0
+      },
+      "bitmap_sets": {
+        "count": 100,
+        "mean_ns": 0.0,
+        "p90_ns": 0,
+        "p95_ns": 0,
+        "p99_ns": 0,
+        "p99.9_ns": 0
+      },
+      "ancestors": {
+        "count": 100,
+        "mean_ns": 0.0,
+        "p90_ns": 0,
+        "p95_ns": 0,
+        "p99_ns": 0,
+        "p99.9_ns": 0
+      },
+      "catalog": {
+        "count": 100,
+        "mean_ns": 0.0,
+        "p90_ns": 0,
+        "p95_ns": 0,
+        "p99_ns": 0,
+        "p99.9_ns": 0
+      },
+      "cleanup": {
+        "count": 100,
+        "mean_ns": 0.0,
+        "p90_ns": 0,
+        "p95_ns": 0,
+        "p99_ns": 0,
+        "p99.9_ns": 0
+      }
+    },
+    {
+      "strategy": "PE-OFFLINE",
+      "kind": "move",
+      "case": "move-deep",
+      "total": {
+        "count": 100,
+        "mean_ns": 51842.0,
+        "p90_ns": 60300,
+        "p95_ns": 65400,
+        "p99_ns": 84300,
+        "p99.9_ns": 184300
+      },
+      "directory_misc": {
+        "count": 100,
+        "mean_ns": 0.0,
+        "p90_ns": 0,
+        "p95_ns": 0,
+        "p99_ns": 0,
+        "p99.9_ns": 0
+      },
+      "locate": {
+        "count": 100,
+        "mean_ns": 0.0,
+        "p90_ns": 0,
+        "p95_ns": 0,
+        "p99_ns": 0,
+        "p99.9_ns": 0
+      },
+      "bitmap_copy": {
+        "count": 100,
+        "mean_ns": 0.0,
+        "p90_ns": 0,
+        "p95_ns": 0,
+        "p99_ns": 0,
+        "p99.9_ns": 0
+      },
+      "bitmap_sets": {
+        "count": 100,
+        "mean_ns": 0.0,
+        "p90_ns": 0,
+        "p95_ns": 0,
+        "p99_ns": 0,
+        "p99.9_ns": 0
+      },
+      "ancestors": {
+        "count": 100,
+        "mean_ns": 0.0,
+        "p90_ns": 0,
+        "p95_ns": 0,
+        "p99_ns": 0,
+        "p99.9_ns": 0
+      },
+      "catalog": {
+        "count": 100,
+        "mean_ns": 0.0,
+        "p90_ns": 0,
+        "p95_ns": 0,
+        "p99_ns": 0,
+        "p99.9_ns": 0
+      },
+      "cleanup": {
+        "count": 100,
+        "mean_ns": 0.0,
+        "p90_ns": 0,
+        "p95_ns": 0,
+        "p99_ns": 0,
+        "p99.9_ns": 0
+      }
+    },
+    {
+      "strategy": "PE-OFFLINE",
+      "kind": "move",
+      "case": "move-large",
+      "total": {
+        "count": 100,
+        "mean_ns": 34593866.0,
+        "p90_ns": 36549900,
+        "p95_ns": 38931200,
+        "p99_ns": 40290400,
+        "p99.9_ns": 43350700
+      },
+      "directory_misc": {
+        "count": 100,
+        "mean_ns": 0.0,
+        "p90_ns": 0,
+        "p95_ns": 0,
+        "p99_ns": 0,
+        "p99.9_ns": 0
+      },
+      "locate": {
+        "count": 100,
+        "mean_ns": 0.0,
+        "p90_ns": 0,
+        "p95_ns": 0,
+        "p99_ns": 0,
+        "p99.9_ns": 0
+      },
+      "bitmap_copy": {
+        "count": 100,
+        "mean_ns": 0.0,
+        "p90_ns": 0,
+        "p95_ns": 0,
+        "p99_ns": 0,
+        "p99.9_ns": 0
+      },
+      "bitmap_sets": {
+        "count": 100,
+        "mean_ns": 0.0,
+        "p90_ns": 0,
+        "p95_ns": 0,
+        "p99_ns": 0,
+        "p99.9_ns": 0
+      },
+      "ancestors": {
+        "count": 100,
+        "mean_ns": 0.0,
+        "p90_ns": 0,
+        "p95_ns": 0,
+        "p99_ns": 0,
+        "p99.9_ns": 0
+      },
+      "catalog": {
+        "count": 100,
+        "mean_ns": 0.0,
+        "p90_ns": 0,
+        "p95_ns": 0,
+        "p99_ns": 0,
+        "p99.9_ns": 0
+      },
+      "cleanup": {
+        "count": 100,
+        "mean_ns": 0.0,
+        "p90_ns": 0,
+        "p95_ns": 0,
+        "p99_ns": 0,
+        "p99.9_ns": 0
+      }
+    },
+    {
+      "strategy": "PE-OFFLINE",
+      "kind": "query",
+      "case": "False",
+      "total": {
+        "count": 2900,
+        "mean_ns": 25666.620689655174,
+        "p90_ns": 54200,
+        "p95_ns": 129000,
+        "p99_ns": 237000,
+        "p99.9_ns": 340600
+      },
+      "directory_misc": {
+        "count": 2900,
+        "mean_ns": 0.0,
+        "p90_ns": 0,
+        "p95_ns": 0,
+        "p99_ns": 0,
+        "p99.9_ns": 0
+      },
+      "locate": {
+        "count": 2900,
+        "mean_ns": 0.0,
+        "p90_ns": 0,
+        "p95_ns": 0,
+        "p99_ns": 0,
+        "p99.9_ns": 0
+      },
+      "bitmap_copy": {
+        "count": 2900,
+        "mean_ns": 0.0,
+        "p90_ns": 0,
+        "p95_ns": 0,
+        "p99_ns": 0,
+        "p99.9_ns": 0
+      },
+      "bitmap_sets": {
+        "count": 2900,
+        "mean_ns": 0.0,
+        "p90_ns": 0,
+        "p95_ns": 0,
+        "p99_ns": 0,
+        "p99.9_ns": 0
+      },
+      "ancestors": {
+        "count": 2900,
+        "mean_ns": 0.0,
+        "p90_ns": 0,
+        "p95_ns": 0,
+        "p99_ns": 0,
+        "p99.9_ns": 0
+      },
+      "catalog": {
+        "count": 2900,
+        "mean_ns": 0.0,
+        "p90_ns": 0,
+        "p95_ns": 0,
+        "p99_ns": 0,
+        "p99.9_ns": 0
+      },
+      "cleanup": {
+        "count": 2900,
+        "mean_ns": 0.0,
+        "p90_ns": 0,
+        "p95_ns": 0,
+        "p99_ns": 0,
+        "p99.9_ns": 0
+      }
+    },
+    {
+      "strategy": "PE-OFFLINE",
+      "kind": "query",
+      "case": "True",
+      "total": {
+        "count": 2900,
+        "mean_ns": 2016.5862068965516,
+        "p90_ns": 3700,
+        "p95_ns": 4900,
+        "p99_ns": 7300,
+        "p99.9_ns": 23600
+      },
+      "directory_misc": {
+        "count": 2900,
+        "mean_ns": 0.0,
+        "p90_ns": 0,
+        "p95_ns": 0,
+        "p99_ns": 0,
+        "p99.9_ns": 0
+      },
+      "locate": {
+        "count": 2900,
+        "mean_ns": 0.0,
+        "p90_ns": 0,
+        "p95_ns": 0,
+        "p99_ns": 0,
+        "p99.9_ns": 0
+      },
+      "bitmap_copy": {
+        "count": 2900,
+        "mean_ns": 0.0,
+        "p90_ns": 0,
+        "p95_ns": 0,
+        "p99_ns": 0,
+        "p99.9_ns": 0
+      },
+      "bitmap_sets": {
+        "count": 2900,
+        "mean_ns": 0.0,
+        "p90_ns": 0,
+        "p95_ns": 0,
+        "p99_ns": 0,
+        "p99.9_ns": 0
+      },
+      "ancestors": {
+        "count": 2900,
+        "mean_ns": 0.0,
+        "p90_ns": 0,
+        "p95_ns": 0,
+        "p99_ns": 0,
+        "p99.9_ns": 0
+      },
+      "catalog": {
+        "count": 2900,
+        "mean_ns": 0.0,
+        "p90_ns": 0,
+        "p95_ns": 0,
+        "p99_ns": 0,
+        "p99.9_ns": 0
+      },
+      "cleanup": {
+        "count": 2900,
+        "mean_ns": 0.0,
+        "p90_ns": 0,
+        "p95_ns": 0,
+        "p99_ns": 0,
+        "p99.9_ns": 0
+      }
+    },
+    {
+      "strategy": "PE-ONLINE",
+      "kind": "build",
+      "case": "build",
+      "total": {
+        "count": 100,
+        "mean_ns": 139305506.0,
+        "p90_ns": 147015000,
+        "p95_ns": 151259300,
+        "p99_ns": 157284500,
+        "p99.9_ns": 169271000
+      },
+      "directory_misc": {
+        "count": 100,
+        "mean_ns": 0.0,
+        "p90_ns": 0,
+        "p95_ns": 0,
+        "p99_ns": 0,
+        "p99.9_ns": 0
+      },
+      "locate": {
+        "count": 100,
+        "mean_ns": 0.0,
+        "p90_ns": 0,
+        "p95_ns": 0,
+        "p99_ns": 0,
+        "p99.9_ns": 0
+      },
+      "bitmap_copy": {
+        "count": 100,
+        "mean_ns": 0.0,
+        "p90_ns": 0,
+        "p95_ns": 0,
+        "p99_ns": 0,
+        "p99.9_ns": 0
+      },
+      "bitmap_sets": {
+        "count": 100,
+        "mean_ns": 0.0,
+        "p90_ns": 0,
+        "p95_ns": 0,
+        "p99_ns": 0,
+        "p99.9_ns": 0
+      },
+      "ancestors": {
+        "count": 100,
+        "mean_ns": 0.0,
+        "p90_ns": 0,
+        "p95_ns": 0,
+        "p99_ns": 0,
+        "p99.9_ns": 0
+      },
+      "catalog": {
+        "count": 100,
+        "mean_ns": 0.0,
+        "p90_ns": 0,
+        "p95_ns": 0,
+        "p99_ns": 0,
+        "p99.9_ns": 0
+      },
+      "cleanup": {
+        "count": 100,
+        "mean_ns": 0.0,
+        "p90_ns": 0,
+        "p95_ns": 0,
+        "p99_ns": 0,
+        "p99.9_ns": 0
+      }
+    },
+    {
+      "strategy": "PE-ONLINE",
+      "kind": "merge",
+      "case": "merge-deep",
+      "total": {
+        "count": 100,
+        "mean_ns": 355456.0,
+        "p90_ns": 399200,
+        "p95_ns": 414300,
+        "p99_ns": 519200,
+        "p99.9_ns": 861900
+      },
+      "directory_misc": {
+        "count": 100,
+        "mean_ns": 0.0,
+        "p90_ns": 0,
+        "p95_ns": 0,
+        "p99_ns": 0,
+        "p99.9_ns": 0
+      },
+      "locate": {
+        "count": 100,
+        "mean_ns": 0.0,
+        "p90_ns": 0,
+        "p95_ns": 0,
+        "p99_ns": 0,
+        "p99.9_ns": 0
+      },
+      "bitmap_copy": {
+        "count": 100,
+        "mean_ns": 0.0,
+        "p90_ns": 0,
+        "p95_ns": 0,
+        "p99_ns": 0,
+        "p99.9_ns": 0
+      },
+      "bitmap_sets": {
+        "count": 100,
+        "mean_ns": 0.0,
+        "p90_ns": 0,
+        "p95_ns": 0,
+        "p99_ns": 0,
+        "p99.9_ns": 0
+      },
+      "ancestors": {
+        "count": 100,
+        "mean_ns": 0.0,
+        "p90_ns": 0,
+        "p95_ns": 0,
+        "p99_ns": 0,
+        "p99.9_ns": 0
+      },
+      "catalog": {
+        "count": 100,
+        "mean_ns": 0.0,
+        "p90_ns": 0,
+        "p95_ns": 0,
+        "p99_ns": 0,
+        "p99.9_ns": 0
+      },
+      "cleanup": {
+        "count": 100,
+        "mean_ns": 0.0,
+        "p90_ns": 0,
+        "p95_ns": 0,
+        "p99_ns": 0,
+        "p99.9_ns": 0
+      }
+    },
+    {
+      "strategy": "PE-ONLINE",
+      "kind": "merge",
+      "case": "merge-large",
+      "total": {
+        "count": 100,
+        "mean_ns": 31356372.0,
+        "p90_ns": 33531700,
+        "p95_ns": 35837600,
+        "p99_ns": 38610400,
+        "p99.9_ns": 39943800
+      },
+      "directory_misc": {
+        "count": 100,
+        "mean_ns": 0.0,
+        "p90_ns": 0,
+        "p95_ns": 0,
+        "p99_ns": 0,
+        "p99.9_ns": 0
+      },
+      "locate": {
+        "count": 100,
+        "mean_ns": 0.0,
+        "p90_ns": 0,
+        "p95_ns": 0,
+        "p99_ns": 0,
+        "p99.9_ns": 0
+      },
+      "bitmap_copy": {
+        "count": 100,
+        "mean_ns": 0.0,
+        "p90_ns": 0,
+        "p95_ns": 0,
+        "p99_ns": 0,
+        "p99.9_ns": 0
+      },
+      "bitmap_sets": {
+        "count": 100,
+        "mean_ns": 0.0,
+        "p90_ns": 0,
+        "p95_ns": 0,
+        "p99_ns": 0,
+        "p99.9_ns": 0
+      },
+      "ancestors": {
+        "count": 100,
+        "mean_ns": 0.0,
+        "p90_ns": 0,
+        "p95_ns": 0,
+        "p99_ns": 0,
+        "p99.9_ns": 0
+      },
+      "catalog": {
+        "count": 100,
+        "mean_ns": 0.0,
+        "p90_ns": 0,
+        "p95_ns": 0,
+        "p99_ns": 0,
+        "p99.9_ns": 0
+      },
+      "cleanup": {
+        "count": 100,
+        "mean_ns": 0.0,
+        "p90_ns": 0,
+        "p95_ns": 0,
+        "p99_ns": 0,
+        "p99.9_ns": 0
+      }
+    },
+    {
+      "strategy": "PE-ONLINE",
+      "kind": "move",
+      "case": "move-deep",
+      "total": {
+        "count": 100,
+        "mean_ns": 20779.0,
+        "p90_ns": 22600,
+        "p95_ns": 24300,
+        "p99_ns": 27500,
+        "p99.9_ns": 34500
+      },
+      "directory_misc": {
+        "count": 100,
+        "mean_ns": 0.0,
+        "p90_ns": 0,
+        "p95_ns": 0,
+        "p99_ns": 0,
+        "p99.9_ns": 0
+      },
+      "locate": {
+        "count": 100,
+        "mean_ns": 0.0,
+        "p90_ns": 0,
+        "p95_ns": 0,
+        "p99_ns": 0,
+        "p99.9_ns": 0
+      },
+      "bitmap_copy": {
+        "count": 100,
+        "mean_ns": 0.0,
+        "p90_ns": 0,
+        "p95_ns": 0,
+        "p99_ns": 0,
+        "p99.9_ns": 0
+      },
+      "bitmap_sets": {
+        "count": 100,
+        "mean_ns": 0.0,
+        "p90_ns": 0,
+        "p95_ns": 0,
+        "p99_ns": 0,
+        "p99.9_ns": 0
+      },
+      "ancestors": {
+        "count": 100,
+        "mean_ns": 0.0,
+        "p90_ns": 0,
+        "p95_ns": 0,
+        "p99_ns": 0,
+        "p99.9_ns": 0
+      },
+      "catalog": {
+        "count": 100,
+        "mean_ns": 0.0,
+        "p90_ns": 0,
+        "p95_ns": 0,
+        "p99_ns": 0,
+        "p99.9_ns": 0
+      },
+      "cleanup": {
+        "count": 100,
+        "mean_ns": 0.0,
+        "p90_ns": 0,
+        "p95_ns": 0,
+        "p99_ns": 0,
+        "p99.9_ns": 0
+      }
+    },
+    {
+      "strategy": "PE-ONLINE",
+      "kind": "move",
+      "case": "move-large",
+      "total": {
+        "count": 100,
+        "mean_ns": 34273831.0,
+        "p90_ns": 36205600,
+        "p95_ns": 37663500,
+        "p99_ns": 50509100,
+        "p99.9_ns": 56392400
+      },
+      "directory_misc": {
+        "count": 100,
+        "mean_ns": 0.0,
+        "p90_ns": 0,
+        "p95_ns": 0,
+        "p99_ns": 0,
+        "p99.9_ns": 0
+      },
+      "locate": {
+        "count": 100,
+        "mean_ns": 0.0,
+        "p90_ns": 0,
+        "p95_ns": 0,
+        "p99_ns": 0,
+        "p99.9_ns": 0
+      },
+      "bitmap_copy": {
+        "count": 100,
+        "mean_ns": 0.0,
+        "p90_ns": 0,
+        "p95_ns": 0,
+        "p99_ns": 0,
+        "p99.9_ns": 0
+      },
+      "bitmap_sets": {
+        "count": 100,
+        "mean_ns": 0.0,
+        "p90_ns": 0,
+        "p95_ns": 0,
+        "p99_ns": 0,
+        "p99.9_ns": 0
+      },
+      "ancestors": {
+        "count": 100,
+        "mean_ns": 0.0,
+        "p90_ns": 0,
+        "p95_ns": 0,
+        "p99_ns": 0,
+        "p99.9_ns": 0
+      },
+      "catalog": {
+        "count": 100,
+        "mean_ns": 0.0,
+        "p90_ns": 0,
+        "p95_ns": 0,
+        "p99_ns": 0,
+        "p99.9_ns": 0
+      },
+      "cleanup": {
+        "count": 100,
+        "mean_ns": 0.0,
+        "p90_ns": 0,
+        "p95_ns": 0,
+        "p99_ns": 0,
+        "p99.9_ns": 0
+      }
+    },
+    {
+      "strategy": "PE-ONLINE",
+      "kind": "query",
+      "case": "False",
+      "total": {
+        "count": 2900,
+        "mean_ns": 3379.689655172414,
+        "p90_ns": 5600,
+        "p95_ns": 6900,
+        "p99_ns": 11300,
+        "p99.9_ns": 28600
+      },
+      "directory_misc": {
+        "count": 2900,
+        "mean_ns": 0.0,
+        "p90_ns": 0,
+        "p95_ns": 0,
+        "p99_ns": 0,
+        "p99.9_ns": 0
+      },
+      "locate": {
+        "count": 2900,
+        "mean_ns": 0.0,
+        "p90_ns": 0,
+        "p95_ns": 0,
+        "p99_ns": 0,
+        "p99.9_ns": 0
+      },
+      "bitmap_copy": {
+        "count": 2900,
+        "mean_ns": 0.0,
+        "p90_ns": 0,
+        "p95_ns": 0,
+        "p99_ns": 0,
+        "p99.9_ns": 0
+      },
+      "bitmap_sets": {
+        "count": 2900,
+        "mean_ns": 0.0,
+        "p90_ns": 0,
+        "p95_ns": 0,
+        "p99_ns": 0,
+        "p99.9_ns": 0
+      },
+      "ancestors": {
+        "count": 2900,
+        "mean_ns": 0.0,
+        "p90_ns": 0,
+        "p95_ns": 0,
+        "p99_ns": 0,
+        "p99.9_ns": 0
+      },
+      "catalog": {
+        "count": 2900,
+        "mean_ns": 0.0,
+        "p90_ns": 0,
+        "p95_ns": 0,
+        "p99_ns": 0,
+        "p99.9_ns": 0
+      },
+      "cleanup": {
+        "count": 2900,
+        "mean_ns": 0.0,
+        "p90_ns": 0,
+        "p95_ns": 0,
+        "p99_ns": 0,
+        "p99.9_ns": 0
+      }
+    },
+    {
+      "strategy": "PE-ONLINE",
+      "kind": "query",
+      "case": "True",
+      "total": {
+        "count": 2900,
+        "mean_ns": 1426507.551724138,
+        "p90_ns": 6586200,
+        "p95_ns": 7537700,
+        "p99_ns": 17056300,
+        "p99.9_ns": 23307400
+      },
+      "directory_misc": {
+        "count": 2900,
+        "mean_ns": 0.0,
+        "p90_ns": 0,
+        "p95_ns": 0,
+        "p99_ns": 0,
+        "p99.9_ns": 0
+      },
+      "locate": {
+        "count": 2900,
+        "mean_ns": 0.0,
+        "p90_ns": 0,
+        "p95_ns": 0,
+        "p99_ns": 0,
+        "p99.9_ns": 0
+      },
+      "bitmap_copy": {
+        "count": 2900,
+        "mean_ns": 0.0,
+        "p90_ns": 0,
+        "p95_ns": 0,
+        "p99_ns": 0,
+        "p99.9_ns": 0
+      },
+      "bitmap_sets": {
+        "count": 2900,
+        "mean_ns": 0.0,
+        "p90_ns": 0,
+        "p95_ns": 0,
+        "p99_ns": 0,
+        "p99.9_ns": 0
+      },
+      "ancestors": {
+        "count": 2900,
+        "mean_ns": 0.0,
+        "p90_ns": 0,
+        "p95_ns": 0,
+        "p99_ns": 0,
+        "p99.9_ns": 0
+      },
+      "catalog": {
+        "count": 2900,
+        "mean_ns": 0.0,
+        "p90_ns": 0,
+        "p95_ns": 0,
+        "p99_ns": 0,
+        "p99.9_ns": 0
+      },
+      "cleanup": {
+        "count": 2900,
+        "mean_ns": 0.0,
+        "p90_ns": 0,
+        "p95_ns": 0,
+        "p99_ns": 0,
+        "p99.9_ns": 0
+      }
+    },
+    {
+      "strategy": "TrieHI",
+      "kind": "build",
+      "case": "build",
+      "total": {
+        "count": 100,
+        "mean_ns": 55409869.0,
+        "p90_ns": 60368800,
+        "p95_ns": 63181900,
+        "p99_ns": 67249500,
+        "p99.9_ns": 70530200
+      },
+      "directory_misc": {
+        "count": 100,
+        "mean_ns": 0.0,
+        "p90_ns": 0,
+        "p95_ns": 0,
+        "p99_ns": 0,
+        "p99.9_ns": 0
+      },
+      "locate": {
+        "count": 100,
+        "mean_ns": 0.0,
+        "p90_ns": 0,
+        "p95_ns": 0,
+        "p99_ns": 0,
+        "p99.9_ns": 0
+      },
+      "bitmap_copy": {
+        "count": 100,
+        "mean_ns": 0.0,
+        "p90_ns": 0,
+        "p95_ns": 0,
+        "p99_ns": 0,
+        "p99.9_ns": 0
+      },
+      "bitmap_sets": {
+        "count": 100,
+        "mean_ns": 0.0,
+        "p90_ns": 0,
+        "p95_ns": 0,
+        "p99_ns": 0,
+        "p99.9_ns": 0
+      },
+      "ancestors": {
+        "count": 100,
+        "mean_ns": 0.0,
+        "p90_ns": 0,
+        "p95_ns": 0,
+        "p99_ns": 0,
+        "p99.9_ns": 0
+      },
+      "catalog": {
+        "count": 100,
+        "mean_ns": 0.0,
+        "p90_ns": 0,
+        "p95_ns": 0,
+        "p99_ns": 0,
+        "p99.9_ns": 0
+      },
+      "cleanup": {
+        "count": 100,
+        "mean_ns": 0.0,
+        "p90_ns": 0,
+        "p95_ns": 0,
+        "p99_ns": 0,
+        "p99.9_ns": 0
+      }
+    },
+    {
+      "strategy": "TrieHI",
+      "kind": "merge",
+      "case": "merge-deep",
+      "total": {
+        "count": 100,
+        "mean_ns": 371290.0,
+        "p90_ns": 478900,
+        "p95_ns": 495500,
+        "p99_ns": 591300,
+        "p99.9_ns": 1489200
+      },
+      "directory_misc": {
+        "count": 100,
+        "mean_ns": 0.0,
+        "p90_ns": 0,
+        "p95_ns": 0,
+        "p99_ns": 0,
+        "p99.9_ns": 0
+      },
+      "locate": {
+        "count": 100,
+        "mean_ns": 0.0,
+        "p90_ns": 0,
+        "p95_ns": 0,
+        "p99_ns": 0,
+        "p99.9_ns": 0
+      },
+      "bitmap_copy": {
+        "count": 100,
+        "mean_ns": 0.0,
+        "p90_ns": 0,
+        "p95_ns": 0,
+        "p99_ns": 0,
+        "p99.9_ns": 0
+      },
+      "bitmap_sets": {
+        "count": 100,
+        "mean_ns": 0.0,
+        "p90_ns": 0,
+        "p95_ns": 0,
+        "p99_ns": 0,
+        "p99.9_ns": 0
+      },
+      "ancestors": {
+        "count": 100,
+        "mean_ns": 0.0,
+        "p90_ns": 0,
+        "p95_ns": 0,
+        "p99_ns": 0,
+        "p99.9_ns": 0
+      },
+      "catalog": {
+        "count": 100,
+        "mean_ns": 0.0,
+        "p90_ns": 0,
+        "p95_ns": 0,
+        "p99_ns": 0,
+        "p99.9_ns": 0
+      },
+      "cleanup": {
+        "count": 100,
+        "mean_ns": 0.0,
+        "p90_ns": 0,
+        "p95_ns": 0,
+        "p99_ns": 0,
+        "p99.9_ns": 0
+      }
+    },
+    {
+      "strategy": "TrieHI",
+      "kind": "merge",
+      "case": "merge-large",
+      "total": {
+        "count": 100,
+        "mean_ns": 406567.0,
+        "p90_ns": 528600,
+        "p95_ns": 597200,
+        "p99_ns": 656300,
+        "p99.9_ns": 881100
+      },
+      "directory_misc": {
+        "count": 100,
+        "mean_ns": 0.0,
+        "p90_ns": 0,
+        "p95_ns": 0,
+        "p99_ns": 0,
+        "p99.9_ns": 0
+      },
+      "locate": {
+        "count": 100,
+        "mean_ns": 0.0,
+        "p90_ns": 0,
+        "p95_ns": 0,
+        "p99_ns": 0,
+        "p99.9_ns": 0
+      },
+      "bitmap_copy": {
+        "count": 100,
+        "mean_ns": 0.0,
+        "p90_ns": 0,
+        "p95_ns": 0,
+        "p99_ns": 0,
+        "p99.9_ns": 0
+      },
+      "bitmap_sets": {
+        "count": 100,
+        "mean_ns": 0.0,
+        "p90_ns": 0,
+        "p95_ns": 0,
+        "p99_ns": 0,
+        "p99.9_ns": 0
+      },
+      "ancestors": {
+        "count": 100,
+        "mean_ns": 0.0,
+        "p90_ns": 0,
+        "p95_ns": 0,
+        "p99_ns": 0,
+        "p99.9_ns": 0
+      },
+      "catalog": {
+        "count": 100,
+        "mean_ns": 0.0,
+        "p90_ns": 0,
+        "p95_ns": 0,
+        "p99_ns": 0,
+        "p99.9_ns": 0
+      },
+      "cleanup": {
+        "count": 100,
+        "mean_ns": 0.0,
+        "p90_ns": 0,
+        "p95_ns": 0,
+        "p99_ns": 0,
+        "p99.9_ns": 0
+      }
+    },
+    {
+      "strategy": "TrieHI",
+      "kind": "move",
+      "case": "move-deep",
+      "total": {
+        "count": 100,
+        "mean_ns": 11166.0,
+        "p90_ns": 12800,
+        "p95_ns": 13300,
+        "p99_ns": 19100,
+        "p99.9_ns": 19900
+      },
+      "directory_misc": {
+        "count": 100,
+        "mean_ns": 0.0,
+        "p90_ns": 0,
+        "p95_ns": 0,
+        "p99_ns": 0,
+        "p99.9_ns": 0
+      },
+      "locate": {
+        "count": 100,
+        "mean_ns": 0.0,
+        "p90_ns": 0,
+        "p95_ns": 0,
+        "p99_ns": 0,
+        "p99.9_ns": 0
+      },
+      "bitmap_copy": {
+        "count": 100,
+        "mean_ns": 0.0,
+        "p90_ns": 0,
+        "p95_ns": 0,
+        "p99_ns": 0,
+        "p99.9_ns": 0
+      },
+      "bitmap_sets": {
+        "count": 100,
+        "mean_ns": 0.0,
+        "p90_ns": 0,
+        "p95_ns": 0,
+        "p99_ns": 0,
+        "p99.9_ns": 0
+      },
+      "ancestors": {
+        "count": 100,
+        "mean_ns": 0.0,
+        "p90_ns": 0,
+        "p95_ns": 0,
+        "p99_ns": 0,
+        "p99.9_ns": 0
+      },
+      "catalog": {
+        "count": 100,
+        "mean_ns": 0.0,
+        "p90_ns": 0,
+        "p95_ns": 0,
+        "p99_ns": 0,
+        "p99.9_ns": 0
+      },
+      "cleanup": {
+        "count": 100,
+        "mean_ns": 0.0,
+        "p90_ns": 0,
+        "p95_ns": 0,
+        "p99_ns": 0,
+        "p99.9_ns": 0
+      }
+    },
+    {
+      "strategy": "TrieHI",
+      "kind": "move",
+      "case": "move-large",
+      "total": {
+        "count": 100,
+        "mean_ns": 15872.0,
+        "p90_ns": 18900,
+        "p95_ns": 19800,
+        "p99_ns": 30200,
+        "p99.9_ns": 51300
+      },
+      "directory_misc": {
+        "count": 100,
+        "mean_ns": 0.0,
+        "p90_ns": 0,
+        "p95_ns": 0,
+        "p99_ns": 0,
+        "p99.9_ns": 0
+      },
+      "locate": {
+        "count": 100,
+        "mean_ns": 0.0,
+        "p90_ns": 0,
+        "p95_ns": 0,
+        "p99_ns": 0,
+        "p99.9_ns": 0
+      },
+      "bitmap_copy": {
+        "count": 100,
+        "mean_ns": 0.0,
+        "p90_ns": 0,
+        "p95_ns": 0,
+        "p99_ns": 0,
+        "p99.9_ns": 0
+      },
+      "bitmap_sets": {
+        "count": 100,
+        "mean_ns": 0.0,
+        "p90_ns": 0,
+        "p95_ns": 0,
+        "p99_ns": 0,
+        "p99.9_ns": 0
+      },
+      "ancestors": {
+        "count": 100,
+        "mean_ns": 0.0,
+        "p90_ns": 0,
+        "p95_ns": 0,
+        "p99_ns": 0,
+        "p99.9_ns": 0
+      },
+      "catalog": {
+        "count": 100,
+        "mean_ns": 0.0,
+        "p90_ns": 0,
+        "p95_ns": 0,
+        "p99_ns": 0,
+        "p99.9_ns": 0
+      },
+      "cleanup": {
+        "count": 100,
+        "mean_ns": 0.0,
+        "p90_ns": 0,
+        "p95_ns": 0,
+        "p99_ns": 0,
+        "p99.9_ns": 0
+      }
+    },
+    {
+      "strategy": "TrieHI",
+      "kind": "query",
+      "case": "False",
+      "total": {
+        "count": 2900,
+        "mean_ns": 18430.793103448275,
+        "p90_ns": 35500,
+        "p95_ns": 97600,
+        "p99_ns": 212100,
+        "p99.9_ns": 316900
+      },
+      "directory_misc": {
+        "count": 2900,
+        "mean_ns": 0.0,
+        "p90_ns": 0,
+        "p95_ns": 0,
+        "p99_ns": 0,
+        "p99.9_ns": 0
+      },
+      "locate": {
+        "count": 2900,
+        "mean_ns": 0.0,
+        "p90_ns": 0,
+        "p95_ns": 0,
+        "p99_ns": 0,
+        "p99.9_ns": 0
+      },
+      "bitmap_copy": {
+        "count": 2900,
+        "mean_ns": 0.0,
+        "p90_ns": 0,
+        "p95_ns": 0,
+        "p99_ns": 0,
+        "p99.9_ns": 0
+      },
+      "bitmap_sets": {
+        "count": 2900,
+        "mean_ns": 0.0,
+        "p90_ns": 0,
+        "p95_ns": 0,
+        "p99_ns": 0,
+        "p99.9_ns": 0
+      },
+      "ancestors": {
+        "count": 2900,
+        "mean_ns": 0.0,
+        "p90_ns": 0,
+        "p95_ns": 0,
+        "p99_ns": 0,
+        "p99.9_ns": 0
+      },
+      "catalog": {
+        "count": 2900,
+        "mean_ns": 0.0,
+        "p90_ns": 0,
+        "p95_ns": 0,
+        "p99_ns": 0,
+        "p99.9_ns": 0
+      },
+      "cleanup": {
+        "count": 2900,
+        "mean_ns": 0.0,
+        "p90_ns": 0,
+        "p95_ns": 0,
+        "p99_ns": 0,
+        "p99.9_ns": 0
+      }
+    },
+    {
+      "strategy": "TrieHI",
+      "kind": "query",
+      "case": "True",
+      "total": {
+        "count": 2900,
+        "mean_ns": 1825.7931034482758,
+        "p90_ns": 3000,
+        "p95_ns": 3400,
+        "p99_ns": 6000,
+        "p99.9_ns": 17900
+      },
+      "directory_misc": {
+        "count": 2900,
+        "mean_ns": 0.0,
+        "p90_ns": 0,
+        "p95_ns": 0,
+        "p99_ns": 0,
+        "p99.9_ns": 0
+      },
+      "locate": {
+        "count": 2900,
+        "mean_ns": 0.0,
+        "p90_ns": 0,
+        "p95_ns": 0,
+        "p99_ns": 0,
+        "p99.9_ns": 0
+      },
+      "bitmap_copy": {
+        "count": 2900,
+        "mean_ns": 0.0,
+        "p90_ns": 0,
+        "p95_ns": 0,
+        "p99_ns": 0,
+        "p99.9_ns": 0
+      },
+      "bitmap_sets": {
+        "count": 2900,
+        "mean_ns": 0.0,
+        "p90_ns": 0,
+        "p95_ns": 0,
+        "p99_ns": 0,
+        "p99.9_ns": 0
+      },
+      "ancestors": {
+        "count": 2900,
+        "mean_ns": 0.0,
+        "p90_ns": 0,
+        "p95_ns": 0,
+        "p99_ns": 0,
+        "p99.9_ns": 0
+      },
+      "catalog": {
+        "count": 2900,
+        "mean_ns": 0.0,
+        "p90_ns": 0,
+        "p95_ns": 0,
+        "p99_ns": 0,
+        "p99.9_ns": 0
+      },
+      "cleanup": {
+        "count": 2900,
+        "mean_ns": 0.0,
+        "p90_ns": 0,
+        "p95_ns": 0,
+        "p99_ns": 0,
+        "p99.9_ns": 0
+      }
+    }
+  ]
+}

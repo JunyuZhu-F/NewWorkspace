@@ -1,0 +1,14 @@
+{
+  "captured_utc": "2026-10-27T04:29:24.015868+00:00",
+  "platform": "Windows-10-10.0.26300-SP0",
+  "python": "3.9.13 (main, Aug 25 2022, 23:51:50) [MSC v.1916 64 bit (AMD64)]",
+  "numpy": "2.0.2",
+  "psutil": "5.9.0",
+  "processor_identifier": "Intel64 Family 6 Model 183 Stepping 1, GenuineIntel",
+  "logical_cpu_count": 20,
+  "available_memory_bytes": 5165899776,
+  "git_head": "be59bbccb9e3f8e283328f453643b7d50211736d",
+  "git_status": " M AGENTS.md\n M EXPERIMENTS.md\n M README.md\n M REPRODUCTION_PLAN.md\n M STATE.md\n M TASK.md\n M notes/materials-and-gaps.md\n?? code/scripts/build-wiki-experiment.cmd\n?? code/scripts/build-wiki.cmd\n?? code/wiki/\n?? code/wiki_experiment/\n?? experiments/EXP-20261027-007/\n?? notes/wiki-independent-007-console.log\n?? notes/wiki-independent-preparation-20261027-01-console.log\n?? notes/wiki-independent-preparation-20261027-01/\n?? notes/wiki-independent-protocol-20261027.md\n?? notes/wiki-preparation-20261027-01/\n",
+  "background_load": "not controlled",
+  "affinity_priority_power_changed": false
+}

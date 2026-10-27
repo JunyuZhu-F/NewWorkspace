@@ -1,0 +1,14 @@
+{
+  "status": "passed",
+  "started_utc": "2026-10-27T03:43:42.355305+00:00",
+  "scope": "WIKI small-sample directory correctness only",
+  "finished_utc": "2026-10-27T03:45:52.549679+00:00",
+  "old_006_source_files_unchanged": 46,
+  "release_asan_answers_equal": true,
+  "answers_sha256": "6bb4d9ef17c3b92e464a52cae5788901712ea410a1934e33b5abffcceec6744e",
+  "query_scope_rows": 5292,
+  "binary_sha256": {
+    "Release-Wiki": "9001c2e75f3fd318cc010136cf24173f4e619574435469840ea3339fcf3bd580",
+    "RelWithDebInfo-ASan-Wiki": "fa8a4dccdb0348aecd7a0626600d6807fe85f6bdc7df24c8d4b3a9ea990eb171"
+  }
+}

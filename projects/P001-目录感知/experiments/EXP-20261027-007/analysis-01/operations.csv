@@ -1,0 +1,5 @@
+case,kind,source,target,source_directories,source_entries,source_depth,target_depth,conflict_directories
+move-large,move,/Nature/Natural_sciences/,/__wiki_bench__/,8785,4734,2,1,0
+merge-large,merge,/__wiki_bench__/Natural_sciences/,/Universe/,8785,4734,2,1,1
+move-deep,move,/Life/Organisms/Eukaryotes/Animals/Animal_taxa/Animal_taxa_by_rank/Animal_unranked_clades/ParaHoxozoa/Bilaterians/Protostomes/Ecdysozoa/Panarthropoda/Arthropods/Arthropod_taxa/Arthropod_taxonomy/Insect_taxonomy/Lepidoptera_taxonomy/Glossata/Coelolepida/Myoglossata/Neolepidoptera/Heteroneura/Eulepidoptera/Ditrysia/Macrolepidoptera/Butterflies/Butterfly_taxonomy/Nymphalidae/Satyrinae/Elymniini/Mycalesis/,/__wiki_bench__/,1,1,31,1,0
+merge-deep,merge,/__wiki_bench__/Mycalesis/,/Universe/,1,1,2,1,1

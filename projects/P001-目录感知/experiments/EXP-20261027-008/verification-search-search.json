@@ -1,0 +1,4041 @@
+{
+  "status": "passed",
+  "kind": "search",
+  "formal": true,
+  "cases": 912,
+  "model_sha256": "36636f7562d416f00c660df6dd881e4a460905a32b04533828e8133202b962a5",
+  "ndcg_reported": false,
+  "published_gt_used": false,
+  "source_regions_reverified": true,
+  "quality": [
+    {
+      "recursive": false,
+      "probes": 0,
+      "nonempty": 127,
+      "empty": 329,
+      "mean_recall_nonempty": 1.0
+    },
+    {
+      "recursive": false,
+      "probes": 1,
+      "nonempty": 127,
+      "empty": 329,
+      "mean_recall_nonempty": 0.023622047244094488
+    },
+    {
+      "recursive": false,
+      "probes": 4,
+      "nonempty": 127,
+      "empty": 329,
+      "mean_recall_nonempty": 0.11023622047244094
+    },
+    {
+      "recursive": false,
+      "probes": 16,
+      "nonempty": 127,
+      "empty": 329,
+      "mean_recall_nonempty": 1.0
+    },
+    {
+      "recursive": true,
+      "probes": 0,
+      "nonempty": 456,
+      "empty": 0,
+      "mean_recall_nonempty": 1.0
+    },
+    {
+      "recursive": true,
+      "probes": 1,
+      "nonempty": 456,
+      "empty": 0,
+      "mean_recall_nonempty": 0.11196393762183236
+    },
+    {
+      "recursive": true,
+      "probes": 4,
+      "nonempty": 456,
+      "empty": 0,
+      "mean_recall_nonempty": 0.2998816485658591
+    },
+    {
+      "recursive": true,
+      "probes": 16,
+      "nonempty": 456,
+      "empty": 0,
+      "mean_recall_nonempty": 1.0
+    }
+  ],
+  "groups": [
+    {
+      "strategy": "PE-OFFLINE",
+      "recursive": false,
+      "probes": 0,
+      "empty": false,
+      "directory": {
+        "count": 12700,
+        "mean_ns": 7184.062992125984,
+        "p90_ns": 11700,
+        "p95_ns": 14500,
+        "p99_ns": 21200,
+        "p99.9_ns": 101000
+      },
+      "materialize": {
+        "count": 12700,
+        "mean_ns": 349.7244094488189,
+        "p90_ns": 700,
+        "p95_ns": 1000,
+        "p99_ns": 1400,
+        "p99.9_ns": 4500
+      },
+      "ranking": {
+        "count": 12700,
+        "mean_ns": 3127.9212598425197,
+        "p90_ns": 3600,
+        "p95_ns": 5000,
+        "p99_ns": 7000,
+        "p99.9_ns": 45000
+      },
+      "total": {
+        "count": 12700,
+        "mean_ns": 10661.708661417322,
+        "p90_ns": 16000,
+        "p95_ns": 19600,
+        "p99_ns": 29600,
+        "p99.9_ns": 138500
+      }
+    },
+    {
+      "strategy": "PE-OFFLINE",
+      "recursive": false,
+      "probes": 0,
+      "empty": true,
+      "directory": {
+        "count": 32900,
+        "mean_ns": 49346.79635258359,
+        "p90_ns": 185100,
+        "p95_ns": 266500,
+        "p99_ns": 367400,
+        "p99.9_ns": 662100
+      },
+      "materialize": {
+        "count": 32900,
+        "mean_ns": 53.808510638297875,
+        "p90_ns": 100,
+        "p95_ns": 200,
+        "p99_ns": 300,
+        "p99.9_ns": 500
+      },
+      "ranking": {
+        "count": 32900,
+        "mean_ns": 2152.6990881458964,
+        "p90_ns": 2200,
+        "p95_ns": 3200,
+        "p99_ns": 5200,
+        "p99.9_ns": 25400
+      },
+      "total": {
+        "count": 32900,
+        "mean_ns": 51553.30395136778,
+        "p90_ns": 187500,
+        "p95_ns": 268600,
+        "p99_ns": 371800,
+        "p99.9_ns": 715900
+      }
+    },
+    {
+      "strategy": "PE-OFFLINE",
+      "recursive": false,
+      "probes": 1,
+      "empty": false,
+      "directory": {
+        "count": 12700,
+        "mean_ns": 7351.614173228347,
+        "p90_ns": 11500,
+        "p95_ns": 13800,
+        "p99_ns": 21100,
+        "p99.9_ns": 116200
+      },
+      "materialize": {
+        "count": 12700,
+        "mean_ns": 343.11811023622045,
+        "p90_ns": 700,
+        "p95_ns": 1000,
+        "p99_ns": 1400,
+        "p99.9_ns": 4300
+      },
+      "ranking": {
+        "count": 12700,
+        "mean_ns": 11540.700787401574,
+        "p90_ns": 14500,
+        "p95_ns": 18800,
+        "p99_ns": 28200,
+        "p99.9_ns": 153200
+      },
+      "total": {
+        "count": 12700,
+        "mean_ns": 19235.43307086614,
+        "p90_ns": 26700,
+        "p95_ns": 31600,
+        "p99_ns": 50500,
+        "p99.9_ns": 201800
+      }
+    },
+    {
+      "strategy": "PE-OFFLINE",
+      "recursive": false,
+      "probes": 1,
+      "empty": true,
+      "directory": {
+        "count": 32900,
+        "mean_ns": 50761.87537993921,
+        "p90_ns": 189500,
+        "p95_ns": 266400,
+        "p99_ns": 348000,
+        "p99.9_ns": 894600
+      },
+      "materialize": {
+        "count": 32900,
+        "mean_ns": 53.276595744680854,
+        "p90_ns": 100,
+        "p95_ns": 200,
+        "p99_ns": 300,
+        "p99.9_ns": 500
+      },
+      "ranking": {
+        "count": 32900,
+        "mean_ns": 11336.434650455927,
+        "p90_ns": 14500,
+        "p95_ns": 18600,
+        "p99_ns": 26800,
+        "p99.9_ns": 108000
+      },
+      "total": {
+        "count": 32900,
+        "mean_ns": 62151.58662613982,
+        "p90_ns": 202400,
+        "p95_ns": 278900,
+        "p99_ns": 371200,
+        "p99.9_ns": 1045000
+      }
+    },
+    {
+      "strategy": "PE-OFFLINE",
+      "recursive": false,
+      "probes": 4,
+      "empty": false,
+      "directory": {
+        "count": 12700,
+        "mean_ns": 7127.314960629921,
+        "p90_ns": 11400,
+        "p95_ns": 14100,
+        "p99_ns": 20500,
+        "p99.9_ns": 87000
+      },
+      "materialize": {
+        "count": 12700,
+        "mean_ns": 341.66141732283467,
+        "p90_ns": 700,
+        "p95_ns": 900,
+        "p99_ns": 1300,
+        "p99.9_ns": 4500
+      },
+      "ranking": {
+        "count": 12700,
+        "mean_ns": 11105.503937007874,
+        "p90_ns": 14700,
+        "p95_ns": 18800,
+        "p99_ns": 27000,
+        "p99.9_ns": 97300
+      },
+      "total": {
+        "count": 12700,
+        "mean_ns": 18574.48031496063,
+        "p90_ns": 26800,
+        "p95_ns": 31400,
+        "p99_ns": 47700,
+        "p99.9_ns": 150200
+      }
+    },
+    {
+      "strategy": "PE-OFFLINE",
+      "recursive": false,
+      "probes": 4,
+      "empty": true,
+      "directory": {
+        "count": 32900,
+        "mean_ns": 51154.89361702128,
+        "p90_ns": 202800,
+        "p95_ns": 271200,
+        "p99_ns": 367800,
+        "p99.9_ns": 775800
+      },
+      "materialize": {
+        "count": 32900,
+        "mean_ns": 53.09726443768997,
+        "p90_ns": 100,
+        "p95_ns": 200,
+        "p99_ns": 300,
+        "p99.9_ns": 500
+      },
+      "ranking": {
+        "count": 32900,
+        "mean_ns": 11219.419452887538,
+        "p90_ns": 14500,
+        "p95_ns": 18600,
+        "p99_ns": 27700,
+        "p99.9_ns": 101100
+      },
+      "total": {
+        "count": 32900,
+        "mean_ns": 62427.4103343465,
+        "p90_ns": 216500,
+        "p95_ns": 283400,
+        "p99_ns": 386000,
+        "p99.9_ns": 804700
+      }
+    },
+    {
+      "strategy": "PE-OFFLINE",
+      "recursive": false,
+      "probes": 16,
+      "empty": false,
+      "directory": {
+        "count": 12700,
+        "mean_ns": 7321.425196850394,
+        "p90_ns": 11500,
+        "p95_ns": 14300,
+        "p99_ns": 21200,
+        "p99.9_ns": 90800
+      },
+      "materialize": {
+        "count": 12700,
+        "mean_ns": 353.88188976377955,
+        "p90_ns": 700,
+        "p95_ns": 1000,
+        "p99_ns": 1400,
+        "p99.9_ns": 4700
+      },
+      "ranking": {
+        "count": 12700,
+        "mean_ns": 12329.393700787401,
+        "p90_ns": 15500,
+        "p95_ns": 20000,
+        "p99_ns": 29400,
+        "p99.9_ns": 102400
+      },
+      "total": {
+        "count": 12700,
+        "mean_ns": 20004.700787401576,
+        "p90_ns": 27800,
+        "p95_ns": 33000,
+        "p99_ns": 52600,
+        "p99.9_ns": 187900
+      }
+    },
+    {
+      "strategy": "PE-OFFLINE",
+      "recursive": false,
+      "probes": 16,
+      "empty": true,
+      "directory": {
+        "count": 32900,
+        "mean_ns": 49567.98784194529,
+        "p90_ns": 183500,
+        "p95_ns": 269200,
+        "p99_ns": 356900,
+        "p99.9_ns": 684800
+      },
+      "materialize": {
+        "count": 32900,
+        "mean_ns": 55.537993920972646,
+        "p90_ns": 100,
+        "p95_ns": 200,
+        "p99_ns": 300,
+        "p99.9_ns": 500
+      },
+      "ranking": {
+        "count": 32900,
+        "mean_ns": 11568.288753799392,
+        "p90_ns": 14900,
+        "p95_ns": 18800,
+        "p99_ns": 28200,
+        "p99.9_ns": 124000
+      },
+      "total": {
+        "count": 32900,
+        "mean_ns": 61191.81458966566,
+        "p90_ns": 196400,
+        "p95_ns": 281900,
+        "p99_ns": 379300,
+        "p99.9_ns": 803200
+      }
+    },
+    {
+      "strategy": "PE-OFFLINE",
+      "recursive": true,
+      "probes": 0,
+      "empty": false,
+      "directory": {
+        "count": 45600,
+        "mean_ns": 5097.776315789473,
+        "p90_ns": 8500,
+        "p95_ns": 10400,
+        "p99_ns": 16200,
+        "p99.9_ns": 57200
+      },
+      "materialize": {
+        "count": 45600,
+        "mean_ns": 73104.87280701754,
+        "p90_ns": 499000,
+        "p95_ns": 523800,
+        "p99_ns": 683000,
+        "p99.9_ns": 1095300
+      },
+      "ranking": {
+        "count": 45600,
+        "mean_ns": 1011254.3574561403,
+        "p90_ns": 6946400,
+        "p95_ns": 7511300,
+        "p99_ns": 9339300,
+        "p99.9_ns": 13864900
+      },
+      "total": {
+        "count": 45600,
+        "mean_ns": 1089457.0065789474,
+        "p90_ns": 7470000,
+        "p95_ns": 8054900,
+        "p99_ns": 10019500,
+        "p99.9_ns": 14631800
+      }
+    },
+    {
+      "strategy": "PE-OFFLINE",
+      "recursive": true,
+      "probes": 1,
+      "empty": false,
+      "directory": {
+        "count": 45600,
+        "mean_ns": 5220.835526315789,
+        "p90_ns": 8800,
+        "p95_ns": 10800,
+        "p99_ns": 16400,
+        "p99.9_ns": 58700
+      },
+      "materialize": {
+        "count": 45600,
+        "mean_ns": 73478.2302631579,
+        "p90_ns": 499200,
+        "p95_ns": 524100,
+        "p99_ns": 685000,
+        "p99.9_ns": 1384100
+      },
+      "ranking": {
+        "count": 45600,
+        "mean_ns": 134486.47807017545,
+        "p90_ns": 720900,
+        "p95_ns": 953400,
+        "p99_ns": 1326200,
+        "p99.9_ns": 2463400
+      },
+      "total": {
+        "count": 45600,
+        "mean_ns": 213185.54385964913,
+        "p90_ns": 1243000,
+        "p95_ns": 1489400,
+        "p99_ns": 1958900,
+        "p99.9_ns": 3733800
+      }
+    },
+    {
+      "strategy": "PE-OFFLINE",
+      "recursive": true,
+      "probes": 4,
+      "empty": false,
+      "directory": {
+        "count": 45600,
+        "mean_ns": 5149.353070175439,
+        "p90_ns": 8600,
+        "p95_ns": 10400,
+        "p99_ns": 16000,
+        "p99.9_ns": 54000
+      },
+      "materialize": {
+        "count": 45600,
+        "mean_ns": 73786.35087719298,
+        "p90_ns": 498300,
+        "p95_ns": 525600,
+        "p99_ns": 688200,
+        "p99.9_ns": 1233500
+      },
+      "ranking": {
+        "count": 45600,
+        "mean_ns": 353538.0942982456,
+        "p90_ns": 2140300,
+        "p95_ns": 2619100,
+        "p99_ns": 3402100,
+        "p99.9_ns": 5643500
+      },
+      "total": {
+        "count": 45600,
+        "mean_ns": 432473.79824561405,
+        "p90_ns": 2667600,
+        "p95_ns": 3165100,
+        "p99_ns": 4049800,
+        "p99.9_ns": 6415500
+      }
+    },
+    {
+      "strategy": "PE-OFFLINE",
+      "recursive": true,
+      "probes": 16,
+      "empty": false,
+      "directory": {
+        "count": 45600,
+        "mean_ns": 5132.149122807017,
+        "p90_ns": 8500,
+        "p95_ns": 10400,
+        "p99_ns": 16400,
+        "p99.9_ns": 64100
+      },
+      "materialize": {
+        "count": 45600,
+        "mean_ns": 72433.78070175438,
+        "p90_ns": 498100,
+        "p95_ns": 524100,
+        "p99_ns": 672500,
+        "p99.9_ns": 1061300
+      },
+      "ranking": {
+        "count": 45600,
+        "mean_ns": 1015074.4649122807,
+        "p90_ns": 6948400,
+        "p95_ns": 7512200,
+        "p99_ns": 9259800,
+        "p99.9_ns": 13318000
+      },
+      "total": {
+        "count": 45600,
+        "mean_ns": 1092640.394736842,
+        "p90_ns": 7478900,
+        "p95_ns": 8053600,
+        "p99_ns": 9899600,
+        "p99.9_ns": 14088700
+      }
+    },
+    {
+      "strategy": "PE-ONLINE",
+      "recursive": false,
+      "probes": 0,
+      "empty": false,
+      "directory": {
+        "count": 12700,
+        "mean_ns": 4961.149606299213,
+        "p90_ns": 8700,
+        "p95_ns": 11100,
+        "p99_ns": 16600,
+        "p99.9_ns": 76700
+      },
+      "materialize": {
+        "count": 12700,
+        "mean_ns": 359.7795275590551,
+        "p90_ns": 700,
+        "p95_ns": 1000,
+        "p99_ns": 1300,
+        "p99.9_ns": 4600
+      },
+      "ranking": {
+        "count": 12700,
+        "mean_ns": 3005.3858267716537,
+        "p90_ns": 3800,
+        "p95_ns": 5200,
+        "p99_ns": 6900,
+        "p99.9_ns": 35200
+      },
+      "total": {
+        "count": 12700,
+        "mean_ns": 8326.314960629921,
+        "p90_ns": 13100,
+        "p95_ns": 16000,
+        "p99_ns": 24100,
+        "p99.9_ns": 126700
+      }
+    },
+    {
+      "strategy": "PE-ONLINE",
+      "recursive": false,
+      "probes": 0,
+      "empty": true,
+      "directory": {
+        "count": 32900,
+        "mean_ns": 3221.595744680851,
+        "p90_ns": 5500,
+        "p95_ns": 7000,
+        "p99_ns": 11900,
+        "p99.9_ns": 34400
+      },
+      "materialize": {
+        "count": 32900,
+        "mean_ns": 47.66261398176292,
+        "p90_ns": 100,
+        "p95_ns": 100,
+        "p99_ns": 300,
+        "p99.9_ns": 500
+      },
+      "ranking": {
+        "count": 32900,
+        "mean_ns": 1864.5440729483282,
+        "p90_ns": 2200,
+        "p95_ns": 3800,
+        "p99_ns": 5000,
+        "p99.9_ns": 21800
+      },
+      "total": {
+        "count": 32900,
+        "mean_ns": 5133.802431610942,
+        "p90_ns": 7800,
+        "p95_ns": 9800,
+        "p99_ns": 16000,
+        "p99.9_ns": 67700
+      }
+    },
+    {
+      "strategy": "PE-ONLINE",
+      "recursive": false,
+      "probes": 1,
+      "empty": false,
+      "directory": {
+        "count": 12700,
+        "mean_ns": 4870.086614173229,
+        "p90_ns": 8600,
+        "p95_ns": 11000,
+        "p99_ns": 15500,
+        "p99.9_ns": 67500
+      },
+      "materialize": {
+        "count": 12700,
+        "mean_ns": 347.1968503937008,
+        "p90_ns": 700,
+        "p95_ns": 900,
+        "p99_ns": 1300,
+        "p99.9_ns": 4900
+      },
+      "ranking": {
+        "count": 12700,
+        "mean_ns": 11054.401574803149,
+        "p90_ns": 16200,
+        "p95_ns": 18700,
+        "p99_ns": 25700,
+        "p99.9_ns": 93100
+      },
+      "total": {
+        "count": 12700,
+        "mean_ns": 16271.685039370079,
+        "p90_ns": 24800,
+        "p95_ns": 28000,
+        "p99_ns": 40800,
+        "p99.9_ns": 147400
+      }
+    },
+    {
+      "strategy": "PE-ONLINE",
+      "recursive": false,
+      "probes": 1,
+      "empty": true,
+      "directory": {
+        "count": 32900,
+        "mean_ns": 3278.547112462006,
+        "p90_ns": 5300,
+        "p95_ns": 6800,
+        "p99_ns": 11500,
+        "p99.9_ns": 37100
+      },
+      "materialize": {
+        "count": 32900,
+        "mean_ns": 43.72948328267477,
+        "p90_ns": 100,
+        "p95_ns": 200,
+        "p99_ns": 300,
+        "p99.9_ns": 500
+      },
+      "ranking": {
+        "count": 32900,
+        "mean_ns": 11101.231003039513,
+        "p90_ns": 16300,
+        "p95_ns": 18600,
+        "p99_ns": 26700,
+        "p99.9_ns": 113100
+      },
+      "total": {
+        "count": 32900,
+        "mean_ns": 14423.507598784194,
+        "p90_ns": 21000,
+        "p95_ns": 24100,
+        "p99_ns": 36100,
+        "p99.9_ns": 133900
+      }
+    },
+    {
+      "strategy": "PE-ONLINE",
+      "recursive": false,
+      "probes": 4,
+      "empty": false,
+      "directory": {
+        "count": 12700,
+        "mean_ns": 4655.354330708661,
+        "p90_ns": 7900,
+        "p95_ns": 10600,
+        "p99_ns": 15500,
+        "p99.9_ns": 54700
+      },
+      "materialize": {
+        "count": 12700,
+        "mean_ns": 324.21259842519686,
+        "p90_ns": 700,
+        "p95_ns": 900,
+        "p99_ns": 1300,
+        "p99.9_ns": 2200
+      },
+      "ranking": {
+        "count": 12700,
+        "mean_ns": 11319.062992125984,
+        "p90_ns": 16600,
+        "p95_ns": 18800,
+        "p99_ns": 24400,
+        "p99.9_ns": 102500
+      },
+      "total": {
+        "count": 12700,
+        "mean_ns": 16298.629921259842,
+        "p90_ns": 24700,
+        "p95_ns": 28200,
+        "p99_ns": 39700,
+        "p99.9_ns": 152200
+      }
+    },
+    {
+      "strategy": "PE-ONLINE",
+      "recursive": false,
+      "probes": 4,
+      "empty": true,
+      "directory": {
+        "count": 32900,
+        "mean_ns": 3200.6504559270516,
+        "p90_ns": 5400,
+        "p95_ns": 6800,
+        "p99_ns": 11500,
+        "p99.9_ns": 28300
+      },
+      "materialize": {
+        "count": 32900,
+        "mean_ns": 42.65653495440729,
+        "p90_ns": 100,
+        "p95_ns": 100,
+        "p99_ns": 300,
+        "p99.9_ns": 500
+      },
+      "ranking": {
+        "count": 32900,
+        "mean_ns": 11346.917933130699,
+        "p90_ns": 15600,
+        "p95_ns": 18500,
+        "p99_ns": 25800,
+        "p99.9_ns": 136900
+      },
+      "total": {
+        "count": 32900,
+        "mean_ns": 14590.224924012158,
+        "p90_ns": 20700,
+        "p95_ns": 23800,
+        "p99_ns": 34500,
+        "p99.9_ns": 149100
+      }
+    },
+    {
+      "strategy": "PE-ONLINE",
+      "recursive": false,
+      "probes": 16,
+      "empty": false,
+      "directory": {
+        "count": 12700,
+        "mean_ns": 4939.724409448819,
+        "p90_ns": 8100,
+        "p95_ns": 11000,
+        "p99_ns": 15300,
+        "p99.9_ns": 64600
+      },
+      "materialize": {
+        "count": 12700,
+        "mean_ns": 333.31496062992125,
+        "p90_ns": 700,
+        "p95_ns": 1000,
+        "p99_ns": 1300,
+        "p99.9_ns": 5200
+      },
+      "ranking": {
+        "count": 12700,
+        "mean_ns": 12515.267716535433,
+        "p90_ns": 17500,
+        "p95_ns": 20000,
+        "p99_ns": 28100,
+        "p99.9_ns": 171200
+      },
+      "total": {
+        "count": 12700,
+        "mean_ns": 17788.30708661417,
+        "p90_ns": 25700,
+        "p95_ns": 29800,
+        "p99_ns": 44600,
+        "p99.9_ns": 193100
+      }
+    },
+    {
+      "strategy": "PE-ONLINE",
+      "recursive": false,
+      "probes": 16,
+      "empty": true,
+      "directory": {
+        "count": 32900,
+        "mean_ns": 3235.182370820669,
+        "p90_ns": 5600,
+        "p95_ns": 7300,
+        "p99_ns": 11800,
+        "p99.9_ns": 29500
+      },
+      "materialize": {
+        "count": 32900,
+        "mean_ns": 45.06990881458967,
+        "p90_ns": 100,
+        "p95_ns": 200,
+        "p99_ns": 300,
+        "p99.9_ns": 500
+      },
+      "ranking": {
+        "count": 32900,
+        "mean_ns": 11339.796352583586,
+        "p90_ns": 16600,
+        "p95_ns": 18600,
+        "p99_ns": 27000,
+        "p99.9_ns": 152900
+      },
+      "total": {
+        "count": 32900,
+        "mean_ns": 14620.048632218844,
+        "p90_ns": 21200,
+        "p95_ns": 24300,
+        "p99_ns": 36600,
+        "p99.9_ns": 169000
+      }
+    },
+    {
+      "strategy": "PE-ONLINE",
+      "recursive": true,
+      "probes": 0,
+      "empty": false,
+      "directory": {
+        "count": 45600,
+        "mean_ns": 2318185.1315789474,
+        "p90_ns": 15973600,
+        "p95_ns": 16961100,
+        "p99_ns": 22559800,
+        "p99.9_ns": 32770400
+      },
+      "materialize": {
+        "count": 45600,
+        "mean_ns": 73698.68201754386,
+        "p90_ns": 506900,
+        "p95_ns": 533300,
+        "p99_ns": 688500,
+        "p99.9_ns": 1145900
+      },
+      "ranking": {
+        "count": 45600,
+        "mean_ns": 1004380.0504385965,
+        "p90_ns": 6934700,
+        "p95_ns": 7451300,
+        "p99_ns": 10131200,
+        "p99.9_ns": 12669600
+      },
+      "total": {
+        "count": 45600,
+        "mean_ns": 3396263.8640350876,
+        "p90_ns": 23653600,
+        "p95_ns": 24987300,
+        "p99_ns": 31369100,
+        "p99.9_ns": 44927400
+      }
+    },
+    {
+      "strategy": "PE-ONLINE",
+      "recursive": true,
+      "probes": 1,
+      "empty": false,
+      "directory": {
+        "count": 45600,
+        "mean_ns": 2323733.302631579,
+        "p90_ns": 15971500,
+        "p95_ns": 16978000,
+        "p99_ns": 22547400,
+        "p99.9_ns": 32934100
+      },
+      "materialize": {
+        "count": 45600,
+        "mean_ns": 73977.33552631579,
+        "p90_ns": 507300,
+        "p95_ns": 534400,
+        "p99_ns": 686200,
+        "p99.9_ns": 1148600
+      },
+      "ranking": {
+        "count": 45600,
+        "mean_ns": 135278.97149122806,
+        "p90_ns": 733500,
+        "p95_ns": 967100,
+        "p99_ns": 1341700,
+        "p99.9_ns": 2267300
+      },
+      "total": {
+        "count": 45600,
+        "mean_ns": 2532989.6096491227,
+        "p90_ns": 17370100,
+        "p95_ns": 18442200,
+        "p99_ns": 24163700,
+        "p99.9_ns": 35435700
+      }
+    },
+    {
+      "strategy": "PE-ONLINE",
+      "recursive": true,
+      "probes": 4,
+      "empty": false,
+      "directory": {
+        "count": 45600,
+        "mean_ns": 2327498.964912281,
+        "p90_ns": 16006100,
+        "p95_ns": 17014900,
+        "p99_ns": 22875400,
+        "p99.9_ns": 32981600
+      },
+      "materialize": {
+        "count": 45600,
+        "mean_ns": 73646.45833333333,
+        "p90_ns": 507800,
+        "p95_ns": 535000,
+        "p99_ns": 686900,
+        "p99.9_ns": 1092500
+      },
+      "ranking": {
+        "count": 45600,
+        "mean_ns": 352116.6206140351,
+        "p90_ns": 2161300,
+        "p95_ns": 2626800,
+        "p99_ns": 3423600,
+        "p99.9_ns": 5174400
+      },
+      "total": {
+        "count": 45600,
+        "mean_ns": 2753262.043859649,
+        "p90_ns": 18937400,
+        "p95_ns": 20136800,
+        "p99_ns": 26476700,
+        "p99.9_ns": 38077200
+      }
+    },
+    {
+      "strategy": "PE-ONLINE",
+      "recursive": true,
+      "probes": 16,
+      "empty": false,
+      "directory": {
+        "count": 45600,
+        "mean_ns": 2322850.285087719,
+        "p90_ns": 15948200,
+        "p95_ns": 16968800,
+        "p99_ns": 22297600,
+        "p99.9_ns": 33036500
+      },
+      "materialize": {
+        "count": 45600,
+        "mean_ns": 73938.05701754386,
+        "p90_ns": 506700,
+        "p95_ns": 534400,
+        "p99_ns": 686500,
+        "p99.9_ns": 1097000
+      },
+      "ranking": {
+        "count": 45600,
+        "mean_ns": 1014542.6140350878,
+        "p90_ns": 6953800,
+        "p95_ns": 7470500,
+        "p99_ns": 10058600,
+        "p99.9_ns": 12795800
+      },
+      "total": {
+        "count": 45600,
+        "mean_ns": 3411330.956140351,
+        "p90_ns": 23665100,
+        "p95_ns": 25016400,
+        "p99_ns": 31243800,
+        "p99.9_ns": 45398000
+      }
+    },
+    {
+      "strategy": "TrieHI",
+      "recursive": false,
+      "probes": 0,
+      "empty": false,
+      "directory": {
+        "count": 12700,
+        "mean_ns": 5847.606299212598,
+        "p90_ns": 11000,
+        "p95_ns": 13200,
+        "p99_ns": 18300,
+        "p99.9_ns": 60300
+      },
+      "materialize": {
+        "count": 12700,
+        "mean_ns": 319.5275590551181,
+        "p90_ns": 700,
+        "p95_ns": 900,
+        "p99_ns": 1300,
+        "p99.9_ns": 4700
+      },
+      "ranking": {
+        "count": 12700,
+        "mean_ns": 2834.165354330709,
+        "p90_ns": 3200,
+        "p95_ns": 3800,
+        "p99_ns": 6800,
+        "p99.9_ns": 54100
+      },
+      "total": {
+        "count": 12700,
+        "mean_ns": 9001.299212598426,
+        "p90_ns": 14800,
+        "p95_ns": 17500,
+        "p99_ns": 23900,
+        "p99.9_ns": 106500
+      }
+    },
+    {
+      "strategy": "TrieHI",
+      "recursive": false,
+      "probes": 0,
+      "empty": true,
+      "directory": {
+        "count": 32900,
+        "mean_ns": 40997.59878419453,
+        "p90_ns": 163700,
+        "p95_ns": 238800,
+        "p99_ns": 293100,
+        "p99.9_ns": 529600
+      },
+      "materialize": {
+        "count": 32900,
+        "mean_ns": 47.6048632218845,
+        "p90_ns": 100,
+        "p95_ns": 100,
+        "p99_ns": 300,
+        "p99.9_ns": 500
+      },
+      "ranking": {
+        "count": 32900,
+        "mean_ns": 1822.8328267477204,
+        "p90_ns": 2000,
+        "p95_ns": 2300,
+        "p99_ns": 4600,
+        "p99.9_ns": 17100
+      },
+      "total": {
+        "count": 32900,
+        "mean_ns": 42868.03647416413,
+        "p90_ns": 165700,
+        "p95_ns": 240800,
+        "p99_ns": 295600,
+        "p99.9_ns": 545400
+      }
+    },
+    {
+      "strategy": "TrieHI",
+      "recursive": false,
+      "probes": 1,
+      "empty": false,
+      "directory": {
+        "count": 12700,
+        "mean_ns": 6218.527559055118,
+        "p90_ns": 10700,
+        "p95_ns": 12800,
+        "p99_ns": 18000,
+        "p99.9_ns": 92200
+      },
+      "materialize": {
+        "count": 12700,
+        "mean_ns": 336.20472440944883,
+        "p90_ns": 600,
+        "p95_ns": 900,
+        "p99_ns": 1300,
+        "p99.9_ns": 3200
+      },
+      "ranking": {
+        "count": 12700,
+        "mean_ns": 10750.614173228347,
+        "p90_ns": 13400,
+        "p95_ns": 16400,
+        "p99_ns": 24900,
+        "p99.9_ns": 97100
+      },
+      "total": {
+        "count": 12700,
+        "mean_ns": 17305.346456692914,
+        "p90_ns": 23800,
+        "p95_ns": 28800,
+        "p99_ns": 43100,
+        "p99.9_ns": 135600
+      }
+    },
+    {
+      "strategy": "TrieHI",
+      "recursive": false,
+      "probes": 1,
+      "empty": true,
+      "directory": {
+        "count": 32900,
+        "mean_ns": 40985.67781155015,
+        "p90_ns": 160000,
+        "p95_ns": 238800,
+        "p99_ns": 292000,
+        "p99.9_ns": 606200
+      },
+      "materialize": {
+        "count": 32900,
+        "mean_ns": 47.765957446808514,
+        "p90_ns": 100,
+        "p95_ns": 100,
+        "p99_ns": 300,
+        "p99.9_ns": 500
+      },
+      "ranking": {
+        "count": 32900,
+        "mean_ns": 10937.863221884498,
+        "p90_ns": 13400,
+        "p95_ns": 16400,
+        "p99_ns": 25000,
+        "p99.9_ns": 114200
+      },
+      "total": {
+        "count": 32900,
+        "mean_ns": 51971.30699088146,
+        "p90_ns": 172500,
+        "p95_ns": 250700,
+        "p99_ns": 309200,
+        "p99.9_ns": 639300
+      }
+    },
+    {
+      "strategy": "TrieHI",
+      "recursive": false,
+      "probes": 4,
+      "empty": false,
+      "directory": {
+        "count": 12700,
+        "mean_ns": 5713.086614173229,
+        "p90_ns": 10500,
+        "p95_ns": 12800,
+        "p99_ns": 17700,
+        "p99.9_ns": 79400
+      },
+      "materialize": {
+        "count": 12700,
+        "mean_ns": 316.0,
+        "p90_ns": 600,
+        "p95_ns": 900,
+        "p99_ns": 1200,
+        "p99.9_ns": 4600
+      },
+      "ranking": {
+        "count": 12700,
+        "mean_ns": 10834.669291338583,
+        "p90_ns": 13500,
+        "p95_ns": 16300,
+        "p99_ns": 24300,
+        "p99.9_ns": 89200
+      },
+      "total": {
+        "count": 12700,
+        "mean_ns": 16863.75590551181,
+        "p90_ns": 23500,
+        "p95_ns": 28800,
+        "p99_ns": 41600,
+        "p99.9_ns": 141200
+      }
+    },
+    {
+      "strategy": "TrieHI",
+      "recursive": false,
+      "probes": 4,
+      "empty": true,
+      "directory": {
+        "count": 32900,
+        "mean_ns": 42241.6443768997,
+        "p90_ns": 186300,
+        "p95_ns": 241100,
+        "p99_ns": 297900,
+        "p99.9_ns": 647500
+      },
+      "materialize": {
+        "count": 32900,
+        "mean_ns": 59.28267477203647,
+        "p90_ns": 100,
+        "p95_ns": 100,
+        "p99_ns": 300,
+        "p99.9_ns": 500
+      },
+      "ranking": {
+        "count": 32900,
+        "mean_ns": 11099.303951367781,
+        "p90_ns": 13300,
+        "p95_ns": 16200,
+        "p99_ns": 24600,
+        "p99.9_ns": 135100
+      },
+      "total": {
+        "count": 32900,
+        "mean_ns": 53400.23100303952,
+        "p90_ns": 199300,
+        "p95_ns": 252900,
+        "p99_ns": 315500,
+        "p99.9_ns": 823400
+      }
+    },
+    {
+      "strategy": "TrieHI",
+      "recursive": false,
+      "probes": 16,
+      "empty": false,
+      "directory": {
+        "count": 12700,
+        "mean_ns": 6442.818897637795,
+        "p90_ns": 11200,
+        "p95_ns": 13100,
+        "p99_ns": 18300,
+        "p99.9_ns": 91300
+      },
+      "materialize": {
+        "count": 12700,
+        "mean_ns": 335.76377952755905,
+        "p90_ns": 600,
+        "p95_ns": 900,
+        "p99_ns": 1300,
+        "p99.9_ns": 5400
+      },
+      "ranking": {
+        "count": 12700,
+        "mean_ns": 11673.062992125984,
+        "p90_ns": 14300,
+        "p95_ns": 17700,
+        "p99_ns": 24800,
+        "p99.9_ns": 112300
+      },
+      "total": {
+        "count": 12700,
+        "mean_ns": 18451.645669291338,
+        "p90_ns": 24700,
+        "p95_ns": 30600,
+        "p99_ns": 43700,
+        "p99.9_ns": 163100
+      }
+    },
+    {
+      "strategy": "TrieHI",
+      "recursive": false,
+      "probes": 16,
+      "empty": true,
+      "directory": {
+        "count": 32900,
+        "mean_ns": 41701.8358662614,
+        "p90_ns": 160300,
+        "p95_ns": 239900,
+        "p99_ns": 293700,
+        "p99.9_ns": 699300
+      },
+      "materialize": {
+        "count": 32900,
+        "mean_ns": 48.86322188449848,
+        "p90_ns": 100,
+        "p95_ns": 200,
+        "p99_ns": 300,
+        "p99.9_ns": 500
+      },
+      "ranking": {
+        "count": 32900,
+        "mean_ns": 10976.717325227963,
+        "p90_ns": 13600,
+        "p95_ns": 16800,
+        "p99_ns": 24900,
+        "p99.9_ns": 102700
+      },
+      "total": {
+        "count": 32900,
+        "mean_ns": 52727.41641337386,
+        "p90_ns": 171900,
+        "p95_ns": 251500,
+        "p99_ns": 313100,
+        "p99.9_ns": 851800
+      }
+    },
+    {
+      "strategy": "TrieHI",
+      "recursive": true,
+      "probes": 0,
+      "empty": false,
+      "directory": {
+        "count": 45600,
+        "mean_ns": 4981.914473684211,
+        "p90_ns": 8800,
+        "p95_ns": 10800,
+        "p99_ns": 16600,
+        "p99.9_ns": 59100
+      },
+      "materialize": {
+        "count": 45600,
+        "mean_ns": 70707.35745614035,
+        "p90_ns": 495900,
+        "p95_ns": 519800,
+        "p99_ns": 604400,
+        "p99.9_ns": 994600
+      },
+      "ranking": {
+        "count": 45600,
+        "mean_ns": 985712.7302631579,
+        "p90_ns": 6923600,
+        "p95_ns": 7425200,
+        "p99_ns": 8549700,
+        "p99.9_ns": 12671200
+      },
+      "total": {
+        "count": 45600,
+        "mean_ns": 1061402.0021929825,
+        "p90_ns": 7445400,
+        "p95_ns": 7965400,
+        "p99_ns": 9174800,
+        "p99.9_ns": 13349700
+      }
+    },
+    {
+      "strategy": "TrieHI",
+      "recursive": true,
+      "probes": 1,
+      "empty": false,
+      "directory": {
+        "count": 45600,
+        "mean_ns": 5120.144736842105,
+        "p90_ns": 9100,
+        "p95_ns": 11300,
+        "p99_ns": 16400,
+        "p99.9_ns": 55900
+      },
+      "materialize": {
+        "count": 45600,
+        "mean_ns": 71512.48684210527,
+        "p90_ns": 495700,
+        "p95_ns": 519500,
+        "p99_ns": 603100,
+        "p99.9_ns": 1232900
+      },
+      "ranking": {
+        "count": 45600,
+        "mean_ns": 129111.47587719298,
+        "p90_ns": 712800,
+        "p95_ns": 933500,
+        "p99_ns": 1267400,
+        "p99.9_ns": 1989600
+      },
+      "total": {
+        "count": 45600,
+        "mean_ns": 205744.10745614034,
+        "p90_ns": 1228300,
+        "p95_ns": 1461700,
+        "p99_ns": 1836600,
+        "p99.9_ns": 3124400
+      }
+    },
+    {
+      "strategy": "TrieHI",
+      "recursive": true,
+      "probes": 4,
+      "empty": false,
+      "directory": {
+        "count": 45600,
+        "mean_ns": 5033.581140350877,
+        "p90_ns": 8900,
+        "p95_ns": 10700,
+        "p99_ns": 16300,
+        "p99.9_ns": 50100
+      },
+      "materialize": {
+        "count": 45600,
+        "mean_ns": 71231.35964912281,
+        "p90_ns": 496500,
+        "p95_ns": 520100,
+        "p99_ns": 599500,
+        "p99.9_ns": 1330000
+      },
+      "ranking": {
+        "count": 45600,
+        "mean_ns": 340522.600877193,
+        "p90_ns": 2116800,
+        "p95_ns": 2571900,
+        "p99_ns": 3224700,
+        "p99.9_ns": 5097300
+      },
+      "total": {
+        "count": 45600,
+        "mean_ns": 416787.5416666667,
+        "p90_ns": 2643300,
+        "p95_ns": 3108800,
+        "p99_ns": 3792700,
+        "p99.9_ns": 5869900
+      }
+    },
+    {
+      "strategy": "TrieHI",
+      "recursive": true,
+      "probes": 16,
+      "empty": false,
+      "directory": {
+        "count": 45600,
+        "mean_ns": 5148.291666666667,
+        "p90_ns": 8500,
+        "p95_ns": 10500,
+        "p99_ns": 16100,
+        "p99.9_ns": 60300
+      },
+      "materialize": {
+        "count": 45600,
+        "mean_ns": 71273.68640350878,
+        "p90_ns": 495600,
+        "p95_ns": 519600,
+        "p99_ns": 601800,
+        "p99.9_ns": 1279700
+      },
+      "ranking": {
+        "count": 45600,
+        "mean_ns": 994597.6995614035,
+        "p90_ns": 6948500,
+        "p95_ns": 7441900,
+        "p99_ns": 8580600,
+        "p99.9_ns": 12151200
+      },
+      "total": {
+        "count": 45600,
+        "mean_ns": 1071019.6776315789,
+        "p90_ns": 7469700,
+        "p95_ns": 7981000,
+        "p99_ns": 9191900,
+        "p99.9_ns": 12918400
+      }
+    }
+  ],
+  "workers": [
+    {
+      "output": "experiments\\EXP-20261027-008\\run-search-0",
+      "run": 0,
+      "rows": 218880,
+      "files": {
+        "answers.jsonl": "5da768c13462658f59d89f99e75b5f03fdec798156cd20d80bfffa1b17da5981",
+        "clock.csv": "7ba2be45ff4f61eb9befbc4d08f695ee577380733db919f4fad1fdf8498d323f",
+        "model.json": "36636f7562d416f00c660df6dd881e4a460905a32b04533828e8133202b962a5",
+        "order.tsv": "3f56485990d1cbe9ef3ff9a89300df201bb4e4bbd4ccdebc43753c240ff3f387",
+        "scopes.tsv": "e8359f29c64c7d6193419f9eb14935489bbe29ab62ba79303b6e2a5b57a791c9",
+        "setup.csv": "a4a26ae73c427262b62208ae7673108c0ce1f45b86ab0fe036da0772621cc857",
+        "timings.csv": "655fbfccf86e1c5bd46cbe885823cefa972e5a492baced7b918c44d99dce3b6f"
+      },
+      "groups": [
+        {
+          "strategy": "PE-OFFLINE",
+          "recursive": false,
+          "probes": 0,
+          "empty": false,
+          "total": {
+            "count": 2540,
+            "mean_ns": 13580.511811023622,
+            "p90_ns": 20900,
+            "p95_ns": 25200,
+            "p99_ns": 40300,
+            "p99.9_ns": 109200
+          }
+        },
+        {
+          "strategy": "PE-OFFLINE",
+          "recursive": false,
+          "probes": 0,
+          "empty": true,
+          "total": {
+            "count": 6580,
+            "mean_ns": 64868.92097264438,
+            "p90_ns": 247700,
+            "p95_ns": 313100,
+            "p99_ns": 458900,
+            "p99.9_ns": 1247800
+          }
+        },
+        {
+          "strategy": "PE-OFFLINE",
+          "recursive": false,
+          "probes": 1,
+          "empty": false,
+          "total": {
+            "count": 2540,
+            "mean_ns": 24331.653543307086,
+            "p90_ns": 34500,
+            "p95_ns": 44100,
+            "p99_ns": 68900,
+            "p99.9_ns": 355600
+          }
+        },
+        {
+          "strategy": "PE-OFFLINE",
+          "recursive": false,
+          "probes": 1,
+          "empty": true,
+          "total": {
+            "count": 6580,
+            "mean_ns": 77713.82978723405,
+            "p90_ns": 236100,
+            "p95_ns": 317300,
+            "p99_ns": 467700,
+            "p99.9_ns": 1824100
+          }
+        },
+        {
+          "strategy": "PE-OFFLINE",
+          "recursive": false,
+          "probes": 4,
+          "empty": false,
+          "total": {
+            "count": 2540,
+            "mean_ns": 22215.07874015748,
+            "p90_ns": 32000,
+            "p95_ns": 38800,
+            "p99_ns": 60100,
+            "p99.9_ns": 176600
+          }
+        },
+        {
+          "strategy": "PE-OFFLINE",
+          "recursive": false,
+          "probes": 4,
+          "empty": true,
+          "total": {
+            "count": 6580,
+            "mean_ns": 77668.57142857143,
+            "p90_ns": 276300,
+            "p95_ns": 336000,
+            "p99_ns": 474700,
+            "p99.9_ns": 1126000
+          }
+        },
+        {
+          "strategy": "PE-OFFLINE",
+          "recursive": false,
+          "probes": 16,
+          "empty": false,
+          "total": {
+            "count": 2540,
+            "mean_ns": 25044.645669291338,
+            "p90_ns": 35800,
+            "p95_ns": 42900,
+            "p99_ns": 69300,
+            "p99.9_ns": 196100
+          }
+        },
+        {
+          "strategy": "PE-OFFLINE",
+          "recursive": false,
+          "probes": 16,
+          "empty": true,
+          "total": {
+            "count": 6580,
+            "mean_ns": 75781.2613981763,
+            "p90_ns": 264800,
+            "p95_ns": 327300,
+            "p99_ns": 486200,
+            "p99.9_ns": 1095600
+          }
+        },
+        {
+          "strategy": "PE-OFFLINE",
+          "recursive": true,
+          "probes": 0,
+          "empty": false,
+          "total": {
+            "count": 9120,
+            "mean_ns": 1258017.7960526317,
+            "p90_ns": 7996300,
+            "p95_ns": 9404000,
+            "p99_ns": 11506900,
+            "p99.9_ns": 24119800
+          }
+        },
+        {
+          "strategy": "PE-OFFLINE",
+          "recursive": true,
+          "probes": 1,
+          "empty": false,
+          "total": {
+            "count": 9120,
+            "mean_ns": 252184.57236842104,
+            "p90_ns": 1345500,
+            "p95_ns": 1767200,
+            "p99_ns": 2476400,
+            "p99.9_ns": 4669400
+          }
+        },
+        {
+          "strategy": "PE-OFFLINE",
+          "recursive": true,
+          "probes": 4,
+          "empty": false,
+          "total": {
+            "count": 9120,
+            "mean_ns": 517333.5964912281,
+            "p90_ns": 2884000,
+            "p95_ns": 3695500,
+            "p99_ns": 4864400,
+            "p99.9_ns": 11319800
+          }
+        },
+        {
+          "strategy": "PE-OFFLINE",
+          "recursive": true,
+          "probes": 16,
+          "empty": false,
+          "total": {
+            "count": 9120,
+            "mean_ns": 1252386.6118421052,
+            "p90_ns": 7914400,
+            "p95_ns": 9397500,
+            "p99_ns": 11495400,
+            "p99.9_ns": 18936800
+          }
+        },
+        {
+          "strategy": "PE-ONLINE",
+          "recursive": false,
+          "probes": 0,
+          "empty": false,
+          "total": {
+            "count": 2540,
+            "mean_ns": 7793.228346456693,
+            "p90_ns": 11400,
+            "p95_ns": 15300,
+            "p99_ns": 20400,
+            "p99.9_ns": 149800
+          }
+        },
+        {
+          "strategy": "PE-ONLINE",
+          "recursive": false,
+          "probes": 0,
+          "empty": true,
+          "total": {
+            "count": 6580,
+            "mean_ns": 4691.261398176292,
+            "p90_ns": 7000,
+            "p95_ns": 9400,
+            "p99_ns": 15000,
+            "p99.9_ns": 46900
+          }
+        },
+        {
+          "strategy": "PE-ONLINE",
+          "recursive": false,
+          "probes": 1,
+          "empty": false,
+          "total": {
+            "count": 2540,
+            "mean_ns": 15329.488188976378,
+            "p90_ns": 23900,
+            "p95_ns": 27200,
+            "p99_ns": 34000,
+            "p99.9_ns": 68000
+          }
+        },
+        {
+          "strategy": "PE-ONLINE",
+          "recursive": false,
+          "probes": 1,
+          "empty": true,
+          "total": {
+            "count": 6580,
+            "mean_ns": 13085.835866261397,
+            "p90_ns": 16800,
+            "p95_ns": 20200,
+            "p99_ns": 28100,
+            "p99.9_ns": 111000
+          }
+        },
+        {
+          "strategy": "PE-ONLINE",
+          "recursive": false,
+          "probes": 4,
+          "empty": false,
+          "total": {
+            "count": 2540,
+            "mean_ns": 14778.779527559054,
+            "p90_ns": 18900,
+            "p95_ns": 23300,
+            "p99_ns": 33400,
+            "p99.9_ns": 147300
+          }
+        },
+        {
+          "strategy": "PE-ONLINE",
+          "recursive": false,
+          "probes": 4,
+          "empty": true,
+          "total": {
+            "count": 6580,
+            "mean_ns": 13701.124620060791,
+            "p90_ns": 17600,
+            "p95_ns": 21500,
+            "p99_ns": 31300,
+            "p99.9_ns": 141900
+          }
+        },
+        {
+          "strategy": "PE-ONLINE",
+          "recursive": false,
+          "probes": 16,
+          "empty": false,
+          "total": {
+            "count": 2540,
+            "mean_ns": 16959.015748031496,
+            "p90_ns": 21800,
+            "p95_ns": 28900,
+            "p99_ns": 38900,
+            "p99.9_ns": 135300
+          }
+        },
+        {
+          "strategy": "PE-ONLINE",
+          "recursive": false,
+          "probes": 16,
+          "empty": true,
+          "total": {
+            "count": 6580,
+            "mean_ns": 13642.462006079028,
+            "p90_ns": 17500,
+            "p95_ns": 22000,
+            "p99_ns": 30200,
+            "p99.9_ns": 107000
+          }
+        },
+        {
+          "strategy": "PE-ONLINE",
+          "recursive": true,
+          "probes": 0,
+          "empty": false,
+          "total": {
+            "count": 9120,
+            "mean_ns": 3197451.535087719,
+            "p90_ns": 23443600,
+            "p95_ns": 24449900,
+            "p99_ns": 26392400,
+            "p99.9_ns": 32017600
+          }
+        },
+        {
+          "strategy": "PE-ONLINE",
+          "recursive": true,
+          "probes": 1,
+          "empty": false,
+          "total": {
+            "count": 9120,
+            "mean_ns": 2371919.418859649,
+            "p90_ns": 17189600,
+            "p95_ns": 18051100,
+            "p99_ns": 19709400,
+            "p99.9_ns": 24937100
+          }
+        },
+        {
+          "strategy": "PE-ONLINE",
+          "recursive": true,
+          "probes": 4,
+          "empty": false,
+          "total": {
+            "count": 9120,
+            "mean_ns": 2582261.00877193,
+            "p90_ns": 18702900,
+            "p95_ns": 19706300,
+            "p99_ns": 21652800,
+            "p99.9_ns": 27061300
+          }
+        },
+        {
+          "strategy": "PE-ONLINE",
+          "recursive": true,
+          "probes": 16,
+          "empty": false,
+          "total": {
+            "count": 9120,
+            "mean_ns": 3218229.682017544,
+            "p90_ns": 23445600,
+            "p95_ns": 24551300,
+            "p99_ns": 26680500,
+            "p99.9_ns": 32143300
+          }
+        },
+        {
+          "strategy": "TrieHI",
+          "recursive": false,
+          "probes": 0,
+          "empty": false,
+          "total": {
+            "count": 2540,
+            "mean_ns": 9007.086614173228,
+            "p90_ns": 14400,
+            "p95_ns": 18100,
+            "p99_ns": 24300,
+            "p99.9_ns": 65200
+          }
+        },
+        {
+          "strategy": "TrieHI",
+          "recursive": false,
+          "probes": 0,
+          "empty": true,
+          "total": {
+            "count": 6580,
+            "mean_ns": 44466.914893617024,
+            "p90_ns": 166300,
+            "p95_ns": 243800,
+            "p99_ns": 316100,
+            "p99.9_ns": 932000
+          }
+        },
+        {
+          "strategy": "TrieHI",
+          "recursive": false,
+          "probes": 1,
+          "empty": false,
+          "total": {
+            "count": 2540,
+            "mean_ns": 17179.291338582676,
+            "p90_ns": 26500,
+            "p95_ns": 31300,
+            "p99_ns": 48000,
+            "p99.9_ns": 135600
+          }
+        },
+        {
+          "strategy": "TrieHI",
+          "recursive": false,
+          "probes": 1,
+          "empty": true,
+          "total": {
+            "count": 6580,
+            "mean_ns": 51203.35866261398,
+            "p90_ns": 159100,
+            "p95_ns": 245800,
+            "p99_ns": 316500,
+            "p99.9_ns": 568500
+          }
+        },
+        {
+          "strategy": "TrieHI",
+          "recursive": false,
+          "probes": 4,
+          "empty": false,
+          "total": {
+            "count": 2540,
+            "mean_ns": 16499.015748031496,
+            "p90_ns": 22700,
+            "p95_ns": 28400,
+            "p99_ns": 54500,
+            "p99.9_ns": 148400
+          }
+        },
+        {
+          "strategy": "TrieHI",
+          "recursive": false,
+          "probes": 4,
+          "empty": true,
+          "total": {
+            "count": 6580,
+            "mean_ns": 55712.234042553195,
+            "p90_ns": 221400,
+            "p95_ns": 259600,
+            "p99_ns": 350400,
+            "p99.9_ns": 1133800
+          }
+        },
+        {
+          "strategy": "TrieHI",
+          "recursive": false,
+          "probes": 16,
+          "empty": false,
+          "total": {
+            "count": 2540,
+            "mean_ns": 18276.811023622045,
+            "p90_ns": 26400,
+            "p95_ns": 32800,
+            "p99_ns": 50800,
+            "p99.9_ns": 130900
+          }
+        },
+        {
+          "strategy": "TrieHI",
+          "recursive": false,
+          "probes": 16,
+          "empty": true,
+          "total": {
+            "count": 6580,
+            "mean_ns": 54560.501519756835,
+            "p90_ns": 184100,
+            "p95_ns": 256700,
+            "p99_ns": 341400,
+            "p99.9_ns": 1270000
+          }
+        },
+        {
+          "strategy": "TrieHI",
+          "recursive": true,
+          "probes": 0,
+          "empty": false,
+          "total": {
+            "count": 9120,
+            "mean_ns": 1074914.6929824562,
+            "p90_ns": 7489700,
+            "p95_ns": 8087800,
+            "p99_ns": 9589800,
+            "p99.9_ns": 12022700
+          }
+        },
+        {
+          "strategy": "TrieHI",
+          "recursive": true,
+          "probes": 1,
+          "empty": false,
+          "total": {
+            "count": 9120,
+            "mean_ns": 207462.85087719298,
+            "p90_ns": 1238700,
+            "p95_ns": 1477500,
+            "p99_ns": 1887400,
+            "p99.9_ns": 2720400
+          }
+        },
+        {
+          "strategy": "TrieHI",
+          "recursive": true,
+          "probes": 4,
+          "empty": false,
+          "total": {
+            "count": 9120,
+            "mean_ns": 421138.83771929826,
+            "p90_ns": 2646900,
+            "p95_ns": 3137000,
+            "p99_ns": 3958000,
+            "p99.9_ns": 5853400
+          }
+        },
+        {
+          "strategy": "TrieHI",
+          "recursive": true,
+          "probes": 16,
+          "empty": false,
+          "total": {
+            "count": 9120,
+            "mean_ns": 1079842.6754385964,
+            "p90_ns": 7524500,
+            "p95_ns": 8047800,
+            "p99_ns": 9491000,
+            "p99.9_ns": 12559600
+          }
+        }
+      ]
+    },
+    {
+      "output": "experiments\\EXP-20261027-008\\run-search-1",
+      "run": 1,
+      "rows": 218880,
+      "files": {
+        "answers.jsonl": "b1af2b6ec441c3920c98d4a66b6fbe6461f4e4c85533f77098e3b83e7d3dbeb6",
+        "clock.csv": "ce0faaaf56c16f7ca504772a8e13a8576c40a32e6e9854728c19c854e68ef66d",
+        "model.json": "36636f7562d416f00c660df6dd881e4a460905a32b04533828e8133202b962a5",
+        "order.tsv": "42817919b56ff65813f4aeb1c72507e3df859102592c086414349363badc2a4e",
+        "scopes.tsv": "6336ee0d4bae2f6c802f31fa8fcb1e8c4e7326ea5d468b9de6a6bed075b4eefd",
+        "setup.csv": "e314a7c0b5fb878ac34a59c93bd335be65330157c03ff760cdce218c5fde0800",
+        "timings.csv": "914ed485a3bafd0632efd117ce9f27ca3921f15ed679547ac6943c8f06796ff0"
+      },
+      "groups": [
+        {
+          "strategy": "PE-OFFLINE",
+          "recursive": false,
+          "probes": 0,
+          "empty": false,
+          "total": {
+            "count": 2540,
+            "mean_ns": 10274.527559055117,
+            "p90_ns": 15000,
+            "p95_ns": 18400,
+            "p99_ns": 25000,
+            "p99.9_ns": 213600
+          }
+        },
+        {
+          "strategy": "PE-OFFLINE",
+          "recursive": false,
+          "probes": 0,
+          "empty": true,
+          "total": {
+            "count": 6580,
+            "mean_ns": 48792.65957446808,
+            "p90_ns": 188500,
+            "p95_ns": 265800,
+            "p99_ns": 323300,
+            "p99.9_ns": 472400
+          }
+        },
+        {
+          "strategy": "PE-OFFLINE",
+          "recursive": false,
+          "probes": 1,
+          "empty": false,
+          "total": {
+            "count": 2540,
+            "mean_ns": 17686.574803149608,
+            "p90_ns": 22600,
+            "p95_ns": 27200,
+            "p99_ns": 38000,
+            "p99.9_ns": 194500
+          }
+        },
+        {
+          "strategy": "PE-OFFLINE",
+          "recursive": false,
+          "probes": 1,
+          "empty": true,
+          "total": {
+            "count": 6580,
+            "mean_ns": 59336.823708206684,
+            "p90_ns": 233400,
+            "p95_ns": 279400,
+            "p99_ns": 333200,
+            "p99.9_ns": 480700
+          }
+        },
+        {
+          "strategy": "PE-OFFLINE",
+          "recursive": false,
+          "probes": 4,
+          "empty": false,
+          "total": {
+            "count": 2540,
+            "mean_ns": 17694.72440944882,
+            "p90_ns": 23800,
+            "p95_ns": 27800,
+            "p99_ns": 42700,
+            "p99.9_ns": 122300
+          }
+        },
+        {
+          "strategy": "PE-OFFLINE",
+          "recursive": false,
+          "probes": 4,
+          "empty": true,
+          "total": {
+            "count": 6580,
+            "mean_ns": 58505.53191489362,
+            "p90_ns": 201400,
+            "p95_ns": 278000,
+            "p99_ns": 338500,
+            "p99.9_ns": 548100
+          }
+        },
+        {
+          "strategy": "PE-OFFLINE",
+          "recursive": false,
+          "probes": 16,
+          "empty": false,
+          "total": {
+            "count": 2540,
+            "mean_ns": 19385.866141732284,
+            "p90_ns": 24700,
+            "p95_ns": 30700,
+            "p99_ns": 40400,
+            "p99.9_ns": 334400
+          }
+        },
+        {
+          "strategy": "PE-OFFLINE",
+          "recursive": false,
+          "probes": 16,
+          "empty": true,
+          "total": {
+            "count": 6580,
+            "mean_ns": 56618.41945288754,
+            "p90_ns": 186600,
+            "p95_ns": 271700,
+            "p99_ns": 322300,
+            "p99.9_ns": 461900
+          }
+        },
+        {
+          "strategy": "PE-OFFLINE",
+          "recursive": true,
+          "probes": 0,
+          "empty": false,
+          "total": {
+            "count": 9120,
+            "mean_ns": 1038231.326754386,
+            "p90_ns": 7457600,
+            "p95_ns": 7919000,
+            "p99_ns": 8570900,
+            "p99.9_ns": 10778500
+          }
+        },
+        {
+          "strategy": "PE-OFFLINE",
+          "recursive": true,
+          "probes": 1,
+          "empty": false,
+          "total": {
+            "count": 9120,
+            "mean_ns": 201458.36622807017,
+            "p90_ns": 1230400,
+            "p95_ns": 1454100,
+            "p99_ns": 1778800,
+            "p99.9_ns": 2154600
+          }
+        },
+        {
+          "strategy": "PE-OFFLINE",
+          "recursive": true,
+          "probes": 4,
+          "empty": false,
+          "total": {
+            "count": 9120,
+            "mean_ns": 407382.92763157893,
+            "p90_ns": 2636400,
+            "p95_ns": 3099000,
+            "p99_ns": 3673000,
+            "p99.9_ns": 4418600
+          }
+        },
+        {
+          "strategy": "PE-OFFLINE",
+          "recursive": true,
+          "probes": 16,
+          "empty": false,
+          "total": {
+            "count": 9120,
+            "mean_ns": 1041194.6929824562,
+            "p90_ns": 7411800,
+            "p95_ns": 7906600,
+            "p99_ns": 8553100,
+            "p99.9_ns": 10263900
+          }
+        },
+        {
+          "strategy": "PE-ONLINE",
+          "recursive": false,
+          "probes": 0,
+          "empty": false,
+          "total": {
+            "count": 2540,
+            "mean_ns": 10388.937007874016,
+            "p90_ns": 15300,
+            "p95_ns": 19400,
+            "p99_ns": 35700,
+            "p99.9_ns": 190100
+          }
+        },
+        {
+          "strategy": "PE-ONLINE",
+          "recursive": false,
+          "probes": 0,
+          "empty": true,
+          "total": {
+            "count": 6580,
+            "mean_ns": 6305.835866261398,
+            "p90_ns": 10200,
+            "p95_ns": 12200,
+            "p99_ns": 20800,
+            "p99.9_ns": 100700
+          }
+        },
+        {
+          "strategy": "PE-ONLINE",
+          "recursive": false,
+          "probes": 1,
+          "empty": false,
+          "total": {
+            "count": 2540,
+            "mean_ns": 20030.15748031496,
+            "p90_ns": 28000,
+            "p95_ns": 32400,
+            "p99_ns": 79200,
+            "p99.9_ns": 217900
+          }
+        },
+        {
+          "strategy": "PE-ONLINE",
+          "recursive": false,
+          "probes": 1,
+          "empty": true,
+          "total": {
+            "count": 6580,
+            "mean_ns": 18335.927051671733,
+            "p90_ns": 25200,
+            "p95_ns": 29200,
+            "p99_ns": 60000,
+            "p99.9_ns": 195300
+          }
+        },
+        {
+          "strategy": "PE-ONLINE",
+          "recursive": false,
+          "probes": 4,
+          "empty": false,
+          "total": {
+            "count": 2540,
+            "mean_ns": 20040.629921259842,
+            "p90_ns": 28000,
+            "p95_ns": 32500,
+            "p99_ns": 54000,
+            "p99.9_ns": 190000
+          }
+        },
+        {
+          "strategy": "PE-ONLINE",
+          "recursive": false,
+          "probes": 4,
+          "empty": true,
+          "total": {
+            "count": 6580,
+            "mean_ns": 17902.537993920974,
+            "p90_ns": 25100,
+            "p95_ns": 28200,
+            "p99_ns": 53400,
+            "p99.9_ns": 186900
+          }
+        },
+        {
+          "strategy": "PE-ONLINE",
+          "recursive": false,
+          "probes": 16,
+          "empty": false,
+          "total": {
+            "count": 2540,
+            "mean_ns": 21891.496062992126,
+            "p90_ns": 30700,
+            "p95_ns": 35200,
+            "p99_ns": 73400,
+            "p99.9_ns": 317600
+          }
+        },
+        {
+          "strategy": "PE-ONLINE",
+          "recursive": false,
+          "probes": 16,
+          "empty": true,
+          "total": {
+            "count": 6580,
+            "mean_ns": 18415.227963525835,
+            "p90_ns": 25300,
+            "p95_ns": 30900,
+            "p99_ns": 59100,
+            "p99.9_ns": 325100
+          }
+        },
+        {
+          "strategy": "PE-ONLINE",
+          "recursive": true,
+          "probes": 0,
+          "empty": false,
+          "total": {
+            "count": 9120,
+            "mean_ns": 4053561.535087719,
+            "p90_ns": 24489700,
+            "p95_ns": 28387600,
+            "p99_ns": 43435900,
+            "p99.9_ns": 47073400
+          }
+        },
+        {
+          "strategy": "PE-ONLINE",
+          "recursive": true,
+          "probes": 1,
+          "empty": false,
+          "total": {
+            "count": 9120,
+            "mean_ns": 3098961.831140351,
+            "p90_ns": 18190800,
+            "p95_ns": 21335300,
+            "p99_ns": 34124700,
+            "p99.9_ns": 37072800
+          }
+        },
+        {
+          "strategy": "PE-ONLINE",
+          "recursive": true,
+          "probes": 4,
+          "empty": false,
+          "total": {
+            "count": 9120,
+            "mean_ns": 3342745.8333333335,
+            "p90_ns": 19704800,
+            "p95_ns": 23237100,
+            "p99_ns": 36823200,
+            "p99.9_ns": 40303500
+          }
+        },
+        {
+          "strategy": "PE-ONLINE",
+          "recursive": true,
+          "probes": 16,
+          "empty": false,
+          "total": {
+            "count": 9120,
+            "mean_ns": 4078959.9122807016,
+            "p90_ns": 24554300,
+            "p95_ns": 28223000,
+            "p99_ns": 43811300,
+            "p99.9_ns": 49128000
+          }
+        },
+        {
+          "strategy": "TrieHI",
+          "recursive": false,
+          "probes": 0,
+          "empty": false,
+          "total": {
+            "count": 2540,
+            "mean_ns": 8950.472440944883,
+            "p90_ns": 14800,
+            "p95_ns": 17900,
+            "p99_ns": 24700,
+            "p99.9_ns": 67900
+          }
+        },
+        {
+          "strategy": "TrieHI",
+          "recursive": false,
+          "probes": 0,
+          "empty": true,
+          "total": {
+            "count": 6580,
+            "mean_ns": 43161.58054711246,
+            "p90_ns": 175800,
+            "p95_ns": 244800,
+            "p99_ns": 297300,
+            "p99.9_ns": 475200
+          }
+        },
+        {
+          "strategy": "TrieHI",
+          "recursive": false,
+          "probes": 1,
+          "empty": false,
+          "total": {
+            "count": 2540,
+            "mean_ns": 16791.377952755905,
+            "p90_ns": 22900,
+            "p95_ns": 27200,
+            "p99_ns": 43700,
+            "p99.9_ns": 133700
+          }
+        },
+        {
+          "strategy": "TrieHI",
+          "recursive": false,
+          "probes": 1,
+          "empty": true,
+          "total": {
+            "count": 6580,
+            "mean_ns": 54252.43161094225,
+            "p90_ns": 217000,
+            "p95_ns": 257000,
+            "p99_ns": 319900,
+            "p99.9_ns": 640600
+          }
+        },
+        {
+          "strategy": "TrieHI",
+          "recursive": false,
+          "probes": 4,
+          "empty": false,
+          "total": {
+            "count": 2540,
+            "mean_ns": 18047.834645669293,
+            "p90_ns": 23500,
+            "p95_ns": 27700,
+            "p99_ns": 41200,
+            "p99.9_ns": 519100
+          }
+        },
+        {
+          "strategy": "TrieHI",
+          "recursive": false,
+          "probes": 4,
+          "empty": true,
+          "total": {
+            "count": 6580,
+            "mean_ns": 53626.1094224924,
+            "p90_ns": 194900,
+            "p95_ns": 254700,
+            "p99_ns": 333200,
+            "p99.9_ns": 707700
+          }
+        },
+        {
+          "strategy": "TrieHI",
+          "recursive": false,
+          "probes": 16,
+          "empty": false,
+          "total": {
+            "count": 2540,
+            "mean_ns": 18366.023622047243,
+            "p90_ns": 25600,
+            "p95_ns": 30800,
+            "p99_ns": 45300,
+            "p99.9_ns": 148900
+          }
+        },
+        {
+          "strategy": "TrieHI",
+          "recursive": false,
+          "probes": 16,
+          "empty": true,
+          "total": {
+            "count": 6580,
+            "mean_ns": 53152.47720364742,
+            "p90_ns": 170400,
+            "p95_ns": 251900,
+            "p99_ns": 317400,
+            "p99.9_ns": 540100
+          }
+        },
+        {
+          "strategy": "TrieHI",
+          "recursive": true,
+          "probes": 0,
+          "empty": false,
+          "total": {
+            "count": 9120,
+            "mean_ns": 1061843.903508772,
+            "p90_ns": 7452300,
+            "p95_ns": 7978800,
+            "p99_ns": 9257900,
+            "p99.9_ns": 12916500
+          }
+        },
+        {
+          "strategy": "TrieHI",
+          "recursive": true,
+          "probes": 1,
+          "empty": false,
+          "total": {
+            "count": 9120,
+            "mean_ns": 202966.12938596492,
+            "p90_ns": 1220200,
+            "p95_ns": 1447200,
+            "p99_ns": 1827400,
+            "p99.9_ns": 2518900
+          }
+        },
+        {
+          "strategy": "TrieHI",
+          "recursive": true,
+          "probes": 4,
+          "empty": false,
+          "total": {
+            "count": 9120,
+            "mean_ns": 414798.3442982456,
+            "p90_ns": 2646200,
+            "p95_ns": 3113400,
+            "p99_ns": 3759900,
+            "p99.9_ns": 5323900
+          }
+        },
+        {
+          "strategy": "TrieHI",
+          "recursive": true,
+          "probes": 16,
+          "empty": false,
+          "total": {
+            "count": 9120,
+            "mean_ns": 1068258.4429824562,
+            "p90_ns": 7448200,
+            "p95_ns": 7985300,
+            "p99_ns": 9173200,
+            "p99.9_ns": 13014200
+          }
+        }
+      ]
+    },
+    {
+      "output": "experiments\\EXP-20261027-008\\run-search-2",
+      "run": 2,
+      "rows": 218880,
+      "files": {
+        "answers.jsonl": "cf6757b50706e6c1a78c53902d17ef22256f6e22afe0b564acea881c9f16f5b1",
+        "clock.csv": "6e12ef6337eb6413c0f0c5653422cbe043bd36e96951484f34c7de2ec147c319",
+        "model.json": "36636f7562d416f00c660df6dd881e4a460905a32b04533828e8133202b962a5",
+        "order.tsv": "497ef7b65556908fc7fd68c916064431a23c6b0d729bd9edd995a57ebd12aae5",
+        "scopes.tsv": "7001db7011e18ca2550d4d9b6cbd4fafa9bdc4d91fe890f8346c0145239f564a",
+        "setup.csv": "7d7e5cc77f32fa99352344eabdfd3359e85c803dbf6d601d212c8fed63a0f2a2",
+        "timings.csv": "c562434f3bbfccdf8da44fe4436be30d7d9419a14bbfe61a6395c3567a7171c5"
+      },
+      "groups": [
+        {
+          "strategy": "PE-OFFLINE",
+          "recursive": false,
+          "probes": 0,
+          "empty": false,
+          "total": {
+            "count": 2540,
+            "mean_ns": 10062.28346456693,
+            "p90_ns": 14900,
+            "p95_ns": 18900,
+            "p99_ns": 23100,
+            "p99.9_ns": 106100
+          }
+        },
+        {
+          "strategy": "PE-OFFLINE",
+          "recursive": false,
+          "probes": 0,
+          "empty": true,
+          "total": {
+            "count": 6580,
+            "mean_ns": 47619.51367781155,
+            "p90_ns": 176100,
+            "p95_ns": 258800,
+            "p99_ns": 315400,
+            "p99.9_ns": 475400
+          }
+        },
+        {
+          "strategy": "PE-OFFLINE",
+          "recursive": false,
+          "probes": 1,
+          "empty": false,
+          "total": {
+            "count": 2540,
+            "mean_ns": 17702.32283464567,
+            "p90_ns": 23300,
+            "p95_ns": 28900,
+            "p99_ns": 36800,
+            "p99.9_ns": 182100
+          }
+        },
+        {
+          "strategy": "PE-OFFLINE",
+          "recursive": false,
+          "probes": 1,
+          "empty": true,
+          "total": {
+            "count": 6580,
+            "mean_ns": 56481.32218844985,
+            "p90_ns": 177000,
+            "p95_ns": 270200,
+            "p99_ns": 324500,
+            "p99.9_ns": 472200
+          }
+        },
+        {
+          "strategy": "PE-OFFLINE",
+          "recursive": false,
+          "probes": 4,
+          "empty": false,
+          "total": {
+            "count": 2540,
+            "mean_ns": 17383.346456692914,
+            "p90_ns": 24500,
+            "p95_ns": 30100,
+            "p99_ns": 38100,
+            "p99.9_ns": 71300
+          }
+        },
+        {
+          "strategy": "PE-OFFLINE",
+          "recursive": false,
+          "probes": 4,
+          "empty": true,
+          "total": {
+            "count": 6580,
+            "mean_ns": 57681.9452887538,
+            "p90_ns": 188300,
+            "p95_ns": 272100,
+            "p99_ns": 325700,
+            "p99.9_ns": 720800
+          }
+        },
+        {
+          "strategy": "PE-OFFLINE",
+          "recursive": false,
+          "probes": 16,
+          "empty": false,
+          "total": {
+            "count": 2540,
+            "mean_ns": 18414.33070866142,
+            "p90_ns": 23200,
+            "p95_ns": 28000,
+            "p99_ns": 39700,
+            "p99.9_ns": 116700
+          }
+        },
+        {
+          "strategy": "PE-OFFLINE",
+          "recursive": false,
+          "probes": 16,
+          "empty": true,
+          "total": {
+            "count": 6580,
+            "mean_ns": 60161.62613981763,
+            "p90_ns": 191200,
+            "p95_ns": 274600,
+            "p99_ns": 331600,
+            "p99.9_ns": 1708300
+          }
+        },
+        {
+          "strategy": "PE-OFFLINE",
+          "recursive": true,
+          "probes": 0,
+          "empty": false,
+          "total": {
+            "count": 9120,
+            "mean_ns": 1031206.7105263158,
+            "p90_ns": 7354900,
+            "p95_ns": 7817000,
+            "p99_ns": 8535800,
+            "p99.9_ns": 11195700
+          }
+        },
+        {
+          "strategy": "PE-OFFLINE",
+          "recursive": true,
+          "probes": 1,
+          "empty": false,
+          "total": {
+            "count": 9120,
+            "mean_ns": 200624.79166666666,
+            "p90_ns": 1220900,
+            "p95_ns": 1434600,
+            "p99_ns": 1759800,
+            "p99.9_ns": 3020600
+          }
+        },
+        {
+          "strategy": "PE-OFFLINE",
+          "recursive": true,
+          "probes": 4,
+          "empty": false,
+          "total": {
+            "count": 9120,
+            "mean_ns": 408516.0745614035,
+            "p90_ns": 2626400,
+            "p95_ns": 3060700,
+            "p99_ns": 3674900,
+            "p99.9_ns": 6014300
+          }
+        },
+        {
+          "strategy": "PE-OFFLINE",
+          "recursive": true,
+          "probes": 16,
+          "empty": false,
+          "total": {
+            "count": 9120,
+            "mean_ns": 1037648.3114035088,
+            "p90_ns": 7381200,
+            "p95_ns": 7817700,
+            "p99_ns": 8494300,
+            "p99.9_ns": 10807000
+          }
+        },
+        {
+          "strategy": "PE-ONLINE",
+          "recursive": false,
+          "probes": 0,
+          "empty": false,
+          "total": {
+            "count": 2540,
+            "mean_ns": 7877.8740157480315,
+            "p90_ns": 11600,
+            "p95_ns": 15400,
+            "p99_ns": 21300,
+            "p99.9_ns": 102300
+          }
+        },
+        {
+          "strategy": "PE-ONLINE",
+          "recursive": false,
+          "probes": 0,
+          "empty": true,
+          "total": {
+            "count": 6580,
+            "mean_ns": 4837.644376899696,
+            "p90_ns": 7300,
+            "p95_ns": 9200,
+            "p99_ns": 14600,
+            "p99.9_ns": 28800
+          }
+        },
+        {
+          "strategy": "PE-ONLINE",
+          "recursive": false,
+          "probes": 1,
+          "empty": false,
+          "total": {
+            "count": 2540,
+            "mean_ns": 15667.24409448819,
+            "p90_ns": 21900,
+            "p95_ns": 26800,
+            "p99_ns": 36800,
+            "p99.9_ns": 88500
+          }
+        },
+        {
+          "strategy": "PE-ONLINE",
+          "recursive": false,
+          "probes": 1,
+          "empty": true,
+          "total": {
+            "count": 6580,
+            "mean_ns": 13329.772036474164,
+            "p90_ns": 17100,
+            "p95_ns": 21000,
+            "p99_ns": 28900,
+            "p99.9_ns": 110100
+          }
+        },
+        {
+          "strategy": "PE-ONLINE",
+          "recursive": false,
+          "probes": 4,
+          "empty": false,
+          "total": {
+            "count": 2540,
+            "mean_ns": 15418.779527559054,
+            "p90_ns": 22000,
+            "p95_ns": 26900,
+            "p99_ns": 36700,
+            "p99.9_ns": 84100
+          }
+        },
+        {
+          "strategy": "PE-ONLINE",
+          "recursive": false,
+          "probes": 4,
+          "empty": true,
+          "total": {
+            "count": 6580,
+            "mean_ns": 14077.963525835867,
+            "p90_ns": 16100,
+            "p95_ns": 20600,
+            "p99_ns": 28200,
+            "p99.9_ns": 118100
+          }
+        },
+        {
+          "strategy": "PE-ONLINE",
+          "recursive": false,
+          "probes": 16,
+          "empty": false,
+          "total": {
+            "count": 2540,
+            "mean_ns": 17174.133858267716,
+            "p90_ns": 20600,
+            "p95_ns": 26200,
+            "p99_ns": 35100,
+            "p99.9_ns": 191500
+          }
+        },
+        {
+          "strategy": "PE-ONLINE",
+          "recursive": false,
+          "probes": 16,
+          "empty": true,
+          "total": {
+            "count": 6580,
+            "mean_ns": 13711.079027355623,
+            "p90_ns": 19000,
+            "p95_ns": 23000,
+            "p99_ns": 29900,
+            "p99.9_ns": 101200
+          }
+        },
+        {
+          "strategy": "PE-ONLINE",
+          "recursive": true,
+          "probes": 0,
+          "empty": false,
+          "total": {
+            "count": 9120,
+            "mean_ns": 3217233.7609649124,
+            "p90_ns": 23563700,
+            "p95_ns": 24762400,
+            "p99_ns": 26423000,
+            "p99.9_ns": 31615300
+          }
+        },
+        {
+          "strategy": "PE-ONLINE",
+          "recursive": true,
+          "probes": 1,
+          "empty": false,
+          "total": {
+            "count": 9120,
+            "mean_ns": 2380341.8201754387,
+            "p90_ns": 17245200,
+            "p95_ns": 18288300,
+            "p99_ns": 19613000,
+            "p99.9_ns": 23252100
+          }
+        },
+        {
+          "strategy": "PE-ONLINE",
+          "recursive": true,
+          "probes": 4,
+          "empty": false,
+          "total": {
+            "count": 9120,
+            "mean_ns": 2594799.9451754387,
+            "p90_ns": 18805600,
+            "p95_ns": 19921100,
+            "p99_ns": 21460700,
+            "p99.9_ns": 26476700
+          }
+        },
+        {
+          "strategy": "PE-ONLINE",
+          "recursive": true,
+          "probes": 16,
+          "empty": false,
+          "total": {
+            "count": 9120,
+            "mean_ns": 3225509.3859649124,
+            "p90_ns": 23659100,
+            "p95_ns": 24802900,
+            "p99_ns": 26289800,
+            "p99.9_ns": 30205100
+          }
+        },
+        {
+          "strategy": "TrieHI",
+          "recursive": false,
+          "probes": 0,
+          "empty": false,
+          "total": {
+            "count": 2540,
+            "mean_ns": 9313.031496062993,
+            "p90_ns": 15300,
+            "p95_ns": 17500,
+            "p99_ns": 25200,
+            "p99.9_ns": 94800
+          }
+        },
+        {
+          "strategy": "TrieHI",
+          "recursive": false,
+          "probes": 0,
+          "empty": true,
+          "total": {
+            "count": 6580,
+            "mean_ns": 44131.73252279635,
+            "p90_ns": 178100,
+            "p95_ns": 243000,
+            "p99_ns": 306600,
+            "p99.9_ns": 576900
+          }
+        },
+        {
+          "strategy": "TrieHI",
+          "recursive": false,
+          "probes": 1,
+          "empty": false,
+          "total": {
+            "count": 2540,
+            "mean_ns": 17364.055118110235,
+            "p90_ns": 24600,
+            "p95_ns": 29100,
+            "p99_ns": 43100,
+            "p99.9_ns": 132200
+          }
+        },
+        {
+          "strategy": "TrieHI",
+          "recursive": false,
+          "probes": 1,
+          "empty": true,
+          "total": {
+            "count": 6580,
+            "mean_ns": 52409.422492401216,
+            "p90_ns": 193400,
+            "p95_ns": 252800,
+            "p99_ns": 309200,
+            "p99.9_ns": 532500
+          }
+        },
+        {
+          "strategy": "TrieHI",
+          "recursive": false,
+          "probes": 4,
+          "empty": false,
+          "total": {
+            "count": 2540,
+            "mean_ns": 17021.141732283464,
+            "p90_ns": 26100,
+            "p95_ns": 30100,
+            "p99_ns": 42800,
+            "p99.9_ns": 99400
+          }
+        },
+        {
+          "strategy": "TrieHI",
+          "recursive": false,
+          "probes": 4,
+          "empty": true,
+          "total": {
+            "count": 6580,
+            "mean_ns": 52072.11246200608,
+            "p90_ns": 192300,
+            "p95_ns": 248300,
+            "p99_ns": 296500,
+            "p99.9_ns": 441700
+          }
+        },
+        {
+          "strategy": "TrieHI",
+          "recursive": false,
+          "probes": 16,
+          "empty": false,
+          "total": {
+            "count": 2540,
+            "mean_ns": 20120.55118110236,
+            "p90_ns": 25200,
+            "p95_ns": 31200,
+            "p99_ns": 50100,
+            "p99.9_ns": 610600
+          }
+        },
+        {
+          "strategy": "TrieHI",
+          "recursive": false,
+          "probes": 16,
+          "empty": true,
+          "total": {
+            "count": 6580,
+            "mean_ns": 53127.94832826748,
+            "p90_ns": 194700,
+            "p95_ns": 252300,
+            "p99_ns": 308100,
+            "p99.9_ns": 500200
+          }
+        },
+        {
+          "strategy": "TrieHI",
+          "recursive": true,
+          "probes": 0,
+          "empty": false,
+          "total": {
+            "count": 9120,
+            "mean_ns": 1058965.394736842,
+            "p90_ns": 7458800,
+            "p95_ns": 7985800,
+            "p99_ns": 9086100,
+            "p99.9_ns": 11763500
+          }
+        },
+        {
+          "strategy": "TrieHI",
+          "recursive": true,
+          "probes": 1,
+          "empty": false,
+          "total": {
+            "count": 9120,
+            "mean_ns": 209690.14254385966,
+            "p90_ns": 1236700,
+            "p95_ns": 1478000,
+            "p99_ns": 1871000,
+            "p99.9_ns": 4114100
+          }
+        },
+        {
+          "strategy": "TrieHI",
+          "recursive": true,
+          "probes": 4,
+          "empty": false,
+          "total": {
+            "count": 9120,
+            "mean_ns": 421560.2192982456,
+            "p90_ns": 2671600,
+            "p95_ns": 3144700,
+            "p99_ns": 3858300,
+            "p99.9_ns": 5945700
+          }
+        },
+        {
+          "strategy": "TrieHI",
+          "recursive": true,
+          "probes": 16,
+          "empty": false,
+          "total": {
+            "count": 9120,
+            "mean_ns": 1070060.5811403508,
+            "p90_ns": 7471100,
+            "p95_ns": 8004200,
+            "p99_ns": 9267700,
+            "p99.9_ns": 11846000
+          }
+        }
+      ]
+    },
+    {
+      "output": "experiments\\EXP-20261027-008\\run-search-3",
+      "run": 3,
+      "rows": 218880,
+      "files": {
+        "answers.jsonl": "1cfd707f6d15aaaa103958aac9ff72df2d877657fcdc1cf4c40bbfd6d6172a9e",
+        "clock.csv": "ba25b0113a2625d7d3479adf7434f4921c4cb7b10caa9b8337ad746d6f6aad00",
+        "model.json": "36636f7562d416f00c660df6dd881e4a460905a32b04533828e8133202b962a5",
+        "order.tsv": "84062affcec4d96e6556607e5e2abcfc2f342ea0d23741c283f74a33fd6fd95b",
+        "scopes.tsv": "68982354eb428208318ec957d8605f3180cc1c043fe410772ef936d70741f56d",
+        "setup.csv": "7c9fb3afc4d9474257888cde67ad5f14d18de5dd4f78d9ec0a32cc6c9babe579",
+        "timings.csv": "6d6e548665a2eec3b04d5d992127a1169efbe33dc3967637da437344a07e7090"
+      },
+      "groups": [
+        {
+          "strategy": "PE-OFFLINE",
+          "recursive": false,
+          "probes": 0,
+          "empty": false,
+          "total": {
+            "count": 2540,
+            "mean_ns": 9984.685039370079,
+            "p90_ns": 15100,
+            "p95_ns": 18600,
+            "p99_ns": 23100,
+            "p99.9_ns": 94300
+          }
+        },
+        {
+          "strategy": "PE-OFFLINE",
+          "recursive": false,
+          "probes": 0,
+          "empty": true,
+          "total": {
+            "count": 6580,
+            "mean_ns": 49716.01823708207,
+            "p90_ns": 181700,
+            "p95_ns": 264100,
+            "p99_ns": 323200,
+            "p99.9_ns": 833400
+          }
+        },
+        {
+          "strategy": "PE-OFFLINE",
+          "recursive": false,
+          "probes": 1,
+          "empty": false,
+          "total": {
+            "count": 2540,
+            "mean_ns": 17438.30708661417,
+            "p90_ns": 22600,
+            "p95_ns": 28400,
+            "p99_ns": 37000,
+            "p99.9_ns": 156800
+          }
+        },
+        {
+          "strategy": "PE-OFFLINE",
+          "recursive": false,
+          "probes": 1,
+          "empty": true,
+          "total": {
+            "count": 6580,
+            "mean_ns": 58749.3009118541,
+            "p90_ns": 175100,
+            "p95_ns": 269600,
+            "p99_ns": 326400,
+            "p99.9_ns": 1937500
+          }
+        },
+        {
+          "strategy": "PE-OFFLINE",
+          "recursive": false,
+          "probes": 4,
+          "empty": false,
+          "total": {
+            "count": 2540,
+            "mean_ns": 17263.425196850392,
+            "p90_ns": 22800,
+            "p95_ns": 27800,
+            "p99_ns": 38700,
+            "p99.9_ns": 150200
+          }
+        },
+        {
+          "strategy": "PE-OFFLINE",
+          "recursive": false,
+          "probes": 4,
+          "empty": true,
+          "total": {
+            "count": 6580,
+            "mean_ns": 60534.1641337386,
+            "p90_ns": 228900,
+            "p95_ns": 278600,
+            "p99_ns": 335000,
+            "p99.9_ns": 974800
+          }
+        },
+        {
+          "strategy": "PE-OFFLINE",
+          "recursive": false,
+          "probes": 16,
+          "empty": false,
+          "total": {
+            "count": 2540,
+            "mean_ns": 18476.496062992126,
+            "p90_ns": 24300,
+            "p95_ns": 29800,
+            "p99_ns": 39500,
+            "p99.9_ns": 111800
+          }
+        },
+        {
+          "strategy": "PE-OFFLINE",
+          "recursive": false,
+          "probes": 16,
+          "empty": true,
+          "total": {
+            "count": 6580,
+            "mean_ns": 55908.328267477205,
+            "p90_ns": 169200,
+            "p95_ns": 277200,
+            "p99_ns": 337000,
+            "p99.9_ns": 631000
+          }
+        },
+        {
+          "strategy": "PE-OFFLINE",
+          "recursive": true,
+          "probes": 0,
+          "empty": false,
+          "total": {
+            "count": 9120,
+            "mean_ns": 1052701.951754386,
+            "p90_ns": 7453200,
+            "p95_ns": 7966900,
+            "p99_ns": 8710100,
+            "p99.9_ns": 12810600
+          }
+        },
+        {
+          "strategy": "PE-OFFLINE",
+          "recursive": true,
+          "probes": 1,
+          "empty": false,
+          "total": {
+            "count": 9120,
+            "mean_ns": 204204.12280701756,
+            "p90_ns": 1236800,
+            "p95_ns": 1456700,
+            "p99_ns": 1798100,
+            "p99.9_ns": 3111500
+          }
+        },
+        {
+          "strategy": "PE-OFFLINE",
+          "recursive": true,
+          "probes": 4,
+          "empty": false,
+          "total": {
+            "count": 9120,
+            "mean_ns": 412201.95175438595,
+            "p90_ns": 2645200,
+            "p95_ns": 3086400,
+            "p99_ns": 3693900,
+            "p99.9_ns": 5643700
+          }
+        },
+        {
+          "strategy": "PE-OFFLINE",
+          "recursive": true,
+          "probes": 16,
+          "empty": false,
+          "total": {
+            "count": 9120,
+            "mean_ns": 1057823.2346491227,
+            "p90_ns": 7463300,
+            "p95_ns": 7982400,
+            "p99_ns": 8683500,
+            "p99.9_ns": 12148200
+          }
+        },
+        {
+          "strategy": "PE-ONLINE",
+          "recursive": false,
+          "probes": 0,
+          "empty": false,
+          "total": {
+            "count": 2540,
+            "mean_ns": 8419.566929133858,
+            "p90_ns": 13700,
+            "p95_ns": 16500,
+            "p99_ns": 22100,
+            "p99.9_ns": 63000
+          }
+        },
+        {
+          "strategy": "PE-ONLINE",
+          "recursive": false,
+          "probes": 0,
+          "empty": true,
+          "total": {
+            "count": 6580,
+            "mean_ns": 5197.462006079028,
+            "p90_ns": 7100,
+            "p95_ns": 8500,
+            "p99_ns": 15200,
+            "p99.9_ns": 71400
+          }
+        },
+        {
+          "strategy": "PE-ONLINE",
+          "recursive": false,
+          "probes": 1,
+          "empty": false,
+          "total": {
+            "count": 2540,
+            "mean_ns": 15098.110236220473,
+            "p90_ns": 21000,
+            "p95_ns": 26100,
+            "p99_ns": 33300,
+            "p99.9_ns": 113900
+          }
+        },
+        {
+          "strategy": "PE-ONLINE",
+          "recursive": false,
+          "probes": 1,
+          "empty": true,
+          "total": {
+            "count": 6580,
+            "mean_ns": 13124.240121580548,
+            "p90_ns": 18100,
+            "p95_ns": 22000,
+            "p99_ns": 29200,
+            "p99.9_ns": 79900
+          }
+        },
+        {
+          "strategy": "PE-ONLINE",
+          "recursive": false,
+          "probes": 4,
+          "empty": false,
+          "total": {
+            "count": 2540,
+            "mean_ns": 15260.748031496063,
+            "p90_ns": 21100,
+            "p95_ns": 26600,
+            "p99_ns": 34700,
+            "p99.9_ns": 147700
+          }
+        },
+        {
+          "strategy": "PE-ONLINE",
+          "recursive": false,
+          "probes": 4,
+          "empty": true,
+          "total": {
+            "count": 6580,
+            "mean_ns": 13237.27963525836,
+            "p90_ns": 16600,
+            "p95_ns": 19800,
+            "p99_ns": 26900,
+            "p99.9_ns": 82900
+          }
+        },
+        {
+          "strategy": "PE-ONLINE",
+          "recursive": false,
+          "probes": 16,
+          "empty": false,
+          "total": {
+            "count": 2540,
+            "mean_ns": 16043.858267716536,
+            "p90_ns": 21000,
+            "p95_ns": 26900,
+            "p99_ns": 35000,
+            "p99.9_ns": 97600
+          }
+        },
+        {
+          "strategy": "PE-ONLINE",
+          "recursive": false,
+          "probes": 16,
+          "empty": true,
+          "total": {
+            "count": 6580,
+            "mean_ns": 13597.203647416414,
+            "p90_ns": 17300,
+            "p95_ns": 21100,
+            "p99_ns": 29500,
+            "p99.9_ns": 117900
+          }
+        },
+        {
+          "strategy": "PE-ONLINE",
+          "recursive": true,
+          "probes": 0,
+          "empty": false,
+          "total": {
+            "count": 9120,
+            "mean_ns": 3248414.451754386,
+            "p90_ns": 23507100,
+            "p95_ns": 24851200,
+            "p99_ns": 27773600,
+            "p99.9_ns": 33296700
+          }
+        },
+        {
+          "strategy": "PE-ONLINE",
+          "recursive": true,
+          "probes": 1,
+          "empty": false,
+          "total": {
+            "count": 9120,
+            "mean_ns": 2405272.2697368423,
+            "p90_ns": 17275600,
+            "p95_ns": 18267800,
+            "p99_ns": 20696000,
+            "p99.9_ns": 25033300
+          }
+        },
+        {
+          "strategy": "PE-ONLINE",
+          "recursive": true,
+          "probes": 4,
+          "empty": false,
+          "total": {
+            "count": 9120,
+            "mean_ns": 2617764.61622807,
+            "p90_ns": 18835500,
+            "p95_ns": 19993000,
+            "p99_ns": 22337400,
+            "p99.9_ns": 27909500
+          }
+        },
+        {
+          "strategy": "PE-ONLINE",
+          "recursive": true,
+          "probes": 16,
+          "empty": false,
+          "total": {
+            "count": 9120,
+            "mean_ns": 3264274.3530701753,
+            "p90_ns": 23477800,
+            "p95_ns": 24831500,
+            "p99_ns": 27837800,
+            "p99.9_ns": 33494400
+          }
+        },
+        {
+          "strategy": "TrieHI",
+          "recursive": false,
+          "probes": 0,
+          "empty": false,
+          "total": {
+            "count": 2540,
+            "mean_ns": 9660.905511811023,
+            "p90_ns": 15900,
+            "p95_ns": 18600,
+            "p99_ns": 27000,
+            "p99.9_ns": 300000
+          }
+        },
+        {
+          "strategy": "TrieHI",
+          "recursive": false,
+          "probes": 0,
+          "empty": true,
+          "total": {
+            "count": 6580,
+            "mean_ns": 42316.74772036474,
+            "p90_ns": 167700,
+            "p95_ns": 238900,
+            "p99_ns": 292800,
+            "p99.9_ns": 611300
+          }
+        },
+        {
+          "strategy": "TrieHI",
+          "recursive": false,
+          "probes": 1,
+          "empty": false,
+          "total": {
+            "count": 2540,
+            "mean_ns": 16963.385826771653,
+            "p90_ns": 22400,
+            "p95_ns": 28400,
+            "p99_ns": 38900,
+            "p99.9_ns": 168400
+          }
+        },
+        {
+          "strategy": "TrieHI",
+          "recursive": false,
+          "probes": 1,
+          "empty": true,
+          "total": {
+            "count": 6580,
+            "mean_ns": 49323.25227963526,
+            "p90_ns": 148000,
+            "p95_ns": 242900,
+            "p99_ns": 284600,
+            "p99.9_ns": 458200
+          }
+        },
+        {
+          "strategy": "TrieHI",
+          "recursive": false,
+          "probes": 4,
+          "empty": false,
+          "total": {
+            "count": 2540,
+            "mean_ns": 16069.409448818898,
+            "p90_ns": 22000,
+            "p95_ns": 26600,
+            "p99_ns": 36900,
+            "p99.9_ns": 63500
+          }
+        },
+        {
+          "strategy": "TrieHI",
+          "recursive": false,
+          "probes": 4,
+          "empty": true,
+          "total": {
+            "count": 6580,
+            "mean_ns": 53232.462006079026,
+            "p90_ns": 212100,
+            "p95_ns": 252500,
+            "p99_ns": 303100,
+            "p99.9_ns": 474400
+          }
+        },
+        {
+          "strategy": "TrieHI",
+          "recursive": false,
+          "probes": 16,
+          "empty": false,
+          "total": {
+            "count": 2540,
+            "mean_ns": 17248.661417322834,
+            "p90_ns": 23400,
+            "p95_ns": 27500,
+            "p99_ns": 36900,
+            "p99.9_ns": 118600
+          }
+        },
+        {
+          "strategy": "TrieHI",
+          "recursive": false,
+          "probes": 16,
+          "empty": true,
+          "total": {
+            "count": 6580,
+            "mean_ns": 49349.43768996961,
+            "p90_ns": 151400,
+            "p95_ns": 248300,
+            "p99_ns": 290400,
+            "p99.9_ns": 667300
+          }
+        },
+        {
+          "strategy": "TrieHI",
+          "recursive": true,
+          "probes": 0,
+          "empty": false,
+          "total": {
+            "count": 9120,
+            "mean_ns": 1035695.5592105263,
+            "p90_ns": 7401400,
+            "p95_ns": 7869100,
+            "p99_ns": 8527800,
+            "p99.9_ns": 11624800
+          }
+        },
+        {
+          "strategy": "TrieHI",
+          "recursive": true,
+          "probes": 1,
+          "empty": false,
+          "total": {
+            "count": 9120,
+            "mean_ns": 199981.38157894736,
+            "p90_ns": 1221400,
+            "p95_ns": 1444200,
+            "p99_ns": 1762100,
+            "p99.9_ns": 2289200
+          }
+        },
+        {
+          "strategy": "TrieHI",
+          "recursive": true,
+          "probes": 4,
+          "empty": false,
+          "total": {
+            "count": 9120,
+            "mean_ns": 403840.6688596491,
+            "p90_ns": 2627800,
+            "p95_ns": 3047100,
+            "p99_ns": 3643000,
+            "p99.9_ns": 4271200
+          }
+        },
+        {
+          "strategy": "TrieHI",
+          "recursive": true,
+          "probes": 16,
+          "empty": false,
+          "total": {
+            "count": 9120,
+            "mean_ns": 1049868.4868421052,
+            "p90_ns": 7421700,
+            "p95_ns": 7904800,
+            "p99_ns": 8573200,
+            "p99.9_ns": 11792400
+          }
+        }
+      ]
+    },
+    {
+      "output": "experiments\\EXP-20261027-008\\run-search-4",
+      "run": 4,
+      "rows": 218880,
+      "files": {
+        "answers.jsonl": "8944ad8c59c217ca020b424d1c1bba8a0953aafa80f0e5852643c55f57e20475",
+        "clock.csv": "780eec400d93907a8a36d9800af106f117f9e7704aa65bf814c40f48811b9ddd",
+        "model.json": "36636f7562d416f00c660df6dd881e4a460905a32b04533828e8133202b962a5",
+        "order.tsv": "1cd20e5c505ff9f7c502b3ff1c7140db0b46128f04a05ccb8c799fcdb500f871",
+        "scopes.tsv": "a3f7576a34741a1212041fcb088a483de68007ce3a87484886eb7bfd8c515e82",
+        "setup.csv": "40fd2018ca35960a0b2390829f338ce36770268928f0ec89f3974cc4fb0e1098",
+        "timings.csv": "42e1a21241c96f0f729f2a26d17b41974e14a766fe388db89af17e77ea486dd6"
+      },
+      "groups": [
+        {
+          "strategy": "PE-OFFLINE",
+          "recursive": false,
+          "probes": 0,
+          "empty": false,
+          "total": {
+            "count": 2540,
+            "mean_ns": 9406.535433070867,
+            "p90_ns": 13400,
+            "p95_ns": 15400,
+            "p99_ns": 20700,
+            "p99.9_ns": 181400
+          }
+        },
+        {
+          "strategy": "PE-OFFLINE",
+          "recursive": false,
+          "probes": 0,
+          "empty": true,
+          "total": {
+            "count": 6580,
+            "mean_ns": 46769.407294832825,
+            "p90_ns": 165400,
+            "p95_ns": 250700,
+            "p99_ns": 310000,
+            "p99.9_ns": 628900
+          }
+        },
+        {
+          "strategy": "PE-OFFLINE",
+          "recursive": false,
+          "probes": 1,
+          "empty": false,
+          "total": {
+            "count": 2540,
+            "mean_ns": 19018.30708661417,
+            "p90_ns": 23900,
+            "p95_ns": 28000,
+            "p99_ns": 36400,
+            "p99.9_ns": 472200
+          }
+        },
+        {
+          "strategy": "PE-OFFLINE",
+          "recursive": false,
+          "probes": 1,
+          "empty": true,
+          "total": {
+            "count": 6580,
+            "mean_ns": 58476.65653495441,
+            "p90_ns": 176400,
+            "p95_ns": 271200,
+            "p99_ns": 330400,
+            "p99.9_ns": 1655600
+          }
+        },
+        {
+          "strategy": "PE-OFFLINE",
+          "recursive": false,
+          "probes": 4,
+          "empty": false,
+          "total": {
+            "count": 2540,
+            "mean_ns": 18315.826771653545,
+            "p90_ns": 26200,
+            "p95_ns": 31000,
+            "p99_ns": 38500,
+            "p99.9_ns": 233400
+          }
+        },
+        {
+          "strategy": "PE-OFFLINE",
+          "recursive": false,
+          "probes": 4,
+          "empty": true,
+          "total": {
+            "count": 6580,
+            "mean_ns": 57746.838905775076,
+            "p90_ns": 183300,
+            "p95_ns": 271400,
+            "p99_ns": 328200,
+            "p99.9_ns": 750400
+          }
+        },
+        {
+          "strategy": "PE-OFFLINE",
+          "recursive": false,
+          "probes": 16,
+          "empty": false,
+          "total": {
+            "count": 2540,
+            "mean_ns": 18702.165354330707,
+            "p90_ns": 23900,
+            "p95_ns": 29800,
+            "p99_ns": 37600,
+            "p99.9_ns": 416400
+          }
+        },
+        {
+          "strategy": "PE-OFFLINE",
+          "recursive": false,
+          "probes": 16,
+          "empty": true,
+          "total": {
+            "count": 6580,
+            "mean_ns": 57489.43768996961,
+            "p90_ns": 178800,
+            "p95_ns": 270800,
+            "p99_ns": 328500,
+            "p99.9_ns": 1071900
+          }
+        },
+        {
+          "strategy": "PE-OFFLINE",
+          "recursive": true,
+          "probes": 0,
+          "empty": false,
+          "total": {
+            "count": 9120,
+            "mean_ns": 1067127.2478070175,
+            "p90_ns": 7400600,
+            "p95_ns": 7917500,
+            "p99_ns": 9337900,
+            "p99.9_ns": 14805200
+          }
+        },
+        {
+          "strategy": "PE-OFFLINE",
+          "recursive": true,
+          "probes": 1,
+          "empty": false,
+          "total": {
+            "count": 9120,
+            "mean_ns": 207455.86622807017,
+            "p90_ns": 1229300,
+            "p95_ns": 1456700,
+            "p99_ns": 1814400,
+            "p99.9_ns": 4156900
+          }
+        },
+        {
+          "strategy": "PE-OFFLINE",
+          "recursive": true,
+          "probes": 4,
+          "empty": false,
+          "total": {
+            "count": 9120,
+            "mean_ns": 416934.4407894737,
+            "p90_ns": 2635700,
+            "p95_ns": 3083700,
+            "p99_ns": 3763200,
+            "p99.9_ns": 6669300
+          }
+        },
+        {
+          "strategy": "PE-OFFLINE",
+          "recursive": true,
+          "probes": 16,
+          "empty": false,
+          "total": {
+            "count": 9120,
+            "mean_ns": 1074149.1228070175,
+            "p90_ns": 7418500,
+            "p95_ns": 7980000,
+            "p99_ns": 9500300,
+            "p99.9_ns": 13632600
+          }
+        },
+        {
+          "strategy": "PE-ONLINE",
+          "recursive": false,
+          "probes": 0,
+          "empty": false,
+          "total": {
+            "count": 2540,
+            "mean_ns": 7151.968503937008,
+            "p90_ns": 11300,
+            "p95_ns": 13300,
+            "p99_ns": 17400,
+            "p99.9_ns": 39200
+          }
+        },
+        {
+          "strategy": "PE-ONLINE",
+          "recursive": false,
+          "probes": 0,
+          "empty": true,
+          "total": {
+            "count": 6580,
+            "mean_ns": 4636.808510638298,
+            "p90_ns": 7000,
+            "p95_ns": 8200,
+            "p99_ns": 13600,
+            "p99.9_ns": 65900
+          }
+        },
+        {
+          "strategy": "PE-ONLINE",
+          "recursive": false,
+          "probes": 1,
+          "empty": false,
+          "total": {
+            "count": 2540,
+            "mean_ns": 15233.425196850394,
+            "p90_ns": 21000,
+            "p95_ns": 25900,
+            "p99_ns": 34700,
+            "p99.9_ns": 146700
+          }
+        },
+        {
+          "strategy": "PE-ONLINE",
+          "recursive": false,
+          "probes": 1,
+          "empty": true,
+          "total": {
+            "count": 6580,
+            "mean_ns": 14241.76291793313,
+            "p90_ns": 17200,
+            "p95_ns": 21500,
+            "p99_ns": 30200,
+            "p99.9_ns": 141600
+          }
+        },
+        {
+          "strategy": "PE-ONLINE",
+          "recursive": false,
+          "probes": 4,
+          "empty": false,
+          "total": {
+            "count": 2540,
+            "mean_ns": 15994.212598425196,
+            "p90_ns": 22900,
+            "p95_ns": 28500,
+            "p99_ns": 35300,
+            "p99.9_ns": 133900
+          }
+        },
+        {
+          "strategy": "PE-ONLINE",
+          "recursive": false,
+          "probes": 4,
+          "empty": true,
+          "total": {
+            "count": 6580,
+            "mean_ns": 14032.218844984802,
+            "p90_ns": 17800,
+            "p95_ns": 21500,
+            "p99_ns": 30200,
+            "p99.9_ns": 221900
+          }
+        },
+        {
+          "strategy": "PE-ONLINE",
+          "recursive": false,
+          "probes": 16,
+          "empty": false,
+          "total": {
+            "count": 2540,
+            "mean_ns": 16873.03149606299,
+            "p90_ns": 20800,
+            "p95_ns": 27900,
+            "p99_ns": 38000,
+            "p99.9_ns": 193100
+          }
+        },
+        {
+          "strategy": "PE-ONLINE",
+          "recursive": false,
+          "probes": 16,
+          "empty": true,
+          "total": {
+            "count": 6580,
+            "mean_ns": 13734.270516717324,
+            "p90_ns": 17200,
+            "p95_ns": 20900,
+            "p99_ns": 28200,
+            "p99.9_ns": 142800
+          }
+        },
+        {
+          "strategy": "PE-ONLINE",
+          "recursive": true,
+          "probes": 0,
+          "empty": false,
+          "total": {
+            "count": 9120,
+            "mean_ns": 3264658.0372807016,
+            "p90_ns": 23634800,
+            "p95_ns": 24952300,
+            "p99_ns": 27935000,
+            "p99.9_ns": 33305200
+          }
+        },
+        {
+          "strategy": "PE-ONLINE",
+          "recursive": true,
+          "probes": 1,
+          "empty": false,
+          "total": {
+            "count": 9120,
+            "mean_ns": 2408452.7083333335,
+            "p90_ns": 17331400,
+            "p95_ns": 18342000,
+            "p99_ns": 20570900,
+            "p99.9_ns": 24729100
+          }
+        },
+        {
+          "strategy": "PE-ONLINE",
+          "recursive": true,
+          "probes": 4,
+          "empty": false,
+          "total": {
+            "count": 9120,
+            "mean_ns": 2628738.8157894737,
+            "p90_ns": 18918900,
+            "p95_ns": 20053800,
+            "p99_ns": 22405800,
+            "p99.9_ns": 28039600
+          }
+        },
+        {
+          "strategy": "PE-ONLINE",
+          "recursive": true,
+          "probes": 16,
+          "empty": false,
+          "total": {
+            "count": 9120,
+            "mean_ns": 3269681.447368421,
+            "p90_ns": 23596700,
+            "p95_ns": 24924700,
+            "p99_ns": 28046800,
+            "p99.9_ns": 32099500
+          }
+        },
+        {
+          "strategy": "TrieHI",
+          "recursive": false,
+          "probes": 0,
+          "empty": false,
+          "total": {
+            "count": 2540,
+            "mean_ns": 8075.0,
+            "p90_ns": 13300,
+            "p95_ns": 15700,
+            "p99_ns": 19400,
+            "p99.9_ns": 78700
+          }
+        },
+        {
+          "strategy": "TrieHI",
+          "recursive": false,
+          "probes": 0,
+          "empty": true,
+          "total": {
+            "count": 6580,
+            "mean_ns": 40263.20668693009,
+            "p90_ns": 142100,
+            "p95_ns": 228000,
+            "p99_ns": 275300,
+            "p99.9_ns": 465300
+          }
+        },
+        {
+          "strategy": "TrieHI",
+          "recursive": false,
+          "probes": 1,
+          "empty": false,
+          "total": {
+            "count": 2540,
+            "mean_ns": 18228.622047244095,
+            "p90_ns": 22600,
+            "p95_ns": 26500,
+            "p99_ns": 37200,
+            "p99.9_ns": 608400
+          }
+        },
+        {
+          "strategy": "TrieHI",
+          "recursive": false,
+          "probes": 1,
+          "empty": true,
+          "total": {
+            "count": 6580,
+            "mean_ns": 52668.06990881459,
+            "p90_ns": 162900,
+            "p95_ns": 250500,
+            "p99_ns": 314300,
+            "p99.9_ns": 1642600
+          }
+        },
+        {
+          "strategy": "TrieHI",
+          "recursive": false,
+          "probes": 4,
+          "empty": false,
+          "total": {
+            "count": 2540,
+            "mean_ns": 16681.377952755905,
+            "p90_ns": 23900,
+            "p95_ns": 29700,
+            "p99_ns": 40900,
+            "p99.9_ns": 146200
+          }
+        },
+        {
+          "strategy": "TrieHI",
+          "recursive": false,
+          "probes": 4,
+          "empty": true,
+          "total": {
+            "count": 6580,
+            "mean_ns": 52358.237082066866,
+            "p90_ns": 163300,
+            "p95_ns": 248800,
+            "p99_ns": 311600,
+            "p99.9_ns": 1394900
+          }
+        },
+        {
+          "strategy": "TrieHI",
+          "recursive": false,
+          "probes": 16,
+          "empty": false,
+          "total": {
+            "count": 2540,
+            "mean_ns": 18246.181102362203,
+            "p90_ns": 23800,
+            "p95_ns": 29600,
+            "p99_ns": 41500,
+            "p99.9_ns": 163100
+          }
+        },
+        {
+          "strategy": "TrieHI",
+          "recursive": false,
+          "probes": 16,
+          "empty": true,
+          "total": {
+            "count": 6580,
+            "mean_ns": 53446.71732522796,
+            "p90_ns": 171800,
+            "p95_ns": 250700,
+            "p99_ns": 311300,
+            "p99.9_ns": 1741200
+          }
+        },
+        {
+          "strategy": "TrieHI",
+          "recursive": true,
+          "probes": 0,
+          "empty": false,
+          "total": {
+            "count": 9120,
+            "mean_ns": 1075590.4605263157,
+            "p90_ns": 7429100,
+            "p95_ns": 7956800,
+            "p99_ns": 9512700,
+            "p99.9_ns": 16169300
+          }
+        },
+        {
+          "strategy": "TrieHI",
+          "recursive": true,
+          "probes": 1,
+          "empty": false,
+          "total": {
+            "count": 9120,
+            "mean_ns": 208620.03289473685,
+            "p90_ns": 1225600,
+            "p95_ns": 1459300,
+            "p99_ns": 1828200,
+            "p99.9_ns": 3807000
+          }
+        },
+        {
+          "strategy": "TrieHI",
+          "recursive": true,
+          "probes": 4,
+          "empty": false,
+          "total": {
+            "count": 9120,
+            "mean_ns": 422599.6381578947,
+            "p90_ns": 2627700,
+            "p95_ns": 3092900,
+            "p99_ns": 3903500,
+            "p99.9_ns": 7385800
+          }
+        },
+        {
+          "strategy": "TrieHI",
+          "recursive": true,
+          "probes": 16,
+          "empty": false,
+          "total": {
+            "count": 9120,
+            "mean_ns": 1087068.201754386,
+            "p90_ns": 7471800,
+            "p95_ns": 7979200,
+            "p99_ns": 9882000,
+            "p99.9_ns": 14365800
+          }
+        }
+      ]
+    }
+  ],
+  "raw_rows": 1094400
+}

@@ -1,0 +1,14 @@
+{"label": "prepare-fixture", "status": "passed", "elapsed_seconds": 2.0930000000007567}
+{"label": "build-Release", "status": "passed", "elapsed_seconds": 19.04699999999866}
+{"label": "contract-Release", "status": "passed", "elapsed_seconds": 1.110000000000582}
+{"label": "admit-Release-wiki_directory", "status": "passed", "elapsed_seconds": 4.2810000000026776}
+{"label": "admit-Release-wiki_directory_phase", "status": "passed", "elapsed_seconds": 4.2189999999973224}
+{"label": "admit-Release-wiki_search", "status": "passed", "elapsed_seconds": 24.43699999999808}
+{"label": "build-RelWithDebInfo-ASan", "status": "passed", "elapsed_seconds": 15.906000000002678}
+{"label": "contract-RelWithDebInfo-ASan", "status": "passed", "elapsed_seconds": 1.25}
+{"label": "admit-RelWithDebInfo-ASan-wiki_directory", "status": "passed", "elapsed_seconds": 67.28199999999924}
+{"label": "admit-RelWithDebInfo-ASan-wiki_directory_phase", "status": "passed", "elapsed_seconds": 67.5}
+{"label": "admit-RelWithDebInfo-ASan-wiki_search", "status": "passed", "elapsed_seconds": 299.0}
+{"label": "verify-directory-wiki_directory", "status": "passed", "elapsed_seconds": 18.014999999999418}
+{"label": "verify-directory-wiki_directory_phase", "status": "passed", "elapsed_seconds": 17.98399999999674}
+{"label": "verify-search", "status": "passed", "elapsed_seconds": 24.375}

@@ -1,0 +1,524 @@
+[
+  {
+    "case": "d0-r0",
+    "path": "/",
+    "recursive": false,
+    "depth": 0,
+    "candidates": 0,
+    "children": 35,
+    "descendant_directories": 23025
+  },
+  {
+    "case": "d0-r1",
+    "path": "/",
+    "recursive": true,
+    "depth": 0,
+    "candidates": 10000,
+    "children": 35,
+    "descendant_directories": 23025
+  },
+  {
+    "case": "d1-r0",
+    "path": "/Academic_disciplines/Academic_discipline_interactions/Interdisciplinary_subfields/Interdisciplinary_subfields_of_economics/Economic_geology/Industrial_minerals/Phosphates/Metaphosphates/",
+    "recursive": false,
+    "depth": 8,
+    "candidates": 1,
+    "children": 0,
+    "descendant_directories": 1
+  },
+  {
+    "case": "d1-r1",
+    "path": "/Academic_disciplines/Academic_discipline_interactions/Interdisciplinary_subfields/Interdisciplinary_subfields_of_economics/Economic_geology/Industrial_minerals/Phosphates/Metaphosphates/",
+    "recursive": true,
+    "depth": 8,
+    "candidates": 1,
+    "children": 0,
+    "descendant_directories": 1
+  },
+  {
+    "case": "d2-r0",
+    "path": "/Academic_disciplines/Academic_discipline_interactions/Philosophy_of_science/Metaphysics_of_science/Causality/Causes/Causes_of_death/Cancer/Cancer_treatments/",
+    "recursive": false,
+    "depth": 9,
+    "candidates": 1,
+    "children": 0,
+    "descendant_directories": 1
+  },
+  {
+    "case": "d2-r1",
+    "path": "/Academic_disciplines/Academic_discipline_interactions/Philosophy_of_science/Metaphysics_of_science/Causality/Causes/Causes_of_death/Cancer/Cancer_treatments/",
+    "recursive": true,
+    "depth": 9,
+    "candidates": 1,
+    "children": 0,
+    "descendant_directories": 1
+  },
+  {
+    "case": "d3-r0",
+    "path": "/Academic_disciplines/Applied_disciplines/Applied_mathematics/Cryptography/",
+    "recursive": false,
+    "depth": 4,
+    "candidates": 1,
+    "children": 0,
+    "descendant_directories": 1
+  },
+  {
+    "case": "d3-r1",
+    "path": "/Academic_disciplines/Applied_disciplines/Applied_mathematics/Cryptography/",
+    "recursive": true,
+    "depth": 4,
+    "candidates": 1,
+    "children": 0,
+    "descendant_directories": 1
+  },
+  {
+    "case": "d4-r0",
+    "path": "/Academic_disciplines/Applied_disciplines/Applied_sciences/Applied_and_interdisciplinary_physics/Mechanical_engineering/Mechanics/Classical_mechanics/Continuum_mechanics/Temperature/Cold/Cryosphere/Polar_regions_of_the_Earth/Antarctic_region/Antarctic_realm/Antarctica/Antarctica-related_lists/",
+    "recursive": false,
+    "depth": 16,
+    "candidates": 1,
+    "children": 0,
+    "descendant_directories": 1
+  },
+  {
+    "case": "d4-r1",
+    "path": "/Academic_disciplines/Applied_disciplines/Applied_sciences/Applied_and_interdisciplinary_physics/Mechanical_engineering/Mechanics/Classical_mechanics/Continuum_mechanics/Temperature/Cold/Cryosphere/Polar_regions_of_the_Earth/Antarctic_region/Antarctic_realm/Antarctica/Antarctica-related_lists/",
+    "recursive": true,
+    "depth": 16,
+    "candidates": 1,
+    "children": 0,
+    "descendant_directories": 1
+  },
+  {
+    "case": "d5-r0",
+    "path": "/Behavior/Human_behavior/Human_activities/Entertainment/Gaming/Games/Games_by_type/Games_of_physical_skill/Athletic_sports/Football/Football_by_location/Football_by_continent/Football_by_continent_and_code/Rugby_football_by_continent/Rugby_union_by_continent/Rugby_union_competitions_by_continent/Rugby_union_competitions_in_Europe/Rugby_union_competitions_in_Europe_by_country/Rugby_union_competitions_in_the_United_Kingdom/Rugby_union_competitions_in_England/Rugby_union_leagues_in_England/Premiership_Rugby/Premiership_Rugby_teams/London_Scottish_F.C./",
+    "recursive": false,
+    "depth": 24,
+    "candidates": 0,
+    "children": 1,
+    "descendant_directories": 2
+  },
+  {
+    "case": "d5-r1",
+    "path": "/Behavior/Human_behavior/Human_activities/Entertainment/Gaming/Games/Games_by_type/Games_of_physical_skill/Athletic_sports/Football/Football_by_location/Football_by_continent/Football_by_continent_and_code/Rugby_football_by_continent/Rugby_union_by_continent/Rugby_union_competitions_by_continent/Rugby_union_competitions_in_Europe/Rugby_union_competitions_in_Europe_by_country/Rugby_union_competitions_in_the_United_Kingdom/Rugby_union_competitions_in_England/Rugby_union_leagues_in_England/Premiership_Rugby/Premiership_Rugby_teams/London_Scottish_F.C./",
+    "recursive": true,
+    "depth": 24,
+    "candidates": 1,
+    "children": 1,
+    "descendant_directories": 2
+  },
+  {
+    "case": "d6-r0",
+    "path": "/Communication/Command_and_control/",
+    "recursive": false,
+    "depth": 2,
+    "candidates": 1,
+    "children": 0,
+    "descendant_directories": 1
+  },
+  {
+    "case": "d6-r1",
+    "path": "/Communication/Command_and_control/",
+    "recursive": true,
+    "depth": 2,
+    "candidates": 1,
+    "children": 0,
+    "descendant_directories": 1
+  },
+  {
+    "case": "d7-r0",
+    "path": "/Culture/Clothing/Fashion/Fashion_occupations/Models_(profession)/Female_models/Female_models_by_nationality/Indian_female_models/Indian_female_models_by_state_or_union_territory/",
+    "recursive": false,
+    "depth": 9,
+    "candidates": 0,
+    "children": 1,
+    "descendant_directories": 2
+  },
+  {
+    "case": "d7-r1",
+    "path": "/Culture/Clothing/Fashion/Fashion_occupations/Models_(profession)/Female_models/Female_models_by_nationality/Indian_female_models/Indian_female_models_by_state_or_union_territory/",
+    "recursive": true,
+    "depth": 9,
+    "candidates": 1,
+    "children": 1,
+    "descendant_directories": 2
+  },
+  {
+    "case": "d8-r0",
+    "path": "/Entities/Structure/Components/Firearm_components/",
+    "recursive": false,
+    "depth": 4,
+    "candidates": 0,
+    "children": 1,
+    "descendant_directories": 2
+  },
+  {
+    "case": "d8-r1",
+    "path": "/Entities/Structure/Components/Firearm_components/",
+    "recursive": true,
+    "depth": 4,
+    "candidates": 1,
+    "children": 1,
+    "descendant_directories": 2
+  },
+  {
+    "case": "d9-r0",
+    "path": "/Geography/Geographic_classifications/Geographic_taxonomies/Countries/Countries_by_continent/Countries_in_Europe/France/Geography_of_France/Populated_places_in_France/Communes_in_France/Communes_in_France_by_department/",
+    "recursive": false,
+    "depth": 11,
+    "candidates": 0,
+    "children": 58,
+    "descendant_directories": 66
+  },
+  {
+    "case": "d9-r1",
+    "path": "/Geography/Geographic_classifications/Geographic_taxonomies/Countries/Countries_by_continent/Countries_in_Europe/France/Geography_of_France/Populated_places_in_France/Communes_in_France/Communes_in_France_by_department/",
+    "recursive": true,
+    "depth": 11,
+    "candidates": 123,
+    "children": 58,
+    "descendant_directories": 66
+  },
+  {
+    "case": "d10-r0",
+    "path": "/Health/",
+    "recursive": false,
+    "depth": 1,
+    "candidates": 0,
+    "children": 10,
+    "descendant_directories": 63
+  },
+  {
+    "case": "d10-r1",
+    "path": "/Health/",
+    "recursive": true,
+    "depth": 1,
+    "candidates": 24,
+    "children": 10,
+    "descendant_directories": 63
+  },
+  {
+    "case": "d11-r0",
+    "path": "/Health/Health_research/",
+    "recursive": false,
+    "depth": 2,
+    "candidates": 0,
+    "children": 1,
+    "descendant_directories": 4
+  },
+  {
+    "case": "d11-r1",
+    "path": "/Health/Health_research/",
+    "recursive": true,
+    "depth": 2,
+    "candidates": 2,
+    "children": 1,
+    "descendant_directories": 4
+  },
+  {
+    "case": "d12-r0",
+    "path": "/Information/",
+    "recursive": false,
+    "depth": 1,
+    "candidates": 0,
+    "children": 6,
+    "descendant_directories": 269
+  },
+  {
+    "case": "d12-r1",
+    "path": "/Information/",
+    "recursive": true,
+    "depth": 1,
+    "candidates": 85,
+    "children": 6,
+    "descendant_directories": 269
+  },
+  {
+    "case": "d13-r0",
+    "path": "/Life/Organisms/Eukaryotes/Animals/Animal_taxa/Animal_taxa_by_rank/Animal_unranked_clades/ParaHoxozoa/Bilaterians/Protostomes/Ecdysozoa/Panarthropoda/Arthropods/Arthropod_taxa/Arthropod_taxonomy/Insect_taxonomy/Eumetabola/Holometabola/Hymenopterida/Hymenoptera/Apocrita/Parasitica/Chalcidoidea/Encyrtidae/",
+    "recursive": false,
+    "depth": 24,
+    "candidates": 0,
+    "children": 1,
+    "descendant_directories": 2
+  },
+  {
+    "case": "d13-r1",
+    "path": "/Life/Organisms/Eukaryotes/Animals/Animal_taxa/Animal_taxa_by_rank/Animal_unranked_clades/ParaHoxozoa/Bilaterians/Protostomes/Ecdysozoa/Panarthropoda/Arthropods/Arthropod_taxa/Arthropod_taxonomy/Insect_taxonomy/Eumetabola/Holometabola/Hymenopterida/Hymenoptera/Apocrita/Parasitica/Chalcidoidea/Encyrtidae/",
+    "recursive": true,
+    "depth": 24,
+    "candidates": 1,
+    "children": 1,
+    "descendant_directories": 2
+  },
+  {
+    "case": "d14-r0",
+    "path": "/Life/Organisms/Eukaryotes/Animals/Animal_taxa/Animal_taxa_by_rank/Animal_unranked_clades/ParaHoxozoa/Bilaterians/Protostomes/Ecdysozoa/Panarthropoda/Arthropods/Arthropod_taxa/Arthropod_taxonomy/Insect_taxonomy/Lepidoptera_taxonomy/Glossata/Coelolepida/Myoglossata/Neolepidoptera/Heteroneura/Eulepidoptera/Ditrysia/",
+    "recursive": false,
+    "depth": 24,
+    "candidates": 0,
+    "children": 3,
+    "descendant_directories": 32
+  },
+  {
+    "case": "d14-r1",
+    "path": "/Life/Organisms/Eukaryotes/Animals/Animal_taxa/Animal_taxa_by_rank/Animal_unranked_clades/ParaHoxozoa/Bilaterians/Protostomes/Ecdysozoa/Panarthropoda/Arthropods/Arthropod_taxa/Arthropod_taxonomy/Insect_taxonomy/Lepidoptera_taxonomy/Glossata/Coelolepida/Myoglossata/Neolepidoptera/Heteroneura/Eulepidoptera/Ditrysia/",
+    "recursive": true,
+    "depth": 24,
+    "candidates": 17,
+    "children": 3,
+    "descendant_directories": 32
+  },
+  {
+    "case": "d15-r0",
+    "path": "/Life/Organisms/Eukaryotes/Animals/Animal_taxa/Animal_taxa_by_rank/Animal_unranked_clades/ParaHoxozoa/Bilaterians/Protostomes/Ecdysozoa/Panarthropoda/Arthropods/Arthropod_taxa/Arthropod_taxonomy/Insect_taxonomy/Lepidoptera_taxonomy/Glossata/Coelolepida/Myoglossata/Neolepidoptera/Heteroneura/Eulepidoptera/Ditrysia/Macrolepidoptera/Butterflies/Butterfly_taxonomy/Nymphalidae/Satyrinae/Elymniini/Mycalesis/",
+    "recursive": false,
+    "depth": 31,
+    "candidates": 1,
+    "children": 0,
+    "descendant_directories": 1
+  },
+  {
+    "case": "d15-r1",
+    "path": "/Life/Organisms/Eukaryotes/Animals/Animal_taxa/Animal_taxa_by_rank/Animal_unranked_clades/ParaHoxozoa/Bilaterians/Protostomes/Ecdysozoa/Panarthropoda/Arthropods/Arthropod_taxa/Arthropod_taxonomy/Insect_taxonomy/Lepidoptera_taxonomy/Glossata/Coelolepida/Myoglossata/Neolepidoptera/Heteroneura/Eulepidoptera/Ditrysia/Macrolepidoptera/Butterflies/Butterfly_taxonomy/Nymphalidae/Satyrinae/Elymniini/Mycalesis/",
+    "recursive": true,
+    "depth": 31,
+    "candidates": 1,
+    "children": 0,
+    "descendant_directories": 1
+  },
+  {
+    "case": "d16-r0",
+    "path": "/Life/Organisms/Eukaryotes/Animals/Animal_taxa/Animal_taxa_by_rank/Animal_unranked_clades/ParaHoxozoa/Bilaterians/Protostomes/Ecdysozoa/Panarthropoda/Arthropods/Arthropod_taxa/Arthropod_taxonomy/Insect_taxonomy/Lepidoptera_taxonomy/Moth_taxonomy/Macroheterocera/Bombycoidea/Sphingidae/Sphinginae/Sphingini/Manduca/",
+    "recursive": false,
+    "depth": 24,
+    "candidates": 1,
+    "children": 0,
+    "descendant_directories": 1
+  },
+  {
+    "case": "d16-r1",
+    "path": "/Life/Organisms/Eukaryotes/Animals/Animal_taxa/Animal_taxa_by_rank/Animal_unranked_clades/ParaHoxozoa/Bilaterians/Protostomes/Ecdysozoa/Panarthropoda/Arthropods/Arthropod_taxa/Arthropod_taxonomy/Insect_taxonomy/Lepidoptera_taxonomy/Moth_taxonomy/Macroheterocera/Bombycoidea/Sphingidae/Sphinginae/Sphingini/Manduca/",
+    "recursive": true,
+    "depth": 24,
+    "candidates": 1,
+    "children": 0,
+    "descendant_directories": 1
+  },
+  {
+    "case": "d17-r0",
+    "path": "/Nature/",
+    "recursive": false,
+    "depth": 1,
+    "candidates": 0,
+    "children": 3,
+    "descendant_directories": 8919
+  },
+  {
+    "case": "d17-r1",
+    "path": "/Nature/",
+    "recursive": true,
+    "depth": 1,
+    "candidates": 4771,
+    "children": 3,
+    "descendant_directories": 8919
+  },
+  {
+    "case": "d18-r0",
+    "path": "/Nature/Natural_sciences/",
+    "recursive": false,
+    "depth": 2,
+    "candidates": 0,
+    "children": 2,
+    "descendant_directories": 8785
+  },
+  {
+    "case": "d18-r1",
+    "path": "/Nature/Natural_sciences/",
+    "recursive": true,
+    "depth": 2,
+    "candidates": 4734,
+    "children": 2,
+    "descendant_directories": 8785
+  },
+  {
+    "case": "d19-r0",
+    "path": "/Nature/Natural_sciences/Earth_sciences/Earth/",
+    "recursive": false,
+    "depth": 4,
+    "candidates": 0,
+    "children": 6,
+    "descendant_directories": 8619
+  },
+  {
+    "case": "d19-r1",
+    "path": "/Nature/Natural_sciences/Earth_sciences/Earth/",
+    "recursive": true,
+    "depth": 4,
+    "candidates": 4650,
+    "children": 6,
+    "descendant_directories": 8619
+  },
+  {
+    "case": "d20-r0",
+    "path": "/Nature/Natural_sciences/Earth_sciences/Earth/Geological_history_of_Earth/Geological_epochs/Holocene/2nd_millennium/20th_century/",
+    "recursive": false,
+    "depth": 9,
+    "candidates": 0,
+    "children": 23,
+    "descendant_directories": 4196
+  },
+  {
+    "case": "d20-r1",
+    "path": "/Nature/Natural_sciences/Earth_sciences/Earth/Geological_history_of_Earth/Geological_epochs/Holocene/2nd_millennium/20th_century/",
+    "recursive": true,
+    "depth": 9,
+    "candidates": 2633,
+    "children": 23,
+    "descendant_directories": 4196
+  },
+  {
+    "case": "d21-r0",
+    "path": "/Nature/Natural_sciences/Earth_sciences/Earth/Geological_history_of_Earth/Geological_epochs/Holocene/2nd_millennium/20th_century/20th-century_people/20th-century_people_by_location/20th-century_people_by_continent/20th-century_Asian_people/20th-century_Asian_people_by_nationality/20th-century_Sri_Lankan_people/20th-century_Sri_Lankan_people_by_occupation/",
+    "recursive": false,
+    "depth": 16,
+    "candidates": 0,
+    "children": 1,
+    "descendant_directories": 3
+  },
+  {
+    "case": "d21-r1",
+    "path": "/Nature/Natural_sciences/Earth_sciences/Earth/Geological_history_of_Earth/Geological_epochs/Holocene/2nd_millennium/20th_century/20th-century_people/20th-century_people_by_location/20th-century_people_by_continent/20th-century_Asian_people/20th-century_Asian_people_by_nationality/20th-century_Sri_Lankan_people/20th-century_Sri_Lankan_people_by_occupation/",
+    "recursive": true,
+    "depth": 16,
+    "candidates": 1,
+    "children": 1,
+    "descendant_directories": 3
+  },
+  {
+    "case": "d22-r0",
+    "path": "/Nature/Natural_sciences/Earth_sciences/Earth/Geological_history_of_Earth/Geological_epochs/Holocene/2nd_millennium/20th_century/20th-century_people/20th-century_people_by_location/20th-century_people_by_continent/20th-century_North_American_people/20th-century_North_American_people_by_nationality/20th-century_American_people/20th-century_American_people_by_occupation/",
+    "recursive": false,
+    "depth": 16,
+    "candidates": 0,
+    "children": 19,
+    "descendant_directories": 74
+  },
+  {
+    "case": "d22-r1",
+    "path": "/Nature/Natural_sciences/Earth_sciences/Earth/Geological_history_of_Earth/Geological_epochs/Holocene/2nd_millennium/20th_century/20th-century_people/20th-century_people_by_location/20th-century_people_by_continent/20th-century_North_American_people/20th-century_North_American_people_by_nationality/20th-century_American_people/20th-century_American_people_by_occupation/",
+    "recursive": true,
+    "depth": 16,
+    "candidates": 213,
+    "children": 19,
+    "descendant_directories": 74
+  },
+  {
+    "case": "d23-r0",
+    "path": "/Nature/Natural_sciences/Earth_sciences/Earth/Geological_history_of_Earth/Geological_epochs/Holocene/3rd_millennium/21st_century/2000s/2000s_fads_and_trends/2000s_in_music/2000s_albums/2000s_compilation_albums/2000s_greatest_hits_albums/2001_greatest_hits_albums/",
+    "recursive": false,
+    "depth": 16,
+    "candidates": 1,
+    "children": 0,
+    "descendant_directories": 1
+  },
+  {
+    "case": "d23-r1",
+    "path": "/Nature/Natural_sciences/Earth_sciences/Earth/Geological_history_of_Earth/Geological_epochs/Holocene/3rd_millennium/21st_century/2000s/2000s_fads_and_trends/2000s_in_music/2000s_albums/2000s_compilation_albums/2000s_greatest_hits_albums/2001_greatest_hits_albums/",
+    "recursive": true,
+    "depth": 16,
+    "candidates": 1,
+    "children": 0,
+    "descendant_directories": 1
+  },
+  {
+    "case": "d24-r0",
+    "path": "/Nature/Natural_sciences/Earth_sciences/Earth/Geological_history_of_Earth/Geological_epochs/Holocene/3rd_millennium_BC/29th_century_BC/",
+    "recursive": false,
+    "depth": 9,
+    "candidates": 0,
+    "children": 1,
+    "descendant_directories": 2
+  },
+  {
+    "case": "d24-r1",
+    "path": "/Nature/Natural_sciences/Earth_sciences/Earth/Geological_history_of_Earth/Geological_epochs/Holocene/3rd_millennium_BC/29th_century_BC/",
+    "recursive": true,
+    "depth": 9,
+    "candidates": 1,
+    "children": 1,
+    "descendant_directories": 2
+  },
+  {
+    "case": "d25-r0",
+    "path": "/Science/",
+    "recursive": false,
+    "depth": 1,
+    "candidates": 0,
+    "children": 2,
+    "descendant_directories": 8
+  },
+  {
+    "case": "d25-r1",
+    "path": "/Science/",
+    "recursive": true,
+    "depth": 1,
+    "candidates": 3,
+    "children": 2,
+    "descendant_directories": 8
+  },
+  {
+    "case": "d26-r0",
+    "path": "/Society/Family/",
+    "recursive": false,
+    "depth": 2,
+    "candidates": 0,
+    "children": 1,
+    "descendant_directories": 34
+  },
+  {
+    "case": "d26-r1",
+    "path": "/Society/Family/",
+    "recursive": true,
+    "depth": 2,
+    "candidates": 8,
+    "children": 1,
+    "descendant_directories": 34
+  },
+  {
+    "case": "d27-r0",
+    "path": "/Technology/Computing/Computer_industry/Computer_companies/",
+    "recursive": false,
+    "depth": 4,
+    "candidates": 0,
+    "children": 1,
+    "descendant_directories": 8
+  },
+  {
+    "case": "d27-r1",
+    "path": "/Technology/Computing/Computer_industry/Computer_companies/",
+    "recursive": true,
+    "depth": 4,
+    "candidates": 2,
+    "children": 1,
+    "descendant_directories": 8
+  },
+  {
+    "case": "d28-r0",
+    "path": "/Universe/Matter/Physical_objects/Particles/Particle_physics/",
+    "recursive": false,
+    "depth": 5,
+    "candidates": 1,
+    "children": 0,
+    "descendant_directories": 1
+  },
+  {
+    "case": "d28-r1",
+    "path": "/Universe/Matter/Physical_objects/Particles/Particle_physics/",
+    "recursive": true,
+    "depth": 5,
+    "candidates": 1,
+    "children": 0,
+    "descendant_directories": 1
+  }
+]

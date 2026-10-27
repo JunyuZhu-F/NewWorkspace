@@ -1,0 +1,12 @@
+{"label": "run-default-0", "status": "passed", "elapsed_seconds": 64.4690000000046}
+{"label": "run-default-1", "status": "passed", "elapsed_seconds": 62.54699999999866}
+{"label": "run-default-2", "status": "passed", "elapsed_seconds": 62.54699999999866}
+{"label": "run-default-3", "status": "passed", "elapsed_seconds": 62.7809999999954}
+{"label": "run-default-4", "status": "passed", "elapsed_seconds": 62.89100000000326}
+{"label": "verify-directory-default", "status": "passed", "elapsed_seconds": 17.735000000000582}
+{"label": "run-phase-0", "status": "passed", "elapsed_seconds": 70.60899999999674}
+{"label": "run-phase-1", "status": "passed", "elapsed_seconds": 68.68800000000192}
+{"label": "run-phase-2", "status": "passed", "elapsed_seconds": 69.90600000000268}
+{"label": "run-phase-3", "status": "passed", "elapsed_seconds": 71.13999999999942}
+{"label": "run-phase-4", "status": "passed", "elapsed_seconds": 67.875}
+{"label": "verify-directory-phase", "status": "passed", "elapsed_seconds": 17.985000000000582}

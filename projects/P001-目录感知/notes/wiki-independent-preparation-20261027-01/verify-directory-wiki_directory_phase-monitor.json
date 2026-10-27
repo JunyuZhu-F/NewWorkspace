@@ -1,0 +1,87 @@
+[
+  {
+    "elapsed_seconds": 0.014999999999417923,
+    "private_bytes": 380928,
+    "available_bytes": 5164158976
+  },
+  {
+    "elapsed_seconds": 1.0779999999940628,
+    "private_bytes": 676560896,
+    "available_bytes": 5109248000
+  },
+  {
+    "elapsed_seconds": 2.125,
+    "private_bytes": 676560896,
+    "available_bytes": 5126352896
+  },
+  {
+    "elapsed_seconds": 3.186999999998079,
+    "private_bytes": 676560896,
+    "available_bytes": 5132001280
+  },
+  {
+    "elapsed_seconds": 4.25,
+    "private_bytes": 676560896,
+    "available_bytes": 5127548928
+  },
+  {
+    "elapsed_seconds": 5.296999999998661,
+    "private_bytes": 676560896,
+    "available_bytes": 5131923456
+  },
+  {
+    "elapsed_seconds": 6.3439999999973224,
+    "private_bytes": 676560896,
+    "available_bytes": 5127786496
+  },
+  {
+    "elapsed_seconds": 7.405999999995402,
+    "private_bytes": 676560896,
+    "available_bytes": 5128585216
+  },
+  {
+    "elapsed_seconds": 8.468999999997322,
+    "private_bytes": 676560896,
+    "available_bytes": 5128548352
+  },
+  {
+    "elapsed_seconds": 9.530999999995402,
+    "private_bytes": 677154816,
+    "available_bytes": 5128470528
+  },
+  {
+    "elapsed_seconds": 10.577999999994063,
+    "private_bytes": 677154816,
+    "available_bytes": 5130100736
+  },
+  {
+    "elapsed_seconds": 11.639999999999418,
+    "private_bytes": 677154816,
+    "available_bytes": 5128130560
+  },
+  {
+    "elapsed_seconds": 12.718999999997322,
+    "private_bytes": 677154816,
+    "available_bytes": 5150158848
+  },
+  {
+    "elapsed_seconds": 13.764999999999418,
+    "private_bytes": 677154816,
+    "available_bytes": 5149343744
+  },
+  {
+    "elapsed_seconds": 14.827999999994063,
+    "private_bytes": 677154816,
+    "available_bytes": 5146796032
+  },
+  {
+    "elapsed_seconds": 15.875,
+    "private_bytes": 677154816,
+    "available_bytes": 5153177600
+  },
+  {
+    "elapsed_seconds": 16.92199999999866,
+    "private_bytes": 678469632,
+    "available_bytes": 5151346688
+  }
+]

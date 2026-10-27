@@ -1,0 +1,14 @@
+{
+  "raw_size_mtime_unchanged": true,
+  "source_or_snapshot_mismatches": [],
+  "source_entries_rechecked": 52,
+  "status": "passed",
+  "correctness_status": "passed",
+  "next": "WIKI-DIR-01 protocol and bounded matrix; WIKI-PROTO-01 query/metric gaps",
+  "wiki_ann_executed": false,
+  "formal_wiki_performance_executed": false,
+  "independent_check_status": "passed",
+  "core_006_files_unchanged": 46,
+  "head": "be59bbccb9e3f8e283328f453643b7d50211736d",
+  "scope_checks_per_build": 5292
+}

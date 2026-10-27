@@ -1,0 +1,32 @@
+[
+  {
+    "name": "dataset-root.json",
+    "url": "https://api.github.com/repos/KurtPatrickHere/dir-vector-dataset/contents/",
+    "checked_utc": "2026-10-27T03:43:10.179823+00:00",
+    "status": 200,
+    "etag": "\"2b8784008590f69e0b088fc396068794c2684bb5\"",
+    "bytes": 849,
+    "sha256": "8bdf348e5e8c3f20abef7169540babc11386efbabaef20bb1c342b1b6be32fa5",
+    "entries": [
+      "README.md"
+    ]
+  },
+  {
+    "name": "dataset-readme.md",
+    "url": "https://raw.githubusercontent.com/KurtPatrickHere/dir-vector-dataset/main/README.md",
+    "checked_utc": "2026-10-27T03:43:11.399987+00:00",
+    "status": 200,
+    "etag": "\"0b5b153e23d9a874d6f80965dafbc24facb6d8f73c585e14c61947958167f863\"",
+    "bytes": 6363,
+    "sha256": "5e82d7e818f60917972ec95324258402aef6e873ded025ee3baa358994b4b0a2"
+  },
+  {
+    "name": "openviking-benchmark-readme.md",
+    "url": "https://raw.githubusercontent.com/volcengine/OpenViking/main/benchmark/vectordb_perf/README.md",
+    "checked_utc": "2026-10-27T03:43:12.601304+00:00",
+    "status": 200,
+    "etag": "\"f7553087f9ada874abdbd5aa5176fe6ad6593d83688f0dac82c830ffed12e0ed\"",
+    "bytes": 16038,
+    "sha256": "1b4525c3e26e142bcc20de3648e7cd1410ebf53b17612fdd0396e88afc43d2ff"
+  }
+]

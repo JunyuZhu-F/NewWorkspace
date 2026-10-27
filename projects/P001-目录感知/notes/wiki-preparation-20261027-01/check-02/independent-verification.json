@@ -1,0 +1,31 @@
+{
+  "status": "passed",
+  "stages": {
+    "initial": {
+      "directories": 23027,
+      "queries": 220,
+      "scope_checks": 1320
+    },
+    "move": {
+      "directories": 23027,
+      "queries": 220,
+      "scope_checks": 1320
+    },
+    "merge": {
+      "directories": 23026,
+      "queries": 221,
+      "scope_checks": 1326
+    },
+    "reject": {
+      "directories": 23026,
+      "queries": 221,
+      "scope_checks": 1326
+    }
+  },
+  "scope_checks_per_build": 5292,
+  "release_asan_equal": true,
+  "independent_python_path_state_oracle": true,
+  "comparison": "C++ oracle compares complete ID sets; Python independently checks all emitted counts/FNV ID digests and full case coverage",
+  "answers_sha256": "6bb4d9ef17c3b92e464a52cae5788901712ea410a1934e33b5abffcceec6744e",
+  "verifier_sha256": "e4e43465afdcc8c798985f1711b870bc6022afbe292f4fe1c725e6a1ba68cf73"
+}

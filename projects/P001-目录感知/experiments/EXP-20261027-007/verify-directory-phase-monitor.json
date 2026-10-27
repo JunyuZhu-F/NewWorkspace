@@ -1,0 +1,87 @@
+[
+  {
+    "elapsed_seconds": 0.01599999999598367,
+    "private_bytes": 385024,
+    "available_bytes": 5158518784
+  },
+  {
+    "elapsed_seconds": 1.0789999999979045,
+    "private_bytes": 676364288,
+    "available_bytes": 5132996608
+  },
+  {
+    "elapsed_seconds": 2.1409999999959837,
+    "private_bytes": 676364288,
+    "available_bytes": 5143724032
+  },
+  {
+    "elapsed_seconds": 3.2039999999979045,
+    "private_bytes": 676364288,
+    "available_bytes": 5143117824
+  },
+  {
+    "elapsed_seconds": 4.25,
+    "private_bytes": 676364288,
+    "available_bytes": 5141782528
+  },
+  {
+    "elapsed_seconds": 5.312999999994645,
+    "private_bytes": 676364288,
+    "available_bytes": 5148696576
+  },
+  {
+    "elapsed_seconds": 6.360000000000582,
+    "private_bytes": 676364288,
+    "available_bytes": 5158014976
+  },
+  {
+    "elapsed_seconds": 7.437999999994645,
+    "private_bytes": 676364288,
+    "available_bytes": 5156167680
+  },
+  {
+    "elapsed_seconds": 8.485000000000582,
+    "private_bytes": 676958208,
+    "available_bytes": 5144416256
+  },
+  {
+    "elapsed_seconds": 9.531999999999243,
+    "private_bytes": 676958208,
+    "available_bytes": 5149614080
+  },
+  {
+    "elapsed_seconds": 10.593999999997322,
+    "private_bytes": 676958208,
+    "available_bytes": 5147754496
+  },
+  {
+    "elapsed_seconds": 11.656999999999243,
+    "private_bytes": 676958208,
+    "available_bytes": 5153603584
+  },
+  {
+    "elapsed_seconds": 12.718999999997322,
+    "private_bytes": 676958208,
+    "available_bytes": 5149753344
+  },
+  {
+    "elapsed_seconds": 13.765999999995984,
+    "private_bytes": 676958208,
+    "available_bytes": 5148717056
+  },
+  {
+    "elapsed_seconds": 14.812999999994645,
+    "private_bytes": 676958208,
+    "available_bytes": 5150326784
+  },
+  {
+    "elapsed_seconds": 15.860000000000582,
+    "private_bytes": 678277120,
+    "available_bytes": 5167853568
+  },
+  {
+    "elapsed_seconds": 16.92199999999866,
+    "private_bytes": 677941248,
+    "available_bytes": 5170302976
+  }
+]

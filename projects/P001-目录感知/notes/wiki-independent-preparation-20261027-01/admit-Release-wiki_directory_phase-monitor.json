@@ -1,0 +1,22 @@
+[
+  {
+    "elapsed_seconds": 0.030999999995401595,
+    "private_bytes": 397312,
+    "available_bytes": 4918939648
+  },
+  {
+    "elapsed_seconds": 1.0779999999940628,
+    "private_bytes": 141635584,
+    "available_bytes": 4787449856
+  },
+  {
+    "elapsed_seconds": 2.125,
+    "private_bytes": 150151168,
+    "available_bytes": 4788932608
+  },
+  {
+    "elapsed_seconds": 3.1719999999986612,
+    "private_bytes": 127033344,
+    "available_bytes": 4784021504
+  }
+]

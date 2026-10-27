@@ -1,0 +1,13 @@
+build-release passed
+Traceback (most recent call last):
+  File "D:\NewWorkspace\projects\P001-Ŀ¼��֪\notes\wiki-preparation-20261027-01\run_check.py", line 101, in <module>
+    if __name__=='__main__':main()
+  File "D:\NewWorkspace\projects\P001-Ŀ¼��֪\notes\wiki-preparation-20261027-01\run_check.py", line 87, in main
+    command('release',[str(PROJECT/'code/build-Release-Wiki/directory_wiki_validate.exe'),binding,str(out/'release-answers.tsv')])
+  File "D:\NewWorkspace\projects\P001-Ŀ¼��֪\notes\wiki-preparation-20261027-01\run_check.py", line 43, in command
+    p=subprocess.Popen(args,cwd=PROJECT,stdout=log,stderr=subprocess.STDOUT,env=env)
+  File "D:\anaconda3\lib\subprocess.py", line 951, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "D:\anaconda3\lib\subprocess.py", line 1420, in _execute_child
+    hp, ht, pid, tid = _winapi.CreateProcess(executable, args,
+FileNotFoundError: [WinError 2] ϵͳ�Ҳ���ָ�����ļ���

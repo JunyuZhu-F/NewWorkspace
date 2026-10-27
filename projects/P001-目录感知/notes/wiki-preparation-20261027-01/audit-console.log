@@ -1,0 +1,8 @@
+{"parser_contract": "passed", "synthetic_only": true}
+Full streaming path/ID audit
+paths 500000 directories 227085
+paths 1000000 directories 337844
+paths 1500000 directories 419054
+Full streaming corpus ID audit
+Checking fixed sample and all query vectors
+{"status": "passed", "path_records": 1941679, "directories_including_root": 468031, "mean_directory_depth_excluding_root": 11.831371920603381, "elapsed_seconds": 31.031000000002678}

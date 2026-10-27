@@ -1,0 +1,6 @@
+[
+  "FLAGS = /DWIN32 /D_WINDOWS /EHsc /O2 /Ob2 /DNDEBUG -MD",
+  "FLAGS = /DWIN32 /D_WINDOWS /EHsc /O2 /Ob2 /DNDEBUG -std:c++17 -MD /W4 /permissive- /utf-8",
+  "FLAGS = /DWIN32 /D_WINDOWS /EHsc /O2 /Ob2 /DNDEBUG -std:c++17 -MD /W4 /permissive- /utf-8 /fp:strict",
+  "FLAGS = /DWIN32 /D_WINDOWS /O2 /Ob2 /DNDEBUG -std:c11 -MD /utf-8"
+]

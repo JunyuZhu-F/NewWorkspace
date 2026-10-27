@@ -1,0 +1,17 @@
+{
+  "experiment": "EXP-20261027-007",
+  "preparation": "notes\\wiki-independent-preparation-20261027-01",
+  "runs": 5,
+  "warmups": 3,
+  "measurements": 20,
+  "protocol_sha256": "4de1bc22f11e65fa4228b754dbc1cbdabbd2e194294b9dc440c0fd7771a2417c",
+  "fixture_manifest_sha256": "1003b4e6db7afeefa724e4738d9929e7da1fda2775532175c63d55bc2caa1998",
+  "cases": 58,
+  "limits": {
+    "worker_seconds": 600,
+    "matrix_seconds": 1800,
+    "private_bytes": 2147483648,
+    "minimum_available_bytes": 2147483648,
+    "output_bytes": 1073741824
+  }
+}
