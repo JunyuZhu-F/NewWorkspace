@@ -1,0 +1,25 @@
+{
+  "captured_at": "2026-10-27T00:28:23.9373166+08:00",
+  "cpu_name": "13th Gen Intel(R) Core(TM) i7-13650HX",
+  "physical_cores": 14,
+  "logical_processors": 20,
+  "os_caption": "Microsoft Windows 11 家庭版 中文版",
+  "os_version": "10.0.26300",
+  "total_visible_memory_kib": 16580472,
+  "free_memory_kib_after_run": 5995508,
+  "git_base_commit": "37981aa4b187d69aa8ca8c56bbb068fe068de00d",
+  "git_branch": "main",
+  "source_dirty": true,
+  "actual_build_commands": [
+    "code/scripts/build-test.cmd Release",
+    "code/scripts/build-test.cmd RelWithDebInfo asan"
+  ],
+  "admission_evidence": "../EXP-20261027-003/repair-validation.json",
+  "release_actual_compile_flags": [
+    "FLAGS = /DWIN32 /D_WINDOWS /EHsc /O2 /Ob2 /DNDEBUG -MD",
+    "FLAGS = /DWIN32 /D_WINDOWS /EHsc /O2 /Ob2 /DNDEBUG -std:c++17 -MD /W4 /permissive- /utf-8",
+    "FLAGS = /DWIN32 /D_WINDOWS /O2 /Ob2 /DNDEBUG -std:c11 -MD /utf-8"
+  ],
+  "cmake_version": "4.3.1-msvc1",
+  "ninja_version": "1.13.2.git.kitware.jobserver-pipe-1"
+}

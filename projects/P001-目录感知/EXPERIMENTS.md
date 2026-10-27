@@ -12,15 +12,37 @@
 
 ## 2. 实验索引
 
+最新收尾：005已完成135/135且独立重核验通过，record.md已补齐；与004共同验收当前小规模DIR-01分支。全量时间metadata审计也已完成。以下“尚未运行”段落为当时准备历史，不是当前状态；不为数据审计登记虚构性能实验。
+
+全量metadata审计已完成（非性能实验，不分配新EXP）：notes/arxiv-time-full-audit-20261027-01/，2,763,543条全量绑定、432目录，两个独立解析逐条复核通过；未建全量索引或运行性能，保留1995覆盖缺口。
+
 2026-10-26 当前没有论文性能/检索实验登记。DIR-01 仅完成准备：快照 SNAP-0b110bb7dee8280f，Release/ASan 各 7/7 CTest 与默认/插桩基准自检通过，正式矩阵运行数为 0；证据见 notes/dir01-preparation-20261026-01/。这些准备检查不是性能实验，不分配 EXP 编号，不创建实验记录或填写实测值。核心开发正确性测试另见 notes/core-review.md 与 notes/core-implementation-20261026-01/；不把 CTest/自检耗时当论文延迟。
 
-> 下表是待填写的占位行，不表示已有实验。增加实际记录时替换或删除该行。
+2026-10-27 当前状态：004 已完成正式矩阵，001/002/003 为保留的失败尝试；上段为 2026-10-26 准备时的历史状态。
+
+同日派生分析（非新实验）：notes/dir01-cost-review-20261027-01/ 保存 004 原始数据分层统计、源码成本口径审查及哈希验证。无新测量、旧实验文件未改；补测草案另存 notes/dir01-cost-supplement-protocol-draft-20261027.md，尚未实施或冻结，不登记新 EXP。
+
+同日后续准备（非正式实验）：DIR-01-COST-02已实施并通过Release/ASan各23/23及最终schema各2/2准入，冻结COST02-440a2e0f81208f81与 notes/benchmark-cost-protocol-20261027.md。证据 notes/cost02-preparation-20261027-01/；前段draft为历史设计，已另存正式版本。135进程矩阵尚未运行，不分配新EXP或填写性能结论，004原始数据不变。
 
 | 实验编号 | 目的 / 变量 | 状态 | 代码版本 | 主要结论 | 完整记录 / 输出入口 |
 | --- | --- | --- | --- | --- | --- |
-| <待填写：实验编号> | <待填写：验证问题> | <待填写：未运行/运行中/完成/失败/中断> | <待填写：commit 或快照标识> | <待填写：有证据的结论；无结果写“未得出”> | <待填写：记录相对路径或本文锚点；输出路径> |
+| EXP-20261027-005 | DIR-01-COST-RUN-01：独立阶段计时/请求分配正式补测 | 完成：135/135，独立核验通过 | COST02-440a2e0f81208f81；基线37981aa+保留的未提交诊断增量 | 诊断MERGE中catalog约90%–95%；请求字节518288/542136/544840，非物理堆；不与004混池 | experiments/EXP-20261027-005/record.md；results.md |
+| EXP-20261027-001 | DIR-01 首次启动 | 失败，测量进程 0 | 37981aa；SNAP-0b110bb7dee8280f | 快照目录创建缺陷，未产生性能值 | experiments/EXP-20261027-001/record.md |
+| EXP-20261027-002 | DIR-01 冻结矩阵重试 | 失败，测量进程 0 | 37981aa + 快照目录修复；实际快照见 source/hashes.json | powercfg 本地化输出解码失败 | experiments/EXP-20261027-002/record.md |
+| EXP-20261027-003 | DIR-01 冻结矩阵重试 | 失败：首个进程在加载输入时退出 | 37981aa + 快照目录/powercfg 修复；实际快照见 source/hashes.json | build/dsq 操作文件别名解析错误，未进入测量 | experiments/EXP-20261027-003/record.md；engineering-repair.md |
+| EXP-20261027-004 | DIR-01 冻结小规模矩阵 | 完成：210/210，独立完整性核验通过 | 37981aa + 工程修复；source/hashes.json：9449921fb89f2723… | time 递归 DSQ/MERGE 部分优势，非递归/MOVE 有反例；完整成本分解仍缺 | experiments/EXP-20261027-004/record.md；results.md |
+
+EXP-20261027-004 沿用原冻结矩阵，命令：`python code/scripts/run-dir01.py --project . --experiment-id EXP-20261027-004`。新增修复仅为 build/dsq 的操作文件别名映射及对应自检；修复后须 Release/ASan 门通过再启动。前三次失败全部保留。
+
+EXP-20261027-003 沿用原冻结协议与输入，命令：`python code/scripts/run-dir01.py --project . --experiment-id EXP-20261027-003`。001/002 均在启动测量前失败，分别保留。
+
+EXP-20261027-002 沿用下述协议和输入，运行命令改为 `python code/scripts/run-dir01.py --project . --experiment-id EXP-20261027-002`。仅修复源码快照父目录创建；失败的 001 完整保留。
+
+2026-10-27 启动登记：采用 PROTO-01-20261026，协议 SHA-256 `81ec16d0f07ea1c74715de2a4b6c049c9292766ddc0e36240a1668f3a21eed24`，输入 manifest SHA-256 `6a300c9d995084a5ae3782ae2d5b763e08056f900c0e23967749c5d3272fe1d8`。5 次独立进程重复、3 次预热、20 次测量，默认/插桩共 210 进程；单进程 120 秒、总计 30 分钟等停止上限保持冻结协议。运行命令：`python code/scripts/run-dir01.py --project . --experiment-id EXP-20261027-001`。此前正确性门日志与本次源码/输入哈希匹配，复用有效验证，不重跑既有正确性实验；运行内检查继续执行。数据为项目诊断工作负载，非作者原始工作负载，不加载向量。
 
 ## 3. 可重复使用的完整实验记录
+
+005 启动登记：用户于2026-10-27指定继续按下一步计划复现，执行已准备的PROTO-COST-02-20261027（SHA-256 589d3b6f7abe9123c3f094a04e54084e885a7d77114fc3ae74770f92dc56e066），30个源码文件及10个输入hash/Release诊断二进制已复核。5 run、3预热、20测量，105 phase+30 allocation进程，原资源上限不变。命令：`python code/scripts/run-cost02.py --project . --experiment-id EXP-20261027-005`。不读取向量、不接ANN、不扩规模，不重复004；成功、失败、中断均留存。
 
 复制下面整个记录块，每次填写实际信息。目录、命令与表格中的占位符均须替换后使用，命令栏不是可直接执行的脚本。
 

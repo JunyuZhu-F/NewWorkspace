@@ -1,0 +1,11 @@
+{
+  "status": "passed",
+  "passed_processes": 210,
+  "raw_counts": {
+    "build": 1380,
+    "dsq": 62100,
+    "dsm": 3450,
+    "space": 1380
+  },
+  "checks": "per-query frozen digest and independent per-ID oracle; full state after every DSM operation; rejection unchanged; existing Release/ASan gate recorded separately"
+}

@@ -1,0 +1,371 @@
+Start testing: Oct 27 01:05 中国标准时间
+----------------------------------------------------------
+1/23 Testing: phase_bitmap
+1/23 Test: phase_bitmap
+Command: "D:/NewWorkspace/projects/P001-鐩綍鎰熺煡/code/build-RelWithDebInfo-ASan-Cost/directory_tests_phase.exe" "bitmap"
+Directory: D:/NewWorkspace/projects/P001-鐩綍鎰熺煡/code/build-RelWithDebInfo-ASan-Cost
+"phase_bitmap" start time: Oct 27 01:05 中国标准时间
+Output:
+----------------------------------------------------------
+{"status":"pass","mode":"bitmap","logical_mutations":0,"scope_comparisons":0,"checks":9}
+<end of output>
+Test time =   0.09 sec
+----------------------------------------------------------
+Test Passed.
+"phase_bitmap" end time: Oct 27 01:05 中国标准时间
+"phase_bitmap" time elapsed: 00:00:00
+----------------------------------------------------------
+
+2/23 Testing: phase_fixed
+2/23 Test: phase_fixed
+Command: "D:/NewWorkspace/projects/P001-鐩綍鎰熺煡/code/build-RelWithDebInfo-ASan-Cost/directory_tests_phase.exe" "fixed"
+Directory: D:/NewWorkspace/projects/P001-鐩綍鎰熺煡/code/build-RelWithDebInfo-ASan-Cost
+"phase_fixed" start time: Oct 27 01:05 中国标准时间
+Output:
+----------------------------------------------------------
+{"status":"pass","mode":"fixed","logical_mutations":75,"scope_comparisons":3090,"checks":4611}
+<end of output>
+Test time =   0.26 sec
+----------------------------------------------------------
+Test Passed.
+"phase_fixed" end time: Oct 27 01:05 中国标准时间
+"phase_fixed" time elapsed: 00:00:00
+----------------------------------------------------------
+
+3/23 Testing: phase_random_7
+3/23 Test: phase_random_7
+Command: "D:/NewWorkspace/projects/P001-鐩綍鎰熺煡/code/build-RelWithDebInfo-ASan-Cost/directory_tests_phase.exe" "random" "7" "1000"
+Directory: D:/NewWorkspace/projects/P001-鐩綍鎰熺煡/code/build-RelWithDebInfo-ASan-Cost
+"phase_random_7" start time: Oct 27 01:05 中国标准时间
+Output:
+----------------------------------------------------------
+{"status":"pass","mode":"random","logical_mutations":816,"scope_comparisons":252588,"checks":267680}
+<end of output>
+Test time =  48.56 sec
+----------------------------------------------------------
+Test Passed.
+"phase_random_7" end time: Oct 27 01:06 中国标准时间
+"phase_random_7" time elapsed: 00:00:48
+----------------------------------------------------------
+
+4/23 Testing: phase_random_42
+4/23 Test: phase_random_42
+Command: "D:/NewWorkspace/projects/P001-鐩綍鎰熺煡/code/build-RelWithDebInfo-ASan-Cost/directory_tests_phase.exe" "random" "42" "1000"
+Directory: D:/NewWorkspace/projects/P001-鐩綍鎰熺煡/code/build-RelWithDebInfo-ASan-Cost
+"phase_random_42" start time: Oct 27 01:06 中国标准时间
+Output:
+----------------------------------------------------------
+{"status":"pass","mode":"random","logical_mutations":808,"scope_comparisons":243840,"checks":258932}
+<end of output>
+Test time =  43.36 sec
+----------------------------------------------------------
+Test Passed.
+"phase_random_42" end time: Oct 27 01:06 中国标准时间
+"phase_random_42" time elapsed: 00:00:43
+----------------------------------------------------------
+
+5/23 Testing: phase_random_2026
+5/23 Test: phase_random_2026
+Command: "D:/NewWorkspace/projects/P001-鐩綍鎰熺煡/code/build-RelWithDebInfo-ASan-Cost/directory_tests_phase.exe" "random" "2026" "1000"
+Directory: D:/NewWorkspace/projects/P001-鐩綍鎰熺煡/code/build-RelWithDebInfo-ASan-Cost
+"phase_random_2026" start time: Oct 27 01:06 中国标准时间
+Output:
+----------------------------------------------------------
+{"status":"pass","mode":"random","logical_mutations":785,"scope_comparisons":299292,"checks":314311}
+<end of output>
+Test time =  54.99 sec
+----------------------------------------------------------
+Test Passed.
+"phase_random_2026" end time: Oct 27 01:07 中国标准时间
+"phase_random_2026" time elapsed: 00:00:54
+----------------------------------------------------------
+
+6/23 Testing: phase_random_65536
+6/23 Test: phase_random_65536
+Command: "D:/NewWorkspace/projects/P001-鐩綍鎰熺煡/code/build-RelWithDebInfo-ASan-Cost/directory_tests_phase.exe" "random" "65536" "1000"
+Directory: D:/NewWorkspace/projects/P001-鐩綍鎰熺煡/code/build-RelWithDebInfo-ASan-Cost
+"phase_random_65536" start time: Oct 27 01:07 中国标准时间
+Output:
+----------------------------------------------------------
+{"status":"pass","mode":"random","logical_mutations":785,"scope_comparisons":257112,"checks":272099}
+<end of output>
+Test time =  43.28 sec
+----------------------------------------------------------
+Test Passed.
+"phase_random_65536" end time: Oct 27 01:08 中国标准时间
+"phase_random_65536" time elapsed: 00:00:43
+----------------------------------------------------------
+
+7/23 Testing: phase_pilot
+7/23 Test: phase_pilot
+Command: "D:/NewWorkspace/projects/P001-鐩綍鎰熺煡/code/build-RelWithDebInfo-ASan-Cost/directory_tests_phase.exe" "pilot" "D:\NewWorkspace\projects\P001-鐩綍鎰熺煡\code\scripts\..\build-RelWithDebInfo-ASan-Cost\time-pilot.tsv"
+Directory: D:/NewWorkspace/projects/P001-鐩綍鎰熺煡/code/build-RelWithDebInfo-ASan-Cost
+"phase_pilot" start time: Oct 27 01:08 中国标准时间
+Output:
+----------------------------------------------------------
+{"status":"pass","mode":"pilot","logical_mutations":3,"scope_comparisons":804,"checks":20867}
+<end of output>
+Test time =   4.99 sec
+----------------------------------------------------------
+Test Passed.
+"phase_pilot" end time: Oct 27 01:08 中国标准时间
+"phase_pilot" time elapsed: 00:00:04
+----------------------------------------------------------
+
+8/23 Testing: phase_admission
+8/23 Test: phase_admission
+Command: "D:/NewWorkspace/projects/P001-鐩綍鎰熺煡/code/build-RelWithDebInfo-ASan-Cost/directory_cost_phase.exe" "admit" "D:/NewWorkspace/projects/P001-鐩綍鎰熺煡/code/../notes/benchmark-fixtures-20261026-01" "D:/NewWorkspace/projects/P001-鐩綍鎰熺煡/code/build-RelWithDebInfo-ASan-Cost/cost-admission/phase"
+Directory: D:/NewWorkspace/projects/P001-鐩綍鎰熺煡/code/build-RelWithDebInfo-ASan-Cost
+"phase_admission" start time: Oct 27 01:08 中国标准时间
+Output:
+----------------------------------------------------------
+Cost admission passed; allocation_mode=0; no formal matrix run; evidence=D:/NewWorkspace/projects/P001-目录感知/code/build-RelWithDebInfo-ASan-Cost/cost-admission/phase/attempt-1793034521531
+<end of output>
+Test time =  25.14 sec
+----------------------------------------------------------
+Test Passed.
+"phase_admission" end time: Oct 27 01:09 中国标准时间
+"phase_admission" time elapsed: 00:00:25
+----------------------------------------------------------
+
+9/23 Testing: allocation_bitmap
+9/23 Test: allocation_bitmap
+Command: "D:/NewWorkspace/projects/P001-鐩綍鎰熺煡/code/build-RelWithDebInfo-ASan-Cost/directory_tests_allocation.exe" "bitmap"
+Directory: D:/NewWorkspace/projects/P001-鐩綍鎰熺煡/code/build-RelWithDebInfo-ASan-Cost
+"allocation_bitmap" start time: Oct 27 01:09 中国标准时间
+Output:
+----------------------------------------------------------
+{"status":"pass","mode":"bitmap","logical_mutations":0,"scope_comparisons":0,"checks":9}
+<end of output>
+Test time =   0.10 sec
+----------------------------------------------------------
+Test Passed.
+"allocation_bitmap" end time: Oct 27 01:09 中国标准时间
+"allocation_bitmap" time elapsed: 00:00:00
+----------------------------------------------------------
+
+10/23 Testing: allocation_fixed
+10/23 Test: allocation_fixed
+Command: "D:/NewWorkspace/projects/P001-鐩綍鎰熺煡/code/build-RelWithDebInfo-ASan-Cost/directory_tests_allocation.exe" "fixed"
+Directory: D:/NewWorkspace/projects/P001-鐩綍鎰熺煡/code/build-RelWithDebInfo-ASan-Cost
+"allocation_fixed" start time: Oct 27 01:09 中国标准时间
+Output:
+----------------------------------------------------------
+{"status":"pass","mode":"fixed","logical_mutations":75,"scope_comparisons":3090,"checks":4611}
+<end of output>
+Test time =   0.28 sec
+----------------------------------------------------------
+Test Passed.
+"allocation_fixed" end time: Oct 27 01:09 中国标准时间
+"allocation_fixed" time elapsed: 00:00:00
+----------------------------------------------------------
+
+11/23 Testing: allocation_random_7
+11/23 Test: allocation_random_7
+Command: "D:/NewWorkspace/projects/P001-鐩綍鎰熺煡/code/build-RelWithDebInfo-ASan-Cost/directory_tests_allocation.exe" "random" "7" "1000"
+Directory: D:/NewWorkspace/projects/P001-鐩綍鎰熺煡/code/build-RelWithDebInfo-ASan-Cost
+"allocation_random_7" start time: Oct 27 01:09 中国标准时间
+Output:
+----------------------------------------------------------
+{"status":"pass","mode":"random","logical_mutations":816,"scope_comparisons":252588,"checks":267680}
+<end of output>
+Test time =  61.24 sec
+----------------------------------------------------------
+Test Passed.
+"allocation_random_7" end time: Oct 27 01:10 中国标准时间
+"allocation_random_7" time elapsed: 00:01:01
+----------------------------------------------------------
+
+12/23 Testing: allocation_random_42
+12/23 Test: allocation_random_42
+Command: "D:/NewWorkspace/projects/P001-鐩綍鎰熺煡/code/build-RelWithDebInfo-ASan-Cost/directory_tests_allocation.exe" "random" "42" "1000"
+Directory: D:/NewWorkspace/projects/P001-鐩綍鎰熺煡/code/build-RelWithDebInfo-ASan-Cost
+"allocation_random_42" start time: Oct 27 01:10 中国标准时间
+Output:
+----------------------------------------------------------
+{"status":"pass","mode":"random","logical_mutations":808,"scope_comparisons":243840,"checks":258932}
+<end of output>
+Test time =  55.10 sec
+----------------------------------------------------------
+Test Passed.
+"allocation_random_42" end time: Oct 27 01:11 中国标准时间
+"allocation_random_42" time elapsed: 00:00:55
+----------------------------------------------------------
+
+13/23 Testing: allocation_random_2026
+13/23 Test: allocation_random_2026
+Command: "D:/NewWorkspace/projects/P001-鐩綍鎰熺煡/code/build-RelWithDebInfo-ASan-Cost/directory_tests_allocation.exe" "random" "2026" "1000"
+Directory: D:/NewWorkspace/projects/P001-鐩綍鎰熺煡/code/build-RelWithDebInfo-ASan-Cost
+"allocation_random_2026" start time: Oct 27 01:11 中国标准时间
+Output:
+----------------------------------------------------------
+{"status":"pass","mode":"random","logical_mutations":785,"scope_comparisons":299292,"checks":314311}
+<end of output>
+Test time =  75.87 sec
+----------------------------------------------------------
+Test Passed.
+"allocation_random_2026" end time: Oct 27 01:12 中国标准时间
+"allocation_random_2026" time elapsed: 00:01:15
+----------------------------------------------------------
+
+14/23 Testing: allocation_random_65536
+14/23 Test: allocation_random_65536
+Command: "D:/NewWorkspace/projects/P001-鐩綍鎰熺煡/code/build-RelWithDebInfo-ASan-Cost/directory_tests_allocation.exe" "random" "65536" "1000"
+Directory: D:/NewWorkspace/projects/P001-鐩綍鎰熺煡/code/build-RelWithDebInfo-ASan-Cost
+"allocation_random_65536" start time: Oct 27 01:12 中国标准时间
+Output:
+----------------------------------------------------------
+{"status":"pass","mode":"random","logical_mutations":785,"scope_comparisons":257112,"checks":272099}
+<end of output>
+Test time =  54.70 sec
+----------------------------------------------------------
+Test Passed.
+"allocation_random_65536" end time: Oct 27 01:13 中国标准时间
+"allocation_random_65536" time elapsed: 00:00:54
+----------------------------------------------------------
+
+15/23 Testing: allocation_pilot
+15/23 Test: allocation_pilot
+Command: "D:/NewWorkspace/projects/P001-鐩綍鎰熺煡/code/build-RelWithDebInfo-ASan-Cost/directory_tests_allocation.exe" "pilot" "D:\NewWorkspace\projects\P001-鐩綍鎰熺煡\code\scripts\..\build-RelWithDebInfo-ASan-Cost\time-pilot.tsv"
+Directory: D:/NewWorkspace/projects/P001-鐩綍鎰熺煡/code/build-RelWithDebInfo-ASan-Cost
+"allocation_pilot" start time: Oct 27 01:13 中国标准时间
+Output:
+----------------------------------------------------------
+{"status":"pass","mode":"pilot","logical_mutations":3,"scope_comparisons":804,"checks":20867}
+<end of output>
+Test time =   5.63 sec
+----------------------------------------------------------
+Test Passed.
+"allocation_pilot" end time: Oct 27 01:13 中国标准时间
+"allocation_pilot" time elapsed: 00:00:05
+----------------------------------------------------------
+
+16/23 Testing: allocation_admission
+16/23 Test: allocation_admission
+Command: "D:/NewWorkspace/projects/P001-鐩綍鎰熺煡/code/build-RelWithDebInfo-ASan-Cost/directory_cost_allocation.exe" "admit" "D:/NewWorkspace/projects/P001-鐩綍鎰熺煡/code/../notes/benchmark-fixtures-20261026-01" "D:/NewWorkspace/projects/P001-鐩綍鎰熺煡/code/build-RelWithDebInfo-ASan-Cost/cost-admission/allocation"
+Directory: D:/NewWorkspace/projects/P001-鐩綍鎰熺煡/code/build-RelWithDebInfo-ASan-Cost
+"allocation_admission" start time: Oct 27 01:13 中国标准时间
+Output:
+----------------------------------------------------------
+Cost admission passed; allocation_mode=1; no formal matrix run; evidence=D:/NewWorkspace/projects/P001-目录感知/code/build-RelWithDebInfo-ASan-Cost/cost-admission/allocation/attempt-1793034799578
+<end of output>
+Test time =  16.13 sec
+----------------------------------------------------------
+Test Passed.
+"allocation_admission" end time: Oct 27 01:13 中国标准时间
+"allocation_admission" time elapsed: 00:00:16
+----------------------------------------------------------
+
+17/23 Testing: bitmap_contract
+17/23 Test: bitmap_contract
+Command: "D:/NewWorkspace/projects/P001-鐩綍鎰熺煡/code/build-RelWithDebInfo-ASan-Cost/directory_core_tests.exe" "bitmap"
+Directory: D:/NewWorkspace/projects/P001-鐩綍鎰熺煡/code/build-RelWithDebInfo-ASan-Cost
+"bitmap_contract" start time: Oct 27 01:13 中国标准时间
+Output:
+----------------------------------------------------------
+{"status":"pass","mode":"bitmap","logical_mutations":0,"scope_comparisons":0,"checks":9}
+<end of output>
+Test time =   0.09 sec
+----------------------------------------------------------
+Test Passed.
+"bitmap_contract" end time: Oct 27 01:13 中国标准时间
+"bitmap_contract" time elapsed: 00:00:00
+----------------------------------------------------------
+
+18/23 Testing: fixed_semantics
+18/23 Test: fixed_semantics
+Command: "D:/NewWorkspace/projects/P001-鐩綍鎰熺煡/code/build-RelWithDebInfo-ASan-Cost/directory_core_tests.exe" "fixed"
+Directory: D:/NewWorkspace/projects/P001-鐩綍鎰熺煡/code/build-RelWithDebInfo-ASan-Cost
+"fixed_semantics" start time: Oct 27 01:13 中国标准时间
+Output:
+----------------------------------------------------------
+{"status":"pass","mode":"fixed","logical_mutations":75,"scope_comparisons":3090,"checks":4611}
+<end of output>
+Test time =   0.23 sec
+----------------------------------------------------------
+Test Passed.
+"fixed_semantics" end time: Oct 27 01:13 中国标准时间
+"fixed_semantics" time elapsed: 00:00:00
+----------------------------------------------------------
+
+19/23 Testing: random_7
+19/23 Test: random_7
+Command: "D:/NewWorkspace/projects/P001-鐩綍鎰熺煡/code/build-RelWithDebInfo-ASan-Cost/directory_core_tests.exe" "random" "7" "1000"
+Directory: D:/NewWorkspace/projects/P001-鐩綍鎰熺煡/code/build-RelWithDebInfo-ASan-Cost
+"random_7" start time: Oct 27 01:13 中国标准时间
+Output:
+----------------------------------------------------------
+{"status":"pass","mode":"random","logical_mutations":816,"scope_comparisons":252588,"checks":267680}
+<end of output>
+Test time =  50.81 sec
+----------------------------------------------------------
+Test Passed.
+"random_7" end time: Oct 27 01:14 中国标准时间
+"random_7" time elapsed: 00:00:50
+----------------------------------------------------------
+
+20/23 Testing: random_42
+20/23 Test: random_42
+Command: "D:/NewWorkspace/projects/P001-鐩綍鎰熺煡/code/build-RelWithDebInfo-ASan-Cost/directory_core_tests.exe" "random" "42" "1000"
+Directory: D:/NewWorkspace/projects/P001-鐩綍鎰熺煡/code/build-RelWithDebInfo-ASan-Cost
+"random_42" start time: Oct 27 01:14 中国标准时间
+Output:
+----------------------------------------------------------
+{"status":"pass","mode":"random","logical_mutations":808,"scope_comparisons":243840,"checks":258932}
+<end of output>
+Test time =  49.25 sec
+----------------------------------------------------------
+Test Passed.
+"random_42" end time: Oct 27 01:15 中国标准时间
+"random_42" time elapsed: 00:00:49
+----------------------------------------------------------
+
+21/23 Testing: random_2026
+21/23 Test: random_2026
+Command: "D:/NewWorkspace/projects/P001-鐩綍鎰熺煡/code/build-RelWithDebInfo-ASan-Cost/directory_core_tests.exe" "random" "2026" "1000"
+Directory: D:/NewWorkspace/projects/P001-鐩綍鎰熺煡/code/build-RelWithDebInfo-ASan-Cost
+"random_2026" start time: Oct 27 01:15 中国标准时间
+Output:
+----------------------------------------------------------
+{"status":"pass","mode":"random","logical_mutations":785,"scope_comparisons":299292,"checks":314311}
+<end of output>
+Test time =  55.09 sec
+----------------------------------------------------------
+Test Passed.
+"random_2026" end time: Oct 27 01:16 中国标准时间
+"random_2026" time elapsed: 00:00:55
+----------------------------------------------------------
+
+22/23 Testing: random_65536
+22/23 Test: random_65536
+Command: "D:/NewWorkspace/projects/P001-鐩綍鎰熺煡/code/build-RelWithDebInfo-ASan-Cost/directory_core_tests.exe" "random" "65536" "1000"
+Directory: D:/NewWorkspace/projects/P001-鐩綍鎰熺煡/code/build-RelWithDebInfo-ASan-Cost
+"random_65536" start time: Oct 27 01:16 中国标准时间
+Output:
+----------------------------------------------------------
+{"status":"pass","mode":"random","logical_mutations":785,"scope_comparisons":257112,"checks":272099}
+<end of output>
+Test time =  41.28 sec
+----------------------------------------------------------
+Test Passed.
+"random_65536" end time: Oct 27 01:16 中国标准时间
+"random_65536" time elapsed: 00:00:41
+----------------------------------------------------------
+
+23/23 Testing: time_pilot_correctness
+23/23 Test: time_pilot_correctness
+Command: "D:/NewWorkspace/projects/P001-鐩綍鎰熺煡/code/build-RelWithDebInfo-ASan-Cost/directory_core_tests.exe" "pilot" "D:/NewWorkspace/projects/P001-鐩綍鎰熺煡/code/build-RelWithDebInfo-ASan-Cost/time-pilot.tsv"
+Directory: D:/NewWorkspace/projects/P001-鐩綍鎰熺煡/code/build-RelWithDebInfo-ASan-Cost
+"time_pilot_correctness" start time: Oct 27 01:16 中国标准时间
+Output:
+----------------------------------------------------------
+{"status":"pass","mode":"pilot","logical_mutations":3,"scope_comparisons":804,"checks":20867}
+<end of output>
+Test time =   4.96 sec
+----------------------------------------------------------
+Test Passed.
+"time_pilot_correctness" end time: Oct 27 01:16 中国标准时间
+"time_pilot_correctness" time elapsed: 00:00:04
+----------------------------------------------------------
+
+End testing: Oct 27 01:16 中国标准时间

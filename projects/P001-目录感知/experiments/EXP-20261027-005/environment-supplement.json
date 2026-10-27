@@ -1,0 +1,12 @@
+{
+  "captured_after_run": "2026-10-27T01:41:49.2515787+08:00",
+  "os_caption": "Microsoft Windows 11 家庭版 中文版",
+  "os_version": "10.0.26300",
+  "cpu": "13th Gen Intel(R) Core(TM) i7-13650HX",
+  "physical_cores": 14,
+  "logical_processors": 20,
+  "total_visible_memory_kib": 16580472,
+  "available_after_run_kib": 5932648,
+  "git_base_commit": "37981aa4b187d69aa8ca8c56bbb068fe068de00d",
+  "source_and_binary_version": "see source/hashes.json; source uncommitted diagnostics preserved"
+}

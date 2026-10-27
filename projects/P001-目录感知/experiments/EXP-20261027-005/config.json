@@ -1,0 +1,30 @@
+{
+  "status": "running",
+  "processes": 135,
+  "phase_processes": 105,
+  "allocation_processes": 30,
+  "runs": 5,
+  "warmups": 3,
+  "measurements": 20,
+  "expected_rows": {
+    "phases": 33465,
+    "allocation": 3795,
+    "overhead": 135,
+    "cost-process": 135
+  },
+  "measurements_run": 0,
+  "experiment": "EXP-20261027-005",
+  "source_snapshot_hash": "440a2e0f81208f814bddf4b3f709b8739ec122471e8d32cae57f86418a1fb997",
+  "protocol_sha256": "589d3b6f7abe9123c3f094a04e54084e885a7d77114fc3ae74770f92dc56e066",
+  "stop_limits": {
+    "process_seconds": 120,
+    "total_seconds": 1800,
+    "private_bytes": 2147483648,
+    "system_available_bytes_min": 2147483648,
+    "output_bytes": 1073741824
+  },
+  "executable_hashes": {
+    "phase": "ae302a118d7b86ae174c0716bcbc210cd159a06e24847bf6b32b01c59b79b9f5",
+    "allocation": "7e177927f212164dab8c449e9431c1ea82e76e605bfa263344798f7e9c5624fa"
+  }
+}

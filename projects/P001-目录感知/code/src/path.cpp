@@ -1,6 +1,8 @@
 #include "directory/index.hpp"
+#include "directory/diagnostics.hpp"
 namespace directory {
 std::vector<std::string> parse_path(const std::string& path) {
+    DIR_PHASE(locate)
     if (path.empty() || path.front() != '/' || path.back() != '/' || path.find('\0') != std::string::npos)
         throw Error(ErrorCode::invalid_path, "Expected absolute directory path with trailing slash");
     if (path == "/") return {};

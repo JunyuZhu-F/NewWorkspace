@@ -1,0 +1,47 @@
+{
+  "status": "passed",
+  "scope": "admission only, not formal 135-process measurements",
+  "admissions": {
+    "release_phase": {
+      "status": "passed",
+      "admission_rows": 291,
+      "origin": "code\\build-Release-Cost\\cost-admission\\phase\\attempt-1793034948057",
+      "file_sha256": {
+        "overhead.jsonl": "b5ee5403f6dce4e1206fb2ff80e2aec4a337832613c6e9049e89945002af8641",
+        "phases.jsonl": "105e7cac2bd2885897a3322562012627f8f54bc4870dcb80d9ea7d18f642df69"
+      }
+    },
+    "release_allocation": {
+      "status": "passed",
+      "admission_rows": 33,
+      "origin": "code\\build-Release-Cost\\cost-admission\\allocation\\attempt-1793034950134",
+      "file_sha256": {
+        "allocation.jsonl": "5ac96e44ee025bed17c424ff68bd6055163f79d3263c40371e73ee791f57af69",
+        "overhead.jsonl": "392d0f7ea4d5e81527a42637031bd4a5fa6fc7ce72b2c3da33249fa07bc74271"
+      }
+    },
+    "asan_phase": {
+      "status": "passed",
+      "admission_rows": 291,
+      "origin": "code\\build-RelWithDebInfo-ASan-Cost\\cost-admission\\phase\\attempt-1793035084116",
+      "file_sha256": {
+        "overhead.jsonl": "6bb719f9beba05ffcdb58f7842fdd8a6ccc0da889db51f551791830a29a49d68",
+        "phases.jsonl": "2a7a67f7efe1cbbc92925da732ba38595b97b29ad93bc854f39f73eef63e8133"
+      }
+    },
+    "asan_allocation": {
+      "status": "passed",
+      "admission_rows": 33,
+      "origin": "code\\build-RelWithDebInfo-ASan-Cost\\cost-admission\\allocation\\attempt-1793035109200",
+      "file_sha256": {
+        "allocation.jsonl": "0449434aa7f38f577740ff2bf8ec39b51c1183f9e68d03de51f785cf2cb8187b",
+        "overhead.jsonl": "8346ec2ed9d1c6665cac12e41839ae373ea0fb7aebb539bcc5b18efb675cc98e"
+      }
+    }
+  },
+  "old_experiment_files_hashed_unchanged": 11,
+  "python_syntax": "passed",
+  "known_quantile_check": "passed",
+  "incomplete_summary_rejected": true,
+  "formal_matrix_processes_run": 0
+}

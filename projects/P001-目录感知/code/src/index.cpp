@@ -1,4 +1,5 @@
 #include "directory/index.hpp"
+#include "directory/diagnostics.hpp"
 #include <algorithm>
 #include <functional>
 #include <set>
@@ -10,13 +11,14 @@ namespace {
 struct Token { std::uint64_t uid; explicit Token(std::uint64_t id) : uid(id) {} };
 // Common bookkeeping only. Scope queries never inspect this catalog.
 class Catalog {
-    std::map<Id, Token*> entries_;
+    std::map<Id, Token*> entries_ DIR_CATALOG_INIT;
 public:
-    bool contains(Id id) const { return entries_.find(id)!=entries_.end(); }
-    void bind(Id id, Token* directory) {
+    DIR_CATALOG_CONTROL
+    bool contains(Id id) const { DIR_CATALOG_SCOPE return entries_.find(id)!=entries_.end(); }
+    void bind(Id id, Token* directory) { DIR_CATALOG_SCOPE
         if (!entries_.emplace(id,directory).second) throw Error(ErrorCode::duplicate_id,"Duplicate payload ID");
     }
-    void rebind(Token* source, Token* target, MaintenanceWork& work) {
+    void rebind(Token* source, Token* target, MaintenanceWork& work) { DIR_CATALOG_SCOPE
         // Deliberately simple common catalog; scans are reported separately.
         for (auto& entry : entries_) {
             ++work.catalog_entries_scanned;
@@ -43,8 +45,9 @@ class FlatIndex final : public Index {
     mutable QueryWork query_work_;
 #endif
     FlatNode& required(const std::string& path) const {
+        DIR_PHASE(locate)
         parse_path(path);
-        auto it=nodes_.find(path);
+        auto it=DIR_VALUE(locate, nodes_.find(path));
         if (it==nodes_.end()) throw Error(ErrorCode::missing_directory,"Directory missing: "+path);
         return *it->second;
     }
@@ -55,6 +58,7 @@ class FlatIndex final : public Index {
         return result;
     }
     void update_ancestors(const std::string& old_root,const std::string& new_root,const Bitmap& ids) {
+        DIR_CORE(ancestors)
         auto old_list=ancestor_paths(old_root), new_list=ancestor_paths(new_root);
         old_list.pop_back(); new_list.pop_back();
         std::set<std::string> old_set(old_list.begin(),old_list.end()),new_set(new_list.begin(),new_list.end());
@@ -81,6 +85,7 @@ public:
     }
     std::string name() const override { return offline_ ? "PE-OFFLINE" : "PE-ONLINE"; }
     void mkdir(const std::string& path) override {
+        DIR_CORE(directory)
         auto ancestors=ancestor_paths(path); // validate everything before mutation
         for (const auto& p:ancestors) if (!nodes_.count(p)) {
             auto node=std::make_unique<FlatNode>(next_uid_++,p);
@@ -90,6 +95,7 @@ public:
         }
     }
     void insert(Id id,const std::string& path) override {
+        DIR_CORE(directory)
         parse_path(path);
         if (catalog_.contains(id)) throw Error(ErrorCode::duplicate_id,"Duplicate payload ID");
         mkdir(path);
@@ -98,13 +104,14 @@ public:
         else nodes_.at(path)->posting.add(id);
     }
     QueryResult query(const std::string& path,bool recursive) const override {
+        DIR_CORE(directory)
 #ifdef DIRECTORY_ENABLE_WORK_COUNTERS
         query_work_={};
         query_work_.path_segments=parse_path(path).size();
 #else
         parse_path(path);
 #endif
-        auto it=nodes_.find(path);
+        auto it=DIR_VALUE(locate, nodes_.find(path));
         if (it==nodes_.end()) return {false,Bitmap{}};
         if (offline_) {
             Bitmap result=it->second->posting;
@@ -151,6 +158,7 @@ public:
         return {true,std::move(result)};
     }
     void move(const std::string& source,const std::string& destination) override {
+        DIR_CORE(directory)
         work_={};
         auto& source_node=required(source); required(destination);
         if (source=="/" || at_or_below(destination,source))
@@ -175,6 +183,7 @@ public:
         if (offline_) update_ancestors(source,new_root,ids);
     }
     void merge(const std::string& source,const std::string& target) override {
+        DIR_CORE(directory)
         work_={};
         auto& source_node=required(source); required(target);
         if (at_or_below(source,target) || at_or_below(target,source))
@@ -268,6 +277,7 @@ class TrieIndex final : public Index {
     mutable QueryWork query_work_;
 #endif
     TrieNode* locate(const std::string& path) const {
+        DIR_PHASE(locate)
         auto segments=parse_path(path);
         auto* current=root_.get();
         for (const auto& segment:segments) {
@@ -295,6 +305,7 @@ class TrieIndex final : public Index {
         return result;
     }
     static void update_ancestors(const std::set<TrieNode*>& old_set,const std::set<TrieNode*>& new_set,const Bitmap& ids) {
+        DIR_CORE(ancestors)
         for (auto* p:old_set) if (!new_set.count(p)) p->inclusive-=ids;
         for (auto* p:new_set) if (!old_set.count(p)) p->inclusive|=ids;
     }
@@ -314,6 +325,7 @@ class TrieIndex final : public Index {
 public:
     std::string name() const override { return "TrieHI"; }
     void mkdir(const std::string& path) override {
+        DIR_CORE(directory)
         auto segments=parse_path(path);
         auto* node=root_.get();
         for (const auto& segment:segments) {
@@ -326,6 +338,7 @@ public:
         }
     }
     void insert(Id id,const std::string& path) override {
+        DIR_CORE(directory)
         parse_path(path);
         if (catalog_.contains(id)) throw Error(ErrorCode::duplicate_id,"Duplicate payload ID");
         mkdir(path);
@@ -334,6 +347,7 @@ public:
         for (auto* p=node;p;p=p->parent) p->inclusive.add(id);
     }
     QueryResult query(const std::string& path,bool recursive) const override {
+        DIR_CORE(directory)
 #ifdef DIRECTORY_ENABLE_WORK_COUNTERS
         query_work_={};
         query_work_.path_segments=parse_path(path).size();
@@ -361,6 +375,7 @@ public:
         return {true,std::move(result)};
     }
     void move(const std::string& source,const std::string& destination) override {
+        DIR_CORE(directory)
         work_={};
         auto& s=required(source); auto& d=required(destination);
         if (&s==root_.get() || at_or_below(destination,source))
@@ -380,6 +395,7 @@ public:
         update_ancestors(old_anc,new_anc,ids);
     }
     void merge(const std::string& source,const std::string& target) override {
+        DIR_CORE(directory)
         work_={};
         auto& s=required(source); auto& d=required(target);
         if (at_or_below(source,target) || at_or_below(target,source))
@@ -452,6 +468,7 @@ public:
 };
 } // namespace
 std::unique_ptr<Index> make_index(Strategy strategy) {
+    DIR_CORE(directory)
     switch (strategy) {
         case Strategy::pe_online: return std::make_unique<FlatIndex>(false);
         case Strategy::pe_offline: return std::make_unique<FlatIndex>(true);

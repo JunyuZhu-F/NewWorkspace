@@ -1,5 +1,26 @@
 # 单父目录核心实现
 
+## DIR-01-COST-02 独立诊断工具
+
+2026-10-27：独立阶段计时和请求分配追踪已实施；准入证据见 `../notes/cost02-preparation-20261027-01/`。正式补测协议为 `../notes/benchmark-cost-protocol-20261027.md`。原默认性能输入/输出和 build-Release 二进制保持不变。
+
+```powershell
+& 'D:\NewWorkspace\projects\P001-目录感知\code\scripts\build-test.cmd' Release normal cost
+& 'D:\NewWorkspace\projects\P001-目录感知\code\scripts\build-test.cmd' RelWithDebInfo asan cost
+python code/scripts/run-cost02.py --plan-only
+```
+
+cost 构建位于独立的 build-Release-Cost / build-RelWithDebInfo-ASan-Cost，包含原7项、phase7项、allocation7项及两项准入自检，共23项 CTest。第四参数 `build-only` 只构建，`admission-only` 只跑两项诊断准入门；不得以准入自检记录替代正式性能。
+
+- `include/directory/diagnostics.hpp`、`src/diagnostics.cpp`：默认构建宏展开为空；阶段构建记录互斥的直接时间区间，allocation 构建记录实际请求字节及指针归属，两者不同时开启。
+- `tests/cost_diagnostics.cpp`：复用冻结输入和独立判定器，维护/查询逐ID核验；内存采样先于 oracle，拒绝不变、销毁归零。
+- `scripts/verify-cost-fixtures.py`：只读校验冻结输入，避免构建时反复生成共享别名。
+- `scripts/run-cost02.py`：135进程矩阵计划、准入快照/二进制核对、早期失败记录与资源停止；`--plan-only` 不测量。
+- `scripts/summarize-cost02.py`：严格完整性门与逐阶段/状态统计；缺行或失败不生成正常总结。
+- `scripts/add-cost-scopes.py`：本次一次性开发注解脚本，只能用于原基线，已有注解时会拒绝，不是日常构建入口。
+
+后续用户明确指定正式运行后，先登记唯一实际 EXP，再执行 `python code/scripts/run-cost02.py --project . --experiment-id <真实编号>`；当前没有新实验编号或135进程结果。诊断时间不是默认时间，requested bytes 不是物理堆/序列化大小；拒绝异常传播阶段覆盖不完整的限制见正式协议。
+
 这里是依据论文 §III/IV 独立编写的 C++17 目录元数据层，不是作者源码，也不是完整向量数据库。接口输入是 entry ID 与目录，输出为合法 ID 位图；不加载向量、训练模型或执行 ANN。
 
 实现包括 PE-ONLINE、PE-OFFLINE、TrieHI，以及与索引结构独立的测试判定器。当前范围是一条目一个逻辑父目录、串行合法 MOVE/MERGE。真实类别多归属协议仍见项目 STATE/GAP 清单。

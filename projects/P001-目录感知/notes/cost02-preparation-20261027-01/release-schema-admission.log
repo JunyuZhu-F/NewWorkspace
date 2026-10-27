@@ -1,0 +1,9 @@
+Test project D:/NewWorkspace/projects/P001-目录感知/code/build-Release-Cost
+    Start  8: phase_admission
+1/2 Test  #8: phase_admission ..................   Passed    2.07 sec
+    Start 16: allocation_admission
+2/2 Test #16: allocation_admission .............   Passed    1.09 sec
+
+100% tests passed, 0 tests failed out of 2
+
+Total Test time (real) =   3.18 sec

@@ -1,0 +1,22 @@
+{
+  "captured_at": "2026-10-26T16:20:06.482997+00:00",
+  "platform": "Windows-10-10.0.26300-SP0",
+  "python": "3.9.13 (main, Aug 25 2022, 23:51:50) [MSC v.1916 64 bit (AMD64)]",
+  "processor": "Intel64 Family 6 Model 183 Stepping 1, GenuineIntel",
+  "processor_identifier": "Intel64 Family 6 Model 183 Stepping 1, GenuineIntel",
+  "logical_cpu_count": 20,
+  "system_available_physical_bytes": 6543089664,
+  "compiler_version": "19.51.36260.0",
+  "release_cmake_cache": {
+    "CMAKE_BUILD_TYPE:STRING": "Release",
+    "CMAKE_CXX_COMPILER:FILEPATH": "D:/Microsoft Visual Studio/VC/Tools/MSVC/14.51.36231/bin/Hostx64/x64/cl.exe",
+    "DIRECTORY_ENABLE_ASAN:BOOL": "OFF"
+  },
+  "build_command": "cmd /c code/scripts/build-test.cmd Release",
+  "power_scheme": "电源方案 GUID: 52521609-efc9-4268-b9ba-67dea73f18b2  (野兽模式)",
+  "power_scheme_raw_stdout_hex": "e794b5e6ba90e696b9e6a18820475549443a2035323532313630392d656663392d343236382d623962612d363764656137336631386232202028e9878ee585bde6a8a1e5bc8f29",
+  "power_scheme_raw_stderr_hex": "",
+  "power_scheme_exit_code": 0,
+  "baseline_affinity_or_priority_changed": false,
+  "background_load": "not_controlled; available memory recorded; no idle-machine claim"
+}

@@ -1,0 +1,4511 @@
+[
+  {
+    "query_id": 0,
+    "raw_constraint": "2014/",
+    "path": "/2014/",
+    "exists": true,
+    "recursive_members": 97517,
+    "direct_members": 0,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 1,
+    "raw_constraint": "2022/2/",
+    "path": "/2022/2/",
+    "exists": true,
+    "recursive_members": 14038,
+    "direct_members": 14038,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 2,
+    "raw_constraint": "2024/11/",
+    "path": "/2024/11/",
+    "exists": true,
+    "recursive_members": 19951,
+    "direct_members": 19951,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 3,
+    "raw_constraint": "2025/4/",
+    "path": "/2025/4/",
+    "exists": true,
+    "recursive_members": 21857,
+    "direct_members": 21857,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 5,
+    "raw_constraint": "2014/1/",
+    "path": "/2014/1/",
+    "exists": true,
+    "recursive_members": 8294,
+    "direct_members": 8294,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 6,
+    "raw_constraint": "2021/1/",
+    "path": "/2021/1/",
+    "exists": true,
+    "recursive_members": 12747,
+    "direct_members": 12747,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 9,
+    "raw_constraint": "2017/",
+    "path": "/2017/",
+    "exists": true,
+    "recursive_members": 123523,
+    "direct_members": 0,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 10,
+    "raw_constraint": "2016/5/",
+    "path": "/2016/5/",
+    "exists": true,
+    "recursive_members": 9792,
+    "direct_members": 9792,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 17,
+    "raw_constraint": "2025/5/",
+    "path": "/2025/5/",
+    "exists": true,
+    "recursive_members": 24878,
+    "direct_members": 24878,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 19,
+    "raw_constraint": "2013/12/",
+    "path": "/2013/12/",
+    "exists": true,
+    "recursive_members": 7878,
+    "direct_members": 7878,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 20,
+    "raw_constraint": "2025/2/",
+    "path": "/2025/2/",
+    "exists": true,
+    "recursive_members": 21321,
+    "direct_members": 21321,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 22,
+    "raw_constraint": "2023/",
+    "path": "/2023/",
+    "exists": true,
+    "recursive_members": 208492,
+    "direct_members": 0,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 23,
+    "raw_constraint": "2016/3/",
+    "path": "/2016/3/",
+    "exists": true,
+    "recursive_members": 9746,
+    "direct_members": 9746,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 28,
+    "raw_constraint": "2024/5/",
+    "path": "/2024/5/",
+    "exists": true,
+    "recursive_members": 21076,
+    "direct_members": 21076,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 30,
+    "raw_constraint": "2022/",
+    "path": "/2022/",
+    "exists": true,
+    "recursive_members": 185692,
+    "direct_members": 0,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 31,
+    "raw_constraint": "2008/",
+    "path": "/2008/",
+    "exists": true,
+    "recursive_members": 58915,
+    "direct_members": 0,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 32,
+    "raw_constraint": "2012/3/",
+    "path": "/2012/3/",
+    "exists": true,
+    "recursive_members": 6903,
+    "direct_members": 6903,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 35,
+    "raw_constraint": "2011/",
+    "path": "/2011/",
+    "exists": true,
+    "recursive_members": 76574,
+    "direct_members": 0,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 36,
+    "raw_constraint": "2023/",
+    "path": "/2023/",
+    "exists": true,
+    "recursive_members": 208492,
+    "direct_members": 0,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 37,
+    "raw_constraint": "2025/",
+    "path": "/2025/",
+    "exists": true,
+    "recursive_members": 138847,
+    "direct_members": 0,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 38,
+    "raw_constraint": "2020/",
+    "path": "/2020/",
+    "exists": true,
+    "recursive_members": 178329,
+    "direct_members": 0,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 39,
+    "raw_constraint": "2021/",
+    "path": "/2021/",
+    "exists": true,
+    "recursive_members": 181630,
+    "direct_members": 0,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 40,
+    "raw_constraint": "2024/",
+    "path": "/2024/",
+    "exists": true,
+    "recursive_members": 244028,
+    "direct_members": 0,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 41,
+    "raw_constraint": "2016/1/",
+    "path": "/2016/1/",
+    "exists": true,
+    "recursive_members": 8251,
+    "direct_members": 8251,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 42,
+    "raw_constraint": "2002/",
+    "path": "/2002/",
+    "exists": true,
+    "recursive_members": 36102,
+    "direct_members": 0,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 44,
+    "raw_constraint": "2012/",
+    "path": "/2012/",
+    "exists": true,
+    "recursive_members": 84603,
+    "direct_members": 0,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 45,
+    "raw_constraint": "2023/",
+    "path": "/2023/",
+    "exists": true,
+    "recursive_members": 208492,
+    "direct_members": 0,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 47,
+    "raw_constraint": "2018/",
+    "path": "/2018/",
+    "exists": true,
+    "recursive_members": 140616,
+    "direct_members": 0,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 51,
+    "raw_constraint": "2020/",
+    "path": "/2020/",
+    "exists": true,
+    "recursive_members": 178329,
+    "direct_members": 0,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 52,
+    "raw_constraint": "1997/1/",
+    "path": "/1997/1/",
+    "exists": true,
+    "recursive_members": 1308,
+    "direct_members": 1308,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 54,
+    "raw_constraint": "2010/3/",
+    "path": "/2010/3/",
+    "exists": true,
+    "recursive_members": 6133,
+    "direct_members": 6133,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 55,
+    "raw_constraint": "2023/",
+    "path": "/2023/",
+    "exists": true,
+    "recursive_members": 208492,
+    "direct_members": 0,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 58,
+    "raw_constraint": "2023/8/",
+    "path": "/2023/8/",
+    "exists": true,
+    "recursive_members": 16912,
+    "direct_members": 16912,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 59,
+    "raw_constraint": "2021/9/",
+    "path": "/2021/9/",
+    "exists": true,
+    "recursive_members": 15322,
+    "direct_members": 15322,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 61,
+    "raw_constraint": "2024/",
+    "path": "/2024/",
+    "exists": true,
+    "recursive_members": 244028,
+    "direct_members": 0,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 63,
+    "raw_constraint": "2004/",
+    "path": "/2004/",
+    "exists": true,
+    "recursive_members": 43708,
+    "direct_members": 0,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 64,
+    "raw_constraint": "2013/",
+    "path": "/2013/",
+    "exists": true,
+    "recursive_members": 92641,
+    "direct_members": 0,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 69,
+    "raw_constraint": "2015/",
+    "path": "/2015/",
+    "exists": true,
+    "recursive_members": 105280,
+    "direct_members": 0,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 70,
+    "raw_constraint": "1999/11/",
+    "path": "/1999/11/",
+    "exists": true,
+    "recursive_members": 2517,
+    "direct_members": 2517,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 72,
+    "raw_constraint": "2008/",
+    "path": "/2008/",
+    "exists": true,
+    "recursive_members": 58915,
+    "direct_members": 0,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 74,
+    "raw_constraint": "2024/",
+    "path": "/2024/",
+    "exists": true,
+    "recursive_members": 244028,
+    "direct_members": 0,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 77,
+    "raw_constraint": "2021/",
+    "path": "/2021/",
+    "exists": true,
+    "recursive_members": 181630,
+    "direct_members": 0,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 78,
+    "raw_constraint": "2025/5/",
+    "path": "/2025/5/",
+    "exists": true,
+    "recursive_members": 24878,
+    "direct_members": 24878,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 79,
+    "raw_constraint": "2024/",
+    "path": "/2024/",
+    "exists": true,
+    "recursive_members": 244028,
+    "direct_members": 0,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 81,
+    "raw_constraint": "2024/",
+    "path": "/2024/",
+    "exists": true,
+    "recursive_members": 244028,
+    "direct_members": 0,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 82,
+    "raw_constraint": "2023/",
+    "path": "/2023/",
+    "exists": true,
+    "recursive_members": 208492,
+    "direct_members": 0,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 85,
+    "raw_constraint": "2021/",
+    "path": "/2021/",
+    "exists": true,
+    "recursive_members": 181630,
+    "direct_members": 0,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 87,
+    "raw_constraint": "2022/2/",
+    "path": "/2022/2/",
+    "exists": true,
+    "recursive_members": 14038,
+    "direct_members": 14038,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 90,
+    "raw_constraint": "2012/6/",
+    "path": "/2012/6/",
+    "exists": true,
+    "recursive_members": 7121,
+    "direct_members": 7121,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 96,
+    "raw_constraint": "2020/",
+    "path": "/2020/",
+    "exists": true,
+    "recursive_members": 178329,
+    "direct_members": 0,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 97,
+    "raw_constraint": "2023/8/",
+    "path": "/2023/8/",
+    "exists": true,
+    "recursive_members": 16912,
+    "direct_members": 16912,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 101,
+    "raw_constraint": "1998/",
+    "path": "/1998/",
+    "exists": true,
+    "recursive_members": 24167,
+    "direct_members": 0,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 105,
+    "raw_constraint": "2022/6/",
+    "path": "/2022/6/",
+    "exists": true,
+    "recursive_members": 15478,
+    "direct_members": 15478,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 111,
+    "raw_constraint": "2013/10/",
+    "path": "/2013/10/",
+    "exists": true,
+    "recursive_members": 8658,
+    "direct_members": 8658,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 112,
+    "raw_constraint": "2021/",
+    "path": "/2021/",
+    "exists": true,
+    "recursive_members": 181630,
+    "direct_members": 0,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 115,
+    "raw_constraint": "2010/10/",
+    "path": "/2010/10/",
+    "exists": true,
+    "recursive_members": 6304,
+    "direct_members": 6304,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 121,
+    "raw_constraint": "2019/",
+    "path": "/2019/",
+    "exists": true,
+    "recursive_members": 155866,
+    "direct_members": 0,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 122,
+    "raw_constraint": "2007/",
+    "path": "/2007/",
+    "exists": true,
+    "recursive_members": 55638,
+    "direct_members": 0,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 123,
+    "raw_constraint": "2001/",
+    "path": "/2001/",
+    "exists": true,
+    "recursive_members": 33197,
+    "direct_members": 0,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 124,
+    "raw_constraint": "2015/4/",
+    "path": "/2015/4/",
+    "exists": true,
+    "recursive_members": 8367,
+    "direct_members": 8367,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 125,
+    "raw_constraint": "1998/",
+    "path": "/1998/",
+    "exists": true,
+    "recursive_members": 24167,
+    "direct_members": 0,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 126,
+    "raw_constraint": "2023/4/",
+    "path": "/2023/4/",
+    "exists": true,
+    "recursive_members": 15010,
+    "direct_members": 15010,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 129,
+    "raw_constraint": "2014/",
+    "path": "/2014/",
+    "exists": true,
+    "recursive_members": 97517,
+    "direct_members": 0,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 132,
+    "raw_constraint": "2017/",
+    "path": "/2017/",
+    "exists": true,
+    "recursive_members": 123523,
+    "direct_members": 0,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 134,
+    "raw_constraint": "2023/",
+    "path": "/2023/",
+    "exists": true,
+    "recursive_members": 208492,
+    "direct_members": 0,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 135,
+    "raw_constraint": "2015/",
+    "path": "/2015/",
+    "exists": true,
+    "recursive_members": 105280,
+    "direct_members": 0,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 137,
+    "raw_constraint": "2016/",
+    "path": "/2016/",
+    "exists": true,
+    "recursive_members": 113380,
+    "direct_members": 0,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 141,
+    "raw_constraint": "2015/12/",
+    "path": "/2015/12/",
+    "exists": true,
+    "recursive_members": 9376,
+    "direct_members": 9376,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 142,
+    "raw_constraint": "2023/12/",
+    "path": "/2023/12/",
+    "exists": true,
+    "recursive_members": 17748,
+    "direct_members": 17748,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 147,
+    "raw_constraint": "2006/",
+    "path": "/2006/",
+    "exists": true,
+    "recursive_members": 50224,
+    "direct_members": 0,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 148,
+    "raw_constraint": "2016/3/",
+    "path": "/2016/3/",
+    "exists": true,
+    "recursive_members": 9746,
+    "direct_members": 9746,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 149,
+    "raw_constraint": "2002/",
+    "path": "/2002/",
+    "exists": true,
+    "recursive_members": 36102,
+    "direct_members": 0,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 150,
+    "raw_constraint": "2021/",
+    "path": "/2021/",
+    "exists": true,
+    "recursive_members": 181630,
+    "direct_members": 0,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 152,
+    "raw_constraint": "2025/2/",
+    "path": "/2025/2/",
+    "exists": true,
+    "recursive_members": 21321,
+    "direct_members": 21321,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 153,
+    "raw_constraint": "2015/",
+    "path": "/2015/",
+    "exists": true,
+    "recursive_members": 105280,
+    "direct_members": 0,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 154,
+    "raw_constraint": "2017/11/",
+    "path": "/2017/11/",
+    "exists": true,
+    "recursive_members": 11589,
+    "direct_members": 11589,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 157,
+    "raw_constraint": "2002/2/",
+    "path": "/2002/2/",
+    "exists": true,
+    "recursive_members": 2564,
+    "direct_members": 2564,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 159,
+    "raw_constraint": "2024/",
+    "path": "/2024/",
+    "exists": true,
+    "recursive_members": 244028,
+    "direct_members": 0,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 160,
+    "raw_constraint": "2021/",
+    "path": "/2021/",
+    "exists": true,
+    "recursive_members": 181630,
+    "direct_members": 0,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 161,
+    "raw_constraint": "2012/",
+    "path": "/2012/",
+    "exists": true,
+    "recursive_members": 84603,
+    "direct_members": 0,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 162,
+    "raw_constraint": "2011/9/",
+    "path": "/2011/9/",
+    "exists": true,
+    "recursive_members": 6937,
+    "direct_members": 6937,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 164,
+    "raw_constraint": "2024/",
+    "path": "/2024/",
+    "exists": true,
+    "recursive_members": 244028,
+    "direct_members": 0,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 166,
+    "raw_constraint": "2020/",
+    "path": "/2020/",
+    "exists": true,
+    "recursive_members": 178329,
+    "direct_members": 0,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 167,
+    "raw_constraint": "2021/",
+    "path": "/2021/",
+    "exists": true,
+    "recursive_members": 181630,
+    "direct_members": 0,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 168,
+    "raw_constraint": "2007/",
+    "path": "/2007/",
+    "exists": true,
+    "recursive_members": 55638,
+    "direct_members": 0,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 171,
+    "raw_constraint": "2025/2/",
+    "path": "/2025/2/",
+    "exists": true,
+    "recursive_members": 21321,
+    "direct_members": 21321,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 172,
+    "raw_constraint": "2020/",
+    "path": "/2020/",
+    "exists": true,
+    "recursive_members": 178329,
+    "direct_members": 0,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 173,
+    "raw_constraint": "2021/9/",
+    "path": "/2021/9/",
+    "exists": true,
+    "recursive_members": 15322,
+    "direct_members": 15322,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 174,
+    "raw_constraint": "2023/",
+    "path": "/2023/",
+    "exists": true,
+    "recursive_members": 208492,
+    "direct_members": 0,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 177,
+    "raw_constraint": "2020/",
+    "path": "/2020/",
+    "exists": true,
+    "recursive_members": 178329,
+    "direct_members": 0,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 178,
+    "raw_constraint": "2021/",
+    "path": "/2021/",
+    "exists": true,
+    "recursive_members": 181630,
+    "direct_members": 0,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 180,
+    "raw_constraint": "2002/",
+    "path": "/2002/",
+    "exists": true,
+    "recursive_members": 36102,
+    "direct_members": 0,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 181,
+    "raw_constraint": "2016/9/",
+    "path": "/2016/9/",
+    "exists": true,
+    "recursive_members": 9869,
+    "direct_members": 9869,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 185,
+    "raw_constraint": "2012/9/",
+    "path": "/2012/9/",
+    "exists": true,
+    "recursive_members": 6630,
+    "direct_members": 6630,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 194,
+    "raw_constraint": "2024/",
+    "path": "/2024/",
+    "exists": true,
+    "recursive_members": 244028,
+    "direct_members": 0,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 195,
+    "raw_constraint": "2020/",
+    "path": "/2020/",
+    "exists": true,
+    "recursive_members": 178329,
+    "direct_members": 0,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 196,
+    "raw_constraint": "2007/",
+    "path": "/2007/",
+    "exists": true,
+    "recursive_members": 55638,
+    "direct_members": 0,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 197,
+    "raw_constraint": "2000/10/",
+    "path": "/2000/10/",
+    "exists": true,
+    "recursive_members": 2910,
+    "direct_members": 2910,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 199,
+    "raw_constraint": "2016/",
+    "path": "/2016/",
+    "exists": true,
+    "recursive_members": 113380,
+    "direct_members": 0,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 201,
+    "raw_constraint": "2013/",
+    "path": "/2013/",
+    "exists": true,
+    "recursive_members": 92641,
+    "direct_members": 0,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 202,
+    "raw_constraint": "2014/6/",
+    "path": "/2014/6/",
+    "exists": true,
+    "recursive_members": 7874,
+    "direct_members": 7874,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 204,
+    "raw_constraint": "1999/3/",
+    "path": "/1999/3/",
+    "exists": true,
+    "recursive_members": 2393,
+    "direct_members": 2393,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 205,
+    "raw_constraint": "2007/1/",
+    "path": "/2007/1/",
+    "exists": true,
+    "recursive_members": 4653,
+    "direct_members": 4653,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 208,
+    "raw_constraint": "2012/1/",
+    "path": "/2012/1/",
+    "exists": true,
+    "recursive_members": 6687,
+    "direct_members": 6687,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 209,
+    "raw_constraint": "2013/8/",
+    "path": "/2013/8/",
+    "exists": true,
+    "recursive_members": 6833,
+    "direct_members": 6833,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 214,
+    "raw_constraint": "2017/",
+    "path": "/2017/",
+    "exists": true,
+    "recursive_members": 123523,
+    "direct_members": 0,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 215,
+    "raw_constraint": "2016/5/",
+    "path": "/2016/5/",
+    "exists": true,
+    "recursive_members": 9792,
+    "direct_members": 9792,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 216,
+    "raw_constraint": "2024/6/",
+    "path": "/2024/6/",
+    "exists": true,
+    "recursive_members": 20099,
+    "direct_members": 20099,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 217,
+    "raw_constraint": "2009/",
+    "path": "/2009/",
+    "exists": true,
+    "recursive_members": 64046,
+    "direct_members": 0,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 218,
+    "raw_constraint": "2020/5/",
+    "path": "/2020/5/",
+    "exists": true,
+    "recursive_members": 14719,
+    "direct_members": 14719,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 221,
+    "raw_constraint": "2005/7/",
+    "path": "/2005/7/",
+    "exists": true,
+    "recursive_members": 3839,
+    "direct_members": 3839,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 223,
+    "raw_constraint": "2017/",
+    "path": "/2017/",
+    "exists": true,
+    "recursive_members": 123523,
+    "direct_members": 0,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 224,
+    "raw_constraint": "2019/",
+    "path": "/2019/",
+    "exists": true,
+    "recursive_members": 155866,
+    "direct_members": 0,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 225,
+    "raw_constraint": "2012/4/",
+    "path": "/2012/4/",
+    "exists": true,
+    "recursive_members": 6739,
+    "direct_members": 6739,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 226,
+    "raw_constraint": "2001/",
+    "path": "/2001/",
+    "exists": true,
+    "recursive_members": 33197,
+    "direct_members": 0,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 229,
+    "raw_constraint": "2019/",
+    "path": "/2019/",
+    "exists": true,
+    "recursive_members": 155866,
+    "direct_members": 0,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 235,
+    "raw_constraint": "2018/6/",
+    "path": "/2018/6/",
+    "exists": true,
+    "recursive_members": 11568,
+    "direct_members": 11568,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 236,
+    "raw_constraint": "2020/",
+    "path": "/2020/",
+    "exists": true,
+    "recursive_members": 178329,
+    "direct_members": 0,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 237,
+    "raw_constraint": "2023/8/",
+    "path": "/2023/8/",
+    "exists": true,
+    "recursive_members": 16912,
+    "direct_members": 16912,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 240,
+    "raw_constraint": "2015/",
+    "path": "/2015/",
+    "exists": true,
+    "recursive_members": 105280,
+    "direct_members": 0,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 242,
+    "raw_constraint": "2015/9/",
+    "path": "/2015/9/",
+    "exists": true,
+    "recursive_members": 9318,
+    "direct_members": 9318,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 243,
+    "raw_constraint": "2023/",
+    "path": "/2023/",
+    "exists": true,
+    "recursive_members": 208492,
+    "direct_members": 0,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 245,
+    "raw_constraint": "2002/10/",
+    "path": "/2002/10/",
+    "exists": true,
+    "recursive_members": 3530,
+    "direct_members": 3530,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 247,
+    "raw_constraint": "2025/1/",
+    "path": "/2025/1/",
+    "exists": true,
+    "recursive_members": 19407,
+    "direct_members": 19407,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 250,
+    "raw_constraint": "2021/",
+    "path": "/2021/",
+    "exists": true,
+    "recursive_members": 181630,
+    "direct_members": 0,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 252,
+    "raw_constraint": "2004/",
+    "path": "/2004/",
+    "exists": true,
+    "recursive_members": 43708,
+    "direct_members": 0,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 253,
+    "raw_constraint": "2016/",
+    "path": "/2016/",
+    "exists": true,
+    "recursive_members": 113380,
+    "direct_members": 0,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 257,
+    "raw_constraint": "2006/",
+    "path": "/2006/",
+    "exists": true,
+    "recursive_members": 50224,
+    "direct_members": 0,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 262,
+    "raw_constraint": "2010/2/",
+    "path": "/2010/2/",
+    "exists": true,
+    "recursive_members": 5048,
+    "direct_members": 5048,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 264,
+    "raw_constraint": "2016/11/",
+    "path": "/2016/11/",
+    "exists": true,
+    "recursive_members": 10362,
+    "direct_members": 10362,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 266,
+    "raw_constraint": "2022/11/",
+    "path": "/2022/11/",
+    "exists": true,
+    "recursive_members": 17271,
+    "direct_members": 17271,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 267,
+    "raw_constraint": "2019/7/",
+    "path": "/2019/7/",
+    "exists": true,
+    "recursive_members": 13634,
+    "direct_members": 13634,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 272,
+    "raw_constraint": "2022/",
+    "path": "/2022/",
+    "exists": true,
+    "recursive_members": 185692,
+    "direct_members": 0,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 273,
+    "raw_constraint": "2010/12/",
+    "path": "/2010/12/",
+    "exists": true,
+    "recursive_members": 6045,
+    "direct_members": 6045,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 279,
+    "raw_constraint": "2022/",
+    "path": "/2022/",
+    "exists": true,
+    "recursive_members": 185692,
+    "direct_members": 0,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 284,
+    "raw_constraint": "2025/",
+    "path": "/2025/",
+    "exists": true,
+    "recursive_members": 138847,
+    "direct_members": 0,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 286,
+    "raw_constraint": "2023/",
+    "path": "/2023/",
+    "exists": true,
+    "recursive_members": 208492,
+    "direct_members": 0,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 290,
+    "raw_constraint": "2017/",
+    "path": "/2017/",
+    "exists": true,
+    "recursive_members": 123523,
+    "direct_members": 0,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 291,
+    "raw_constraint": "2019/9/",
+    "path": "/2019/9/",
+    "exists": true,
+    "recursive_members": 13881,
+    "direct_members": 13881,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 293,
+    "raw_constraint": "2020/10/",
+    "path": "/2020/10/",
+    "exists": true,
+    "recursive_members": 16418,
+    "direct_members": 16418,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 294,
+    "raw_constraint": "2009/3/",
+    "path": "/2009/3/",
+    "exists": true,
+    "recursive_members": 5547,
+    "direct_members": 5547,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 295,
+    "raw_constraint": "2010/",
+    "path": "/2010/",
+    "exists": true,
+    "recursive_members": 70125,
+    "direct_members": 0,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 298,
+    "raw_constraint": "2010/",
+    "path": "/2010/",
+    "exists": true,
+    "recursive_members": 70125,
+    "direct_members": 0,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 299,
+    "raw_constraint": "2020/",
+    "path": "/2020/",
+    "exists": true,
+    "recursive_members": 178329,
+    "direct_members": 0,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 300,
+    "raw_constraint": "2010/9/",
+    "path": "/2010/9/",
+    "exists": true,
+    "recursive_members": 6232,
+    "direct_members": 6232,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 301,
+    "raw_constraint": "2016/5/",
+    "path": "/2016/5/",
+    "exists": true,
+    "recursive_members": 9792,
+    "direct_members": 9792,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 302,
+    "raw_constraint": "2025/",
+    "path": "/2025/",
+    "exists": true,
+    "recursive_members": 138847,
+    "direct_members": 0,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 305,
+    "raw_constraint": "2022/12/",
+    "path": "/2022/12/",
+    "exists": true,
+    "recursive_members": 14887,
+    "direct_members": 14887,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 307,
+    "raw_constraint": "2020/",
+    "path": "/2020/",
+    "exists": true,
+    "recursive_members": 178329,
+    "direct_members": 0,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 308,
+    "raw_constraint": "2018/5/",
+    "path": "/2018/5/",
+    "exists": true,
+    "recursive_members": 12595,
+    "direct_members": 12595,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 309,
+    "raw_constraint": "2024/10/",
+    "path": "/2024/10/",
+    "exists": true,
+    "recursive_members": 24226,
+    "direct_members": 24226,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 310,
+    "raw_constraint": "2025/5/",
+    "path": "/2025/5/",
+    "exists": true,
+    "recursive_members": 24878,
+    "direct_members": 24878,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 313,
+    "raw_constraint": "2016/6/",
+    "path": "/2016/6/",
+    "exists": true,
+    "recursive_members": 9644,
+    "direct_members": 9644,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 314,
+    "raw_constraint": "2023/11/",
+    "path": "/2023/11/",
+    "exists": true,
+    "recursive_members": 18841,
+    "direct_members": 18841,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 315,
+    "raw_constraint": "2003/",
+    "path": "/2003/",
+    "exists": true,
+    "recursive_members": 39409,
+    "direct_members": 0,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 316,
+    "raw_constraint": "2010/11/",
+    "path": "/2010/11/",
+    "exists": true,
+    "recursive_members": 6676,
+    "direct_members": 6676,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 318,
+    "raw_constraint": "2011/1/",
+    "path": "/2011/1/",
+    "exists": true,
+    "recursive_members": 6081,
+    "direct_members": 6081,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 320,
+    "raw_constraint": "2020/6/",
+    "path": "/2020/6/",
+    "exists": true,
+    "recursive_members": 17000,
+    "direct_members": 17000,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 322,
+    "raw_constraint": "2020/",
+    "path": "/2020/",
+    "exists": true,
+    "recursive_members": 178329,
+    "direct_members": 0,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 323,
+    "raw_constraint": "2008/",
+    "path": "/2008/",
+    "exists": true,
+    "recursive_members": 58915,
+    "direct_members": 0,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 324,
+    "raw_constraint": "2004/",
+    "path": "/2004/",
+    "exists": true,
+    "recursive_members": 43708,
+    "direct_members": 0,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 325,
+    "raw_constraint": "1997/",
+    "path": "/1997/",
+    "exists": true,
+    "recursive_members": 19624,
+    "direct_members": 0,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 328,
+    "raw_constraint": "2013/",
+    "path": "/2013/",
+    "exists": true,
+    "recursive_members": 92641,
+    "direct_members": 0,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 329,
+    "raw_constraint": "2022/6/",
+    "path": "/2022/6/",
+    "exists": true,
+    "recursive_members": 15478,
+    "direct_members": 15478,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 330,
+    "raw_constraint": "2023/5/",
+    "path": "/2023/5/",
+    "exists": true,
+    "recursive_members": 20092,
+    "direct_members": 20092,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 331,
+    "raw_constraint": "2024/",
+    "path": "/2024/",
+    "exists": true,
+    "recursive_members": 244028,
+    "direct_members": 0,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 333,
+    "raw_constraint": "2024/12/",
+    "path": "/2024/12/",
+    "exists": true,
+    "recursive_members": 21206,
+    "direct_members": 21206,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 334,
+    "raw_constraint": "2018/",
+    "path": "/2018/",
+    "exists": true,
+    "recursive_members": 140616,
+    "direct_members": 0,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 335,
+    "raw_constraint": "2024/",
+    "path": "/2024/",
+    "exists": true,
+    "recursive_members": 244028,
+    "direct_members": 0,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 339,
+    "raw_constraint": "2021/",
+    "path": "/2021/",
+    "exists": true,
+    "recursive_members": 181630,
+    "direct_members": 0,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 340,
+    "raw_constraint": "2023/",
+    "path": "/2023/",
+    "exists": true,
+    "recursive_members": 208492,
+    "direct_members": 0,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 341,
+    "raw_constraint": "2018/",
+    "path": "/2018/",
+    "exists": true,
+    "recursive_members": 140616,
+    "direct_members": 0,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 342,
+    "raw_constraint": "1998/",
+    "path": "/1998/",
+    "exists": true,
+    "recursive_members": 24167,
+    "direct_members": 0,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 348,
+    "raw_constraint": "2021/",
+    "path": "/2021/",
+    "exists": true,
+    "recursive_members": 181630,
+    "direct_members": 0,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 349,
+    "raw_constraint": "2024/3/",
+    "path": "/2024/3/",
+    "exists": true,
+    "recursive_members": 20332,
+    "direct_members": 20332,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 352,
+    "raw_constraint": "2023/10/",
+    "path": "/2023/10/",
+    "exists": true,
+    "recursive_members": 20710,
+    "direct_members": 20710,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 353,
+    "raw_constraint": "2020/4/",
+    "path": "/2020/4/",
+    "exists": true,
+    "recursive_members": 15025,
+    "direct_members": 15025,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 354,
+    "raw_constraint": "2014/7/",
+    "path": "/2014/7/",
+    "exists": true,
+    "recursive_members": 8549,
+    "direct_members": 8549,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 355,
+    "raw_constraint": "2024/",
+    "path": "/2024/",
+    "exists": true,
+    "recursive_members": 244028,
+    "direct_members": 0,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 356,
+    "raw_constraint": "2016/8/",
+    "path": "/2016/8/",
+    "exists": true,
+    "recursive_members": 9016,
+    "direct_members": 9016,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 358,
+    "raw_constraint": "1997/",
+    "path": "/1997/",
+    "exists": true,
+    "recursive_members": 19624,
+    "direct_members": 0,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 359,
+    "raw_constraint": "2025/3/",
+    "path": "/2025/3/",
+    "exists": true,
+    "recursive_members": 24391,
+    "direct_members": 24391,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 360,
+    "raw_constraint": "2022/",
+    "path": "/2022/",
+    "exists": true,
+    "recursive_members": 185692,
+    "direct_members": 0,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 361,
+    "raw_constraint": "2008/",
+    "path": "/2008/",
+    "exists": true,
+    "recursive_members": 58915,
+    "direct_members": 0,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 366,
+    "raw_constraint": "2006/4/",
+    "path": "/2006/4/",
+    "exists": true,
+    "recursive_members": 3474,
+    "direct_members": 3474,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 367,
+    "raw_constraint": "2001/",
+    "path": "/2001/",
+    "exists": true,
+    "recursive_members": 33197,
+    "direct_members": 0,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 372,
+    "raw_constraint": "2024/9/",
+    "path": "/2024/9/",
+    "exists": true,
+    "recursive_members": 20569,
+    "direct_members": 20569,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 373,
+    "raw_constraint": "2016/",
+    "path": "/2016/",
+    "exists": true,
+    "recursive_members": 113380,
+    "direct_members": 0,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 374,
+    "raw_constraint": "2025/1/",
+    "path": "/2025/1/",
+    "exists": true,
+    "recursive_members": 19407,
+    "direct_members": 19407,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 375,
+    "raw_constraint": "2024/",
+    "path": "/2024/",
+    "exists": true,
+    "recursive_members": 244028,
+    "direct_members": 0,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 376,
+    "raw_constraint": "2020/",
+    "path": "/2020/",
+    "exists": true,
+    "recursive_members": 178329,
+    "direct_members": 0,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 379,
+    "raw_constraint": "2011/2/",
+    "path": "/2011/2/",
+    "exists": true,
+    "recursive_members": 5774,
+    "direct_members": 5774,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 380,
+    "raw_constraint": "2017/",
+    "path": "/2017/",
+    "exists": true,
+    "recursive_members": 123523,
+    "direct_members": 0,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 382,
+    "raw_constraint": "2002/",
+    "path": "/2002/",
+    "exists": true,
+    "recursive_members": 36102,
+    "direct_members": 0,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 384,
+    "raw_constraint": "2010/",
+    "path": "/2010/",
+    "exists": true,
+    "recursive_members": 70125,
+    "direct_members": 0,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 388,
+    "raw_constraint": "2011/",
+    "path": "/2011/",
+    "exists": true,
+    "recursive_members": 76574,
+    "direct_members": 0,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 392,
+    "raw_constraint": "2022/9/",
+    "path": "/2022/9/",
+    "exists": true,
+    "recursive_members": 15640,
+    "direct_members": 15640,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 393,
+    "raw_constraint": "2023/7/",
+    "path": "/2023/7/",
+    "exists": true,
+    "recursive_members": 16896,
+    "direct_members": 16896,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 394,
+    "raw_constraint": "2021/2/",
+    "path": "/2021/2/",
+    "exists": true,
+    "recursive_members": 13656,
+    "direct_members": 13656,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 396,
+    "raw_constraint": "2016/1/",
+    "path": "/2016/1/",
+    "exists": true,
+    "recursive_members": 8251,
+    "direct_members": 8251,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 400,
+    "raw_constraint": "2021/",
+    "path": "/2021/",
+    "exists": true,
+    "recursive_members": 181630,
+    "direct_members": 0,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 402,
+    "raw_constraint": "2022/12/",
+    "path": "/2022/12/",
+    "exists": true,
+    "recursive_members": 14887,
+    "direct_members": 14887,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 403,
+    "raw_constraint": "2022/",
+    "path": "/2022/",
+    "exists": true,
+    "recursive_members": 185692,
+    "direct_members": 0,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 404,
+    "raw_constraint": "2021/3/",
+    "path": "/2021/3/",
+    "exists": true,
+    "recursive_members": 17273,
+    "direct_members": 17273,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 405,
+    "raw_constraint": "2021/",
+    "path": "/2021/",
+    "exists": true,
+    "recursive_members": 181630,
+    "direct_members": 0,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 406,
+    "raw_constraint": "2021/6/",
+    "path": "/2021/6/",
+    "exists": true,
+    "recursive_members": 16248,
+    "direct_members": 16248,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 407,
+    "raw_constraint": "2021/1/",
+    "path": "/2021/1/",
+    "exists": true,
+    "recursive_members": 12747,
+    "direct_members": 12747,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 408,
+    "raw_constraint": "2015/4/",
+    "path": "/2015/4/",
+    "exists": true,
+    "recursive_members": 8367,
+    "direct_members": 8367,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 412,
+    "raw_constraint": "2020/",
+    "path": "/2020/",
+    "exists": true,
+    "recursive_members": 178329,
+    "direct_members": 0,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 413,
+    "raw_constraint": "2021/",
+    "path": "/2021/",
+    "exists": true,
+    "recursive_members": 181630,
+    "direct_members": 0,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 416,
+    "raw_constraint": "2015/6/",
+    "path": "/2015/6/",
+    "exists": true,
+    "recursive_members": 9217,
+    "direct_members": 9217,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 417,
+    "raw_constraint": "2014/",
+    "path": "/2014/",
+    "exists": true,
+    "recursive_members": 97517,
+    "direct_members": 0,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 420,
+    "raw_constraint": "2018/",
+    "path": "/2018/",
+    "exists": true,
+    "recursive_members": 140616,
+    "direct_members": 0,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 421,
+    "raw_constraint": "2005/9/",
+    "path": "/2005/9/",
+    "exists": true,
+    "recursive_members": 4328,
+    "direct_members": 4328,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 425,
+    "raw_constraint": "2023/12/",
+    "path": "/2023/12/",
+    "exists": true,
+    "recursive_members": 17748,
+    "direct_members": 17748,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 426,
+    "raw_constraint": "2005/",
+    "path": "/2005/",
+    "exists": true,
+    "recursive_members": 46827,
+    "direct_members": 0,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 428,
+    "raw_constraint": "2013/",
+    "path": "/2013/",
+    "exists": true,
+    "recursive_members": 92641,
+    "direct_members": 0,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 430,
+    "raw_constraint": "2018/3/",
+    "path": "/2018/3/",
+    "exists": true,
+    "recursive_members": 11560,
+    "direct_members": 11560,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 432,
+    "raw_constraint": "2021/8/",
+    "path": "/2021/8/",
+    "exists": true,
+    "recursive_members": 14006,
+    "direct_members": 14006,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 433,
+    "raw_constraint": "2024/",
+    "path": "/2024/",
+    "exists": true,
+    "recursive_members": 244028,
+    "direct_members": 0,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 434,
+    "raw_constraint": "2006/1/",
+    "path": "/2006/1/",
+    "exists": true,
+    "recursive_members": 3858,
+    "direct_members": 3858,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 437,
+    "raw_constraint": "2007/8/",
+    "path": "/2007/8/",
+    "exists": true,
+    "recursive_members": 4414,
+    "direct_members": 4414,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 440,
+    "raw_constraint": "2024/7/",
+    "path": "/2024/7/",
+    "exists": true,
+    "recursive_members": 21794,
+    "direct_members": 21794,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 443,
+    "raw_constraint": "2025/5/",
+    "path": "/2025/5/",
+    "exists": true,
+    "recursive_members": 24878,
+    "direct_members": 24878,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 444,
+    "raw_constraint": "2023/",
+    "path": "/2023/",
+    "exists": true,
+    "recursive_members": 208492,
+    "direct_members": 0,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 448,
+    "raw_constraint": "2024/",
+    "path": "/2024/",
+    "exists": true,
+    "recursive_members": 244028,
+    "direct_members": 0,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 449,
+    "raw_constraint": "2020/",
+    "path": "/2020/",
+    "exists": true,
+    "recursive_members": 178329,
+    "direct_members": 0,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 451,
+    "raw_constraint": "2023/",
+    "path": "/2023/",
+    "exists": true,
+    "recursive_members": 208492,
+    "direct_members": 0,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 453,
+    "raw_constraint": "2023/",
+    "path": "/2023/",
+    "exists": true,
+    "recursive_members": 208492,
+    "direct_members": 0,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 455,
+    "raw_constraint": "2009/2/",
+    "path": "/2009/2/",
+    "exists": true,
+    "recursive_members": 4903,
+    "direct_members": 4903,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 456,
+    "raw_constraint": "2018/",
+    "path": "/2018/",
+    "exists": true,
+    "recursive_members": 140616,
+    "direct_members": 0,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 457,
+    "raw_constraint": "2016/",
+    "path": "/2016/",
+    "exists": true,
+    "recursive_members": 113380,
+    "direct_members": 0,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 462,
+    "raw_constraint": "2011/",
+    "path": "/2011/",
+    "exists": true,
+    "recursive_members": 76574,
+    "direct_members": 0,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 465,
+    "raw_constraint": "2013/12/",
+    "path": "/2013/12/",
+    "exists": true,
+    "recursive_members": 7878,
+    "direct_members": 7878,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 466,
+    "raw_constraint": "2025/4/",
+    "path": "/2025/4/",
+    "exists": true,
+    "recursive_members": 21857,
+    "direct_members": 21857,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 467,
+    "raw_constraint": "2025/2/",
+    "path": "/2025/2/",
+    "exists": true,
+    "recursive_members": 21321,
+    "direct_members": 21321,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 468,
+    "raw_constraint": "2000/",
+    "path": "/2000/",
+    "exists": true,
+    "recursive_members": 30587,
+    "direct_members": 0,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 469,
+    "raw_constraint": "2021/8/",
+    "path": "/2021/8/",
+    "exists": true,
+    "recursive_members": 14006,
+    "direct_members": 14006,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 470,
+    "raw_constraint": "2018/",
+    "path": "/2018/",
+    "exists": true,
+    "recursive_members": 140616,
+    "direct_members": 0,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 471,
+    "raw_constraint": "2017/",
+    "path": "/2017/",
+    "exists": true,
+    "recursive_members": 123523,
+    "direct_members": 0,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 473,
+    "raw_constraint": "2015/9/",
+    "path": "/2015/9/",
+    "exists": true,
+    "recursive_members": 9318,
+    "direct_members": 9318,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 475,
+    "raw_constraint": "2017/9/",
+    "path": "/2017/9/",
+    "exists": true,
+    "recursive_members": 10517,
+    "direct_members": 10517,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 478,
+    "raw_constraint": "2020/8/",
+    "path": "/2020/8/",
+    "exists": true,
+    "recursive_members": 13781,
+    "direct_members": 13781,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 479,
+    "raw_constraint": "2001/11/",
+    "path": "/2001/11/",
+    "exists": true,
+    "recursive_members": 3237,
+    "direct_members": 3237,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 481,
+    "raw_constraint": "2023/",
+    "path": "/2023/",
+    "exists": true,
+    "recursive_members": 208492,
+    "direct_members": 0,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 482,
+    "raw_constraint": "2019/2/",
+    "path": "/2019/2/",
+    "exists": true,
+    "recursive_members": 11302,
+    "direct_members": 11302,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 483,
+    "raw_constraint": "1994/6/",
+    "path": "/1994/6/",
+    "exists": true,
+    "recursive_members": 887,
+    "direct_members": 887,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 484,
+    "raw_constraint": "2018/9/",
+    "path": "/2018/9/",
+    "exists": true,
+    "recursive_members": 11171,
+    "direct_members": 11171,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 486,
+    "raw_constraint": "2006/",
+    "path": "/2006/",
+    "exists": true,
+    "recursive_members": 50224,
+    "direct_members": 0,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 487,
+    "raw_constraint": "2011/",
+    "path": "/2011/",
+    "exists": true,
+    "recursive_members": 76574,
+    "direct_members": 0,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 490,
+    "raw_constraint": "2013/3/",
+    "path": "/2013/3/",
+    "exists": true,
+    "recursive_members": 7476,
+    "direct_members": 7476,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 491,
+    "raw_constraint": "2003/5/",
+    "path": "/2003/5/",
+    "exists": true,
+    "recursive_members": 3267,
+    "direct_members": 3267,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 492,
+    "raw_constraint": "2016/",
+    "path": "/2016/",
+    "exists": true,
+    "recursive_members": 113380,
+    "direct_members": 0,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 493,
+    "raw_constraint": "2021/",
+    "path": "/2021/",
+    "exists": true,
+    "recursive_members": 181630,
+    "direct_members": 0,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 494,
+    "raw_constraint": "2015/3/",
+    "path": "/2015/3/",
+    "exists": true,
+    "recursive_members": 9191,
+    "direct_members": 9191,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 495,
+    "raw_constraint": "2006/11/",
+    "path": "/2006/11/",
+    "exists": true,
+    "recursive_members": 4853,
+    "direct_members": 4853,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 497,
+    "raw_constraint": "2021/",
+    "path": "/2021/",
+    "exists": true,
+    "recursive_members": 181630,
+    "direct_members": 0,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 499,
+    "raw_constraint": "2014/",
+    "path": "/2014/",
+    "exists": true,
+    "recursive_members": 97517,
+    "direct_members": 0,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 505,
+    "raw_constraint": "2017/3/",
+    "path": "/2017/3/",
+    "exists": true,
+    "recursive_members": 11008,
+    "direct_members": 11008,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 506,
+    "raw_constraint": "2007/7/",
+    "path": "/2007/7/",
+    "exists": true,
+    "recursive_members": 4681,
+    "direct_members": 4681,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 507,
+    "raw_constraint": "2024/",
+    "path": "/2024/",
+    "exists": true,
+    "recursive_members": 244028,
+    "direct_members": 0,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 509,
+    "raw_constraint": "2019/9/",
+    "path": "/2019/9/",
+    "exists": true,
+    "recursive_members": 13881,
+    "direct_members": 13881,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 515,
+    "raw_constraint": "2018/",
+    "path": "/2018/",
+    "exists": true,
+    "recursive_members": 140616,
+    "direct_members": 0,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 516,
+    "raw_constraint": "2007/9/",
+    "path": "/2007/9/",
+    "exists": true,
+    "recursive_members": 4682,
+    "direct_members": 4682,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 518,
+    "raw_constraint": "2023/",
+    "path": "/2023/",
+    "exists": true,
+    "recursive_members": 208492,
+    "direct_members": 0,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 519,
+    "raw_constraint": "2006/3/",
+    "path": "/2006/3/",
+    "exists": true,
+    "recursive_members": 4212,
+    "direct_members": 4212,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 520,
+    "raw_constraint": "2022/",
+    "path": "/2022/",
+    "exists": true,
+    "recursive_members": 185692,
+    "direct_members": 0,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 522,
+    "raw_constraint": "2002/3/",
+    "path": "/2002/3/",
+    "exists": true,
+    "recursive_members": 2664,
+    "direct_members": 2664,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 523,
+    "raw_constraint": "2024/9/",
+    "path": "/2024/9/",
+    "exists": true,
+    "recursive_members": 20569,
+    "direct_members": 20569,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 524,
+    "raw_constraint": "2020/",
+    "path": "/2020/",
+    "exists": true,
+    "recursive_members": 178329,
+    "direct_members": 0,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 525,
+    "raw_constraint": "2018/10/",
+    "path": "/2018/10/",
+    "exists": true,
+    "recursive_members": 13446,
+    "direct_members": 13446,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 527,
+    "raw_constraint": "1998/10/",
+    "path": "/1998/10/",
+    "exists": true,
+    "recursive_members": 2329,
+    "direct_members": 2329,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 528,
+    "raw_constraint": "2019/",
+    "path": "/2019/",
+    "exists": true,
+    "recursive_members": 155866,
+    "direct_members": 0,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 531,
+    "raw_constraint": "2021/9/",
+    "path": "/2021/9/",
+    "exists": true,
+    "recursive_members": 15322,
+    "direct_members": 15322,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 533,
+    "raw_constraint": "2024/",
+    "path": "/2024/",
+    "exists": true,
+    "recursive_members": 244028,
+    "direct_members": 0,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 534,
+    "raw_constraint": "2023/",
+    "path": "/2023/",
+    "exists": true,
+    "recursive_members": 208492,
+    "direct_members": 0,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 537,
+    "raw_constraint": "2014/9/",
+    "path": "/2014/9/",
+    "exists": true,
+    "recursive_members": 8676,
+    "direct_members": 8676,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 539,
+    "raw_constraint": "2020/",
+    "path": "/2020/",
+    "exists": true,
+    "recursive_members": 178329,
+    "direct_members": 0,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 540,
+    "raw_constraint": "2004/8/",
+    "path": "/2004/8/",
+    "exists": true,
+    "recursive_members": 3293,
+    "direct_members": 3293,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 541,
+    "raw_constraint": "2000/",
+    "path": "/2000/",
+    "exists": true,
+    "recursive_members": 30587,
+    "direct_members": 0,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 542,
+    "raw_constraint": "2021/4/",
+    "path": "/2021/4/",
+    "exists": true,
+    "recursive_members": 15141,
+    "direct_members": 15141,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 547,
+    "raw_constraint": "2000/",
+    "path": "/2000/",
+    "exists": true,
+    "recursive_members": 30587,
+    "direct_members": 0,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 548,
+    "raw_constraint": "2009/",
+    "path": "/2009/",
+    "exists": true,
+    "recursive_members": 64046,
+    "direct_members": 0,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 554,
+    "raw_constraint": "2012/2/",
+    "path": "/2012/2/",
+    "exists": true,
+    "recursive_members": 6685,
+    "direct_members": 6685,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 558,
+    "raw_constraint": "2024/",
+    "path": "/2024/",
+    "exists": true,
+    "recursive_members": 244028,
+    "direct_members": 0,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 559,
+    "raw_constraint": "2023/6/",
+    "path": "/2023/6/",
+    "exists": true,
+    "recursive_members": 17848,
+    "direct_members": 17848,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 560,
+    "raw_constraint": "2012/12/",
+    "path": "/2012/12/",
+    "exists": true,
+    "recursive_members": 6974,
+    "direct_members": 6974,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 562,
+    "raw_constraint": "1999/",
+    "path": "/1999/",
+    "exists": true,
+    "recursive_members": 27695,
+    "direct_members": 0,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 564,
+    "raw_constraint": "2025/4/",
+    "path": "/2025/4/",
+    "exists": true,
+    "recursive_members": 21857,
+    "direct_members": 21857,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 565,
+    "raw_constraint": "2017/",
+    "path": "/2017/",
+    "exists": true,
+    "recursive_members": 123523,
+    "direct_members": 0,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 566,
+    "raw_constraint": "2018/12/",
+    "path": "/2018/12/",
+    "exists": true,
+    "recursive_members": 11973,
+    "direct_members": 11973,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 567,
+    "raw_constraint": "1999/",
+    "path": "/1999/",
+    "exists": true,
+    "recursive_members": 27695,
+    "direct_members": 0,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 569,
+    "raw_constraint": "2020/12/",
+    "path": "/2020/12/",
+    "exists": true,
+    "recursive_members": 15864,
+    "direct_members": 15864,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 570,
+    "raw_constraint": "2025/",
+    "path": "/2025/",
+    "exists": true,
+    "recursive_members": 138847,
+    "direct_members": 0,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 571,
+    "raw_constraint": "2019/11/",
+    "path": "/2019/11/",
+    "exists": true,
+    "recursive_members": 13302,
+    "direct_members": 13302,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 572,
+    "raw_constraint": "1992/",
+    "path": "/1992/",
+    "exists": true,
+    "recursive_members": 3261,
+    "direct_members": 0,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 573,
+    "raw_constraint": "2021/9/",
+    "path": "/2021/9/",
+    "exists": true,
+    "recursive_members": 15322,
+    "direct_members": 15322,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 574,
+    "raw_constraint": "2009/",
+    "path": "/2009/",
+    "exists": true,
+    "recursive_members": 64046,
+    "direct_members": 0,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 576,
+    "raw_constraint": "2014/",
+    "path": "/2014/",
+    "exists": true,
+    "recursive_members": 97517,
+    "direct_members": 0,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 577,
+    "raw_constraint": "2020/8/",
+    "path": "/2020/8/",
+    "exists": true,
+    "recursive_members": 13781,
+    "direct_members": 13781,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 580,
+    "raw_constraint": "2025/",
+    "path": "/2025/",
+    "exists": true,
+    "recursive_members": 138847,
+    "direct_members": 0,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 582,
+    "raw_constraint": "2023/10/",
+    "path": "/2023/10/",
+    "exists": true,
+    "recursive_members": 20710,
+    "direct_members": 20710,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 583,
+    "raw_constraint": "2025/4/",
+    "path": "/2025/4/",
+    "exists": true,
+    "recursive_members": 21857,
+    "direct_members": 21857,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 585,
+    "raw_constraint": "2004/2/",
+    "path": "/2004/2/",
+    "exists": true,
+    "recursive_members": 3276,
+    "direct_members": 3276,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 586,
+    "raw_constraint": "2009/11/",
+    "path": "/2009/11/",
+    "exists": true,
+    "recursive_members": 5730,
+    "direct_members": 5730,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 587,
+    "raw_constraint": "2021/6/",
+    "path": "/2021/6/",
+    "exists": true,
+    "recursive_members": 16248,
+    "direct_members": 16248,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 589,
+    "raw_constraint": "2019/4/",
+    "path": "/2019/4/",
+    "exists": true,
+    "recursive_members": 13396,
+    "direct_members": 13396,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 591,
+    "raw_constraint": "2023/3/",
+    "path": "/2023/3/",
+    "exists": true,
+    "recursive_members": 18249,
+    "direct_members": 18249,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 594,
+    "raw_constraint": "2002/",
+    "path": "/2002/",
+    "exists": true,
+    "recursive_members": 36102,
+    "direct_members": 0,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 595,
+    "raw_constraint": "2006/10/",
+    "path": "/2006/10/",
+    "exists": true,
+    "recursive_members": 5133,
+    "direct_members": 5133,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 596,
+    "raw_constraint": "2020/3/",
+    "path": "/2020/3/",
+    "exists": true,
+    "recursive_members": 14415,
+    "direct_members": 14415,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 598,
+    "raw_constraint": "2018/",
+    "path": "/2018/",
+    "exists": true,
+    "recursive_members": 140616,
+    "direct_members": 0,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 599,
+    "raw_constraint": "2013/1/",
+    "path": "/2013/1/",
+    "exists": true,
+    "recursive_members": 7750,
+    "direct_members": 7750,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 600,
+    "raw_constraint": "2007/",
+    "path": "/2007/",
+    "exists": true,
+    "recursive_members": 55638,
+    "direct_members": 0,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 601,
+    "raw_constraint": "2021/10/",
+    "path": "/2021/10/",
+    "exists": true,
+    "recursive_members": 15960,
+    "direct_members": 15960,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 602,
+    "raw_constraint": "2015/",
+    "path": "/2015/",
+    "exists": true,
+    "recursive_members": 105280,
+    "direct_members": 0,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 603,
+    "raw_constraint": "2015/",
+    "path": "/2015/",
+    "exists": true,
+    "recursive_members": 105280,
+    "direct_members": 0,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 604,
+    "raw_constraint": "2025/",
+    "path": "/2025/",
+    "exists": true,
+    "recursive_members": 138847,
+    "direct_members": 0,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 605,
+    "raw_constraint": "2024/",
+    "path": "/2024/",
+    "exists": true,
+    "recursive_members": 244028,
+    "direct_members": 0,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 607,
+    "raw_constraint": "2024/",
+    "path": "/2024/",
+    "exists": true,
+    "recursive_members": 244028,
+    "direct_members": 0,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 608,
+    "raw_constraint": "2018/",
+    "path": "/2018/",
+    "exists": true,
+    "recursive_members": 140616,
+    "direct_members": 0,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 609,
+    "raw_constraint": "2009/12/",
+    "path": "/2009/12/",
+    "exists": true,
+    "recursive_members": 5537,
+    "direct_members": 5537,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 610,
+    "raw_constraint": "2024/9/",
+    "path": "/2024/9/",
+    "exists": true,
+    "recursive_members": 20569,
+    "direct_members": 20569,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 613,
+    "raw_constraint": "2023/",
+    "path": "/2023/",
+    "exists": true,
+    "recursive_members": 208492,
+    "direct_members": 0,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 616,
+    "raw_constraint": "2025/",
+    "path": "/2025/",
+    "exists": true,
+    "recursive_members": 138847,
+    "direct_members": 0,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 618,
+    "raw_constraint": "2018/",
+    "path": "/2018/",
+    "exists": true,
+    "recursive_members": 140616,
+    "direct_members": 0,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 621,
+    "raw_constraint": "2025/",
+    "path": "/2025/",
+    "exists": true,
+    "recursive_members": 138847,
+    "direct_members": 0,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 623,
+    "raw_constraint": "2020/",
+    "path": "/2020/",
+    "exists": true,
+    "recursive_members": 178329,
+    "direct_members": 0,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 625,
+    "raw_constraint": "2018/",
+    "path": "/2018/",
+    "exists": true,
+    "recursive_members": 140616,
+    "direct_members": 0,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 626,
+    "raw_constraint": "2005/1/",
+    "path": "/2005/1/",
+    "exists": true,
+    "recursive_members": 3490,
+    "direct_members": 3490,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 627,
+    "raw_constraint": "2006/8/",
+    "path": "/2006/8/",
+    "exists": true,
+    "recursive_members": 4064,
+    "direct_members": 4064,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 631,
+    "raw_constraint": "2016/",
+    "path": "/2016/",
+    "exists": true,
+    "recursive_members": 113380,
+    "direct_members": 0,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 632,
+    "raw_constraint": "2021/8/",
+    "path": "/2021/8/",
+    "exists": true,
+    "recursive_members": 14006,
+    "direct_members": 14006,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 633,
+    "raw_constraint": "2018/8/",
+    "path": "/2018/8/",
+    "exists": true,
+    "recursive_members": 10870,
+    "direct_members": 10870,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 634,
+    "raw_constraint": "2021/",
+    "path": "/2021/",
+    "exists": true,
+    "recursive_members": 181630,
+    "direct_members": 0,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 635,
+    "raw_constraint": "2024/9/",
+    "path": "/2024/9/",
+    "exists": true,
+    "recursive_members": 20569,
+    "direct_members": 20569,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 638,
+    "raw_constraint": "2023/",
+    "path": "/2023/",
+    "exists": true,
+    "recursive_members": 208492,
+    "direct_members": 0,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 641,
+    "raw_constraint": "2016/1/",
+    "path": "/2016/1/",
+    "exists": true,
+    "recursive_members": 8251,
+    "direct_members": 8251,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 642,
+    "raw_constraint": "2012/",
+    "path": "/2012/",
+    "exists": true,
+    "recursive_members": 84603,
+    "direct_members": 0,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 643,
+    "raw_constraint": "2018/",
+    "path": "/2018/",
+    "exists": true,
+    "recursive_members": 140616,
+    "direct_members": 0,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 646,
+    "raw_constraint": "2021/",
+    "path": "/2021/",
+    "exists": true,
+    "recursive_members": 181630,
+    "direct_members": 0,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 648,
+    "raw_constraint": "2025/2/",
+    "path": "/2025/2/",
+    "exists": true,
+    "recursive_members": 21321,
+    "direct_members": 21321,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 649,
+    "raw_constraint": "2021/",
+    "path": "/2021/",
+    "exists": true,
+    "recursive_members": 181630,
+    "direct_members": 0,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 655,
+    "raw_constraint": "2017/8/",
+    "path": "/2017/8/",
+    "exists": true,
+    "recursive_members": 9854,
+    "direct_members": 9854,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 656,
+    "raw_constraint": "2024/",
+    "path": "/2024/",
+    "exists": true,
+    "recursive_members": 244028,
+    "direct_members": 0,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 657,
+    "raw_constraint": "2024/2/",
+    "path": "/2024/2/",
+    "exists": true,
+    "recursive_members": 19480,
+    "direct_members": 19480,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 658,
+    "raw_constraint": "2024/",
+    "path": "/2024/",
+    "exists": true,
+    "recursive_members": 244028,
+    "direct_members": 0,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 664,
+    "raw_constraint": "2003/2/",
+    "path": "/2003/2/",
+    "exists": true,
+    "recursive_members": 2881,
+    "direct_members": 2881,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 667,
+    "raw_constraint": "2024/",
+    "path": "/2024/",
+    "exists": true,
+    "recursive_members": 244028,
+    "direct_members": 0,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 669,
+    "raw_constraint": "2025/1/",
+    "path": "/2025/1/",
+    "exists": true,
+    "recursive_members": 19407,
+    "direct_members": 19407,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 670,
+    "raw_constraint": "2012/",
+    "path": "/2012/",
+    "exists": true,
+    "recursive_members": 84603,
+    "direct_members": 0,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 672,
+    "raw_constraint": "2016/",
+    "path": "/2016/",
+    "exists": true,
+    "recursive_members": 113380,
+    "direct_members": 0,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 674,
+    "raw_constraint": "2010/3/",
+    "path": "/2010/3/",
+    "exists": true,
+    "recursive_members": 6133,
+    "direct_members": 6133,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 675,
+    "raw_constraint": "2024/",
+    "path": "/2024/",
+    "exists": true,
+    "recursive_members": 244028,
+    "direct_members": 0,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 679,
+    "raw_constraint": "2016/2/",
+    "path": "/2016/2/",
+    "exists": true,
+    "recursive_members": 9142,
+    "direct_members": 9142,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 680,
+    "raw_constraint": "2019/9/",
+    "path": "/2019/9/",
+    "exists": true,
+    "recursive_members": 13881,
+    "direct_members": 13881,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 682,
+    "raw_constraint": "2018/11/",
+    "path": "/2018/11/",
+    "exists": true,
+    "recursive_members": 12941,
+    "direct_members": 12941,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 683,
+    "raw_constraint": "2012/4/",
+    "path": "/2012/4/",
+    "exists": true,
+    "recursive_members": 6739,
+    "direct_members": 6739,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 684,
+    "raw_constraint": "2015/",
+    "path": "/2015/",
+    "exists": true,
+    "recursive_members": 105280,
+    "direct_members": 0,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 685,
+    "raw_constraint": "1996/10/",
+    "path": "/1996/10/",
+    "exists": true,
+    "recursive_members": 1520,
+    "direct_members": 1520,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 686,
+    "raw_constraint": "2006/5/",
+    "path": "/2006/5/",
+    "exists": true,
+    "recursive_members": 4203,
+    "direct_members": 4203,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 691,
+    "raw_constraint": "2003/",
+    "path": "/2003/",
+    "exists": true,
+    "recursive_members": 39409,
+    "direct_members": 0,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 700,
+    "raw_constraint": "2021/8/",
+    "path": "/2021/8/",
+    "exists": true,
+    "recursive_members": 14006,
+    "direct_members": 14006,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 701,
+    "raw_constraint": "2015/",
+    "path": "/2015/",
+    "exists": true,
+    "recursive_members": 105280,
+    "direct_members": 0,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 703,
+    "raw_constraint": "2005/11/",
+    "path": "/2005/11/",
+    "exists": true,
+    "recursive_members": 4294,
+    "direct_members": 4294,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 705,
+    "raw_constraint": "2011/",
+    "path": "/2011/",
+    "exists": true,
+    "recursive_members": 76574,
+    "direct_members": 0,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 709,
+    "raw_constraint": "2025/3/",
+    "path": "/2025/3/",
+    "exists": true,
+    "recursive_members": 24391,
+    "direct_members": 24391,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 710,
+    "raw_constraint": "2020/",
+    "path": "/2020/",
+    "exists": true,
+    "recursive_members": 178329,
+    "direct_members": 0,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 711,
+    "raw_constraint": "2025/1/",
+    "path": "/2025/1/",
+    "exists": true,
+    "recursive_members": 19407,
+    "direct_members": 19407,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 712,
+    "raw_constraint": "2024/",
+    "path": "/2024/",
+    "exists": true,
+    "recursive_members": 244028,
+    "direct_members": 0,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 713,
+    "raw_constraint": "2020/",
+    "path": "/2020/",
+    "exists": true,
+    "recursive_members": 178329,
+    "direct_members": 0,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 714,
+    "raw_constraint": "2022/9/",
+    "path": "/2022/9/",
+    "exists": true,
+    "recursive_members": 15640,
+    "direct_members": 15640,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 721,
+    "raw_constraint": "2024/4/",
+    "path": "/2024/4/",
+    "exists": true,
+    "recursive_members": 19761,
+    "direct_members": 19761,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 722,
+    "raw_constraint": "2020/9/",
+    "path": "/2020/9/",
+    "exists": true,
+    "recursive_members": 14827,
+    "direct_members": 14827,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 728,
+    "raw_constraint": "2025/",
+    "path": "/2025/",
+    "exists": true,
+    "recursive_members": 138847,
+    "direct_members": 0,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 731,
+    "raw_constraint": "2024/",
+    "path": "/2024/",
+    "exists": true,
+    "recursive_members": 244028,
+    "direct_members": 0,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 736,
+    "raw_constraint": "2015/",
+    "path": "/2015/",
+    "exists": true,
+    "recursive_members": 105280,
+    "direct_members": 0,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 738,
+    "raw_constraint": "2008/3/",
+    "path": "/2008/3/",
+    "exists": true,
+    "recursive_members": 4519,
+    "direct_members": 4519,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 739,
+    "raw_constraint": "2022/",
+    "path": "/2022/",
+    "exists": true,
+    "recursive_members": 185692,
+    "direct_members": 0,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 748,
+    "raw_constraint": "2022/",
+    "path": "/2022/",
+    "exists": true,
+    "recursive_members": 185692,
+    "direct_members": 0,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 749,
+    "raw_constraint": "2022/",
+    "path": "/2022/",
+    "exists": true,
+    "recursive_members": 185692,
+    "direct_members": 0,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 750,
+    "raw_constraint": "2018/",
+    "path": "/2018/",
+    "exists": true,
+    "recursive_members": 140616,
+    "direct_members": 0,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 754,
+    "raw_constraint": "2024/",
+    "path": "/2024/",
+    "exists": true,
+    "recursive_members": 244028,
+    "direct_members": 0,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 758,
+    "raw_constraint": "2016/4/",
+    "path": "/2016/4/",
+    "exists": true,
+    "recursive_members": 8948,
+    "direct_members": 8948,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 759,
+    "raw_constraint": "2020/",
+    "path": "/2020/",
+    "exists": true,
+    "recursive_members": 178329,
+    "direct_members": 0,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 760,
+    "raw_constraint": "2016/",
+    "path": "/2016/",
+    "exists": true,
+    "recursive_members": 113380,
+    "direct_members": 0,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 762,
+    "raw_constraint": "2017/9/",
+    "path": "/2017/9/",
+    "exists": true,
+    "recursive_members": 10517,
+    "direct_members": 10517,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 764,
+    "raw_constraint": "2024/",
+    "path": "/2024/",
+    "exists": true,
+    "recursive_members": 244028,
+    "direct_members": 0,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 767,
+    "raw_constraint": "2021/",
+    "path": "/2021/",
+    "exists": true,
+    "recursive_members": 181630,
+    "direct_members": 0,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 769,
+    "raw_constraint": "2023/",
+    "path": "/2023/",
+    "exists": true,
+    "recursive_members": 208492,
+    "direct_members": 0,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 773,
+    "raw_constraint": "2002/",
+    "path": "/2002/",
+    "exists": true,
+    "recursive_members": 36102,
+    "direct_members": 0,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 774,
+    "raw_constraint": "2018/10/",
+    "path": "/2018/10/",
+    "exists": true,
+    "recursive_members": 13446,
+    "direct_members": 13446,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 775,
+    "raw_constraint": "2012/",
+    "path": "/2012/",
+    "exists": true,
+    "recursive_members": 84603,
+    "direct_members": 0,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 778,
+    "raw_constraint": "2016/",
+    "path": "/2016/",
+    "exists": true,
+    "recursive_members": 113380,
+    "direct_members": 0,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 780,
+    "raw_constraint": "2011/7/",
+    "path": "/2011/7/",
+    "exists": true,
+    "recursive_members": 6046,
+    "direct_members": 6046,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 781,
+    "raw_constraint": "2015/",
+    "path": "/2015/",
+    "exists": true,
+    "recursive_members": 105280,
+    "direct_members": 0,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 791,
+    "raw_constraint": "2020/12/",
+    "path": "/2020/12/",
+    "exists": true,
+    "recursive_members": 15864,
+    "direct_members": 15864,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 792,
+    "raw_constraint": "2023/7/",
+    "path": "/2023/7/",
+    "exists": true,
+    "recursive_members": 16896,
+    "direct_members": 16896,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 793,
+    "raw_constraint": "2017/5/",
+    "path": "/2017/5/",
+    "exists": true,
+    "recursive_members": 11194,
+    "direct_members": 11194,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 795,
+    "raw_constraint": "2015/",
+    "path": "/2015/",
+    "exists": true,
+    "recursive_members": 105280,
+    "direct_members": 0,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 796,
+    "raw_constraint": "2019/",
+    "path": "/2019/",
+    "exists": true,
+    "recursive_members": 155866,
+    "direct_members": 0,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 799,
+    "raw_constraint": "2014/",
+    "path": "/2014/",
+    "exists": true,
+    "recursive_members": 97517,
+    "direct_members": 0,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 800,
+    "raw_constraint": "2018/",
+    "path": "/2018/",
+    "exists": true,
+    "recursive_members": 140616,
+    "direct_members": 0,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 801,
+    "raw_constraint": "2023/12/",
+    "path": "/2023/12/",
+    "exists": true,
+    "recursive_members": 17748,
+    "direct_members": 17748,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 802,
+    "raw_constraint": "2024/8/",
+    "path": "/2024/8/",
+    "exists": true,
+    "recursive_members": 17451,
+    "direct_members": 17451,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 807,
+    "raw_constraint": "1999/",
+    "path": "/1999/",
+    "exists": true,
+    "recursive_members": 27695,
+    "direct_members": 0,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 814,
+    "raw_constraint": "2020/",
+    "path": "/2020/",
+    "exists": true,
+    "recursive_members": 178329,
+    "direct_members": 0,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 816,
+    "raw_constraint": "2024/2/",
+    "path": "/2024/2/",
+    "exists": true,
+    "recursive_members": 19480,
+    "direct_members": 19480,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 818,
+    "raw_constraint": "2020/1/",
+    "path": "/2020/1/",
+    "exists": true,
+    "recursive_members": 12010,
+    "direct_members": 12010,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 825,
+    "raw_constraint": "2014/12/",
+    "path": "/2014/12/",
+    "exists": true,
+    "recursive_members": 8770,
+    "direct_members": 8770,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 826,
+    "raw_constraint": "2009/11/",
+    "path": "/2009/11/",
+    "exists": true,
+    "recursive_members": 5730,
+    "direct_members": 5730,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 828,
+    "raw_constraint": "2024/",
+    "path": "/2024/",
+    "exists": true,
+    "recursive_members": 244028,
+    "direct_members": 0,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 829,
+    "raw_constraint": "2025/",
+    "path": "/2025/",
+    "exists": true,
+    "recursive_members": 138847,
+    "direct_members": 0,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 831,
+    "raw_constraint": "2000/",
+    "path": "/2000/",
+    "exists": true,
+    "recursive_members": 30587,
+    "direct_members": 0,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 832,
+    "raw_constraint": "2021/12/",
+    "path": "/2021/12/",
+    "exists": true,
+    "recursive_members": 15596,
+    "direct_members": 15596,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 838,
+    "raw_constraint": "2012/",
+    "path": "/2012/",
+    "exists": true,
+    "recursive_members": 84603,
+    "direct_members": 0,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 840,
+    "raw_constraint": "2017/",
+    "path": "/2017/",
+    "exists": true,
+    "recursive_members": 123523,
+    "direct_members": 0,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 841,
+    "raw_constraint": "2020/1/",
+    "path": "/2020/1/",
+    "exists": true,
+    "recursive_members": 12010,
+    "direct_members": 12010,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 842,
+    "raw_constraint": "2022/",
+    "path": "/2022/",
+    "exists": true,
+    "recursive_members": 185692,
+    "direct_members": 0,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 843,
+    "raw_constraint": "2010/",
+    "path": "/2010/",
+    "exists": true,
+    "recursive_members": 70125,
+    "direct_members": 0,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 845,
+    "raw_constraint": "2009/",
+    "path": "/2009/",
+    "exists": true,
+    "recursive_members": 64046,
+    "direct_members": 0,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 848,
+    "raw_constraint": "1994/8/",
+    "path": "/1994/8/",
+    "exists": true,
+    "recursive_members": 766,
+    "direct_members": 766,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 849,
+    "raw_constraint": "2017/10/",
+    "path": "/2017/10/",
+    "exists": true,
+    "recursive_members": 11627,
+    "direct_members": 11627,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 850,
+    "raw_constraint": "2002/",
+    "path": "/2002/",
+    "exists": true,
+    "recursive_members": 36102,
+    "direct_members": 0,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 851,
+    "raw_constraint": "2022/10/",
+    "path": "/2022/10/",
+    "exists": true,
+    "recursive_members": 17551,
+    "direct_members": 17551,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 853,
+    "raw_constraint": "2003/12/",
+    "path": "/2003/12/",
+    "exists": true,
+    "recursive_members": 3660,
+    "direct_members": 3660,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 854,
+    "raw_constraint": "2020/",
+    "path": "/2020/",
+    "exists": true,
+    "recursive_members": 178329,
+    "direct_members": 0,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 855,
+    "raw_constraint": "2002/",
+    "path": "/2002/",
+    "exists": true,
+    "recursive_members": 36102,
+    "direct_members": 0,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 856,
+    "raw_constraint": "2023/",
+    "path": "/2023/",
+    "exists": true,
+    "recursive_members": 208492,
+    "direct_members": 0,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 857,
+    "raw_constraint": "2019/7/",
+    "path": "/2019/7/",
+    "exists": true,
+    "recursive_members": 13634,
+    "direct_members": 13634,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 858,
+    "raw_constraint": "2008/",
+    "path": "/2008/",
+    "exists": true,
+    "recursive_members": 58915,
+    "direct_members": 0,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 865,
+    "raw_constraint": "2021/12/",
+    "path": "/2021/12/",
+    "exists": true,
+    "recursive_members": 15596,
+    "direct_members": 15596,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 867,
+    "raw_constraint": "2025/",
+    "path": "/2025/",
+    "exists": true,
+    "recursive_members": 138847,
+    "direct_members": 0,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 868,
+    "raw_constraint": "2014/7/",
+    "path": "/2014/7/",
+    "exists": true,
+    "recursive_members": 8549,
+    "direct_members": 8549,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 871,
+    "raw_constraint": "2017/",
+    "path": "/2017/",
+    "exists": true,
+    "recursive_members": 123523,
+    "direct_members": 0,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 874,
+    "raw_constraint": "2021/",
+    "path": "/2021/",
+    "exists": true,
+    "recursive_members": 181630,
+    "direct_members": 0,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 876,
+    "raw_constraint": "2013/",
+    "path": "/2013/",
+    "exists": true,
+    "recursive_members": 92641,
+    "direct_members": 0,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 877,
+    "raw_constraint": "2025/",
+    "path": "/2025/",
+    "exists": true,
+    "recursive_members": 138847,
+    "direct_members": 0,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 878,
+    "raw_constraint": "2024/",
+    "path": "/2024/",
+    "exists": true,
+    "recursive_members": 244028,
+    "direct_members": 0,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 882,
+    "raw_constraint": "2008/5/",
+    "path": "/2008/5/",
+    "exists": true,
+    "recursive_members": 4836,
+    "direct_members": 4836,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 884,
+    "raw_constraint": "2017/11/",
+    "path": "/2017/11/",
+    "exists": true,
+    "recursive_members": 11589,
+    "direct_members": 11589,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 885,
+    "raw_constraint": "2024/",
+    "path": "/2024/",
+    "exists": true,
+    "recursive_members": 244028,
+    "direct_members": 0,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 889,
+    "raw_constraint": "2016/",
+    "path": "/2016/",
+    "exists": true,
+    "recursive_members": 113380,
+    "direct_members": 0,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 890,
+    "raw_constraint": "2019/",
+    "path": "/2019/",
+    "exists": true,
+    "recursive_members": 155866,
+    "direct_members": 0,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 892,
+    "raw_constraint": "2023/",
+    "path": "/2023/",
+    "exists": true,
+    "recursive_members": 208492,
+    "direct_members": 0,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 893,
+    "raw_constraint": "2011/",
+    "path": "/2011/",
+    "exists": true,
+    "recursive_members": 76574,
+    "direct_members": 0,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 897,
+    "raw_constraint": "2004/",
+    "path": "/2004/",
+    "exists": true,
+    "recursive_members": 43708,
+    "direct_members": 0,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 899,
+    "raw_constraint": "2015/9/",
+    "path": "/2015/9/",
+    "exists": true,
+    "recursive_members": 9318,
+    "direct_members": 9318,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 900,
+    "raw_constraint": "2015/",
+    "path": "/2015/",
+    "exists": true,
+    "recursive_members": 105280,
+    "direct_members": 0,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 902,
+    "raw_constraint": "2018/",
+    "path": "/2018/",
+    "exists": true,
+    "recursive_members": 140616,
+    "direct_members": 0,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 907,
+    "raw_constraint": "2013/7/",
+    "path": "/2013/7/",
+    "exists": true,
+    "recursive_members": 8447,
+    "direct_members": 8447,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 908,
+    "raw_constraint": "2014/",
+    "path": "/2014/",
+    "exists": true,
+    "recursive_members": 97517,
+    "direct_members": 0,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 909,
+    "raw_constraint": "2009/4/",
+    "path": "/2009/4/",
+    "exists": true,
+    "recursive_members": 4930,
+    "direct_members": 4930,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 910,
+    "raw_constraint": "2013/4/",
+    "path": "/2013/4/",
+    "exists": true,
+    "recursive_members": 8135,
+    "direct_members": 8135,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 911,
+    "raw_constraint": "2019/",
+    "path": "/2019/",
+    "exists": true,
+    "recursive_members": 155866,
+    "direct_members": 0,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 912,
+    "raw_constraint": "2014/8/",
+    "path": "/2014/8/",
+    "exists": true,
+    "recursive_members": 7119,
+    "direct_members": 7119,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 913,
+    "raw_constraint": "2025/",
+    "path": "/2025/",
+    "exists": true,
+    "recursive_members": 138847,
+    "direct_members": 0,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 916,
+    "raw_constraint": "2023/5/",
+    "path": "/2023/5/",
+    "exists": true,
+    "recursive_members": 20092,
+    "direct_members": 20092,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 917,
+    "raw_constraint": "2001/1/",
+    "path": "/2001/1/",
+    "exists": true,
+    "recursive_members": 2591,
+    "direct_members": 2591,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 918,
+    "raw_constraint": "2012/11/",
+    "path": "/2012/11/",
+    "exists": true,
+    "recursive_members": 7370,
+    "direct_members": 7370,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 919,
+    "raw_constraint": "2020/4/",
+    "path": "/2020/4/",
+    "exists": true,
+    "recursive_members": 15025,
+    "direct_members": 15025,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 920,
+    "raw_constraint": "2018/12/",
+    "path": "/2018/12/",
+    "exists": true,
+    "recursive_members": 11973,
+    "direct_members": 11973,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 921,
+    "raw_constraint": "2024/",
+    "path": "/2024/",
+    "exists": true,
+    "recursive_members": 244028,
+    "direct_members": 0,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 922,
+    "raw_constraint": "2023/6/",
+    "path": "/2023/6/",
+    "exists": true,
+    "recursive_members": 17848,
+    "direct_members": 17848,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 926,
+    "raw_constraint": "2002/",
+    "path": "/2002/",
+    "exists": true,
+    "recursive_members": 36102,
+    "direct_members": 0,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 927,
+    "raw_constraint": "2023/12/",
+    "path": "/2023/12/",
+    "exists": true,
+    "recursive_members": 17748,
+    "direct_members": 17748,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 930,
+    "raw_constraint": "2005/",
+    "path": "/2005/",
+    "exists": true,
+    "recursive_members": 46827,
+    "direct_members": 0,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 932,
+    "raw_constraint": "2014/11/",
+    "path": "/2014/11/",
+    "exists": true,
+    "recursive_members": 8006,
+    "direct_members": 8006,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 933,
+    "raw_constraint": "2020/10/",
+    "path": "/2020/10/",
+    "exists": true,
+    "recursive_members": 16418,
+    "direct_members": 16418,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 934,
+    "raw_constraint": "2024/",
+    "path": "/2024/",
+    "exists": true,
+    "recursive_members": 244028,
+    "direct_members": 0,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 936,
+    "raw_constraint": "2011/8/",
+    "path": "/2011/8/",
+    "exists": true,
+    "recursive_members": 6331,
+    "direct_members": 6331,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 937,
+    "raw_constraint": "2019/5/",
+    "path": "/2019/5/",
+    "exists": true,
+    "recursive_members": 13750,
+    "direct_members": 13750,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 938,
+    "raw_constraint": "2010/11/",
+    "path": "/2010/11/",
+    "exists": true,
+    "recursive_members": 6676,
+    "direct_members": 6676,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 939,
+    "raw_constraint": "2016/7/",
+    "path": "/2016/7/",
+    "exists": true,
+    "recursive_members": 8911,
+    "direct_members": 8911,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 940,
+    "raw_constraint": "2025/",
+    "path": "/2025/",
+    "exists": true,
+    "recursive_members": 138847,
+    "direct_members": 0,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 941,
+    "raw_constraint": "2024/11/",
+    "path": "/2024/11/",
+    "exists": true,
+    "recursive_members": 19951,
+    "direct_members": 19951,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 943,
+    "raw_constraint": "2020/",
+    "path": "/2020/",
+    "exists": true,
+    "recursive_members": 178329,
+    "direct_members": 0,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 944,
+    "raw_constraint": "2024/2/",
+    "path": "/2024/2/",
+    "exists": true,
+    "recursive_members": 19480,
+    "direct_members": 19480,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 945,
+    "raw_constraint": "2021/10/",
+    "path": "/2021/10/",
+    "exists": true,
+    "recursive_members": 15960,
+    "direct_members": 15960,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 946,
+    "raw_constraint": "2012/",
+    "path": "/2012/",
+    "exists": true,
+    "recursive_members": 84603,
+    "direct_members": 0,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 948,
+    "raw_constraint": "2010/",
+    "path": "/2010/",
+    "exists": true,
+    "recursive_members": 70125,
+    "direct_members": 0,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 951,
+    "raw_constraint": "2022/11/",
+    "path": "/2022/11/",
+    "exists": true,
+    "recursive_members": 17271,
+    "direct_members": 17271,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 956,
+    "raw_constraint": "2017/",
+    "path": "/2017/",
+    "exists": true,
+    "recursive_members": 123523,
+    "direct_members": 0,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 957,
+    "raw_constraint": "2005/6/",
+    "path": "/2005/6/",
+    "exists": true,
+    "recursive_members": 3982,
+    "direct_members": 3982,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 958,
+    "raw_constraint": "2002/7/",
+    "path": "/2002/7/",
+    "exists": true,
+    "recursive_members": 3267,
+    "direct_members": 3267,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 959,
+    "raw_constraint": "2009/",
+    "path": "/2009/",
+    "exists": true,
+    "recursive_members": 64046,
+    "direct_members": 0,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 964,
+    "raw_constraint": "2021/",
+    "path": "/2021/",
+    "exists": true,
+    "recursive_members": 181630,
+    "direct_members": 0,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 965,
+    "raw_constraint": "2025/1/",
+    "path": "/2025/1/",
+    "exists": true,
+    "recursive_members": 19407,
+    "direct_members": 19407,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 966,
+    "raw_constraint": "2022/",
+    "path": "/2022/",
+    "exists": true,
+    "recursive_members": 185692,
+    "direct_members": 0,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 968,
+    "raw_constraint": "2024/",
+    "path": "/2024/",
+    "exists": true,
+    "recursive_members": 244028,
+    "direct_members": 0,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 969,
+    "raw_constraint": "2015/5/",
+    "path": "/2015/5/",
+    "exists": true,
+    "recursive_members": 8172,
+    "direct_members": 8172,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 971,
+    "raw_constraint": "2000/12/",
+    "path": "/2000/12/",
+    "exists": true,
+    "recursive_members": 2653,
+    "direct_members": 2653,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 975,
+    "raw_constraint": "2020/",
+    "path": "/2020/",
+    "exists": true,
+    "recursive_members": 178329,
+    "direct_members": 0,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 977,
+    "raw_constraint": "2007/",
+    "path": "/2007/",
+    "exists": true,
+    "recursive_members": 55638,
+    "direct_members": 0,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 979,
+    "raw_constraint": "2020/12/",
+    "path": "/2020/12/",
+    "exists": true,
+    "recursive_members": 15864,
+    "direct_members": 15864,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 980,
+    "raw_constraint": "2023/",
+    "path": "/2023/",
+    "exists": true,
+    "recursive_members": 208492,
+    "direct_members": 0,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 981,
+    "raw_constraint": "2024/",
+    "path": "/2024/",
+    "exists": true,
+    "recursive_members": 244028,
+    "direct_members": 0,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 986,
+    "raw_constraint": "2025/7/",
+    "path": "/2025/7/",
+    "exists": true,
+    "recursive_members": 2864,
+    "direct_members": 2864,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 989,
+    "raw_constraint": "2024/",
+    "path": "/2024/",
+    "exists": true,
+    "recursive_members": 244028,
+    "direct_members": 0,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 993,
+    "raw_constraint": "2021/10/",
+    "path": "/2021/10/",
+    "exists": true,
+    "recursive_members": 15960,
+    "direct_members": 15960,
+    "mode_not_inferred": true
+  },
+  {
+    "query_id": 994,
+    "raw_constraint": "2010/",
+    "path": "/2010/",
+    "exists": true,
+    "recursive_members": 70125,
+    "direct_members": 0,
+    "mode_not_inferred": true
+  }
+]

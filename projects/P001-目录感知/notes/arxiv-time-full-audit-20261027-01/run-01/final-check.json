@@ -1,0 +1,11 @@
+{
+  "status": "passed",
+  "metadata_records_verified": 2763543,
+  "full_binding_hash_verified": true,
+  "raw_metadata_stat_still_unchanged": true,
+  "core_snapshot_files_unchanged": 30,
+  "audit_script_snapshots_match": true,
+  "cost_experiment_005_complete": true,
+  "new_performance_experiment_started": false,
+  "vector_payload_read": false
+}

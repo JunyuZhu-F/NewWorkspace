@@ -1,0 +1,12 @@
+{"progress_records": 250000, "elapsed_seconds": 1.75}
+{"progress_records": 500000, "elapsed_seconds": 3.48}
+{"progress_records": 750000, "elapsed_seconds": 5.22}
+{"progress_records": 1000000, "elapsed_seconds": 6.92}
+{"progress_records": 1250000, "elapsed_seconds": 8.67}
+{"progress_records": 1500000, "elapsed_seconds": 10.39}
+{"progress_records": 1750000, "elapsed_seconds": 12.22}
+{"progress_records": 2000000, "elapsed_seconds": 14.05}
+{"progress_records": 2250000, "elapsed_seconds": 15.86}
+{"progress_records": 2500000, "elapsed_seconds": 17.75}
+{"progress_records": 2750000, "elapsed_seconds": 19.58}
+{"status": "passed", "records": 2763543, "year_directories": 34, "month_directories": 397, "bindings_sha256": "127a7d07902cb997489da526be1da973bc9bac09f0da133787f0c28323ea72a2", "elapsed_seconds": 19.734}

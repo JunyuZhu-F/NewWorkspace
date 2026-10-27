@@ -10,19 +10,32 @@ set "TAG=%CONFIG%"
 set "ASAN=OFF"
 if "%~2"=="asan" set "TAG=%CONFIG%-ASan"
 if "%~2"=="asan" set "ASAN=ON"
+set "COST=OFF"
+if "%~3"=="cost" set "TAG=%TAG%-Cost"
+if "%~3"=="cost" set "COST=ON"
 set "OUT=%~dp0..\build-%TAG%"
 python "%~dp0prepare-time-fixture.py" --project "%~dp0..\.." --output "%OUT%\time-pilot.tsv"
 if errorlevel 1 exit /b 2
-python "%~dp0prepare-benchmark-fixtures.py" --project "%~dp0..\.." --output "%~dp0..\..\notes\benchmark-fixtures-20261026-01"
+if "%COST%"=="ON" (
+  python "%~dp0verify-cost-fixtures.py"
+) else (
+  python "%~dp0prepare-benchmark-fixtures.py" --project "%~dp0..\.." --output "%~dp0..\..\notes\benchmark-fixtures-20261026-01"
+)
 if errorlevel 1 exit /b 2
-"%CMAKE%" -S "%~dp0.." -B "%OUT%" -G Ninja -DCMAKE_MAKE_PROGRAM=D:/anaconda3/Scripts/ninja.exe -DCMAKE_BUILD_TYPE=%CONFIG% -DDIRECTORY_ENABLE_ASAN=%ASAN% "-DDIRECTORY_PILOT_TSV=%OUT%\time-pilot.tsv"
+"%CMAKE%" -S "%~dp0.." -B "%OUT%" -G Ninja -DCMAKE_MAKE_PROGRAM=D:/anaconda3/Scripts/ninja.exe -DCMAKE_BUILD_TYPE=%CONFIG% -DDIRECTORY_ENABLE_ASAN=%ASAN% -DDIRECTORY_BUILD_COST_DIAGNOSTICS=%COST% "-DDIRECTORY_PILOT_TSV=%OUT%\time-pilot.tsv"
 if errorlevel 1 exit /b 3
 "%CMAKE%" --build "%OUT%" --parallel 2
 if errorlevel 1 exit /b 4
+if "%~4"=="build-only" exit /b 0
+if "%~4"=="admission-only" goto cost_admission_only
 "%CTEST%" --test-dir "%OUT%" --output-on-failure
 if errorlevel 1 exit /b 5
 "%OUT%\directory_benchmark.exe" self-test "%~dp0..\..\notes\benchmark-fixtures-20261026-01"
 if errorlevel 1 exit /b 6
 "%OUT%\directory_benchmark_instrumented.exe" self-test "%~dp0..\..\notes\benchmark-fixtures-20261026-01"
 if errorlevel 1 exit /b 7
+exit /b 0
+:cost_admission_only
+"%CTEST%" --test-dir "%OUT%" -R admission --output-on-failure
+if errorlevel 1 exit /b 5
 exit /b 0

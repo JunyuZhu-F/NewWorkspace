@@ -17,7 +17,7 @@ def available_memory():
     m=Memory();m.length=ctypes.sizeof(m)
     return int(m.avail) if ctypes.windll.kernel32.GlobalMemoryStatusEx(ctypes.byref(m)) else None
 def copy_source(project,dest):
-    dest.mkdir(parents=True)
+    (dest/'code').mkdir(parents=True)
     for src in sorted((project/'code').iterdir()):
         if src.name.startswith('build') or src.name=='__pycache__': continue
         target=dest/'code'/src.name
@@ -54,10 +54,12 @@ def main():
     compiler_cmake=next((project/'code/build-Release/CMakeFiles').glob('*/CMakeCXXCompiler.cmake'),None)
     compiler_text=compiler_cmake.read_text(encoding='utf-8',errors='replace') if compiler_cmake else ''
     version=re.search(r'set\(CMAKE_CXX_COMPILER_VERSION "([^"]+)"',compiler_text)
+    power_scheme=subprocess.run(['powercfg','/getactivescheme'],capture_output=True)
     environment={'captured_at' :now(),'platform':platform.platform(),'python':sys.version,'processor':platform.processor(),
                  'processor_identifier':os.environ.get('PROCESSOR_IDENTIFIER'),'logical_cpu_count':os.cpu_count(),'system_available_physical_bytes':available_memory(),
                  'compiler_version':version.group(1) if version else 'not_determined','release_cmake_cache':cache,
-                 'build_command':'cmd /c code/scripts/build-test.cmd Release','power_scheme':subprocess.run(['powercfg','/getactivescheme'],capture_output=True,text=True).stdout.strip(),
+                 'build_command':'cmd /c code/scripts/build-test.cmd Release','power_scheme':power_scheme.stdout.decode('utf-8',errors='backslashreplace').strip(),
+                 'power_scheme_raw_stdout_hex':power_scheme.stdout.hex(),'power_scheme_raw_stderr_hex':power_scheme.stderr.hex(),'power_scheme_exit_code':power_scheme.returncode,
                  'baseline_affinity_or_priority_changed':False,'background_load':'not_controlled; available memory recorded; no idle-machine claim'}
     (out/'environment.json').write_text(json.dumps(environment,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
     started=time.monotonic();started_iso=now();config['started_at']=started_iso;(out/'config.json').write_text(json.dumps(config,indent=2)+'\n',encoding='utf-8');order_path=out/'run-order.jsonl';status='running';failure=None

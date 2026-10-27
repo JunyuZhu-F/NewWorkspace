@@ -1,0 +1,26 @@
+{
+  "name": "CRoaring",
+  "version": "v5.3.2",
+  "release_url": "https://github.com/RoaringBitmap/CRoaring/releases/tag/v5.3.2",
+  "api": "C API through project RAII adapter",
+  "files": [
+    {
+      "file": "roaring.c",
+      "bytes": 916188,
+      "sha256": "81ae778a927108500a7d577ae3ff44fa1dfa5c46dfe0f0d0bedd8e4ae624efe2",
+      "official_release_digest": "sha256:81ae778a927108500a7d577ae3ff44fa1dfa5c46dfe0f0d0bedd8e4ae624efe2"
+    },
+    {
+      "file": "roaring.h",
+      "bytes": 424298,
+      "sha256": "5a09d9e2996b8c0c545b8147996a3b008bcad1a991c559c9b4ecac3120a2b468",
+      "official_release_digest": "sha256:5a09d9e2996b8c0c545b8147996a3b008bcad1a991c559c9b4ecac3120a2b468"
+    },
+    {
+      "file": "LICENSE",
+      "bytes": 12609,
+      "sha256": "f8e1f16a3f22e001b44ae9b12625420b9a0c4dbb7ec0e9f83b6a3d38a9525411"
+    }
+  ],
+  "paper_version": "not specified; this is an engineering pin"
+}

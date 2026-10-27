@@ -1,6 +1,6 @@
 # Directory-Aware Query and Maintenance in Vector Databases
 
-> P001-目录感知，采用 arXiv:2606.16903v1。复现范围已确认，单父目录三方案已实现并完成审查，Release/ASan 各 7/7 正确性测试通过；尚无性能或 ANN 复现结果。
+> P001-目录感知，采用 arXiv:2606.16903v1。三方案当前小规模DIR-01已验收；004的210进程、005的135进程及全量2,763,543条时间metadata审计均完成并核验。全量索引/性能、完整真实协议与ANN未完成。
 
 初次阅读建议先看 [精读笔记](notes/paper-card.md) 和 [材料/疑点清单](notes/materials-and-gaps.md)，再审核下面的目标与计划。
 
@@ -41,4 +41,4 @@ P001-目录感知/
 
 原始数据在 dataset/raw/，保持只读；前 10,000 条时间视图用于正确性。DATA-01/SPEC-01 的真实类别、WIKI/作者工作负载缺口仍保留，关联 OpenViking 不能直接视为完整原文实验包。
 
-下一任务是 PROTO-01：先写小规模目录性能协议，暂不执行基准。大规模运行由用户以后单独决定。
+全量时间metadata和432目录的证据见[数据核查报告](notes/arxiv-time-full-audit-20261027-01/report.md)；005见[实验记录](experiments/EXP-20261027-005/record.md)，小规模分支见[验收](notes/dir01-small-scope-acceptance-20261027.md)。按用户指示不追查1995年，直接评估现有真实时间目录实验的规模/协议，未自动启动大规模运行。

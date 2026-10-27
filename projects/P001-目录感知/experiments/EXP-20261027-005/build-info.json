@@ -1,0 +1,34 @@
+{
+  "platform": "Windows-10-10.0.26300-SP0",
+  "python": "3.9.13 (main, Aug 25 2022, 23:51:50) [MSC v.1916 64 bit (AMD64)]",
+  "builds": {
+    "build-Release-Cost": {
+      "compiler_version": "19.51.36260.0",
+      "cache": {
+        "CMAKE_BUILD_TYPE:STRING": "Release",
+        "CMAKE_CXX_COMPILER:FILEPATH": "D:/Microsoft Visual Studio/VC/Tools/MSVC/14.51.36231/bin/Hostx64/x64/cl.exe",
+        "DIRECTORY_BUILD_COST_DIAGNOSTICS:BOOL": "ON",
+        "DIRECTORY_ENABLE_ASAN:BOOL": "OFF"
+      },
+      "flags": [
+        "FLAGS = /DWIN32 /D_WINDOWS /EHsc /O2 /Ob2 /DNDEBUG -MD",
+        "FLAGS = /DWIN32 /D_WINDOWS /EHsc /O2 /Ob2 /DNDEBUG -std:c++17 -MD /W4 /permissive- /utf-8",
+        "FLAGS = /DWIN32 /D_WINDOWS /O2 /Ob2 /DNDEBUG -std:c11 -MD /utf-8"
+      ]
+    },
+    "build-RelWithDebInfo-ASan-Cost": {
+      "compiler_version": "19.51.36260.0",
+      "cache": {
+        "CMAKE_BUILD_TYPE:STRING": "RelWithDebInfo",
+        "CMAKE_CXX_COMPILER:FILEPATH": "D:/Microsoft Visual Studio/VC/Tools/MSVC/14.51.36231/bin/Hostx64/x64/cl.exe",
+        "DIRECTORY_BUILD_COST_DIAGNOSTICS:BOOL": "ON",
+        "DIRECTORY_ENABLE_ASAN:BOOL": "ON"
+      },
+      "flags": [
+        "FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /O2 /Ob1 /DNDEBUG -MD",
+        "FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /O2 /Ob1 /DNDEBUG -std:c++17 -MD /W4 /permissive- /utf-8 /fsanitize=address",
+        "FLAGS = /DWIN32 /D_WINDOWS /Zi /O2 /Ob1 /DNDEBUG -std:c11 -MD /utf-8 /fsanitize=address"
+      ]
+    }
+  }
+}

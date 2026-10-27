@@ -1,0 +1,11 @@
+{
+  "status": "passed",
+  "scope": "annotation restoration/token check plus unchanged public layout header and preserved original Release binaries; not a formal proof of all diagnostics",
+  "algorithm_token_checks": {
+    "src/index.cpp": "identical algorithm tokens after removing diagnostic-only annotations",
+    "src/path.cpp": "identical algorithm tokens after removing diagnostic-only annotations",
+    "include/directory/bitmap.hpp": "identical algorithm tokens after removing diagnostic-only annotations"
+  },
+  "public_index_header_unchanged": true,
+  "original_release_binaries_unchanged": true
+}

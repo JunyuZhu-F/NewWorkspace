@@ -1,0 +1,1 @@
+{"allocation_mode":false,"nominal_period_ns":1.000000,"minimum_observed_nonzero_delta_ns":100,"zero_delta_count":7405,"empty":{"n":10000,"mean_ns":25.950000,"p90_ns":100,"p99_ns":100},"phase_frame":{"n":10000,"mean_ns":100.740000,"p90_ns":100,"p99_ns":100}}

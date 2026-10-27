@@ -1,0 +1,18 @@
+**********************************************************************
+** Visual Studio 2026 Developer Command Prompt v18.11.1
+** Copyright (c) 2026 Microsoft Corporation
+**********************************************************************
+[vcvarsall.bat] Environment initialized for: 'x64'
+Prepared verified time-pilot TSV: 10000 bindings
+Traceback (most recent call last):
+  File "D:\NewWorkspace\projects\P001-Ŀ¼��֪\code\scripts\prepare-benchmark-fixtures.py", line 100, in <module>
+    if __name__ == "__main__": main()
+  File "D:\NewWorkspace\projects\P001-Ŀ¼��֪\code\scripts\prepare-benchmark-fixtures.py", line 90, in main
+    if alias_file.read_bytes()!=target_file.read_bytes(): raise ValueError("Alias mismatch")
+  File "D:\anaconda3\lib\pathlib.py", line 1259, in read_bytes
+    with self.open(mode='rb') as f:
+  File "D:\anaconda3\lib\pathlib.py", line 1252, in open
+    return io.open(self, mode, buffering, encoding, errors, newline,
+  File "D:\anaconda3\lib\pathlib.py", line 1120, in _opener
+    return self._accessor.open(self, flags, mode)
+FileNotFoundError: [Errno 2] No such file or directory: 'D:\\NewWorkspace\\projects\\P001-Ŀ¼��֪\\notes\\benchmark-fixtures-20261026-01\\figure2-move-bindings.tsv'

@@ -1,0 +1,7 @@
+{
+  "status": "failed_before_measurement",
+  "exit_code": 1,
+  "measurement_processes_started": 0,
+  "failure": "FileNotFoundError in copy_source: source/code directory was not created",
+  "record_origin": "manually recorded from actual runner traceback; failure occurred before runner try/finally"
+}

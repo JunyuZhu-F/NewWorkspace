@@ -1,0 +1,7 @@
+{
+  "status": "failed",
+  "started_at": "2026-10-26T17:21:05.632958+00:00",
+  "failure": "FileNotFoundError: synthetic missing snapshot before process startup",
+  "finished_at": "2026-10-26T17:21:05.634959+00:00",
+  "wall_seconds": 0.0
+}

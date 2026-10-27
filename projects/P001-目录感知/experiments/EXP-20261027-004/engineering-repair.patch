@@ -1,0 +1,53 @@
+diff --git a/projects/P001-目录感知/code/scripts/run-dir01.py b/projects/P001-目录感知/code/scripts/run-dir01.py
+index dc8e099..f9f26c8 100644
+--- a/projects/P001-目录感知/code/scripts/run-dir01.py
++++ b/projects/P001-目录感知/code/scripts/run-dir01.py
+@@ -17,7 +17,7 @@ def available_memory():
+     m=Memory();m.length=ctypes.sizeof(m)
+     return int(m.avail) if ctypes.windll.kernel32.GlobalMemoryStatusEx(ctypes.byref(m)) else None
+ def copy_source(project,dest):
+-    dest.mkdir(parents=True)
++    (dest/'code').mkdir(parents=True)
+     for src in sorted((project/'code').iterdir()):
+         if src.name.startswith('build') or src.name=='__pycache__': continue
+         target=dest/'code'/src.name
+@@ -54,10 +54,12 @@ def main():
+     compiler_cmake=next((project/'code/build-Release/CMakeFiles').glob('*/CMakeCXXCompiler.cmake'),None)
+     compiler_text=compiler_cmake.read_text(encoding='utf-8',errors='replace') if compiler_cmake else ''
+     version=re.search(r'set\(CMAKE_CXX_COMPILER_VERSION "([^"]+)"',compiler_text)
++    power_scheme=subprocess.run(['powercfg','/getactivescheme'],capture_output=True)
+     environment={'captured_at' :now(),'platform':platform.platform(),'python':sys.version,'processor':platform.processor(),
+                  'processor_identifier':os.environ.get('PROCESSOR_IDENTIFIER'),'logical_cpu_count':os.cpu_count(),'system_available_physical_bytes':available_memory(),
+                  'compiler_version':version.group(1) if version else 'not_determined','release_cmake_cache':cache,
+-                 'build_command':'cmd /c code/scripts/build-test.cmd Release','power_scheme':subprocess.run(['powercfg','/getactivescheme'],capture_output=True,text=True).stdout.strip(),
++                 'build_command':'cmd /c code/scripts/build-test.cmd Release','power_scheme':power_scheme.stdout.decode('utf-8',errors='backslashreplace').strip(),
++                 'power_scheme_raw_stdout_hex':power_scheme.stdout.hex(),'power_scheme_raw_stderr_hex':power_scheme.stderr.hex(),'power_scheme_exit_code':power_scheme.returncode,
+                  'baseline_affinity_or_priority_changed':False,'background_load':'not_controlled; available memory recorded; no idle-machine claim'}
+     (out/'environment.json').write_text(json.dumps(environment,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+     started=time.monotonic();started_iso=now();config['started_at']=started_iso;(out/'config.json').write_text(json.dumps(config,indent=2)+'\n',encoding='utf-8');order_path=out/'run-order.jsonl';status='running';failure=None
+diff --git a/projects/P001-目录感知/code/tests/benchmark.cpp b/projects/P001-目录感知/code/tests/benchmark.cpp
+index d90c362..9c35530 100644
+--- a/projects/P001-目录感知/code/tests/benchmark.cpp
++++ b/projects/P001-目录感知/code/tests/benchmark.cpp
+@@ -65,7 +65,8 @@ Fixture load_fixture(const std::string& dir,const std::string& name,const std::s
+     }
+     f.paths.assign(paths.begin(),paths.end());
+     std::sort(f.paths.begin(),f.paths.end(),[](const auto& a,const auto& b){ if(a=="/") return true; if(b=="/") return false; return a<b; });
+-    for(const auto& line:lines(dir+"/"+name+"-operations.tsv")) {
++    const auto operation_name=(name==base+"-build"||name==base+"-dsq")?base:name;
++    for(const auto& line:lines(dir+"/"+operation_name+"-operations.tsv")) {
+         auto p=split(line); require(p.size()==4,"Invalid operation row"); f.operations.push_back({p[0],p[1],p[2],p[3]=="1"});
+     }
+     require(!f.rows.empty()&&!f.queries.empty()&&!f.operations.empty(),"Incomplete fixture"); return f;
+@@ -133,6 +134,11 @@ void self_test(const std::string& dir,bool instrumented) {
+     for(auto s:{Strategy::pe_online,Strategy::pe_offline,Strategy::trie_hi}) {
+         for(const auto& name:{"figure2","time"}) {
+             auto f=load_fixture(dir,name,name); auto oracle=make_oracle(f); auto index=build_index(s,f); check_state(*index,oracle,f,true);
++            for(const auto& subload:{"build","dsq"}) {
++                auto alias=load_fixture(dir,std::string(name)+"-"+subload,name);
++                require(alias.rows.size()==f.rows.size()&&alias.queries.size()==f.queries.size()&&alias.operations.size()==f.operations.size(),"Run fixture alias mismatch");
++                check_state(*index,oracle,alias,true);
++            }
+             auto root=index->query("/",true); require(root.ids.cardinality()==f.rows.size(),"Root cardinality mismatch"); check_counters(*index,instrumented,f.paths.size());
+             auto local=index->query("/",false); const auto w=index->last_query_work();
+             const auto children=static_cast<std::size_t>(std::count_if(f.paths.begin(),f.paths.end(),[](const auto& path){return path!="/"&&std::count(path.begin(),path.end(),'/')==2;}));

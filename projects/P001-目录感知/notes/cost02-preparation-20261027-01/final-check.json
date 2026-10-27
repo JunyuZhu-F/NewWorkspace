@@ -1,0 +1,12 @@
+{
+  "status": "passed",
+  "snapshot": "COST02-440a2e0f81208f81",
+  "current_code_files": 30,
+  "frozen_inputs": 10,
+  "zip_members": 41,
+  "source_zip_and_protocol_hashes_match": true,
+  "binary_hashes_match": true,
+  "log_anchors_valid": true,
+  "race_leftover_preserved_and_identical_to_base": true,
+  "formal_matrix_run": false
+}

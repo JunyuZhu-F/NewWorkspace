@@ -1,0 +1,78 @@
+{
+  "status": "passed",
+  "scope": "full ARXIV metadata time view only; not author workload or full vector validation",
+  "input_metadata": "dataset/raw/ARXIV-Dir/arxiv_corpus_metadata.json",
+  "input_stat_before": {
+    "size": 482867712,
+    "mtime_ns": 1772275802000000000
+  },
+  "input_stat_after": {
+    "size": 482867712,
+    "mtime_ns": 1772275802000000000
+  },
+  "metadata_read_proof": {
+    "sha256": "93a4e0db140c82a2e154274d7b80bf4e95ade0152d79a63424e02ff3b3874a0f",
+    "bytes_read": 482867712,
+    "max_text_buffer_chars": 1048897,
+    "closed_array_and_eof": true
+  },
+  "counts": {
+    "records": 2763543,
+    "unique_ids": 2763543,
+    "unique_ids_in_vector_size_range": 2763543,
+    "pilot_rows_compared": 10000,
+    "bindings_written": 2763543
+  },
+  "id_min": 0,
+  "id_max": 2763542,
+  "missing_ids_in_vector_size_range": 0,
+  "year_directories": 34,
+  "month_directories": 397,
+  "directories_including_root": 432,
+  "max_directory_depth": 2,
+  "schema_counts": {
+    "categories,id,time": 2763543
+  },
+  "time_formats": {
+    "leading_slash=False,trailing_slash=True": 2763543,
+    "month_spelling_digits=1": 2054952,
+    "month_spelling_digits=2": 708591
+  },
+  "id_coverage_memory_bytes": 352256,
+  "first_10000_binding_bytes_equal_frozen_pilot": true,
+  "vector_structure": {
+    "file": "dataset/raw/ARXIV-Dir/arxiv_corpus_vectors.fvecs",
+    "stat": {
+      "size": 11330526300,
+      "mtime_ns": 1792753102919913800
+    },
+    "first_dimension": 1024,
+    "header_bytes_read": 4,
+    "rows_implied_by_length": 2763543,
+    "trailing_bytes_under_constant_dimension_assumption": 0,
+    "payload_bytes_read": 0,
+    "all_record_dimensions_or_finiteness_verified": false,
+    "id_row_relationship": "metadata ID equals its row; compatibility with vector row count only, not semantic vector-ID proof"
+  },
+  "time_query_coverage": {
+    "file": "dataset/raw/ARXIV-Dir/arxiv_query_constraint.json",
+    "sha256": "dd3a628106ad80ddc64235507cb943b85308852e8347286564214b0d6a316eaf",
+    "total_queries": 1000,
+    "time_constraints": 501,
+    "missing_directory_constraints": 0,
+    "gt_read": false,
+    "recursive_vs_nonrecursive_protocol_recovered": false
+  },
+  "outputs": {
+    "bindings.tsv": "127a7d07902cb997489da526be1da973bc9bac09f0da133787f0c28323ea72a2",
+    "directory-counts.json": "7b524e04cb6d5fa1a26b77733163e741ddd88f468f8edac8290278b5c92f61d5",
+    "anomalies.json": "9b065cb248c8fd4436c0499b06490120e2c8a9e8ffacbd712a87b0fbea5aa3c5",
+    "time-query-coverage.json": "979f31c49a714ac9676bc0456a41ab47c82c5830ffafa6d343adddabbdb2d4c5"
+  },
+  "mapping_rule": "leading/trailing slash only, preserve original year/month spelling; no category conversion",
+  "performance_or_index_run": false,
+  "vectors_payload_loaded": false,
+  "author_fulltext_or_original_workload_recovered": false,
+  "script_sha256": "da10e6226be1bd4c553b9968177b6ac6f6d6c465f6519401104c71f1426ab104",
+  "elapsed_seconds": 19.73400000000038
+}

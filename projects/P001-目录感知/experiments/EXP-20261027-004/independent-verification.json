@@ -1,0 +1,31 @@
+{
+  "status": "passed",
+  "processes": 210,
+  "exact_job_matrix": true,
+  "raw_counts": {
+    "build": 1380,
+    "dsq": 62100,
+    "dsm": 3450,
+    "space": 1380,
+    "timing": 210
+  },
+  "source_snapshot_hash": "9449921fb89f2723586c9f9dd041b72d8eb2932e3d8b9e6e56f1b8cbad9d404f",
+  "snapshot_files_checked": 32,
+  "protocol_and_fixture_hashes_match": true,
+  "all_23_iterations_present": true,
+  "summary_means_and_nearest_rank_quantiles_recomputed": true,
+  "separate_diagnostic_instrumentation": true,
+  "sampled_memory": {
+    "max_private_bytes": 4956160,
+    "max_peak_working_set_bytes": 9166848,
+    "min_system_available_physical_bytes_at_space_samples": 5862715392
+  },
+  "binary_sha256": {
+    "directory_benchmark.exe": "988f9b41fac01045e0e4f3d6b0336d9b1ffe164c664b2f23b206ba6ed69663ce",
+    "directory_benchmark_instrumented.exe": "bf7a9f9a6e62556b7a28eca4795fda31433e30a0b6dcc9ff759aef40db832c13"
+  },
+  "timing_empty_interval_mean_ns_range": [
+    13.35,
+    271.41
+  ]
+}

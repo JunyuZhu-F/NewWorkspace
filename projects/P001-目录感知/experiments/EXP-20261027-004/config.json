@@ -1,0 +1,24 @@
+{
+  "build_command": "cmd /c code/scripts/build-test.cmd Release",
+  "experiment_id": "EXP-20261027-004",
+  "protocol": "PROTO-01-20261026",
+  "protocol_sha256": "81ec16d0f07ea1c74715de2a4b6c049c9292766ddc0e36240a1668f3a21eed24",
+  "fixture_manifest_sha256": "6a300c9d995084a5ae3782ae2d5b763e08056f900c0e23967749c5d3272fe1d8",
+  "source_snapshot_hash": "9449921fb89f2723586c9f9dd041b72d8eb2932e3d8b9e6e56f1b8cbad9d404f",
+  "input_binding_sha256": {
+    "figure2": "9e1a6a10f9fb2eade2a41e1db25937a0a3fbbe8892123e7428555067c2d01461",
+    "time": "4086cbb4767f5eb3899cf46e36dc84b8a8e594612bb6a8e20366f0171cbfa57c"
+  },
+  "runs": 5,
+  "warmups": 3,
+  "measurements": 20,
+  "processes": 210,
+  "single_process_timeout_seconds": 120,
+  "total_wall_limit_seconds": 1800,
+  "private_bytes_limit": 2147483648,
+  "system_available_limit": 2147483648,
+  "raw_output_limit": 1073741824,
+  "default_executable": "code/build-Release/directory_benchmark.exe",
+  "instrumented_executable": "code/build-Release/directory_benchmark_instrumented.exe",
+  "started_at": "2026-10-26T16:24:48.818905+00:00"
+}

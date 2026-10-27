@@ -65,7 +65,8 @@ Fixture load_fixture(const std::string& dir,const std::string& name,const std::s
     }
     f.paths.assign(paths.begin(),paths.end());
     std::sort(f.paths.begin(),f.paths.end(),[](const auto& a,const auto& b){ if(a=="/") return true; if(b=="/") return false; return a<b; });
-    for(const auto& line:lines(dir+"/"+name+"-operations.tsv")) {
+    const auto operation_name=(name==base+"-build"||name==base+"-dsq")?base:name;
+    for(const auto& line:lines(dir+"/"+operation_name+"-operations.tsv")) {
         auto p=split(line); require(p.size()==4,"Invalid operation row"); f.operations.push_back({p[0],p[1],p[2],p[3]=="1"});
     }
     require(!f.rows.empty()&&!f.queries.empty()&&!f.operations.empty(),"Incomplete fixture"); return f;
@@ -133,6 +134,11 @@ void self_test(const std::string& dir,bool instrumented) {
     for(auto s:{Strategy::pe_online,Strategy::pe_offline,Strategy::trie_hi}) {
         for(const auto& name:{"figure2","time"}) {
             auto f=load_fixture(dir,name,name); auto oracle=make_oracle(f); auto index=build_index(s,f); check_state(*index,oracle,f,true);
+            for(const auto& subload:{"build","dsq"}) {
+                auto alias=load_fixture(dir,std::string(name)+"-"+subload,name);
+                require(alias.rows.size()==f.rows.size()&&alias.queries.size()==f.queries.size()&&alias.operations.size()==f.operations.size(),"Run fixture alias mismatch");
+                check_state(*index,oracle,alias,true);
+            }
             auto root=index->query("/",true); require(root.ids.cardinality()==f.rows.size(),"Root cardinality mismatch"); check_counters(*index,instrumented,f.paths.size());
             auto local=index->query("/",false); const auto w=index->last_query_work();
             const auto children=static_cast<std::size_t>(std::count_if(f.paths.begin(),f.paths.end(),[](const auto& path){return path!="/"&&std::count(path.begin(),path.end(),'/')==2;}));

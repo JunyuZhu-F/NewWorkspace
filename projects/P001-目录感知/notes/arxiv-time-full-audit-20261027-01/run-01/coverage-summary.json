@@ -1,0 +1,50 @@
+{
+  "status": "verified",
+  "records": 2763543,
+  "id_range": [
+    0,
+    2763542
+  ],
+  "directories_including_root": 432,
+  "year_directories": 34,
+  "month_directories": 397,
+  "maximum_depth": 2,
+  "first_month": "1991/7/",
+  "last_month": "2025/7/",
+  "missing_years_within_observed_span": [
+    1995
+  ],
+  "missing_months_within_observed_span": [
+    "1995/1/",
+    "1995/2/",
+    "1995/3/",
+    "1995/4/",
+    "1995/5/",
+    "1995/6/",
+    "1995/7/",
+    "1995/8/",
+    "1995/9/",
+    "1995/10/",
+    "1995/11/",
+    "1995/12/"
+  ],
+  "numeric_month_alias_count": 0,
+  "leading_zero_month_spellings": [],
+  "time_constraints": 501,
+  "constraint_depth_counts": {
+    "1": 266,
+    "2": 235
+  },
+  "missing_constraint_directories": 0,
+  "zero_direct_member_constraints_if_nonrecursive": 266,
+  "metadata_sha256": "93a4e0db140c82a2e154274d7b80bf4e95ade0152d79a63424e02ff3b3874a0f",
+  "bindings_sha256": "127a7d07902cb997489da526be1da973bc9bac09f0da133787f0c28323ea72a2",
+  "bindings_bytes": 46577712,
+  "metadata_parse_seconds": 19.73400000000038,
+  "independent_verification_seconds": 29.436999999999898,
+  "full_vector_integrity_checked": false,
+  "corpus_vector_bytes_read": 4,
+  "vector_header_bytes_read": 4,
+  "vector_payload_bytes_read": 0,
+  "full_scale_index_or_performance_run": false
+}

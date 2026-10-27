@@ -1,0 +1,25 @@
+{
+  "date_local": "2026-10-27",
+  "timezone": "Asia/Hong_Kong",
+  "scope": "DIR-01-COST-02 implementation and admission; no formal matrix",
+  "git_base_commit": "37981aa4b187d69aa8ca8c56bbb068fe068de00d",
+  "snapshot": "COST02-440a2e0f81208f81",
+  "source_snapshot_hash": "440a2e0f81208f814bddf4b3f709b8739ec122471e8d32cae57f86418a1fb997",
+  "protocol_sha256": "589d3b6f7abe9123c3f094a04e54084e885a7d77114fc3ae74770f92dc56e066",
+  "commands": [
+    {"command": "code/scripts/build-test.cmd Release normal cost", "exit_code": 0, "ctest": "23/23", "default_self_test": "passed", "counter_self_test": "passed", "log": "release-final.log"},
+    {"command": "code/scripts/build-test.cmd RelWithDebInfo asan cost", "exit_code": 0, "ctest": "23/23", "default_self_test": "passed", "counter_self_test": "passed", "asan_address_error_reported": false, "log": "asan-final-attempt2.log"},
+    {"command": "Release build-only then ctest --test-dir code/build-Release-Cost -R admission --output-on-failure", "exit_code": 0, "ctest": "2/2", "log": "release-schema-admission.log"},
+    {"command": "code/scripts/build-test.cmd RelWithDebInfo asan cost admission-only", "exit_code": 0, "ctest": "2/2", "log": "asan-schema-admission.log"},
+    {"command": "python notes/cost02-preparation-20261027-01/verify-admission.py", "exit_code": 0, "result": "admission-verification.json"},
+    {"command": "python notes/cost02-preparation-20261027-01/verify-transparency.py", "exit_code": 0, "result": "transparency.json"},
+    {"command": "python code/scripts/run-cost02.py --plan-only", "exit_code": 0, "processes_planned": 135, "measurements_run": 0, "result": "plan-only-final.json"},
+    {"command": "python code/scripts/run-cost02.py --self-test notes/cost02-preparation-20261027-01/runner-selftest-final", "exit_code": 0, "synthetic_only": true, "measurement_processes": 0}
+  ],
+  "preparation_failures_preserved": ["release-build-attempt1.log: hook namespace, exit 4", "asan-final.log: shared fixture generation race, exit 2", "first freeze: extra generated alias assertion before writing zip; alias preserved"],
+  "planned_raw_rows": {"phases": 33465, "allocation": 3795, "overhead": 135, "cost-process": 135},
+  "formal_matrix_processes_run": 0,
+  "new_actual_experiment_registered": false,
+  "performance_results": "not run; admission values must not be treated as performance results",
+  "final_checks": {"freeze_integrity": "final-check.json: passed, 30 code files / 10 fixtures / 41 ZIP members", "admission_integrity": "admission-verification.json: passed", "notes_verifier_encoding_fix": "Explicit UTF-8 for origin.txt repeated verification; no frozen code or admission values changed", "git_diff_check": "passed", "active_build_test_or_measurement_processes_at_handoff": 0}
+}

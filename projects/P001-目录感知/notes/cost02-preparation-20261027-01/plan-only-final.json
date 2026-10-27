@@ -1,0 +1,16 @@
+{
+  "status": "plan_only_no_measurements",
+  "processes": 135,
+  "phase_processes": 105,
+  "allocation_processes": 30,
+  "runs": 5,
+  "warmups": 3,
+  "measurements": 20,
+  "expected_rows": {
+    "phases": 33465,
+    "allocation": 3795,
+    "overhead": 135,
+    "cost-process": 135
+  },
+  "measurements_run": 0
+}

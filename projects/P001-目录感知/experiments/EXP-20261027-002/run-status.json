@@ -1,0 +1,7 @@
+{
+  "status": "failed_before_measurement",
+  "exit_code": 1,
+  "measurement_processes_started": 0,
+  "failure": "powercfg output GBK decoding failed, followed by AttributeError on stdout.strip",
+  "record_origin": "manually recorded from actual runner traceback; failure occurred before runner try/finally"
+}

@@ -1,0 +1,22 @@
+{
+  "status": "passed",
+  "analysis_only": true,
+  "new_benchmark_processes": 0,
+  "source_and_fixture_snapshot_files_checked": 32,
+  "all_540_path_group_means_match_published_summary": true,
+  "raw_inputs_unchanged": true,
+  "raw_hashes": {
+    "raw/dsq.jsonl": "ea0f3cc05484effc83ea12b467ea1f51755a5c7af984dc50198db68b9fb9ded3",
+    "raw/dsm.jsonl": "05e6cba05028db4ecba9e297485ec5549667010733718f0768ac269406245821",
+    "raw/build.jsonl": "854edb7bfc9781b207113b8037c67cc44771aabf8ed582860913858e164009bd",
+    "raw/space.jsonl": "3cb507c634edfc8b9219c0dd634d0f4693d7c24d9110f21c3e6010b01f9a12b7",
+    "raw/timing.jsonl": "4083ead65110bd5178a83acf45d096d80d1de4a7ad6a662ae183b9bb9459702a",
+    "raw/process.jsonl": "a6e7c80582751f21598fba8eeab71bc82e1be814e56dada8d1966d8a6de35486",
+    "run-order.jsonl": "e81d7464820e548eca062bec5853eac3c7fa4a81dd2e74d7dc148f44e6cf23d0",
+    "config.json": "ebfed9e4d700928f164780d740252e67a9101ecc58f60013427113aba9159131",
+    "source/hashes.json": "09a22f24287613f5cc14e4402b593025f360b6eb08255c95a1a3eb9950a9eacf",
+    "summary.json": "e229e2c8c00abe74246b1090bbc87dd5dddb11d9e329e6986b861dce0019bf39",
+    "protocol.md": "81ec16d0f07ea1c74715de2a4b6c049c9292766ddc0e36240a1668f3a21eed24"
+  },
+  "source_hash": "9449921fb89f2723586c9f9dd041b72d8eb2932e3d8b9e6e56f1b8cbad9d404f"
+}

@@ -1,0 +1,6 @@
+{"verified_records": 500000, "elapsed_seconds": 5.11}
+{"verified_records": 1000000, "elapsed_seconds": 10.62}
+{"verified_records": 1500000, "elapsed_seconds": 15.95}
+{"verified_records": 2000000, "elapsed_seconds": 21.26}
+{"verified_records": 2500000, "elapsed_seconds": 26.56}
+{"status": "passed", "method": "independent line-framed JSON loads; full per-row ID/time binding comparison; independently recomputed directory totals", "records_verified": 2763543, "metadata_sha256": "93a4e0db140c82a2e154274d7b80bf4e95ade0152d79a63424e02ff3b3874a0f", "bindings_sha256": "127a7d07902cb997489da526be1da973bc9bac09f0da133787f0c28323ea72a2", "year_directories": 34, "month_directories": 397, "directories_including_root": 432, "id_equals_row_for_all_records": true, "unique_contiguous_ids_proved_by_per_row_equality": true, "all_binding_rows_verified": true, "first_10000_matches_frozen_pilot": true, "metadata_stat_before_after_equal": true, "metadata_full_hash_matches_primary_pass": true, "vector_bytes_read": 0, "vector_all_record_dimensions_or_finiteness_verified": false, "index_or_performance_run": false, "verified_at_utc": "2026-10-26T18:00:08.938718+00:00", "elapsed_seconds": 29.436999999999898, "script_sha256": "eb7d630de80904a7fc6f7d149ef82244367926828cd9c7f23ff0173271eea56b"}

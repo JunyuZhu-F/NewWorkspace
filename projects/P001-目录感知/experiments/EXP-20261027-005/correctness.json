@@ -1,0 +1,11 @@
+{
+  "status": "passed",
+  "exact_matrix": true,
+  "rows_checked": {
+    "phases": 33465,
+    "allocation": 3795,
+    "overhead": 135
+  },
+  "iterations": 23,
+  "per_sample_oracle": "checked in executable"
+}

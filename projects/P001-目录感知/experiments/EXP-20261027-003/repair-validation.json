@@ -1,0 +1,10 @@
+{
+  "date_local": "2026-10-27",
+  "scope": "engineering repair admission, not performance results",
+  "release": {"command": "code/scripts/build-test.cmd Release", "exit_code": 0, "ctest_passed": 7, "ctest_total": 7, "default_self_test": "passed", "instrumented_self_test": "passed", "log": "repair-release.log"},
+  "asan": {"command": "code/scripts/build-test.cmd RelWithDebInfo asan", "exit_code": 0, "ctest_passed": 7, "ctest_total": 7, "default_self_test": "passed", "instrumented_self_test": "passed", "log": "repair-asan.log"},
+  "runner_syntax": "ast.parse passed",
+  "snapshot_members_changed": ["code/scripts/run-dir01.py", "code/tests/benchmark.cpp"],
+  "other_30_snapshot_members": "SHA-256 matches SNAP-0b110bb7dee8280f",
+  "core_algorithms_protocol_and_fixtures_changed": false
+}

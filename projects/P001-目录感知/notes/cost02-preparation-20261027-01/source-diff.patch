@@ -1,0 +1,413 @@
+diff --git "a/projects/P001-\347\233\256\345\275\225\346\204\237\347\237\245/code/CMakeLists.txt" "b/projects/P001-\347\233\256\345\275\225\346\204\237\347\237\245/code/CMakeLists.txt"
+index f4731ad..55727ee 100644
+--- "a/projects/P001-\347\233\256\345\275\225\346\204\237\347\237\245/code/CMakeLists.txt"
++++ "b/projects/P001-\347\233\256\345\275\225\346\204\237\347\237\245/code/CMakeLists.txt"
+@@ -20,11 +20,58 @@ if(MSVC)
+   target_compile_options(croaring PRIVATE /utf-8)
+   target_compile_options(directory_core_instrumented PRIVATE /W4 /permissive- /utf-8)
+ endif()
++
++option(DIRECTORY_BUILD_COST_DIAGNOSTICS "Build separate phase/allocation diagnostic tools" OFF)
++set(DIRECTORY_COST_EVIDENCE_DIR "${CMAKE_BINARY_DIR}/cost-admission" CACHE PATH "Admission evidence root")
++if(DIRECTORY_BUILD_COST_DIAGNOSTICS)
++  foreach(mode IN ITEMS phase allocation)
++    string(TOUPPER "${mode}" upper_mode)
++    add_library(directory_core_${mode} src/path.cpp src/index.cpp src/diagnostics.cpp)
++    target_include_directories(directory_core_${mode} PUBLIC include)
++    target_link_libraries(directory_core_${mode} PUBLIC croaring)
++    target_compile_definitions(directory_core_${mode} PUBLIC DIRECTORY_${upper_mode}_DIAGNOSTICS)
++    add_executable(directory_cost_${mode} tests/cost_diagnostics.cpp tests/oracle.cpp)
++    target_link_libraries(directory_cost_${mode} PRIVATE directory_core_${mode})
++    add_executable(directory_tests_${mode} tests/cost_core_tests.cpp tests/oracle.cpp)
++    target_link_libraries(directory_tests_${mode} PRIVATE directory_core_${mode})
++    if(WIN32)
++      target_link_libraries(directory_cost_${mode} PRIVATE Psapi)
++    endif()
++    if(MSVC)
++      foreach(t IN ITEMS directory_core_${mode} directory_cost_${mode} directory_tests_${mode})
++        target_compile_options(${t} PRIVATE /W4 /permissive- /utf-8)
++      endforeach()
++    endif()
++  endforeach()
++endif()
+ add_executable(directory_core_tests tests/oracle.cpp tests/core_tests.cpp)
+ target_link_libraries(directory_core_tests PRIVATE directory_core)
+ if(MSVC)
+   target_compile_options(directory_core_tests PRIVATE /W4 /permissive- /utf-8)
+ endif()
++
++if(DIRECTORY_BUILD_COST_DIAGNOSTICS)
++  foreach(mode IN ITEMS phase allocation)
++    if(DIRECTORY_ENABLE_ASAN AND MSVC)
++      foreach(t IN ITEMS directory_core_${mode} directory_cost_${mode} directory_tests_${mode})
++        target_compile_options(${t} PRIVATE /fsanitize=address)
++      endforeach()
++      target_link_options(directory_cost_${mode} PRIVATE /INCREMENTAL:NO)
++      target_link_options(directory_tests_${mode} PRIVATE /INCREMENTAL:NO)
++    endif()
++    add_test(NAME ${mode}_bitmap COMMAND directory_tests_${mode} bitmap)
++    add_test(NAME ${mode}_fixed COMMAND directory_tests_${mode} fixed)
++    foreach(seed IN ITEMS 7 42 2026 65536)
++      add_test(NAME ${mode}_random_${seed} COMMAND directory_tests_${mode} random ${seed} 1000)
++      set_tests_properties(${mode}_random_${seed} PROPERTIES TIMEOUT 180)
++    endforeach()
++    if(DIRECTORY_PILOT_TSV)
++      add_test(NAME ${mode}_pilot COMMAND directory_tests_${mode} pilot "${DIRECTORY_PILOT_TSV}")
++    endif()
++    add_test(NAME ${mode}_admission COMMAND directory_cost_${mode} admit "${CMAKE_CURRENT_SOURCE_DIR}/../notes/benchmark-fixtures-20261026-01" "${DIRECTORY_COST_EVIDENCE_DIR}/${mode}")
++    set_tests_properties(${mode}_admission PROPERTIES TIMEOUT 180)
++  endforeach()
++endif()
+ add_executable(directory_benchmark tests/oracle.cpp tests/benchmark.cpp)
+ target_link_libraries(directory_benchmark PRIVATE directory_core)
+ add_executable(directory_benchmark_instrumented tests/oracle.cpp tests/benchmark.cpp)
+@@ -67,4 +114,4 @@ set(DIRECTORY_PILOT_TSV "" CACHE FILEPATH "Optional frozen time-pilot correctnes
+ if(DIRECTORY_PILOT_TSV)
+   add_test(NAME time_pilot_correctness COMMAND directory_core_tests pilot "${DIRECTORY_PILOT_TSV}")
+   set_tests_properties(time_pilot_correctness PROPERTIES TIMEOUT 120)
+-endif()
+\ No newline at end of file
++endif()
+diff --git "a/projects/P001-\347\233\256\345\275\225\346\204\237\347\237\245/code/README.md" "b/projects/P001-\347\233\256\345\275\225\346\204\237\347\237\245/code/README.md"
+index d5605a0..08ccfe1 100644
+--- "a/projects/P001-\347\233\256\345\275\225\346\204\237\347\237\245/code/README.md"
++++ "b/projects/P001-\347\233\256\345\275\225\346\204\237\347\237\245/code/README.md"
+@@ -1,5 +1,26 @@
+ # 单父目录核心实现
+ 
++## DIR-01-COST-02 独立诊断工具
++
++2026-10-27：独立阶段计时和请求分配追踪已实施；准入证据见 `../notes/cost02-preparation-20261027-01/`。正式补测协议为 `../notes/benchmark-cost-protocol-20261027.md`。原默认性能输入/输出和 build-Release 二进制保持不变。
++
++```powershell
++& 'D:\NewWorkspace\projects\P001-目录感知\code\scripts\build-test.cmd' Release normal cost
++& 'D:\NewWorkspace\projects\P001-目录感知\code\scripts\build-test.cmd' RelWithDebInfo asan cost
++python code/scripts/run-cost02.py --plan-only
++```
++
++cost 构建位于独立的 build-Release-Cost / build-RelWithDebInfo-ASan-Cost，包含原7项、phase7项、allocation7项及两项准入自检，共23项 CTest。第四参数 `build-only` 只构建，`admission-only` 只跑两项诊断准入门；不得以准入自检记录替代正式性能。
++
++- `include/directory/diagnostics.hpp`、`src/diagnostics.cpp`：默认构建宏展开为空；阶段构建记录互斥的直接时间区间，allocation 构建记录实际请求字节及指针归属，两者不同时开启。
++- `tests/cost_diagnostics.cpp`：复用冻结输入和独立判定器，维护/查询逐ID核验；内存采样先于 oracle，拒绝不变、销毁归零。
++- `scripts/verify-cost-fixtures.py`：只读校验冻结输入，避免构建时反复生成共享别名。
++- `scripts/run-cost02.py`：135进程矩阵计划、准入快照/二进制核对、早期失败记录与资源停止；`--plan-only` 不测量。
++- `scripts/summarize-cost02.py`：严格完整性门与逐阶段/状态统计；缺行或失败不生成正常总结。
++- `scripts/add-cost-scopes.py`：本次一次性开发注解脚本，只能用于原基线，已有注解时会拒绝，不是日常构建入口。
++
++后续用户明确指定正式运行后，先登记唯一实际 EXP，再执行 `python code/scripts/run-cost02.py --project . --experiment-id <真实编号>`；当前没有新实验编号或135进程结果。诊断时间不是默认时间，requested bytes 不是物理堆/序列化大小；拒绝异常传播阶段覆盖不完整的限制见正式协议。
++
+ 这里是依据论文 §III/IV 独立编写的 C++17 目录元数据层，不是作者源码，也不是完整向量数据库。接口输入是 entry ID 与目录，输出为合法 ID 位图；不加载向量、训练模型或执行 ANN。
+ 
+ 实现包括 PE-ONLINE、PE-OFFLINE、TrieHI，以及与索引结构独立的测试判定器。当前范围是一条目一个逻辑父目录、串行合法 MOVE/MERGE。真实类别多归属协议仍见项目 STATE/GAP 清单。
+diff --git "a/projects/P001-\347\233\256\345\275\225\346\204\237\347\237\245/code/include/directory/bitmap.hpp" "b/projects/P001-\347\233\256\345\275\225\346\204\237\347\237\245/code/include/directory/bitmap.hpp"
+index 876ef08..ebbed94 100644
+--- "a/projects/P001-\347\233\256\345\275\225\346\204\237\347\237\245/code/include/directory/bitmap.hpp"
++++ "b/projects/P001-\347\233\256\345\275\225\346\204\237\347\237\245/code/include/directory/bitmap.hpp"
+@@ -1,6 +1,7 @@
+ #pragma once
+ // Thin ownership adapter over the pinned CRoaring C API. No directory logic.
+ #include "roaring.h"
++#include "directory/diagnostics.hpp"
+ #include <cstdint>
+ #include <new>
+ #include <utility>
+@@ -8,18 +9,18 @@
+ namespace directory {
+ class Bitmap {
+     roaring::api::roaring_bitmap_t* value_;
+-    void ensure() { if (!value_) value_=checked(roaring::api::roaring_bitmap_create()); }
++    void ensure() { if (!value_) value_=checked(DIR_VALUE(bitmap_copy, roaring::api::roaring_bitmap_create())); }
+     static roaring::api::roaring_bitmap_t* checked(roaring::api::roaring_bitmap_t* value) {
+         if (!value) throw std::bad_alloc();
+         return value;
+     }
+ public:
+-    Bitmap() : value_(checked(roaring::api::roaring_bitmap_create())) {}
+-    ~Bitmap() { if (value_) roaring::api::roaring_bitmap_free(value_); }
+-    Bitmap(const Bitmap& other) : value_(checked(other.value_ ? roaring::api::roaring_bitmap_copy(other.value_) : roaring::api::roaring_bitmap_create())) {}
++    Bitmap() : value_(checked(DIR_VALUE(bitmap_copy, roaring::api::roaring_bitmap_create()))) {}
++    ~Bitmap() { DIR_PHASE(cleanup) if (value_) roaring::api::roaring_bitmap_free(value_); }
++    Bitmap(const Bitmap& other) : value_(checked(DIR_VALUE(bitmap_copy, other.value_ ? roaring::api::roaring_bitmap_copy(other.value_) : roaring::api::roaring_bitmap_create()))) {}
+     Bitmap(Bitmap&& other) noexcept : value_(std::exchange(other.value_, nullptr)) {}
+     Bitmap& operator=(Bitmap other) noexcept { std::swap(value_,other.value_); return *this; }
+-    void add(std::uint32_t id) { ensure(); roaring::api::roaring_bitmap_add(value_, id); }
++    void add(std::uint32_t id) { DIR_PHASE(bitmap_sets) ensure(); roaring::api::roaring_bitmap_add(value_, id); }
+     void remove(std::uint32_t id) { if (value_) roaring::api::roaring_bitmap_remove(value_, id); }
+     bool contains(std::uint32_t id) const { return value_ && roaring::api::roaring_bitmap_contains(value_, id); }
+     std::size_t portable_size() const { return value_ ? roaring::api::roaring_bitmap_portable_size_in_bytes(value_) : 0; }
+@@ -29,8 +30,8 @@ public:
+         if (!result.empty()) roaring::api::roaring_bitmap_to_uint32_array(value_, result.data());
+         return result;
+     }
+-    Bitmap& operator|=(const Bitmap& other) { if (this!=&other && other.value_) { ensure(); roaring::api::roaring_bitmap_or_inplace(value_,other.value_); } return *this; }
+-    Bitmap& operator-=(const Bitmap& other) { if (this==&other) { *this=Bitmap{}; } else if (value_ && other.value_) roaring::api::roaring_bitmap_andnot_inplace(value_,other.value_); return *this; }
++    Bitmap& operator|=(const Bitmap& other) { DIR_PHASE(bitmap_sets) if (this!=&other && other.value_) { ensure(); roaring::api::roaring_bitmap_or_inplace(value_,other.value_); } return *this; }
++    Bitmap& operator-=(const Bitmap& other) { DIR_PHASE(bitmap_sets) if (this==&other) { *this=Bitmap{}; } else if (value_ && other.value_) roaring::api::roaring_bitmap_andnot_inplace(value_,other.value_); return *this; }
+     bool operator==(const Bitmap& other) const { return (!value_ || !other.value_) ? cardinality()==other.cardinality() : roaring::api::roaring_bitmap_equals(value_,other.value_); }
+     bool operator!=(const Bitmap& other) const { return !(*this==other); }
+ };
+diff --git "a/projects/P001-\347\233\256\345\275\225\346\204\237\347\237\245/code/scripts/build-test.cmd" "b/projects/P001-\347\233\256\345\275\225\346\204\237\347\237\245/code/scripts/build-test.cmd"
+index 6d372a3..aa8edbd 100644
+--- "a/projects/P001-\347\233\256\345\275\225\346\204\237\347\237\245/code/scripts/build-test.cmd"
++++ "b/projects/P001-\347\233\256\345\275\225\346\204\237\347\237\245/code/scripts/build-test.cmd"
+@@ -10,15 +10,24 @@ set "TAG=%CONFIG%"
+ set "ASAN=OFF"
+ if "%~2"=="asan" set "TAG=%CONFIG%-ASan"
+ if "%~2"=="asan" set "ASAN=ON"
++set "COST=OFF"
++if "%~3"=="cost" set "TAG=%TAG%-Cost"
++if "%~3"=="cost" set "COST=ON"
+ set "OUT=%~dp0..\build-%TAG%"
+ python "%~dp0prepare-time-fixture.py" --project "%~dp0..\.." --output "%OUT%\time-pilot.tsv"
+ if errorlevel 1 exit /b 2
+-python "%~dp0prepare-benchmark-fixtures.py" --project "%~dp0..\.." --output "%~dp0..\..\notes\benchmark-fixtures-20261026-01"
++if "%COST%"=="ON" (
++  python "%~dp0verify-cost-fixtures.py"
++) else (
++  python "%~dp0prepare-benchmark-fixtures.py" --project "%~dp0..\.." --output "%~dp0..\..\notes\benchmark-fixtures-20261026-01"
++)
+ if errorlevel 1 exit /b 2
+-"%CMAKE%" -S "%~dp0.." -B "%OUT%" -G Ninja -DCMAKE_MAKE_PROGRAM=D:/anaconda3/Scripts/ninja.exe -DCMAKE_BUILD_TYPE=%CONFIG% -DDIRECTORY_ENABLE_ASAN=%ASAN% "-DDIRECTORY_PILOT_TSV=%OUT%\time-pilot.tsv"
++"%CMAKE%" -S "%~dp0.." -B "%OUT%" -G Ninja -DCMAKE_MAKE_PROGRAM=D:/anaconda3/Scripts/ninja.exe -DCMAKE_BUILD_TYPE=%CONFIG% -DDIRECTORY_ENABLE_ASAN=%ASAN% -DDIRECTORY_BUILD_COST_DIAGNOSTICS=%COST% "-DDIRECTORY_PILOT_TSV=%OUT%\time-pilot.tsv"
+ if errorlevel 1 exit /b 3
+ "%CMAKE%" --build "%OUT%" --parallel 2
+ if errorlevel 1 exit /b 4
++if "%~4"=="build-only" exit /b 0
++if "%~4"=="admission-only" goto cost_admission_only
+ "%CTEST%" --test-dir "%OUT%" --output-on-failure
+ if errorlevel 1 exit /b 5
+ "%OUT%\directory_benchmark.exe" self-test "%~dp0..\..\notes\benchmark-fixtures-20261026-01"
+@@ -26,3 +35,7 @@ if errorlevel 1 exit /b 6
+ "%OUT%\directory_benchmark_instrumented.exe" self-test "%~dp0..\..\notes\benchmark-fixtures-20261026-01"
+ if errorlevel 1 exit /b 7
+ exit /b 0
++:cost_admission_only
++"%CTEST%" --test-dir "%OUT%" -R admission --output-on-failure
++if errorlevel 1 exit /b 5
++exit /b 0
+diff --git "a/projects/P001-\347\233\256\345\275\225\346\204\237\347\237\245/code/scripts/run-dir01.py" "b/projects/P001-\347\233\256\345\275\225\346\204\237\347\237\245/code/scripts/run-dir01.py"
+index dc8e099..f9f26c8 100644
+--- "a/projects/P001-\347\233\256\345\275\225\346\204\237\347\237\245/code/scripts/run-dir01.py"
++++ "b/projects/P001-\347\233\256\345\275\225\346\204\237\347\237\245/code/scripts/run-dir01.py"
+@@ -17,7 +17,7 @@ def available_memory():
+     m=Memory();m.length=ctypes.sizeof(m)
+     return int(m.avail) if ctypes.windll.kernel32.GlobalMemoryStatusEx(ctypes.byref(m)) else None
+ def copy_source(project,dest):
+-    dest.mkdir(parents=True)
++    (dest/'code').mkdir(parents=True)
+     for src in sorted((project/'code').iterdir()):
+         if src.name.startswith('build') or src.name=='__pycache__': continue
+         target=dest/'code'/src.name
+@@ -54,10 +54,12 @@ def main():
+     compiler_cmake=next((project/'code/build-Release/CMakeFiles').glob('*/CMakeCXXCompiler.cmake'),None)
+     compiler_text=compiler_cmake.read_text(encoding='utf-8',errors='replace') if compiler_cmake else ''
+     version=re.search(r'set\(CMAKE_CXX_COMPILER_VERSION "([^"]+)"',compiler_text)
++    power_scheme=subprocess.run(['powercfg','/getactivescheme'],capture_output=True)
+     environment={'captured_at' :now(),'platform':platform.platform(),'python':sys.version,'processor':platform.processor(),
+                  'processor_identifier':os.environ.get('PROCESSOR_IDENTIFIER'),'logical_cpu_count':os.cpu_count(),'system_available_physical_bytes':available_memory(),
+                  'compiler_version':version.group(1) if version else 'not_determined','release_cmake_cache':cache,
+-                 'build_command':'cmd /c code/scripts/build-test.cmd Release','power_scheme':subprocess.run(['powercfg','/getactivescheme'],capture_output=True,text=True).stdout.strip(),
++                 'build_command':'cmd /c code/scripts/build-test.cmd Release','power_scheme':power_scheme.stdout.decode('utf-8',errors='backslashreplace').strip(),
++                 'power_scheme_raw_stdout_hex':power_scheme.stdout.hex(),'power_scheme_raw_stderr_hex':power_scheme.stderr.hex(),'power_scheme_exit_code':power_scheme.returncode,
+                  'baseline_affinity_or_priority_changed':False,'background_load':'not_controlled; available memory recorded; no idle-machine claim'}
+     (out/'environment.json').write_text(json.dumps(environment,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+     started=time.monotonic();started_iso=now();config['started_at']=started_iso;(out/'config.json').write_text(json.dumps(config,indent=2)+'\n',encoding='utf-8');order_path=out/'run-order.jsonl';status='running';failure=None
+diff --git "a/projects/P001-\347\233\256\345\275\225\346\204\237\347\237\245/code/src/index.cpp" "b/projects/P001-\347\233\256\345\275\225\346\204\237\347\237\245/code/src/index.cpp"
+index a6c6939..3b6adc3 100644
+--- "a/projects/P001-\347\233\256\345\275\225\346\204\237\347\237\245/code/src/index.cpp"
++++ "b/projects/P001-\347\233\256\345\275\225\346\204\237\347\237\245/code/src/index.cpp"
+@@ -1,4 +1,5 @@
+ #include "directory/index.hpp"
++#include "directory/diagnostics.hpp"
+ #include <algorithm>
+ #include <functional>
+ #include <set>
+@@ -10,13 +11,14 @@ namespace {
+ struct Token { std::uint64_t uid; explicit Token(std::uint64_t id) : uid(id) {} };
+ // Common bookkeeping only. Scope queries never inspect this catalog.
+ class Catalog {
+-    std::map<Id, Token*> entries_;
++    std::map<Id, Token*> entries_ DIR_CATALOG_INIT;
+ public:
+-    bool contains(Id id) const { return entries_.find(id)!=entries_.end(); }
+-    void bind(Id id, Token* directory) {
++    DIR_CATALOG_CONTROL
++    bool contains(Id id) const { DIR_CATALOG_SCOPE return entries_.find(id)!=entries_.end(); }
++    void bind(Id id, Token* directory) { DIR_CATALOG_SCOPE
+         if (!entries_.emplace(id,directory).second) throw Error(ErrorCode::duplicate_id,"Duplicate payload ID");
+     }
+-    void rebind(Token* source, Token* target, MaintenanceWork& work) {
++    void rebind(Token* source, Token* target, MaintenanceWork& work) { DIR_CATALOG_SCOPE
+         // Deliberately simple common catalog; scans are reported separately.
+         for (auto& entry : entries_) {
+             ++work.catalog_entries_scanned;
+@@ -43,8 +45,9 @@ class FlatIndex final : public Index {
+     mutable QueryWork query_work_;
+ #endif
+     FlatNode& required(const std::string& path) const {
++        DIR_PHASE(locate)
+         parse_path(path);
+-        auto it=nodes_.find(path);
++        auto it=DIR_VALUE(locate, nodes_.find(path));
+         if (it==nodes_.end()) throw Error(ErrorCode::missing_directory,"Directory missing: "+path);
+         return *it->second;
+     }
+@@ -55,6 +58,7 @@ class FlatIndex final : public Index {
+         return result;
+     }
+     void update_ancestors(const std::string& old_root,const std::string& new_root,const Bitmap& ids) {
++        DIR_CORE(ancestors)
+         auto old_list=ancestor_paths(old_root), new_list=ancestor_paths(new_root);
+         old_list.pop_back(); new_list.pop_back();
+         std::set<std::string> old_set(old_list.begin(),old_list.end()),new_set(new_list.begin(),new_list.end());
+@@ -81,6 +85,7 @@ public:
+     }
+     std::string name() const override { return offline_ ? "PE-OFFLINE" : "PE-ONLINE"; }
+     void mkdir(const std::string& path) override {
++        DIR_CORE(directory)
+         auto ancestors=ancestor_paths(path); // validate everything before mutation
+         for (const auto& p:ancestors) if (!nodes_.count(p)) {
+             auto node=std::make_unique<FlatNode>(next_uid_++,p);
+@@ -90,6 +95,7 @@ public:
+         }
+     }
+     void insert(Id id,const std::string& path) override {
++        DIR_CORE(directory)
+         parse_path(path);
+         if (catalog_.contains(id)) throw Error(ErrorCode::duplicate_id,"Duplicate payload ID");
+         mkdir(path);
+@@ -98,13 +104,14 @@ public:
+         else nodes_.at(path)->posting.add(id);
+     }
+     QueryResult query(const std::string& path,bool recursive) const override {
++        DIR_CORE(directory)
+ #ifdef DIRECTORY_ENABLE_WORK_COUNTERS
+         query_work_={};
+         query_work_.path_segments=parse_path(path).size();
+ #else
+         parse_path(path);
+ #endif
+-        auto it=nodes_.find(path);
++        auto it=DIR_VALUE(locate, nodes_.find(path));
+         if (it==nodes_.end()) return {false,Bitmap{}};
+         if (offline_) {
+             Bitmap result=it->second->posting;
+@@ -151,6 +158,7 @@ public:
+         return {true,std::move(result)};
+     }
+     void move(const std::string& source,const std::string& destination) override {
++        DIR_CORE(directory)
+         work_={};
+         auto& source_node=required(source); required(destination);
+         if (source=="/" || at_or_below(destination,source))
+@@ -175,6 +183,7 @@ public:
+         if (offline_) update_ancestors(source,new_root,ids);
+     }
+     void merge(const std::string& source,const std::string& target) override {
++        DIR_CORE(directory)
+         work_={};
+         auto& source_node=required(source); required(target);
+         if (at_or_below(source,target) || at_or_below(target,source))
+@@ -268,6 +277,7 @@ class TrieIndex final : public Index {
+     mutable QueryWork query_work_;
+ #endif
+     TrieNode* locate(const std::string& path) const {
++        DIR_PHASE(locate)
+         auto segments=parse_path(path);
+         auto* current=root_.get();
+         for (const auto& segment:segments) {
+@@ -295,6 +305,7 @@ class TrieIndex final : public Index {
+         return result;
+     }
+     static void update_ancestors(const std::set<TrieNode*>& old_set,const std::set<TrieNode*>& new_set,const Bitmap& ids) {
++        DIR_CORE(ancestors)
+         for (auto* p:old_set) if (!new_set.count(p)) p->inclusive-=ids;
+         for (auto* p:new_set) if (!old_set.count(p)) p->inclusive|=ids;
+     }
+@@ -314,6 +325,7 @@ class TrieIndex final : public Index {
+ public:
+     std::string name() const override { return "TrieHI"; }
+     void mkdir(const std::string& path) override {
++        DIR_CORE(directory)
+         auto segments=parse_path(path);
+         auto* node=root_.get();
+         for (const auto& segment:segments) {
+@@ -326,6 +338,7 @@ public:
+         }
+     }
+     void insert(Id id,const std::string& path) override {
++        DIR_CORE(directory)
+         parse_path(path);
+         if (catalog_.contains(id)) throw Error(ErrorCode::duplicate_id,"Duplicate payload ID");
+         mkdir(path);
+@@ -334,6 +347,7 @@ public:
+         for (auto* p=node;p;p=p->parent) p->inclusive.add(id);
+     }
+     QueryResult query(const std::string& path,bool recursive) const override {
++        DIR_CORE(directory)
+ #ifdef DIRECTORY_ENABLE_WORK_COUNTERS
+         query_work_={};
+         query_work_.path_segments=parse_path(path).size();
+@@ -361,6 +375,7 @@ public:
+         return {true,std::move(result)};
+     }
+     void move(const std::string& source,const std::string& destination) override {
++        DIR_CORE(directory)
+         work_={};
+         auto& s=required(source); auto& d=required(destination);
+         if (&s==root_.get() || at_or_below(destination,source))
+@@ -380,6 +395,7 @@ public:
+         update_ancestors(old_anc,new_anc,ids);
+     }
+     void merge(const std::string& source,const std::string& target) override {
++        DIR_CORE(directory)
+         work_={};
+         auto& s=required(source); auto& d=required(target);
+         if (at_or_below(source,target) || at_or_below(target,source))
+@@ -452,6 +468,7 @@ public:
+ };
+ } // namespace
+ std::unique_ptr<Index> make_index(Strategy strategy) {
++    DIR_CORE(directory)
+     switch (strategy) {
+         case Strategy::pe_online: return std::make_unique<FlatIndex>(false);
+         case Strategy::pe_offline: return std::make_unique<FlatIndex>(true);
+diff --git "a/projects/P001-\347\233\256\345\275\225\346\204\237\347\237\245/code/src/path.cpp" "b/projects/P001-\347\233\256\345\275\225\346\204\237\347\237\245/code/src/path.cpp"
+index cd1de67..fd6b260 100644
+--- "a/projects/P001-\347\233\256\345\275\225\346\204\237\347\237\245/code/src/path.cpp"
++++ "b/projects/P001-\347\233\256\345\275\225\346\204\237\347\237\245/code/src/path.cpp"
+@@ -1,6 +1,8 @@
+ #include "directory/index.hpp"
++#include "directory/diagnostics.hpp"
+ namespace directory {
+ std::vector<std::string> parse_path(const std::string& path) {
++    DIR_PHASE(locate)
+     if (path.empty() || path.front() != '/' || path.back() != '/' || path.find('\0') != std::string::npos)
+         throw Error(ErrorCode::invalid_path, "Expected absolute directory path with trailing slash");
+     if (path == "/") return {};
+diff --git "a/projects/P001-\347\233\256\345\275\225\346\204\237\347\237\245/code/tests/benchmark.cpp" "b/projects/P001-\347\233\256\345\275\225\346\204\237\347\237\245/code/tests/benchmark.cpp"
+index d90c362..9c35530 100644
+--- "a/projects/P001-\347\233\256\345\275\225\346\204\237\347\237\245/code/tests/benchmark.cpp"
++++ "b/projects/P001-\347\233\256\345\275\225\346\204\237\347\237\245/code/tests/benchmark.cpp"
+@@ -65,7 +65,8 @@ Fixture load_fixture(const std::string& dir,const std::string& name,const std::s
+     }
+     f.paths.assign(paths.begin(),paths.end());
+     std::sort(f.paths.begin(),f.paths.end(),[](const auto& a,const auto& b){ if(a=="/") return true; if(b=="/") return false; return a<b; });
+-    for(const auto& line:lines(dir+"/"+name+"-operations.tsv")) {
++    const auto operation_name=(name==base+"-build"||name==base+"-dsq")?base:name;
++    for(const auto& line:lines(dir+"/"+operation_name+"-operations.tsv")) {
+         auto p=split(line); require(p.size()==4,"Invalid operation row"); f.operations.push_back({p[0],p[1],p[2],p[3]=="1"});
+     }
+     require(!f.rows.empty()&&!f.queries.empty()&&!f.operations.empty(),"Incomplete fixture"); return f;
+@@ -133,6 +134,11 @@ void self_test(const std::string& dir,bool instrumented) {
+     for(auto s:{Strategy::pe_online,Strategy::pe_offline,Strategy::trie_hi}) {
+         for(const auto& name:{"figure2","time"}) {
+             auto f=load_fixture(dir,name,name); auto oracle=make_oracle(f); auto index=build_index(s,f); check_state(*index,oracle,f,true);
++            for(const auto& subload:{"build","dsq"}) {
++                auto alias=load_fixture(dir,std::string(name)+"-"+subload,name);
++                require(alias.rows.size()==f.rows.size()&&alias.queries.size()==f.queries.size()&&alias.operations.size()==f.operations.size(),"Run fixture alias mismatch");
++                check_state(*index,oracle,alias,true);
++            }
+             auto root=index->query("/",true); require(root.ids.cardinality()==f.rows.size(),"Root cardinality mismatch"); check_counters(*index,instrumented,f.paths.size());
+             auto local=index->query("/",false); const auto w=index->last_query_work();
+             const auto children=static_cast<std::size_t>(std::count_if(f.paths.begin(),f.paths.end(),[](const auto& path){return path!="/"&&std::count(path.begin(),path.end(),'/')==2;}));

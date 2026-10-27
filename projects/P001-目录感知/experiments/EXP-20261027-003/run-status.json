@@ -1,0 +1,7 @@
+{
+  "status": "failed",
+  "started_at": "2026-10-26T16:20:06.561636+00:00",
+  "finished_at": "2026-10-26T16:20:06.729928+00:00",
+  "wall_seconds": 0.1570000000001528,
+  "failure": "Benchmark job 0 failed; see D:\\NewWorkspace\\projects\\P001-\u76ee\u5f55\u611f\u77e5\\experiments\\EXP-20261027-003/logs/job-00.log"
+}

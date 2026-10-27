@@ -1,0 +1,19 @@
+{
+  "captured_at": "2026-10-26T17:34:55.841838+00:00",
+  "platform": "Windows-10-10.0.26300-SP0",
+  "python": "3.9.13 (main, Aug 25 2022, 23:51:50) [MSC v.1916 64 bit (AMD64)]",
+  "processor": "Intel64 Family 6 Model 183 Stepping 1, GenuineIntel",
+  "logical_cpu_count": 20,
+  "system_available_physical_bytes": 5918703616,
+  "power_scheme_stdout_hex": "e794b5e6ba90e696b9e6a18820475549443a2035323532313630392d656663392d343236382d623962612d363764656137336631386232202028e9878ee585bde6a8a1e5bc8f29",
+  "power_scheme_stderr_hex": "",
+  "power_scheme_exit_code": 0,
+  "power_scheme": "电源方案 GUID: 52521609-efc9-4268-b9ba-67dea73f18b2  (野兽模式)",
+  "affinity_priority_or_power_changed": false,
+  "background_load": "not controlled; no idle-machine claim",
+  "compile_flags": [
+    "FLAGS = /DWIN32 /D_WINDOWS /EHsc /O2 /Ob2 /DNDEBUG -MD",
+    "FLAGS = /DWIN32 /D_WINDOWS /EHsc /O2 /Ob2 /DNDEBUG -std:c++17 -MD /W4 /permissive- /utf-8",
+    "FLAGS = /DWIN32 /D_WINDOWS /O2 /Ob2 /DNDEBUG -std:c11 -MD /utf-8"
+  ]
+}
