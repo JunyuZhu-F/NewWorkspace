@@ -1,0 +1,36 @@
+{
+  "status": "passed",
+  "report_sha256": "d429b983fd254d2d1261fa97d7f4d343d5877f9e13d721a35d48c4d58200375d",
+  "audit_sha256": "e8f269fc6994fccf9eb0449a439ca2f146bddf6d85e0ca29d11ad5424fe48c83",
+  "document_links_checked": 48,
+  "source_bindings_unchanged": 31,
+  "wiki_query_rows": 456,
+  "wiki_empty_metadata_rows": 456,
+  "adopted_pdf_sha256": "00c59850614b7c286d82669b5e1447bacb5fb7115cbd442d8b29c801bd65e968",
+  "raw_004_read_in_audit_sha256": {
+    "dsq.jsonl": "ea0f3cc05484effc83ea12b467ea1f51755a5c7af984dc50198db68b9fb9ded3",
+    "dsm.jsonl": "05e6cba05028db4ecba9e297485ec5549667010733718f0768ac269406245821",
+    "build.jsonl": "854edb7bfc9781b207113b8037c67cc44771aabf8ed582860913858e164009bd"
+  },
+  "changed_tracked_paths": [
+    "\"projects/P001-\\347\\233\\256\\345\\275\\225\\346\\204\\237\\347\\237\\245/EXPERIMENTS.md\"",
+    "\"projects/P001-\\347\\233\\256\\345\\275\\225\\346\\204\\237\\347\\237\\245/README.md\"",
+    "\"projects/P001-\\347\\233\\256\\345\\275\\225\\346\\204\\237\\347\\237\\245/REPRODUCTION_PLAN.md\"",
+    "\"projects/P001-\\347\\233\\256\\345\\275\\225\\346\\204\\237\\347\\237\\245/STATE.md\"",
+    "\"projects/P001-\\347\\233\\256\\345\\275\\225\\346\\204\\237\\347\\237\\245/TASK.md\""
+  ],
+  "core_and_experiment_files_modified": false,
+  "measurements_started": 0,
+  "full_report_parent_complete": false,
+  "small_report_complete": true,
+  "git_head": "c14e9f1f375d0cb0c4503e488ced9932c0afa4a7",
+  "document_hashes": {
+    "REPORT_SMALL_SCALE.md": "d429b983fd254d2d1261fa97d7f4d343d5877f9e13d721a35d48c4d58200375d",
+    "TASK.md": "f3c5221b2d6b9af6fdc3b3268b1dd30485ba0929fbfdb0492fcb78ef8c8d429a",
+    "REPRODUCTION_PLAN.md": "041679854df839654563126f4cabc06d39dcf126588cd2adbb417b91a7eea7ec",
+    "STATE.md": "b4a83bedc8e715419eb2ee213840e2c4c54b298de4105e2263586e0a8e6ca719",
+    "README.md": "65b395ee435ea4f53cb27d50dadffdc26e4302ddab9fa9be05caec40b8cc3543",
+    "EXPERIMENTS.md": "cc81790d961a8214b4b09f51abf5f6e6003e8b498aee0622cd90707bf172cdb2"
+  },
+  "script_sha256": "54543b04a78a7813428819790fe76ed8c38d31a893cf91e3d6a4bac602ba172c"
+}

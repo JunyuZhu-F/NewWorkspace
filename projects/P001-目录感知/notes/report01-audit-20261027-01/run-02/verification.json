@@ -1,0 +1,62 @@
+{
+  "status": "passed",
+  "started_utc": "2026-10-27T07:20:46.803890+00:00",
+  "git_head": "c14e9f1f375d0cb0c4503e488ced9932c0afa4a7",
+  "scope": "read-only 004-008 evidence audit and report; no simulation, compilation or experiments",
+  "finished_utc": "2026-10-27T07:20:48.698244+00:00",
+  "counts": {
+    "hash_checks": 435,
+    "source_entries": 153,
+    "worker_files": 110
+  },
+  "wiki_workload_root_weights": {
+    "directory_root_recursive": 1,
+    "directory_recursive_cases": 29,
+    "search_root_recursive": 57,
+    "search_recursive_cases": 456
+  },
+  "source_bindings": {
+    "experiments\\EXP-20261027-004\\results.md": "eef7fc9ab930f80d13a83db23365620d3159f76253b96451ba954fbbf7ca70ec",
+    "experiments\\EXP-20261027-004\\record.md": "9836bc7fcd63f360da34e569d357973210c32018149cb7f2fb650a66a8822f2a",
+    "experiments\\EXP-20261027-004\\config.json": "ebfed9e4d700928f164780d740252e67a9101ecc58f60013427113aba9159131",
+    "experiments\\EXP-20261027-004\\protocol.md": "81ec16d0f07ea1c74715de2a4b6c049c9292766ddc0e36240a1668f3a21eed24",
+    "experiments\\EXP-20261027-004\\summary.json": "e229e2c8c00abe74246b1090bbc87dd5dddb11d9e329e6986b861dce0019bf39",
+    "experiments\\EXP-20261027-004\\independent-verification.json": "7959696d2455a5e6a3538a00e268d06f772fe3842a71cd4f8e8479f8cd59f409",
+    "experiments\\EXP-20261027-005\\results.md": "4958d37fcff13222073a1e595b256c3a7cd9cefed8cfb308dbd8273dbb5823e8",
+    "experiments\\EXP-20261027-005\\record.md": "c99a68924c0f9bea06b36b9287aac9d5b8e6254f5c1996c05216bf7d8cca9f9c",
+    "experiments\\EXP-20261027-005\\config.json": "3e3daccc1fcfd43176c048424db5b5104fec52545d07a16882c0bdfa94dda1bc",
+    "experiments\\EXP-20261027-005\\protocol.md": "589d3b6f7abe9123c3f094a04e54084e885a7d77114fc3ae74770f92dc56e066",
+    "experiments\\EXP-20261027-005\\summary.json": "842e05dc0a3b5661fd85d6f8ab488f2e5b17eca01571b73b13bc534b38b0bd54",
+    "experiments\\EXP-20261027-005\\independent-verification.json": "f6aa19269708b3f66c395d0a375bfc733247716acf59d366c89920dde38aec76",
+    "experiments\\EXP-20261027-006\\results.md": "be0405d08e2c0e35b4ebcb3bfa483d011f3aae316db069a05c9f7a8a6d7c0794",
+    "experiments\\EXP-20261027-006\\record.md": "8fea05511b843ce104812814b5b91c21eac2e5d082f457ad1ec0b1df2e113b53",
+    "experiments\\EXP-20261027-006\\config.json": "246c719a83737a65a4146e2605f9405b1aed4c4a91ed051c71ea083fd8037df8",
+    "experiments\\EXP-20261027-006\\protocol.md": "7e7c8e3ac382159d21b3045d14cb6ebd688968ce78504372e312cc3e7439ab6e",
+    "experiments\\EXP-20261027-006\\final-check.json": "8fd3bc3608b64c80565522eb19b72e04c991386cab021c6eb34c75bb09bcd2aa",
+    "experiments\\EXP-20261027-006\\verification.json": "1f7259b87a0568b39ef1d8c6a2d60f9712565a607fb20a423c3516ac5d240bf0",
+    "experiments\\EXP-20261027-007\\results.md": "1dfd96f22e63b4fc3512b9eac552a2886819670ca4e1d53faca823687e376f54",
+    "experiments\\EXP-20261027-007\\record.md": "6ab44e376ce975418b0de2d1c6a631974cfc1a165f1555efb4faec8487d30cd0",
+    "experiments\\EXP-20261027-007\\config.json": "546f49e8cbfe28efce707de47173fd70d1eb401613485caf8d763cb423333ba1",
+    "experiments\\EXP-20261027-007\\protocol.md": "4de1bc22f11e65fa4228b754dbc1cbdabbd2e194294b9dc440c0fd7771a2417c",
+    "experiments\\EXP-20261027-007\\final-check.json": "2dc8bc724ced276f13e9344eaee6539a154bb4e0115f41624b90f5a8d68b20ea",
+    "experiments\\EXP-20261027-007\\verification-directory-default.json": "ed8870be1b44bdc3b370d46918f24f9a71c4a4ba3f060264ca653c8c02294db0",
+    "experiments\\EXP-20261027-007\\verification-directory-phase.json": "7a1f2c6f0e3a1fbc337f314ce16876bb38726e60904c14ae95e6f8bb831dedea",
+    "experiments\\EXP-20261027-008\\results.md": "0784eee8c07d0db2fe808092f1ac370a3fd09ac05799ce5f67c8063f40f2fad9",
+    "experiments\\EXP-20261027-008\\record.md": "0d1e72784fe6b804702c8367b9b1e129ef9d4ed04ceb640d7205aa657a086bad",
+    "experiments\\EXP-20261027-008\\config.json": "5a9c96dc0bcf26bba3f54d82f58ba46069c7a82b5f757b7173f02687e6c64d25",
+    "experiments\\EXP-20261027-008\\protocol.md": "4de1bc22f11e65fa4228b754dbc1cbdabbd2e194294b9dc440c0fd7771a2417c",
+    "experiments\\EXP-20261027-008\\final-check.json": "5111c9a3be2a1785e973911ada16d52ad06a3acc65bd304f838b978a0c7273c7",
+    "experiments\\EXP-20261027-008\\verification-search-search.json": "ee8c2f0759b7bad14d8c4827836e2b1f35033ef8fa28ed00e292dfc162e50d5f"
+  },
+  "export_files": {
+    "arxiv-catalog-recomputed.csv": "a3c6983488d247c110f8b377fcd712292a68000b6eca7cd7ab7a247e3bc6c7f0",
+    "arxiv-directory-recomputed.csv": "05263ffed4da64e2f2af4d62ee949ce485291c5ebbcd966181810ec8259822a9",
+    "paired-signs.csv": "44db5658dcf9002955fbb037cebe7144ee1f3e001c407b3961c2e12819f4965c",
+    "retrieval-probe4-comparison.csv": "d7ce02a4e5157b0d304a169d25e02ea75c443f39a728d4d221845f1ae9af052f"
+  },
+  "script_sha256": "95ef4ad5b8ee4005286ed0fe8f733ae97fef8882fde60821ef918a646df62712",
+  "measurements_started": 0,
+  "core_modified": false,
+  "full_report_parent_complete": false,
+  "small_scope_report_evidence_complete": true
+}

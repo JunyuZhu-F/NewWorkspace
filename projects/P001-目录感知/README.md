@@ -1,5 +1,7 @@
 # Directory-Aware Query and Maintenance in Vector Databases
 
+当前报告：[两数据集小规模结论、证据、限制与补测决策](REPORT_SMALL_SCALE.md)已完成并复核（REPORT-01-SMALL-01）。仅当前独立小范围通过，全文REPORT-01仍进行中；下一项SCALE-01资源预算，不自动运行新实验。WIKI有真实语料目录，缺的是逐查询范围，已授权项目工作负载不冒充作者约束。
+
 > P001-目录感知，采用 arXiv:2606.16903v1。当前小规模DIR-01、全量时间metadata审计及SEARCH-01/02时间/独立IVF分支完成；006五进程质量—总延迟对照通过独立核验。全量索引/性能、完整真实协议及PG/原版Viking未完成。
 
 WIKI独立小规模分支已完成：[007目录性能](experiments/EXP-20261027-007/results.md)默认/phase共10进程，[008检索结果](experiments/EXP-20261027-008/results.md)五进程/1094400正式计时均通过独立核验与最终hash。依据用户授权的[独立协议](notes/wiki-independent-protocol-20261027.md)，[准入与审查](notes/wiki-independent-preparation-20261027-01/review.md)齐全；qrels不参与选目录，nDCG因覆盖不足不报告。原作者约束/DSM/PG/Viking和全量缺口保留，不再等待作者联系，不将本分支当全文验收。

@@ -12,9 +12,11 @@
 
 ## 2. 实验索引
 
+2026-10-27当前派生报告（非新实验）：REPORT-01-SMALL-01完成，见REPORT_SMALL_SCALE.md及notes/report01-audit-20261027-01/run-02/verification.json。复核110个worker文件与当前/归档源码，重算004引用均值、005 catalog占比及006/008非空/全部请求汇总与配对符号；没有新测量、没有修改实验文件或创建新EXP。父报告和全文目标未完成。
+
 2026-10-27最新：WIKI独立协议执行与审查已完成。007目录10/10进程、008检索5/5进程，独立核验、CSV/表格和最终hash通过；见各record/results/final-check。协议notes/wiki-independent-protocol-20261027.md，准入/审查见notes/wiki-independent-preparation-20261027-01/record.md、review.md。qrels不参与选目录，nDCG不报告，不关闭原作者GAP或全文目标。
 
-2026-10-27最新增量：优先推进WIKI，WIKI-DATA-01/WIKI-CHECK-01完成当前小规模前置与正确性准入（不分配正式性能EXP）。全量1941679条path/corpus ID一致；10000真实路径样本Release/ASan各5292次范围核验通过，跨构建相同及独立Python核验通过。完整入口 notes/wiki-preparation-20261027-01/record.md；最终check-02，失败check-01保留。未测WIKI性能或检索质量，下一项WIKI-DIR-01。
+2026-10-27历史准备阶段：WIKI-DATA-01/WIKI-CHECK-01完成当前小规模前置与正确性准入（不分配正式性能EXP）。全量1941679条path/corpus ID一致；10000真实路径样本Release/ASan各5292次范围核验通过。入口notes/wiki-preparation-20261027-01/record.md；最终check-02，失败check-01保留。当时未测性能/质量，后续已由007/008完成独立小分支，不是当前阻塞。
 
 最新：EXP-20261027-006已完成SEARCH-02当前时间/独立IVF小规模分支，5/5正式进程、1202400行计时及全部排名/候选独立核验通过；完整record/results/verification和最终曲线在006。下面的SEARCH-01与DIR/COST描述是各自完成时点，不代表SEARCH-02仍未执行。
 

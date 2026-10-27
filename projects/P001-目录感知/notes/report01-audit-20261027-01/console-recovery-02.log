@@ -1,0 +1,1 @@
+{"status": "passed", "counts": {"hash_checks": 435, "source_entries": 153, "worker_files": 110}, "roots": {"directory_root_recursive": 1, "directory_recursive_cases": 29, "search_root_recursive": 57, "search_recursive_cases": 456}}

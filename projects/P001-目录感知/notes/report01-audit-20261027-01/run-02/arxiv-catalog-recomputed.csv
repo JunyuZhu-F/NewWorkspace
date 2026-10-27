@@ -1,0 +1,4 @@
+experiment,strategy,n,catalog_us,non_catalog_observed_us,catalog_fraction_observed
+005,pe_online,100,214.808,11.915,0.9474468845242874
+005,pe_offline,100,171.164,18.405,0.9029113409892968
+005,trie_hi,100,191.558,12.247,0.9399082456269473

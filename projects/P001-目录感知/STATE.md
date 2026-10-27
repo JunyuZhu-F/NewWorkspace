@@ -1,29 +1,34 @@
-# STATE.md — WIKI独立小规模目录/检索已完成并审查
+# STATE.md — 两数据集当前小规模报告已审查完成
 
-更新时间：2026-10-27，Asia/Hong_Kong；WIKI优先级调整与实际准入完成。项目：D:/NewWorkspace/projects/P001-目录感知。
+更新时间：2026-10-27，Asia/Hong_Kong；REPORT-01-SMALL-01证据审查与文档更新。项目：D:/NewWorkspace/projects/P001-目录感知。
 
-当前阶段：用户授权的WIKI独立小规模目录/检索已完成并审查，不等待作者联系。007目录默认/phase10/10进程、008检索5/5进程均独立核验、导出与最终hash通过，原算法未改，旧ARXIV未重跑。下一项REPORT-01仅对两数据集已完成小规模范围汇总；整体复现、原作者协议、nDCG、PG/Viking与全量未完成。SCALE后移，不自动启动扩规模；交接核查未见本项目实验/构建活动。
+当前阶段：REPORT-01-SMALL-01已完成，REPORT_SMALL_SCALE.md汇总004–008已完成范围，逐OBJ结论、证据、限制及补测决策齐全；REPORT-01父任务进行中，原作者协议、真实类别、nDCG、PG/Viking与全量未完成。本轮只读审计和更新文档，没有构建/测试重跑/测量/算法修改。下一项仅SCALE-01具体资源与规模评估，SCALE-02未授权，不联系作者、不追查1995年。
 
 ## 当前事实
+
+- 本轮独立证据复核在notes/report01-audit-20261027-01/run-02/verification.json：006–008的110个worker文件、各当前/归档源hash匹配；005已存8项raw/协议/汇总hash匹配；004引用time/default均值及005 MERGE catalog比例从原始记录重算一致。CSV保留006/008的nprobe4非空/全部/空请求、三个阶段和五run配对符号。本轮不是重跑实验。
+- 报告解释边界：ARXIV目录004/005为34目录旧样本，检索006为423目录跨时间样本；WIKI目录根权重1/29，检索57/456，不能直接横比均值。ARXIV非递归nprobe4非空均值OFFLINE/TrieHI略低，但全部501请求均值ONLINE最低（19.3488/23.2547/22.5033μs）；小差异不宣称显著。WIKI真实层级已存在，模拟的是查询/维护，Recall为限定范围的ANN近邻召回，不是自然query相关性，nDCG仍未报告。
+- 没有发现使当前小范围结论失效、必须立即补测的证据冲突。为更大规模、复杂内部冲突、自然任务质量或完整物理存储扩展结论时，才另立协议/预算；不因反例或低召回重选目录/参数。
+- 本轮审计首次误将005的sample当操作名，被断言拒绝；失败脚本audit-attempt-01.py、console.log及部分CSV保留。修正解析operation/accepted后成功另存run-02，未修改或重新测量实验。
 
 - 最新唯一入口：007/008的record.md、results.md、final-check.json；新增驱动准入/自审见notes/wiki-independent-preparation-20261027-01/record.md、review.md、final-check.json。007原始43470行（正式37800/预热5670）；008正式1094400行、54720基线排名、13680候选记录，所有格位完整、阶段会计正确、模型/排名跨策略/进程一致。新75个worker文件、当前/归档源码与输入hash匹配，旧006的35个worker文件及46原源码未变。
 - 008 nprobe4：递归456非空Recall@10=0.299882，ONLINE/OFFLINE/TrieHI非空总均值2753.2620/432.4738/416.7875μs；非递归127非空/329空，非空Recall=0.110236，总均值16.2986/18.5745/16.8638μs。exact/全探测非空Recall=1；质量相同不代表CPU时间相同，不把全部差异归因目录。空范围质量null且延迟另报，低召回保留，nDCG不报告。目录是query ID/固定哈希配对，不代表自然查询相关性分布。
 - 结果CSV位于各analysis-01/，007含逐深度/逐case/维护几何/portable，008含阶段/分位数、5进程均值SD和配对差。默认/phase不混池，catalog不从默认相减，portable不是物理堆；无全量向量加载/重编码/依赖安装。
 - 首次统计导出遇Python源编码识别错误，export-console.log保留；添加显式UTF-8声明后export-recovery-01-console.log成功，测量未重跑。finalize-console.log及总final-check通过。原始失败、快照、被忽略的fixture/*.fvecs和构建二进制全部保留。
-- 当前Git main/HEAD be59bbccb9e3f8e283328f453643b7d50211736d。除此前STATE/旧WIKI未提交成果，新增code/wiki_experiment、build-wiki-experiment.cmd、007/008及本轮证据，更新TASK/PLAN/STATE/EXPERIMENTS/README/项目AGENTS/材料GAP；未提交、推送、重置、清理。源码快照007共53项、008共54项，差异只多README说明，无算法/配置变化。原始数据只读。
+- 本轮入口Git实测main、HEAD c14e9f1f375d0cb0c4503e488ced9932c0afa4a7、工作树干净；之前的“当前be59/有开发未提交”已过时。本轮仅留下报告/审计及管理文档未提交增量，不提交/推送/重置/清理。007/008运行时be59及其源快照必须保留为历史事实，不改成当前HEAD；53/54源码项差异仅README，无算法/配置变化。被忽略的fixture向量/build仍须本地保留，Git干净不证明其入库。
 
 - 007默认已核验均值μs（ONLINE/OFFLINE/TrieHI）：递归1426.51/2.02/1.83；非递归3.38/25.67/18.43。large MOVE约34273.83/34593.87/15.87，large MERGE约31356.37/31694.69/406.57；deep MERGE约355.46/248.30/371.29，保留TrieHI并非最快反例。原始精度和完整分位数见007/verification-directory-default.json；诊断catalog另在phase报告，不混池或从默认相减。
 
 - 本轮独立协议与驱动准入：notes/wiki-independent-protocol-20261027.md；notes/wiki-independent-preparation-20261027-01/record.md、review.md、status.json及三份verification。58目录case、4连续维护；large源8785目录/4734条目，deep源深31且1目录/1条目。检索912case中递归456非空、非递归127非空/329空；qrels不参与，本轮不报告nDCG。原三方案/后端46源码hash不变，生成包装仅三处已声明变更；不再将作者联系/约束恢复作为独立分支前置。
 
-- WIKI最新证据唯一入口 notes/wiki-preparation-20261027-01/record.md；run-01/report.json与verification.json为数据主审计/独立复核，check-02/status.json与independent-verification.json为目录准入最终状态。
+- 更早WIKI数据/准入入口 notes/wiki-preparation-20261027-01/record.md；run-01/report.json与verification.json为数据审计/独立复核，check-02/status.json为当时目录准入，不替代007/008正式证据。
 - WIKI全量1941679条path/corpus ID连续等于行号；固定10000等间隔原始ID与向量及全部456查询向量核验通过。原始文件size/mtime不变，全量向量未逐条验证。独立解析复核全量目录统计和样本绑定通过。
 - 不同末端路径363467、平均深度11.9512445与论文数值吻合；补齐祖先含根468031目录，非根均深11.8313719。作者按末端路径统计仅为合理推测，定义未确认，不能删祖先迎合数字。
 - WIKI 456条query metadata仍全部为空；10851对qrels、10410个文档，标注合法并覆盖全部查询。样本只含56相关文档/61标注，46查询有样本标注、410没有，不能以其代表完整WIKI nDCG或填0/1；原作者查询目录、指标与DSM序列缺口不关闭。
 - WIKI真实路径10000样本：新增独立code/wiki/入口和build-wiki.cmd，原核心不变；Release/ASan各5292次范围集合核验通过（初始/MOVE/MERGE/拒绝，各阶段全量不变量）；答案字节相同，另有Python路径状态判定器复核全部输出与覆盖。006的46个原源码文件hash仍匹配。该运行是正确性准入，不是性能/ANN成绩。
 - check-01首次cmd路径写法导致未生成二进制，整体failed保留；修正命令及产物断言后另存check-02通过。独立核验首次在ASan结束前被状态门禁拒绝，日志保留，完成后核验成功；没有覆盖/隐瞒失败。主数据审计31.031秒、独立数据复核18.844秒，Release/ASan测试4.813/98.985秒，不作为查询延迟；ASan采样private最大1156001792字节，未触发资源门禁。
 - 本次小型公开源快照见public-sources-01/：作者数据仓库根仅README，关联OpenViking说明仍承认缺WIKI query约束。web工具不能访问Google Drive目录，未取得远端清单，不断言网盘没有补充资料；未联系作者、未下载大型数据。
-- Git基线仍main/be59bbccb9e3f8e283328f453643b7d50211736d。本次保留原STATE未提交增量，并新增WIKI入口/脚本/准入证据与更新TASK/PLAN/EXPERIMENTS/STATE；不提交/推送/重置/清理。当前代码与未跟踪文件以实时git status为准，不再使用下方旧交接的“只STATE变化”作为当前现场。
+- 历史WIKI准备时Git基线为main/be59bbccb9e3f8e283328f453643b7d50211736d，当时保留未提交STATE及新增WIKI入口/脚本/证据；此段不是当前Git现场。现在以顶部c14e9f1及实时git status为准，不将历史未提交状态套到新会话。
 
 - SEARCH-02当前时间/独立IVF分支已完成：EXP-20261027-006，5/5独立进程、1202400条原始计时、60120条基线结果及15030条候选记录通过独立核验，所有重复格位完整、各阶段和等于总量、模型/排名跨策略与进程相同。2026-10-27 11:08:01–11:11:01+08为正式阶段及核验时间，不是查询延迟。
 - 新输入仍10000条，按全量ID等间隔跨时间选择，34年/388月/含根423目录；501真实time查询两模式，501递归非空、235月份非递归非空、266年份非递归为空（质量null）。Release/ASan各契约1/1及12024条准入结果已通过，证据notes/search02-preparation-20261027-02/；首次换行防护失败及有效输入留在preparation-01。
@@ -75,9 +80,9 @@ DATA-01/SPEC-01仍未整体完成。真实类别直接归属/多归属DSM、WIKI
 
 ## 下一步
 
-建议下一项REPORT-01：汇总ARXIV 004–006与WIKI 007/008已完成的小规模证据，逐OBJ标注独立语义/趋势/原版不可比/未执行；不启动新测量，不把本分支完成改成全文通过。若后续扩规模，先SCALE-01具体预算，再由用户决定SCALE-02。当前不联系作者，不加载全量，不接PG，不追查1995年，不处理组会。
+建议下一项SCALE-01：依据当前小规模报告及真实机器可用资源，分别评估纯目录与含检索的内存/磁盘/oracle/耗时，提出具体中等规模或可行矩阵和停止预算，再由用户决定SCALE-02。本轮不启动该评估或任何新测量；不联系作者、不加载全量、不接PG、不追查1995年、不处理组会。
 
-最小恢复入口：根/项目AGENTS、本STATE、TASK、PLAN相关WIKI/REPORT任务行；007/008各record.md、results.md、final-check.json，必要时定向读取对应verification和CSV。审查/准入在notes/wiki-independent-preparation-20261027-01/。不要重跑已通过矩阵或覆盖旧输出；更早WIKI-DATA/CHECK证据在wiki-preparation-20261027-01/，只在核查数据时按需读取。
+最小恢复入口：根/项目AGENTS、本STATE、TASK、PLAN的REPORT/SCALE任务行；REPORT_SMALL_SCALE.md及notes/report01-audit-20261027-01/run-02/verification.json，按问题定向查004–008相应record/verification/CSV。不得递归重读全部notes、覆盖旧输出或重跑有效矩阵。核对当前Git与忽略文件，不用旧HEAD描述代替真实现场。
 
 以下是本次WIKI优先级调整之前的SCALE安排，已后移：
 
