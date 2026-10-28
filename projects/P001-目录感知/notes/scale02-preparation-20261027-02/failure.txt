@@ -1,0 +1,4 @@
+Traceback (most recent call last):
+  File "D:\NewWorkspace\projects\P001-目录感知\code\scale_formal\pipeline.py", line 52, in main
+    assert all(sha(P/k)==v for k,v in prior_hashes.items() if k!='code/scale_formal/pipeline.py')
+AssertionError

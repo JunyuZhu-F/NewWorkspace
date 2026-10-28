@@ -1,0 +1,108 @@
+{
+  "status": "passed",
+  "finished_utc": "2026-10-27T09:53:57.215290+00:00",
+  "git_head": "2101c84f24b3cbbcd093b38073a5c9e372815f9d",
+  "report_numeric_cells_checked": 30,
+  "relative_links_checked": 16,
+  "links": [
+    {
+      "document": "REPORT_CURRENT.md",
+      "target": "REPORT_SMALL_SCALE.md"
+    },
+    {
+      "document": "REPORT_CURRENT.md",
+      "target": "experiments/EXP-20261027-004/record.md"
+    },
+    {
+      "document": "REPORT_CURRENT.md",
+      "target": "experiments/EXP-20261027-005/record.md"
+    },
+    {
+      "document": "REPORT_CURRENT.md",
+      "target": "experiments/EXP-20261027-006/record.md"
+    },
+    {
+      "document": "REPORT_CURRENT.md",
+      "target": "experiments/EXP-20261027-007/record.md"
+    },
+    {
+      "document": "REPORT_CURRENT.md",
+      "target": "experiments/EXP-20261027-008/record.md"
+    },
+    {
+      "document": "REPORT_CURRENT.md",
+      "target": "experiments/EXP-20261027-009/record.md"
+    },
+    {
+      "document": "REPORT_CURRENT.md",
+      "target": "experiments/EXP-20261027-010/record.md"
+    },
+    {
+      "document": "REPORT_CURRENT.md",
+      "target": "notes/report02-status-audit-20261027-01/paper-excerpts.json"
+    },
+    {
+      "document": "REPORT_CURRENT.md",
+      "target": "notes/report02-status-audit-20261027-01/directory-25k-summary.csv"
+    },
+    {
+      "document": "REPORT_CURRENT.md",
+      "target": "notes/report02-status-audit-20261027-01/scope-stratified.csv"
+    },
+    {
+      "document": "REPORT_CURRENT.md",
+      "target": "notes/report02-status-audit-20261027-01/directory-25k-quantiles.csv"
+    },
+    {
+      "document": "REPORT_CURRENT.md",
+      "target": "notes/report02-status-audit-20261027-01/directory-25k-depth.csv"
+    },
+    {
+      "document": "REPORT_CURRENT.md",
+      "target": "notes/report02-status-audit-20261027-01/verification.json"
+    },
+    {
+      "document": "REPORT_CURRENT.md",
+      "target": "notes/report02-status-audit-20261027-01/stratification-check.json"
+    },
+    {
+      "document": "REPORT_CURRENT.md",
+      "target": "notes/report01-audit-20261027-01/run-02/verification.json"
+    }
+  ],
+  "report_task_complete": true,
+  "full_report_parent_complete": false,
+  "source_bindings_unchanged": true,
+  "old_10k_report_unchanged": true,
+  "experiment_files_unchanged": true,
+  "new_measurements": 0,
+  "vector_payload_bytes_read": 0,
+  "active_tasks": [],
+  "git_diff_check": "passed",
+  "documentation_sha256": {
+    "REPORT_CURRENT.md": "368265f3129a62c0e508bad03a84cfa532b31101ab59430f3b5f7d904371069b",
+    "STATE.md": "70d42f799d43b2f92878352097312200e391ff5261c5d40b37c8c8602a606d13",
+    "TASK.md": "69d818450ba277f43cde97d13ef28793df04e2d625784c03762a659c928b4427",
+    "REPRODUCTION_PLAN.md": "402c65973c93b0e9850374474b768077ab6a91e05285f774f499c989c2355cd9",
+    "README.md": "17353d0da7520c85d1657c6867ee3e98900748baade239928bab3f170cdefd6d",
+    "EXPERIMENTS.md": "e3a1daff8c24781c5d970b20077c45f502925083565d1418ad422a9aa4a53786"
+  },
+  "evidence_sha256": {
+    "audit.py": "cae5f63ccf69a2a39b2bfd81328165f45c1106f00ac51a9939605ee5e9eef00a",
+    "command.json": "d4ba446d05260df5671cd9492a62ea0b117003aa7c09cae4dfebcbfbf567bd58",
+    "directory-25k-depth.csv": "22d635967b3eb0264685f196356bf70190b7d5ddbabf3a8b99ca68255a7385dd",
+    "directory-25k-quantiles.csv": "2bff3def4d5a4dd6675a3bbe02dfe5c963cde0d009d14597431bf32101225d45",
+    "directory-25k-summary.csv": "fdc0dbda7b455f2dd2caa91b3652ddd14f30ee6ea08d66023d0192257644aabd",
+    "finalize.py": "bb0f5d3af7ed2a134ab1b293706c1448edbd0d1bba778e8d95dce7a2d798754f",
+    "git-diff-final.patch": "7ee88f9e8050d1965c3709ca22117ee4be9ff9da63a0d0670b58ee17b03e5a6c",
+    "git-status-final.txt": "5637b1855dcb9714911f2396424b520eff398524e4d26b5cd69f89bb617acfb7",
+    "paper-excerpts.json": "bb2a6e8549267af764857850a0dd2afcbd2a6d29f030da12d5841be985fe8a58",
+    "review.md": "54fcd77bb41ea0f9091fae2b7abca4b8907c07a8216ad629feec9ee23d857ef3",
+    "scope-profile.json": "e8b047fa23035b8018df87e35edaf58bc04f6d9cd2b2554d90ca45c6b3917463",
+    "scope-stratified.csv": "65618d217733cb5221534695096fdf4a37989f2c8eb93537ad71b5c7169a8ce7",
+    "status.json": "6e17127b7f149255ca068e94227e08b3bb6029de31656a5812ff744bdf4cf1a1",
+    "stratification-check.json": "1fad075875449a5a39b01a80c1d39192023a6e170e8605a2dde168c5ac234a9b",
+    "stratify.py": "2443a7e5b61a655b630f442aa6b79857fb55391172285f7bf98d611cba3f23d8",
+    "verification.json": "e042b2e1ab417ae17ac31fd5709113272a3c0bf5ea4203c864854443fe14f829"
+  }
+}

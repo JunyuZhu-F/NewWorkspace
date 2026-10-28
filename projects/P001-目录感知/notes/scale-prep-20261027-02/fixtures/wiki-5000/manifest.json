@@ -1,0 +1,31 @@
+{
+  "records": 5000,
+  "source_records": 1941679,
+  "source": "dataset\\raw\\WIKI-Dir\\dbpedia_dir_2m_corpus_paths.json",
+  "source_proof": {
+    "sha256": "d9642870803d14fa6d9193f743ed1d2a758ab643fcffe248d2d9009cf73a616a",
+    "bytes_read": 604190439,
+    "max_text_buffer_chars": 1049181,
+    "closed_array_and_eof": true,
+    "size": 604190439,
+    "mtime_ns": 1772275942000000000
+  },
+  "queries": 52,
+  "directories": 13863,
+  "max_depth": 29,
+  "missing_layers": [
+    31
+  ],
+  "holder": "/__scale_prep__/",
+  "vector_payload_bytes_read": 0,
+  "protocol_sha256": "66458d73ad256cb1fbf875405178888df4038c9cc5a7820aef26bc21146e6597",
+  "files": {
+    "bindings.tsv": "5073a9b3a2b30adccad71447758387d17fd11a5b1c59134c4b0e600fd606e572",
+    "directory-cases.json": "a0ebe8288a2bfc776a6e2dc6878a23664a56dcf0bf4871dcc1f64e6ba93bb9bb",
+    "directory-cases.tsv": "97dbaff38cbcb941a5a0d78b572ea6bb582b6362dd88f67c5e09be1ee3ba013a",
+    "operations.json": "c35fc4faafc9c9bc9cc2f0f303adc989266bb3ef6f6c10a10cc2ea56b7921efa",
+    "operations.tsv": "4b84bb82a03ef1005c7837849ec914f3f7b1a6f837900fcd92f35a4b312e022f",
+    "sample.json": "81aaa37193ee3e3bad5013e22090df2e3505a09862e2cca80fd81d4e84958f50",
+    "shape.tsv": "5c6906130d4535bc25b9071021ee4d78de38bdb1732bc1551b78a0766690c02b"
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "name": "arxiv-25000-release",
+  "command": [
+    "D:\\NewWorkspace\\projects\\P001-目录感知\\code\\build-Release-ScaleDirectory\\scale_directory.exe",
+    "notes\\scale-prep-20261027-01\\fixtures\\arxiv-25000",
+    "notes\\scale-prep-20261027-01\\outputs\\arxiv-25000-release",
+    "0",
+    "0",
+    "1",
+    "admission"
+  ],
+  "started_utc": "2026-10-27T08:30:51.799262+00:00",
+  "expected_exit": 0,
+  "exit_code": 0,
+  "elapsed_s": 0.598675400000019,
+  "private_peak_sampled_bytes": 27074560,
+  "available_min_sampled_bytes": 5225943040,
+  "finished_utc": "2026-10-27T08:30:52.399005+00:00",
+  "violation": null,
+  "sampling_note": "target <=250ms; filesystem traversal/scheduler may increase intervals; samples not a quota or exact peak",
+  "samples": [
+    {
+      "elapsed_s": 0.011516600000021526,
+      "private_tree_bytes": 987136,
+      "available_bytes": 5253173248
+    },
+    {
+      "elapsed_s": 0.2767197999999951,
+      "private_tree_bytes": 27074560,
+      "available_bytes": 5225943040
+    },
+    {
+      "elapsed_s": 0.5424706000000015,
+      "private_tree_bytes": 0,
+      "available_bytes": 5236998144
+    }
+  ]
+}

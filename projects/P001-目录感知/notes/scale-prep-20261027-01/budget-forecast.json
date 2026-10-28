@@ -1,0 +1,29 @@
+{
+  "status": "estimate_only",
+  "forecasts": [
+    {
+      "dataset": "arxiv",
+      "worker_s": 5.787606400000019,
+      "verification_scenario_s": 3.188288000000057,
+      "matrix_s": 32.12632000000015,
+      "screen_1_5x_s": 48.18948000000022,
+      "observed_private_bytes": 27074560,
+      "admission_memory_pass": true,
+      "worker_budget_pass": true,
+      "matrix_budget_pass": true,
+      "assumptions": "5 independent workers; each 3 warmup +20 measured cycles; setup +23*single measured validated cycle incl destruction + observed residual; verifier scenario 5*measured full one-output verifier; 1.5x time margin. Not a bound/proof; warm-cache single admission; no formal matrix run."
+    },
+    {
+      "dataset": "wiki",
+      "worker_s": 159.64891000000003,
+      "verification_scenario_s": 13.437796500000161,
+      "matrix_s": 811.6823465000002,
+      "screen_1_5x_s": 1217.5235197500003,
+      "observed_private_bytes": 320843776,
+      "admission_memory_pass": true,
+      "worker_budget_pass": true,
+      "matrix_budget_pass": true,
+      "assumptions": "5 independent workers; each 3 warmup +20 measured cycles; setup +23*single measured validated cycle incl destruction + observed residual; verifier scenario 5*measured full one-output verifier; 1.5x time margin. Not a bound/proof; warm-cache single admission; no formal matrix run."
+    }
+  ]
+}

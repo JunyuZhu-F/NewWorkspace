@@ -1,0 +1,61 @@
+{
+  "name": "verify-wiki-5000",
+  "command": [
+    "D:\\anaconda3\\python.exe",
+    "-B",
+    "D:\\NewWorkspace\\projects\\P001-目录感知\\code\\scale_directory\\verify.py",
+    "notes\\scale-prep-20261027-02\\fixtures\\wiki-5000",
+    "notes\\scale-prep-20261027-02\\verification-wiki-5000.json",
+    "notes\\scale-prep-20261027-02\\outputs\\wiki-5000-release",
+    "notes\\scale-prep-20261027-02\\outputs\\wiki-5000-asan"
+  ],
+  "started_utc": "2026-10-27T08:43:19.995969+00:00",
+  "expected_exit": 0,
+  "exit_code": 0,
+  "elapsed_s": 0.7385226000000102,
+  "private_peak_sampled_bytes": 32092160,
+  "available_min_sampled_bytes": 5130473472,
+  "finished_utc": "2026-10-27T08:43:20.734515+00:00",
+  "violation": null,
+  "target_period_s": 0.1,
+  "maximum_observed_sample_gap_s": 0.10911010000000942,
+  "observed_gap_within_250ms": true,
+  "sampling_note": "100ms whole-loop target; OS may delay scheduling; audit actual gaps; samples not a quota or exact peak",
+  "samples": [
+    {
+      "elapsed_s": 0.014340000000004238,
+      "private_tree_bytes": 405504,
+      "available_bytes": 5166841856
+    },
+    {
+      "elapsed_s": 0.12062779999996565,
+      "private_tree_bytes": 5537792,
+      "available_bytes": 5158920192
+    },
+    {
+      "elapsed_s": 0.2285733999999593,
+      "private_tree_bytes": 13058048,
+      "available_bytes": 5153009664
+    },
+    {
+      "elapsed_s": 0.3376834999999687,
+      "private_tree_bytes": 21680128,
+      "available_bytes": 5143662592
+    },
+    {
+      "elapsed_s": 0.4465045000000032,
+      "private_tree_bytes": 29257728,
+      "available_bytes": 5137133568
+    },
+    {
+      "elapsed_s": 0.5539748999999574,
+      "private_tree_bytes": 32092160,
+      "available_bytes": 5130473472
+    },
+    {
+      "elapsed_s": 0.662754399999983,
+      "private_tree_bytes": 23060480,
+      "available_bytes": 5132062720
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "fixture": "D:\\NewWorkspace\\projects\\P001-目录感知\\notes\\scale-prep-20261027-02\\fixtures\\arxiv-5000",
+  "outputs": [
+    {
+      "path": "D:\\NewWorkspace\\projects\\P001-目录感知\\notes\\scale02-preparation-20261027-01\\entry\\arxiv-run-0",
+      "run": 0
+    },
+    {
+      "path": "D:\\NewWorkspace\\projects\\P001-目录感知\\notes\\scale02-preparation-20261027-01\\entry\\arxiv-run-1",
+      "run": 1
+    },
+    {
+      "path": "D:\\NewWorkspace\\projects\\P001-目录感知\\notes\\scale02-preparation-20261027-01\\entry\\arxiv-run-2",
+      "run": 2
+    },
+    {
+      "path": "D:\\NewWorkspace\\projects\\P001-目录感知\\notes\\scale02-preparation-20261027-01\\entry\\arxiv-run-3",
+      "run": 3
+    },
+    {
+      "path": "D:\\NewWorkspace\\projects\\P001-目录感知\\notes\\scale02-preparation-20261027-01\\entry\\arxiv-run-4",
+      "run": 4
+    }
+  ],
+  "warmups": 0,
+  "repeats": 2
+}

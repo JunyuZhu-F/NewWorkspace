@@ -1,0 +1,49 @@
+{
+  "name": "verify-reused-entry-arxiv",
+  "command": [
+    "D:\\anaconda3\\python.exe",
+    "-B",
+    "D:\\NewWorkspace\\projects\\P001-目录感知\\code\\scale_formal\\verify.py",
+    "D:\\NewWorkspace\\projects\\P001-目录感知\\notes\\scale02-preparation-20261027-03\\entry-arxiv.json",
+    "D:\\NewWorkspace\\projects\\P001-目录感知\\notes\\scale02-preparation-20261027-03\\entry-arxiv-analysis"
+  ],
+  "started_utc": "2026-10-27T09:09:38.612512+00:00",
+  "expected_exit": 0,
+  "pid": 29824,
+  "exit_code": 0,
+  "finished_utc": "2026-10-27T09:09:39.082171+00:00",
+  "elapsed_s": 0.468434000000002,
+  "unit_elapsed_s": 21.6157847,
+  "private_peak_sampled_bytes": 13836288,
+  "available_min_sampled_bytes": 5736869888,
+  "maximum_sample_gap_s": 0.10941829999999797,
+  "violation": null,
+  "target_period_s": 0.1,
+  "samples": [
+    {
+      "elapsed_s": 0.017106200000000626,
+      "private_tree_bytes": 1392640,
+      "available_bytes": 5753286656
+    },
+    {
+      "elapsed_s": 0.12174990000000108,
+      "private_tree_bytes": 5726208,
+      "available_bytes": 5752754176
+    },
+    {
+      "elapsed_s": 0.23116819999999905,
+      "private_tree_bytes": 11788288,
+      "available_bytes": 5736869888
+    },
+    {
+      "elapsed_s": 0.3401302000000008,
+      "private_tree_bytes": 13836288,
+      "available_bytes": 5737512960
+    },
+    {
+      "elapsed_s": 0.4489893000000009,
+      "private_tree_bytes": 0,
+      "available_bytes": 5748088832
+    }
+  ]
+}

@@ -1,0 +1,470 @@
+[
+  {
+    "case": "d0-r0",
+    "path": "/",
+    "recursive": false,
+    "depth": 0,
+    "candidates": 0,
+    "children": 35,
+    "descendant_directories": 13863
+  },
+  {
+    "case": "d0-r1",
+    "path": "/",
+    "recursive": true,
+    "depth": 0,
+    "candidates": 5000,
+    "children": 35,
+    "descendant_directories": 13863
+  },
+  {
+    "case": "d1-r0",
+    "path": "/Academic_disciplines/Academic_discipline_interactions/Philosophy_of_science/Metaphysics_of_science/Causality/Causes/Causes_of_death/Asphyxia/",
+    "recursive": false,
+    "depth": 8,
+    "candidates": 1,
+    "children": 0,
+    "descendant_directories": 1
+  },
+  {
+    "case": "d1-r1",
+    "path": "/Academic_disciplines/Academic_discipline_interactions/Philosophy_of_science/Metaphysics_of_science/Causality/Causes/Causes_of_death/Asphyxia/",
+    "recursive": true,
+    "depth": 8,
+    "candidates": 1,
+    "children": 0,
+    "descendant_directories": 1
+  },
+  {
+    "case": "d2-r0",
+    "path": "/Academic_disciplines/Academic_discipline_interactions/Philosophy_of_science/Metaphysics_of_science/Causality/Causes/Causes_of_death/Capital_punishment/Execution_equipment/",
+    "recursive": false,
+    "depth": 9,
+    "candidates": 1,
+    "children": 0,
+    "descendant_directories": 1
+  },
+  {
+    "case": "d2-r1",
+    "path": "/Academic_disciplines/Academic_discipline_interactions/Philosophy_of_science/Metaphysics_of_science/Causality/Causes/Causes_of_death/Capital_punishment/Execution_equipment/",
+    "recursive": true,
+    "depth": 9,
+    "candidates": 1,
+    "children": 0,
+    "descendant_directories": 1
+  },
+  {
+    "case": "d3-r0",
+    "path": "/Academic_disciplines/Applied_disciplines/Applied_sciences/Architecture/Buildings_and_structures_by_type/Fences/Perimeter_security/Access_control/Identification/Brand_management/Brands/Brands_by_country/American_brands/American_drink_brands/American_soft_drink_brands/American_cola_brands/",
+    "recursive": false,
+    "depth": 16,
+    "candidates": 1,
+    "children": 0,
+    "descendant_directories": 1
+  },
+  {
+    "case": "d3-r1",
+    "path": "/Academic_disciplines/Applied_disciplines/Applied_sciences/Architecture/Buildings_and_structures_by_type/Fences/Perimeter_security/Access_control/Identification/Brand_management/Brands/Brands_by_country/American_brands/American_drink_brands/American_soft_drink_brands/American_cola_brands/",
+    "recursive": true,
+    "depth": 16,
+    "candidates": 1,
+    "children": 0,
+    "descendant_directories": 1
+  },
+  {
+    "case": "d4-r0",
+    "path": "/Academic_disciplines/Applied_disciplines/Applied_statistics/Biostatistics/",
+    "recursive": false,
+    "depth": 4,
+    "candidates": 1,
+    "children": 0,
+    "descendant_directories": 1
+  },
+  {
+    "case": "d4-r1",
+    "path": "/Academic_disciplines/Applied_disciplines/Applied_statistics/Biostatistics/",
+    "recursive": true,
+    "depth": 4,
+    "candidates": 1,
+    "children": 0,
+    "descendant_directories": 1
+  },
+  {
+    "case": "d5-r0",
+    "path": "/Behavior/Altruism/",
+    "recursive": false,
+    "depth": 2,
+    "candidates": 1,
+    "children": 0,
+    "descendant_directories": 1
+  },
+  {
+    "case": "d5-r1",
+    "path": "/Behavior/Altruism/",
+    "recursive": true,
+    "depth": 2,
+    "candidates": 1,
+    "children": 0,
+    "descendant_directories": 1
+  },
+  {
+    "case": "d6-r0",
+    "path": "/Behavior/Human_behavior/Human_activities/Entertainment/Gaming/Games/Games_by_type/Games_of_physical_skill/Athletic_sports/Basketball/Basketball_by_country/Basketball_competitions_by_country/Basketball_competitions_in_Europe_by_country/Basketball_competitions_in_Bosnia_and_Herzegovina/Basketball_leagues_in_Bosnia_and_Herzegovina/ABA_League/",
+    "recursive": false,
+    "depth": 16,
+    "candidates": 0,
+    "children": 1,
+    "descendant_directories": 2
+  },
+  {
+    "case": "d6-r1",
+    "path": "/Behavior/Human_behavior/Human_activities/Entertainment/Gaming/Games/Games_by_type/Games_of_physical_skill/Athletic_sports/Basketball/Basketball_by_country/Basketball_competitions_by_country/Basketball_competitions_in_Europe_by_country/Basketball_competitions_in_Bosnia_and_Herzegovina/Basketball_leagues_in_Bosnia_and_Herzegovina/ABA_League/",
+    "recursive": true,
+    "depth": 16,
+    "candidates": 1,
+    "children": 1,
+    "descendant_directories": 2
+  },
+  {
+    "case": "d7-r0",
+    "path": "/Culture/The_arts/Arts_by_type/Communication_design/Media_formats/Film/Film_events/Film_awards/Film_awards_by_category/",
+    "recursive": false,
+    "depth": 9,
+    "candidates": 0,
+    "children": 1,
+    "descendant_directories": 2
+  },
+  {
+    "case": "d7-r1",
+    "path": "/Culture/The_arts/Arts_by_type/Communication_design/Media_formats/Film/Film_events/Film_awards/Film_awards_by_category/",
+    "recursive": true,
+    "depth": 9,
+    "candidates": 1,
+    "children": 1,
+    "descendant_directories": 2
+  },
+  {
+    "case": "d8-r0",
+    "path": "/Geography/Geographic_classifications/Geographic_taxonomies/Countries/Countries_by_continent/Countries_in_Europe/France/Geography_of_France/Populated_places_in_France/Communes_in_France/Communes_in_France_by_department/",
+    "recursive": false,
+    "depth": 11,
+    "candidates": 0,
+    "children": 46,
+    "descendant_directories": 49
+  },
+  {
+    "case": "d8-r1",
+    "path": "/Geography/Geographic_classifications/Geographic_taxonomies/Countries/Countries_by_continent/Countries_in_Europe/France/Geography_of_France/Populated_places_in_France/Communes_in_France/Communes_in_France_by_department/",
+    "recursive": true,
+    "depth": 11,
+    "candidates": 71,
+    "children": 46,
+    "descendant_directories": 49
+  },
+  {
+    "case": "d9-r0",
+    "path": "/Government/Government_by_country/Government_of_the_Republic_of_Ireland/Departments_of_State_(Ireland)/",
+    "recursive": false,
+    "depth": 4,
+    "candidates": 0,
+    "children": 1,
+    "descendant_directories": 2
+  },
+  {
+    "case": "d9-r1",
+    "path": "/Government/Government_by_country/Government_of_the_Republic_of_Ireland/Departments_of_State_(Ireland)/",
+    "recursive": true,
+    "depth": 4,
+    "candidates": 1,
+    "children": 1,
+    "descendant_directories": 2
+  },
+  {
+    "case": "d10-r0",
+    "path": "/Knowledge/Academia/Academia_by_continent/Academia_in_North_America/",
+    "recursive": false,
+    "depth": 4,
+    "candidates": 0,
+    "children": 1,
+    "descendant_directories": 8
+  },
+  {
+    "case": "d10-r1",
+    "path": "/Knowledge/Academia/Academia_by_continent/Academia_in_North_America/",
+    "recursive": true,
+    "depth": 4,
+    "candidates": 2,
+    "children": 1,
+    "descendant_directories": 8
+  },
+  {
+    "case": "d11-r0",
+    "path": "/Life/Life_sciences/Biology/Branches_of_biology/Biotechnology/Biochemistry/Bioinorganic_chemistry/Oxidoreductases/EC_1.13/",
+    "recursive": false,
+    "depth": 9,
+    "candidates": 0,
+    "children": 1,
+    "descendant_directories": 2
+  },
+  {
+    "case": "d11-r1",
+    "path": "/Life/Life_sciences/Biology/Branches_of_biology/Biotechnology/Biochemistry/Bioinorganic_chemistry/Oxidoreductases/EC_1.13/",
+    "recursive": true,
+    "depth": 9,
+    "candidates": 1,
+    "children": 1,
+    "descendant_directories": 2
+  },
+  {
+    "case": "d12-r0",
+    "path": "/Life/Organisms/Eukaryotes/Animals/Animal_taxa/Animal_taxa_by_rank/Animal_unranked_clades/ParaHoxozoa/Bilaterians/Protostomes/Ecdysozoa/Panarthropoda/Arthropods/Arthropod_taxa/Arthropod_taxonomy/Insect_taxonomy/Lepidoptera_taxonomy/Glossata/Coelolepida/Myoglossata/Neolepidoptera/Heteroneura/Eulepidoptera/Ditrysia/",
+    "recursive": false,
+    "depth": 24,
+    "candidates": 0,
+    "children": 3,
+    "descendant_directories": 15
+  },
+  {
+    "case": "d12-r1",
+    "path": "/Life/Organisms/Eukaryotes/Animals/Animal_taxa/Animal_taxa_by_rank/Animal_unranked_clades/ParaHoxozoa/Bilaterians/Protostomes/Ecdysozoa/Panarthropoda/Arthropods/Arthropod_taxa/Arthropod_taxonomy/Insect_taxonomy/Lepidoptera_taxonomy/Glossata/Coelolepida/Myoglossata/Neolepidoptera/Heteroneura/Eulepidoptera/Ditrysia/",
+    "recursive": true,
+    "depth": 24,
+    "candidates": 5,
+    "children": 3,
+    "descendant_directories": 15
+  },
+  {
+    "case": "d13-r0",
+    "path": "/Life/Organisms/Eukaryotes/Animals/Animal_taxa/Animal_taxa_by_rank/Animal_unranked_clades/ParaHoxozoa/Bilaterians/Protostomes/Ecdysozoa/Panarthropoda/Arthropods/Arthropod_taxa/Arthropod_taxonomy/Insect_taxonomy/Lepidoptera_taxonomy/Moth_taxonomy/Macroheterocera/Noctuoidea/Erebidae/Arctiinae/Arctiini/Euchromiina/",
+    "recursive": false,
+    "depth": 24,
+    "candidates": 1,
+    "children": 0,
+    "descendant_directories": 1
+  },
+  {
+    "case": "d13-r1",
+    "path": "/Life/Organisms/Eukaryotes/Animals/Animal_taxa/Animal_taxa_by_rank/Animal_unranked_clades/ParaHoxozoa/Bilaterians/Protostomes/Ecdysozoa/Panarthropoda/Arthropods/Arthropod_taxa/Arthropod_taxonomy/Insect_taxonomy/Lepidoptera_taxonomy/Moth_taxonomy/Macroheterocera/Noctuoidea/Erebidae/Arctiinae/Arctiini/Euchromiina/",
+    "recursive": true,
+    "depth": 24,
+    "candidates": 1,
+    "children": 0,
+    "descendant_directories": 1
+  },
+  {
+    "case": "d14-r0",
+    "path": "/Mathematics/",
+    "recursive": false,
+    "depth": 1,
+    "candidates": 0,
+    "children": 3,
+    "descendant_directories": 148
+  },
+  {
+    "case": "d14-r1",
+    "path": "/Mathematics/",
+    "recursive": true,
+    "depth": 1,
+    "candidates": 38,
+    "children": 3,
+    "descendant_directories": 148
+  },
+  {
+    "case": "d15-r0",
+    "path": "/Nature/",
+    "recursive": false,
+    "depth": 1,
+    "candidates": 0,
+    "children": 3,
+    "descendant_directories": 5311
+  },
+  {
+    "case": "d15-r1",
+    "path": "/Nature/",
+    "recursive": true,
+    "depth": 1,
+    "candidates": 2390,
+    "children": 3,
+    "descendant_directories": 5311
+  },
+  {
+    "case": "d16-r0",
+    "path": "/Nature/Natural_sciences/",
+    "recursive": false,
+    "depth": 2,
+    "candidates": 0,
+    "children": 2,
+    "descendant_directories": 5238
+  },
+  {
+    "case": "d16-r1",
+    "path": "/Nature/Natural_sciences/",
+    "recursive": true,
+    "depth": 2,
+    "candidates": 2371,
+    "children": 2,
+    "descendant_directories": 5238
+  },
+  {
+    "case": "d17-r0",
+    "path": "/Nature/Natural_sciences/Earth_sciences/Earth/",
+    "recursive": false,
+    "depth": 4,
+    "candidates": 0,
+    "children": 5,
+    "descendant_directories": 5169
+  },
+  {
+    "case": "d17-r1",
+    "path": "/Nature/Natural_sciences/Earth_sciences/Earth/",
+    "recursive": true,
+    "depth": 4,
+    "candidates": 2338,
+    "children": 5,
+    "descendant_directories": 5169
+  },
+  {
+    "case": "d18-r0",
+    "path": "/Nature/Natural_sciences/Earth_sciences/Earth/Geological_history_of_Earth/Geological_epochs/Holocene/2nd_millennium/20th_century/",
+    "recursive": false,
+    "depth": 9,
+    "candidates": 0,
+    "children": 18,
+    "descendant_directories": 2650
+  },
+  {
+    "case": "d18-r1",
+    "path": "/Nature/Natural_sciences/Earth_sciences/Earth/Geological_history_of_Earth/Geological_epochs/Holocene/2nd_millennium/20th_century/",
+    "recursive": true,
+    "depth": 9,
+    "candidates": 1388,
+    "children": 18,
+    "descendant_directories": 2650
+  },
+  {
+    "case": "d19-r0",
+    "path": "/Nature/Natural_sciences/Earth_sciences/Earth/Geological_history_of_Earth/Geological_epochs/Holocene/2nd_millennium/20th_century/20th-century_people/20th-century_people_by_location/20th-century_people_by_continent/20th-century_European_people/20th-century_European_people_by_nationality/20th-century_German_people/20th-century_German_men/",
+    "recursive": false,
+    "depth": 16,
+    "candidates": 0,
+    "children": 1,
+    "descendant_directories": 2
+  },
+  {
+    "case": "d19-r1",
+    "path": "/Nature/Natural_sciences/Earth_sciences/Earth/Geological_history_of_Earth/Geological_epochs/Holocene/2nd_millennium/20th_century/20th-century_people/20th-century_people_by_location/20th-century_people_by_continent/20th-century_European_people/20th-century_European_people_by_nationality/20th-century_German_people/20th-century_German_men/",
+    "recursive": true,
+    "depth": 16,
+    "candidates": 1,
+    "children": 1,
+    "descendant_directories": 2
+  },
+  {
+    "case": "d20-r0",
+    "path": "/Nature/Natural_sciences/Earth_sciences/Earth/Geological_history_of_Earth/Geological_epochs/Holocene/2nd_millennium/20th_century/20th-century_people/20th-century_people_by_location/20th-century_people_by_continent/20th-century_North_American_people/20th-century_North_American_people_by_nationality/20th-century_American_people/20th-century_American_people_by_occupation/",
+    "recursive": false,
+    "depth": 16,
+    "candidates": 0,
+    "children": 17,
+    "descendant_directories": 65
+  },
+  {
+    "case": "d20-r1",
+    "path": "/Nature/Natural_sciences/Earth_sciences/Earth/Geological_history_of_Earth/Geological_epochs/Holocene/2nd_millennium/20th_century/20th-century_people/20th-century_people_by_location/20th-century_people_by_continent/20th-century_North_American_people/20th-century_North_American_people_by_nationality/20th-century_American_people/20th-century_American_people_by_occupation/",
+    "recursive": true,
+    "depth": 16,
+    "candidates": 95,
+    "children": 17,
+    "descendant_directories": 65
+  },
+  {
+    "case": "d21-r0",
+    "path": "/People/",
+    "recursive": false,
+    "depth": 1,
+    "candidates": 0,
+    "children": 8,
+    "descendant_directories": 66
+  },
+  {
+    "case": "d21-r1",
+    "path": "/People/",
+    "recursive": true,
+    "depth": 1,
+    "candidates": 14,
+    "children": 8,
+    "descendant_directories": 66
+  },
+  {
+    "case": "d22-r0",
+    "path": "/Science/",
+    "recursive": false,
+    "depth": 1,
+    "candidates": 0,
+    "children": 1,
+    "descendant_directories": 10
+  },
+  {
+    "case": "d22-r1",
+    "path": "/Science/",
+    "recursive": true,
+    "depth": 1,
+    "candidates": 1,
+    "children": 1,
+    "descendant_directories": 10
+  },
+  {
+    "case": "d23-r0",
+    "path": "/Science/Branches_of_science/",
+    "recursive": false,
+    "depth": 2,
+    "candidates": 0,
+    "children": 1,
+    "descendant_directories": 9
+  },
+  {
+    "case": "d23-r1",
+    "path": "/Science/Branches_of_science/",
+    "recursive": true,
+    "depth": 2,
+    "candidates": 1,
+    "children": 1,
+    "descendant_directories": 9
+  },
+  {
+    "case": "d24-r0",
+    "path": "/Time/Chronology/",
+    "recursive": false,
+    "depth": 2,
+    "candidates": 0,
+    "children": 3,
+    "descendant_directories": 28
+  },
+  {
+    "case": "d24-r1",
+    "path": "/Time/Chronology/",
+    "recursive": true,
+    "depth": 2,
+    "candidates": 5,
+    "children": 3,
+    "descendant_directories": 28
+  },
+  {
+    "case": "d25-r0",
+    "path": "/Universe/Matter/Phases_of_matter/Gases/Atmosphere/Atmosphere_of_Earth/Aerospace/Aerospace_engineering/Airport_infrastructure/Airport_chapels/",
+    "recursive": false,
+    "depth": 10,
+    "candidates": 1,
+    "children": 0,
+    "descendant_directories": 1
+  },
+  {
+    "case": "d25-r1",
+    "path": "/Universe/Matter/Phases_of_matter/Gases/Atmosphere/Atmosphere_of_Earth/Aerospace/Aerospace_engineering/Airport_infrastructure/Airport_chapels/",
+    "recursive": true,
+    "depth": 10,
+    "candidates": 1,
+    "children": 0,
+    "descendant_directories": 1
+  }
+]

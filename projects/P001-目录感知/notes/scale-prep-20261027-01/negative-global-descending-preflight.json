@@ -1,0 +1,11 @@
+{
+  "required_stable_s": 0,
+  "samples": [
+    {
+      "elapsed_s": 0.00020109999999817774,
+      "utc": "2026-10-27T08:28:29.357969+00:00",
+      "available_bytes": 5551071232,
+      "disk_free_bytes": 464568168448
+    }
+  ]
+}

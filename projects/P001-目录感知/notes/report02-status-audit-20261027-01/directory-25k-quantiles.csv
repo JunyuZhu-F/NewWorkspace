@@ -1,0 +1,13 @@
+dataset,strategy,mode,calls,independent_processes,anchors,mean_us,p90_us,p95_us,p99_us,p999_us,quantile_rule
+wiki,PE-OFFLINE,query-local,3100,5,31,35.764483870967744,82.90999999999998,194.73999999999975,386.901,444.4623999999996,linear on pooled measured calls; finite sample; not independent queries
+wiki,PE-OFFLINE,query-recursive,3100,5,31,2.245032258064516,4.409999999999991,6.0,8.3,19.272299999999632,linear on pooled measured calls; finite sample; not independent queries
+wiki,PE-ONLINE,query-local,3100,5,31,4.148451612903226,5.8,7.1,9.500999999999976,22.68119999999981,linear on pooled measured calls; finite sample; not independent queries
+wiki,PE-ONLINE,query-recursive,3100,5,31,3269.1943870967743,15477.1,17843.254999999976,40757.47499999999,51156.321499999816,linear on pooled measured calls; finite sample; not independent queries
+wiki,TrieHI,query-local,3100,5,31,30.97435483870968,66.70999999999998,183.65999999999968,360.9059999999999,455.5179999999971,linear on pooled measured calls; finite sample; not independent queries
+wiki,TrieHI,query-recursive,3100,5,31,2.2011290322580646,4.0,5.2,7.7,19.35049999999992,linear on pooled measured calls; finite sample; not independent queries
+arxiv,PE-OFFLINE,query-local,1000,5,10,11.832799999999999,47.440000000000104,65.6,90.91399999999999,132.82279999999946,linear on pooled measured calls; finite sample; not independent queries
+arxiv,PE-OFFLINE,query-recursive,1000,5,10,0.8102,3.0100000000000025,3.7,5.300999999999999,9.104199999999901,linear on pooled measured calls; finite sample; not independent queries
+arxiv,PE-ONLINE,query-local,1000,5,10,1.1376,1.8,2.2,3.200999999999999,35.59099999999785,linear on pooled measured calls; finite sample; not independent queries
+arxiv,PE-ONLINE,query-recursive,1000,5,10,24.785,42.36000000000352,204.53499999999997,225.48399999999992,415.80109999999996,linear on pooled measured calls; finite sample; not independent queries
+arxiv,TrieHI,query-local,1000,5,10,10.9342,20.76000000000074,65.93499999999997,87.003,138.9338999999992,linear on pooled measured calls; finite sample; not independent queries
+arxiv,TrieHI,query-recursive,1000,5,10,0.7456,2.9,3.6049999999999955,6.1,12.004999999999882,linear on pooled measured calls; finite sample; not independent queries

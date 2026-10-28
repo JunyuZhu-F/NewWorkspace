@@ -1,6 +1,12 @@
 # Directory-Aware Query and Maintenance in Vector Databases
 
-当前报告：[两数据集小规模结论、证据、限制与补测决策](REPORT_SMALL_SCALE.md)已完成并复核（REPORT-01-SMALL-01）。仅当前独立小范围通过，全文REPORT-01仍进行中；下一项SCALE-01资源预算，不自动运行新实验。WIKI有真实语料目录，缺的是逐查询范围，已授权项目工作负载不冒充作者约束。
+当前总入口：[论文实验—已有证据—剩余缺口与25k结果](REPORT_CURRENT.md)及[本轮审查](notes/report02-status-audit-20261027-01/review.md)已完成。目录正式至25k、向量检索仍1万；原文nDCG、PG/Viking、完整表V/受控深度检索/真实类别与全量尚未复现。统计重算与351次hash检查通过，新增分位、深度、空范围CSV；0新测量，旧10k报告保持。下一建议先评估25k检索协议/预算（WIKI优先），不自动开跑。
+
+当前正式结果：SCALE-02两数据集各25k纯目录、各5独立进程/3预热20测量已完成并审查通过：[WIKI009](experiments/EXP-20261027-009/record.md)、[ARXIV010](experiments/EXP-20261027-010/record.md)，合计27600正式计时/141450次集合核对。全部格位、资源/预算与源/输入/二进制hash通过；[准备与恢复审查](notes/scale02-preparation-20261027-03/record.md)保留01/02错误，未重跑已验证原生入口或正式实验，原核心/旧记录不改。各record提供完整CSV/5进程SD与反例；不同N选样/目录case不同，不作严格增长率或全文验收。下段是此前SCALE-PREP交付时点，当前状态以上述为准。
+
+当前进度：[SCALE-PREP-01最终准入](notes/scale-prep-20261027-02/record.md)及[审查](notes/scale-prep-20261027-02/review.md)通过：两数据集5k Release/ASan、25k Release共6worker/3390次完整集合及独立核验通过，原核心与旧实验不变、向量载荷0。首次监控间隔偏差已保留并修正，最终实际采样达标。[审查预算](notes/scale-prep-20261027-02/budget-reviewed.json)补入启动窗口后过筛查，WIKI余量很小。SCALE-01仍待正式矩阵/预算决定，SCALE-02未授权；[新入口](code/scale_directory/README.md)目前仅admission单pass，尚不能当正式性能结果。
+
+当前报告：[两数据集小规模结论、证据、限制与补测决策](REPORT_SMALL_SCALE.md)已完成并复核（REPORT-01-SMALL-01）。仅当前独立小范围通过，全文REPORT-01仍进行中。WIKI有真实语料目录，缺的是逐查询范围，已授权项目工作负载不冒充作者约束；扩规模状态见上方评估。
 
 > P001-目录感知，采用 arXiv:2606.16903v1。当前小规模DIR-01、全量时间metadata审计及SEARCH-01/02时间/独立IVF分支完成；006五进程质量—总延迟对照通过独立核验。全量索引/性能、完整真实协议及PG/原版Viking未完成。
 

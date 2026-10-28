@@ -1,0 +1,26 @@
+[
+  {
+    "case": "move-large",
+    "kind": "move",
+    "source": "/2024/",
+    "target": "/__scale_prep__/"
+  },
+  {
+    "case": "merge-large",
+    "kind": "merge",
+    "source": "/__scale_prep__/2024/",
+    "target": "/2025/7/"
+  },
+  {
+    "case": "move-deep",
+    "kind": "move",
+    "source": "/1991/7/",
+    "target": "/__scale_prep__/"
+  },
+  {
+    "case": "merge-deep",
+    "kind": "merge",
+    "source": "/__scale_prep__/7/",
+    "target": "/2025/7/"
+  }
+]

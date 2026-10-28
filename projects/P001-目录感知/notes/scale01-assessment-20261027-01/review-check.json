@@ -1,0 +1,49 @@
+{
+  "status": "passed",
+  "assessment_only": true,
+  "approval_received": false,
+  "scale02_started": false,
+  "metadata_profiles": 8,
+  "baseline_10k_geometry_crosschecked": true,
+  "memory_scenario_rows_checked": 16,
+  "source_bindings_checked": 25,
+  "old_source_entries_checked": 46,
+  "document_links_checked": 40,
+  "current_git_head": "2101c84f24b3cbbcd093b38073a5c9e372815f9d",
+  "assessment_sha256": "a87b91e0b7981b3e8e50a5b1f7de629c6d7c29b1c5b8bf7409b2a6a988a30e48",
+  "profile_sha256": "081d059e0d58332bee5a5a9b0e0e2aee3eed36505e9f3c58ddc4ac0a5abf3124",
+  "output_hashes": {
+    "analyze-console.log": "97a0a3daf8de1f71be6af78f63a7c17e2d5f5b710ecb296fee0da36e15d8a953",
+    "analyze.py": "c4ec8614bdf8e322c471f6858372080e73320ebaa26ffa132e5463eaf65a5689",
+    "assessment.json": "a87b91e0b7981b3e8e50a5b1f7de629c6d7c29b1c5b8bf7409b2a6a988a30e48",
+    "full-data-lower-bounds.csv": "b84465d88d3d3e5e7981b74c42a5093230c6192e245e4654096f6a3420f32a88",
+    "hardware-os.json": "4441f9e5d6454f8eee7ba33ec8e1120c36085e4213e7bb2a09cdc5bf09b02d39",
+    "hardware.json": "5530a35bee7b17d1690fa9740972442498b5a6a0386c3d6bf737d364100e1e96",
+    "historical-telemetry.csv": "211c651e964dbf3c16db3dc342f6b0f363ba9d290a78685c805f26163fee2bd1",
+    "memory-and-geometry-scenarios.csv": "20e20f4e341322c6f22d9ac2a543e37dce713ec14bc2d1df223a4995ce5796ba",
+    "profile-console.log": "276d0b0aa2bca22faf4ff98bb271f7eaa83422e75fb30d2759a20992b38eb99f",
+    "profile.json": "081d059e0d58332bee5a5a9b0e0e2aee3eed36505e9f3c58ddc4ac0a5abf3124",
+    "profile.py": "9db7d439c4e039ab99aa7bccf470c444447df9949138299130efabeee92c1676",
+    "review_check.py": "52e9316d72da1a8f0c6af3b78bc2fb10adf42c36c792a706a1f75df9a8105173",
+    "status.json": "008f69907496d8b8a8a8a40604914a42fe81032c5672a6d48af6cc2062096f47",
+    "stl-vector-growth.txt": "de22d1768a9ff3f0bf88f3dc13ba767443162e9f342faab653a4586a96fdd3db",
+    "time-scenarios.csv": "d31baf27098dbce675cb709f0eb0ce876639e0a050020f35553d048386faae01"
+  },
+  "document_hashes": {
+    "SCALE_ASSESSMENT.md": "aab811ea6bfdf77f38f425e5832508e071bd23a0519fb76a3a20ecc6fbe5e785",
+    "TASK.md": "c37e7197a6e99e5e4e4a9cf99b13a8d9f85cc7b2566ef4af862c38da9415c58d",
+    "REPRODUCTION_PLAN.md": "4d8a8d5c82fa77ecae7b31894bc39d62a036f1a7a3bf96fe3493c247f1ab46ad",
+    "STATE.md": "66a6aed32ad250ee8f68917a208b09c2c9b64404ba0b2f0dfe7c74271894ca39",
+    "README.md": "cb64feba4ab0463e272454a9f2f41e2cebfc3a6a43cf16d8083421f46b6e9ba9",
+    "EXPERIMENTS.md": "46c60d6d85ecc67b254803eaf42f810ca874ebb56e0f063a5a329e38b47f22cb"
+  },
+  "changed_tracked_paths": [
+    "\"projects/P001-\\347\\233\\256\\345\\275\\225\\346\\204\\237\\347\\237\\245/EXPERIMENTS.md\"",
+    "\"projects/P001-\\347\\233\\256\\345\\275\\225\\346\\204\\237\\347\\237\\245/README.md\"",
+    "\"projects/P001-\\347\\233\\256\\345\\275\\225\\346\\204\\237\\347\\237\\245/REPRODUCTION_PLAN.md\"",
+    "\"projects/P001-\\347\\233\\256\\345\\275\\225\\346\\204\\237\\347\\237\\245/STATE.md\"",
+    "\"projects/P001-\\347\\233\\256\\345\\275\\225\\346\\204\\237\\347\\237\\245/TASK.md\""
+  ],
+  "core_and_experiment_files_modified": false,
+  "caveat": "Scenario arithmetic and provenance passed; no new-N index/ANN/runtime/peak-memory admission was performed."
+}

@@ -1,0 +1,4 @@
+strategy=2 passed
+strategy=0 passed
+strategy=1 passed
+PASS scope_checks=600 label=entry-check

@@ -1,0 +1,3 @@
+dataset,records,file_bytes,cpp_float_payload_bytes,oracle_float64_matrix_bytes,full_float_payload_exceeds_current_private_limit
+ARXIV,2763543,11330526300,11319472128,22638944256,True
+WIKI,1941679,7960883900,7953117184,15906234368,True

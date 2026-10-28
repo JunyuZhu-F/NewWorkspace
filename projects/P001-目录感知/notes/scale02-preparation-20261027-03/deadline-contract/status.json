@@ -1,0 +1,9 @@
+{
+  "status": "passed_expected_stop",
+  "started_utc": "2026-10-27T09:09:17.877928+00:00",
+  "unit_seconds": 0.25,
+  "completed_commands": 0,
+  "finished_utc": "2026-10-27T09:09:18.237009+00:00",
+  "elapsed_s": 0.35927469999999984,
+  "reason": "actual unit deadline terminated sleep child; not an experiment"
+}

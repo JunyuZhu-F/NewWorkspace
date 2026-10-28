@@ -1,0 +1,23 @@
+{
+  "status": "passed",
+  "experiment": "EXP-20261027-010",
+  "dataset": "arxiv",
+  "formal_workers": 5,
+  "records": 25000,
+  "queries": 20,
+  "directories": 428,
+  "raw_rows": 8625,
+  "measurement_rows": 7500,
+  "warmup_rows": 1125,
+  "full_scope_checks": 34500,
+  "unit_elapsed_s": 151.52264490000005,
+  "private_peak_sampled_bytes": 31363072,
+  "minimum_available_sampled_bytes": 5837926400,
+  "maximum_sample_gap_s": 0.1137320999999929,
+  "new_source_entries": 15,
+  "old_53_source_entries_unchanged_and_archived": true,
+  "worker_output_files_rehashed": 25,
+  "csv_hashes_match": true,
+  "protocol_and_fixture_match": true,
+  "finished_utc": "2026-10-27T09:28:50.625136+00:00"
+}

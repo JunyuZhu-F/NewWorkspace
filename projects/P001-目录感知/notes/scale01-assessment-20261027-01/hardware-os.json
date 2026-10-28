@@ -1,0 +1,20 @@
+{
+  "captured_utc": "2026-10-27T07:48:57.9879976Z",
+  "cpu_name": "13th Gen Intel(R) Core(TM) i7-13650HX",
+  "cores": 14,
+  "logical_cpu": 20,
+  "visible_memory_kib": 16580472,
+  "available_memory_kib": 3035080,
+  "total_virtual_kib": 37551992,
+  "available_virtual_kib": 6556528,
+  "disk_size": 807072165888,
+  "disk_free": 464613728256,
+  "pagefile": [
+    {
+      "Name": "D:\\pagefile.sys",
+      "AllocatedBaseSize": 20480,
+      "CurrentUsage": 1804,
+      "PeakUsage": 1950
+    }
+  ]
+}

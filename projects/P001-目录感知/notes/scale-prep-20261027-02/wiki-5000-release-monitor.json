@@ -1,0 +1,116 @@
+{
+  "name": "wiki-5000-release",
+  "command": [
+    "D:\\NewWorkspace\\projects\\P001-目录感知\\code\\build-Release-ScaleDirectory\\scale_directory.exe",
+    "notes\\scale-prep-20261027-02\\fixtures\\wiki-5000",
+    "notes\\scale-prep-20261027-02\\outputs\\wiki-5000-release",
+    "0",
+    "0",
+    "1",
+    "admission"
+  ],
+  "started_utc": "2026-10-27T08:41:57.976874+00:00",
+  "expected_exit": 0,
+  "exit_code": 0,
+  "elapsed_s": 1.946171899999996,
+  "private_peak_sampled_bytes": 98582528,
+  "available_min_sampled_bytes": 5174480896,
+  "finished_utc": "2026-10-27T08:41:59.924113+00:00",
+  "violation": null,
+  "target_period_s": 0.1,
+  "maximum_observed_sample_gap_s": 0.11058059999999159,
+  "observed_gap_within_250ms": true,
+  "sampling_note": "100ms whole-loop target; OS may delay scheduling; audit actual gaps; samples not a quota or exact peak",
+  "samples": [
+    {
+      "elapsed_s": 0.012847100000016098,
+      "private_tree_bytes": 782336,
+      "available_bytes": 5282217984
+    },
+    {
+      "elapsed_s": 0.1211909000000162,
+      "private_tree_bytes": 50479104,
+      "available_bytes": 5236572160
+    },
+    {
+      "elapsed_s": 0.2317715000000078,
+      "private_tree_bytes": 67776512,
+      "available_bytes": 5214154752
+    },
+    {
+      "elapsed_s": 0.34111029999999687,
+      "private_tree_bytes": 90710016,
+      "available_bytes": 5200650240
+    },
+    {
+      "elapsed_s": 0.44979340000000434,
+      "private_tree_bytes": 90329088,
+      "available_bytes": 5199364096
+    },
+    {
+      "elapsed_s": 0.5579380000000072,
+      "private_tree_bytes": 95551488,
+      "available_bytes": 5191757824
+    },
+    {
+      "elapsed_s": 0.6665744999999959,
+      "private_tree_bytes": 88227840,
+      "available_bytes": 5201088512
+    },
+    {
+      "elapsed_s": 0.7741085000000112,
+      "private_tree_bytes": 80433152,
+      "available_bytes": 5198786560
+    },
+    {
+      "elapsed_s": 0.8824187000000165,
+      "private_tree_bytes": 77242368,
+      "available_bytes": 5210763264
+    },
+    {
+      "elapsed_s": 0.990368200000006,
+      "private_tree_bytes": 88829952,
+      "available_bytes": 5201920000
+    },
+    {
+      "elapsed_s": 1.1003304000000185,
+      "private_tree_bytes": 94990336,
+      "available_bytes": 5176336384
+    },
+    {
+      "elapsed_s": 1.210140899999999,
+      "private_tree_bytes": 98525184,
+      "available_bytes": 5177896960
+    },
+    {
+      "elapsed_s": 1.3206427000000076,
+      "private_tree_bytes": 98582528,
+      "available_bytes": 5174480896
+    },
+    {
+      "elapsed_s": 1.4288010000000213,
+      "private_tree_bytes": 96854016,
+      "available_bytes": 5177372672
+    },
+    {
+      "elapsed_s": 1.5376937999999996,
+      "private_tree_bytes": 78180352,
+      "available_bytes": 5182259200
+    },
+    {
+      "elapsed_s": 1.646419800000018,
+      "private_tree_bytes": 83423232,
+      "available_bytes": 5182136320
+    },
+    {
+      "elapsed_s": 1.7562488000000087,
+      "private_tree_bytes": 84127744,
+      "available_bytes": 5180932096
+    },
+    {
+      "elapsed_s": 1.8661110000000178,
+      "private_tree_bytes": 62025728,
+      "available_bytes": 5202096128
+    }
+  ]
+}

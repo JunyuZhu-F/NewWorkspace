@@ -1,0 +1,44 @@
+{
+  "worker_seconds": 600,
+  "unit_seconds": 1800,
+  "private_bytes": 2147483648,
+  "available_floor_bytes": 2147483648,
+  "start_available_bytes": 4294967296,
+  "start_stable_seconds": 20,
+  "output_bytes": 1073741824,
+  "previous_forecast": {
+    "status": "estimate_only",
+    "correction": "Original budget-forecast.json excluded 120s of six stable startup windows; retain original and use this reviewed scenario.",
+    "forecasts": [
+      {
+        "dataset": "arxiv",
+        "worker_s": 5.697458000000011,
+        "verification_scenario_s": 3.096518499999945,
+        "matrix_s": 151.5838085,
+        "screen_1_5x_s": 227.37571275,
+        "observed_private_bytes": 26324992,
+        "admission_memory_pass": true,
+        "worker_budget_pass": true,
+        "matrix_budget_pass": true,
+        "assumptions": "5 independent workers; each 3 warmup +20 measured cycles; setup +23*single measured validated cycle incl destruction + observed residual; verifier scenario 5*measured full one-output verifier; 1.5x time margin. Not a bound/proof; warm-cache single admission; no formal matrix run. Reviewed correction: add six stable 20s startup windows inside each dataset unit before 1.5x margin; preparation/build not part of formal unit.",
+        "preflight_windows_s": 120,
+        "matrix_without_preflight_s": 31.5838085
+      },
+      {
+        "dataset": "wiki",
+        "worker_s": 161.6487672,
+        "verification_scenario_s": 13.52667700000012,
+        "matrix_s": 941.7705130000002,
+        "screen_1_5x_s": 1412.6557695000001,
+        "observed_private_bytes": 325672960,
+        "admission_memory_pass": true,
+        "worker_budget_pass": true,
+        "matrix_budget_pass": true,
+        "assumptions": "5 independent workers; each 3 warmup +20 measured cycles; setup +23*single measured validated cycle incl destruction + observed residual; verifier scenario 5*measured full one-output verifier; 1.5x time margin. Not a bound/proof; warm-cache single admission; no formal matrix run. Reviewed correction: add six stable 20s startup windows inside each dataset unit before 1.5x margin; preparation/build not part of formal unit.",
+        "preflight_windows_s": 120,
+        "matrix_without_preflight_s": 821.7705130000002
+      }
+    ]
+  },
+  "unit_includes_preflights_and_verification": true
+}

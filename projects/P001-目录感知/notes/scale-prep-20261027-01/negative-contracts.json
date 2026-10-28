@@ -1,0 +1,41 @@
+{
+  "status": "passed",
+  "tests": [
+    {
+      "name": "shape-zero",
+      "status": "passed",
+      "expected_marker": "shape range",
+      "observed_exit": 1
+    },
+    {
+      "name": "shape-mismatch",
+      "status": "passed",
+      "expected_marker": "bindings",
+      "observed_exit": 1
+    },
+    {
+      "name": "global-duplicate",
+      "status": "passed",
+      "expected_marker": "global IDs must be increasing and in range",
+      "observed_exit": 1
+    },
+    {
+      "name": "global-descending",
+      "status": "passed",
+      "expected_marker": "global IDs must be increasing and in range",
+      "observed_exit": 1
+    },
+    {
+      "name": "global-outside",
+      "status": "passed",
+      "expected_marker": "global IDs must be increasing and in range",
+      "observed_exit": 1
+    },
+    {
+      "name": "query-mode",
+      "status": "passed",
+      "expected_marker": "mode",
+      "observed_exit": 1
+    }
+  ]
+}

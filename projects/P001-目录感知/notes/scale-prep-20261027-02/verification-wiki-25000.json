@@ -1,0 +1,60 @@
+{
+  "status": "passed",
+  "fixture": "notes\\scale-prep-20261027-02\\fixtures\\wiki-25000",
+  "records": 25000,
+  "queries": 62,
+  "directories": 43589,
+  "geometry": [
+    {
+      "case": "move-large",
+      "source_directories": 16659,
+      "source_entries": 11749,
+      "directories_before": 43590,
+      "directories_after": 43590
+    },
+    {
+      "case": "merge-large",
+      "source_directories": 16659,
+      "source_entries": 11749,
+      "directories_before": 43590,
+      "directories_after": 43589
+    },
+    {
+      "case": "move-deep",
+      "source_directories": 1,
+      "source_entries": 1,
+      "directories_before": 43589,
+      "directories_after": 43589
+    },
+    {
+      "case": "merge-deep",
+      "source_directories": 1,
+      "source_entries": 1,
+      "directories_before": 43589,
+      "directories_after": 43588
+    }
+  ],
+  "runs": [
+    {
+      "output": "notes\\scale-prep-20261027-02\\outputs\\wiki-25000-release",
+      "answers": 930,
+      "timings": 201,
+      "space": 15,
+      "scope_checks": 930,
+      "setup_s": 0.92106,
+      "cycle_s": 6.9826253,
+      "total_s": 7.9097868,
+      "files": {
+        "answers.tsv": "fb8ed6620b6a0fdebe66c7210dcd494e3d50928c6435ea2562bcb106fe274d0a",
+        "clock.tsv": "b883be3dcf39bc48c6bc1de1c7836bff0c5566ccf66eb2ff30dbe33d1eb0ebae",
+        "space.tsv": "6f612128890be8e7e882714eda73f962f6d954a24c107d666d4217d4e63bd708",
+        "timings.tsv": "c5fdc52fbef96d74ddba25512e2a025bae2e0b46859b3a53ae5a1aee0e7853d8",
+        "wall.tsv": "fc6a3180fb56d0b4cf80fdd434106dd0a9487ccbf81a88f71cc3a68da37542b1"
+      }
+    }
+  ],
+  "independent_oracle": "tuple-prefix enumeration; full native sets independently checked in C++",
+  "source_check": "pinned metadata hash from preparation; unchanged size/mtime, selected-source independent scan performed by pipeline",
+  "verification_s": 2.4389578,
+  "verifier_sha256": "bd61374dd32f7d6121c224a58a123b40cf7e9658f6aa676ae404fc6eefe19ac5"
+}

@@ -1,0 +1,158 @@
+{
+  "status": "assessment_complete_pending_approval",
+  "assessment_complete": true,
+  "scale01_parent_approval_complete": false,
+  "scale02_authorized": false,
+  "scale02_started": false,
+  "recommended_first_batch": {
+    "scope": "pure directory default API only; diagnostics a separately decided extension",
+    "datasets": [
+      "ARXIV-time",
+      "WIKI"
+    ],
+    "records_per_dataset": 25000,
+    "strategies_per_worker": 3,
+    "processes_per_dataset": 5,
+    "warmups": 3,
+    "measurements": 20,
+    "max_real_anchors": 32,
+    "modes_per_anchor": 2,
+    "continuous_maintenance_operations": 4,
+    "start_available_bytes": 4294967296,
+    "minimum_available_bytes": 2147483648,
+    "worker_private_limit_bytes": 2147483648,
+    "worker_seconds": 600,
+    "per_dataset_matrix_seconds": 1800,
+    "disk_start_free_bytes": 10737418240,
+    "per_experiment_output_bytes": 1073741824,
+    "software_admission_required": true,
+    "formal_only_after_approval": true,
+    "new_n_release_admission_passes": 1,
+    "asan_adapter_admission_max_records": 5000,
+    "no_forced_pass_if_over_budget": true
+  },
+  "later_retrieval_candidates": [
+    "ARXIV 25000 with 501 original time queries, conditional on oracle admission",
+    "WIKI 25000 with 64 preselected query IDs, new declared workload, conditional on admission"
+  ],
+  "rejected_first_batches": [
+    "full corpus with present in-memory loader and 2GiB private cap",
+    "100000 retrieval with existing float64 oracle",
+    "WIKI 25000 full456 unchanged matrix without time-budget review",
+    "50000/100000 automatic launch or new giant fixture before admission"
+  ],
+  "evidence": {
+    "notes\\scale01-assessment-20261027-01\\profile.json": "081d059e0d58332bee5a5a9b0e0e2aee3eed36505e9f3c58ddc4ac0a5abf3124",
+    "experiments\\EXP-20261027-006\\commands.jsonl": "9989fedbf3f34494d45d8aad28aa81925a31559b4a36b6fed77a4a58bd63cd0b",
+    "experiments\\EXP-20261027-006\\run-0\\setup.csv": "f9b957474cc40ae05b97234d2b65ed3c12544e41eae3eee97597155e35bfd60d",
+    "experiments\\EXP-20261027-006\\run-1\\setup.csv": "159974df6fcb126b94dad973f10f7a1837de8b26a722619ad2dc42b8a785dcc6",
+    "experiments\\EXP-20261027-006\\run-2\\setup.csv": "4e93d1311957b02960cd70db921fc211fe258f1a171ee97c36c1f2a0de476459",
+    "experiments\\EXP-20261027-006\\run-3\\setup.csv": "70f20db067bcab2c72a90ce149e7f4025cd7907b8cb2d1ec14676125a6da24e1",
+    "experiments\\EXP-20261027-006\\run-4\\setup.csv": "2be47389fe293242159cea0cf91a564d8eed85ea05fd215e53f74a8fda0e984b",
+    "experiments\\EXP-20261027-007\\commands.jsonl": "ac3987b3efa096c34942b204acea7ec6dbcaf24f6866fcf8fbd6d9d182bd5b3a",
+    "experiments\\EXP-20261027-008\\commands.jsonl": "0b8824fb720e38dd73cf243ee7a8e472f16e7b7a0bf7afca1a890299540b8f24",
+    "experiments\\EXP-20261027-008\\run-search-0\\setup.csv": "a4a26ae73c427262b62208ae7673108c0ce1f45b86ab0fe036da0772621cc857",
+    "experiments\\EXP-20261027-008\\run-search-1\\setup.csv": "e314a7c0b5fb878ac34a59c93bd335be65330157c03ff760cdce218c5fde0800",
+    "experiments\\EXP-20261027-008\\run-search-2\\setup.csv": "7d7e5cc77f32fa99352344eabdfd3359e85c803dbf6d601d212c8fed63a0f2a2",
+    "experiments\\EXP-20261027-008\\run-search-3\\setup.csv": "7c9fb3afc4d9474257888cde67ad5f14d18de5dd4f78d9ec0a32cc6c9babe579",
+    "experiments\\EXP-20261027-008\\run-search-4\\setup.csv": "40fd2018ca35960a0b2390829f338ce36770268928f0ec89f3974cc4fb0e1098",
+    "code/search/search.cpp": "30af5e17a1789e834b4370f7bf1cb87de7fc66b3d599ef3ba02081133bc7708c",
+    "code/search02/benchmark.cpp": "41ddbd69e61ad14333a58165b5db32e3d436a5ebe5358651ee8302cbd8ce43c9",
+    "code/search02/verify.py": "6a4b2bb2df03019143afbaea878e644528d6646129c71c465a814ba9a2ab47d1",
+    "code/search02/pipeline.py": "d464cea41e1bcd2e8bbc5efa0bd28f268006aa9d986d5f76ed105d62bcba63e6",
+    "code/wiki_experiment/prepare.py": "324752f59b55f688d5bf40ca8f5e123b1a9eec118182b4b0e4c0a8504717d3c4",
+    "code/wiki_experiment/directory.cpp": "948434803aee9497d546df0de0dcb9f43114221eeb1c017efb8baf4182e9026b",
+    "code/wiki_experiment/verify.py": "00ce9f7733153783e3408ae609d153368cd6ccd1c68667099894101618a4b561",
+    "code/wiki_experiment/pipeline.py": "0f3b59e3bfc9d22402c27c6fb4ee86a2bd50f81b47246ed912329926070c64f2",
+    "code/include/directory/bitmap.hpp": "b16a397c7afc1eae832bce6ff00c0e62b16d49ce9cf76ba39ff0acd391e168f1",
+    "experiments\\EXP-20261027-006\\run-0\\scopes.tsv": "28f8a89028d4cec1e4ef05c162bc6d70da90d4de561657aa9599ac2fdb99209d",
+    "experiments\\EXP-20261027-008\\run-search-0\\scopes.tsv": "e8359f29c64c7d6193419f9eb14935489bbe29ab62ba79303b6e2a5b57a791c9"
+  },
+  "historical_telemetry": {
+    "006": {
+      "worker": {
+        "count": 5,
+        "max_seconds": 34.515999999995984,
+        "mean_seconds": 33.16260000000038,
+        "max_private_bytes_sampled": 82186240,
+        "minimum_available_bytes": 5492764672
+      },
+      "verifier": {
+        "count": 1,
+        "max_seconds": 13.156000000002678,
+        "mean_seconds": 13.156000000002678,
+        "max_private_bytes_sampled": 919760896,
+        "minimum_available_bytes": 5312692224
+      },
+      "setup_max": {
+        "load_train_s": 3.3471871,
+        "index_build_validate_s": 0.0365818
+      }
+    },
+    "007": {
+      "worker": {
+        "count": 5,
+        "max_seconds": 64.4690000000046,
+        "mean_seconds": 63.04700000000012,
+        "max_private_bytes_sampled": 157413376,
+        "minimum_available_bytes": 4973056000
+      },
+      "verifier": {
+        "count": 2,
+        "max_seconds": 17.985000000000582,
+        "mean_seconds": 17.860000000000582,
+        "max_private_bytes_sampled": 678387712,
+        "minimum_available_bytes": 5132996608
+      },
+      "phase_worker": {
+        "count": 5,
+        "max_seconds": 71.13999999999942,
+        "mean_seconds": 69.64360000000015,
+        "max_private_bytes_sampled": 157949952,
+        "minimum_available_bytes": 4963151872
+      }
+    },
+    "008": {
+      "worker": {
+        "count": 5,
+        "max_seconds": 226.06200000000536,
+        "mean_seconds": 203.45939999999973,
+        "max_private_bytes_sampled": 158597120,
+        "minimum_available_bytes": 3901779968
+      },
+      "verifier": {
+        "count": 1,
+        "max_seconds": 30.45300000000134,
+        "mean_seconds": 30.45300000000134,
+        "max_private_bytes_sampled": 949415936,
+        "minimum_available_bytes": 4628955136
+      },
+      "setup_max": {
+        "load_train_s": 3.3976626,
+        "index_build_validate_s": 0.8263749
+      }
+    }
+  },
+  "full_data_bounds": [
+    {
+      "dataset": "ARXIV",
+      "records": 2763543,
+      "file_bytes": 11330526300,
+      "cpp_float_payload_bytes": 11319472128,
+      "oracle_float64_matrix_bytes": 22638944256,
+      "full_float_payload_exceeds_current_private_limit": true
+    },
+    {
+      "dataset": "WIKI",
+      "records": 1941679,
+      "file_bytes": 7960883900,
+      "cpp_float_payload_bytes": 7953117184,
+      "oracle_float64_matrix_bytes": 15906234368,
+      "full_float_payload_exceeds_current_private_limit": true
+    }
+  ],
+  "profile_sha256": "081d059e0d58332bee5a5a9b0e0e2aee3eed36505e9f3c58ddc4ac0a5abf3124",
+  "stl_source_sha256": "b254d6fc250164a9f4e71ea66e2c1e9401cb2bf8b0056550fd92135518450b51",
+  "analysis_script_sha256": "c4ec8614bdf8e322c471f6858372080e73320ebaa26ffa132e5463eaf65a5689",
+  "scenario_caveat": "All new-N runtime and memory scenarios are analytical screens, not successful execution or guaranteed process peaks. No vector payload was read in this assessment."
+}

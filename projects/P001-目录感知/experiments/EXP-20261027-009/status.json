@@ -1,0 +1,14 @@
+{
+  "status": "passed",
+  "started_utc": "2026-10-27T09:10:00.660151+00:00",
+  "unit_seconds": 1800,
+  "completed_commands": 6,
+  "finished_utc": "2026-10-27T09:24:56.266309+00:00",
+  "elapsed_s": 895.6056090999999,
+  "formal_workers": 5,
+  "timing_rows": 23115,
+  "measurement_rows": 20100,
+  "warmup_rows": 3015,
+  "full_scope_checks": 106950,
+  "old_53_sources_unchanged": true
+}

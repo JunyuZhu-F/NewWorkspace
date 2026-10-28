@@ -1,0 +1,77 @@
+{
+  "status": "passed",
+  "fixture": "notes\\scale-prep-20261027-02\\fixtures\\arxiv-5000",
+  "records": 5000,
+  "queries": 20,
+  "directories": 414,
+  "geometry": [
+    {
+      "case": "move-large",
+      "source_directories": 13,
+      "source_entries": 441,
+      "directories_before": 415,
+      "directories_after": 415
+    },
+    {
+      "case": "merge-large",
+      "source_directories": 13,
+      "source_entries": 441,
+      "directories_before": 415,
+      "directories_after": 414
+    },
+    {
+      "case": "move-deep",
+      "source_directories": 1,
+      "source_entries": 1,
+      "directories_before": 414,
+      "directories_after": 414
+    },
+    {
+      "case": "merge-deep",
+      "source_directories": 1,
+      "source_entries": 1,
+      "directories_before": 414,
+      "directories_after": 413
+    }
+  ],
+  "runs": [
+    {
+      "output": "notes\\scale-prep-20261027-02\\outputs\\arxiv-5000-release",
+      "answers": 300,
+      "timings": 75,
+      "space": 15,
+      "scope_checks": 300,
+      "setup_s": 0.025933,
+      "cycle_s": 0.05342,
+      "total_s": 0.0854693,
+      "files": {
+        "answers.tsv": "45122154af95094cab4cf82fe0115b326299673d2b125e5c13613ebaf88496d2",
+        "clock.tsv": "77fae3ae7fe373d167ec380950f08c5d0e40879feec5949a7c9b11b680b1fca3",
+        "space.tsv": "ec26a38f0a9a44f9e756dd956d5a24bd880431653dd77e38eba983b1556b1ef1",
+        "timings.tsv": "61d809d03d4c203d96281af62c13d5cbb935ad2173ba2365e52bb4ed6ac9cdb8",
+        "wall.tsv": "a9ab451f0d9c0ac1a3b5d048dc4e275f4e8ada9bbb6b91ce5253c3ba4394087c"
+      }
+    },
+    {
+      "output": "notes\\scale-prep-20261027-02\\outputs\\arxiv-5000-asan",
+      "answers": 300,
+      "timings": 75,
+      "space": 15,
+      "scope_checks": 300,
+      "setup_s": 0.7384188,
+      "cycle_s": 1.3656739,
+      "total_s": 2.1190183,
+      "files": {
+        "answers.tsv": "45122154af95094cab4cf82fe0115b326299673d2b125e5c13613ebaf88496d2",
+        "clock.tsv": "00d5c6767aa34c55c5b630571fc86d2362e8a7922920f65983b796c981295d88",
+        "space.tsv": "ec26a38f0a9a44f9e756dd956d5a24bd880431653dd77e38eba983b1556b1ef1",
+        "timings.tsv": "89fd4e78034d595338f1b61e8945f220ac391232528d6d0bb077f27efcc9e00b",
+        "wall.tsv": "3b5087517473d00c7f5c2ea820ead643fdaf7b9fc493f267207db4151257dc29"
+      }
+    }
+  ],
+  "independent_oracle": "tuple-prefix enumeration; full native sets independently checked in C++",
+  "source_check": "pinned metadata hash from preparation; unchanged size/mtime, selected-source independent scan performed by pipeline",
+  "verification_s": 0.11841310000000002,
+  "verifier_sha256": "bd61374dd32f7d6121c224a58a123b40cf7e9658f6aa676ae404fc6eefe19ac5"
+}

@@ -1,0 +1,12 @@
+{
+  "status": "passed",
+  "started_utc": "2026-10-27T09:09:17.465606+00:00",
+  "unit_seconds": null,
+  "completed_commands": 2,
+  "finished_utc": "2026-10-27T09:10:00.163692+00:00",
+  "elapsed_s": 42.696740399999996,
+  "entry_checks": 7,
+  "reused_entry_workers": 7,
+  "negative_contracts": 4,
+  "formal_matrix_started": false
+}

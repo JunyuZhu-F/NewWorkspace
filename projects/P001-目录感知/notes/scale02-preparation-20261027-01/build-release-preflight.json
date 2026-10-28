@@ -1,0 +1,152 @@
+{
+  "stable_required_s": 20,
+  "samples": [
+    {
+      "utc": "2026-10-27T09:02:15.273007+00:00",
+      "elapsed_s": 0.000230400000000186,
+      "available_bytes": 4975579136,
+      "disk_free_bytes": 464516415488,
+      "unit_remaining_s": null
+    },
+    {
+      "utc": "2026-10-27T09:02:16.278873+00:00",
+      "elapsed_s": 1.0062493000000001,
+      "available_bytes": 4939157504,
+      "disk_free_bytes": 464516415488,
+      "unit_remaining_s": null
+    },
+    {
+      "utc": "2026-10-27T09:02:17.283061+00:00",
+      "elapsed_s": 2.0104024999999996,
+      "available_bytes": 4980326400,
+      "disk_free_bytes": 464516415488,
+      "unit_remaining_s": null
+    },
+    {
+      "utc": "2026-10-27T09:02:18.292555+00:00",
+      "elapsed_s": 3.0201589999999996,
+      "available_bytes": 4971708416,
+      "disk_free_bytes": 464516415488,
+      "unit_remaining_s": null
+    },
+    {
+      "utc": "2026-10-27T09:02:19.298455+00:00",
+      "elapsed_s": 4.025979599999999,
+      "available_bytes": 4994605056,
+      "disk_free_bytes": 464516415488,
+      "unit_remaining_s": null
+    },
+    {
+      "utc": "2026-10-27T09:02:20.306779+00:00",
+      "elapsed_s": 5.03424,
+      "available_bytes": 4984729600,
+      "disk_free_bytes": 464516415488,
+      "unit_remaining_s": null
+    },
+    {
+      "utc": "2026-10-27T09:02:21.313594+00:00",
+      "elapsed_s": 6.0409641999999995,
+      "available_bytes": 5021368320,
+      "disk_free_bytes": 464516415488,
+      "unit_remaining_s": null
+    },
+    {
+      "utc": "2026-10-27T09:02:22.315404+00:00",
+      "elapsed_s": 7.042768199999999,
+      "available_bytes": 5087006720,
+      "disk_free_bytes": 464516415488,
+      "unit_remaining_s": null
+    },
+    {
+      "utc": "2026-10-27T09:02:23.321734+00:00",
+      "elapsed_s": 8.04915,
+      "available_bytes": 5085839360,
+      "disk_free_bytes": 464516415488,
+      "unit_remaining_s": null
+    },
+    {
+      "utc": "2026-10-27T09:02:24.328099+00:00",
+      "elapsed_s": 9.0554624,
+      "available_bytes": 5095186432,
+      "disk_free_bytes": 464516415488,
+      "unit_remaining_s": null
+    },
+    {
+      "utc": "2026-10-27T09:02:25.337202+00:00",
+      "elapsed_s": 10.0646005,
+      "available_bytes": 5108584448,
+      "disk_free_bytes": 464516415488,
+      "unit_remaining_s": null
+    },
+    {
+      "utc": "2026-10-27T09:02:26.347956+00:00",
+      "elapsed_s": 11.075727,
+      "available_bytes": 5110870016,
+      "disk_free_bytes": 464516415488,
+      "unit_remaining_s": null
+    },
+    {
+      "utc": "2026-10-27T09:02:27.360085+00:00",
+      "elapsed_s": 12.0875824,
+      "available_bytes": 5091278848,
+      "disk_free_bytes": 464516415488,
+      "unit_remaining_s": null
+    },
+    {
+      "utc": "2026-10-27T09:02:28.368333+00:00",
+      "elapsed_s": 13.0956926,
+      "available_bytes": 5190553600,
+      "disk_free_bytes": 464516415488,
+      "unit_remaining_s": null
+    },
+    {
+      "utc": "2026-10-27T09:02:29.377828+00:00",
+      "elapsed_s": 14.105173,
+      "available_bytes": 5195304960,
+      "disk_free_bytes": 464516415488,
+      "unit_remaining_s": null
+    },
+    {
+      "utc": "2026-10-27T09:02:30.386989+00:00",
+      "elapsed_s": 15.1143626,
+      "available_bytes": 5184905216,
+      "disk_free_bytes": 464516415488,
+      "unit_remaining_s": null
+    },
+    {
+      "utc": "2026-10-27T09:02:31.399086+00:00",
+      "elapsed_s": 16.1264748,
+      "available_bytes": 5164490752,
+      "disk_free_bytes": 464516415488,
+      "unit_remaining_s": null
+    },
+    {
+      "utc": "2026-10-27T09:02:32.408887+00:00",
+      "elapsed_s": 17.1365548,
+      "available_bytes": 5166129152,
+      "disk_free_bytes": 464516415488,
+      "unit_remaining_s": null
+    },
+    {
+      "utc": "2026-10-27T09:02:33.417793+00:00",
+      "elapsed_s": 18.1451478,
+      "available_bytes": 5199060992,
+      "disk_free_bytes": 464516415488,
+      "unit_remaining_s": null
+    },
+    {
+      "utc": "2026-10-27T09:02:34.426057+00:00",
+      "elapsed_s": 19.1534865,
+      "available_bytes": 5192687616,
+      "disk_free_bytes": 464516415488,
+      "unit_remaining_s": null
+    },
+    {
+      "utc": "2026-10-27T09:02:35.434147+00:00",
+      "elapsed_s": 20.1615629,
+      "available_bytes": 5204762624,
+      "disk_free_bytes": 464516415488,
+      "unit_remaining_s": null
+    }
+  ]
+}

@@ -1,0 +1,4 @@
+move-large	move	/Nature/	/__scale_prep__/
+merge-large	merge	/__scale_prep__/Nature/	/Universe/Matter/Phases_of_matter/Liquids/Liquid-solid_separation/
+move-deep	move	/Life/Organisms/Eukaryotes/Animals/Animal_taxa/Animal_taxa_by_rank/Animal_unranked_clades/ParaHoxozoa/Bilaterians/Protostomes/Ecdysozoa/Panarthropoda/Arthropods/Arthropod_taxa/Arthropod_taxa_by_rank/Arthropod_superorders/Insect_superorders/Antliophora/Flies/Diptera_by_classification/Brachycera/Brachyceran_flies_of_Europe/Muscomorph_flies_of_Europe/Schizophora/Acalyptratae/Ephydroidea/Drosophilidae/Drosophila/Drosophila_melanogaster/Drosophila_melanogaster_genetics/Drosophila_melanogaster_genes/	/__scale_prep__/
+merge-deep	merge	/__scale_prep__/Drosophila_melanogaster_genes/	/Universe/Matter/Phases_of_matter/Liquids/Liquid-solid_separation/

@@ -1,0 +1,390 @@
+[
+  {
+    "name": "build-release",
+    "command": [
+      "cmd.exe",
+      "/d",
+      "/c",
+      "code\\scripts\\build-scale-directory.cmd"
+    ],
+    "started_utc": "2026-10-27T08:27:40.806335+00:00",
+    "expected_exit": 0,
+    "exit_code": 0,
+    "elapsed_s": 15.414674000000002,
+    "private_peak_sampled_bytes": 215650304,
+    "available_min_sampled_bytes": 5067177984,
+    "finished_utc": "2026-10-27T08:27:56.222307+00:00",
+    "violation": null
+  },
+  {
+    "name": "build-asan",
+    "command": [
+      "cmd.exe",
+      "/d",
+      "/c",
+      "code\\scripts\\build-scale-directory.cmd",
+      "asan"
+    ],
+    "started_utc": "2026-10-27T08:28:16.423624+00:00",
+    "expected_exit": 0,
+    "exit_code": 0,
+    "elapsed_s": 12.605655900000002,
+    "private_peak_sampled_bytes": 249430016,
+    "available_min_sampled_bytes": 4971925504,
+    "finished_utc": "2026-10-27T08:28:29.031141+00:00",
+    "violation": null
+  },
+  {
+    "name": "negative-shape-zero",
+    "command": [
+      "D:\\NewWorkspace\\projects\\P001-目录感知\\code\\build-Release-ScaleDirectory\\scale_directory.exe",
+      "notes\\scale-prep-20261027-01\\negative-fixtures\\shape-zero",
+      "notes\\scale-prep-20261027-01\\negative-outputs\\shape-zero",
+      "0",
+      "0",
+      "1",
+      "admission"
+    ],
+    "started_utc": "2026-10-27T08:28:29.093823+00:00",
+    "expected_exit": 1,
+    "exit_code": 1,
+    "elapsed_s": 0.09672099999998807,
+    "private_peak_sampled_bytes": 679936,
+    "available_min_sampled_bytes": 5554524160,
+    "finished_utc": "2026-10-27T08:28:29.192818+00:00",
+    "violation": null
+  },
+  {
+    "name": "negative-shape-mismatch",
+    "command": [
+      "D:\\NewWorkspace\\projects\\P001-目录感知\\code\\build-Release-ScaleDirectory\\scale_directory.exe",
+      "notes\\scale-prep-20261027-01\\negative-fixtures\\shape-mismatch",
+      "notes\\scale-prep-20261027-01\\negative-outputs\\shape-mismatch",
+      "0",
+      "0",
+      "1",
+      "admission"
+    ],
+    "started_utc": "2026-10-27T08:28:29.209455+00:00",
+    "expected_exit": 1,
+    "exit_code": 1,
+    "elapsed_s": 0.05533950000000232,
+    "private_peak_sampled_bytes": 700416,
+    "available_min_sampled_bytes": 5559607296,
+    "finished_utc": "2026-10-27T08:28:29.265729+00:00",
+    "violation": null
+  },
+  {
+    "name": "negative-global-duplicate",
+    "command": [
+      "D:\\NewWorkspace\\projects\\P001-目录感知\\code\\build-Release-ScaleDirectory\\scale_directory.exe",
+      "notes\\scale-prep-20261027-01\\negative-fixtures\\global-duplicate",
+      "notes\\scale-prep-20261027-01\\negative-outputs\\global-duplicate",
+      "0",
+      "0",
+      "1",
+      "admission"
+    ],
+    "started_utc": "2026-10-27T08:28:29.283262+00:00",
+    "expected_exit": 1,
+    "exit_code": 1,
+    "elapsed_s": 0.059859099999997056,
+    "private_peak_sampled_bytes": 704512,
+    "available_min_sampled_bytes": 5560250368,
+    "finished_utc": "2026-10-27T08:28:29.344035+00:00",
+    "violation": null
+  },
+  {
+    "name": "negative-global-descending",
+    "command": [
+      "D:\\NewWorkspace\\projects\\P001-目录感知\\code\\build-Release-ScaleDirectory\\scale_directory.exe",
+      "notes\\scale-prep-20261027-01\\negative-fixtures\\global-descending",
+      "notes\\scale-prep-20261027-01\\negative-outputs\\global-descending",
+      "0",
+      "0",
+      "1",
+      "admission"
+    ],
+    "started_utc": "2026-10-27T08:28:29.358955+00:00",
+    "expected_exit": 1,
+    "exit_code": 1,
+    "elapsed_s": 0.06575030000000481,
+    "private_peak_sampled_bytes": 700416,
+    "available_min_sampled_bytes": 5551927296,
+    "finished_utc": "2026-10-27T08:28:29.425715+00:00",
+    "violation": null
+  },
+  {
+    "name": "negative-global-outside",
+    "command": [
+      "D:\\NewWorkspace\\projects\\P001-目录感知\\code\\build-Release-ScaleDirectory\\scale_directory.exe",
+      "notes\\scale-prep-20261027-01\\negative-fixtures\\global-outside",
+      "notes\\scale-prep-20261027-01\\negative-outputs\\global-outside",
+      "0",
+      "0",
+      "1",
+      "admission"
+    ],
+    "started_utc": "2026-10-27T08:28:29.433756+00:00",
+    "expected_exit": 1,
+    "exit_code": 1,
+    "elapsed_s": 0.06635950000000435,
+    "private_peak_sampled_bytes": 708608,
+    "available_min_sampled_bytes": 5556834304,
+    "finished_utc": "2026-10-27T08:28:29.501330+00:00",
+    "violation": null
+  },
+  {
+    "name": "negative-query-mode",
+    "command": [
+      "D:\\NewWorkspace\\projects\\P001-目录感知\\code\\build-Release-ScaleDirectory\\scale_directory.exe",
+      "notes\\scale-prep-20261027-01\\negative-fixtures\\query-mode",
+      "notes\\scale-prep-20261027-01\\negative-outputs\\query-mode",
+      "0",
+      "0",
+      "1",
+      "admission"
+    ],
+    "started_utc": "2026-10-27T08:28:29.511540+00:00",
+    "expected_exit": 1,
+    "exit_code": 1,
+    "elapsed_s": 0.07166789999999423,
+    "private_peak_sampled_bytes": 700416,
+    "available_min_sampled_bytes": 5557112832,
+    "finished_utc": "2026-10-27T08:28:29.583830+00:00",
+    "violation": null
+  },
+  {
+    "name": "prepare",
+    "command": [
+      "D:\\anaconda3\\python.exe",
+      "-B",
+      "D:\\NewWorkspace\\projects\\P001-目录感知\\code\\scale_directory\\prepare.py",
+      "notes\\scale-prep-20261027-01\\fixtures"
+    ],
+    "started_utc": "2026-10-27T08:28:49.786640+00:00",
+    "expected_exit": 0,
+    "exit_code": 0,
+    "elapsed_s": 9.284809299999992,
+    "private_peak_sampled_bytes": 85385216,
+    "available_min_sampled_bytes": 5112733696,
+    "finished_utc": "2026-10-27T08:28:59.073286+00:00",
+    "violation": null
+  },
+  {
+    "name": "source-check",
+    "command": [
+      "D:\\anaconda3\\python.exe",
+      "-B",
+      "D:\\NewWorkspace\\projects\\P001-目录感知\\code\\scale_directory\\source_check.py",
+      "notes\\scale-prep-20261027-01\\fixtures",
+      "notes\\scale-prep-20261027-01\\source-verification.json"
+    ],
+    "started_utc": "2026-10-27T08:29:19.258239+00:00",
+    "expected_exit": 0,
+    "exit_code": 0,
+    "elapsed_s": 8.78751770000001,
+    "private_peak_sampled_bytes": 25878528,
+    "available_min_sampled_bytes": 5177946112,
+    "finished_utc": "2026-10-27T08:29:28.046973+00:00",
+    "violation": null
+  },
+  {
+    "name": "arxiv-5000-release",
+    "command": [
+      "D:\\NewWorkspace\\projects\\P001-目录感知\\code\\build-Release-ScaleDirectory\\scale_directory.exe",
+      "notes\\scale-prep-20261027-01\\fixtures\\arxiv-5000",
+      "notes\\scale-prep-20261027-01\\outputs\\arxiv-5000-release",
+      "0",
+      "0",
+      "1",
+      "admission"
+    ],
+    "started_utc": "2026-10-27T08:29:48.205155+00:00",
+    "expected_exit": 0,
+    "exit_code": 0,
+    "elapsed_s": 0.3361897000000056,
+    "private_peak_sampled_bytes": 987136,
+    "available_min_sampled_bytes": 5230559232,
+    "finished_utc": "2026-10-27T08:29:48.542715+00:00",
+    "violation": null
+  },
+  {
+    "name": "arxiv-5000-asan",
+    "command": [
+      "D:\\NewWorkspace\\projects\\P001-目录感知\\code\\build-RelWithDebInfo-ASan-ScaleDirectory\\scale_directory.exe",
+      "notes\\scale-prep-20261027-01\\fixtures\\arxiv-5000",
+      "notes\\scale-prep-20261027-01\\outputs\\arxiv-5000-asan",
+      "0",
+      "0",
+      "1",
+      "admission"
+    ],
+    "started_utc": "2026-10-27T08:30:08.733373+00:00",
+    "expected_exit": 0,
+    "exit_code": 0,
+    "elapsed_s": 2.315351700000008,
+    "private_peak_sampled_bytes": 203493376,
+    "available_min_sampled_bytes": 5101764608,
+    "finished_utc": "2026-10-27T08:30:11.050079+00:00",
+    "violation": null
+  },
+  {
+    "name": "verify-arxiv-5000",
+    "command": [
+      "D:\\anaconda3\\python.exe",
+      "-B",
+      "D:\\NewWorkspace\\projects\\P001-目录感知\\code\\scale_directory\\verify.py",
+      "notes\\scale-prep-20261027-01\\fixtures\\arxiv-5000",
+      "notes\\scale-prep-20261027-01\\verification-arxiv-5000.json",
+      "notes\\scale-prep-20261027-01\\outputs\\arxiv-5000-release",
+      "notes\\scale-prep-20261027-01\\outputs\\arxiv-5000-asan"
+    ],
+    "started_utc": "2026-10-27T08:30:31.256864+00:00",
+    "expected_exit": 0,
+    "exit_code": 0,
+    "elapsed_s": 0.34018760000000725,
+    "private_peak_sampled_bytes": 7184384,
+    "available_min_sampled_bytes": 5261815808,
+    "finished_utc": "2026-10-27T08:30:31.597826+00:00",
+    "violation": null
+  },
+  {
+    "name": "arxiv-25000-release",
+    "command": [
+      "D:\\NewWorkspace\\projects\\P001-目录感知\\code\\build-Release-ScaleDirectory\\scale_directory.exe",
+      "notes\\scale-prep-20261027-01\\fixtures\\arxiv-25000",
+      "notes\\scale-prep-20261027-01\\outputs\\arxiv-25000-release",
+      "0",
+      "0",
+      "1",
+      "admission"
+    ],
+    "started_utc": "2026-10-27T08:30:51.799262+00:00",
+    "expected_exit": 0,
+    "exit_code": 0,
+    "elapsed_s": 0.598675400000019,
+    "private_peak_sampled_bytes": 27074560,
+    "available_min_sampled_bytes": 5225943040,
+    "finished_utc": "2026-10-27T08:30:52.399005+00:00",
+    "violation": null
+  },
+  {
+    "name": "verify-arxiv-25000",
+    "command": [
+      "D:\\anaconda3\\python.exe",
+      "-B",
+      "D:\\NewWorkspace\\projects\\P001-目录感知\\code\\scale_directory\\verify.py",
+      "notes\\scale-prep-20261027-01\\fixtures\\arxiv-25000",
+      "notes\\scale-prep-20261027-01\\verification-arxiv-25000.json",
+      "notes\\scale-prep-20261027-01\\outputs\\arxiv-25000-release"
+    ],
+    "started_utc": "2026-10-27T08:31:12.565339+00:00",
+    "expected_exit": 0,
+    "exit_code": 0,
+    "elapsed_s": 0.6376576000000114,
+    "private_peak_sampled_bytes": 29650944,
+    "available_min_sampled_bytes": 5128462336,
+    "finished_utc": "2026-10-27T08:31:13.203404+00:00",
+    "violation": null
+  },
+  {
+    "name": "wiki-5000-release",
+    "command": [
+      "D:\\NewWorkspace\\projects\\P001-目录感知\\code\\build-Release-ScaleDirectory\\scale_directory.exe",
+      "notes\\scale-prep-20261027-01\\fixtures\\wiki-5000",
+      "notes\\scale-prep-20261027-01\\outputs\\wiki-5000-release",
+      "0",
+      "0",
+      "1",
+      "admission"
+    ],
+    "started_utc": "2026-10-27T08:31:33.410640+00:00",
+    "expected_exit": 0,
+    "exit_code": 0,
+    "elapsed_s": 2.0832603000000063,
+    "private_peak_sampled_bytes": 98738176,
+    "available_min_sampled_bytes": 5106782208,
+    "finished_utc": "2026-10-27T08:31:35.495386+00:00",
+    "violation": null
+  },
+  {
+    "name": "wiki-5000-asan",
+    "command": [
+      "D:\\NewWorkspace\\projects\\P001-目录感知\\code\\build-RelWithDebInfo-ASan-ScaleDirectory\\scale_directory.exe",
+      "notes\\scale-prep-20261027-01\\fixtures\\wiki-5000",
+      "notes\\scale-prep-20261027-01\\outputs\\wiki-5000-asan",
+      "0",
+      "0",
+      "1",
+      "admission"
+    ],
+    "started_utc": "2026-10-27T08:31:55.674277+00:00",
+    "expected_exit": 0,
+    "exit_code": 0,
+    "elapsed_s": 40.17486309999998,
+    "private_peak_sampled_bytes": 1016184832,
+    "available_min_sampled_bytes": 4387594240,
+    "finished_utc": "2026-10-27T08:32:35.849967+00:00",
+    "violation": null
+  },
+  {
+    "name": "verify-wiki-5000",
+    "command": [
+      "D:\\anaconda3\\python.exe",
+      "-B",
+      "D:\\NewWorkspace\\projects\\P001-目录感知\\code\\scale_directory\\verify.py",
+      "notes\\scale-prep-20261027-01\\fixtures\\wiki-5000",
+      "notes\\scale-prep-20261027-01\\verification-wiki-5000.json",
+      "notes\\scale-prep-20261027-01\\outputs\\wiki-5000-release",
+      "notes\\scale-prep-20261027-01\\outputs\\wiki-5000-asan"
+    ],
+    "started_utc": "2026-10-27T08:32:56.035512+00:00",
+    "expected_exit": 0,
+    "exit_code": 0,
+    "elapsed_s": 0.9171402999999714,
+    "private_peak_sampled_bytes": 31289344,
+    "available_min_sampled_bytes": 5167476736,
+    "finished_utc": "2026-10-27T08:32:56.953858+00:00",
+    "violation": null
+  },
+  {
+    "name": "wiki-25000-release",
+    "command": [
+      "D:\\NewWorkspace\\projects\\P001-目录感知\\code\\build-Release-ScaleDirectory\\scale_directory.exe",
+      "notes\\scale-prep-20261027-01\\fixtures\\wiki-25000",
+      "notes\\scale-prep-20261027-01\\outputs\\wiki-25000-release",
+      "0",
+      "0",
+      "1",
+      "admission"
+    ],
+    "started_utc": "2026-10-27T08:33:17.150405+00:00",
+    "expected_exit": 0,
+    "exit_code": 0,
+    "elapsed_s": 8.14779100000004,
+    "private_peak_sampled_bytes": 320843776,
+    "available_min_sampled_bytes": 4917248000,
+    "finished_utc": "2026-10-27T08:33:25.299073+00:00",
+    "violation": null
+  },
+  {
+    "name": "verify-wiki-25000",
+    "command": [
+      "D:\\anaconda3\\python.exe",
+      "-B",
+      "D:\\NewWorkspace\\projects\\P001-目录感知\\code\\scale_directory\\verify.py",
+      "notes\\scale-prep-20261027-01\\fixtures\\wiki-25000",
+      "notes\\scale-prep-20261027-01\\verification-wiki-25000.json",
+      "notes\\scale-prep-20261027-01\\outputs\\wiki-25000-release"
+    ],
+    "started_utc": "2026-10-27T08:33:45.472421+00:00",
+    "expected_exit": 0,
+    "exit_code": 0,
+    "elapsed_s": 2.687559300000032,
+    "private_peak_sampled_bytes": 102658048,
+    "available_min_sampled_bytes": 5102755840,
+    "finished_utc": "2026-10-27T08:33:48.161073+00:00",
+    "violation": null
+  }
+]

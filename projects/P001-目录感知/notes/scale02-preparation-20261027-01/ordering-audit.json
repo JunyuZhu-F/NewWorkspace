@@ -1,0 +1,12 @@
+{
+  "arxiv": {
+    "rows": 300,
+    "canonical_answers_equal": true,
+    "sequence_equal": true
+  },
+  "wiki": {
+    "rows": 780,
+    "canonical_answers_equal": true,
+    "sequence_equal": false
+  }
+}

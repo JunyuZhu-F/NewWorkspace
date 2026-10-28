@@ -1,0 +1,98 @@
+{
+  "status": "passed",
+  "finished_utc": "2026-10-27T08:45:07.066031+00:00",
+  "workers": 6,
+  "scope_checks": 3390,
+  "negative_contracts": 6,
+  "fixtures": 4,
+  "release_asan_pairs": 2,
+  "source_records_rechecked": {
+    "arxiv": 2763543,
+    "wiki": 1941679
+  },
+  "old_53_sources_unchanged": true,
+  "new_sources_and_archive_unchanged": true,
+  "generated_source_exact_11_whitelist": true,
+  "current_and_archived_binaries_match": true,
+  "all_output_hashes_match": true,
+  "protocol_unchanged_across_resource_repair": true,
+  "initial_fixtures_unchanged": true,
+  "maximum_sample_gap_s": 0.11432410000000459,
+  "private_peak_all_commands_bytes": 1016471552,
+  "minimum_available_all_commands_bytes": 4364021760,
+  "output_bytes": 23483590,
+  "active_tasks": [],
+  "git_head": "2101c84f24b3cbbcd093b38073a5c9e372815f9d",
+  "formal_runs": 0,
+  "vector_payload_bytes_read": 0,
+  "initial_monitoring_deviation": "Initial 01 automatic passed overridden by audit for strict resource admission; 342ms max; initial evidence preserved; final valid admission 02.",
+  "rows": [
+    {
+      "dataset": "arxiv",
+      "n": 5000,
+      "queries": 20,
+      "directories": 414,
+      "max_depth": 2,
+      "build": "release",
+      "checks": 300,
+      "wall_s": 0.17679160000000138,
+      "private_mib": 0.86328125
+    },
+    {
+      "dataset": "arxiv",
+      "n": 5000,
+      "queries": 20,
+      "directories": 414,
+      "max_depth": 2,
+      "build": "asan",
+      "checks": 300,
+      "wall_s": 2.3211906999999883,
+      "private_mib": 193.73828125
+    },
+    {
+      "dataset": "arxiv",
+      "n": 25000,
+      "queries": 20,
+      "directories": 428,
+      "max_depth": 2,
+      "build": "release",
+      "checks": 300,
+      "wall_s": 0.5026750000000106,
+      "private_mib": 25.10546875
+    },
+    {
+      "dataset": "wiki",
+      "n": 5000,
+      "queries": 52,
+      "directories": 13863,
+      "max_depth": 29,
+      "build": "release",
+      "checks": 780,
+      "wall_s": 1.946171899999996,
+      "private_mib": 94.015625
+    },
+    {
+      "dataset": "wiki",
+      "n": 5000,
+      "queries": 52,
+      "directories": 13863,
+      "max_depth": 29,
+      "build": "asan",
+      "checks": 780,
+      "wall_s": 39.70406660000003,
+      "private_mib": 969.3828125
+    },
+    {
+      "dataset": "wiki",
+      "n": 25000,
+      "queries": 62,
+      "directories": 43589,
+      "max_depth": 31,
+      "build": "release",
+      "checks": 930,
+      "wall_s": 8.031010600000002,
+      "private_mib": 310.5859375
+    }
+  ],
+  "reviewed_budget_pass": true
+}

@@ -1,0 +1,36 @@
+[
+  {
+    "dataset": "wiki",
+    "experiment": "EXP-20261027-009",
+    "records": 25000,
+    "directories": 43589,
+    "max_depth": 31,
+    "recursive_cases": 31,
+    "local_cases": 31,
+    "root_recursive_cases": 1,
+    "empty_recursive_cases": 0,
+    "empty_local_cases": 18,
+    "missing_layers": [],
+    "sample_selection": "floor(i*(total-1)/(N-1)); not a nested growth experiment"
+  },
+  {
+    "dataset": "arxiv",
+    "experiment": "EXP-20261027-010",
+    "records": 25000,
+    "directories": 428,
+    "max_depth": 2,
+    "recursive_cases": 10,
+    "local_cases": 10,
+    "root_recursive_cases": 1,
+    "empty_recursive_cases": 0,
+    "empty_local_cases": 5,
+    "missing_layers": [
+      4,
+      9,
+      16,
+      24,
+      31
+    ],
+    "sample_selection": "floor(i*(total-1)/(N-1)); not a nested growth experiment"
+  }
+]

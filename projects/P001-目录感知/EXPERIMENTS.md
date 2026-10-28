@@ -12,6 +12,14 @@
 
 ## 2. 实验索引
 
+2026-10-27当前派生总报告（非新实验）：REPORT-01-CURRENT-01完成，见REPORT_CURRENT.md及notes/report02-status-audit-20261027-01/verification.json、review.md、final-check.json。原文实验逐项映射，351次hash/50个009/010worker复核、210逐run/1380逐case重算一致；补充经验尾分位/深度/空非空分组并核对加权重构。0新测量/编译/向量载荷/算法改动，无新EXP，旧10k报告/原始实验不改；全文目标与GAP未关闭。
+
+2026-10-27当前正式扩规模已完成：EXP-20261027-009（WIKI）/010（ARXIV）各25k纯目录、5/5独立进程、3预热20测量，独立核验及后审查通过。真实原始23115/8625行，正式20100/7500、预热3015/1125，合计141450次集合核对；单元含门禁/核验895.606s/151.523s，无正式失败或重试。各record/results/review-check/final-check、analysis-01 CSV与verification为正式证据。协议notes/scale02-protocol-20261027.md；有效准备03复用01七个原生worker并重新核验，01行序SHA误判/02路径保护误拒绝均failed保留。旧004–008/原核心不改，0向量/ANN/phase；当前25k独立目录分支，不是全文验收或严格跨N增长率。
+
+2026-10-27当前软件准入（非正式性能实验）：SCALE-PREP-01完成，最终notes/scale-prep-20261027-02/record.md、review.md、review-check.json。两数据集5k Release/ASan及25k Release共6worker/3390次集合检查、4份独立核验、2组跨构建、6项指定失败原因合同均通过；0向量/新EXP。初次01正确性通过但监控最大342ms，严格资源准入不接受其自动passed；修正后02最大114.325ms，必要补做原样输入准入，保留初次/定向检查，不重跑004–008。预算以补入120s启动窗口的02/budget-reviewed.json为准；SCALE-02未授权/未启动。
+
+2026-10-27前次资源评估（非新实验）：SCALE-01-ASSESS完成，见SCALE_ASSESSMENT.md及notes/scale01-assessment-20261027-01/profile.json、assessment.json。只读硬件/旧遥测/源码与元数据，8个10k/25k/50k/100k几何profile不是索引/延迟测量；向量载荷读取0，没有新EXP。该时点准备未开始，后续准入以顶部当前条目为准；正式矩阵/预算仍待决定，旧实验原始记录不改。
+
 2026-10-27当前派生报告（非新实验）：REPORT-01-SMALL-01完成，见REPORT_SMALL_SCALE.md及notes/report01-audit-20261027-01/run-02/verification.json。复核110个worker文件与当前/归档源码，重算004引用均值、005 catalog占比及006/008非空/全部请求汇总与配对符号；没有新测量、没有修改实验文件或创建新EXP。父报告和全文目标未完成。
 
 2026-10-27最新：WIKI独立协议执行与审查已完成。007目录10/10进程、008检索5/5进程，独立核验、CSV/表格和最终hash通过；见各record/results/final-check。协议notes/wiki-independent-protocol-20261027.md，准入/审查见notes/wiki-independent-preparation-20261027-01/record.md、review.md。qrels不参与选目录，nDCG不报告，不关闭原作者GAP或全文目标。

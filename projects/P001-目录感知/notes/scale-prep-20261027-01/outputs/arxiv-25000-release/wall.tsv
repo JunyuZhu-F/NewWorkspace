@@ -1,0 +1,6 @@
+kind	strategy	pass	elapsed_ns
+setup	all	-1	135073200
+pass	PE-ONLINE	0	62025300
+pass	PE-OFFLINE	0	112277900
+pass	TrieHI	0	61557300
+total	all	-1	377404400

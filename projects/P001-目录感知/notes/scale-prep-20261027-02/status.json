@@ -1,0 +1,12 @@
+{
+  "status": "passed",
+  "started_utc": "2026-10-27T08:38:00.466332+00:00",
+  "scope": "SCALE-PREP-01 only; no formal matrix",
+  "git_head": "2101c84f24b3cbbcd093b38073a5c9e372815f9d",
+  "finished_utc": "2026-10-27T08:44:12.108771+00:00",
+  "old_46_sources_unchanged": true,
+  "admission_sources_unchanged": true,
+  "binaries_unchanged": true,
+  "formal_runs": 0,
+  "workers": 6
+}

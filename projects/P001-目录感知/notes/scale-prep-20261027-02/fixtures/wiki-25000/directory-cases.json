@@ -1,0 +1,560 @@
+[
+  {
+    "case": "d0-r0",
+    "path": "/",
+    "recursive": false,
+    "depth": 0,
+    "candidates": 0,
+    "children": 35,
+    "descendant_directories": 43589
+  },
+  {
+    "case": "d0-r1",
+    "path": "/",
+    "recursive": true,
+    "depth": 0,
+    "candidates": 25000,
+    "children": 35,
+    "descendant_directories": 43589
+  },
+  {
+    "case": "d1-r0",
+    "path": "/Academic_disciplines/",
+    "recursive": false,
+    "depth": 1,
+    "candidates": 1,
+    "children": 4,
+    "descendant_directories": 1509
+  },
+  {
+    "case": "d1-r1",
+    "path": "/Academic_disciplines/",
+    "recursive": true,
+    "depth": 1,
+    "candidates": 718,
+    "children": 4,
+    "descendant_directories": 1509
+  },
+  {
+    "case": "d2-r0",
+    "path": "/Academic_disciplines/Academic_discipline_interactions/Philosophy_of_science/Metaphysics_of_science/Causality/Causes/Causes_of_death/Capital_punishment/Execution_methods/",
+    "recursive": false,
+    "depth": 9,
+    "candidates": 1,
+    "children": 0,
+    "descendant_directories": 1
+  },
+  {
+    "case": "d2-r1",
+    "path": "/Academic_disciplines/Academic_discipline_interactions/Philosophy_of_science/Metaphysics_of_science/Causality/Causes/Causes_of_death/Capital_punishment/Execution_methods/",
+    "recursive": true,
+    "depth": 9,
+    "candidates": 1,
+    "children": 0,
+    "descendant_directories": 1
+  },
+  {
+    "case": "d3-r0",
+    "path": "/Academic_disciplines/Academic_discipline_interactions/Philosophy_of_science/Metaphysics_of_science/Causality/Consequences/Aftermath_of_events/Aftermath_of_war/Aftermath_of_wars/Aftermath_of_World_War_II/Aftermath_of_World_War_II_by_country/Cold_War_history_by_country/Cold_War_history_of_the_Soviet_Union/KGB/People_of_the_KGB/KGB_officers/",
+    "recursive": false,
+    "depth": 16,
+    "candidates": 1,
+    "children": 0,
+    "descendant_directories": 1
+  },
+  {
+    "case": "d3-r1",
+    "path": "/Academic_disciplines/Academic_discipline_interactions/Philosophy_of_science/Metaphysics_of_science/Causality/Consequences/Aftermath_of_events/Aftermath_of_war/Aftermath_of_wars/Aftermath_of_World_War_II/Aftermath_of_World_War_II_by_country/Cold_War_history_by_country/Cold_War_history_of_the_Soviet_Union/KGB/People_of_the_KGB/KGB_officers/",
+    "recursive": true,
+    "depth": 16,
+    "candidates": 1,
+    "children": 0,
+    "descendant_directories": 1
+  },
+  {
+    "case": "d4-r0",
+    "path": "/Academic_disciplines/Applied_disciplines/Applied_psychology/Clinical_psychology/",
+    "recursive": false,
+    "depth": 4,
+    "candidates": 1,
+    "children": 0,
+    "descendant_directories": 1
+  },
+  {
+    "case": "d4-r1",
+    "path": "/Academic_disciplines/Applied_disciplines/Applied_psychology/Clinical_psychology/",
+    "recursive": true,
+    "depth": 4,
+    "candidates": 1,
+    "children": 0,
+    "descendant_directories": 1
+  },
+  {
+    "case": "d5-r0",
+    "path": "/Academic_disciplines/Architectural_theory/",
+    "recursive": false,
+    "depth": 2,
+    "candidates": 1,
+    "children": 0,
+    "descendant_directories": 1
+  },
+  {
+    "case": "d5-r1",
+    "path": "/Academic_disciplines/Architectural_theory/",
+    "recursive": true,
+    "depth": 2,
+    "candidates": 1,
+    "children": 0,
+    "descendant_directories": 1
+  },
+  {
+    "case": "d6-r0",
+    "path": "/Behavior/Human_behavior/Human_activities/Entertainment/Drama/Acting/Actors/Actors_by_nationality/Actors_by_former_country/",
+    "recursive": false,
+    "depth": 9,
+    "candidates": 0,
+    "children": 1,
+    "descendant_directories": 2
+  },
+  {
+    "case": "d6-r1",
+    "path": "/Behavior/Human_behavior/Human_activities/Entertainment/Drama/Acting/Actors/Actors_by_nationality/Actors_by_former_country/",
+    "recursive": true,
+    "depth": 9,
+    "candidates": 1,
+    "children": 1,
+    "descendant_directories": 2
+  },
+  {
+    "case": "d7-r0",
+    "path": "/Concepts/",
+    "recursive": false,
+    "depth": 1,
+    "candidates": 0,
+    "children": 5,
+    "descendant_directories": 143
+  },
+  {
+    "case": "d7-r1",
+    "path": "/Concepts/",
+    "recursive": true,
+    "depth": 1,
+    "candidates": 69,
+    "children": 5,
+    "descendant_directories": 143
+  },
+  {
+    "case": "d8-r0",
+    "path": "/Geography/Geographic_classifications/Geographic_taxonomies/Countries/Countries_by_continent/Countries_in_Europe/France/Geography_of_France/Populated_places_in_France/Communes_in_France/Communes_in_France_by_department/",
+    "recursive": false,
+    "depth": 11,
+    "candidates": 0,
+    "children": 64,
+    "descendant_directories": 81
+  },
+  {
+    "case": "d8-r1",
+    "path": "/Geography/Geographic_classifications/Geographic_taxonomies/Countries/Countries_by_continent/Countries_in_Europe/France/Geography_of_France/Populated_places_in_France/Communes_in_France/Communes_in_France_by_department/",
+    "recursive": true,
+    "depth": 11,
+    "candidates": 315,
+    "children": 64,
+    "descendant_directories": 81
+  },
+  {
+    "case": "d9-r0",
+    "path": "/Government/Active_citizenship/Community_building/Social_work/",
+    "recursive": false,
+    "depth": 4,
+    "candidates": 0,
+    "children": 1,
+    "descendant_directories": 2
+  },
+  {
+    "case": "d9-r1",
+    "path": "/Government/Active_citizenship/Community_building/Social_work/",
+    "recursive": true,
+    "depth": 4,
+    "candidates": 1,
+    "children": 1,
+    "descendant_directories": 2
+  },
+  {
+    "case": "d10-r0",
+    "path": "/Health/Health_sciences/",
+    "recursive": false,
+    "depth": 2,
+    "candidates": 0,
+    "children": 1,
+    "descendant_directories": 7
+  },
+  {
+    "case": "d10-r1",
+    "path": "/Health/Health_sciences/",
+    "recursive": true,
+    "depth": 2,
+    "candidates": 2,
+    "children": 1,
+    "descendant_directories": 7
+  },
+  {
+    "case": "d11-r0",
+    "path": "/Information/",
+    "recursive": false,
+    "depth": 1,
+    "candidates": 0,
+    "children": 11,
+    "descendant_directories": 455
+  },
+  {
+    "case": "d11-r1",
+    "path": "/Information/",
+    "recursive": true,
+    "depth": 1,
+    "candidates": 197,
+    "children": 11,
+    "descendant_directories": 455
+  },
+  {
+    "case": "d12-r0",
+    "path": "/Life/Organisms/Eukaryotes/Animals/Animal_taxa/Animal_taxa_by_rank/Animal_unranked_clades/ParaHoxozoa/Bilaterians/Protostomes/Ecdysozoa/Panarthropoda/Arthropods/Arthropod_taxa/Arthropod_taxa_by_rank/Arthropod_superorders/Insect_superorders/Antliophora/Flies/Diptera_by_classification/Brachycera/Asilomorpha/Empidoidea/Dolichopodidae/",
+    "recursive": false,
+    "depth": 24,
+    "candidates": 0,
+    "children": 1,
+    "descendant_directories": 2
+  },
+  {
+    "case": "d12-r1",
+    "path": "/Life/Organisms/Eukaryotes/Animals/Animal_taxa/Animal_taxa_by_rank/Animal_unranked_clades/ParaHoxozoa/Bilaterians/Protostomes/Ecdysozoa/Panarthropoda/Arthropods/Arthropod_taxa/Arthropod_taxa_by_rank/Arthropod_superorders/Insect_superorders/Antliophora/Flies/Diptera_by_classification/Brachycera/Asilomorpha/Empidoidea/Dolichopodidae/",
+    "recursive": true,
+    "depth": 24,
+    "candidates": 1,
+    "children": 1,
+    "descendant_directories": 2
+  },
+  {
+    "case": "d13-r0",
+    "path": "/Life/Organisms/Eukaryotes/Animals/Animal_taxa/Animal_taxa_by_rank/Animal_unranked_clades/ParaHoxozoa/Bilaterians/Protostomes/Ecdysozoa/Panarthropoda/Arthropods/Arthropod_taxa/Arthropod_taxa_by_rank/Arthropod_superorders/Insect_superorders/Antliophora/Flies/Diptera_by_classification/Brachycera/Brachyceran_flies_of_Europe/Muscomorph_flies_of_Europe/Schizophora/Acalyptratae/Ephydroidea/Drosophilidae/Drosophila/Drosophila_melanogaster/Drosophila_melanogaster_genetics/Drosophila_melanogaster_genes/",
+    "recursive": false,
+    "depth": 31,
+    "candidates": 1,
+    "children": 0,
+    "descendant_directories": 1
+  },
+  {
+    "case": "d13-r1",
+    "path": "/Life/Organisms/Eukaryotes/Animals/Animal_taxa/Animal_taxa_by_rank/Animal_unranked_clades/ParaHoxozoa/Bilaterians/Protostomes/Ecdysozoa/Panarthropoda/Arthropods/Arthropod_taxa/Arthropod_taxa_by_rank/Arthropod_superorders/Insect_superorders/Antliophora/Flies/Diptera_by_classification/Brachycera/Brachyceran_flies_of_Europe/Muscomorph_flies_of_Europe/Schizophora/Acalyptratae/Ephydroidea/Drosophilidae/Drosophila/Drosophila_melanogaster/Drosophila_melanogaster_genetics/Drosophila_melanogaster_genes/",
+    "recursive": true,
+    "depth": 31,
+    "candidates": 1,
+    "children": 0,
+    "descendant_directories": 1
+  },
+  {
+    "case": "d14-r0",
+    "path": "/Life/Organisms/Eukaryotes/Animals/Animal_taxa/Animal_taxa_by_rank/Animal_unranked_clades/ParaHoxozoa/Bilaterians/Protostomes/Ecdysozoa/Panarthropoda/Arthropods/Arthropod_taxa/Arthropod_taxonomy/Insect_taxonomy/Eumetabola/Holometabola/Hymenopterida/Hymenoptera/Apocrita/Ants/Dolichoderinae/Dorymyrmex/",
+    "recursive": false,
+    "depth": 24,
+    "candidates": 1,
+    "children": 0,
+    "descendant_directories": 1
+  },
+  {
+    "case": "d14-r1",
+    "path": "/Life/Organisms/Eukaryotes/Animals/Animal_taxa/Animal_taxa_by_rank/Animal_unranked_clades/ParaHoxozoa/Bilaterians/Protostomes/Ecdysozoa/Panarthropoda/Arthropods/Arthropod_taxa/Arthropod_taxonomy/Insect_taxonomy/Eumetabola/Holometabola/Hymenopterida/Hymenoptera/Apocrita/Ants/Dolichoderinae/Dorymyrmex/",
+    "recursive": true,
+    "depth": 24,
+    "candidates": 1,
+    "children": 0,
+    "descendant_directories": 1
+  },
+  {
+    "case": "d15-r0",
+    "path": "/Life/Organisms/Eukaryotes/Animals/Animal_taxa/Animal_taxa_by_rank/Animal_unranked_clades/ParaHoxozoa/Bilaterians/Protostomes/Ecdysozoa/Panarthropoda/Arthropods/Arthropod_taxa/Arthropod_taxonomy/Insect_taxonomy/Lepidoptera_taxonomy/Glossata/Coelolepida/Myoglossata/Neolepidoptera/Heteroneura/Eulepidoptera/Ditrysia/",
+    "recursive": false,
+    "depth": 24,
+    "candidates": 1,
+    "children": 3,
+    "descendant_directories": 51
+  },
+  {
+    "case": "d15-r1",
+    "path": "/Life/Organisms/Eukaryotes/Animals/Animal_taxa/Animal_taxa_by_rank/Animal_unranked_clades/ParaHoxozoa/Bilaterians/Protostomes/Ecdysozoa/Panarthropoda/Arthropods/Arthropod_taxa/Arthropod_taxonomy/Insect_taxonomy/Lepidoptera_taxonomy/Glossata/Coelolepida/Myoglossata/Neolepidoptera/Heteroneura/Eulepidoptera/Ditrysia/",
+    "recursive": true,
+    "depth": 24,
+    "candidates": 26,
+    "children": 3,
+    "descendant_directories": 51
+  },
+  {
+    "case": "d16-r0",
+    "path": "/Life/Organisms/Eukaryotes/Animals/Animal_taxa/Animal_taxa_by_rank/Animal_unranked_clades/ParaHoxozoa/Bilaterians/Protostomes/Ecdysozoa/Panarthropoda/Arthropods/Arthropod_taxa/Arthropod_taxonomy/Insect_taxonomy/Lepidoptera_taxonomy/Glossata/Coelolepida/Myoglossata/Neolepidoptera/Heteroneura/Eulepidoptera/Ditrysia/Macrolepidoptera/Butterflies/Butterfly_taxonomy/Hesperiidae/Hesperiinae/Baorini/Caltoris/",
+    "recursive": false,
+    "depth": 31,
+    "candidates": 1,
+    "children": 0,
+    "descendant_directories": 1
+  },
+  {
+    "case": "d16-r1",
+    "path": "/Life/Organisms/Eukaryotes/Animals/Animal_taxa/Animal_taxa_by_rank/Animal_unranked_clades/ParaHoxozoa/Bilaterians/Protostomes/Ecdysozoa/Panarthropoda/Arthropods/Arthropod_taxa/Arthropod_taxonomy/Insect_taxonomy/Lepidoptera_taxonomy/Glossata/Coelolepida/Myoglossata/Neolepidoptera/Heteroneura/Eulepidoptera/Ditrysia/Macrolepidoptera/Butterflies/Butterfly_taxonomy/Hesperiidae/Hesperiinae/Baorini/Caltoris/",
+    "recursive": true,
+    "depth": 31,
+    "candidates": 1,
+    "children": 0,
+    "descendant_directories": 1
+  },
+  {
+    "case": "d17-r0",
+    "path": "/Life/Organisms/Eukaryotes/Animals/Animal_taxa/Animal_taxa_by_rank/Animal_unranked_clades/ParaHoxozoa/Bilaterians/Protostomes/Ecdysozoa/Panarthropoda/Arthropods/Arthropod_taxa/Arthropod_taxonomy/Insect_taxonomy/Lepidoptera_taxonomy/Glossata/Coelolepida/Myoglossata/Neolepidoptera/Heteroneura/Eulepidoptera/Ditrysia/Macrolepidoptera/Butterflies/Butterfly_taxonomy/Nymphalidae/Danainae/Danaini/Amauris/",
+    "recursive": false,
+    "depth": 31,
+    "candidates": 1,
+    "children": 0,
+    "descendant_directories": 1
+  },
+  {
+    "case": "d17-r1",
+    "path": "/Life/Organisms/Eukaryotes/Animals/Animal_taxa/Animal_taxa_by_rank/Animal_unranked_clades/ParaHoxozoa/Bilaterians/Protostomes/Ecdysozoa/Panarthropoda/Arthropods/Arthropod_taxa/Arthropod_taxonomy/Insect_taxonomy/Lepidoptera_taxonomy/Glossata/Coelolepida/Myoglossata/Neolepidoptera/Heteroneura/Eulepidoptera/Ditrysia/Macrolepidoptera/Butterflies/Butterfly_taxonomy/Nymphalidae/Danainae/Danaini/Amauris/",
+    "recursive": true,
+    "depth": 31,
+    "candidates": 1,
+    "children": 0,
+    "descendant_directories": 1
+  },
+  {
+    "case": "d18-r0",
+    "path": "/Life/Organisms/Eukaryotes/Animals/Animal_taxa/Animal_taxa_by_rank/Animal_unranked_clades/ParaHoxozoa/Bilaterians/Protostomes/Ecdysozoa/Panarthropoda/Arthropods/Arthropod_taxa/Arthropod_taxonomy/Insect_taxonomy/Lepidoptera_taxonomy/Glossata/Coelolepida/Myoglossata/Neolepidoptera/Heteroneura/Monotrysia/Adeloidea/",
+    "recursive": false,
+    "depth": 24,
+    "candidates": 0,
+    "children": 1,
+    "descendant_directories": 2
+  },
+  {
+    "case": "d18-r1",
+    "path": "/Life/Organisms/Eukaryotes/Animals/Animal_taxa/Animal_taxa_by_rank/Animal_unranked_clades/ParaHoxozoa/Bilaterians/Protostomes/Ecdysozoa/Panarthropoda/Arthropods/Arthropod_taxa/Arthropod_taxonomy/Insect_taxonomy/Lepidoptera_taxonomy/Glossata/Coelolepida/Myoglossata/Neolepidoptera/Heteroneura/Monotrysia/Adeloidea/",
+    "recursive": true,
+    "depth": 24,
+    "candidates": 1,
+    "children": 1,
+    "descendant_directories": 2
+  },
+  {
+    "case": "d19-r0",
+    "path": "/Mass_media/Defunct_mass_media/",
+    "recursive": false,
+    "depth": 2,
+    "candidates": 0,
+    "children": 3,
+    "descendant_directories": 22
+  },
+  {
+    "case": "d19-r1",
+    "path": "/Mass_media/Defunct_mass_media/",
+    "recursive": true,
+    "depth": 2,
+    "candidates": 10,
+    "children": 3,
+    "descendant_directories": 22
+  },
+  {
+    "case": "d20-r0",
+    "path": "/Mass_media/Mass_media_by_type/Periodicals/Periodicals_by_frequency/",
+    "recursive": false,
+    "depth": 4,
+    "candidates": 0,
+    "children": 2,
+    "descendant_directories": 9
+  },
+  {
+    "case": "d20-r1",
+    "path": "/Mass_media/Mass_media_by_type/Periodicals/Periodicals_by_frequency/",
+    "recursive": true,
+    "depth": 4,
+    "candidates": 2,
+    "children": 2,
+    "descendant_directories": 9
+  },
+  {
+    "case": "d21-r0",
+    "path": "/Nature/",
+    "recursive": false,
+    "depth": 1,
+    "candidates": 0,
+    "children": 3,
+    "descendant_directories": 16659
+  },
+  {
+    "case": "d21-r1",
+    "path": "/Nature/",
+    "recursive": true,
+    "depth": 1,
+    "candidates": 11749,
+    "children": 3,
+    "descendant_directories": 16659
+  },
+  {
+    "case": "d22-r0",
+    "path": "/Nature/Natural_sciences/",
+    "recursive": false,
+    "depth": 2,
+    "candidates": 0,
+    "children": 2,
+    "descendant_directories": 16427
+  },
+  {
+    "case": "d22-r1",
+    "path": "/Nature/Natural_sciences/",
+    "recursive": true,
+    "depth": 2,
+    "candidates": 11653,
+    "children": 2,
+    "descendant_directories": 16427
+  },
+  {
+    "case": "d23-r0",
+    "path": "/Nature/Natural_sciences/Earth_sciences/Earth/",
+    "recursive": false,
+    "depth": 4,
+    "candidates": 1,
+    "children": 6,
+    "descendant_directories": 16134
+  },
+  {
+    "case": "d23-r1",
+    "path": "/Nature/Natural_sciences/Earth_sciences/Earth/",
+    "recursive": true,
+    "depth": 4,
+    "candidates": 11461,
+    "children": 6,
+    "descendant_directories": 16134
+  },
+  {
+    "case": "d24-r0",
+    "path": "/Nature/Natural_sciences/Earth_sciences/Earth/Geological_history_of_Earth/Geological_epochs/Holocene/2nd_millennium/20th_century/",
+    "recursive": false,
+    "depth": 9,
+    "candidates": 0,
+    "children": 21,
+    "descendant_directories": 8066
+  },
+  {
+    "case": "d24-r1",
+    "path": "/Nature/Natural_sciences/Earth_sciences/Earth/Geological_history_of_Earth/Geological_epochs/Holocene/2nd_millennium/20th_century/",
+    "recursive": true,
+    "depth": 9,
+    "candidates": 6667,
+    "children": 21,
+    "descendant_directories": 8066
+  },
+  {
+    "case": "d25-r0",
+    "path": "/Nature/Natural_sciences/Earth_sciences/Earth/Geological_history_of_Earth/Geological_epochs/Holocene/2nd_millennium/20th_century/20th-century_people/20th-century_people_by_location/20th-century_people_by_continent/20th-century_North_American_people/20th-century_North_American_people_by_nationality/20th-century_American_people/20th-century_American_people_by_occupation/",
+    "recursive": false,
+    "depth": 16,
+    "candidates": 0,
+    "children": 25,
+    "descendant_directories": 116
+  },
+  {
+    "case": "d25-r1",
+    "path": "/Nature/Natural_sciences/Earth_sciences/Earth/Geological_history_of_Earth/Geological_epochs/Holocene/2nd_millennium/20th_century/20th-century_people/20th-century_people_by_location/20th-century_people_by_continent/20th-century_North_American_people/20th-century_North_American_people_by_nationality/20th-century_American_people/20th-century_American_people_by_occupation/",
+    "recursive": true,
+    "depth": 16,
+    "candidates": 500,
+    "children": 25,
+    "descendant_directories": 116
+  },
+  {
+    "case": "d26-r0",
+    "path": "/Nature/Natural_sciences/Earth_sciences/Earth/Geological_history_of_Earth/Geological_epochs/Holocene/3rd_millennium/21st_century/2000s/2000s_by_continent/2000s_in_Europe/2000s_in_European_sport/2000s_in_German_sport/2006_in_German_sport/2006_Men's_Hockey_World_Cup/",
+    "recursive": false,
+    "depth": 16,
+    "candidates": 0,
+    "children": 1,
+    "descendant_directories": 2
+  },
+  {
+    "case": "d26-r1",
+    "path": "/Nature/Natural_sciences/Earth_sciences/Earth/Geological_history_of_Earth/Geological_epochs/Holocene/3rd_millennium/21st_century/2000s/2000s_by_continent/2000s_in_Europe/2000s_in_European_sport/2000s_in_German_sport/2006_in_German_sport/2006_Men's_Hockey_World_Cup/",
+    "recursive": true,
+    "depth": 16,
+    "candidates": 1,
+    "children": 1,
+    "descendant_directories": 2
+  },
+  {
+    "case": "d27-r0",
+    "path": "/Nature/Natural_sciences/Earth_sciences/Earth/Geological_history_of_Earth/Geological_epochs/Holocene/3rd_millennium/21st_century/2000s/2000s_by_continent/2000s_in_North_America/2000s_in_North_American_sport/2000s_in_American_sports/2001_in_American_sports/2001_Major_League_Baseball_season/",
+    "recursive": false,
+    "depth": 16,
+    "candidates": 1,
+    "children": 0,
+    "descendant_directories": 1
+  },
+  {
+    "case": "d27-r1",
+    "path": "/Nature/Natural_sciences/Earth_sciences/Earth/Geological_history_of_Earth/Geological_epochs/Holocene/3rd_millennium/21st_century/2000s/2000s_by_continent/2000s_in_North_America/2000s_in_North_American_sport/2000s_in_American_sports/2001_in_American_sports/2001_Major_League_Baseball_season/",
+    "recursive": true,
+    "depth": 16,
+    "candidates": 1,
+    "children": 0,
+    "descendant_directories": 1
+  },
+  {
+    "case": "d28-r0",
+    "path": "/Science/",
+    "recursive": false,
+    "depth": 1,
+    "candidates": 0,
+    "children": 2,
+    "descendant_directories": 28
+  },
+  {
+    "case": "d28-r1",
+    "path": "/Science/",
+    "recursive": true,
+    "depth": 1,
+    "candidates": 14,
+    "children": 2,
+    "descendant_directories": 28
+  },
+  {
+    "case": "d29-r0",
+    "path": "/Society/Demographics/Demographics_by_country/Ethnic_groups_by_country/Ethnic_groups_in_the_United_Kingdom/British_people/British_people_by_occupation/British_military_personnel/British_military_personnel_in_colonial_India/",
+    "recursive": false,
+    "depth": 9,
+    "candidates": 0,
+    "children": 1,
+    "descendant_directories": 3
+  },
+  {
+    "case": "d29-r1",
+    "path": "/Society/Demographics/Demographics_by_country/Ethnic_groups_by_country/Ethnic_groups_in_the_United_Kingdom/British_people/British_people_by_occupation/British_military_personnel/British_military_personnel_in_colonial_India/",
+    "recursive": true,
+    "depth": 9,
+    "candidates": 1,
+    "children": 1,
+    "descendant_directories": 3
+  },
+  {
+    "case": "d30-r0",
+    "path": "/Universe/Matter/Phases_of_matter/Liquids/Liquid-solid_separation/",
+    "recursive": false,
+    "depth": 5,
+    "candidates": 1,
+    "children": 0,
+    "descendant_directories": 1
+  },
+  {
+    "case": "d30-r1",
+    "path": "/Universe/Matter/Phases_of_matter/Liquids/Liquid-solid_separation/",
+    "recursive": true,
+    "depth": 5,
+    "candidates": 1,
+    "children": 0,
+    "descendant_directories": 1
+  }
+]

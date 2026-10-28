@@ -1,0 +1,31 @@
+{
+  "name": "negative-global-outside",
+  "command": [
+    "D:\\NewWorkspace\\projects\\P001-目录感知\\code\\build-Release-ScaleDirectory\\scale_directory.exe",
+    "notes\\scale-prep-20261027-02\\negative-fixtures\\global-outside",
+    "notes\\scale-prep-20261027-02\\negative-outputs\\global-outside",
+    "0",
+    "0",
+    "1",
+    "admission"
+  ],
+  "started_utc": "2026-10-27T08:38:55.073870+00:00",
+  "expected_exit": 1,
+  "exit_code": 1,
+  "elapsed_s": 0.0480747000000008,
+  "private_peak_sampled_bytes": 708608,
+  "available_min_sampled_bytes": 5232406528,
+  "finished_utc": "2026-10-27T08:38:55.123058+00:00",
+  "violation": null,
+  "target_period_s": 0.1,
+  "maximum_observed_sample_gap_s": 0,
+  "observed_gap_within_250ms": true,
+  "sampling_note": "100ms whole-loop target; OS may delay scheduling; audit actual gaps; samples not a quota or exact peak",
+  "samples": [
+    {
+      "elapsed_s": 0.010377900000001716,
+      "private_tree_bytes": 708608,
+      "available_bytes": 5253181440
+    }
+  ]
+}

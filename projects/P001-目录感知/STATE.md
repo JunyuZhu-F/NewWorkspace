@@ -1,10 +1,43 @@
-# STATE.md — 两数据集当前小规模报告已审查完成
+# STATE.md — 当前总报告与原文实验对照已完成
 
-更新时间：2026-10-27，Asia/Hong_Kong；REPORT-01-SMALL-01证据审查与文档更新。项目：D:/NewWorkspace/projects/P001-目录感知。
+更新时间：2026-10-27，Asia/Hong_Kong；REPORT-01-CURRENT-01当前总报告及审查完成。项目：D:/NewWorkspace/projects/P001-目录感知。
 
-当前阶段：REPORT-01-SMALL-01已完成，REPORT_SMALL_SCALE.md汇总004–008已完成范围，逐OBJ结论、证据、限制及补测决策齐全；REPORT-01父任务进行中，原作者协议、真实类别、nDCG、PG/Viking与全量未完成。本轮只读审计和更新文档，没有构建/测试重跑/测量/算法修改。下一项仅SCALE-01具体资源与规模评估，SCALE-02未授权，不联系作者、不追查1995年。
+当前阶段：REPORT-01-CURRENT-01已完成，当前总入口REPORT_CURRENT.md，含原文实验—现有证据—缺口与009/010结果。证据notes/report02-status-audit-20261027-01/verification.json、stratification-check.json、review.md、final-check.json。仅当前报告子任务关闭；全文REPORT-01和完整OBJ-03/04、作者协议/类别/nDCG/PG/Viking/全量不关闭。旧10k报告及全部实验保持；目录正式至25k，检索仍1万。
 
-## 当前事实
+## 最新报告审查事实
+
+- 0新测量/编译/核心修改/向量载荷；351次hash、50个009/010worker与当前/归档/输入/协议/二进制匹配。旧报告31项结果/协议绑定、53旧源码当前hash匹配；旧110worker复核仍引用原审计，不假称本轮遍历全部历史输出。
+- 从原始timings重算210个逐run均值/P50/P95、1380逐case及42组5进程均值SD，匹配现有CSV；补经验P90/P95/P99/P99.9与深度描述，注明重复不是独立query、有限尾部与深度因果边界。
+- WIKI25k非递归18空/13非空，ARXIV5空/5非空，分组加权重构原总体均值通过；与query约束缺失、相关性未标注区分。1万条WIKI的46个有标注query不照搬为25k覆盖。
+- 原PDF pp.9–12图表与同hash提取证据核对：原图7 WIKI nDCG、图11 PG/IVF受控深度检索、表V整体未复现；目录统计/Recall/目录build不替代这些目标。原应用/并发/训练排除范围不误列为本轮必做欠账。
+- Git main/2101c84不变，继承已有未提交实验/代码；本轮新增REPORT_CURRENT.md与报告审计，更新职责内管理文档。旧REPORT_SMALL_SCALE.md及原实验源码/结果不改，无提交/推送/重置/清理，无活动实验任务。
+
+## 前置SCALE-02正式实验事实（历史，原结果保持）
+
+- WIKI009：25000条、43589真实目录/62case（未含测试父）；23115原始/20100正式/3015预热，106950次集合核对。2026-10-27 17:10:00–17:24:56香港时间，含启动门禁/核验895.606秒。ARXIV010：428目录/20case，8625原始/7500正式/1125预热，34500次核对；17:24:56–17:27:28，151.523秒。均无正式失败/重试或改协议。
+- 全部run/pass/warmup/case、五状态namespace/catalog/bitmap、跨进程答案/portable/策略轮换通过；统计仅pass3..22，CSV含逐case/逐run与5进程均值SD。后审查重核50个worker文件、CSV、输入/协议、15当前源与53旧源/归档/实际exe；原core、第三方、旧004–008均不改，0向量/ANN/qrels读取。
+- WIKI private采样最大318.66MiB、实际最大间隔120.531ms；ARXIV29.91MiB/113.732ms。全部20秒available≥4GiB启动门禁、运行private/available2GiB、命令600s、单元1800s和1GiB输出通过；样本不是精确峰值。无活动worker/构建任务。
+- 已观测操作差异：WIKI递归均值ONLINE/OFFLINE/TrieHI约3269.194/2.245/2.201μs，非递归约4.148/35.764/30.974μs。TrieHI large维护较低，但deep MERGE约1250.357μs高于ONLINE/OFFLINE约829.895/812.923μs；反例保留，不宣称全面胜出或显著性。全部五进程SD与逐case见009/analysis-01，ARXIV见010。不同N/目录case权重不作严格增长率。
+- 正式入口准备01的原生/独立检查通过，收尾误比轮换后行顺序；02恢复又因Windows路径比较保护误拒绝，两个failed均保留。03只修复新编排器，复用7已验证原生worker/二进制、重新独立核验并验证真实deadline终止；没有原生入口重跑或正式重试。
+- Git main/HEAD 2101c84f24b3cbbcd093b38073a5c9e372815f9d不变，继承既有未提交评估/准入，新增code/scale_formal、独立build脚本、冻结协议、准备01–03及009/010；管理文档未提交。无提交/推送/重置/清理。原先SCALE-PREP证据保留，下面均是其历史时点，不代表当前仍未授权/未运行。
+
+## 前置SCALE-PREP已验证事实（当前运行以上述及实时status为准）
+
+- 新code/scale_directory参数化N、严格global/dense合同、纯目录生成/独立核验和串行资源门禁；原生源从旧driver以11项限定替换生成，API区间与10000次时钟保留。二进制只接受admission/run0/0预热/1pass，正式轮换/重复入口尚未实现，不能直接拿它跑SCALE-02。
+- 最终02的6worker（每数据集5k Release/ASan及25k Release）和3390次完整集合检查、4份Python五状态核验、2组跨构建、6项指定原因负向合同均通过；两元数据源全量hash/选样独立重读通过，向量载荷0。ARXIV25k含根428目录/20case；WIKI25k43589目录/62case/深31，均未计专用维护父目录。不是正式性能胜负结论。
+- 最终02实际采样最大间隔114.325ms；全命令available最低约4.064GiB，private采样最大969.38MiB（WIKI5k ASan），无超限。WIKI25k Release约8.031s/310.59MiB，ARXIV25k约0.503s/25.11MiB，均是完整准入wall/采样而非API成绩或精确峰值；短命令尤其可能漏峰。最终exe已归档并核hash。
+- 初次01正确性通过但监控最大342ms，后审查不接受其严格资源达标；保留原自动passed及审查记录。修正100ms整循环调度并增加实际间隔断言，定向复核后于02必要补做准入。两次fixture内容hash相同；旧004–008未重跑。首次exe未单独复制、同tag构建可能替换，首次源/flags/hash仍保留；不能把当前exe当首次原件。
+- 最终采用02/budget-reviewed.json：审查在自动场景上补入6×20秒启动窗口再乘1.5，ARXIV约227.38s、WIKI约1412.66s，均≤1440s筛查线；WIKI距该线仅约27.34s。单pass/5倍核验场景不能保证23pass长期内存或正式解析成本，仍受每worker600s、每数据集1800s、private2GiB/available2GiB硬停止与新启动门槛约束。
+- Git真实现场：根D:/NewWorkspace，main/2101c84f24b3cbbcd093b38073a5c9e372815f9d；继承未提交资源评估/文档，新增隔离驱动、构建脚本、协议、两次准入及审查证据，管理文档有未提交修改。旧46及007扩展53源码/协议hash不变，无核心/第三方/旧实验文件修改，无提交/推送/重置/清理，无活动worker/构建任务。精确清单见02/git-status-final.txt及最终交接检查。
+
+## 既有评估及小规模证据摘要（历史时点，当前状态以上述为准）
+
+- 最新资源证据：notes/scale01-assessment-20261027-01/profile.json、hardware.json、hardware-os.json、assessment.json及CSV。只读流式统计8个10k/25k/50k/100k样本：WIKI目录23025/43589/69160/106921、最大深31；ARXIV-time目录423/428/431/432、深2，不含未来测试父目录。两元数据源hash匹配、size/mtime不变；0向量载荷，不是新索引/查询时延。profile14.812s、private采样最大149.17MiB只代表统计程序。
+- 主机约15.81GiB可见RAM，14核/20逻辑CPU；15:45香港时间available约2.93–2.95GiB、profile阶段最低约2.89GiB，CPU21.4%–32.4%。D自由约432.71GiB。磁盘不是主要瓶颈，当前available未达新提案4GiB启动门槛；不自动关闭用户程序/调整pagefile/购买资源。
+- 推荐待批准首批：两数据集25k纯目录默认各5进程、3预热20测量、最多32真实anchor两模式、连续4维护；先新适配器≤5k ASan及25k Release 1pass完整准入。建议启动available≥4GiB，运行仍2GiB private/available≥2GiB、worker600s、每数据集矩阵1800s、输出1GiB；准入重新估算并留20%时间裕量，未过就停止，不偷偷降重复/跳校验。phase扩展另议。
+- 当前驱动10k/23025形状写死、纯目录prepare/oracle耦合向量及检索；必须新隔离版本实现SCALE-PREP-01，不能直接用旧runner或全局替换10000（含时钟校准次数）。源码还留存4 probe的候选和未缩capacity的hits，oracle有float64临时/文本/Python列表及O(D×N)扫描。旧核验器private约0.88GiB，远高于worker；profile/估算不证明新规模可运行。
+- 全量当前内存加载器float载荷下界ARXIV约11.32GB、WIKI约7.95GB已超过2GiB；100k oracle三数组场景约2.29GiB，未含其他对象。WIKI25k全456 query启发式五进程+核验约49.5min已超30min预算，不能直接批准。后续候选ARXIV25k全time/WIKI25k固定64 query均须另版协议和准入；时间/内存只是场景不是实测峰值或保证。
+- 本轮入口Git实测main/HEAD 2101c84f24b3cbbcd093b38073a5c9e372815f9d且工作树干净；旧STATE中的c14/未提交状态已过时。本轮仅新增SCALE_ASSESSMENT.md、notes/scale01-assessment-20261027-01/并更新管理文档，未提交/推送/重置/清理，未改任何code/或experiments/文件。历史实验版本保持原值，忽略文件继续保留。
 
 - 本轮独立证据复核在notes/report01-audit-20261027-01/run-02/verification.json：006–008的110个worker文件、各当前/归档源hash匹配；005已存8项raw/协议/汇总hash匹配；004引用time/default均值及005 MERGE catalog比例从原始记录重算一致。CSV保留006/008的nprobe4非空/全部/空请求、三个阶段和五run配对符号。本轮不是重跑实验。
 - 报告解释边界：ARXIV目录004/005为34目录旧样本，检索006为423目录跨时间样本；WIKI目录根权重1/29，检索57/456，不能直接横比均值。ARXIV非递归nprobe4非空均值OFFLINE/TrieHI略低，但全部501请求均值ONLINE最低（19.3488/23.2547/22.5033μs）；小差异不宣称显著。WIKI真实层级已存在，模拟的是查询/维护，Recall为限定范围的ANN近邻召回，不是自然query相关性，nDCG仍未报告。
@@ -15,7 +48,7 @@
 - 008 nprobe4：递归456非空Recall@10=0.299882，ONLINE/OFFLINE/TrieHI非空总均值2753.2620/432.4738/416.7875μs；非递归127非空/329空，非空Recall=0.110236，总均值16.2986/18.5745/16.8638μs。exact/全探测非空Recall=1；质量相同不代表CPU时间相同，不把全部差异归因目录。空范围质量null且延迟另报，低召回保留，nDCG不报告。目录是query ID/固定哈希配对，不代表自然查询相关性分布。
 - 结果CSV位于各analysis-01/，007含逐深度/逐case/维护几何/portable，008含阶段/分位数、5进程均值SD和配对差。默认/phase不混池，catalog不从默认相减，portable不是物理堆；无全量向量加载/重编码/依赖安装。
 - 首次统计导出遇Python源编码识别错误，export-console.log保留；添加显式UTF-8声明后export-recovery-01-console.log成功，测量未重跑。finalize-console.log及总final-check通过。原始失败、快照、被忽略的fixture/*.fvecs和构建二进制全部保留。
-- 本轮入口Git实测main、HEAD c14e9f1f375d0cb0c4503e488ced9932c0afa4a7、工作树干净；之前的“当前be59/有开发未提交”已过时。本轮仅留下报告/审计及管理文档未提交增量，不提交/推送/重置/清理。007/008运行时be59及其源快照必须保留为历史事实，不改成当前HEAD；53/54源码项差异仅README，无算法/配置变化。被忽略的fixture向量/build仍须本地保留，Git干净不证明其入库。
+- 上轮REPORT入口Git为main/c14e9f1f375d0cb0c4503e488ced9932c0afa4a7，当时只留下报告/管理文档增量；这是历史现场，当前看顶部2101c84及实时status。007/008运行时be59及源快照不改成当前HEAD；53/54源码项仅差README。被忽略fixture/build须保留，Git干净不证明其入库。
 
 - 007默认已核验均值μs（ONLINE/OFFLINE/TrieHI）：递归1426.51/2.02/1.83；非递归3.38/25.67/18.43。large MOVE约34273.83/34593.87/15.87，large MERGE约31356.37/31694.69/406.57；deep MERGE约355.46/248.30/371.29，保留TrieHI并非最快反例。原始精度和完整分位数见007/verification-directory-default.json；诊断catalog另在phase报告，不混池或从默认相减。
 
@@ -28,7 +61,7 @@
 - WIKI真实路径10000样本：新增独立code/wiki/入口和build-wiki.cmd，原核心不变；Release/ASan各5292次范围集合核验通过（初始/MOVE/MERGE/拒绝，各阶段全量不变量）；答案字节相同，另有Python路径状态判定器复核全部输出与覆盖。006的46个原源码文件hash仍匹配。该运行是正确性准入，不是性能/ANN成绩。
 - check-01首次cmd路径写法导致未生成二进制，整体failed保留；修正命令及产物断言后另存check-02通过。独立核验首次在ASan结束前被状态门禁拒绝，日志保留，完成后核验成功；没有覆盖/隐瞒失败。主数据审计31.031秒、独立数据复核18.844秒，Release/ASan测试4.813/98.985秒，不作为查询延迟；ASan采样private最大1156001792字节，未触发资源门禁。
 - 本次小型公开源快照见public-sources-01/：作者数据仓库根仅README，关联OpenViking说明仍承认缺WIKI query约束。web工具不能访问Google Drive目录，未取得远端清单，不断言网盘没有补充资料；未联系作者、未下载大型数据。
-- 历史WIKI准备时Git基线为main/be59bbccb9e3f8e283328f453643b7d50211736d，当时保留未提交STATE及新增WIKI入口/脚本/证据；此段不是当前Git现场。现在以顶部c14e9f1及实时git status为准，不将历史未提交状态套到新会话。
+- 历史WIKI准备时Git基线为main/be59bbccb9e3f8e283328f453643b7d50211736d，当时保留未提交STATE及新增WIKI入口/脚本/证据；此段不是当前Git现场。现在以上述2101c84及实时git status为准，不将历史未提交状态套到新会话。
 
 - SEARCH-02当前时间/独立IVF分支已完成：EXP-20261027-006，5/5独立进程、1202400条原始计时、60120条基线结果及15030条候选记录通过独立核验，所有重复格位完整、各阶段和等于总量、模型/排名跨策略与进程相同。2026-10-27 11:08:01–11:11:01+08为正式阶段及核验时间，不是查询延迟。
 - 新输入仍10000条，按全量ID等间隔跨时间选择，34年/388月/含根423目录；501真实time查询两模式，501递归非空、235月份非递归非空、266年份非递归为空（质量null）。Release/ASan各契约1/1及12024条准入结果已通过，证据notes/search02-preparation-20261027-02/；首次换行防护失败及有效输入留在preparation-01。
@@ -60,7 +93,7 @@
 - 数据入口：notes/data-audit.md、notes/time-pilot-20261026-01/manifest.json、notes/prepare_time_pilot.py；按本任务需要定位，不递归读取全部notes。
 - 最新全量数据证据：notes/arxiv-time-full-audit-20261027-01/report.md，run-01/manifest.json、verification.json、coverage-summary.json、完整bindings.tsv和directory-counts.json；脚本快照及真实日志均保留。metadata本地完整SHA-256 93a4e0db140c82a2e154274d7b80bf4e95ade0152d79a63424e02ff3b3874a0f，未与发布方checksum对齐。
 
-## 现场与剩余限制
+## SEARCH-02完成时现场与限制（历史，当前看顶部）
 
 交接时实测Git根D:/NewWorkspace，分支main，HEAD为be59bbccb9e3f8e283328f453643b7d50211736d（SEARCH-02完成记录）；核查开始时工作树干净。本次只留下STATE.md未提交更新，没有未提交代码。旧STATE的“HEAD仍6a66c9e/存在开发未提交”已过时；006记录中的6a66c9e是实验当时基线，必须保留，不能改成当前HEAD。开发增量code/search/、code/search02/及两个build-search*.cmd已纳入当前HEAD；原目录核心/第三方文件不变。本次不提交、推送、重置或清理。
 
@@ -80,9 +113,9 @@ DATA-01/SPEC-01仍未整体完成。真实类别直接归属/多归属DSM、WIKI
 
 ## 下一步
 
-建议下一项SCALE-01：依据当前小规模报告及真实机器可用资源，分别评估纯目录与含检索的内存/磁盘/oracle/耗时，提出具体中等规模或可行矩阵和停止预算，再由用户决定SCALE-02。本轮不启动该评估或任何新测量；不联系作者、不加载全量、不接PG、不追查1995年、不处理组会。
+下一步建议：先评估25k向量检索的可行范围/冻结协议与资源预算，WIKI优先；保留原1万条基线，明确query集合/独立精确GT/距离/空集/后端参数与核验代价。本报告不自动批准新测量/预算，先形成可审查方案再决定执行。无需重跑004–010，不联系作者/追查1995年，不自动更大N/PG安装/全量。
 
-最小恢复入口：根/项目AGENTS、本STATE、TASK、PLAN的REPORT/SCALE任务行；REPORT_SMALL_SCALE.md及notes/report01-audit-20261027-01/run-02/verification.json，按问题定向查004–008相应record/verification/CSV。不得递归重读全部notes、覆盖旧输出或重跑有效矩阵。核对当前Git与忽略文件，不用旧HEAD描述代替真实现场。
+最小恢复入口：根/项目AGENTS、本STATE、TASK、PLAN相关REPORT/SEARCH/SCALE行，REPORT_CURRENT.md及report02审计verification/review/final-check。需要25k原始证据才读009/010 record/verification；后续检索规划定向读006/008协议、既有SCALE_ASSESSMENT相应预算和代码，不递归读notes或重跑有效矩阵。
 
 以下是本次WIKI优先级调整之前的SCALE安排，已后移：
 

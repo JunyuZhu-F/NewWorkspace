@@ -1,0 +1,48 @@
+{
+  "name": "sleep-child",
+  "command": [
+    "D:\\anaconda3\\python.exe",
+    "-B",
+    "-c",
+    "import time;time.sleep(10)"
+  ],
+  "started_utc": "2026-10-27T09:02:14.910533+00:00",
+  "expected_exit": 0,
+  "pid": 35820,
+  "finished_utc": "2026-10-27T09:02:15.269007+00:00",
+  "elapsed_s": 0.3576222,
+  "unit_elapsed_s": 0.3605900000000001,
+  "private_peak_sampled_bytes": 5664768,
+  "available_min_sampled_bytes": 4969689088,
+  "maximum_sample_gap_s": 0.11423309999999998,
+  "violation": {
+    "private": 5664768,
+    "available": 4969689088,
+    "elapsed_s": 0.3419995,
+    "remaining_s": -0.1078209,
+    "output_bytes": 671
+  },
+  "target_period_s": 0.1,
+  "samples": [
+    {
+      "elapsed_s": 0.010445099999999985,
+      "private_tree_bytes": 1380352,
+      "available_bytes": 4985012224
+    },
+    {
+      "elapsed_s": 0.12467819999999996,
+      "private_tree_bytes": 5664768,
+      "available_bytes": 4982431744
+    },
+    {
+      "elapsed_s": 0.2348089,
+      "private_tree_bytes": 5664768,
+      "available_bytes": 4973289472
+    },
+    {
+      "elapsed_s": 0.3419995,
+      "private_tree_bytes": 5664768,
+      "available_bytes": 4969689088
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "status": "passed",
+  "fixture": "notes\\scale-prep-20261027-02\\fixtures\\arxiv-25000",
+  "records": 25000,
+  "queries": 20,
+  "directories": 428,
+  "geometry": [
+    {
+      "case": "move-large",
+      "source_directories": 13,
+      "source_entries": 2207,
+      "directories_before": 429,
+      "directories_after": 429
+    },
+    {
+      "case": "merge-large",
+      "source_directories": 13,
+      "source_entries": 2207,
+      "directories_before": 429,
+      "directories_after": 428
+    },
+    {
+      "case": "move-deep",
+      "source_directories": 1,
+      "source_entries": 1,
+      "directories_before": 428,
+      "directories_after": 428
+    },
+    {
+      "case": "merge-deep",
+      "source_directories": 1,
+      "source_entries": 1,
+      "directories_before": 428,
+      "directories_after": 427
+    }
+  ],
+  "runs": [
+    {
+      "output": "notes\\scale-prep-20261027-02\\outputs\\arxiv-25000-release",
+      "answers": 300,
+      "timings": 75,
+      "space": 15,
+      "scope_checks": 300,
+      "setup_s": 0.145063,
+      "cycle_s": 0.2361265,
+      "total_s": 0.3876333,
+      "files": {
+        "answers.tsv": "85139b5b3653feee8ed02e2fea04f346a9fe270b5f3a8afa580150573e29d908",
+        "clock.tsv": "239da7115a2619d2909a58eae084593f81302881a255ebbd38becbd5e234be24",
+        "space.tsv": "1cb4f0ee12071ce0df0f935e39914766e42a07f266cf257e0ead60b2db146440",
+        "timings.tsv": "36209a7be2669132278c67208994d5e8350d72190f04fe15b5b83fba86443219",
+        "wall.tsv": "2acd701499355e06370768477bc3d026b6c71ad1179c83772c0f47d06cb20dbe"
+      }
+    }
+  ],
+  "independent_oracle": "tuple-prefix enumeration; full native sets independently checked in C++",
+  "source_check": "pinned metadata hash from preparation; unchanged size/mtime, selected-source independent scan performed by pipeline",
+  "verification_s": 0.3948517,
+  "verifier_sha256": "bd61374dd32f7d6121c224a58a123b40cf7e9658f6aa676ae404fc6eefe19ac5"
+}

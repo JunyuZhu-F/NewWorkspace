@@ -1,0 +1,63 @@
+{
+  "name": "wiki-5000-release",
+  "command": [
+    "D:\\NewWorkspace\\projects\\P001-目录感知\\code\\build-Release-ScaleDirectory\\scale_directory.exe",
+    "notes\\scale-prep-20261027-01\\fixtures\\wiki-5000",
+    "notes\\scale-prep-20261027-01\\outputs\\wiki-5000-release",
+    "0",
+    "0",
+    "1",
+    "admission"
+  ],
+  "started_utc": "2026-10-27T08:31:33.410640+00:00",
+  "expected_exit": 0,
+  "exit_code": 0,
+  "elapsed_s": 2.0832603000000063,
+  "private_peak_sampled_bytes": 98738176,
+  "available_min_sampled_bytes": 5106782208,
+  "finished_utc": "2026-10-27T08:31:35.495386+00:00",
+  "violation": null,
+  "sampling_note": "target <=250ms; filesystem traversal/scheduler may increase intervals; samples not a quota or exact peak",
+  "samples": [
+    {
+      "elapsed_s": 0.016276599999997643,
+      "private_tree_bytes": 1236992,
+      "available_bytes": 5214949376
+    },
+    {
+      "elapsed_s": 0.29343339999999785,
+      "private_tree_bytes": 77111296,
+      "available_bytes": 5139554304
+    },
+    {
+      "elapsed_s": 0.5741844000000071,
+      "private_tree_bytes": 88129536,
+      "available_bytes": 5129408512
+    },
+    {
+      "elapsed_s": 0.8546589999999981,
+      "private_tree_bytes": 77451264,
+      "available_bytes": 5143343104
+    },
+    {
+      "elapsed_s": 1.1365373999999804,
+      "private_tree_bytes": 92917760,
+      "available_bytes": 5121990656
+    },
+    {
+      "elapsed_s": 1.4343596999999875,
+      "private_tree_bytes": 98738176,
+      "available_bytes": 5106782208
+    },
+    {
+      "elapsed_s": 1.7288308999999913,
+      "private_tree_bytes": 83906560,
+      "available_bytes": 5125005312
+    },
+    {
+      "elapsed_s": 2.007911699999994,
+      "private_tree_bytes": 0,
+      "available_bytes": 5184491520
+    }
+  ]
+}

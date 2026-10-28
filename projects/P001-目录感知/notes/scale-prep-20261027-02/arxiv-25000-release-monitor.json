@@ -1,0 +1,51 @@
+{
+  "name": "arxiv-25000-release",
+  "command": [
+    "D:\\NewWorkspace\\projects\\P001-目录感知\\code\\build-Release-ScaleDirectory\\scale_directory.exe",
+    "notes\\scale-prep-20261027-02\\fixtures\\arxiv-25000",
+    "notes\\scale-prep-20261027-02\\outputs\\arxiv-25000-release",
+    "0",
+    "0",
+    "1",
+    "admission"
+  ],
+  "started_utc": "2026-10-27T08:41:16.487087+00:00",
+  "expected_exit": 0,
+  "exit_code": 0,
+  "elapsed_s": 0.5026750000000106,
+  "private_peak_sampled_bytes": 26324992,
+  "available_min_sampled_bytes": 5258825728,
+  "finished_utc": "2026-10-27T08:41:16.990318+00:00",
+  "violation": null,
+  "target_period_s": 0.1,
+  "maximum_observed_sample_gap_s": 0.10975500000000693,
+  "observed_gap_within_250ms": true,
+  "sampling_note": "100ms whole-loop target; OS may delay scheduling; audit actual gaps; samples not a quota or exact peak",
+  "samples": [
+    {
+      "elapsed_s": 0.011312000000003763,
+      "private_tree_bytes": 958464,
+      "available_bytes": 5282017280
+    },
+    {
+      "elapsed_s": 0.12066749999999615,
+      "private_tree_bytes": 21475328,
+      "available_bytes": 5266481152
+    },
+    {
+      "elapsed_s": 0.22994339999999625,
+      "private_tree_bytes": 24739840,
+      "available_bytes": 5259784192
+    },
+    {
+      "elapsed_s": 0.3396984000000032,
+      "private_tree_bytes": 26324992,
+      "available_bytes": 5258825728
+    },
+    {
+      "elapsed_s": 0.447709500000002,
+      "private_tree_bytes": 0,
+      "available_bytes": 5285953536
+    }
+  ]
+}

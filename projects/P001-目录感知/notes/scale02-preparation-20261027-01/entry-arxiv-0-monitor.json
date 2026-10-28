@@ -1,0 +1,41 @@
+{
+  "name": "entry-arxiv-0",
+  "command": [
+    "D:\\NewWorkspace\\projects\\P001-目录感知\\code\\build-Release-ScaleFormal\\scale_formal.exe",
+    "D:\\NewWorkspace\\projects\\P001-目录感知\\notes\\scale-prep-20261027-02\\fixtures\\arxiv-5000",
+    "D:\\NewWorkspace\\projects\\P001-目录感知\\notes\\scale02-preparation-20261027-01\\entry\\arxiv-run-0",
+    "0",
+    "0",
+    "2",
+    "entry-check"
+  ],
+  "started_utc": "2026-10-27T09:03:42.182041+00:00",
+  "expected_exit": 0,
+  "pid": 30780,
+  "exit_code": 0,
+  "finished_utc": "2026-10-27T09:03:42.435405+00:00",
+  "elapsed_s": 0.25284689999999443,
+  "unit_elapsed_s": 88.0105116,
+  "private_peak_sampled_bytes": 6864896,
+  "available_min_sampled_bytes": 4994031616,
+  "maximum_sample_gap_s": 0.10718169999999816,
+  "violation": null,
+  "target_period_s": 0.1,
+  "samples": [
+    {
+      "elapsed_s": 0.015002999999992994,
+      "private_tree_bytes": 704512,
+      "available_bytes": 4994859008
+    },
+    {
+      "elapsed_s": 0.12000189999999122,
+      "private_tree_bytes": 6864896,
+      "available_bytes": 4994031616
+    },
+    {
+      "elapsed_s": 0.22718359999998938,
+      "private_tree_bytes": 0,
+      "available_bytes": 4999254016
+    }
+  ]
+}

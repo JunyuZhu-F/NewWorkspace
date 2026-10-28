@@ -1,0 +1,21 @@
+{
+  "cwd": "D:\\NewWorkspace\\projects\\P001-目录感知",
+  "commands": [
+    [
+      "D:/anaconda3/python.exe",
+      "-B",
+      "notes\\report02-status-audit-20261027-01\\audit.py"
+    ],
+    [
+      "D:/anaconda3/python.exe",
+      "-B",
+      "notes\\report02-status-audit-20261027-01\\stratify.py"
+    ],
+    [
+      "D:/anaconda3/python.exe",
+      "-B",
+      "notes\\report02-status-audit-20261027-01\\finalize.py"
+    ]
+  ],
+  "scope": "existing evidence/statistics only"
+}

@@ -1,0 +1,21 @@
+dataset,n,query_set,kind,worker_scenario_seconds,matrix_scenario_seconds,stress_2x_matrix_seconds,worker_under_existing_600_scenario,matrix_under_existing_1800_scenario,qualification
+ARXIV,10000,full501,retrieval,34.515999999995984,185.7359999999826,371.4719999999652,True,True,heuristic scenario only; not an upper bound or a measured runtime
+ARXIV,10000,compact64,retrieval,7.360740537524437,49.95970268762486,99.91940537524972,True,True,heuristic scenario only; not an upper bound or a measured runtime
+ARXIV,25000,full501,retrieval,86.29462361857183,464.75188877844516,929.5037775568903,True,True,heuristic scenario only; not an upper bound or a measured runtime
+ARXIV,25000,compact64,retrieval,18.244406357501354,124.50080247309275,249.0016049461855,True,True,heuristic scenario only; not an upper bound or a measured runtime
+ARXIV,50000,full501,retrieval,172.57999999997992,929.9240661937666,1859.8481323875333,True,True,heuristic scenario only; not an upper bound or a measured runtime
+ARXIV,50000,compact64,retrieval,36.48720449984379,249.46008869308602,498.92017738617204,True,True,heuristic scenario only; not an upper bound or a measured runtime
+ARXIV,100000,full501,retrieval,345.15618048895743,1860.1400513809847,3720.2801027619694,True,False,heuristic scenario only; not an upper bound or a measured runtime
+ARXIV,100000,compact64,retrieval,72.97058948868518,499.2120963796234,998.4241927592468,True,True,heuristic scenario only; not an upper bound or a measured runtime
+WIKI,10000,full456,retrieval,226.06200000000538,1160.7630000000283,2321.5260000000567,True,True,heuristic scenario only; not an upper bound or a measured runtime
+WIKI,10000,compact64,retrieval,36.14298852625401,211.1679426312714,422.3358852625428,True,True,heuristic scenario only; not an upper bound or a measured runtime
+WIKI,10000,up_to64_directory_cases,directory_default_only,64.4690000000046,340.3300000000236,680.6600000000471,True,True,heuristic scenario only; no matching new-N run
+WIKI,25000,full456,retrieval,564.6020553260082,2967.1379440567575,5934.275888113515,True,False,heuristic scenario only; not an upper bound or a measured runtime
+WIKI,25000,compact64,retrieval,90.52146606676877,596.7349977605602,1193.4699955211204,True,True,heuristic scenario only; not an upper bound or a measured runtime
+WIKI,25000,up_to64_directory_cases,directory_default_only,161.1725000000115,890.981736156412,1781.963472312824,True,True,heuristic scenario only; no matching new-N run
+WIKI,50000,full456,retrieval,1119.3068310761817,6053.891262872785,12107.78252574557,False,False,heuristic scenario only; not an upper bound or a measured runtime
+WIKI,50000,compact64,retrieval,180.751219691384,1361.1132059487968,2722.2264118975936,True,True,heuristic scenario only; not an upper bound or a measured runtime
+WIKI,50000,up_to64_directory_cases,directory_default_only,322.345000000023,1881.8319706841628,3763.6639413683256,True,False,heuristic scenario only; no matching new-N run
+WIKI,100000,full456,retrieval,2237.435218684125,12601.3195084044,25202.6390168088,False,False,heuristic scenario only; not an upper bound or a measured runtime
+WIKI,100000,compact64,retrieval,361.1179773436221,3219.7333017018864,6439.466603403773,True,False,heuristic scenario only; not an upper bound or a measured runtime
+WIKI,100000,up_to64_directory_cases,directory_default_only,644.690000000046,4058.617941368335,8117.23588273667,False,False,heuristic scenario only; no matching new-N run

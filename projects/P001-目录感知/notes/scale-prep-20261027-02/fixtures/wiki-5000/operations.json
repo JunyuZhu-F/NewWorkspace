@@ -1,0 +1,26 @@
+[
+  {
+    "case": "move-large",
+    "kind": "move",
+    "source": "/Nature/",
+    "target": "/__scale_prep__/"
+  },
+  {
+    "case": "merge-large",
+    "kind": "merge",
+    "source": "/__scale_prep__/Nature/",
+    "target": "/Universe/Matter/Phases_of_matter/Gases/Atmosphere/Atmosphere_of_Earth/Aerospace/Aerospace_engineering/Airport_infrastructure/Airport_chapels/"
+  },
+  {
+    "case": "move-deep",
+    "kind": "move",
+    "source": "/Life/Organisms/Eukaryotes/Animals/Animal_taxa/Animal_taxa_by_rank/Animal_unranked_clades/ParaHoxozoa/Bilaterians/Protostomes/Ecdysozoa/Panarthropoda/Arthropods/Arthropod_taxa/Arthropod_taxonomy/Insect_taxonomy/Lepidoptera_taxonomy/Glossata/Coelolepida/Myoglossata/Neolepidoptera/Heteroneura/Eulepidoptera/Ditrysia/Macrolepidoptera/Butterflies/Butterflies_by_location/Butterflies_by_continent/Butterflies_of_Asia/",
+    "target": "/__scale_prep__/"
+  },
+  {
+    "case": "merge-deep",
+    "kind": "merge",
+    "source": "/__scale_prep__/Butterflies_of_Asia/",
+    "target": "/Universe/Matter/Phases_of_matter/Gases/Atmosphere/Atmosphere_of_Earth/Aerospace/Aerospace_engineering/Airport_infrastructure/Airport_chapels/"
+  }
+]

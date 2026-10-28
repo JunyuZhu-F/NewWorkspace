@@ -1,0 +1,28 @@
+{
+  "name": "negative-query-mode",
+  "command": [
+    "D:\\NewWorkspace\\projects\\P001-目录感知\\code\\build-Release-ScaleDirectory\\scale_directory.exe",
+    "notes\\scale-prep-20261027-01\\negative-fixtures\\query-mode",
+    "notes\\scale-prep-20261027-01\\negative-outputs\\query-mode",
+    "0",
+    "0",
+    "1",
+    "admission"
+  ],
+  "started_utc": "2026-10-27T08:28:29.511540+00:00",
+  "expected_exit": 1,
+  "exit_code": 1,
+  "elapsed_s": 0.07166789999999423,
+  "private_peak_sampled_bytes": 700416,
+  "available_min_sampled_bytes": 5557112832,
+  "finished_utc": "2026-10-27T08:28:29.583830+00:00",
+  "violation": null,
+  "sampling_note": "target <=250ms; filesystem traversal/scheduler may increase intervals; samples not a quota or exact peak",
+  "samples": [
+    {
+      "elapsed_s": 0.01319610000000182,
+      "private_tree_bytes": 700416,
+      "available_bytes": 5559029760
+    }
+  ]
+}

@@ -1,0 +1,152 @@
+{
+  "stable_required_s": 20,
+  "samples": [
+    {
+      "utc": "2026-10-27T09:24:32.996316+00:00",
+      "elapsed_s": 0.0002079000000776432,
+      "available_bytes": 5936885760,
+      "disk_free_bytes": 464447234048,
+      "unit_remaining_s": 927.6639592
+    },
+    {
+      "utc": "2026-10-27T09:24:34.006534+00:00",
+      "elapsed_s": 1.0095671000000266,
+      "available_bytes": 5948293120,
+      "disk_free_bytes": 464447234048,
+      "unit_remaining_s": 926.6545994
+    },
+    {
+      "utc": "2026-10-27T09:24:35.019588+00:00",
+      "elapsed_s": 2.022649900000033,
+      "available_bytes": 5950115840,
+      "disk_free_bytes": 464447234048,
+      "unit_remaining_s": 925.6415167
+    },
+    {
+      "utc": "2026-10-27T09:24:36.021054+00:00",
+      "elapsed_s": 3.024130100000093,
+      "available_bytes": 5954826240,
+      "disk_free_bytes": 464447234048,
+      "unit_remaining_s": 924.6400358000001
+    },
+    {
+      "utc": "2026-10-27T09:24:37.030293+00:00",
+      "elapsed_s": 4.033336600000098,
+      "available_bytes": 5953536000,
+      "disk_free_bytes": 464447234048,
+      "unit_remaining_s": 923.6308298
+    },
+    {
+      "utc": "2026-10-27T09:24:38.041165+00:00",
+      "elapsed_s": 5.044549200000006,
+      "available_bytes": 5956820992,
+      "disk_free_bytes": 464447234048,
+      "unit_remaining_s": 922.6196169
+    },
+    {
+      "utc": "2026-10-27T09:24:39.049766+00:00",
+      "elapsed_s": 6.0529869000000645,
+      "available_bytes": 5966323712,
+      "disk_free_bytes": 464447234048,
+      "unit_remaining_s": 921.61118
+    },
+    {
+      "utc": "2026-10-27T09:24:40.059161+00:00",
+      "elapsed_s": 7.0622939000001,
+      "available_bytes": 5960376320,
+      "disk_free_bytes": 464447234048,
+      "unit_remaining_s": 920.6018726
+    },
+    {
+      "utc": "2026-10-27T09:24:41.069297+00:00",
+      "elapsed_s": 8.072446600000035,
+      "available_bytes": 5941366784,
+      "disk_free_bytes": 464447234048,
+      "unit_remaining_s": 919.5917198000001
+    },
+    {
+      "utc": "2026-10-27T09:24:42.084637+00:00",
+      "elapsed_s": 9.087406700000088,
+      "available_bytes": 5944033280,
+      "disk_free_bytes": 464447234048,
+      "unit_remaining_s": 918.5767596000001
+    },
+    {
+      "utc": "2026-10-27T09:24:43.096737+00:00",
+      "elapsed_s": 10.09975570000006,
+      "available_bytes": 5948456960,
+      "disk_free_bytes": 464447234048,
+      "unit_remaining_s": 917.5644110000001
+    },
+    {
+      "utc": "2026-10-27T09:24:44.109050+00:00",
+      "elapsed_s": 11.112077900000031,
+      "available_bytes": 5947486208,
+      "disk_free_bytes": 464447234048,
+      "unit_remaining_s": 916.5520881
+    },
+    {
+      "utc": "2026-10-27T09:24:45.117667+00:00",
+      "elapsed_s": 12.120826100000045,
+      "available_bytes": 5945470976,
+      "disk_free_bytes": 464447234048,
+      "unit_remaining_s": 915.5433402
+    },
+    {
+      "utc": "2026-10-27T09:24:46.128710+00:00",
+      "elapsed_s": 13.131751000000008,
+      "available_bytes": 5947453440,
+      "disk_free_bytes": 464447234048,
+      "unit_remaining_s": 914.5324154
+    },
+    {
+      "utc": "2026-10-27T09:24:47.142786+00:00",
+      "elapsed_s": 14.14595820000011,
+      "available_bytes": 5947977728,
+      "disk_free_bytes": 464447234048,
+      "unit_remaining_s": 913.5182081
+    },
+    {
+      "utc": "2026-10-27T09:24:48.144261+00:00",
+      "elapsed_s": 15.147378500000059,
+      "available_bytes": 5942784000,
+      "disk_free_bytes": 464447234048,
+      "unit_remaining_s": 912.516788
+    },
+    {
+      "utc": "2026-10-27T09:24:49.154898+00:00",
+      "elapsed_s": 16.158139400000096,
+      "available_bytes": 5943844864,
+      "disk_free_bytes": 464447234048,
+      "unit_remaining_s": 911.5060269
+    },
+    {
+      "utc": "2026-10-27T09:24:50.164794+00:00",
+      "elapsed_s": 17.167874400000073,
+      "available_bytes": 5946388480,
+      "disk_free_bytes": 464447234048,
+      "unit_remaining_s": 910.4962921
+    },
+    {
+      "utc": "2026-10-27T09:24:51.172294+00:00",
+      "elapsed_s": 18.1754138,
+      "available_bytes": 5935517696,
+      "disk_free_bytes": 464447234048,
+      "unit_remaining_s": 909.4887523
+    },
+    {
+      "utc": "2026-10-27T09:24:52.188139+00:00",
+      "elapsed_s": 19.191195900000025,
+      "available_bytes": 5938192384,
+      "disk_free_bytes": 464447234048,
+      "unit_remaining_s": 908.4729707
+    },
+    {
+      "utc": "2026-10-27T09:24:53.201014+00:00",
+      "elapsed_s": 20.204137200000105,
+      "available_bytes": 5948076032,
+      "disk_free_bytes": 464447234048,
+      "unit_remaining_s": 907.4600291
+    }
+  ]
+}

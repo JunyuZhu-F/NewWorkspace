@@ -1,0 +1,138 @@
+[
+  {
+    "name": "run-0",
+    "command": [
+      "D:\\NewWorkspace\\projects\\P001-目录感知\\experiments\\EXP-20261027-010\\build\\scale_formal.exe",
+      "D:\\NewWorkspace\\projects\\P001-目录感知\\experiments\\EXP-20261027-010\\input\\arxiv-25000",
+      "D:\\NewWorkspace\\projects\\P001-目录感知\\experiments\\EXP-20261027-010\\run-0",
+      "0",
+      "3",
+      "20",
+      "formal"
+    ],
+    "started_utc": "2026-10-27T09:25:16.890143+00:00",
+    "expected_exit": 0,
+    "pid": 38424,
+    "exit_code": 0,
+    "finished_utc": "2026-10-27T09:25:22.739186+00:00",
+    "elapsed_s": 5.846806599999923,
+    "unit_elapsed_s": 26.10324150000008,
+    "private_peak_sampled_bytes": 29118464,
+    "available_min_sampled_bytes": 5867393024,
+    "maximum_sample_gap_s": 0.1137320999999929,
+    "violation": null
+  },
+  {
+    "name": "run-1",
+    "command": [
+      "D:\\NewWorkspace\\projects\\P001-目录感知\\experiments\\EXP-20261027-010\\build\\scale_formal.exe",
+      "D:\\NewWorkspace\\projects\\P001-目录感知\\experiments\\EXP-20261027-010\\input\\arxiv-25000",
+      "D:\\NewWorkspace\\projects\\P001-目录感知\\experiments\\EXP-20261027-010\\run-1",
+      "1",
+      "3",
+      "20",
+      "formal"
+    ],
+    "started_utc": "2026-10-27T09:25:43.021788+00:00",
+    "expected_exit": 0,
+    "pid": 26036,
+    "exit_code": 0,
+    "finished_utc": "2026-10-27T09:25:48.822185+00:00",
+    "elapsed_s": 5.79815080000003,
+    "unit_elapsed_s": 52.186777400000096,
+    "private_peak_sampled_bytes": 29097984,
+    "available_min_sampled_bytes": 5842595840,
+    "maximum_sample_gap_s": 0.11078820000000178,
+    "violation": null
+  },
+  {
+    "name": "run-2",
+    "command": [
+      "D:\\NewWorkspace\\projects\\P001-目录感知\\experiments\\EXP-20261027-010\\build\\scale_formal.exe",
+      "D:\\NewWorkspace\\projects\\P001-目录感知\\experiments\\EXP-20261027-010\\input\\arxiv-25000",
+      "D:\\NewWorkspace\\projects\\P001-目录感知\\experiments\\EXP-20261027-010\\run-2",
+      "2",
+      "3",
+      "20",
+      "formal"
+    ],
+    "started_utc": "2026-10-27T09:26:09.064521+00:00",
+    "expected_exit": 0,
+    "pid": 15868,
+    "exit_code": 0,
+    "finished_utc": "2026-10-27T09:26:14.889979+00:00",
+    "elapsed_s": 5.823793900000055,
+    "unit_elapsed_s": 78.25380530000007,
+    "private_peak_sampled_bytes": 29286400,
+    "available_min_sampled_bytes": 5837926400,
+    "maximum_sample_gap_s": 0.11115219999999226,
+    "violation": null
+  },
+  {
+    "name": "run-3",
+    "command": [
+      "D:\\NewWorkspace\\projects\\P001-目录感知\\experiments\\EXP-20261027-010\\build\\scale_formal.exe",
+      "D:\\NewWorkspace\\projects\\P001-目录感知\\experiments\\EXP-20261027-010\\input\\arxiv-25000",
+      "D:\\NewWorkspace\\projects\\P001-目录感知\\experiments\\EXP-20261027-010\\run-3",
+      "3",
+      "3",
+      "20",
+      "formal"
+    ],
+    "started_utc": "2026-10-27T09:26:35.159916+00:00",
+    "expected_exit": 0,
+    "pid": 33148,
+    "exit_code": 0,
+    "finished_utc": "2026-10-27T09:26:40.997774+00:00",
+    "elapsed_s": 5.836904499999946,
+    "unit_elapsed_s": 104.36250140000004,
+    "private_peak_sampled_bytes": 29249536,
+    "available_min_sampled_bytes": 5857210368,
+    "maximum_sample_gap_s": 0.11297190000004775,
+    "violation": null
+  },
+  {
+    "name": "run-4",
+    "command": [
+      "D:\\NewWorkspace\\projects\\P001-目录感知\\experiments\\EXP-20261027-010\\build\\scale_formal.exe",
+      "D:\\NewWorkspace\\projects\\P001-目录感知\\experiments\\EXP-20261027-010\\input\\arxiv-25000",
+      "D:\\NewWorkspace\\projects\\P001-目录感知\\experiments\\EXP-20261027-010\\run-4",
+      "4",
+      "3",
+      "20",
+      "formal"
+    ],
+    "started_utc": "2026-10-27T09:27:01.240332+00:00",
+    "expected_exit": 0,
+    "pid": 38096,
+    "exit_code": 0,
+    "finished_utc": "2026-10-27T09:27:07.058919+00:00",
+    "elapsed_s": 5.818186900000001,
+    "unit_elapsed_s": 130.4231106000001,
+    "private_peak_sampled_bytes": 29200384,
+    "available_min_sampled_bytes": 5840846848,
+    "maximum_sample_gap_s": 0.11100880000003599,
+    "violation": null
+  },
+  {
+    "name": "verify-results",
+    "command": [
+      "D:\\anaconda3\\python.exe",
+      "-B",
+      "D:\\NewWorkspace\\projects\\P001-目录感知\\code\\scale_formal\\verify.py",
+      "D:\\NewWorkspace\\projects\\P001-目录感知\\experiments\\EXP-20261027-010\\config.json",
+      "D:\\NewWorkspace\\projects\\P001-目录感知\\experiments\\EXP-20261027-010\\analysis-01"
+    ],
+    "started_utc": "2026-10-27T09:27:27.258981+00:00",
+    "expected_exit": 0,
+    "pid": 22092,
+    "exit_code": 0,
+    "finished_utc": "2026-10-27T09:27:28.091196+00:00",
+    "elapsed_s": 0.8311509999998634,
+    "unit_elapsed_s": 151.45541460000015,
+    "private_peak_sampled_bytes": 31363072,
+    "available_min_sampled_bytes": 5860302848,
+    "maximum_sample_gap_s": 0.11148580000008224,
+    "violation": null
+  }
+]

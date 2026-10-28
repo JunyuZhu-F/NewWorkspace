@@ -1,0 +1,168 @@
+{
+  "name": "wiki-25000-release",
+  "command": [
+    "D:\\NewWorkspace\\projects\\P001-目录感知\\code\\build-Release-ScaleDirectory\\scale_directory.exe",
+    "notes\\scale-prep-20261027-01\\fixtures\\wiki-25000",
+    "notes\\scale-prep-20261027-01\\outputs\\wiki-25000-release",
+    "0",
+    "0",
+    "1",
+    "admission"
+  ],
+  "started_utc": "2026-10-27T08:33:17.150405+00:00",
+  "expected_exit": 0,
+  "exit_code": 0,
+  "elapsed_s": 8.14779100000004,
+  "private_peak_sampled_bytes": 320843776,
+  "available_min_sampled_bytes": 4917248000,
+  "finished_utc": "2026-10-27T08:33:25.299073+00:00",
+  "violation": null,
+  "sampling_note": "target <=250ms; filesystem traversal/scheduler may increase intervals; samples not a quota or exact peak",
+  "samples": [
+    {
+      "elapsed_s": 0.015482500000018717,
+      "private_tree_bytes": 700416,
+      "available_bytes": 5204471808
+    },
+    {
+      "elapsed_s": 0.3072923000000287,
+      "private_tree_bytes": 87379968,
+      "available_bytes": 5118234624
+    },
+    {
+      "elapsed_s": 0.5882493000000295,
+      "private_tree_bytes": 176742400,
+      "available_bytes": 5037481984
+    },
+    {
+      "elapsed_s": 0.866421100000025,
+      "private_tree_bytes": 216813568,
+      "available_bytes": 5036523520
+    },
+    {
+      "elapsed_s": 1.146165300000007,
+      "private_tree_bytes": 232148992,
+      "available_bytes": 5012660224
+    },
+    {
+      "elapsed_s": 1.4388936000000285,
+      "private_tree_bytes": 303697920,
+      "available_bytes": 4936511488
+    },
+    {
+      "elapsed_s": 1.7363818000000038,
+      "private_tree_bytes": 270057472,
+      "available_bytes": 4968022016
+    },
+    {
+      "elapsed_s": 2.015979100000038,
+      "private_tree_bytes": 291995648,
+      "available_bytes": 4943945728
+    },
+    {
+      "elapsed_s": 2.327247400000033,
+      "private_tree_bytes": 308498432,
+      "available_bytes": 4920193024
+    },
+    {
+      "elapsed_s": 2.6093559000000255,
+      "private_tree_bytes": 304599040,
+      "available_bytes": 4936921088
+    },
+    {
+      "elapsed_s": 2.9040535999999975,
+      "private_tree_bytes": 297512960,
+      "available_bytes": 4941803520
+    },
+    {
+      "elapsed_s": 3.1986808999999994,
+      "private_tree_bytes": 224604160,
+      "available_bytes": 5003984896
+    },
+    {
+      "elapsed_s": 3.492013799999995,
+      "private_tree_bytes": 235872256,
+      "available_bytes": 5007699968
+    },
+    {
+      "elapsed_s": 3.7754269000000136,
+      "private_tree_bytes": 271335424,
+      "available_bytes": 4970037248
+    },
+    {
+      "elapsed_s": 4.055053799999996,
+      "private_tree_bytes": 313483264,
+      "available_bytes": 4927492096
+    },
+    {
+      "elapsed_s": 4.337555500000008,
+      "private_tree_bytes": 290488320,
+      "available_bytes": 4947075072
+    },
+    {
+      "elapsed_s": 4.6172143000000005,
+      "private_tree_bytes": 316133376,
+      "available_bytes": 4917248000
+    },
+    {
+      "elapsed_s": 4.897547700000018,
+      "private_tree_bytes": 307302400,
+      "available_bytes": 4929236992
+    },
+    {
+      "elapsed_s": 5.192782800000032,
+      "private_tree_bytes": 320843776,
+      "available_bytes": 4927156224
+    },
+    {
+      "elapsed_s": 5.503232000000025,
+      "private_tree_bytes": 317657088,
+      "available_bytes": 4931457024
+    },
+    {
+      "elapsed_s": 5.799009000000012,
+      "private_tree_bytes": 300605440,
+      "available_bytes": 4932423680
+    },
+    {
+      "elapsed_s": 6.093011700000034,
+      "private_tree_bytes": 318234624,
+      "available_bytes": 4934582272
+    },
+    {
+      "elapsed_s": 6.387974600000007,
+      "private_tree_bytes": 264421376,
+      "available_bytes": 4966268928
+    },
+    {
+      "elapsed_s": 6.667256400000042,
+      "private_tree_bytes": 271310848,
+      "available_bytes": 4988092416
+    },
+    {
+      "elapsed_s": 6.944193299999995,
+      "private_tree_bytes": 277782528,
+      "available_bytes": 4960972800
+    },
+    {
+      "elapsed_s": 7.22281989999999,
+      "private_tree_bytes": 280846336,
+      "available_bytes": 4972040192
+    },
+    {
+      "elapsed_s": 7.501150700000039,
+      "private_tree_bytes": 278065152,
+      "available_bytes": 4967706624
+    },
+    {
+      "elapsed_s": 7.780890600000021,
+      "private_tree_bytes": 278069248,
+      "available_bytes": 4971151360
+    },
+    {
+      "elapsed_s": 8.075876499999993,
+      "private_tree_bytes": 0,
+      "available_bytes": 5216473088
+    }
+  ]
+}

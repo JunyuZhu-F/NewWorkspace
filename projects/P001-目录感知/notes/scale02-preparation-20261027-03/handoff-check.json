@@ -1,0 +1,32 @@
+{
+  "status": "passed",
+  "finished_utc": "2026-10-27T09:33:21.648308+00:00",
+  "git_head": "2101c84f24b3cbbcd093b38073a5c9e372815f9d",
+  "old_53_sources_unchanged": true,
+  "current_15_sources_unchanged": true,
+  "formal_workers": 10,
+  "raw_rows": 31740,
+  "measurement_rows": 27600,
+  "warmup_rows": 4140,
+  "full_scope_checks": 141450,
+  "active_tasks": [],
+  "git_diff_check": "passed",
+  "document_and_final_evidence_sha256": {
+    "STATE.md": "eeae8043da5604c29df65775debd92e153d60bc585c925d294f4232a1585fba0",
+    "TASK.md": "2de3b585e9d4bdf153e47d51392fa4b4102a21f0f7567271634afaa31a4b97df",
+    "REPRODUCTION_PLAN.md": "4afea5403d1363988a71aeddce54bdd66a630f495270a548ad1a9a33be6eb77a",
+    "README.md": "27ae014cd2fd08306642444ea256dba994268c8d36f3ff9031779262c3aac0e8",
+    "EXPERIMENTS.md": "12dac093f14b80cd14b803c57c4f6dee2701e80dc8007731b5b747d011092139",
+    "SCALE_ASSESSMENT.md": "9e451c8b7675700553b4919ca9a70e163fa2fb84f2a5be9ecfeb35145792c0d5",
+    "experiments\\EXP-20261027-009\\record.md": "6c5b5a74086015585cfb12225c779aac030660d177905465f87a32bc6d40dd75",
+    "experiments\\EXP-20261027-009\\review.md": "d2758ad6fd203e247574a22a34a407d5206a40cc2c26216d6fffca9c9e79c520",
+    "experiments\\EXP-20261027-009\\review-check.json": "61f3593d1d62faeea958a628ec63a746c8557fbc833e5bed9f507f6bb340ebf2",
+    "experiments\\EXP-20261027-009\\final-check.json": "bef04f8ea64c796d58f07c61dbc2482c720e83da67b0a492082926e7f603d57a",
+    "experiments\\EXP-20261027-009\\analysis-01\\verification.json": "4f589fdd11ed07de5afcc7ebf4afe2261276b97e85afb52793fbd85e6cfca174",
+    "experiments\\EXP-20261027-010\\record.md": "09fbc8cffeca5e80afb5eb956f3f8e063dd75e3b46a426df77f2647deddb528d",
+    "experiments\\EXP-20261027-010\\review.md": "d2758ad6fd203e247574a22a34a407d5206a40cc2c26216d6fffca9c9e79c520",
+    "experiments\\EXP-20261027-010\\review-check.json": "ef0f6b8b5f54d8d6c9341e463672a361fdf9e61f42193d2857d85e4195cef596",
+    "experiments\\EXP-20261027-010\\final-check.json": "b1fa15f4754c997b5d180ca4f299a2ada323cfaa7da7f8a5da8d5d37ad7f54d6",
+    "experiments\\EXP-20261027-010\\analysis-01\\verification.json": "755cf418e72f89379a22a25a1218c613b0b43dd34d86693fdcb12ad62b2bc424"
+  }
+}

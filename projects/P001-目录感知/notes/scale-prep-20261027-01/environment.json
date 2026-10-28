@@ -1,0 +1,12 @@
+{
+  "utc": "2026-10-27T08:27:20.597364+00:00",
+  "python": "3.9.13 (main, Aug 25 2022, 23:51:50) [MSC v.1916 64 bit (AMD64)]",
+  "executable": "D:\\anaconda3\\python.exe",
+  "psutil": "5.9.0",
+  "logical_cpus": 20,
+  "ram_bytes": 16978403328,
+  "available_bytes": 5280038912,
+  "disk_free_bytes": 464612802560,
+  "resource_scope": "private sum of child process tree; output evidence root capped",
+  "vector_payload_bytes_read": 0
+}

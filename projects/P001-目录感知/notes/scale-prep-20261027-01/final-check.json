@@ -1,0 +1,10 @@
+{
+  "status": "passed",
+  "independent_source": true,
+  "negative_contracts": 6,
+  "fixtures": 4,
+  "workers": 6,
+  "release_asan_pairs": 2,
+  "old_46_sources_unchanged": true,
+  "formal_matrix_started": false
+}

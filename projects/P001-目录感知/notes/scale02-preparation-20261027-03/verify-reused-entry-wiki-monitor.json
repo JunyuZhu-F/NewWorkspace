@@ -1,0 +1,64 @@
+{
+  "name": "verify-reused-entry-wiki",
+  "command": [
+    "D:\\anaconda3\\python.exe",
+    "-B",
+    "D:\\NewWorkspace\\projects\\P001-目录感知\\code\\scale_formal\\verify.py",
+    "D:\\NewWorkspace\\projects\\P001-目录感知\\notes\\scale02-preparation-20261027-03\\entry-wiki.json",
+    "D:\\NewWorkspace\\projects\\P001-目录感知\\notes\\scale02-preparation-20261027-03\\entry-wiki-analysis"
+  ],
+  "started_utc": "2026-10-27T09:09:59.292098+00:00",
+  "expected_exit": 0,
+  "pid": 17968,
+  "exit_code": 0,
+  "finished_utc": "2026-10-27T09:10:00.095107+00:00",
+  "elapsed_s": 0.8014067999999952,
+  "unit_elapsed_s": 42.628268999999996,
+  "private_peak_sampled_bytes": 32509952,
+  "available_min_sampled_bytes": 5727752192,
+  "maximum_sample_gap_s": 0.11057359999999505,
+  "violation": null,
+  "target_period_s": 0.1,
+  "samples": [
+    {
+      "elapsed_s": 0.019696299999999667,
+      "private_tree_bytes": 1277952,
+      "available_bytes": 5762908160
+    },
+    {
+      "elapsed_s": 0.12212759999999889,
+      "private_tree_bytes": 5324800,
+      "available_bytes": 5758427136
+    },
+    {
+      "elapsed_s": 0.23173359999999832,
+      "private_tree_bytes": 13029376,
+      "available_bytes": 5748649984
+    },
+    {
+      "elapsed_s": 0.3423071999999934,
+      "private_tree_bytes": 20389888,
+      "available_bytes": 5742415872
+    },
+    {
+      "elapsed_s": 0.4508265999999992,
+      "private_tree_bytes": 29298688,
+      "available_bytes": 5727789056
+    },
+    {
+      "elapsed_s": 0.5611377999999974,
+      "private_tree_bytes": 32509952,
+      "available_bytes": 5727752192
+    },
+    {
+      "elapsed_s": 0.6690559999999977,
+      "private_tree_bytes": 29569024,
+      "available_bytes": 5730267136
+    },
+    {
+      "elapsed_s": 0.7792789999999954,
+      "private_tree_bytes": 0,
+      "available_bytes": 5744963584
+    }
+  ]
+}

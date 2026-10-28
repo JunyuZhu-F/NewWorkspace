@@ -1,0 +1,10 @@
+{
+  "status": "passed",
+  "entry_workers": 7,
+  "arxiv_all_five_run_ids": true,
+  "wiki_release_asan_two_pass": true,
+  "reused_entry_workers": 7,
+  "negative_contracts_provenance": "D:\\NewWorkspace\\projects\\P001-目录感知\\notes\\scale02-preparation-20261027-01",
+  "answers_match_frozen_admission": true,
+  "old_53_sources_unchanged": true
+}

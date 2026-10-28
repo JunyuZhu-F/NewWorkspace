@@ -1,0 +1,44 @@
+[
+  {
+    "name": "verify-reused-entry-arxiv",
+    "command": [
+      "D:\\anaconda3\\python.exe",
+      "-B",
+      "D:\\NewWorkspace\\projects\\P001-目录感知\\code\\scale_formal\\verify.py",
+      "D:\\NewWorkspace\\projects\\P001-目录感知\\notes\\scale02-preparation-20261027-03\\entry-arxiv.json",
+      "D:\\NewWorkspace\\projects\\P001-目录感知\\notes\\scale02-preparation-20261027-03\\entry-arxiv-analysis"
+    ],
+    "started_utc": "2026-10-27T09:09:38.612512+00:00",
+    "expected_exit": 0,
+    "pid": 29824,
+    "exit_code": 0,
+    "finished_utc": "2026-10-27T09:09:39.082171+00:00",
+    "elapsed_s": 0.468434000000002,
+    "unit_elapsed_s": 21.6157847,
+    "private_peak_sampled_bytes": 13836288,
+    "available_min_sampled_bytes": 5736869888,
+    "maximum_sample_gap_s": 0.10941829999999797,
+    "violation": null
+  },
+  {
+    "name": "verify-reused-entry-wiki",
+    "command": [
+      "D:\\anaconda3\\python.exe",
+      "-B",
+      "D:\\NewWorkspace\\projects\\P001-目录感知\\code\\scale_formal\\verify.py",
+      "D:\\NewWorkspace\\projects\\P001-目录感知\\notes\\scale02-preparation-20261027-03\\entry-wiki.json",
+      "D:\\NewWorkspace\\projects\\P001-目录感知\\notes\\scale02-preparation-20261027-03\\entry-wiki-analysis"
+    ],
+    "started_utc": "2026-10-27T09:09:59.292098+00:00",
+    "expected_exit": 0,
+    "pid": 17968,
+    "exit_code": 0,
+    "finished_utc": "2026-10-27T09:10:00.095107+00:00",
+    "elapsed_s": 0.8014067999999952,
+    "unit_elapsed_s": 42.628268999999996,
+    "private_peak_sampled_bytes": 32509952,
+    "available_min_sampled_bytes": 5727752192,
+    "maximum_sample_gap_s": 0.11057359999999505,
+    "violation": null
+  }
+]

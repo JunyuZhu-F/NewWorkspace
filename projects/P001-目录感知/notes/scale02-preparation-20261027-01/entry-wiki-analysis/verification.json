@@ -1,0 +1,243 @@
+{
+  "status": "passed",
+  "records": 5000,
+  "queries": 52,
+  "directories": 13863,
+  "geometry": [
+    {
+      "case": "move-large",
+      "source_directories": 5311,
+      "source_entries": 2390,
+      "directories_before": 13864,
+      "directories_after": 13864
+    },
+    {
+      "case": "merge-large",
+      "source_directories": 5311,
+      "source_entries": 2390,
+      "directories_before": 13864,
+      "directories_after": 13863
+    },
+    {
+      "case": "move-deep",
+      "source_directories": 1,
+      "source_entries": 1,
+      "directories_before": 13863,
+      "directories_after": 13863
+    },
+    {
+      "case": "merge-deep",
+      "source_directories": 1,
+      "source_entries": 1,
+      "directories_before": 13863,
+      "directories_after": 13862
+    }
+  ],
+  "runs": [
+    {
+      "path": "D:\\NewWorkspace\\projects\\P001-目录感知\\notes\\scale02-preparation-20261027-01\\entry\\wiki-release",
+      "run": 1,
+      "order": [
+        "PE-OFFLINE",
+        "TrieHI",
+        "PE-ONLINE"
+      ],
+      "timing_rows": 342,
+      "measurement_rows": 342,
+      "warmup_rows": 0,
+      "answers": 780,
+      "space_rows": 30,
+      "full_scope_checks": 1560,
+      "files": {
+        "answers.tsv": "66e245bd6df2df07819d47d8cdc0c39c49e27637453eef465d76963f1c88c1d6",
+        "clock.tsv": "884921516eca559ec7595ec0b9ac8d6a5d257ddef3eb94ca98531089b34a2e6e",
+        "space.tsv": "8fd9f6889bb0615875892331c578de15ac312c6534400e4b453a977a3422b279",
+        "timings.tsv": "7755d80a92935549a621752ac531a45df91d804afd1473c0b93f3d2cb462d80a",
+        "wall.tsv": "34f614ebace634e1a0114b283eda158c039ddf2d09484446027c1513b0d3f28b"
+      }
+    },
+    {
+      "path": "D:\\NewWorkspace\\projects\\P001-目录感知\\notes\\scale02-preparation-20261027-01\\entry\\wiki-asan",
+      "run": 1,
+      "order": [
+        "PE-OFFLINE",
+        "TrieHI",
+        "PE-ONLINE"
+      ],
+      "timing_rows": 342,
+      "measurement_rows": 342,
+      "warmup_rows": 0,
+      "answers": 780,
+      "space_rows": 30,
+      "full_scope_checks": 1560,
+      "files": {
+        "answers.tsv": "66e245bd6df2df07819d47d8cdc0c39c49e27637453eef465d76963f1c88c1d6",
+        "clock.tsv": "b8803fbf3d86908e6b7abd3377cba1c3759b9e74ce4a97736b710756c8374d03",
+        "space.tsv": "8fd9f6889bb0615875892331c578de15ac312c6534400e4b453a977a3422b279",
+        "timings.tsv": "bebdbba1ced8f5690c515c876c49d105b94ed84719d87e6d2bf09600909680bf",
+        "wall.tsv": "37a829fa6687da6f866847693b6b3dad3347d44b204010a62fb9f277dedd2de7"
+      }
+    }
+  ],
+  "timing_rows": 684,
+  "measurement_rows": 684,
+  "warmup_rows": 0,
+  "full_scope_checks": 3120,
+  "verification_s": 0.4851565,
+  "summary": [
+    {
+      "strategy": "PE-OFFLINE",
+      "group": "build",
+      "processes": 1,
+      "mean_us": 1324543.85,
+      "sd_process_means_us": null
+    },
+    {
+      "strategy": "PE-OFFLINE",
+      "group": "merge-deep",
+      "processes": 1,
+      "mean_us": 531.3,
+      "sd_process_means_us": null
+    },
+    {
+      "strategy": "PE-OFFLINE",
+      "group": "merge-large",
+      "processes": 1,
+      "mean_us": 306735.025,
+      "sd_process_means_us": null
+    },
+    {
+      "strategy": "PE-OFFLINE",
+      "group": "move-deep",
+      "processes": 1,
+      "mean_us": 486.825,
+      "sd_process_means_us": null
+    },
+    {
+      "strategy": "PE-OFFLINE",
+      "group": "move-large",
+      "processes": 1,
+      "mean_us": 244996.85,
+      "sd_process_means_us": null
+    },
+    {
+      "strategy": "PE-OFFLINE",
+      "group": "query-local",
+      "processes": 1,
+      "mean_us": 104.48942307692307,
+      "sd_process_means_us": null
+    },
+    {
+      "strategy": "PE-OFFLINE",
+      "group": "query-recursive",
+      "processes": 1,
+      "mean_us": 23.26153846153846,
+      "sd_process_means_us": null
+    },
+    {
+      "strategy": "PE-ONLINE",
+      "group": "build",
+      "processes": 1,
+      "mean_us": 1031140.625,
+      "sd_process_means_us": null
+    },
+    {
+      "strategy": "PE-ONLINE",
+      "group": "merge-deep",
+      "processes": 1,
+      "mean_us": 481.6,
+      "sd_process_means_us": null
+    },
+    {
+      "strategy": "PE-ONLINE",
+      "group": "merge-large",
+      "processes": 1,
+      "mean_us": 326026.675,
+      "sd_process_means_us": null
+    },
+    {
+      "strategy": "PE-ONLINE",
+      "group": "move-deep",
+      "processes": 1,
+      "mean_us": 254.95,
+      "sd_process_means_us": null
+    },
+    {
+      "strategy": "PE-ONLINE",
+      "group": "move-large",
+      "processes": 1,
+      "mean_us": 262787.4,
+      "sd_process_means_us": null
+    },
+    {
+      "strategy": "PE-ONLINE",
+      "group": "query-local",
+      "processes": 1,
+      "mean_us": 18.653846153846153,
+      "sd_process_means_us": null
+    },
+    {
+      "strategy": "PE-ONLINE",
+      "group": "query-recursive",
+      "processes": 1,
+      "mean_us": 3545.5173076923074,
+      "sd_process_means_us": null
+    },
+    {
+      "strategy": "TrieHI",
+      "group": "build",
+      "processes": 1,
+      "mean_us": 486339.775,
+      "sd_process_means_us": null
+    },
+    {
+      "strategy": "TrieHI",
+      "group": "merge-deep",
+      "processes": 1,
+      "mean_us": 418.275,
+      "sd_process_means_us": null
+    },
+    {
+      "strategy": "TrieHI",
+      "group": "merge-large",
+      "processes": 1,
+      "mean_us": 1128.725,
+      "sd_process_means_us": null
+    },
+    {
+      "strategy": "TrieHI",
+      "group": "move-deep",
+      "processes": 1,
+      "mean_us": 123.35000000000001,
+      "sd_process_means_us": null
+    },
+    {
+      "strategy": "TrieHI",
+      "group": "move-large",
+      "processes": 1,
+      "mean_us": 122.375,
+      "sd_process_means_us": null
+    },
+    {
+      "strategy": "TrieHI",
+      "group": "query-local",
+      "processes": 1,
+      "mean_us": 113.34711538461539,
+      "sd_process_means_us": null
+    },
+    {
+      "strategy": "TrieHI",
+      "group": "query-recursive",
+      "processes": 1,
+      "mean_us": 33.88942307692308,
+      "sd_process_means_us": null
+    }
+  ],
+  "verifier_sha256": "313a00e7d02f44412ab7258767131c63144df71e8ffe7f144ce8765cdd88bb5c",
+  "independent_oracle_sha256": "bd61374dd32f7d6121c224a58a123b40cf7e9658f6aa676ae404fc6eefe19ac5",
+  "csv_files": {
+    "per-case-run.csv": "56b6df5071483bbe3b11586ad779b08a3f478d8b24c62f255c2c3107543a0407",
+    "per-run.csv": "cf37984cdd6d8121659e405adf88bb539e7edf7b371bb1a8cbf62a33a24b3012",
+    "summary.csv": "23a4d45d0ce17bb33b772f1ddc7a186a7dbfb6fcbcc9795a4ea9579d286d6201"
+  }
+}

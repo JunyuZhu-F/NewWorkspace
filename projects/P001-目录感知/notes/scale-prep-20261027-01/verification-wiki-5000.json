@@ -1,0 +1,77 @@
+{
+  "status": "passed",
+  "fixture": "notes\\scale-prep-20261027-01\\fixtures\\wiki-5000",
+  "records": 5000,
+  "queries": 52,
+  "directories": 13863,
+  "geometry": [
+    {
+      "case": "move-large",
+      "source_directories": 5311,
+      "source_entries": 2390,
+      "directories_before": 13864,
+      "directories_after": 13864
+    },
+    {
+      "case": "merge-large",
+      "source_directories": 5311,
+      "source_entries": 2390,
+      "directories_before": 13864,
+      "directories_after": 13863
+    },
+    {
+      "case": "move-deep",
+      "source_directories": 1,
+      "source_entries": 1,
+      "directories_before": 13863,
+      "directories_after": 13863
+    },
+    {
+      "case": "merge-deep",
+      "source_directories": 1,
+      "source_entries": 1,
+      "directories_before": 13863,
+      "directories_after": 13862
+    }
+  ],
+  "runs": [
+    {
+      "output": "notes\\scale-prep-20261027-01\\outputs\\wiki-5000-release",
+      "answers": 780,
+      "timings": 171,
+      "space": 15,
+      "scope_checks": 780,
+      "setup_s": 0.1969192,
+      "cycle_s": 1.6101657,
+      "total_s": 1.8133266,
+      "files": {
+        "answers.tsv": "09df220b8f5220ed08c5dc652b62f3218317c58a7efec5967898745574af6842",
+        "clock.tsv": "c5d72167ca9d905637bdfa422425c326fc18ecfb3c388ec12cd55ac214a384b3",
+        "space.tsv": "e6dd1b32db9c1cf65937dcaddf671e54dd9881ac48265aace37af87ad1513156",
+        "timings.tsv": "fba1b6348ccebb6a8dcd21025b7bf3e44d245a76413260238474954cc1e31318",
+        "wall.tsv": "ff50587d5a3cf784385c3d4b12c790f590da118ce355988b6f9104a4881073a3"
+      }
+    },
+    {
+      "output": "notes\\scale-prep-20261027-01\\outputs\\wiki-5000-asan",
+      "answers": 780,
+      "timings": 171,
+      "space": 15,
+      "scope_checks": 780,
+      "setup_s": 3.9695266,
+      "cycle_s": 35.562157,
+      "total_s": 39.5483444,
+      "files": {
+        "answers.tsv": "09df220b8f5220ed08c5dc652b62f3218317c58a7efec5967898745574af6842",
+        "clock.tsv": "2705b2c49b9da909ac08583bd76a6dec352ba31c0a0d6fcd079081d0208fbab5",
+        "space.tsv": "e6dd1b32db9c1cf65937dcaddf671e54dd9881ac48265aace37af87ad1513156",
+        "timings.tsv": "02c116e6d8cb171ce05c91cb2823cb1f6682135a672f722e7a6a58426a0b24e7",
+        "wall.tsv": "cc9cf5c7c340c5ed06440ca26d02ced543d725c195f93420e118ef0b1542e43a"
+      }
+    }
+  ],
+  "independent_oracle": "tuple-prefix enumeration; full native sets independently checked in C++",
+  "source_check": "pinned metadata hash from preparation; unchanged size/mtime, selected-source independent scan performed by pipeline",
+  "verification_s": 0.46506210000000003,
+  "verifier_sha256": "bd61374dd32f7d6121c224a58a123b40cf7e9658f6aa676ae404fc6eefe19ac5"
+}

@@ -1,0 +1,17 @@
+{
+  "status": "passed",
+  "started_utc": "2026-10-27T09:42:43.655261+00:00",
+  "scope": "REPORT-01-CURRENT-01; no new experiments, vector reads, compilation or algorithm edits",
+  "finished_utc": "2026-10-27T09:42:45.642359+00:00",
+  "git_head": "2101c84f24b3cbbcd093b38073a5c9e372815f9d",
+  "hash_checks": 351,
+  "worker_files": 50,
+  "old_report_source_bindings_checked": 31,
+  "old_53_current_sources_unchanged": true,
+  "per_run_statistic_cells_checked": 210,
+  "per_case_statistic_cells_checked": 1380,
+  "active_tasks": [],
+  "new_measurements": 0,
+  "vector_payload_bytes_read": 0,
+  "audit_script_sha256": "cae5f63ccf69a2a39b2bfd81328165f45c1106f00ac51a9939605ee5e9eef00a"
+}

@@ -1,0 +1,55 @@
+{
+  "name": "verify-arxiv-25000",
+  "command": [
+    "D:\\anaconda3\\python.exe",
+    "-B",
+    "D:\\NewWorkspace\\projects\\P001-目录感知\\code\\scale_directory\\verify.py",
+    "notes\\scale-prep-20261027-02\\fixtures\\arxiv-25000",
+    "notes\\scale-prep-20261027-02\\verification-arxiv-25000.json",
+    "notes\\scale-prep-20261027-02\\outputs\\arxiv-25000-release"
+  ],
+  "started_utc": "2026-10-27T08:41:37.186314+00:00",
+  "expected_exit": 0,
+  "exit_code": 0,
+  "elapsed_s": 0.619303699999989,
+  "private_peak_sampled_bytes": 30097408,
+  "available_min_sampled_bytes": 5255643136,
+  "finished_utc": "2026-10-27T08:41:37.806575+00:00",
+  "violation": null,
+  "target_period_s": 0.1,
+  "maximum_observed_sample_gap_s": 0.10917480000000523,
+  "observed_gap_within_250ms": true,
+  "sampling_note": "100ms whole-loop target; OS may delay scheduling; audit actual gaps; samples not a quota or exact peak",
+  "samples": [
+    {
+      "elapsed_s": 0.016432899999983874,
+      "private_tree_bytes": 1392640,
+      "available_bytes": 5287178240
+    },
+    {
+      "elapsed_s": 0.11982269999998607,
+      "private_tree_bytes": 5771264,
+      "available_bytes": 5284040704
+    },
+    {
+      "elapsed_s": 0.22750739999997904,
+      "private_tree_bytes": 21839872,
+      "available_bytes": 5264588800
+    },
+    {
+      "elapsed_s": 0.336324999999988,
+      "private_tree_bytes": 29642752,
+      "available_bytes": 5255643136
+    },
+    {
+      "elapsed_s": 0.4450423999999771,
+      "private_tree_bytes": 30097408,
+      "available_bytes": 5255974912
+    },
+    {
+      "elapsed_s": 0.5542171999999823,
+      "private_tree_bytes": 28585984,
+      "available_bytes": 5261053952
+    }
+  ]
+}

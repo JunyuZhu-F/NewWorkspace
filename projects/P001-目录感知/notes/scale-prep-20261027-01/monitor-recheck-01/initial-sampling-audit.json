@@ -1,0 +1,27 @@
+{
+  "maximum_gap_s": 0.34199470000000076,
+  "per_command": {
+    "arxiv-25000-release-monitor.json": 0.2657508000000064,
+    "arxiv-5000-asan-monitor.json": 0.281171100000023,
+    "arxiv-5000-release-monitor.json": 0.2763939000000164,
+    "build-asan-monitor.json": 0.34199470000000076,
+    "build-release-monitor.json": 0.2489340999999996,
+    "negative-global-descending-monitor.json": 0,
+    "negative-global-duplicate-monitor.json": 0,
+    "negative-global-outside-monitor.json": 0,
+    "negative-query-mode-monitor.json": 0,
+    "negative-shape-mismatch-monitor.json": 0,
+    "negative-shape-zero-monitor.json": 0,
+    "prepare-monitor.json": 0.28154349999999795,
+    "source-check-monitor.json": 0.2813151000000005,
+    "verify-arxiv-25000-monitor.json": 0.28074620000001005,
+    "verify-arxiv-5000-monitor.json": 0.2654139999999927,
+    "verify-wiki-25000-monitor.json": 0.2959632999999826,
+    "verify-wiki-5000-monitor.json": 0.2814291000000253,
+    "wiki-25000-release-monitor.json": 0.3112682999999947,
+    "wiki-5000-asan-monitor.json": 0.3106133999999656,
+    "wiki-5000-release-monitor.json": 0.2978223000000071
+  },
+  "initial_gap_within_250ms": false,
+  "assessment": "Original correctness and budget samples valid; strict <=250ms original monitoring criterion NOT met. Preserve all initial files unchanged."
+}

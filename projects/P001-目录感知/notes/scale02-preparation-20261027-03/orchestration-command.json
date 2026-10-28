@@ -1,0 +1,12 @@
+{
+  "cwd": "D:\\NewWorkspace\\projects\\P001-\u76ee\u5f55\u611f\u77e5",
+  "command": [
+    "D:/anaconda3/python.exe",
+    "-B",
+    "code/scale_formal/pipeline.py",
+    "notes/scale02-preparation-20261027-01"
+  ],
+  "note": "Actual successful-recovery invocation; initial 01 and rejected 02 source snapshots/statuses retained; no native entry worker repeated.",
+  "original_entry_evidence": "notes/scale02-preparation-20261027-01",
+  "rejected_recovery": "notes/scale02-preparation-20261027-02"
+}

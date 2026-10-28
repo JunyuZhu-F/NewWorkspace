@@ -1,0 +1,20 @@
+D:\Microsoft Visual Studio\VC\Tools\MSVC\14.51.36231\include\vector
+SHA256 b254d6fc250164a9f4e71ea66e2c1e9401cb2bf8b0056550fd92135518450b51
+size_type _Calculate_growth(const size_type _Newsize) const {
+        // given _Oldcapacity and _Newsize, calculate geometric growth
+        const size_type _Oldcapacity = capacity();
+        const auto _Max              = max_size();
+
+        if (_Oldcapacity > _Max - _Oldcapacity / 2) {
+            return _Max; // geometric growth would overflow
+        }
+
+        const size_type _Geometric = _Oldcapacity + _Oldcapacity / 2;
+
+        if (_Geometric < _Newsize) {
+            return _Newsize; // geometric growth would be insufficient
+        }
+
+        return _Geometric; // geometric growth is sufficient
+    }
+

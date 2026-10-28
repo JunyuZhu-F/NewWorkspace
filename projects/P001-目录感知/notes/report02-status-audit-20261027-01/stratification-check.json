@@ -1,0 +1,12 @@
+{
+  "status": "passed",
+  "source_bindings": {
+    "experiments\\EXP-20261027-009\\analysis-01\\per-case-run.csv": "5aff4135b35477dc25556cba05408434ce0e8007416b589de3909e04bcc37ded",
+    "experiments\\EXP-20261027-010\\analysis-01\\per-case-run.csv": "4d059c91b0428c042d7c0fe2ab4cd6ea1516ead073dfff032da1a66a4b1b7b8f"
+  },
+  "strata": 18,
+  "weighted_means_reconstruct_original": true,
+  "script_sha256": "2443a7e5b61a655b630f442aa6b79857fb55391172285f7bf98d611cba3f23d8",
+  "output_sha256": "65618d217733cb5221534695096fdf4a37989f2c8eb93537ad71b5c7169a8ce7",
+  "new_measurements": 0
+}

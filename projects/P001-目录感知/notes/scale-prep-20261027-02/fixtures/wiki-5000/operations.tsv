@@ -1,0 +1,4 @@
+move-large	move	/Nature/	/__scale_prep__/
+merge-large	merge	/__scale_prep__/Nature/	/Universe/Matter/Phases_of_matter/Gases/Atmosphere/Atmosphere_of_Earth/Aerospace/Aerospace_engineering/Airport_infrastructure/Airport_chapels/
+move-deep	move	/Life/Organisms/Eukaryotes/Animals/Animal_taxa/Animal_taxa_by_rank/Animal_unranked_clades/ParaHoxozoa/Bilaterians/Protostomes/Ecdysozoa/Panarthropoda/Arthropods/Arthropod_taxa/Arthropod_taxonomy/Insect_taxonomy/Lepidoptera_taxonomy/Glossata/Coelolepida/Myoglossata/Neolepidoptera/Heteroneura/Eulepidoptera/Ditrysia/Macrolepidoptera/Butterflies/Butterflies_by_location/Butterflies_by_continent/Butterflies_of_Asia/	/__scale_prep__/
+merge-deep	merge	/__scale_prep__/Butterflies_of_Asia/	/Universe/Matter/Phases_of_matter/Gases/Atmosphere/Atmosphere_of_Earth/Aerospace/Aerospace_engineering/Airport_infrastructure/Airport_chapels/

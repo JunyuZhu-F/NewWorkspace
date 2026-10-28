@@ -1,0 +1,182 @@
+[
+  {
+    "case": "d0-r0",
+    "path": "/",
+    "recursive": false,
+    "depth": 0,
+    "candidates": 0,
+    "children": 34,
+    "descendant_directories": 414
+  },
+  {
+    "case": "d0-r1",
+    "path": "/",
+    "recursive": true,
+    "depth": 0,
+    "candidates": 5000,
+    "children": 34,
+    "descendant_directories": 414
+  },
+  {
+    "case": "d1-r0",
+    "path": "/1991/",
+    "recursive": false,
+    "depth": 1,
+    "candidates": 0,
+    "children": 1,
+    "descendant_directories": 2
+  },
+  {
+    "case": "d1-r1",
+    "path": "/1991/",
+    "recursive": true,
+    "depth": 1,
+    "candidates": 1,
+    "children": 1,
+    "descendant_directories": 2
+  },
+  {
+    "case": "d2-r0",
+    "path": "/1991/7/",
+    "recursive": false,
+    "depth": 2,
+    "candidates": 1,
+    "children": 0,
+    "descendant_directories": 1
+  },
+  {
+    "case": "d2-r1",
+    "path": "/1991/7/",
+    "recursive": true,
+    "depth": 2,
+    "candidates": 1,
+    "children": 0,
+    "descendant_directories": 1
+  },
+  {
+    "case": "d3-r0",
+    "path": "/2001/12/",
+    "recursive": false,
+    "depth": 2,
+    "candidates": 7,
+    "children": 0,
+    "descendant_directories": 1
+  },
+  {
+    "case": "d3-r1",
+    "path": "/2001/12/",
+    "recursive": true,
+    "depth": 2,
+    "candidates": 7,
+    "children": 0,
+    "descendant_directories": 1
+  },
+  {
+    "case": "d4-r0",
+    "path": "/2003/",
+    "recursive": false,
+    "depth": 1,
+    "candidates": 0,
+    "children": 12,
+    "descendant_directories": 13
+  },
+  {
+    "case": "d4-r1",
+    "path": "/2003/",
+    "recursive": true,
+    "depth": 1,
+    "candidates": 71,
+    "children": 12,
+    "descendant_directories": 13
+  },
+  {
+    "case": "d5-r0",
+    "path": "/2014/",
+    "recursive": false,
+    "depth": 1,
+    "candidates": 0,
+    "children": 12,
+    "descendant_directories": 13
+  },
+  {
+    "case": "d5-r1",
+    "path": "/2014/",
+    "recursive": true,
+    "depth": 1,
+    "candidates": 176,
+    "children": 12,
+    "descendant_directories": 13
+  },
+  {
+    "case": "d6-r0",
+    "path": "/2015/4/",
+    "recursive": false,
+    "depth": 2,
+    "candidates": 15,
+    "children": 0,
+    "descendant_directories": 1
+  },
+  {
+    "case": "d6-r1",
+    "path": "/2015/4/",
+    "recursive": true,
+    "depth": 2,
+    "candidates": 15,
+    "children": 0,
+    "descendant_directories": 1
+  },
+  {
+    "case": "d7-r0",
+    "path": "/2024/",
+    "recursive": false,
+    "depth": 1,
+    "candidates": 0,
+    "children": 12,
+    "descendant_directories": 13
+  },
+  {
+    "case": "d7-r1",
+    "path": "/2024/",
+    "recursive": true,
+    "depth": 1,
+    "candidates": 441,
+    "children": 12,
+    "descendant_directories": 13
+  },
+  {
+    "case": "d8-r0",
+    "path": "/2025/5/",
+    "recursive": false,
+    "depth": 2,
+    "candidates": 45,
+    "children": 0,
+    "descendant_directories": 1
+  },
+  {
+    "case": "d8-r1",
+    "path": "/2025/5/",
+    "recursive": true,
+    "depth": 2,
+    "candidates": 45,
+    "children": 0,
+    "descendant_directories": 1
+  },
+  {
+    "case": "d9-r0",
+    "path": "/2025/7/",
+    "recursive": false,
+    "depth": 2,
+    "candidates": 6,
+    "children": 0,
+    "descendant_directories": 1
+  },
+  {
+    "case": "d9-r1",
+    "path": "/2025/7/",
+    "recursive": true,
+    "depth": 2,
+    "candidates": 6,
+    "children": 0,
+    "descendant_directories": 1
+  }
+]

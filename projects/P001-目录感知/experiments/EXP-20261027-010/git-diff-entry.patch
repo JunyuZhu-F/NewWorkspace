@@ -1,0 +1,156 @@
+diff --git "a/projects/P001-\347\233\256\345\275\225\346\204\237\347\237\245/EXPERIMENTS.md" "b/projects/P001-\347\233\256\345\275\225\346\204\237\347\237\245/EXPERIMENTS.md"
+index c3f20d3..2801a02 100644
+--- "a/projects/P001-\347\233\256\345\275\225\346\204\237\347\237\245/EXPERIMENTS.md"
++++ "b/projects/P001-\347\233\256\345\275\225\346\204\237\347\237\245/EXPERIMENTS.md"
+@@ -12,6 +12,12 @@
+ 
+ ## 2. 实验索引
+ 
++2026-10-27当前正式扩规模：用户已批准两数据集25k纯目录默认各5独立进程/3预热20测量。计划EXP-20261027-009（WIKI先）、010（ARXIV）；先正式入口准入，再执行。协议notes/scale02-protocol-20261027.md，准备notes/scale02-preparation-20261027-01/。预期原始timings为WIKI23115、ARXIV8625，仅验收合同，当前不是已测结果；实际状态以各status/commands/verification为准。旧004–008不改，不新增向量/ANN/phase。
++
++2026-10-27当前软件准入（非正式性能实验）：SCALE-PREP-01完成，最终notes/scale-prep-20261027-02/record.md、review.md、review-check.json。两数据集5k Release/ASan及25k Release共6worker/3390次集合检查、4份独立核验、2组跨构建、6项指定失败原因合同均通过；0向量/新EXP。初次01正确性通过但监控最大342ms，严格资源准入不接受其自动passed；修正后02最大114.325ms，必要补做原样输入准入，保留初次/定向检查，不重跑004–008。预算以补入120s启动窗口的02/budget-reviewed.json为准；SCALE-02未授权/未启动。
++
++2026-10-27前次资源评估（非新实验）：SCALE-01-ASSESS完成，见SCALE_ASSESSMENT.md及notes/scale01-assessment-20261027-01/profile.json、assessment.json。只读硬件/旧遥测/源码与元数据，8个10k/25k/50k/100k几何profile不是索引/延迟测量；向量载荷读取0，没有新EXP。该时点准备未开始，后续准入以顶部当前条目为准；正式矩阵/预算仍待决定，旧实验原始记录不改。
++
+ 2026-10-27当前派生报告（非新实验）：REPORT-01-SMALL-01完成，见REPORT_SMALL_SCALE.md及notes/report01-audit-20261027-01/run-02/verification.json。复核110个worker文件与当前/归档源码，重算004引用均值、005 catalog占比及006/008非空/全部请求汇总与配对符号；没有新测量、没有修改实验文件或创建新EXP。父报告和全文目标未完成。
+ 
+ 2026-10-27最新：WIKI独立协议执行与审查已完成。007目录10/10进程、008检索5/5进程，独立核验、CSV/表格和最终hash通过；见各record/results/final-check。协议notes/wiki-independent-protocol-20261027.md，准入/审查见notes/wiki-independent-preparation-20261027-01/record.md、review.md。qrels不参与选目录，nDCG不报告，不关闭原作者GAP或全文目标。
+diff --git "a/projects/P001-\347\233\256\345\275\225\346\204\237\347\237\245/README.md" "b/projects/P001-\347\233\256\345\275\225\346\204\237\347\237\245/README.md"
+index 422babf..09a5470 100644
+--- "a/projects/P001-\347\233\256\345\275\225\346\204\237\347\237\245/README.md"
++++ "b/projects/P001-\347\233\256\345\275\225\346\204\237\347\237\245/README.md"
+@@ -1,6 +1,10 @@
+ # Directory-Aware Query and Maintenance in Vector Databases
+ 
+-当前报告：[两数据集小规模结论、证据、限制与补测决策](REPORT_SMALL_SCALE.md)已完成并复核（REPORT-01-SMALL-01）。仅当前独立小范围通过，全文REPORT-01仍进行中；下一项SCALE-01资源预算，不自动运行新实验。WIKI有真实语料目录，缺的是逐查询范围，已授权项目工作负载不冒充作者约束。
++当前执行：用户已批准SCALE-02两数据集25k纯目录默认各5独立进程、3预热20测量；正式入口检查通过，[当前执行状态](notes/scale02-preparation-20261027-03/overall-status.json)为先WIKI009后ARXIV010，按[冻结协议](notes/scale02-protocol-20261027.md)执行。保留原600s命令/1800s单元等停止预算；尚不能把预期格位或准入结果说成正式结果。首次入口收尾/恢复保护错误均保留，不重跑已验证原生入口。下段为此前SCALE-PREP交付时点，授权状态以上述及实时记录为准。
++
++当前进度：[SCALE-PREP-01最终准入](notes/scale-prep-20261027-02/record.md)及[审查](notes/scale-prep-20261027-02/review.md)通过：两数据集5k Release/ASan、25k Release共6worker/3390次完整集合及独立核验通过，原核心与旧实验不变、向量载荷0。首次监控间隔偏差已保留并修正，最终实际采样达标。[审查预算](notes/scale-prep-20261027-02/budget-reviewed.json)补入启动窗口后过筛查，WIKI余量很小。SCALE-01仍待正式矩阵/预算决定，SCALE-02未授权；[新入口](code/scale_directory/README.md)目前仅admission单pass，尚不能当正式性能结果。
++
++当前报告：[两数据集小规模结论、证据、限制与补测决策](REPORT_SMALL_SCALE.md)已完成并复核（REPORT-01-SMALL-01）。仅当前独立小范围通过，全文REPORT-01仍进行中。WIKI有真实语料目录，缺的是逐查询范围，已授权项目工作负载不冒充作者约束；扩规模状态见上方评估。
+ 
+ > P001-目录感知，采用 arXiv:2606.16903v1。当前小规模DIR-01、全量时间metadata审计及SEARCH-01/02时间/独立IVF分支完成；006五进程质量—总延迟对照通过独立核验。全量索引/性能、完整真实协议及PG/原版Viking未完成。
+ 
+diff --git "a/projects/P001-\347\233\256\345\275\225\346\204\237\347\237\245/REPRODUCTION_PLAN.md" "b/projects/P001-\347\233\256\345\275\225\346\204\237\347\237\245/REPRODUCTION_PLAN.md"
+index 328b745..cc3d8c6 100644
+--- "a/projects/P001-\347\233\256\345\275\225\346\204\237\347\237\245/REPRODUCTION_PLAN.md"
++++ "b/projects/P001-\347\233\256\345\275\225\346\204\237\347\237\245/REPRODUCTION_PLAN.md"
+@@ -1,6 +1,6 @@
+ # REPRODUCTION_PLAN.md — 从目录语义到可核验结果
+ 
+-> 当前主线（2026-10-27）：两数据集当前小规模汇总REPORT-01-SMALL-01已完成，结论/证据/限制/补测决策见REPORT_SMALL_SCALE.md。REPORT-01父任务进行中，全文目标仍未验收；WIKI独立分支与既有ARXIV成果保持。下一项仅SCALE-01具体资源预算与规模方案，不自动执行SCALE-02，不联系作者，不追查1995年。当前HEAD与历史实验版本分别记录在STATE和各实验快照中。
++> 当前主线（2026-10-27）：用户已批准SCALE-02两数据集25k纯目录默认、各5独立进程、3预热20测量及既定停止预算，先WIKI009后ARXIV010。SCALE-01当前矩阵/预算审批完成；SCALE-02进行中，先正式入口检查，再测量/独立核验。协议notes/scale02-protocol-20261027.md，准备notes/scale02-preparation-20261027-01/；SCALE-PREP前置仍有效，不改核心/旧实验。全文目标/作者GAP保留。
+ 
+ > 最新验收：DIR-01-COST-RUN-01已完成，DIR-01当前人工树/10,000条时间视图小规模分支按冻结条件验收，见 notes/dir01-small-scope-acceptance-20261027.md。整体OBJ-03和全文复现未关闭；下列早期准备/审查增量为历史状态。
+ 
+@@ -49,13 +49,15 @@
+ | DIR-01-COST-RUN-01 | 冻结成本诊断正式补测 | DIR-01-COST-02；用户已指定运行 | 已完成 | EXP-20261027-005：135/135成功，194.859秒；phases33465、allocation3795、overhead/process/run-order各135。独立重算均值/分位数/各run及请求字节，销毁归零/拒绝不变通过；保留探针、异常传播覆盖和非物理堆限制，见实验record/results/independent-verification。 |
+ | SEARCH-01 | 向量后端与质量协议，OBJ-04 条件项 | 对应DATA时间分支，CHECK-01；用户指定开始小数据检索 | 已完成（当前时间/IVF分支） | 10000条、104case；Release/ASan各契约1/1、1248条结果，候选/独立精确GT/过滤/分区/跨构建一致通过。协议notes/search01-protocol-20261027.md，证据notes/search01-validation-20261027-01/。32原约束全空，64非空诊断共用query_id0，不作代表性质量证据。PG/WIKI/作者Viking及整体OBJ-04未关闭。 |
+ | SEARCH-02 | 小规模质量-总延迟曲线，OBJ-04 条件项 | SEARCH-01，DIR-01；新输入先准入 | 已完成（当前时间/IVF分支） | EXP-20261027-006，5/5进程、1202400行计时及60120条基线排名独立核验；10000跨时间样本，501递归/235月份非递归非空，266年份非递归空另报。三策略同后端/模型/质量，均值/分位数/阶段/逐run/曲线/QA齐全。协议notes/search02-protocol-20261027.md，完整证据experiments/EXP-20261027-006/；非Viking/PG/WIKI或整体OBJ-04完成。 |
+-| SCALE-01 | 资源复核与规模审批 | DIR-01；含检索时 SEARCH-02 | 未开始 | 估计峰值内存/磁盘/耗时，用户批准具体矩阵和预算；本轮审核不隐含全量运行授权。 |
++| SCALE-01 | 资源复核与规模审批 | DIR-01；当前报告；SCALE-PREP资源证据 | 已完成（当前25k纯目录） | 用户在明确矩阵/预算后批准下一步：两数据集25k默认各5独立进程、3预热20测量，WIKI优先。采用budget-reviewed.json及600s命令/1800s单元/4GiB启动等原预算；不是批准ANN、50k/100k或全量。 |
++| SCALE-01-ASSESS | 两种实验范围资源与候选规模评估 | 当前报告及旧日志/源码/资源 | 已完成 | 源hash匹配的8个元数据profile、实际硬件/历史遥测、模块内存及启发式时间CSV、25k首批矩阵/门禁/软件前置齐全；100k和全量不能按当前实现/预算直接批准。零向量载荷/新实验，证据notes/scale01-assessment-20261027-01/。 |
++| SCALE-PREP-01 | 获选规模的隔离驱动准备与准入 | SCALE-01-ASSESS；用户已授权当前准备/准入范围 | 已完成（当前25k纯目录） | notes/scale-prep-20261027-02/：两数据集5k Release/ASan及25k Release共6worker/3390次集合、4独立核验、2跨构建和6负向合同通过；旧53源码hash不变。原01监控342ms偏差保留，修正后02实际最大114.325ms，资源门禁通过；budget-reviewed.json补入120s启动窗口，WIKI筛查约1412.66s接近1440s。原核心不变、0向量，单pass只准入不当正式成绩；正式入口/五进程不在本轮范围。 |
+ | WIKI-DATA-01 | WIKI 数据与协议前置核查，OBJ-01/02/04 | DATA-01 初查；用户要求优先推进 WIKI | 已完成 | 全量1941679条path/corpus ID一致，末端363467/均深11.9512、补齐祖先含根468031；独立路径复核、全部query/qrels/查询向量及固定10000样本向量通过。非全量向量检查，作者查询缺口保留；见notes/wiki-preparation-20261027-01/record.md、run-01/report.json与verification.json。 |
+ | WIKI-CHECK-01 | WIKI 小规模目录语义准入，OBJ-02 | WIKI-DATA-01；冻结protocol.md | 已完成 | 10000真实路径样本，Release/ASan各5292次范围集合核验零差异，MOVE/MERGE/拒绝及全量不变量通过；跨构建答案相同，独立Python状态判定核验通过；006原46源码hash不变。最终check-02，失败check-01保留；非原文DSM或性能成绩。 |
+ | WIKI-DIR-01 | WIKI 小规模目录性能，OBJ-03 | WIKI-CHECK-01；冻结具体协议/矩阵 | 已完成（独立小规模分支） | 007默认/phase各5/5、43470原始行通过，正式37800/预热5670；CSV、逐深度/逐case、阶段/catalog、portable及最终hash齐全。递归/large维护优势和非递归/deep MERGE反例保留；非作者DSM、全量或整体OBJ-03验收。 |
+ | WIKI-PROTO-01 | WIKI 独立检索协议与准入，OBJ-04 | WIKI-DATA-01；用户授权独立协议 | 已完成 | notes/wiki-independent-preparation-20261027-01/status.json及三份verification通过；Release/ASan目录默认/phase及检索全部一致、生成源码仅三处预定替换。912case中递归456非空，非递归127非空/329空；qrels不参与，L2/子集精确GT/Recall@10，nDCG不报告。作者GAP保留，正式结果不从准入计时推断。 |
+ | WIKI-SEARCH-01 | WIKI独立检索质量/总延迟 | WIKI-PROTO-01准入；WIKI-DIR-01矩阵核验 | 已完成（独立小规模分支） | 008五进程、1094400正式行、54720基线排名和13680候选记录独立核验通过；模型/排名跨策略/进程一致，exact/全探测非空Recall=1，空范围质量null。阶段/分位数/逐进程SD/配对差CSV与最终hash齐全；非Viking、作者工作负载或整体OBJ-04通过，nDCG不报告。 |
+-| SCALE-02 | 获批规模的正式测量 | SCALE-01 | 未开始 | 只跑获批矩阵，完整记录成功/失败/中断及协议变更；资源只允许中等规模时明确全量未执行。 |
++| SCALE-02 | 获批规模的正式测量 | SCALE-01批准具体矩阵/预算；SCALE-PREP-01通过 | 进行中 | 正式入口/必要轮换和重复检查后，按冻结协议执行WIKI009、ARXIV010各5独立进程；每run3预热20测量。完整保存原始输出、独立全部格位/资源/输入源hash核验及逐进程统计；失败即停、留证，不自动放宽预算或重跑。 |
+ | REPORT-01 | 逐目标验收，OBJ-05 | 已完成的范围任务 | 进行中 | 当前小规模逐OBJ报告已完成，见REPORT-01-SMALL-01；原作者协议/类别/全量/PG等未完成范围保留，未宣布全文最终验收。 |
+ | REPORT-01-SMALL-01 | 两数据集当前小规模范围审查与汇总 | 004–008及当前语义/材料证据 | 已完成 | REPORT_SMALL_SCALE.md逐OBJ判定与补测决策齐全；notes/report01-audit-20261027-01/run-02/verification.json通过，110个worker文件及当前/归档源hash匹配，004引用均值/005占比从raw重算。保留空请求排序反转、样本/k/根权重/成本边界，无新测量。仅关闭本子任务。 |
+ 
+diff --git "a/projects/P001-\347\233\256\345\275\225\346\204\237\347\237\245/STATE.md" "b/projects/P001-\347\233\256\345\275\225\346\204\237\347\237\245/STATE.md"
+index 17b4a47..1171728 100644
+--- "a/projects/P001-\347\233\256\345\275\225\346\204\237\347\237\245/STATE.md"
++++ "b/projects/P001-\347\233\256\345\275\225\346\204\237\347\237\245/STATE.md"
+@@ -1,10 +1,26 @@
+-# STATE.md — 两数据集当前小规模报告已审查完成
++# STATE.md — SCALE-02 WIKI25k正式运行中
+ 
+-更新时间：2026-10-27，Asia/Hong_Kong；REPORT-01-SMALL-01证据审查与文档更新。项目：D:/NewWorkspace/projects/P001-目录感知。
++更新时间：2026-10-27，Asia/Hong_Kong；SCALE-02当前25k纯目录正式运行授权。项目：D:/NewWorkspace/projects/P001-目录感知。
+ 
+-当前阶段：REPORT-01-SMALL-01已完成，REPORT_SMALL_SCALE.md汇总004–008已完成范围，逐OBJ结论、证据、限制及补测决策齐全；REPORT-01父任务进行中，原作者协议、真实类别、nDCG、PG/Viking与全量未完成。本轮只读审计和更新文档，没有构建/测试重跑/测量/算法修改。下一项仅SCALE-01具体资源与规模评估，SCALE-02未授权，不联系作者、不追查1995年。
++当前阶段：用户已批准两数据集25k纯目录默认各5独立进程、3预热20测量及原停止预算，先WIKI009后ARXIV010。正式入口检查通过，有效恢复notes/scale02-preparation-20261027-03/（7原生入口worker复用、重新独立核验通过）。009正在运行，010待运行；以03/overall-status.json及单元status/commands为准，当前不能宣称正式完成。01收尾误比行顺序、02恢复路径保护误拒绝均failed保留；仅修改新编排器，未重跑已验证原生入口。原核心及旧实验不改，原作者协议/真实类别/nDCG/PG/Viking/全量仍未完成。
+ 
+-## 当前事实
++## 前置SCALE-PREP已验证事实（当前运行以上述及实时status为准）
++
++- 新code/scale_directory参数化N、严格global/dense合同、纯目录生成/独立核验和串行资源门禁；原生源从旧driver以11项限定替换生成，API区间与10000次时钟保留。二进制只接受admission/run0/0预热/1pass，正式轮换/重复入口尚未实现，不能直接拿它跑SCALE-02。
++- 最终02的6worker（每数据集5k Release/ASan及25k Release）和3390次完整集合检查、4份Python五状态核验、2组跨构建、6项指定原因负向合同均通过；两元数据源全量hash/选样独立重读通过，向量载荷0。ARXIV25k含根428目录/20case；WIKI25k43589目录/62case/深31，均未计专用维护父目录。不是正式性能胜负结论。
++- 最终02实际采样最大间隔114.325ms；全命令available最低约4.064GiB，private采样最大969.38MiB（WIKI5k ASan），无超限。WIKI25k Release约8.031s/310.59MiB，ARXIV25k约0.503s/25.11MiB，均是完整准入wall/采样而非API成绩或精确峰值；短命令尤其可能漏峰。最终exe已归档并核hash。
++- 初次01正确性通过但监控最大342ms，后审查不接受其严格资源达标；保留原自动passed及审查记录。修正100ms整循环调度并增加实际间隔断言，定向复核后于02必要补做准入。两次fixture内容hash相同；旧004–008未重跑。首次exe未单独复制、同tag构建可能替换，首次源/flags/hash仍保留；不能把当前exe当首次原件。
++- 最终采用02/budget-reviewed.json：审查在自动场景上补入6×20秒启动窗口再乘1.5，ARXIV约227.38s、WIKI约1412.66s，均≤1440s筛查线；WIKI距该线仅约27.34s。单pass/5倍核验场景不能保证23pass长期内存或正式解析成本，仍受每worker600s、每数据集1800s、private2GiB/available2GiB硬停止与新启动门槛约束。
++- Git真实现场：根D:/NewWorkspace，main/2101c84f24b3cbbcd093b38073a5c9e372815f9d；继承未提交资源评估/文档，新增隔离驱动、构建脚本、协议、两次准入及审查证据，管理文档有未提交修改。旧46及007扩展53源码/协议hash不变，无核心/第三方/旧实验文件修改，无提交/推送/重置/清理，无活动worker/构建任务。精确清单见02/git-status-final.txt及最终交接检查。
++
++## 既有评估及小规模证据摘要（历史时点，当前状态以上述为准）
++
++- 最新资源证据：notes/scale01-assessment-20261027-01/profile.json、hardware.json、hardware-os.json、assessment.json及CSV。只读流式统计8个10k/25k/50k/100k样本：WIKI目录23025/43589/69160/106921、最大深31；ARXIV-time目录423/428/431/432、深2，不含未来测试父目录。两元数据源hash匹配、size/mtime不变；0向量载荷，不是新索引/查询时延。profile14.812s、private采样最大149.17MiB只代表统计程序。
++- 主机约15.81GiB可见RAM，14核/20逻辑CPU；15:45香港时间available约2.93–2.95GiB、profile阶段最低约2.89GiB，CPU21.4%–32.4%。D自由约432.71GiB。磁盘不是主要瓶颈，当前available未达新提案4GiB启动门槛；不自动关闭用户程序/调整pagefile/购买资源。
++- 推荐待批准首批：两数据集25k纯目录默认各5进程、3预热20测量、最多32真实anchor两模式、连续4维护；先新适配器≤5k ASan及25k Release 1pass完整准入。建议启动available≥4GiB，运行仍2GiB private/available≥2GiB、worker600s、每数据集矩阵1800s、输出1GiB；准入重新估算并留20%时间裕量，未过就停止，不偷偷降重复/跳校验。phase扩展另议。
++- 当前驱动10k/23025形状写死、纯目录prepare/oracle耦合向量及检索；必须新隔离版本实现SCALE-PREP-01，不能直接用旧runner或全局替换10000（含时钟校准次数）。源码还留存4 probe的候选和未缩capacity的hits，oracle有float64临时/文本/Python列表及O(D×N)扫描。旧核验器private约0.88GiB，远高于worker；profile/估算不证明新规模可运行。
++- 全量当前内存加载器float载荷下界ARXIV约11.32GB、WIKI约7.95GB已超过2GiB；100k oracle三数组场景约2.29GiB，未含其他对象。WIKI25k全456 query启发式五进程+核验约49.5min已超30min预算，不能直接批准。后续候选ARXIV25k全time/WIKI25k固定64 query均须另版协议和准入；时间/内存只是场景不是实测峰值或保证。
++- 本轮入口Git实测main/HEAD 2101c84f24b3cbbcd093b38073a5c9e372815f9d且工作树干净；旧STATE中的c14/未提交状态已过时。本轮仅新增SCALE_ASSESSMENT.md、notes/scale01-assessment-20261027-01/并更新管理文档，未提交/推送/重置/清理，未改任何code/或experiments/文件。历史实验版本保持原值，忽略文件继续保留。
+ 
+ - 本轮独立证据复核在notes/report01-audit-20261027-01/run-02/verification.json：006–008的110个worker文件、各当前/归档源hash匹配；005已存8项raw/协议/汇总hash匹配；004引用time/default均值及005 MERGE catalog比例从原始记录重算一致。CSV保留006/008的nprobe4非空/全部/空请求、三个阶段和五run配对符号。本轮不是重跑实验。
+ - 报告解释边界：ARXIV目录004/005为34目录旧样本，检索006为423目录跨时间样本；WIKI目录根权重1/29，检索57/456，不能直接横比均值。ARXIV非递归nprobe4非空均值OFFLINE/TrieHI略低，但全部501请求均值ONLINE最低（19.3488/23.2547/22.5033μs）；小差异不宣称显著。WIKI真实层级已存在，模拟的是查询/维护，Recall为限定范围的ANN近邻召回，不是自然query相关性，nDCG仍未报告。
+@@ -15,7 +31,7 @@
+ - 008 nprobe4：递归456非空Recall@10=0.299882，ONLINE/OFFLINE/TrieHI非空总均值2753.2620/432.4738/416.7875μs；非递归127非空/329空，非空Recall=0.110236，总均值16.2986/18.5745/16.8638μs。exact/全探测非空Recall=1；质量相同不代表CPU时间相同，不把全部差异归因目录。空范围质量null且延迟另报，低召回保留，nDCG不报告。目录是query ID/固定哈希配对，不代表自然查询相关性分布。
+ - 结果CSV位于各analysis-01/，007含逐深度/逐case/维护几何/portable，008含阶段/分位数、5进程均值SD和配对差。默认/phase不混池，catalog不从默认相减，portable不是物理堆；无全量向量加载/重编码/依赖安装。
+ - 首次统计导出遇Python源编码识别错误，export-console.log保留；添加显式UTF-8声明后export-recovery-01-console.log成功，测量未重跑。finalize-console.log及总final-check通过。原始失败、快照、被忽略的fixture/*.fvecs和构建二进制全部保留。
+-- 本轮入口Git实测main、HEAD c14e9f1f375d0cb0c4503e488ced9932c0afa4a7、工作树干净；之前的“当前be59/有开发未提交”已过时。本轮仅留下报告/审计及管理文档未提交增量，不提交/推送/重置/清理。007/008运行时be59及其源快照必须保留为历史事实，不改成当前HEAD；53/54源码项差异仅README，无算法/配置变化。被忽略的fixture向量/build仍须本地保留，Git干净不证明其入库。
++- 上轮REPORT入口Git为main/c14e9f1f375d0cb0c4503e488ced9932c0afa4a7，当时只留下报告/管理文档增量；这是历史现场，当前看顶部2101c84及实时status。007/008运行时be59及源快照不改成当前HEAD；53/54源码项仅差README。被忽略fixture/build须保留，Git干净不证明其入库。
+ 
+ - 007默认已核验均值μs（ONLINE/OFFLINE/TrieHI）：递归1426.51/2.02/1.83；非递归3.38/25.67/18.43。large MOVE约34273.83/34593.87/15.87，large MERGE约31356.37/31694.69/406.57；deep MERGE约355.46/248.30/371.29，保留TrieHI并非最快反例。原始精度和完整分位数见007/verification-directory-default.json；诊断catalog另在phase报告，不混池或从默认相减。
+ 
+@@ -28,7 +44,7 @@
+ - WIKI真实路径10000样本：新增独立code/wiki/入口和build-wiki.cmd，原核心不变；Release/ASan各5292次范围集合核验通过（初始/MOVE/MERGE/拒绝，各阶段全量不变量）；答案字节相同，另有Python路径状态判定器复核全部输出与覆盖。006的46个原源码文件hash仍匹配。该运行是正确性准入，不是性能/ANN成绩。
+ - check-01首次cmd路径写法导致未生成二进制，整体failed保留；修正命令及产物断言后另存check-02通过。独立核验首次在ASan结束前被状态门禁拒绝，日志保留，完成后核验成功；没有覆盖/隐瞒失败。主数据审计31.031秒、独立数据复核18.844秒，Release/ASan测试4.813/98.985秒，不作为查询延迟；ASan采样private最大1156001792字节，未触发资源门禁。
+ - 本次小型公开源快照见public-sources-01/：作者数据仓库根仅README，关联OpenViking说明仍承认缺WIKI query约束。web工具不能访问Google Drive目录，未取得远端清单，不断言网盘没有补充资料；未联系作者、未下载大型数据。
+-- 历史WIKI准备时Git基线为main/be59bbccb9e3f8e283328f453643b7d50211736d，当时保留未提交STATE及新增WIKI入口/脚本/证据；此段不是当前Git现场。现在以顶部c14e9f1及实时git status为准，不将历史未提交状态套到新会话。
++- 历史WIKI准备时Git基线为main/be59bbccb9e3f8e283328f453643b7d50211736d，当时保留未提交STATE及新增WIKI入口/脚本/证据；此段不是当前Git现场。现在以上述2101c84及实时git status为准，不将历史未提交状态套到新会话。
+ 
+ - SEARCH-02当前时间/独立IVF分支已完成：EXP-20261027-006，5/5独立进程、1202400条原始计时、60120条基线结果及15030条候选记录通过独立核验，所有重复格位完整、各阶段和等于总量、模型/排名跨策略与进程相同。2026-10-27 11:08:01–11:11:01+08为正式阶段及核验时间，不是查询延迟。
+ - 新输入仍10000条，按全量ID等间隔跨时间选择，34年/388月/含根423目录；501真实time查询两模式，501递归非空、235月份非递归非空、266年份非递归为空（质量null）。Release/ASan各契约1/1及12024条准入结果已通过，证据notes/search02-preparation-20261027-02/；首次换行防护失败及有效输入留在preparation-01。
+@@ -60,7 +76,7 @@
+ - 数据入口：notes/data-audit.md、notes/time-pilot-20261026-01/manifest.json、notes/prepare_time_pilot.py；按本任务需要定位，不递归读取全部notes。
+ - 最新全量数据证据：notes/arxiv-time-full-audit-20261027-01/report.md，run-01/manifest.json、verification.json、coverage-summary.json、完整bindings.tsv和directory-counts.json；脚本快照及真实日志均保留。metadata本地完整SHA-256 93a4e0db140c82a2e154274d7b80bf4e95ade0152d79a63424e02ff3b3874a0f，未与发布方checksum对齐。
+ 
+-## 现场与剩余限制
++## SEARCH-02完成时现场与限制（历史，当前看顶部）
+ 
+ 交接时实测Git根D:/NewWorkspace，分支main，HEAD为be59bbccb9e3f8e283328f453643b7d50211736d（SEARCH-02完成记录）；核查开始时工作树干净。本次只留下STATE.md未提交更新，没有未提交代码。旧STATE的“HEAD仍6a66c9e/存在开发未提交”已过时；006记录中的6a66c9e是实验当时基线，必须保留，不能改成当前HEAD。开发增量code/search/、code/search02/及两个build-search*.cmd已纳入当前HEAD；原目录核心/第三方文件不变。本次不提交、推送、重置或清理。
+ 
+@@ -80,9 +96,9 @@ DATA-01/SPEC-01仍未整体完成。真实类别直接归属/多归属DSM、WIKI
+ 
+ ## 下一步
+ 
+-建议下一项SCALE-01：依据当前小规模报告及真实机器可用资源，分别评估纯目录与含检索的内存/磁盘/oracle/耗时，提出具体中等规模或可行矩阵和停止预算，再由用户决定SCALE-02。本轮不启动该评估或任何新测量；不联系作者、不加载全量、不接PG、不追查1995年、不处理组会。
++当前下一步：继续009 WIKI五进程及核验，通过后执行010 ARXIV同一矩阵，最后审查/导出结果和文档。每次启动重新连续20秒available≥4GiB，保留600s命令/1800s单元和全部资源停止条件；不再等待相同矩阵重复批准。只有真实5/5及独立全部格位/资源/hash通过才关闭SCALE-02；失败停止并留证，不减重复或换样。
+ 
+-最小恢复入口：根/项目AGENTS、本STATE、TASK、PLAN的REPORT/SCALE任务行；REPORT_SMALL_SCALE.md及notes/report01-audit-20261027-01/run-02/verification.json，按问题定向查004–008相应record/verification/CSV。不得递归重读全部notes、覆盖旧输出或重跑有效矩阵。核对当前Git与忽略文件，不用旧HEAD描述代替真实现场。
++最小恢复入口：根/项目AGENTS、本STATE、TASK、PLAN的SCALE相关行；notes/scale-prep-20261027-02/record.md、review.md、review-check.json、budget-reviewed.json及冻结协议。追溯监控偏差才读01/record.md；追溯候选几何才读SCALE_ASSESSMENT.md及指定profile。当前小规模结论仍在REPORT_SMALL_SCALE.md，不递归读全部notes或重跑004–008，历史实验版本不随HEAD改写。
+ 
+ 以下是本次WIKI优先级调整之前的SCALE安排，已后移：
+ 
+diff --git "a/projects/P001-\347\233\256\345\275\225\346\204\237\347\237\245/TASK.md" "b/projects/P001-\347\233\256\345\275\225\346\204\237\347\237\245/TASK.md"
+index c4541cb..f7bde22 100644
+--- "a/projects/P001-\347\233\256\345\275\225\346\204\237\347\237\245/TASK.md"
++++ "b/projects/P001-\347\233\256\345\275\225\346\204\237\347\237\245/TASK.md"
+@@ -80,6 +80,14 @@
+ 
+ ## 6. 交付物与已确认决策
+ 
++2026-10-27当前SCALE-02授权：用户在获知具体矩阵、预算和正式入口前置后，再次要求“按计划执行下一步操作，务必审查、更新相关文档”，本轮批准两数据集各25k纯目录默认、各5独立进程（串行）、每策略3预热20测量，优先WIKI；包含必要的正式入口轮换/重复/资源截止验证、执行、独立核验与结果记录。协议notes/scale02-protocol-20261027.md；WIKI009、ARXIV010。每命令600s/每数据集1800s（含启动门禁/核验），available启动4GiB连续20秒、运行2GiB/private2GiB、输出1GiB不放宽；不降重复/换样，不改原核心/旧记录，不含ANN/向量/phase或更大N。此授权取代下述“正式矩阵待批准”的历史状态，不改变最终科研验收标准。
++
++2026-10-27前次SCALE-PREP授权及交付：用户按已说明的下一步要求执行并审查/更新文档，范围为两个数据集25k纯目录隔离驱动准备及准入；包括5k Release/ASan跨构建与25k Release单进程/三方案/0预热1pass及独立核验。最终notes/scale-prep-20261027-02/通过；首次监控间隔偏差/修正/必要资源准入补做均保留，不覆盖原证据。当时不含五进程正式矩阵；后续授权见上段。
++
++2026-10-27前次SCALE评估阶段授权：用户要求按下一步计划执行并审查/更新文档。该轮仅SCALE-01资源评估：读取实际硬件、旧测量/源码与目录元数据，提出规模、矩阵、停止预算和准入前置；当时不修改实验代码、不安装依赖、不全量加载向量。后续准备授权见上段；具体正式矩阵/预算未获批准前不标记“规模审批完成”，已有冻结协议和验收阈值不变。
++
++该评估已完成，见SCALE_ASSESSMENT.md及notes/scale01-assessment-20261027-01/。建议待批准的首批为两数据集25k纯目录默认各5进程，保持3预热20测量及2GiB运行停止预算，新增建议available≥4GiB启动前置；当前资源不足该启动门槛，驱动写死10k且纯目录准备/核验耦合向量，须先隔离参数化并做新N准入。后续ARXIV25k全time查询/WIKI25k固定64查询仅为候选，nDCG/原作者协议/全量目标不改变。没有批准或启动正式扩规模。
++
+ 2026-10-27当前REPORT执行范围：用户要求按计划审查、汇总并更新文档。本轮仅REPORT-01-SMALL-01，对004–008已完成范围逐OBJ建立结论/证据/限制/补测决策，不扩规模、不重跑实验、不修改算法，不把当前汇总当全文最终验收；REPORT-01父任务保留未完成范围，目标与原阈值不变。
+ 
+ 当前小规模报告已完成：REPORT_SMALL_SCALE.md及notes/report01-audit-20261027-01/run-02/verification.json。逐OBJ明确当前通过域、不可比数值和未执行范围；没有发现必须立即重跑既有矩阵的证据冲突，下一建议仅SCALE-01资源/具体矩阵评估。此结论不授权扩规模，也不放宽nDCG、原作者协议或全文验收标准。

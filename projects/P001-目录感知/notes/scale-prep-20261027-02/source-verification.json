@@ -1,0 +1,19 @@
+{
+  "arxiv": {
+    "sha256": "127a7d07902cb997489da526be1da973bc9bac09f0da133787f0c28323ea72a2",
+    "records": 2763543,
+    "selected_verified": 29954,
+    "size": 46577712,
+    "mtime_ns": 1793037483858666500
+  },
+  "wiki": {
+    "sha256": "d9642870803d14fa6d9193f743ed1d2a758ab643fcffe248d2d9009cf73a616a",
+    "records": 1941679,
+    "selected_verified": 29936,
+    "size": 604190439,
+    "mtime_ns": 1772275942000000000
+  },
+  "status": "passed",
+  "elapsed_s": 8.407972299999999,
+  "vector_payload_bytes_read": 0
+}

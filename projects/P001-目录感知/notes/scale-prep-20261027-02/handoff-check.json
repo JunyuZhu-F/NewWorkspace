@@ -1,0 +1,27 @@
+{
+  "status": "passed",
+  "finished_utc": "2026-10-27T08:47:51.723505+00:00",
+  "documentation_sha256": {
+    "STATE.md": "722766b30b0c6669ac3d3af87ddeea76cf39917c40aa0de8e5e9d42259aeca2f",
+    "TASK.md": "d79a48d1f3de8cdadf97d74b7db74e4ea93f3680a95c8ff1da809ee654b0ffaf",
+    "REPRODUCTION_PLAN.md": "eafc0d8a49df884d81f44837cd61765fbf0283acb1ba38479eb478aaa632335e",
+    "README.md": "7686662489b6bd8800e6329bba76c062c1b2f43f1b8a0d63cfc140eabf6516f8",
+    "EXPERIMENTS.md": "2f3b86d15a6e251189b84e49bf6451163e7416d5b36b2a96d5e76c86df7eb6af",
+    "SCALE_ASSESSMENT.md": "cbbce017e2e59e8910ae059e68efd589fad37fb84ad17fafaf46890016c0f890",
+    "code/scale_directory/README.md": "71ef05bf489b616e275efe7f64705fbc7e793670fad5abe9186fe6165d4e8e92"
+  },
+  "evidence_sha256": {
+    "record.md": "217fb56cafc119332bcbf241b7bffa99f8a478f95307be551208edc52d903525",
+    "review.md": "b6b7985d1113affe293dcc3a9bec4e04b5fb1bc4b4a0a3dbfb162880624669ff",
+    "review-check.json": "085ced4360baa9d7d2949bc31588b9411d303ecd893858233248827fece0c854",
+    "budget-reviewed.json": "e736ab292978711e38732d6a199cddd3ec58e35ce0a8042618228c4a90e2f392",
+    "final-check.json": "f089797f4890a559a4d41bc4be2e3e96ae5b0585594b449a42710704eb00bd10",
+    "status.json": "0ad3bc09e132f92f0084023037b1bfb375bc5259fbfb3e032b8529d3479b6d42",
+    "source-verification.json": "f9aae4ca8eea2199b03fcd62e30b2801dcbc5666bd0ed3d03efe52c1c64eb14c",
+    "finalize.py": "a18979eb10f12ce5d862bdba7873673b012d527328a04aec7ca0b6e85d7c7e5c"
+  },
+  "old_53_sources_unchanged": true,
+  "source_snapshot_matches": true,
+  "git_diff_check": "passed",
+  "formal_runs": 0
+}

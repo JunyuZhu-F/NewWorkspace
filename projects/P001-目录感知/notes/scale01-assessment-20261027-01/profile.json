@@ -1,0 +1,384 @@
+{
+  "status": "passed",
+  "started_utc": "2026-10-27T07:45:19.083123+00:00",
+  "finished_utc": "2026-10-27T07:45:33.895659+00:00",
+  "elapsed_seconds": 14.812000000005355,
+  "geometry": [
+    {
+      "dataset": "ARXIV",
+      "n": 10000,
+      "selection": "floor(i*(total-1)/(n-1))",
+      "directories": 423,
+      "terminal_directories": 388,
+      "entry_path_utf8_bytes": 82570,
+      "unique_directory_utf8_bytes": 3404,
+      "mean_entry_depth": 2.0,
+      "max_depth": 2,
+      "max_path_utf8_bytes": 9,
+      "max_children": 34,
+      "search_workload_geometry": {
+        "full501": {
+          "cases": 1002,
+          "recursive_nonempty": 501,
+          "nonrecursive_nonempty": 235,
+          "sum_candidate_ids_per_probe": 154866,
+          "max_candidates": 883,
+          "root_recursive": 0,
+          "baseline_candidates_min_bytes": 2477856,
+          "baseline_hits_full_probe_min_bytes": 4955712,
+          "baseline_candidate_and_hit_capacity_min_bytes": 7433568,
+          "baseline_candidate_and_hit_payload_stl_1p5_scenario_bytes": 17344992,
+          "scopes_ascii_worst_payload_bytes": 3716784
+        },
+        "compact64": {
+          "cases": 128,
+          "recursive_nonempty": 64,
+          "nonrecursive_nonempty": 32,
+          "sum_candidate_ids_per_probe": 19483,
+          "max_candidates": 883,
+          "root_recursive": 0,
+          "baseline_candidates_min_bytes": 311728,
+          "baseline_hits_full_probe_min_bytes": 623456,
+          "baseline_candidate_and_hit_capacity_min_bytes": 935184,
+          "baseline_candidate_and_hit_payload_stl_1p5_scenario_bytes": 2182096,
+          "scopes_ascii_worst_payload_bytes": 467592
+        }
+      }
+    },
+    {
+      "dataset": "ARXIV",
+      "n": 25000,
+      "selection": "floor(i*(total-1)/(n-1))",
+      "directories": 428,
+      "terminal_directories": 393,
+      "entry_path_utf8_bytes": 206417,
+      "unique_directory_utf8_bytes": 3447,
+      "mean_entry_depth": 2.0,
+      "max_depth": 2,
+      "max_path_utf8_bytes": 9,
+      "max_children": 34,
+      "search_workload_geometry": {
+        "full501": {
+          "cases": 1002,
+          "recursive_nonempty": 501,
+          "nonrecursive_nonempty": 235,
+          "sum_candidate_ids_per_probe": 387188,
+          "max_candidates": 2207,
+          "root_recursive": 0,
+          "baseline_candidates_min_bytes": 6195008,
+          "baseline_hits_full_probe_min_bytes": 12390016,
+          "baseline_candidate_and_hit_capacity_min_bytes": 18585024,
+          "baseline_candidate_and_hit_payload_stl_1p5_scenario_bytes": 43365056,
+          "scopes_ascii_worst_payload_bytes": 9292512
+        },
+        "compact64": {
+          "cases": 128,
+          "recursive_nonempty": 64,
+          "nonrecursive_nonempty": 32,
+          "sum_candidate_ids_per_probe": 48675,
+          "max_candidates": 2207,
+          "root_recursive": 0,
+          "baseline_candidates_min_bytes": 778800,
+          "baseline_hits_full_probe_min_bytes": 1557600,
+          "baseline_candidate_and_hit_capacity_min_bytes": 2336400,
+          "baseline_candidate_and_hit_payload_stl_1p5_scenario_bytes": 5451600,
+          "scopes_ascii_worst_payload_bytes": 1168200
+        }
+      }
+    },
+    {
+      "dataset": "ARXIV",
+      "n": 50000,
+      "selection": "floor(i*(total-1)/(n-1))",
+      "directories": 431,
+      "terminal_directories": 396,
+      "entry_path_utf8_bytes": 412827,
+      "unique_directory_utf8_bytes": 3472,
+      "mean_entry_depth": 2.0,
+      "max_depth": 2,
+      "max_path_utf8_bytes": 9,
+      "max_children": 34,
+      "search_workload_geometry": {
+        "full501": {
+          "cases": 1002,
+          "recursive_nonempty": 501,
+          "nonrecursive_nonempty": 235,
+          "sum_candidate_ids_per_probe": 774330,
+          "max_candidates": 4415,
+          "root_recursive": 0,
+          "baseline_candidates_min_bytes": 12389280,
+          "baseline_hits_full_probe_min_bytes": 24778560,
+          "baseline_candidate_and_hit_capacity_min_bytes": 37167840,
+          "baseline_candidate_and_hit_payload_stl_1p5_scenario_bytes": 86724960,
+          "scopes_ascii_worst_payload_bytes": 18583920
+        },
+        "compact64": {
+          "cases": 128,
+          "recursive_nonempty": 64,
+          "nonrecursive_nonempty": 32,
+          "sum_candidate_ids_per_probe": 97342,
+          "max_candidates": 4415,
+          "root_recursive": 0,
+          "baseline_candidates_min_bytes": 1557472,
+          "baseline_hits_full_probe_min_bytes": 3114944,
+          "baseline_candidate_and_hit_capacity_min_bytes": 4672416,
+          "baseline_candidate_and_hit_payload_stl_1p5_scenario_bytes": 10902304,
+          "scopes_ascii_worst_payload_bytes": 2336208
+        }
+      }
+    },
+    {
+      "dataset": "ARXIV",
+      "n": 100000,
+      "selection": "floor(i*(total-1)/(n-1))",
+      "directories": 432,
+      "terminal_directories": 397,
+      "entry_path_utf8_bytes": 825650,
+      "unique_directory_utf8_bytes": 3480,
+      "mean_entry_depth": 2.0,
+      "max_depth": 2,
+      "max_path_utf8_bytes": 9,
+      "max_children": 34,
+      "search_workload_geometry": {
+        "full501": {
+          "cases": 1002,
+          "recursive_nonempty": 501,
+          "nonrecursive_nonempty": 235,
+          "sum_candidate_ids_per_probe": 1548641,
+          "max_candidates": 8830,
+          "root_recursive": 0,
+          "baseline_candidates_min_bytes": 24778256,
+          "baseline_hits_full_probe_min_bytes": 49556512,
+          "baseline_candidate_and_hit_capacity_min_bytes": 74334768,
+          "baseline_candidate_and_hit_payload_stl_1p5_scenario_bytes": 173447792,
+          "scopes_ascii_worst_payload_bytes": 37167384
+        },
+        "compact64": {
+          "cases": 128,
+          "recursive_nonempty": 64,
+          "nonrecursive_nonempty": 32,
+          "sum_candidate_ids_per_probe": 194665,
+          "max_candidates": 8830,
+          "root_recursive": 0,
+          "baseline_candidates_min_bytes": 3114640,
+          "baseline_hits_full_probe_min_bytes": 6229280,
+          "baseline_candidate_and_hit_capacity_min_bytes": 9343920,
+          "baseline_candidate_and_hit_payload_stl_1p5_scenario_bytes": 21802480,
+          "scopes_ascii_worst_payload_bytes": 4671960
+        }
+      }
+    },
+    {
+      "dataset": "WIKI",
+      "n": 10000,
+      "selection": "floor(i*(total-1)/(n-1))",
+      "directories": 23025,
+      "terminal_directories": 8321,
+      "entry_path_utf8_bytes": 2572146,
+      "unique_directory_utf8_bytes": 5009002,
+      "mean_entry_depth": 12.5921,
+      "max_depth": 31,
+      "max_path_utf8_bytes": 604,
+      "max_children": 58,
+      "search_workload_geometry": {
+        "full456": {
+          "cases": 912,
+          "recursive_nonempty": 456,
+          "nonrecursive_nonempty": 127,
+          "sum_candidate_ids_per_probe": 593165,
+          "max_candidates": 10000,
+          "root_recursive": 57,
+          "baseline_candidates_min_bytes": 9490640,
+          "baseline_hits_full_probe_min_bytes": 18981280,
+          "baseline_candidate_and_hit_capacity_min_bytes": 28471920,
+          "baseline_candidate_and_hit_payload_stl_1p5_scenario_bytes": 66434480,
+          "scopes_ascii_worst_payload_bytes": 14235960
+        },
+        "compact64": {
+          "cases": 128,
+          "recursive_nonempty": 64,
+          "nonrecursive_nonempty": 18,
+          "sum_candidate_ids_per_probe": 85347,
+          "max_candidates": 10000,
+          "root_recursive": 8,
+          "baseline_candidates_min_bytes": 1365552,
+          "baseline_hits_full_probe_min_bytes": 2731104,
+          "baseline_candidate_and_hit_capacity_min_bytes": 4096656,
+          "baseline_candidate_and_hit_payload_stl_1p5_scenario_bytes": 9558864,
+          "scopes_ascii_worst_payload_bytes": 2048328
+        }
+      }
+    },
+    {
+      "dataset": "WIKI",
+      "n": 25000,
+      "selection": "floor(i*(total-1)/(n-1))",
+      "directories": 43589,
+      "terminal_directories": 18571,
+      "entry_path_utf8_bytes": 6407776,
+      "unique_directory_utf8_bytes": 9722659,
+      "mean_entry_depth": 12.54748,
+      "max_depth": 31,
+      "max_path_utf8_bytes": 627,
+      "max_children": 64,
+      "search_workload_geometry": {
+        "full456": {
+          "cases": 912,
+          "recursive_nonempty": 456,
+          "nonrecursive_nonempty": 139,
+          "sum_candidate_ids_per_probe": 1481434,
+          "max_candidates": 25000,
+          "root_recursive": 57,
+          "baseline_candidates_min_bytes": 23702944,
+          "baseline_hits_full_probe_min_bytes": 47405888,
+          "baseline_candidate_and_hit_capacity_min_bytes": 71108832,
+          "baseline_candidate_and_hit_payload_stl_1p5_scenario_bytes": 165920608,
+          "scopes_ascii_worst_payload_bytes": 35554416
+        },
+        "compact64": {
+          "cases": 128,
+          "recursive_nonempty": 64,
+          "nonrecursive_nonempty": 24,
+          "sum_candidate_ids_per_probe": 213806,
+          "max_candidates": 25000,
+          "root_recursive": 8,
+          "baseline_candidates_min_bytes": 3420896,
+          "baseline_hits_full_probe_min_bytes": 6841792,
+          "baseline_candidate_and_hit_capacity_min_bytes": 10262688,
+          "baseline_candidate_and_hit_payload_stl_1p5_scenario_bytes": 23946272,
+          "scopes_ascii_worst_payload_bytes": 5131344
+        }
+      }
+    },
+    {
+      "dataset": "WIKI",
+      "n": 50000,
+      "selection": "floor(i*(total-1)/(n-1))",
+      "directories": 69160,
+      "terminal_directories": 33327,
+      "entry_path_utf8_bytes": 12849848,
+      "unique_directory_utf8_bytes": 15820707,
+      "mean_entry_depth": 12.60152,
+      "max_depth": 31,
+      "max_path_utf8_bytes": 667,
+      "max_children": 93,
+      "search_workload_geometry": {
+        "full456": {
+          "cases": 912,
+          "recursive_nonempty": 456,
+          "nonrecursive_nonempty": 205,
+          "sum_candidate_ids_per_probe": 2936404,
+          "max_candidates": 50000,
+          "root_recursive": 57,
+          "baseline_candidates_min_bytes": 46982464,
+          "baseline_hits_full_probe_min_bytes": 93964928,
+          "baseline_candidate_and_hit_capacity_min_bytes": 140947392,
+          "baseline_candidate_and_hit_payload_stl_1p5_scenario_bytes": 328877248,
+          "scopes_ascii_worst_payload_bytes": 70473696
+        },
+        "compact64": {
+          "cases": 128,
+          "recursive_nonempty": 64,
+          "nonrecursive_nonempty": 28,
+          "sum_candidate_ids_per_probe": 426832,
+          "max_candidates": 50000,
+          "root_recursive": 8,
+          "baseline_candidates_min_bytes": 6829312,
+          "baseline_hits_full_probe_min_bytes": 13658624,
+          "baseline_candidate_and_hit_capacity_min_bytes": 20487936,
+          "baseline_candidate_and_hit_payload_stl_1p5_scenario_bytes": 47805184,
+          "scopes_ascii_worst_payload_bytes": 10243968
+        }
+      }
+    },
+    {
+      "dataset": "WIKI",
+      "n": 100000,
+      "selection": "floor(i*(total-1)/(n-1))",
+      "directories": 106921,
+      "terminal_directories": 57653,
+      "entry_path_utf8_bytes": 25624307,
+      "unique_directory_utf8_bytes": 24730133,
+      "mean_entry_depth": 12.56748,
+      "max_depth": 31,
+      "max_path_utf8_bytes": 714,
+      "max_children": 134,
+      "search_workload_geometry": {
+        "full456": {
+          "cases": 912,
+          "recursive_nonempty": 456,
+          "nonrecursive_nonempty": 235,
+          "sum_candidate_ids_per_probe": 5869657,
+          "max_candidates": 100000,
+          "root_recursive": 57,
+          "baseline_candidates_min_bytes": 93914512,
+          "baseline_hits_full_probe_min_bytes": 187829024,
+          "baseline_candidate_and_hit_capacity_min_bytes": 281743536,
+          "baseline_candidate_and_hit_payload_stl_1p5_scenario_bytes": 657401584,
+          "scopes_ascii_worst_payload_bytes": 140871768
+        },
+        "compact64": {
+          "cases": 128,
+          "recursive_nonempty": 64,
+          "nonrecursive_nonempty": 35,
+          "sum_candidate_ids_per_probe": 852636,
+          "max_candidates": 100000,
+          "root_recursive": 8,
+          "baseline_candidates_min_bytes": 13642176,
+          "baseline_hits_full_probe_min_bytes": 27284352,
+          "baseline_candidate_and_hit_capacity_min_bytes": 40926528,
+          "baseline_candidate_and_hit_payload_stl_1p5_scenario_bytes": 95495232,
+          "scopes_ascii_worst_payload_bytes": 20463264
+        }
+      }
+    }
+  ],
+  "source_proofs": {
+    "ARXIV": {
+      "sha256": "127a7d07902cb997489da526be1da973bc9bac09f0da133787f0c28323ea72a2",
+      "records": 2763543
+    },
+    "WIKI": {
+      "sha256": "d9642870803d14fa6d9193f743ed1d2a758ab643fcffe248d2d9009cf73a616a",
+      "bytes_read": 604190439,
+      "max_text_buffer_chars": 1049181,
+      "closed_array_and_eof": true,
+      "parser_sha256": "da10e6226be1bd4c553b9968177b6ac6f6d6c465f6519401104c71f1426ab104"
+    }
+  },
+  "inputs": {
+    "ARXIV": {
+      "path": "notes\\arxiv-time-full-audit-20261027-01\\run-01\\bindings.tsv",
+      "stat": {
+        "size": 46577712,
+        "mtime_ns": 1793037483858666500
+      }
+    },
+    "WIKI": {
+      "path": "dataset\\raw\\WIKI-Dir\\dbpedia_dir_2m_corpus_paths.json",
+      "stat": {
+        "size": 604190439,
+        "mtime_ns": 1772275942000000000
+      }
+    }
+  },
+  "vectors": {
+    "ARXIV": {
+      "path": "dataset\\raw\\ARXIV-Dir\\arxiv_corpus_vectors.fvecs",
+      "size": 11330526300,
+      "mtime_ns": 1792753102919913800,
+      "payload_bytes_read": 0
+    },
+    "WIKI": {
+      "path": "dataset\\raw\\WIKI-Dir\\dbpedia_dir_2m_corpus_vectors-001.fvecs",
+      "size": 7960883900,
+      "mtime_ns": 1792753006971591600,
+      "payload_bytes_read": 0
+    }
+  },
+  "vector_payload_bytes_read": 0,
+  "assessment_peak_private_bytes_sampled": 156413952,
+  "assessment_minimum_available_bytes_sampled": 3099275264,
+  "current_git_head": "2101c84f24b3cbbcd093b38073a5c9e372815f9d",
+  "script_sha256": "9db7d439c4e039ab99aa7bccf470c444447df9949138299130efabeee92c1676"
+}

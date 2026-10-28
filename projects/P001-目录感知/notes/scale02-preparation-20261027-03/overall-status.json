@@ -1,0 +1,11 @@
+{
+  "status": "passed",
+  "started_utc": "2026-10-27T09:09:17.467227+00:00",
+  "formal_completed": [
+    "EXP-20261027-009",
+    "EXP-20261027-010"
+  ],
+  "formal_not_started": [],
+  "active": null,
+  "finished_utc": "2026-10-27T09:27:28.161761+00:00"
+}

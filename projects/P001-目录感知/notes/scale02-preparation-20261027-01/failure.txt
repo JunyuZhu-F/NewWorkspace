@@ -1,0 +1,4 @@
+Traceback (most recent call last):
+  File "D:\NewWorkspace\projects\P001-目录感知\code\scale_formal\pipeline.py", line 78, in main
+    assert sha(entry/'answers.tsv')==sha(PREVIOUS/'outputs'/f'{ds}-5000-release'/'answers.tsv')
+AssertionError

@@ -1,0 +1,64 @@
+{
+  "name": "verify-results",
+  "command": [
+    "D:\\anaconda3\\python.exe",
+    "-B",
+    "D:\\NewWorkspace\\projects\\P001-目录感知\\code\\scale_formal\\verify.py",
+    "D:\\NewWorkspace\\projects\\P001-目录感知\\experiments\\EXP-20261027-010\\config.json",
+    "D:\\NewWorkspace\\projects\\P001-目录感知\\experiments\\EXP-20261027-010\\analysis-01"
+  ],
+  "started_utc": "2026-10-27T09:27:27.258981+00:00",
+  "expected_exit": 0,
+  "pid": 22092,
+  "exit_code": 0,
+  "finished_utc": "2026-10-27T09:27:28.091196+00:00",
+  "elapsed_s": 0.8311509999998634,
+  "unit_elapsed_s": 151.45541460000015,
+  "private_peak_sampled_bytes": 31363072,
+  "available_min_sampled_bytes": 5860302848,
+  "maximum_sample_gap_s": 0.11148580000008224,
+  "violation": null,
+  "target_period_s": 0.1,
+  "samples": [
+    {
+      "elapsed_s": 0.02374059999988276,
+      "private_tree_bytes": 1134592,
+      "available_bytes": 5884280832
+    },
+    {
+      "elapsed_s": 0.135226399999965,
+      "private_tree_bytes": 5226496,
+      "available_bytes": 5880254464
+    },
+    {
+      "elapsed_s": 0.24489309999989928,
+      "private_tree_bytes": 9895936,
+      "available_bytes": 5876547584
+    },
+    {
+      "elapsed_s": 0.35517299999992247,
+      "private_tree_bytes": 29339648,
+      "available_bytes": 5860302848
+    },
+    {
+      "elapsed_s": 0.4650993999998718,
+      "private_tree_bytes": 29863936,
+      "available_bytes": 5874479104
+    },
+    {
+      "elapsed_s": 0.5714120999998613,
+      "private_tree_bytes": 29863936,
+      "available_bytes": 5877534720
+    },
+    {
+      "elapsed_s": 0.6815354999998817,
+      "private_tree_bytes": 31363072,
+      "available_bytes": 5879607296
+    },
+    {
+      "elapsed_s": 0.7897102999997969,
+      "private_tree_bytes": 28053504,
+      "available_bytes": 5875781632
+    }
+  ]
+}

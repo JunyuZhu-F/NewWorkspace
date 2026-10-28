@@ -1,0 +1,68 @@
+{
+  "name": "arxiv-5000-asan",
+  "command": [
+    "D:\\NewWorkspace\\projects\\P001-目录感知\\code\\build-RelWithDebInfo-ASan-ScaleDirectory\\scale_directory.exe",
+    "notes\\scale-prep-20261027-01\\fixtures\\arxiv-5000",
+    "notes\\scale-prep-20261027-01\\outputs\\arxiv-5000-asan",
+    "0",
+    "0",
+    "1",
+    "admission"
+  ],
+  "started_utc": "2026-10-27T08:30:08.733373+00:00",
+  "expected_exit": 0,
+  "exit_code": 0,
+  "elapsed_s": 2.315351700000008,
+  "private_peak_sampled_bytes": 203493376,
+  "available_min_sampled_bytes": 5101764608,
+  "finished_utc": "2026-10-27T08:30:11.050079+00:00",
+  "violation": null,
+  "sampling_note": "target <=250ms; filesystem traversal/scheduler may increase intervals; samples not a quota or exact peak",
+  "samples": [
+    {
+      "elapsed_s": 0.04418780000000311,
+      "private_tree_bytes": 757760,
+      "available_bytes": 5243621376
+    },
+    {
+      "elapsed_s": 0.31241500000001565,
+      "private_tree_bytes": 79503360,
+      "available_bytes": 5211189248
+    },
+    {
+      "elapsed_s": 0.5768497000000252,
+      "private_tree_bytes": 94429184,
+      "available_bytes": 5199687680
+    },
+    {
+      "elapsed_s": 0.841234500000013,
+      "private_tree_bytes": 107130880,
+      "available_bytes": 5192441856
+    },
+    {
+      "elapsed_s": 1.120594699999998,
+      "private_tree_bytes": 129167360,
+      "available_bytes": 5166092288
+    },
+    {
+      "elapsed_s": 1.401765800000021,
+      "private_tree_bytes": 147722240,
+      "available_bytes": 5151404032
+    },
+    {
+      "elapsed_s": 1.6827641000000142,
+      "private_tree_bytes": 168329216,
+      "available_bytes": 5136248832
+    },
+    {
+      "elapsed_s": 1.9618545000000154,
+      "private_tree_bytes": 188112896,
+      "available_bytes": 5123907584
+    },
+    {
+      "elapsed_s": 2.242742000000021,
+      "private_tree_bytes": 203493376,
+      "available_bytes": 5101764608
+    }
+  ]
+}

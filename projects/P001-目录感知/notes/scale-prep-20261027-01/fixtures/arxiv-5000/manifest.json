@@ -1,0 +1,32 @@
+{
+  "records": 5000,
+  "source_records": 2763543,
+  "source": "notes\\arxiv-time-full-audit-20261027-01\\run-01\\bindings.tsv",
+  "source_proof": {
+    "sha256": "127a7d07902cb997489da526be1da973bc9bac09f0da133787f0c28323ea72a2",
+    "size": 46577712,
+    "mtime_ns": 1793037483858666500
+  },
+  "queries": 20,
+  "directories": 414,
+  "max_depth": 2,
+  "missing_layers": [
+    4,
+    9,
+    16,
+    24,
+    31
+  ],
+  "holder": "/__scale_prep__/",
+  "vector_payload_bytes_read": 0,
+  "protocol_sha256": "66458d73ad256cb1fbf875405178888df4038c9cc5a7820aef26bc21146e6597",
+  "files": {
+    "bindings.tsv": "c9dbb646f47e428721f97eb71874fc10408f6acc1acd6e089ff8eb46c012ca07",
+    "directory-cases.json": "0f40c4ae60342c4af2c6752b6c3fd75f8af8b7017401b2178958b8e0232a8576",
+    "directory-cases.tsv": "d033cb3f57d538e37f76740e9b7ed375a6c3f5bd78ad735d8418ffb461def414",
+    "operations.json": "d8311cb97b807e3c704957eb75379537180b2b89ed6d799f0e6f9066ca54e774",
+    "operations.tsv": "d8c1d79bdcfb7a845d8f33f1e5bcd467c9827c42c8538b9ca03984ba1f0a362b",
+    "sample.json": "b549929e76bb714b1d9ea9aa6f22dad54ea76e6981f1645cd0b0bc697e58ebf3",
+    "shape.tsv": "27efd10634ef6b4ae70ece4c8defa7301ba4383284fbdfda59e5782adb388ffb"
+  }
+}

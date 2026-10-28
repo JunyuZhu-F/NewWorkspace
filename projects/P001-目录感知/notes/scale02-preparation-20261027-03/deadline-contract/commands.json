@@ -1,0 +1,27 @@
+[
+  {
+    "name": "sleep-child",
+    "command": [
+      "D:\\anaconda3\\python.exe",
+      "-B",
+      "-c",
+      "import time;time.sleep(10)"
+    ],
+    "started_utc": "2026-10-27T09:09:17.880929+00:00",
+    "expected_exit": 0,
+    "pid": 11444,
+    "finished_utc": "2026-10-27T09:09:18.234007+00:00",
+    "elapsed_s": 0.3514587,
+    "unit_elapsed_s": 0.35657039999999984,
+    "private_peak_sampled_bytes": 5607424,
+    "available_min_sampled_bytes": 5987848192,
+    "maximum_sample_gap_s": 0.10965839999999993,
+    "violation": {
+      "private": 5607424,
+      "available": 5987848192,
+      "elapsed_s": 0.3358263,
+      "remaining_s": -0.10523970000000005,
+      "output_bytes": 660
+    }
+  }
+]

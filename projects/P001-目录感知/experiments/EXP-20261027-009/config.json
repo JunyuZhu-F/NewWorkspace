@@ -1,0 +1,27 @@
+{
+  "fixture": "D:\\NewWorkspace\\projects\\P001-目录感知\\experiments\\EXP-20261027-009\\input\\wiki-25000",
+  "outputs": [
+    {
+      "path": "D:\\NewWorkspace\\projects\\P001-目录感知\\experiments\\EXP-20261027-009\\run-0",
+      "run": 0
+    },
+    {
+      "path": "D:\\NewWorkspace\\projects\\P001-目录感知\\experiments\\EXP-20261027-009\\run-1",
+      "run": 1
+    },
+    {
+      "path": "D:\\NewWorkspace\\projects\\P001-目录感知\\experiments\\EXP-20261027-009\\run-2",
+      "run": 2
+    },
+    {
+      "path": "D:\\NewWorkspace\\projects\\P001-目录感知\\experiments\\EXP-20261027-009\\run-3",
+      "run": 3
+    },
+    {
+      "path": "D:\\NewWorkspace\\projects\\P001-目录感知\\experiments\\EXP-20261027-009\\run-4",
+      "run": 4
+    }
+  ],
+  "warmups": 3,
+  "repeats": 20
+}

@@ -1,6 +1,6 @@
 # REPRODUCTION_PLAN.md — 从目录语义到可核验结果
 
-> 当前主线（2026-10-27）：两数据集当前小规模汇总REPORT-01-SMALL-01已完成，结论/证据/限制/补测决策见REPORT_SMALL_SCALE.md。REPORT-01父任务进行中，全文目标仍未验收；WIKI独立分支与既有ARXIV成果保持。下一项仅SCALE-01具体资源预算与规模方案，不自动执行SCALE-02，不联系作者，不追查1995年。当前HEAD与历史实验版本分别记录在STATE和各实验快照中。
+> 当前主线（2026-10-27）：REPORT-01-CURRENT-01完成，REPORT_CURRENT.md逐原文图表对应已有证据/缺口，纳入25k结果、分位/深度/空范围和跨N边界。审计351次hash、50worker文件、210逐run/1380逐case格位匹配，0新测量/算法改动，旧10k报告保留。全文REPORT-01及作者协议/类别/PG/Viking/nDCG/全量未关闭；下一建议先评估25k检索协议/预算（WIKI优先），不是已批准的新实验。
 
 > 最新验收：DIR-01-COST-RUN-01已完成，DIR-01当前人工树/10,000条时间视图小规模分支按冻结条件验收，见 notes/dir01-small-scope-acceptance-20261027.md。整体OBJ-03和全文复现未关闭；下列早期准备/审查增量为历史状态。
 
@@ -49,14 +49,17 @@
 | DIR-01-COST-RUN-01 | 冻结成本诊断正式补测 | DIR-01-COST-02；用户已指定运行 | 已完成 | EXP-20261027-005：135/135成功，194.859秒；phases33465、allocation3795、overhead/process/run-order各135。独立重算均值/分位数/各run及请求字节，销毁归零/拒绝不变通过；保留探针、异常传播覆盖和非物理堆限制，见实验record/results/independent-verification。 |
 | SEARCH-01 | 向量后端与质量协议，OBJ-04 条件项 | 对应DATA时间分支，CHECK-01；用户指定开始小数据检索 | 已完成（当前时间/IVF分支） | 10000条、104case；Release/ASan各契约1/1、1248条结果，候选/独立精确GT/过滤/分区/跨构建一致通过。协议notes/search01-protocol-20261027.md，证据notes/search01-validation-20261027-01/。32原约束全空，64非空诊断共用query_id0，不作代表性质量证据。PG/WIKI/作者Viking及整体OBJ-04未关闭。 |
 | SEARCH-02 | 小规模质量-总延迟曲线，OBJ-04 条件项 | SEARCH-01，DIR-01；新输入先准入 | 已完成（当前时间/IVF分支） | EXP-20261027-006，5/5进程、1202400行计时及60120条基线排名独立核验；10000跨时间样本，501递归/235月份非递归非空，266年份非递归空另报。三策略同后端/模型/质量，均值/分位数/阶段/逐run/曲线/QA齐全。协议notes/search02-protocol-20261027.md，完整证据experiments/EXP-20261027-006/；非Viking/PG/WIKI或整体OBJ-04完成。 |
-| SCALE-01 | 资源复核与规模审批 | DIR-01；含检索时 SEARCH-02 | 未开始 | 估计峰值内存/磁盘/耗时，用户批准具体矩阵和预算；本轮审核不隐含全量运行授权。 |
+| SCALE-01 | 资源复核与规模审批 | DIR-01；当前报告；SCALE-PREP资源证据 | 已完成（当前25k纯目录） | 用户在明确矩阵/预算后批准下一步：两数据集25k默认各5独立进程、3预热20测量，WIKI优先。采用budget-reviewed.json及600s命令/1800s单元/4GiB启动等原预算；不是批准ANN、50k/100k或全量。 |
+| SCALE-01-ASSESS | 两种实验范围资源与候选规模评估 | 当前报告及旧日志/源码/资源 | 已完成 | 源hash匹配的8个元数据profile、实际硬件/历史遥测、模块内存及启发式时间CSV、25k首批矩阵/门禁/软件前置齐全；100k和全量不能按当前实现/预算直接批准。零向量载荷/新实验，证据notes/scale01-assessment-20261027-01/。 |
+| SCALE-PREP-01 | 获选规模的隔离驱动准备与准入 | SCALE-01-ASSESS；用户已授权当前准备/准入范围 | 已完成（当前25k纯目录） | notes/scale-prep-20261027-02/：两数据集5k Release/ASan及25k Release共6worker/3390次集合、4独立核验、2跨构建和6负向合同通过；旧53源码hash不变。原01监控342ms偏差保留，修正后02实际最大114.325ms，资源门禁通过；budget-reviewed.json补入120s启动窗口，WIKI筛查约1412.66s接近1440s。原核心不变、0向量，单pass只准入不当正式成绩；正式入口/五进程不在本轮范围。 |
 | WIKI-DATA-01 | WIKI 数据与协议前置核查，OBJ-01/02/04 | DATA-01 初查；用户要求优先推进 WIKI | 已完成 | 全量1941679条path/corpus ID一致，末端363467/均深11.9512、补齐祖先含根468031；独立路径复核、全部query/qrels/查询向量及固定10000样本向量通过。非全量向量检查，作者查询缺口保留；见notes/wiki-preparation-20261027-01/record.md、run-01/report.json与verification.json。 |
 | WIKI-CHECK-01 | WIKI 小规模目录语义准入，OBJ-02 | WIKI-DATA-01；冻结protocol.md | 已完成 | 10000真实路径样本，Release/ASan各5292次范围集合核验零差异，MOVE/MERGE/拒绝及全量不变量通过；跨构建答案相同，独立Python状态判定核验通过；006原46源码hash不变。最终check-02，失败check-01保留；非原文DSM或性能成绩。 |
 | WIKI-DIR-01 | WIKI 小规模目录性能，OBJ-03 | WIKI-CHECK-01；冻结具体协议/矩阵 | 已完成（独立小规模分支） | 007默认/phase各5/5、43470原始行通过，正式37800/预热5670；CSV、逐深度/逐case、阶段/catalog、portable及最终hash齐全。递归/large维护优势和非递归/deep MERGE反例保留；非作者DSM、全量或整体OBJ-03验收。 |
 | WIKI-PROTO-01 | WIKI 独立检索协议与准入，OBJ-04 | WIKI-DATA-01；用户授权独立协议 | 已完成 | notes/wiki-independent-preparation-20261027-01/status.json及三份verification通过；Release/ASan目录默认/phase及检索全部一致、生成源码仅三处预定替换。912case中递归456非空，非递归127非空/329空；qrels不参与，L2/子集精确GT/Recall@10，nDCG不报告。作者GAP保留，正式结果不从准入计时推断。 |
 | WIKI-SEARCH-01 | WIKI独立检索质量/总延迟 | WIKI-PROTO-01准入；WIKI-DIR-01矩阵核验 | 已完成（独立小规模分支） | 008五进程、1094400正式行、54720基线排名和13680候选记录独立核验通过；模型/排名跨策略/进程一致，exact/全探测非空Recall=1，空范围质量null。阶段/分位数/逐进程SD/配对差CSV与最终hash齐全；非Viking、作者工作负载或整体OBJ-04通过，nDCG不报告。 |
-| SCALE-02 | 获批规模的正式测量 | SCALE-01 | 未开始 | 只跑获批矩阵，完整记录成功/失败/中断及协议变更；资源只允许中等规模时明确全量未执行。 |
-| REPORT-01 | 逐目标验收，OBJ-05 | 已完成的范围任务 | 进行中 | 当前小规模逐OBJ报告已完成，见REPORT-01-SMALL-01；原作者协议/类别/全量/PG等未完成范围保留，未宣布全文最终验收。 |
+| SCALE-02 | 获批规模的正式测量 | SCALE-01批准具体矩阵/预算；SCALE-PREP-01通过 | 已完成（当前25k纯目录） | WIKI009、ARXIV010各5/5、3预热20测量；23115/8625原始行、20100/7500正式行，合计141450次集合核对。各完整格位/五状态/跨进程/资源/冻结hash及CSV/五进程SD审查通过，单元895.606s/151.523s无超限。原核心/旧实验不改，无正式重试；准备03为最终入口，01/02错误保留。非ANN、更大N、全量或全文验收。 |
+| REPORT-01 | 逐目标验收，OBJ-05 | 已完成的范围任务 | 进行中 | 含25k当前逐目标报告/原文实验对照已完成，见REPORT-01-CURRENT-01；作者协议/类别/全量/PG/nDCG等未完成范围保留，不宣布全文最终验收。 |
+| REPORT-01-CURRENT-01 | 论文实验对照与含25k当前报告 | REPORT-01-SMALL-01；SCALE-02及009/010；用户授权整理 | 已完成 | REPORT_CURRENT.md及notes/report02-status-audit-20261027-01/：原文定位、351次hash/50worker文件、210逐run/1380逐case重算一致；补经验P90/P95/P99/P99.9、深度及空范围分组/加权重构。旧报告/实验不改、0新测量；全文父目标与GAP保留。 |
 | REPORT-01-SMALL-01 | 两数据集当前小规模范围审查与汇总 | 004–008及当前语义/材料证据 | 已完成 | REPORT_SMALL_SCALE.md逐OBJ判定与补测决策齐全；notes/report01-audit-20261027-01/run-02/verification.json通过，110个worker文件及当前/归档源hash匹配，004引用均值/005占比从raw重算。保留空请求排序反转、样本/k/根权重/成本边界，无新测量。仅关闭本子任务。 |
 
 WIKI 原文 DSQ/深度对照与 DSM 数值对照当前受 GAP-01/02 阻碍。DATA-01 决定如何解除后再拆子任务，不将未定义工作负载虚构成“待运行的原实验”。ENV-01 与 DATA-01 在依赖上独立，但不要求启动并行代理或占用额外资源。

@@ -1,0 +1,18 @@
+ M EXPERIMENTS.md
+ M README.md
+ M REPRODUCTION_PLAN.md
+ M STATE.md
+ M TASK.md
+?? SCALE_ASSESSMENT.md
+?? code/scale_directory/
+?? code/scale_formal/
+?? code/scripts/build-scale-directory.cmd
+?? code/scripts/build-scale-formal.cmd
+?? notes/scale-prep-20261027-01/
+?? notes/scale-prep-20261027-02/
+?? notes/scale-prep-protocol-20261027.md
+?? notes/scale01-assessment-20261027-01/
+?? notes/scale02-preparation-20261027-01/
+?? notes/scale02-preparation-20261027-02/
+?? notes/scale02-preparation-20261027-03/
+?? notes/scale02-protocol-20261027.md
